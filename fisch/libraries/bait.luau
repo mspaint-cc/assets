@@ -63,6 +63,13 @@ return {
         Resilience = -15
     },
     Give = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
+    ["Shark Head"] = {
+        LureSpeed = -5,
+        Luck = 225,
+        GenerelLuck = 30,
+        Rarity = "Mythical",
+        Resilience = 10
+    },
     ["Weird Algae"] = {
         LureSpeed = -35,
         Luck = 0,
