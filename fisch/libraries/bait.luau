@@ -1,4 +1,4 @@
-{
+return {
     Magnet = {
         LureSpeed = 0,
         Luck = 200,
