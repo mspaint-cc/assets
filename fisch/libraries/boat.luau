@@ -1,5 +1,17 @@
 return {
     library = {
+        ["Bass Boat"] = {
+            Dedscriptipon = "Great for fishing with pals!",
+            BackwardsEfficiency = 1,
+            Price = 6000,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            MaxSpeed = 45,
+            StopEfficiency = 0.7,
+            Level = 10,
+            TurningSpeed = 0.4,
+            Accel = 0.22
+        },
         ["Coral Cruiser Boat"] = {
             Dedscriptipon = "Fischer Special Special!",
             BackwardsEfficiency = 1,
@@ -98,17 +110,17 @@ return {
             TurningSpeed = 0.4,
             Accel = 0.2
         },
-        ["Bass Boat"] = {
-            Dedscriptipon = "Great for fishing with pals!",
+        ["Archaeological Boat"] = {
+            Dedscriptipon = "Boat used by archaeologists from ancient island.",
             BackwardsEfficiency = 1,
-            Price = 6000,
-            Bobbing = 2,
-            BobbingSpeed = 1,
-            MaxSpeed = 45,
-            StopEfficiency = 0.7,
-            Level = 10,
-            TurningSpeed = 0.4,
-            Accel = 0.22
+            Price = 20000,
+            Bobbing = 1,
+            BobbingSpeed = 3,
+            MaxSpeed = 80,
+            StopEfficiency = 2,
+            Level = 30,
+            TurningSpeed = 0.3,
+            Accel = 0.2
         },
         ["Pirate Ship"] = {
             Dedscriptipon = "Argggg Matey!!",
