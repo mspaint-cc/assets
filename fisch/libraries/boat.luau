@@ -1,4 +1,4 @@
-{
+return {
     library = {
         ["Coral Cruiser Boat"] = {
             Dedscriptipon = "Fischer Special Special!",
