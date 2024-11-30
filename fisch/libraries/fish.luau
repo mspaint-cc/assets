@@ -1,6 +1,6 @@
 return {
     ["Emperor Jellyfish"] = {
-        SparkleColor = Color3.new(0.56078433990479, 0.54509806632996, 1,
+        SparkleColor = Color3.new(0.56078433990479, 0.54509806632996, 1),
         Description = "The Emperor Jellyfish is a very unique and incredibly rare breed of jellyfish, only found in the gloomy waters of the Desolate Deep. They carry around a stalactite in which they use as an offense mechanism against their prey. They are extremely electrifying to the touch, which makes them a menacing catch for most anglers.",
         FavouriteBait = "Magnet",
         Chance = 0.03,
@@ -40,7 +40,7 @@ return {
             20
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "Ouu an Angelfish!",
             "Woah, an Angelfish!"
@@ -68,7 +68,7 @@ return {
             5
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.85098040103912, 0.76078432798386, 0.65882354974747,
+        SparkleColor = Color3.new(0.85098040103912, 0.76078432798386, 0.65882354974747),
         Quips = {
             "An Oyster!",
             "Woah! An Oyster",
@@ -98,7 +98,7 @@ return {
             2
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.8901960849762, 0.56078433990479,
+        SparkleColor = Color3.new(1, 0.8901960849762, 0.56078433990479),
         Quips = {
             "A Sand Dollar!",
             "Woah! A Sand Dollar",
@@ -129,7 +129,7 @@ return {
             12
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "A White Perch!",
             "I caught a White Perch!",
@@ -149,7 +149,7 @@ return {
     },
     Lingcod = {
         FavouriteTime = "Day",
-        SparkleColor = Color3.new(0.29803922772408, 0.45098039507866, 0.21568627655506,
+        SparkleColor = Color3.new(0.29803922772408, 0.45098039507866, 0.21568627655506),
         Description = "A large, aggressive predator with mottled brown and green skin, known for its sharp teeth and oddly fierce fighting behaviour when hooked. They can be found in ocean water near Snowcap during the day. They are especially active near the water-side enterance of Snowcap Cave.",
         FavouriteBait = "Fish Head",
         Chance = 40,
@@ -191,7 +191,7 @@ return {
             50
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832,
+        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832),
         Quips = {
             "Woah a bone!"
         },
@@ -208,7 +208,7 @@ return {
     },
     ["Small Spine Chimera"] = {
         FavouriteTime = "Day",
-        SparkleColor = Color3.new(0.49019607901573, 0.49411764740944, 0.48235294222832,
+        SparkleColor = Color3.new(0.49019607901573, 0.49411764740944, 0.48235294222832),
         Description = "A large, intimidating fish with spiny fins, sharp teeth, and a menacing, serpent-like body. The Chimera uses its pickaxe-like bill to strike targets, knocking them out or possible penetrating them entirely in two pieces.",
         FavouriteBait = "Seaweed",
         Chance = 0.2,
@@ -246,7 +246,7 @@ return {
             3
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.77254903316498, 0.419607847929, 0.24313725531101,
+        SparkleColor = Color3.new(0.77254903316498, 0.419607847929, 0.24313725531101),
         Quips = {
             "Seaweed!",
             "Oh. Seaweed.",
@@ -276,7 +276,7 @@ return {
             350
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.35294118523598, 1, 0.76470589637756,
+        SparkleColor = Color3.new(0.35294118523598, 1, 0.76470589637756),
         Quips = {
             "A Napoleonfish!",
             "I caught a Napoleonfish!",
@@ -305,7 +305,7 @@ return {
             60
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.79607844352722, 0.79607844352722, 0.79607844352722,
+        SparkleColor = Color3.new(0.79607844352722, 0.79607844352722, 0.79607844352722),
         Quips = {
             "A Sea Bass!",
             "I caught a Sea Bass!",
@@ -325,7 +325,7 @@ return {
     },
     ["Midnight Axolotl"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(1, 0.55294120311737, 0.16470588743687,
+        SparkleColor = Color3.new(1, 0.55294120311737, 0.16470588743687),
         Description = "The Midnight Axolotl is a variant of Axolotl that has adapted to the Desolate Deep. Midnight Axolotls are known for their adorable looks and giant size compared to regular Axolotls. They are most commonly seen at night while other fish sleep. It has been theorized that the glowing gills on the sides of their head have evolved, allowing them to use echolocation to see predators in even the darkest waters. Despite being on the lower end of the food chain, they use their agility and abilities to hide within the Desolate Deep. It is currently unknown how many Midnight Axolotls are residing there",
         FavouriteBait = "Insect",
         Chance = 0.15,
@@ -367,7 +367,7 @@ return {
             50
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.38823530077934, 0.65882354974747, 0.36862745881081,
+        SparkleColor = Color3.new(0.38823530077934, 0.65882354974747, 0.36862745881081),
         Quips = {
             "I thought theres a rainbow?",
             "Woah, a Trout!",
@@ -387,7 +387,7 @@ return {
         Resilience = 80
     },
     Rabbitfish = {
-        SparkleColor = Color3.new(0.80000001192093, 0.55686277151108, 1,
+        SparkleColor = Color3.new(0.80000001192093, 0.55686277151108, 1),
         Description = "The Rabbitfish is an elusive saltwater fish that is only found under The Arch. They are odd creatures that both resemble a rabbit, and swim in a pattern similar to a bunny jumping.",
         FavouriteBait = "Seaweed",
         Chance = 1,
@@ -427,7 +427,7 @@ return {
             60
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.53725492954254, 1, 0.45490196347237,
+        SparkleColor = Color3.new(0.53725492954254, 1, 0.45490196347237),
         Quips = {
             "A Swamp Bass!",
             "I caught a Swamp Bass!",
@@ -457,7 +457,7 @@ return {
             25
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.95294117927551, 1, 0.054901961237192,
+        SparkleColor = Color3.new(0.95294117927551, 1, 0.054901961237192),
         Quips = {
             "IS THAT A CAPTAIN GOLDFISH?!"
         },
@@ -484,7 +484,7 @@ return {
             45
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.6745098233223, 1, 0.52549022436142,
+        SparkleColor = Color3.new(0.6745098233223, 1, 0.52549022436142),
         Quips = {
             "Now, where's the snare?",
             "Woah!",
@@ -516,7 +516,7 @@ return {
             20
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.96862745285034, 1, 0.38431373238564,
+        SparkleColor = Color3.new(0.96862745285034, 1, 0.38431373238564),
         Quips = {
             "Woah, a Trumpetfish!",
             "Baby Keem!",
@@ -536,7 +536,7 @@ return {
     },
     ["Brine Phantom"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.32156863808632, 1, 0.53725492954254,
+        SparkleColor = Color3.new(0.32156863808632, 1, 0.53725492954254),
         Description = "The Brine Phantom is a hostile predator of the Desolate Deep Brine Pool. They possess several sharp mandibles on the front of their face, which they use to subdue prey. The Brine Phantom inhibits aggressive behaviour towards other creatures that happen to come anywhere close to it.",
         FavouriteBait = "Fish Head",
         Chance = 0.05,
@@ -575,7 +575,7 @@ return {
             210
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.3137255012989, 0.3137255012989, 0.3137255012989,
+        SparkleColor = Color3.new(0.3137255012989, 0.3137255012989, 0.3137255012989),
         Quips = {
             "Ermm..?",
             "Uhmm..?",
@@ -606,7 +606,7 @@ return {
             2
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.20784313976765, 0.20784313976765, 0.34901961684227,
+        SparkleColor = Color3.new(0.20784313976765, 0.20784313976765, 0.34901961684227),
         Quips = {
             "A Mussel!",
             "Woah! A Mussel",
@@ -626,7 +626,7 @@ return {
         Resilience = 200
     },
     ["Common Crate"] = {
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Description = "A moderately sized wooden crate seemingly lost from a fishing boat of some kind. The date of it's disappearance is unknown. Therefore, finders keepers?- Opening it might give you an array of fish, bait, and money!",
         FavouriteBait = "Magnet",
         Chance = 17,
@@ -690,7 +690,7 @@ return {
         Resilience = 120
     },
     Oarfish = {
-        SparkleColor = Color3.new(1, 0.20000000298023, 0.20000000298023,
+        SparkleColor = Color3.new(1, 0.20000000298023, 0.20000000298023),
         Description = "The Oarfish is a massive, snake-like creatures that dwell in the deep ocean. they are often mistaken for sea serpents or mythical creatures. Their presence is considered an omen by many ancient cultures.",
         FavouriteBait = "Squid",
         Chance = 0.01,
@@ -730,7 +730,7 @@ return {
             28
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.22352941334248, 0.22352941334248,
+        SparkleColor = Color3.new(1, 0.22352941334248, 0.22352941334248),
         Quips = {
             "A Larry Lobster!",
             "Woah! A Lobster",
@@ -751,7 +751,7 @@ return {
     },
     Moonfish = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(1, 0.47843137383461, 0.27450981736183,
+        SparkleColor = Color3.new(1, 0.47843137383461, 0.27450981736183),
         Description = "The Moonfish is a sizable, flat, bony fish that inhabits deep and occasionally warm waters. While their behaviour resembles that of the Ocean Sunfish, Moonfish are far more aggressive, using their rock-hard skulls to charge at fish, boats, and swimmers.",
         FavouriteBait = "Minnow",
         Chance = 0.2,
@@ -795,7 +795,7 @@ return {
             3
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.33333334326744, 1, 0.52156865596771,
+        SparkleColor = Color3.new(0.33333334326744, 1, 0.52156865596771),
         Quips = {
             "Ouu a Brine Shrimp!",
             "Woah, a Brine Shrimp!",
@@ -826,7 +826,7 @@ return {
             240
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.34117648005486, 0.90980392694473, 0.52156865596771,
+        SparkleColor = Color3.new(0.34117648005486, 0.90980392694473, 0.52156865596771),
         Quips = {
             "Ouu a Globe Jellyfish!",
             "Oh my Globe!",
@@ -854,7 +854,7 @@ return {
             50
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "A Pollock!",
             "I caught a Pollock!",
@@ -885,7 +885,7 @@ return {
             40
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.839215695858, 0.839215695858, 0.839215695858,
+        SparkleColor = Color3.new(0.839215695858, 0.839215695858, 0.839215695858),
         Quips = {
             "Woah, a Chinfish!",
             "The Megachin!",
@@ -906,7 +906,7 @@ return {
     },
     ["Ancient Serpent Skull"] = {
         FavouriteTime = "None",
-        SparkleColor = Color3.new(0.49411764740944, 0.047058824449778, 0.047058824449778,
+        SparkleColor = Color3.new(0.49411764740944, 0.047058824449778, 0.047058824449778),
         Description = "A haunting, bone-chilling relic from a monstrous, lost predator, shrouded in eerie mystery. Beware... Locals say the skull holds a haunting power...",
         FavouriteBait = "None",
         Chance = 0.005,
@@ -944,7 +944,7 @@ return {
             100
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.81176471710205, 0.61960786581039, 0.54509806632996,
+        SparkleColor = Color3.new(0.81176471710205, 0.61960786581039, 0.54509806632996),
         Quips = {
             "A Cod!",
             "I caught a Cod!",
@@ -965,7 +965,7 @@ return {
     },
     ["Sea Turtle"] = {
         FavouriteTime = "Day",
-        SparkleColor = Color3.new(0.62745100259781, 1, 0.32549020648003,
+        SparkleColor = Color3.new(0.62745100259781, 1, 0.32549020648003),
         Description = "The Sea Turtle is a graceful marine creature with a streamlined shell and paddle-like flippers, found gliding peacefully in warm coastal waters. Known for their calm demeanour and protected status, Sea Turtles are a rare and beautiful sight that often symbolizes good fortune.",
         FavouriteBait = "None",
         Chance = 0.005,
@@ -1005,7 +1005,7 @@ return {
             6
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.77254903316498, 0.419607847929, 0.24313725531101,
+        SparkleColor = Color3.new(0.77254903316498, 0.419607847929, 0.24313725531101),
         Quips = {
             "Ermm..?",
             "Uhmm..?",
@@ -1037,7 +1037,7 @@ return {
             400
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.49411764740944, 0.23137255012989, 0.23137255012989,
+        SparkleColor = Color3.new(0.49411764740944, 0.23137255012989, 0.23137255012989),
         Quips = {
             "THE Black Dragon Fish?!"
         },
@@ -1063,7 +1063,7 @@ return {
             5
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.2352941185236, 0.2352941185236,
+        SparkleColor = Color3.new(1, 0.2352941185236, 0.2352941185236),
         Quips = {
             "A Pumpkinseed!",
             "I caught a Pumpkinseed!",
@@ -1094,7 +1094,7 @@ return {
             20
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.72549021244049, 0.7294117808342, 1,
+        SparkleColor = Color3.new(0.72549021244049, 0.7294117808342, 1),
         Quips = {
             "A Cockatoo Squid!",
             "Ouu! A Cockatoo Squid!",
@@ -1123,7 +1123,7 @@ return {
             200
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.66666668653488, 0.66666668653488, 0.49803921580315,
+        SparkleColor = Color3.new(0.66666668653488, 0.66666668653488, 0.49803921580315),
         Quips = {
             "WOAH! A GALLEON GOLIATH!",
             "OMG, IS THAT A GALLEON GOLIATH?"
@@ -1151,7 +1151,7 @@ return {
             45
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.49411764740944, 0.45490196347237, 0.30588236451149,
+        SparkleColor = Color3.new(0.49411764740944, 0.45490196347237, 0.30588236451149),
         Quips = {
             "Oh... A Destroyed Fossil?"
         },
@@ -1167,7 +1167,7 @@ return {
         Resilience = 100
     },
     Pyrogrub = {
-        SparkleColor = Color3.new(1, 0.59215688705444, 0.1803921610117,
+        SparkleColor = Color3.new(1, 0.59215688705444, 0.1803921610117),
         Description = "The Pyrogrub is a fearsome, lava swimming eel that thrives in the most volcanic of environments. The Pyrogrub sports thick dragon-like scales which allow it's inner body to not react to any form of outside temperature.",
         FavouriteBait = "Coal",
         Chance = 25,
@@ -1207,7 +1207,7 @@ return {
             5,
             20
         },
-        SparkleColor = Color3.new(0.54901963472366, 1, 0.69019609689713,
+        SparkleColor = Color3.new(0.54901963472366, 1, 0.69019609689713),
         Quips = {
             "Woah, a Lurkerfish!",
             "No way! A Lurkerfish!",
@@ -1238,7 +1238,7 @@ return {
             130
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.underweight,
-        SparkleColor = Color3.new(0.84313726425171, 0.82352942228317, 1,
+        SparkleColor = Color3.new(0.84313726425171, 0.82352942228317, 1),
         Quips = {
             "Oh.. a Stalactite!",
             "A.. Stalactite?",
@@ -1272,7 +1272,7 @@ return {
             2
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.19215686619282, 0.20000000298023, 0.29019609093666,
+        SparkleColor = Color3.new(0.19215686619282, 0.20000000298023, 0.29019609093666),
         Quips = {
             "A Night Shrimp!",
             "Woah! A Night Shrimp",
@@ -1315,7 +1315,7 @@ return {
             25
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.94117647409439, 0.63529413938522,
+        SparkleColor = Color3.new(1, 0.94117647409439, 0.63529413938522),
         Quips = {
             "Oh.. a Bone!",
             "A.. Bone?",
@@ -1344,7 +1344,7 @@ return {
             150
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 0.97647058963776, 0.34901961684227,
+        SparkleColor = Color3.new(1, 0.97647058963776, 0.34901961684227),
         Quips = {
             "I caught a Mahi Mahi!",
             "Woah, a Mahi Mahi!!",
@@ -1364,7 +1364,7 @@ return {
     },
     Axolotl = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(1, 0.5137255191803, 0.5137255191803,
+        SparkleColor = Color3.new(1, 0.5137255191803, 0.5137255191803),
         Description = "Axolotls are small carnivorous creatures who reside in the Roslit Bay pond. They are nocturnal creatures and are known to hunt primarily worms. They are well known for their ability to regenerate and adorable faces.",
         FavouriteBait = "Insect",
         Chance = 0.05,
@@ -1397,7 +1397,7 @@ return {
     },
     ["Ancient Serpent Spine"] = {
         FavouriteTime = "None",
-        SparkleColor = Color3.new(0.49411764740944, 0.047058824449778, 0.047058824449778,
+        SparkleColor = Color3.new(0.49411764740944, 0.047058824449778, 0.047058824449778),
         Description = "A chilling relic of a fearsome, long-forgotten creature, radiating an aura of dread.",
         FavouriteBait = "None",
         Chance = 0.01,
@@ -1434,7 +1434,7 @@ return {
             20000,
             40000
         },
-        SparkleColor = Color3.new(0.50588238239288, 1, 0.70980393886566,
+        SparkleColor = Color3.new(0.50588238239288, 1, 0.70980393886566),
         Quips = {
             "WOAH, NESSIE!?!",
             "MY BACCKK",
@@ -1463,7 +1463,7 @@ return {
             10
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "Woah, a Skelefish!",
             "No way! A Skelefish!",
@@ -1492,7 +1492,7 @@ return {
             7
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.72156864404678, 0.27058824896812,
+        SparkleColor = Color3.new(1, 0.72156864404678, 0.27058824896812),
         Quips = {
             "Doesn't look very gold..",
             "Woah, a Goldfish!",
@@ -1522,7 +1522,7 @@ return {
             12
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.49411764740944, 0.40392157435417, 1,
+        SparkleColor = Color3.new(0.49411764740944, 0.40392157435417, 1),
         Quips = {
             "A Rockstar Hermit Crab!",
             "Woah! A Rockstar Hermit Crab",
@@ -1550,7 +1550,7 @@ return {
             10
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(1, 0.20000000298023, 0.20000000298023,
+        SparkleColor = Color3.new(1, 0.20000000298023, 0.20000000298023),
         Quips = {
             "Woah, a Candy Fisch!",
             "No way! A Candy Fisch!",
@@ -1578,7 +1578,7 @@ return {
             1300
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
-        SparkleColor = Color3.new(1, 0.96078431606293, 0.77254903316498,
+        SparkleColor = Color3.new(1, 0.96078431606293, 0.77254903316498),
         Quips = {
             "A Bull Shark!",
             "Thats some Bull Shark!",
@@ -1607,7 +1607,7 @@ return {
             120
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.74901962280273, 0.15294118225574, 0.098039217293262,
+        SparkleColor = Color3.new(0.74901962280273, 0.15294118225574, 0.098039217293262),
         Quips = {
             "An Ember Snapper!",
             "Woah! I caught an Ember Snapper!",
@@ -1637,7 +1637,7 @@ return {
             14
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.72549021244049, 0.21960784494877, 0.20392157137394,
+        SparkleColor = Color3.new(0.72549021244049, 0.21960784494877, 0.20392157137394),
         Quips = {
             "A Crusty Mushgrove Crab!",
             "Woah! A Mushgrove Crab",
@@ -1666,7 +1666,7 @@ return {
             30
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(1, 0.20000000298023, 0.20000000298023,
+        SparkleColor = Color3.new(1, 0.20000000298023, 0.20000000298023),
         Quips = {
             "Woah, a Zombiefish!",
             "No way! A Zombiefish!",
@@ -1695,7 +1695,7 @@ return {
             155
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.32549020648003, 0.26274511218071, 0.41568627953529,
+        SparkleColor = Color3.new(0.32549020648003, 0.26274511218071, 0.41568627953529),
         Quips = {
             "I caught a Voidfin Mahi!",
             "Woah, a Voidfin Mahi!!",
@@ -1726,7 +1726,7 @@ return {
             60
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
-        SparkleColor = Color3.new(0.59607845544815, 0.58039218187332, 1,
+        SparkleColor = Color3.new(0.59607845544815, 0.58039218187332, 1),
         Quips = {
             "A Phantom Ray!",
             "Phantuah!",
@@ -1756,7 +1756,7 @@ return {
             110
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.34117648005486, 0.30196079611778, 0.45490196347237,
+        SparkleColor = Color3.new(0.34117648005486, 0.30196079611778, 0.45490196347237),
         Quips = {
             "Woah, a n Abyssacuda!",
             "I caught an Abyssacuda!",
@@ -1786,7 +1786,7 @@ return {
             20
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.87058824300766, 0.22352941334248,
+        SparkleColor = Color3.new(1, 0.87058824300766, 0.22352941334248),
         Quips = {
             "Ouu a Yellow Boxfish!",
             "Woah, a Yellow Boxfish!"
@@ -1814,7 +1814,7 @@ return {
             50
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.49019607901573, 0.49411764740944, 0.48235294222832,
+        SparkleColor = Color3.new(0.49019607901573, 0.49411764740944, 0.48235294222832),
         Quips = {
             "Just a piece of scrap metal!"
         },
@@ -1831,7 +1831,7 @@ return {
     },
     ["Umbral Shark"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.59215688705444, 0.43137255311012, 1,
+        SparkleColor = Color3.new(0.59215688705444, 0.43137255311012, 1),
         Description = "Umbral Sharks are a nocturnal bottom feeder, spending most of their time on the floor or in small crevices. They are gentle and slow-moving until provoked. Once angered, they can be extremely strong swimmers and often will break fishing lines. They are extremely rare, as they don't often come high enough in the water for anyone to see.",
         FavouriteBait = "Fish Head",
         Chance = 0.01,
@@ -1871,7 +1871,7 @@ return {
             250
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.33333334326744, 1, 1,
+        SparkleColor = Color3.new(0.33333334326744, 1, 1),
         Quips = {
             "WOAH! A BUCCANEER BARRACUDA!",
             "OMG, IS THAT A BUCCANEER BARRACUDA?",
@@ -1899,7 +1899,7 @@ return {
             200
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.50196081399918, 1, 0.4745098054409,
+        SparkleColor = Color3.new(0.50196081399918, 1, 0.4745098054409),
         Quips = {
             "Woah, a Twilight Eel!",
             "I caught an Eel!",
@@ -1917,17 +1917,17 @@ return {
         Resilience = 40
     },
     RarityColours = {
-        Unusual = Color3.new(0.75294119119644, 0.52941179275513, 0.77647060155869,
-        Trash = Color3.new(0.5686274766922, 0.5686274766922, 0.5686274766922,
-        Common = Color3.new(0.55686277151108, 0.73333334922791, 0.74901962280273,
-        Exotic = Color3.new(1, 1, 1,
-        Uncommon = Color3.new(0.63137257099152, 1, 0.66274511814117,
-        Rare = Color3.new(0.46666666865349, 0.42352941632271, 0.70980393886566,
-        Legendary = Color3.new(0.94117647409439, 0.70980393886566, 0.42745098471642,
-        Divine = Color3.new(0.79215687513351, 0.77647060155869, 1,
-        Relic = Color3.new(0.4705882370472, 1, 0.71764707565308,
-        Limited = Color3.new(0.21176470816135, 0.28627452254295, 0.6235294342041,
-        Mythical = Color3.new(1, 0.24313725531101, 0.4705882370472
+        Unusual = Color3.new(0.75294119119644, 0.52941179275513, 0.77647060155869),
+        Trash = Color3.new(0.5686274766922, 0.5686274766922, 0.5686274766922),
+        Common = Color3.new(0.55686277151108, 0.73333334922791, 0.74901962280273),
+        Exotic = Color3.new(1, 1, 1),
+        Uncommon = Color3.new(0.63137257099152, 1, 0.66274511814117),
+        Rare = Color3.new(0.46666666865349, 0.42352941632271, 0.70980393886566),
+        Legendary = Color3.new(0.94117647409439, 0.70980393886566, 0.42745098471642),
+        Divine = Color3.new(0.79215687513351, 0.77647060155869, 1),
+        Relic = Color3.new(0.4705882370472, 1, 0.71764707565308),
+        Limited = Color3.new(0.21176470816135, 0.28627452254295, 0.6235294342041),
+        Mythical = Color3.new(1, 0.24313725531101, 0.4705882370472)
     },
     ["King Oyster"] = {
         Seasons = {
@@ -1941,7 +1941,7 @@ return {
             10
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.85098040103912, 0.84313726425171, 0.59215688705444,
+        SparkleColor = Color3.new(0.85098040103912, 0.84313726425171, 0.59215688705444),
         Quips = {
             "An Oyster!",
             "Woah! A King Oyster",
@@ -1962,7 +1962,7 @@ return {
     },
     Olm = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(1, 0.69803923368454, 0.69803923368454,
+        SparkleColor = Color3.new(1, 0.69803923368454, 0.69803923368454),
         Description = "The Olm is an aquatic salamander which is an exclusively cave-dwelling species. The olm is mostly found in dark and moist areas of freshwater. They are most notable for their adaptations to a life of darkness with-in their caves. The Olm has severely under underdeveloped eyes, leaving it blind. This blindness gives them an acute sense of smell and hearing.",
         FavouriteBait = "Flakes",
         Chance = 2,
@@ -2008,7 +2008,7 @@ return {
             45
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.80392158031464, 0.011764706112444,
+        SparkleColor = Color3.new(1, 0.80392158031464, 0.011764706112444),
         Quips = {
             "Now, where's the cymbol?",
             "A Golden Bass??",
@@ -2040,7 +2040,7 @@ return {
             12
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.77254903316498, 0.59607845544815, 0.3137255012989,
+        SparkleColor = Color3.new(0.77254903316498, 0.59607845544815, 0.3137255012989),
         Quips = {
             "Ermm..?",
             "Why only one..?",
@@ -2072,7 +2072,7 @@ return {
             45
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.91372549533844, 0.88627451658249,
+        SparkleColor = Color3.new(1, 0.91372549533844, 0.88627451658249),
         Quips = {
             "Is it a snake?",
             "An Eel!",
@@ -2103,7 +2103,7 @@ return {
             10
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.20784313976765, 0.2352941185236, 0.3098039329052,
+        SparkleColor = Color3.new(0.20784313976765, 0.2352941185236, 0.3098039329052),
         Quips = {
             "I caught a Spiderfish!",
             "Ouu! A Spiderfish!",
@@ -2131,7 +2131,7 @@ return {
             2200
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.49019607901573, 0.82352942228317, 1,
+        SparkleColor = Color3.new(0.49019607901573, 0.82352942228317, 1),
         Quips = {
             "A Bluefin Tuna!",
             "I caught a Bluefin Tuna!",
@@ -2152,7 +2152,7 @@ return {
     },
     Eyefestation = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.32156863808632, 1, 0.53725492954254,
+        SparkleColor = Color3.new(0.32156863808632, 1, 0.53725492954254),
         Description = "The Eyefestation is an evolved breed of Bull Sharks. They possess a large amount of bright green eyes all over their face for spotting prey in the Brine Pool to feed on. The Eyefestation inhibits aggressive behaviour towards other creatures, but this is likely a territorial response. If something happens to gaze into one of the Eyefestation's many eyes, they will be put in a dazed state where they become a vulnerable target.",
         FavouriteBait = "Fish Head",
         Chance = 0.05,
@@ -2193,7 +2193,7 @@ return {
             400
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "Ou! A Chinook Salmon!",
             "A King Salmon!",
@@ -2223,7 +2223,7 @@ return {
             6000
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.63137257099152, 0.78039216995239, 1,
+        SparkleColor = Color3.new(0.63137257099152, 0.78039216995239, 1),
         Quips = {
             "A Sawfish!",
             "Chainsawfish!",
@@ -2243,7 +2243,7 @@ return {
     },
     ["Barreleye Fish"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.35686275362968, 0.49411764740944, 0.40784314274788,
+        SparkleColor = Color3.new(0.35686275362968, 0.49411764740944, 0.40784314274788),
         Description = "A transparent fish with a dome-shaped head and large, upward-facing eyes, adapted for deep waters with it's 3 eyes. The third eye has a similar effect that night-vision goggles have, giving it full 20/20 vision, even in the darkest of waters.",
         FavouriteBait = "Deep Coral",
         Chance = 0.01,
@@ -2270,7 +2270,7 @@ return {
         Resilience = 20
     },
     ["Carbon Crate"] = {
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Description = "A large military grade crate, lost from some sort of commercial fishing boat. The date of it's disappearance is unknown. Therefore, finders keepers?- Opening it might give you an array of fish, bait, and money!",
         FavouriteBait = "Magnet",
         Chance = 2,
@@ -2333,7 +2333,7 @@ return {
     },
     Nautilus = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.79607844352722, 0.68235296010971, 0.54509806632996,
+        SparkleColor = Color3.new(0.79607844352722, 0.68235296010971, 0.54509806632996),
         Description = "An ancient, spiral-shelled mollusc with a glowing & graceful body, tentacle-filled movements. The Nautilus is an elusive octopus that creates a thick, spiral-shaped shell around its body for protection.",
         FavouriteBait = "None",
         Chance = 0.2,
@@ -2372,7 +2372,7 @@ return {
             40
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.44313725829124, 0.73725491762161, 0.37647059559822,
+        SparkleColor = Color3.new(0.44313725829124, 0.73725491762161, 0.37647059559822),
         Quips = {
             "Woah! A Walleye!",
             "I caught a Walleye!",
@@ -2402,7 +2402,7 @@ return {
             40
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.81176471710205, 0.81176471710205, 0.81176471710205,
+        SparkleColor = Color3.new(0.81176471710205, 0.81176471710205, 0.81176471710205),
         Quips = {
             "A Mackerel!",
             "I caught a Mackerel!",
@@ -2434,7 +2434,7 @@ return {
             80
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
-        SparkleColor = Color3.new(0.49019607901573, 0.49411764740944, 0.48235294222832,
+        SparkleColor = Color3.new(0.49019607901573, 0.49411764740944, 0.48235294222832),
         Quips = {
             "Woah, that's almost transparent, what is it??"
         },
@@ -2451,7 +2451,7 @@ return {
     },
     ["Nessie's Spine"] = {
         FavouriteTime = "None",
-        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832,
+        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832),
         Description = "A mythical vertebra said to belong to the Nessie.",
         FavouriteBait = "None",
         Chance = 3,
@@ -2478,7 +2478,7 @@ return {
         Resilience = 100
     },
     Isonade = {
-        SparkleColor = Color3.new(0.1843137294054, 0.11372549086809, 0.41568627953529,
+        SparkleColor = Color3.new(0.1843137294054, 0.11372549086809, 0.41568627953529),
         Description = "The Isonade is a sinister creature that is assumed extinct. They are seeming to be a dream that is possible to be caught and captured. They only circle near Strange Whirlpools, can they even sometimes can be the cause for one.",
         FavouriteBait = "Truffle Worm",
         Chance = 0.1,
@@ -2519,7 +2519,7 @@ return {
             150
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.27450981736183, 0.55294120311737, 1,
+        SparkleColor = Color3.new(0.27450981736183, 0.55294120311737, 1),
         Quips = {
             "Is it a snake?",
             "A Ribbon Eel!",
@@ -2549,7 +2549,7 @@ return {
             5
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.61568629741669, 1, 0.37647059559822,
+        SparkleColor = Color3.new(0.61568629741669, 1, 0.37647059559822),
         Quips = {
             "A Sweetfish!",
             "Is there a sour one?",
@@ -2579,7 +2579,7 @@ return {
             17
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.49803921580315, 1, 0.34509804844856,
+        SparkleColor = Color3.new(0.49803921580315, 1, 0.34509804844856),
         Quips = {
             "A Smallmouth Bass!",
             "I caught a Smallmouth Bass!",
@@ -2608,7 +2608,7 @@ return {
             6
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.63137257099152, 0.63137257099152, 0.63137257099152,
+        SparkleColor = Color3.new(0.63137257099152, 0.63137257099152, 0.63137257099152),
         Quips = {
             "Ouu a Minnow!",
             "Woah, a Minnow!",
@@ -2629,7 +2629,7 @@ return {
     },
     Voltfish = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(1, 0.60392159223557, 0.27843138575554,
+        SparkleColor = Color3.new(1, 0.60392159223557, 0.27843138575554),
         Description = "The Voltfish is a lightning-fast relative of the Mythic Fish. They swim solo near the surface of the waters surrounding Sunstone, and make sporadic movements when hooked.",
         FavouriteBait = "Super Flakes",
         Chance = 0.01,
@@ -2660,7 +2660,7 @@ return {
     },
     ["Crown Bass"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.79607844352722, 0.63921570777893, 0.27450981736183,
+        SparkleColor = Color3.new(0.79607844352722, 0.63921570777893, 0.27450981736183),
         Description = "The Crown Bass is a special type of bass that is known for its vibrant colours, and its luminescent 'crown' on its head. They use this crown to attract prey, and see easily at night. They can be found all over the world in all sorts of salt waters, especially warmer waters during the night.",
         FavouriteBait = "Squid",
         Chance = 0.2,
@@ -2702,7 +2702,7 @@ return {
             60
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.74117648601532, 0.49019607901573, 0.37254902720451,
+        SparkleColor = Color3.new(0.74117648601532, 0.49019607901573, 0.37254902720451),
         Quips = {
             "A Mudfish!",
             "Ouu, A Mudfish!",
@@ -2731,7 +2731,7 @@ return {
             50
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832,
+        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832),
         Quips = {
             "Woah a bone!"
         },
@@ -2748,7 +2748,7 @@ return {
     },
     Sunfish = {
         FavouriteTime = "Day",
-        SparkleColor = Color3.new(1, 0.90980392694473, 0.38823530077934,
+        SparkleColor = Color3.new(1, 0.90980392694473, 0.38823530077934),
         Description = "Sunfish are the heaviest bony fish species alive today. Common sunfish can weigh up to one metric tonne but on rare instances they can way two metric tonnes! The largest appeal of the ocean Sunfish is the unusual shape of it's body and it's astonishing weight. Sunfish have the name for their love of basking in the sun by floating to the surface of the water.",
         FavouriteBait = "None",
         Chance = 1,
@@ -2794,7 +2794,7 @@ return {
             15
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.32156863808632, 0.32156863808632,
+        SparkleColor = Color3.new(1, 0.32156863808632, 0.32156863808632),
         Quips = {
             "Ouu a Red Tang!",
             "Woah, a Red Tang!",
@@ -2826,7 +2826,7 @@ return {
             40
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.34901961684227, 0.34901961684227,
+        SparkleColor = Color3.new(1, 0.34901961684227, 0.34901961684227),
         Quips = {
             "A Longtail Bass!",
             "I caught a Longtail Bass!"
@@ -2855,7 +2855,7 @@ return {
             15
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.40392157435417, 0.40392157435417,
+        SparkleColor = Color3.new(1, 0.40392157435417, 0.40392157435417),
         Quips = {
             "A Cookiecutter Shark!",
             "Woah, a Cookiecutter!",
@@ -2877,7 +2877,7 @@ return {
     },
     Alligator = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.60000002384186, 1, 0.45490196347237,
+        SparkleColor = Color3.new(0.60000002384186, 1, 0.45490196347237),
         Description = "The Alligator is a massive, fearsome reptile known for its powerful bite and armoured body. Found in Mushgrove Swamp, Alligators are the apex predator with a stealthy and ambush-based hunting style.",
         FavouriteBait = "Fish Head",
         Chance = 0.9,
@@ -2918,7 +2918,7 @@ return {
             60
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832,
+        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832),
         Quips = {
             "Woah a bone!"
         },
@@ -2935,7 +2935,7 @@ return {
     },
     ["Mutated Shark"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.40000000596046, 0.49411764740944, 0.22352941334248,
+        SparkleColor = Color3.new(0.40000000596046, 0.49411764740944, 0.22352941334248),
         Description = "A massive, mutated shark with glowing scars, extra fins, and an unsettling, aggressive nature. While it's named suggests it being a shark, it is actually more related to alligators. Using it's sleek body and its strong legs to pounce on unsuspecting prey.",
         FavouriteBait = "Fish Head",
         Chance = 0.05,
@@ -2973,7 +2973,7 @@ return {
             3
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.84705883264542, 0.98431372642517, 1,
+        SparkleColor = Color3.new(0.84705883264542, 0.98431372642517, 1),
         Quips = {
             "I can barely see it!",
             "A Gudgeon.!",
@@ -3002,7 +3002,7 @@ return {
             300
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 0.098039217293262, 0.44313725829124,
+        SparkleColor = Color3.new(1, 0.098039217293262, 0.44313725829124),
         Quips = {
             "Yooo, that's a Shipwreck Barracuda!"
         },
@@ -3029,7 +3029,7 @@ return {
             90
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
-        SparkleColor = Color3.new(0.2549019753933, 0.3647058904171, 0.25098040699959,
+        SparkleColor = Color3.new(0.2549019753933, 0.3647058904171, 0.25098040699959),
         Quips = {
             "That's a large frilled shark!"
         },
@@ -3057,7 +3057,7 @@ return {
             450
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.29803922772408, 0.49411764740944, 0.17254902422428,
+        SparkleColor = Color3.new(0.29803922772408, 0.49411764740944, 0.17254902422428),
         Quips = {
             "Wow, that's a Goblin Shark?"
         },
@@ -3084,7 +3084,7 @@ return {
             9
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.2352941185236, 0.24705882370472, 1,
+        SparkleColor = Color3.new(0.2352941185236, 0.24705882370472, 1),
         Quips = {
             "Woah, a Bluefish!",
             "A Bluefish!",
@@ -3113,7 +3113,7 @@ return {
             14
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.55686277151108, 0.72549021244049, 0.30588236451149,
+        SparkleColor = Color3.new(0.55686277151108, 0.72549021244049, 0.30588236451149),
         Quips = {
             "A Swamp Scallop!",
             "Woah! A Swamp Scallop",
@@ -3134,7 +3134,7 @@ return {
     },
     Ringle = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.34117648005486, 0.87843137979507, 1,
+        SparkleColor = Color3.new(0.34117648005486, 0.87843137979507, 1),
         Description = "The Ringle is an interesting and elusive fish that swims at extremely low and cold depths. They have a Rhino-like horn that they use to attack their prey. Most commonly found in the open ocean of Snowcap Island.",
         FavouriteBait = "Bagel",
         Chance = 0.01,
@@ -3177,7 +3177,7 @@ return {
             30
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.68627452850342, 0.45882353186607,
+        SparkleColor = Color3.new(1, 0.68627452850342, 0.45882353186607),
         Quips = {
             "A CATFISH!",
             "A Whiptail Catfish!",
@@ -3207,7 +3207,7 @@ return {
             800
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.90980392694473, 0.90980392694473, 0.90980392694473,
+        SparkleColor = Color3.new(0.90980392694473, 0.90980392694473, 0.90980392694473),
         Quips = {
             "A Sturgeon!",
             "I AMM.. I AMM A STURGEON!!",
@@ -3238,7 +3238,7 @@ return {
             35
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.3647058904171, 0.54901963472366, 0.42745098471642,
+        SparkleColor = Color3.new(0.3647058904171, 0.54901963472366, 0.42745098471642),
         Quips = {
             "A Glacier Pike!",
             "I caught a Glacier Pike!",
@@ -3270,7 +3270,7 @@ return {
             90
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.49411764740944, 0.40392157435417, 1,
+        SparkleColor = Color3.new(0.49411764740944, 0.40392157435417, 1),
         Quips = {
             "A Horseshoe Crab!",
             "Woah! A Horseshoe Crab",
@@ -3301,7 +3301,7 @@ return {
             5
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.76470589637756, 0.52941179275513,
+        SparkleColor = Color3.new(1, 0.76470589637756, 0.52941179275513),
         Quips = {
             "A Scallop!",
             "Woah! A Scallop",
@@ -3333,7 +3333,7 @@ return {
             1500
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 0.59607845544815, 0.59607845544815,
+        SparkleColor = Color3.new(1, 0.59607845544815, 0.59607845544815),
         Quips = {
             "A Nurse Shark!",
             "Woah! A Nurse Shark!",
@@ -3361,7 +3361,7 @@ return {
             160
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.63529413938522, 0.68235296010971, 1,
+        SparkleColor = Color3.new(0.63529413938522, 0.68235296010971, 1),
         Quips = {
             "I caught a Tuna!",
             "A Skipjack Tuna!",
@@ -3391,7 +3391,7 @@ return {
             40
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
-        SparkleColor = Color3.new(0.28627452254295, 0.29019609093666, 0.49411764740944,
+        SparkleColor = Color3.new(0.28627452254295, 0.29019609093666, 0.49411764740944),
         Quips = {
             "Oh, a Deep sea Dragonfish!"
         },
@@ -3418,7 +3418,7 @@ return {
             8
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.16078431904316, 0.58823531866074, 0.6745098233223,
+        SparkleColor = Color3.new(0.16078431904316, 0.58823531866074, 0.6745098233223),
         Quips = {
             "What is that glowing fish..."
         },
@@ -3445,7 +3445,7 @@ return {
             20
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.44313725829124, 0.44313725829124, 0.44313725829124,
+        SparkleColor = Color3.new(0.44313725829124, 0.44313725829124, 0.44313725829124),
         Quips = {
             "A Blackfish!",
             "I caught a Blackfish!",
@@ -3463,7 +3463,7 @@ return {
         Resilience = 60
     },
     Wiifish = {
-        SparkleColor = Color3.new(1, 0.53333336114883, 0.20000000298023,
+        SparkleColor = Color3.new(1, 0.53333336114883, 0.20000000298023),
         Description = "The Wiifish is a legendary tropic fish that can only be found in the saltwater\226\128\153s Sunstone Island during the day. They are an extremely old fish, dating back over 230,000,000 years ago. While the Wiifish is a slow swimmer, they can put up an immense fight for even advanced anglers.",
         FavouriteBait = "None",
         Chance = 1,
@@ -3504,7 +3504,7 @@ return {
             60
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 0.32549020648003, 0.32549020648003,
+        SparkleColor = Color3.new(1, 0.32549020648003, 0.32549020648003),
         Quips = {
             "A Char!",
             "I caught an Arctic Char!",
@@ -3534,7 +3534,7 @@ return {
             2000
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.81176471710205, 0.50588238239288, 0.3647058904171,
+        SparkleColor = Color3.new(0.81176471710205, 0.50588238239288, 0.3647058904171),
         Quips = {
             "A Halibut!",
             "A Flatfish!",
@@ -3565,7 +3565,7 @@ return {
             27
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 1, 0.75686275959015,
+        SparkleColor = Color3.new(1, 1, 0.75686275959015),
         Quips = {
             "A Bream!",
             "Bream!",
@@ -3597,7 +3597,7 @@ return {
             100
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.29803922772408, 0.29803922772408, 0.29803922772408,
+        SparkleColor = Color3.new(0.29803922772408, 0.29803922772408, 0.29803922772408),
         Quips = {
             "Woah, a Coelacanth!",
             "I caught a Coelacanth!",
@@ -3628,7 +3628,7 @@ return {
             40
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.8901960849762, 0.8901960849762, 0.8901960849762,
+        SparkleColor = Color3.new(0.8901960849762, 0.8901960849762, 0.8901960849762),
         Quips = {
             "I caught a Haddock!",
             "Woah, a Haddock!!"
@@ -3655,7 +3655,7 @@ return {
             600
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.50196081399918, 0.44313725829124, 0.678431391716,
+        SparkleColor = Color3.new(0.50196081399918, 0.44313725829124, 0.678431391716),
         Quips = {
             "I caught a Slate Tuna!",
             "Ouu! A Slate Tuna!",
@@ -3688,7 +3688,7 @@ return {
             6
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.58431375026703, 1, 0.73725491762161,
+        SparkleColor = Color3.new(0.58431375026703, 1, 0.73725491762161),
         Quips = {
             "A Bluegill!",
             "But I pinked the Red Pill!",
@@ -3717,7 +3717,7 @@ return {
             60
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.67058825492859, 1, 0.96078431606293,
+        SparkleColor = Color3.new(0.67058825492859, 1, 0.96078431606293),
         Quips = {
             "Ermm..?",
             "Uhmm..?",
@@ -3750,7 +3750,7 @@ return {
             25
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.678431391716, 0.40000000596046,
+        SparkleColor = Color3.new(1, 0.678431391716, 0.40000000596046),
         Quips = {
             "A Squid!",
             "A cute Squid!",
@@ -3769,7 +3769,7 @@ return {
     },
     ["Obsidian Salmon"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.40000000596046, 0, 1,
+        SparkleColor = Color3.new(0.40000000596046, 0, 1),
         Description = "The Obsidian Salmon is an extremely rare breed of Sockeye Salmon. The Obsidian Salmon breeds extremely deep in the heart of Roslit Volcano. They are extremely strong and are twice as dense as a common Sockeye Salmon.",
         FavouriteBait = "Coal",
         Chance = 3,
@@ -3811,7 +3811,7 @@ return {
             12
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.46666666865349, 0.63921570777893, 0.30196079611778,
+        SparkleColor = Color3.new(0.46666666865349, 0.63921570777893, 0.30196079611778),
         Quips = {
             "A Perch!",
             "I caught a Perch!",
@@ -3841,7 +3841,7 @@ return {
             60
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
-        SparkleColor = Color3.new(0.49019607901573, 0.49411764740944, 0.48235294222832,
+        SparkleColor = Color3.new(0.49019607901573, 0.49411764740944, 0.48235294222832),
         Quips = {
             "Woah! The Three Eyed Fish!"
         },
@@ -3858,7 +3858,7 @@ return {
     },
     ["Ancient Depth Serpent"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.10980392247438, 1, 0.39215686917305,
+        SparkleColor = Color3.new(0.10980392247438, 1, 0.39215686917305),
         Description = "A colossal, serpent-like creature with armored scales and glowing eyes, lurking in the abyss. The Ancient Depth Serpent is only active when The Depths go completely dark... No one knows where it goes in the meantime, possibly lurking in a secret cave?",
         FavouriteBait = "Truffle Worm",
         Chance = 0.01,
@@ -3895,7 +3895,7 @@ return {
             75
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "Oh.. a Log!",
             "A.. Log?",
@@ -3926,7 +3926,7 @@ return {
             25
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "A White Bass!",
             "I caught a White Bass!",
@@ -3945,7 +3945,7 @@ return {
         Resilience = 70
     },
     ["Great White Shark"] = {
-        SparkleColor = Color3.new(0.3647058904171, 0.48235294222832, 1,
+        SparkleColor = Color3.new(0.3647058904171, 0.48235294222832, 1),
         Description = "Great White Sharks are apex predators and will put up an intense fight when hooked. Their presence is often a sign of rich, diverse marine life in the area. Rare and challenging, they offer one of the biggest rewards for those skilled enough to catch them.",
         FavouriteBait = "Fish Head",
         Chance = 2,
@@ -3976,7 +3976,7 @@ return {
         Resilience = 8
     },
     ["Volcanic Geode"] = {
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Description = "The Volcanic Geode encases a magma crystal core, preserving its contents with an amber-like quality. Within this geode, you might find a trove of rare or extinct treasures\226\128\148 it's like a volcanic Christmas!",
         FavouriteBait = "Magnet",
         Chance = 17,
@@ -4060,7 +4060,7 @@ return {
             5
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.64705884456635, 1, 0.97254902124405,
+        SparkleColor = Color3.new(0.64705884456635, 1, 0.97254902124405),
         Quips = {
             "A Prawn!",
             "Woah! A Prawn",
@@ -4090,7 +4090,7 @@ return {
             210
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.23137255012989, 0.23137255012989, 0.23137255012989,
+        SparkleColor = Color3.new(0.23137255012989, 0.23137255012989, 0.23137255012989),
         Quips = {
             "Ermm..?",
             "Uhmm..?",
@@ -4122,7 +4122,7 @@ return {
             1000
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.bigbasic,
-        SparkleColor = Color3.new(0.27450981736183, 0.29803922772408, 0.49411764740944,
+        SparkleColor = Color3.new(0.27450981736183, 0.29803922772408, 0.49411764740944),
         Quips = {
             "WOAH! A SHORTFINNED MAKO!",
             "OMG, IS THAT A SHORTFIN MAKO?"
@@ -4140,7 +4140,7 @@ return {
     },
     ["Manta Ray"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.34117648005486, 0.46274510025978, 1,
+        SparkleColor = Color3.new(0.34117648005486, 0.46274510025978, 1),
         Description = "Manta Rays are very elegant and remarkably large creatures that coast alongside the coral reefs of Roslit Bay. They move their wing-like fins in a wavy motion to generate enough speed to guide through the ocean. Manta Rays typically feed on small fish during the night.",
         FavouriteBait = "Shrimp",
         Chance = 0.01,
@@ -4170,7 +4170,7 @@ return {
         Resilience = 10
     },
     ["Dumbo Octopus"] = {
-        SparkleColor = Color3.new(1, 0.55686277151108, 0.35294118523598,
+        SparkleColor = Color3.new(1, 0.55686277151108, 0.35294118523598),
         Description = "The Dumbo Octopus is a deep-sea dweller, named for its ear like fins that resemble the ears of Disney's famous elephant character. With a soft, gelatinous body and gentle movements, it glides through the oceans and coral reefs of Roslit Bay.",
         FavouriteBait = "Worm",
         Chance = 0.1,
@@ -4200,7 +4200,7 @@ return {
     },
     Dolphin = {
         FavouriteTime = "Day",
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Description = "The Dolphin is a playful, intelligent marine mammal known for its sleek body, curved dorsal fin, and high intelligence. Dolphins are fast swimmers, known for jumping out of the water in graceful arcs and interacting with boats and swimmers. Found in the ocean.",
         FavouriteBait = "None",
         Chance = 0.8,
@@ -4241,7 +4241,7 @@ return {
             15
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.73333334922791, 0.73333334922791,
+        SparkleColor = Color3.new(1, 0.73333334922791, 0.73333334922791),
         Quips = {
             "Ouu a Pale Tang!",
             "Woah, a Pale Tang!",
@@ -4262,7 +4262,7 @@ return {
         Resilience = 35
     },
     ["Bait Crate"] = {
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Description = "A wooden crate with fabric over top to preserve the bait inside. Seemingly lost from a fishing boat of some kind. The bait is still alive and fresh. Therefore, finders keepers?- Opening it might give you an array of common and rare baits!",
         FavouriteBait = "Magnet",
         Chance = 15,
@@ -4324,7 +4324,7 @@ return {
             250
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
-        SparkleColor = Color3.new(0.49019607901573, 0.49411764740944, 0.48235294222832,
+        SparkleColor = Color3.new(0.49019607901573, 0.49411764740944, 0.48235294222832),
         Quips = {
             "Is that a Spider.. Or a Crab??"
         },
@@ -4350,7 +4350,7 @@ return {
             2000
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.60392159223557, 0.15294118225574, 0.15294118225574,
+        SparkleColor = Color3.new(0.60392159223557, 0.15294118225574, 0.15294118225574),
         Quips = {
             "An Arapaima!",
             "I caught an Arapaima!",
@@ -4379,7 +4379,7 @@ return {
             110
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "Ermm..?",
             "A tire.?",
@@ -4409,7 +4409,7 @@ return {
             380
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.12549020349979, 0.10196078568697, 0.18823529779911,
+        SparkleColor = Color3.new(0.12549020349979, 0.10196078568697, 0.18823529779911),
         Quips = {
             "A Gar!",
             "I caught a Fangborn Gar!",
@@ -4428,7 +4428,7 @@ return {
         Resilience = 30
     },
     ["Obsidian Swordfish"] = {
-        SparkleColor = Color3.new(0.69019609689713, 0.3098039329052, 1,
+        SparkleColor = Color3.new(0.69019609689713, 0.3098039329052, 1),
         Description = "Swordfish are extremely strong and notable due to their long flattened bill that resembles a sword, as their name implies. This swordfish has adapted to it's magma filled life, and is now imbued with Obsidian skin.",
         FavouriteBait = "Minnow",
         Chance = 0.01,
@@ -4471,7 +4471,7 @@ return {
             15
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.97647058963776, 0.3137255012989,
+        SparkleColor = Color3.new(1, 0.97647058963776, 0.3137255012989),
         Quips = {
             "Ouu a Butterflyfish!",
             "Woah, a Butterflyfish!",
@@ -4502,7 +4502,7 @@ return {
             15
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.18823529779911, 0.27058824896812, 1,
+        SparkleColor = Color3.new(0.18823529779911, 0.27058824896812, 1),
         Quips = {
             "Ouu a Blue Tang!",
             "Woah, a Blue Tang!",
@@ -4534,7 +4534,7 @@ return {
             100
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.2549019753933, 0.65098041296005, 1,
+        SparkleColor = Color3.new(0.2549019753933, 0.65098041296005, 1),
         Quips = {
             "Salmoff!",
             "Woah!",
@@ -4567,7 +4567,7 @@ return {
             6
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.65490198135376, 0.16862745583057,
+        SparkleColor = Color3.new(1, 0.65490198135376, 0.16862745583057),
         Quips = {
             "Ouu a Clownfish!",
             "Woah, a Clownfish!",
@@ -4598,7 +4598,7 @@ return {
             15
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.074509806931019, 0.074509806931019,
+        SparkleColor = Color3.new(1, 0.074509806931019, 0.074509806931019),
         Quips = {
             "An Ember Perch!",
             "I caught a Perch!.. Why is it so hot?",
@@ -4629,7 +4629,7 @@ return {
             250
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0, 0.33333334326744, 0.49803921580315,
+        SparkleColor = Color3.new(0, 0.33333334326744, 0.49803921580315),
         Quips = {
             "Yooo, is that THE Cutlass Fish?!"
         },
@@ -4657,7 +4657,7 @@ return {
             30
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "I caught a Chub!",
             "Woah, a Chub!!"
@@ -4675,7 +4675,7 @@ return {
     },
     ["Whale Shark"] = {
         FavouriteTime = "Day",
-        SparkleColor = Color3.new(0.73333334922791, 0.74509805440903, 1,
+        SparkleColor = Color3.new(0.73333334922791, 0.74509805440903, 1),
         Description = "Whale Sharks are large but friendly sharks, as opposed to other sharks found in the Ocean. They are most active during the day, where they swim around in search of small organisms to eat. Despite being playful and harmless, they will still put up quite a hefty fight when hooked.",
         FavouriteBait = "Shrimp",
         Chance = 0.01,
@@ -4718,7 +4718,7 @@ return {
             35
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.3647058904171, 0.54901963472366, 0.42745098471642,
+        SparkleColor = Color3.new(0.3647058904171, 0.54901963472366, 0.42745098471642),
         Quips = {
             "A Pike!",
             "I caught a Pike!",
@@ -4740,7 +4740,7 @@ return {
         Resilience = 55
     },
     ["Pond Emperor"] = {
-        SparkleColor = Color3.new(0.53333336114883, 0.15294118225574, 1,
+        SparkleColor = Color3.new(0.53333336114883, 0.15294118225574, 1),
         Description = "Pond Emperors are highly territorial, powerful swimmers that will consume almost anything. Their striking coloration, aggressive nature, and rare appearances make them a prized and fortunate catch for anglers.",
         FavouriteBait = "Squid",
         Chance = 0.05,
@@ -4782,7 +4782,7 @@ return {
             140
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.underweight,
-        SparkleColor = Color3.new(1, 0.61960786581039, 0.28627452254295,
+        SparkleColor = Color3.new(1, 0.61960786581039, 0.28627452254295),
         Quips = {
             "Ouu a Gazerfish!",
             "Woah, a Gazerfish!",
@@ -4813,7 +4813,7 @@ return {
             10
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.4745098054409, 1, 0.3137255012989,
+        SparkleColor = Color3.new(0.4745098054409, 1, 0.3137255012989),
         Quips = {
             "A SEA PICKLE!!",
             "I CAUGHT A SEA PICKLE!",
@@ -4842,7 +4842,7 @@ return {
             3250
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.40392157435417, 0.40392157435417, 1,
+        SparkleColor = Color3.new(0.40392157435417, 0.40392157435417, 1),
         Quips = {
             "A Sea Mine?!",
             "How did this get down here?",
@@ -4873,7 +4873,7 @@ return {
             30
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.97254902124405, 1, 0.66274511814117,
+        SparkleColor = Color3.new(0.97254902124405, 1, 0.66274511814117),
         Quips = {
             "A Corgi.. I mean Porgy??",
             "Woah, a Porgy!",
@@ -4895,7 +4895,7 @@ return {
     },
     ["Great Hammerhead Shark"] = {
         FavouriteTime = "Day",
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Description = "The Great Hammerhead Shark is a large, powerful predator known for its distinct hammer-shaped head. Its unique head shape improves its ability to track prey, making it a formidable hunter in the ocean, and a prominent catch among anglers.",
         FavouriteBait = "Fish Head",
         Chance = 2,
@@ -4928,7 +4928,7 @@ return {
         Resilience = 20
     },
     ["Sockeye Salmon"] = {
-        SparkleColor = Color3.new(1, 0.62745100259781, 0.62745100259781,
+        SparkleColor = Color3.new(1, 0.62745100259781, 0.62745100259781),
         Description = "The Sockeye Salmon are a very common type of salmon found near Moosewood, known for their vibrant red and green colours and interesting habits when laying eggs. They are very common during colder seasons such as Autumn, as that is the time most Sockeye Salmon lay their eggs.",
         FavouriteBait = "Bagel",
         Chance = 90,
@@ -4973,7 +4973,7 @@ return {
             150
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "A Catfish!",
             "Meowwww!",
@@ -5005,7 +5005,7 @@ return {
             30
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.61960786581039, 0.28627452254295,
+        SparkleColor = Color3.new(1, 0.61960786581039, 0.28627452254295),
         Quips = {
             "Ouu a Blue Tang!",
             "Woah, a Blue Tang!",
@@ -5038,7 +5038,7 @@ return {
             15
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.11372549086809, 0.11372549086809,
+        SparkleColor = Color3.new(1, 0.11372549086809, 0.11372549086809),
         Quips = {
             "A Redeyed Bass!",
             "I caught a Redeye Bass!",
@@ -5067,7 +5067,7 @@ return {
             50
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 0.7294117808342, 0.49019607901573,
+        SparkleColor = Color3.new(1, 0.7294117808342, 0.49019607901573),
         Quips = {
             "Is it magic?",
             "Woah, a Carp!",
@@ -5102,7 +5102,7 @@ return {
             170
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.61960786581039, 0.50196081399918, 1,
+        SparkleColor = Color3.new(0.61960786581039, 0.50196081399918, 1),
         Quips = {
             "A Suckermouth Catfish!",
             "I caught a Catfish!",
@@ -5121,7 +5121,7 @@ return {
     },
     ["Spined Fin"] = {
         FavouriteTime = "None",
-        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832,
+        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832),
         Description = "A jagged, bony fin from a formidable fish, crafted by nature for defense.",
         FavouriteBait = "None",
         Chance = 1,
@@ -5158,7 +5158,7 @@ return {
             70
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 0.91372549533844, 0.49019607901573,
+        SparkleColor = Color3.new(1, 0.91372549533844, 0.49019607901573),
         Quips = {
             "I caught a Snook!",
             "It's a Snook!",
@@ -5187,7 +5187,7 @@ return {
             45,
             120
         },
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "A Ghoulfish!",
             "I caught a Ghoulfish!",
@@ -5219,7 +5219,7 @@ return {
             4
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.49411764740944, 0.49411764740944, 0.49411764740944,
+        SparkleColor = Color3.new(0.49411764740944, 0.49411764740944, 0.49411764740944),
         Quips = {
             "Ouu a Glassfish!",
             "Woah, a Glassfish!",
@@ -5248,7 +5248,7 @@ return {
             35
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.bigbasic,
-        SparkleColor = Color3.new(0.38823530077934, 0.38039216399193, 0.49411764740944,
+        SparkleColor = Color3.new(0.38823530077934, 0.38039216399193, 0.49411764740944),
         Quips = {
             "Ooh, a Deep Sea Hatchetfish!"
         },
@@ -5264,7 +5264,7 @@ return {
         Resilience = 90
     },
     Sailfish = {
-        SparkleColor = Color3.new(1, 0.94901961088181, 0.36862745881081,
+        SparkleColor = Color3.new(1, 0.94901961088181, 0.36862745881081),
         Description = "Sailfish are known for their incredible speed, long bill, and their striking sail-like dorsal fin. It's sleek body is built for fast swimming, allowing it to dart through water in bursts of speed. They are found in tropical and warmer ocean waters.",
         FavouriteBait = "Minnow",
         Chance = 16,
@@ -5306,7 +5306,7 @@ return {
             55
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.33725491166115, 0.26666668057442, 0.22352941334248,
+        SparkleColor = Color3.new(0.33725491166115, 0.26666668057442, 0.22352941334248),
         Quips = {
             "A Flounder!",
             "A Flatfish!",
@@ -5324,7 +5324,7 @@ return {
         Resilience = 80
     },
     Swordfish = {
-        SparkleColor = Color3.new(0.3647058904171, 0.50196081399918, 1,
+        SparkleColor = Color3.new(0.3647058904171, 0.50196081399918, 1),
         Description = "Swordfish are extremely strong and notable due to their long flattened bill that resembles a sword, as their name implies. They are a great catch, and anglers around the globe are impressed by a Swordfish catch.",
         FavouriteBait = "Squid",
         Chance = 15,
@@ -5365,7 +5365,7 @@ return {
             20
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(1, 0.8901960849762, 0.058823529630899,
+        SparkleColor = Color3.new(1, 0.8901960849762, 0.058823529630899),
         Quips = {
             "Woah! a Blowfish!",
             "A Pufferfish!",
@@ -5386,7 +5386,7 @@ return {
     },
     ["Sea Snake"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.49411764740944, 0.20784313976765, 0.40784314274788,
+        SparkleColor = Color3.new(0.49411764740944, 0.20784313976765, 0.40784314274788),
         Description = "A long, venomous sea snake with smooth, scaly skin and a graceful, undulating movement.",
         FavouriteBait = "Fish Head",
         Chance = 0.01,
@@ -5425,7 +5425,7 @@ return {
             20
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.71372550725937, 0.098039217293262, 0.098039217293262,
+        SparkleColor = Color3.new(0.71372550725937, 0.098039217293262, 0.098039217293262),
         Quips = {
             "Woah, an Anglerfish!",
             "No way! An anglerfish!",
@@ -5453,7 +5453,7 @@ return {
             9
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.13333334028721, 0.12549020349979, 0.16470588743687,
+        SparkleColor = Color3.new(0.13333334028721, 0.12549020349979, 0.16470588743687),
         Quips = {
             "A Sea Urchin!",
             "I caught a Sea Urchin!",
@@ -5483,7 +5483,7 @@ return {
             300
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.70588237047195, 0.34117648005486, 0.19607843458652,
+        SparkleColor = Color3.new(0.70588237047195, 0.34117648005486, 0.19607843458652),
         Quips = {
             "I caught a Stingray!",
             "Woah.. a Stingray!",
@@ -5502,7 +5502,7 @@ return {
     },
     ["Cursed Eel"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.2392156869173, 0.46666666865349, 1,
+        SparkleColor = Color3.new(0.2392156869173, 0.46666666865349, 1),
         Description = "Cursed Eels linger in darker waters, giving off an eerie glow. They\226\128\153re a spooky find for night anglers.",
         FavouriteBait = "Coal",
         Chance = 25,
@@ -5540,7 +5540,7 @@ return {
             9
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.underweight,
-        SparkleColor = Color3.new(1, 0, 0,
+        SparkleColor = Color3.new(1, 0, 0),
         Quips = {
             "Ermm..?",
             "Hmm..?"
@@ -5569,7 +5569,7 @@ return {
             11
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "A Herring!",
             "I caught a Herring!",
@@ -5600,7 +5600,7 @@ return {
             20
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "A Grayling!",
             "I caught a Grayling!",
@@ -5629,7 +5629,7 @@ return {
             14
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.81960785388947, 0.35294118523598, 0.35294118523598,
+        SparkleColor = Color3.new(0.81960785388947, 0.35294118523598, 0.35294118523598),
         Quips = {
             "A Crusty Crab!",
             "Woah! A Crab",
@@ -5660,7 +5660,7 @@ return {
             3
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "I caught an Anchovy..",
             "An Anchovy!",
@@ -5689,7 +5689,7 @@ return {
             110
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.45882353186607, 0.55294120311737, 0.4745098054409,
+        SparkleColor = Color3.new(0.45882353186607, 0.55294120311737, 0.4745098054409),
         Quips = {
             "Woah, a Barracuda!",
             "I caught a Barracuda!",
@@ -5720,7 +5720,7 @@ return {
             2
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.419607847929, 0.37647059559822,
+        SparkleColor = Color3.new(1, 0.419607847929, 0.37647059559822),
         Quips = {
             "A Shrimp!",
             "Woah! A Shrimp",
@@ -5751,7 +5751,7 @@ return {
             8
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.95294117927551, 1, 0.054901961237192,
+        SparkleColor = Color3.new(0.95294117927551, 1, 0.054901961237192),
         Quips = {
             "IS THAT A GOLDEN SEAHORSE?!"
         },
@@ -5768,7 +5768,7 @@ return {
     },
     ["Mythic Fish"] = {
         FavouriteTime = "Day",
-        SparkleColor = Color3.new(1, 0.78039216995239, 0.12549020349979,
+        SparkleColor = Color3.new(1, 0.78039216995239, 0.12549020349979),
         Description = "The Mythic Fish is an extremely rare and beautiful fish. They swim gracefully in couples of two near the surface of the ocean water. They seem weak, but they can oddly put up a strong fight when being caught. This is due to the other Mythic Fish attempting to aid it's partner by pulling it off the hook.",
         FavouriteBait = "Flakes",
         Chance = 0.01,
@@ -5799,7 +5799,7 @@ return {
     },
     ["Spectral Serpent"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.35294118523598, 1, 0.53725492954254,
+        SparkleColor = Color3.new(0.35294118523598, 1, 0.53725492954254),
         Description = "The Spectral Serpent is an aggressive and ginormous sea serpent species located in the Brine Pool of the Desolate Deep. They possess a translucent exo-membrane covering the inside of their body, as well as 4 bioluminescent eyes. They tend to lurk deeper within the Brine Pool, where they feed on microorganisms. Despite their specific diet, they have many sharp teeth and mandibles along with their hammerhead-shaped skull, which they can use to easily fend off invasive threats. When hooked, they put up an intense fight for even the most experienced anglers.",
         FavouriteBait = "Truffle Worm",
         Chance = 0.02,
@@ -5842,7 +5842,7 @@ return {
             3
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.72549021244049, 0.72549021244049, 0.72549021244049,
+        SparkleColor = Color3.new(0.72549021244049, 0.72549021244049, 0.72549021244049),
         Quips = {
             "I caught a Sardine!",
             "Ouu! A Sardine!",
@@ -5871,7 +5871,7 @@ return {
             400
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.85882353782654, 0.85882353782654, 1,
+        SparkleColor = Color3.new(0.85882353782654, 0.85882353782654, 1),
         Quips = {
             "A Lapisjack!",
             "I caught an Lapisjack!",
@@ -5891,7 +5891,7 @@ return {
         Resilience = 20
     },
     Handfish = {
-        SparkleColor = Color3.new(1, 0.91764706373215, 0.70980393886566,
+        SparkleColor = Color3.new(1, 0.91764706373215, 0.70980393886566),
         Description = "The Handfish is a unique, small, and critically rare species with pectoral fins that resemble hands, which it uses to 'walk' along the ocean floor rather than swim. They can only be found stomping on the floors of Mushgrove Swamp",
         FavouriteBait = "Insect",
         Chance = 0.01,
@@ -5933,7 +5933,7 @@ return {
             20
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.71764707565308, 0.97647058963776, 1,
+        SparkleColor = Color3.new(0.71764707565308, 0.97647058963776, 1),
         Quips = {
             "The hairstyle??",
             "Woah, a Mullet!",
@@ -5964,7 +5964,7 @@ return {
             70
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "Is it grey magic?",
             "Woah, a Grey Carp!",
@@ -5986,7 +5986,7 @@ return {
         Resilience = 60
     },
     ["Whisker Bill"] = {
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Description = "The Whisker Bill is a mythical creature that was a popular staple of Moosewood Island before they were thought to be extinct. Whisker Bills are extremely strong, however are awkward swimmers due to their peculiar archetype.",
         FavouriteBait = "Truffle Worm",
         Chance = 0.01,
@@ -6027,7 +6027,7 @@ return {
             35
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.76078432798386, 1, 0.50588238239288,
+        SparkleColor = Color3.new(0.76078432798386, 1, 0.50588238239288),
         Quips = {
             "A Burbot!",
             "I caught a Burbot!",
@@ -6056,7 +6056,7 @@ return {
             30
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832,
+        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832),
         Quips = {
             "Woah a bone!"
         },
@@ -6073,7 +6073,7 @@ return {
     },
     ["Colossal Squid"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(1, 0.32156863808632, 0.32156863808632,
+        SparkleColor = Color3.new(1, 0.32156863808632, 0.32156863808632),
         Description = "The Colossal Squid is a massive, deep-sea creature with enormous tentacles and large appetite for anglers. Known for its incredible size and strength, it lurks in the deepest parts of the ocean, only occasionally venturing near the surface during the nights.",
         FavouriteBait = "None",
         Chance = 0.02,
@@ -6103,7 +6103,7 @@ return {
     },
     ["Reefrunner Snapper"] = {
         FavouriteTime = "Day",
-        SparkleColor = Color3.new(0.96470588445663, 0.49411764740944, 1,
+        SparkleColor = Color3.new(0.96470588445663, 0.49411764740944, 1),
         Description = "Bold yet wary, the Reefunner Snapper darts around reefs. A popular, rare catch for reef fishers.",
         FavouriteBait = "Insect",
         Chance = 35,
@@ -6130,7 +6130,7 @@ return {
         Resilience = 25
     },
     ["Fish Barrel"] = {
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Description = "A large wooden barrel with iron hoops. The barrel filled with a large array of ocean and freshwater fish that all seem pretty fresh. Therefore, finders keeps?- Opening it might give you an assortment of fish",
         FavouriteBait = "Magnet",
         Chance = 12,
@@ -6241,7 +6241,7 @@ return {
     },
     ["Flying Fish"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.6745098233223, 0.81960785388947, 1,
+        SparkleColor = Color3.new(0.6745098233223, 0.81960785388947, 1),
         Description = "The Flying Fish is a unique fish, renowned for their wing-like fins which give them the ability to soar above the ocean's surface. They use this ability to swiftly evade predators as well as dwelling near the surface to find small organisms to feed on.",
         FavouriteBait = "Minnow",
         Chance = 0.15,
@@ -6281,7 +6281,7 @@ return {
             200
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.77647060155869, 0.61568629741669, 1,
+        SparkleColor = Color3.new(0.77647060155869, 0.61568629741669, 1),
         Quips = {
             "I caught a Bandit Fish!",
             "It's a Bandit Fish!",
@@ -6311,7 +6311,7 @@ return {
             25
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.19215686619282, 0.19215686619282,
+        SparkleColor = Color3.new(1, 0.19215686619282, 0.19215686619282),
         Quips = {
             "A Red Drum!",
             "I caught a Red Drum!",
@@ -6331,7 +6331,7 @@ return {
         Resilience = 50
     },
     ["Coral Geode"] = {
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Description = "A geode filled with deep dark items and fish. Possibly has been untouched for years!- Like a coral reef Christmas!",
         FavouriteBait = "Magnet",
         Chance = 306,
@@ -6415,7 +6415,7 @@ return {
             400
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.85882353782654, 0.85882353782654, 1,
+        SparkleColor = Color3.new(0.85882353782654, 0.85882353782654, 1),
         Quips = {
             "An Amberjack!",
             "I caught an Amberjack!",
@@ -6446,7 +6446,7 @@ return {
             70
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 0.29019609093666, 0.29019609093666,
+        SparkleColor = Color3.new(1, 0.29019609093666, 0.29019609093666),
         Quips = {
             "A Red Snapper!",
             "Woah! I caught a Red Snapper!",
@@ -6467,7 +6467,7 @@ return {
     },
     ["Dweller Catfish"] = {
         FavouriteTime = "Day",
-        SparkleColor = Color3.new(0.38039216399193, 1, 0.72156864404678,
+        SparkleColor = Color3.new(0.38039216399193, 1, 0.72156864404678),
         Description = "The Dweller Catfish is found near the bottom of the Desolate Brine Pool. They have bright fins and dark scales throughout their whole body, which they use to camouflage from possible predators within the Brine Pool.",
         FavouriteBait = "Weird Algae",
         Chance = 600,
@@ -6498,7 +6498,7 @@ return {
     },
     Glacierfish = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.63137257099152, 0.91372549533844, 1,
+        SparkleColor = Color3.new(0.63137257099152, 0.91372549533844, 1),
         Description = "Glacierfish are cold saltwater fish with large, broad bodies and a distinctive pink fin colouration. They are an extremely rare fish and can sometimes be a difficult catch for any angler. They can be found more commonly in Snowcap Caves during the night.",
         FavouriteBait = "Truffle Worm",
         Chance = 0.02,
@@ -6539,7 +6539,7 @@ return {
             450
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "I caught a Gar!",
             "It's an Alligator Gar!",
@@ -6560,7 +6560,7 @@ return {
         Resilience = 40
     },
     ["Barbed Shark"] = {
-        SparkleColor = Color3.new(0.44705882668495, 0.22745098173618, 1,
+        SparkleColor = Color3.new(0.44705882668495, 0.22745098173618, 1),
         Description = "The Barbed Shark, a fierce apex predator within the Desolate Deep, is not a fish to be messed with. When they bite on to a hook, they put up a fierce fight, but give a great reward due to the valuable materials that make up their many scales.",
         FavouriteBait = "Fish Head",
         Chance = 0.08,
@@ -6604,7 +6604,7 @@ return {
             1360
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 0.92156863212585, 0.52941179275513,
+        SparkleColor = Color3.new(1, 0.92156863212585, 0.52941179275513),
         Quips = {
             "A Yellowfin Tuna!",
             "I caught a Yellowfin Tuna!",
@@ -6635,7 +6635,7 @@ return {
             60
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832,
+        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832),
         Quips = {
             "Woah a bone!"
         },
@@ -6662,7 +6662,7 @@ return {
             700
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0, 0.33333334326744, 0.49803921580315,
+        SparkleColor = Color3.new(0, 0.33333334326744, 0.49803921580315),
         Quips = {
             "Yooo, is that a Sailfish?!"
         },
@@ -6679,7 +6679,7 @@ return {
     },
     ["The Depths Key"] = {
         FavouriteTime = "Day",
-        SparkleColor = Color3.new(0.49411764740944, 0.047058824449778, 0.047058824449778,
+        SparkleColor = Color3.new(0.49411764740944, 0.047058824449778, 0.047058824449778),
         Description = "This is the Key that leads to the gates of The Depths...",
         FavouriteBait = "None",
         Chance = 0.01,
@@ -6707,7 +6707,7 @@ return {
         Resilience = 35
     },
     ["Rubber Ducky"] = {
-        SparkleColor = Color3.new(1, 0.91764706373215, 0.45098039507866,
+        SparkleColor = Color3.new(1, 0.91764706373215, 0.45098039507866),
         Description = "A simple, squeezable, rubber duck! It may have been lost in one of the deepest parts of our discovered world... But, it's in great condition!",
         FavouriteBait = "None",
         Chance = 0.01,
@@ -6748,7 +6748,7 @@ return {
             380
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.70588237047195, 0.14117647707462, 0.14117647707462,
+        SparkleColor = Color3.new(0.70588237047195, 0.14117647707462, 0.14117647707462),
         Quips = {
             "A Gar!",
             "I caught a Marsh Gar!",
@@ -6778,7 +6778,7 @@ return {
             50
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832,
+        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832),
         Quips = {
             "Woah a bone!"
         },
@@ -6804,7 +6804,7 @@ return {
             400
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.21960784494877, 0.20784313976765, 0.52549022436142,
+        SparkleColor = Color3.new(0.21960784494877, 0.20784313976765, 0.52549022436142),
         Quips = {
             "A Keepers Guardian!",
             "I caught a Keepers Guardian!",
@@ -6823,7 +6823,7 @@ return {
         Resilience = 25
     },
     ["Enchant Relic"] = {
-        SparkleColor = Color3.new(0.49411764740944, 1, 0.84705883264542,
+        SparkleColor = Color3.new(0.49411764740944, 1, 0.84705883264542),
         Description = "A stone filled with the blessing of a Divine Lantern Keeper.. Returning it to it's throne under the Statue of Sovereignty will result in your currently equipped rod being engulfed in its power.",
         FavouriteBait = "None",
         Chance = 0.2,
@@ -6854,7 +6854,7 @@ return {
         Resilience = 35
     },
     ["Quality Bait Crate"] = {
-        SparkleColor = Color3.new(1, 1, 1,
+        SparkleColor = Color3.new(1, 1, 1),
         Description = "A metal bait box with a rubber seal to protect the bait inside. Seemingly lost from a fishing boat of some kind. The bait is still alive and fresh. Therefore, finders keepers?- Opening it might give you an array of baits!",
         FavouriteBait = "Magnet",
         Chance = 8,
@@ -6915,7 +6915,7 @@ return {
             200
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.49019607901573, 0.49411764740944, 0.48235294222832,
+        SparkleColor = Color3.new(0.49019607901573, 0.49411764740944, 0.48235294222832),
         Quips = {
             "I caught a Corsair Grouper!",
             "Woah, a Corsair Grouper!!"
@@ -6933,7 +6933,7 @@ return {
     },
     ["Ancient Eel"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.20000000298023, 0.14509804546833, 0.49411764740944,
+        SparkleColor = Color3.new(0.20000000298023, 0.14509804546833, 0.49411764740944),
         Description = "A long, snake-like eel with glowing patterns and a menacing, ancient presence. This is one of the oldest creatures known to man, with it dating back to 3400 BCE.",
         FavouriteBait = "Coal",
         Chance = 0.4,
