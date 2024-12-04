@@ -41,6 +41,7 @@ return {
         Rarity = "Common",
         Resilience = 0
     },
+    Give = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     ["Super Flakes"] = {
         LureSpeed = 0,
         Luck = 0,
@@ -62,13 +63,19 @@ return {
         Rarity = "Legendary",
         Resilience = -15
     },
-    Give = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     ["Shark Head"] = {
         LureSpeed = -5,
         Luck = 225,
         GenerelLuck = 30,
         Rarity = "Mythical",
         Resilience = 10
+    },
+    ["Fish Head"] = {
+        LureSpeed = 10,
+        Luck = 150,
+        GenerelLuck = 0,
+        Rarity = "Legendary",
+        Resilience = -10
     },
     ["Weird Algae"] = {
         LureSpeed = -35,
@@ -77,19 +84,12 @@ return {
         Rarity = "Legendary",
         Resilience = 0
     },
-    Minnow = {
-        LureSpeed = 0,
-        Luck = 65,
+    Garbage = {
+        LureSpeed = -250,
+        Luck = 0,
         GenerelLuck = 0,
-        Rarity = "Unusual",
-        Resilience = -10
-    },
-    ["Fish Head"] = {
-        LureSpeed = 10,
-        Luck = 150,
-        GenerelLuck = 0,
-        Rarity = "Legendary",
-        Resilience = -10
+        Rarity = "Common",
+        Resilience = 50
     },
     ["Night Shrimp"] = {
         LureSpeed = 15,
@@ -104,6 +104,13 @@ return {
         GenerelLuck = 0,
         Rarity = "Rare",
         Resilience = -15
+    },
+    Minnow = {
+        LureSpeed = 0,
+        Luck = 65,
+        GenerelLuck = 0,
+        Rarity = "Unusual",
+        Resilience = -10
     },
     Maggot = {
         LureSpeed = -10,
