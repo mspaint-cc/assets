@@ -1,8 +1,4 @@
---[[
-Internal Auto Fisch Library Updater
-by upio
-]]
-
+local ConsoleUtils = loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/utils/console/main.lua"))()
 local LuaTableSerializer = loadstring(game:HttpGet("https://raw.githubusercontent.com/regginator/LuaEncode/refs/heads/master/src/LuaEncode.lua"))()
 local SerializerOptions = {
     Prettify = true
@@ -13,9 +9,13 @@ local GithubToken = "github_pat_[REDACTED]"
 local Modules = game:GetService("ReplicatedStorage").modules
 local Library = Modules.library
 
-local fishLibrary = LuaTableSerializer(require(Library.fish), SerializerOptions)
-local baitLibrary = LuaTableSerializer(require(Library.bait), SerializerOptions)
-local boatLibrary = LuaTableSerializer(require(Modules.vessels), SerializerOptions)
+local UpdateLibraries = {
+    ["fish"] = LuaTableSerializer(require(Library.fish), SerializerOptions),
+    ["bait"] = LuaTableSerializer(require(Library.bait), SerializerOptions),
+    ["boat"] = LuaTableSerializer(require(Modules.vessels), SerializerOptions),
+    ["items"] = LuaTableSerializer(require(Library.items), SerializerOptions),
+    ["rods"] = LuaTableSerializer(require(Library.rods), SerializerOptions)
+}
 
 function ToBase64(data)
     local b = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
@@ -69,55 +69,31 @@ function UpdateGithubFile(options)
     return UpdateFileDataResponse
 end
 
-UpdateGithubFile({
-    Github = {
-        Owner = "mspaint-cc",
-        Repo = "assets",    
-    },
+for module, data in pairs(UpdateLibraries) do
+    local message = ConsoleUtils.custom_print(`[mspaint utils]: Updating {module}...`)
 
-    Commit = {
-        Message = "chore: update fish library to latest version",
-        
-        Name = "notpoiu",
-        Email = "75510171+notpoiu@users.noreply.github.com"
-    },
+	UpdateGithubFile({
+        Github = {
+            Owner = "mspaint-cc",
+            Repo = "assets",    
+        },
 
-    Path = "fisch/libraries/fish.luau",
-    Content = "return " .. fishLibrary
-})
+        Commit = {
+            Message = "chore: update " .. module .. " library to latest version",
+            
+            Name = "notpoiu",
+            Email = "75510171+notpoiu@users.noreply.github.com"
+        },
 
-UpdateGithubFile({
-    Github = {
-        Owner = "mspaint-cc",
-        Repo = "assets",    
-    },
+        Path = "fisch/libraries/" .. module .. ".luau",
+        Content = "return " .. data
+    })
 
-    Commit = {
-        Message = "chore: update bait library to latest version",
-        
-        Name = "notpoiu",
-        Email = "75510171+notpoiu@users.noreply.github.com"
-    },
+    message.update_message({
+        message = `[mspaint utils]: updated {module} library successfully`,
+        image = "rbxasset://textures/AudioDiscovery/done.png",
+        color = Color3.fromRGB(0, 255, 0)
+    })
+end
 
-    Path = "fisch/libraries/bait.luau",
-    Content = "return " .. baitLibrary
-})
-
-UpdateGithubFile({
-    Github = {
-        Owner = "mspaint-cc",
-        Repo = "assets",    
-    },
-
-    Commit = {
-        Message = "chore: update boat library to latest version",
-        
-        Name = "notpoiu",
-        Email = "75510171+notpoiu@users.noreply.github.com"
-    },
-
-    Path = "fisch/libraries/boat.luau",
-    Content = "return " .. boatLibrary
-})
-
-print("Successfully updated require assets!")
+print("Successfully updated assets!")
