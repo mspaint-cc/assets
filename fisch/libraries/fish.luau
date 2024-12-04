@@ -316,9 +316,12 @@ return {
             5,
             28
         },
-        From = "Ancient Isle",
-        Quips = {},
         FromMeteor = true,
+        From = "Ancient Isle",
+        Quips = {
+            "A Moonstone!"
+        },
+        Evaluation = "Moonstone's hard, ethereal glow\xE2\x80\x94caused by light scattering within its layers\xE2\x80\x94, often associated with the lunar energy from our lovely moon.",
         Price = 1000,
         Resilience = 100
     },
@@ -562,7 +565,7 @@ return {
     Leedsichthys = {
         FavouriteTime = "Day",
         SparkleColor = Color3.new(0.58823531866074, 0.89803922176361, 0.81176471710205),
-        Description = "Leedsichthys is a colossal, plankton-feeding fish from the Jurassic period, approximately 165\226\128\147150 million years ago. It is one of the largest fish ever to exist, showcasing the diversity of prehistoric marine life.",
+        Description = "Leedsichthys is a colossal, plankton-feeding fish from the Jurassic period, approximately 165\xE2\x80\x93150 million years ago. It is one of the largest fish ever to exist, showcasing the diversity of prehistoric marine life.",
         FavouriteBait = "Squid",
         Chance = 0.25,
         Weather = {
@@ -689,12 +692,14 @@ return {
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
         SparkleColor = Color3.new(0.59215688705444, 1, 0.83137255907059),
-        Quips = {},
+        Quips = {
+            "Woah, Moon Wood!"
+        },
         Hint = "This resilient wood has endured the bitterest winters, its strength forged under the pale glow of the moon.",
         Description = "Legends say, Moon Wood is used in crafting one of the strongest Rods...",
         Price = 450,
         From = "None",
-        Chance = 0.1,
+        Chance = 10000,
         Weather = {
             "None"
         },
@@ -713,12 +718,14 @@ return {
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
         SparkleColor = Color3.new(0.71372550725937, 0.2549019753933, 1),
-        Quips = {},
+        Quips = {
+            "???"
+        },
         Hint = "Void Wood is said to be imbued with the altar's enigmatic power.",
         Description = "Believed to channel the mysteries of the Void, its wood pulses with an enigmatic, otherworldly energy.",
         Price = 350,
         From = "None",
-        Chance = 0.3,
+        Chance = 0.5,
         Weather = {
             "None"
         },
@@ -951,7 +958,7 @@ return {
         Description = "The Hallucigenia is an elongated, worm-like creature with spiney appendages throughout its body. They went extinct around 485 million years ago, at the end of the Ordovician period. They are quite low on the food chain, primarily feeding on small microorganisms.",
         Price = 200,
         From = "Ancient Isle",
-        Chance = 35,
+        Chance = 30,
         Weather = {
             "None"
         },
@@ -1036,7 +1043,7 @@ return {
         Description = "Onychodus is a genus of prehistoric lobe-finned fish from the Devonian period, approximately 400 million years ago. Known for its distinctive features, Onychodus was an early example of sarcopterygian fish, which includes ancestors of modern lungfish and tetrapods.",
         Price = 115,
         From = "Ancient Isle",
-        Chance = 50,
+        Chance = 55,
         Weather = {
             "None"
         },
@@ -1213,15 +1220,15 @@ return {
         },
         Rarity = "Exotic",
         WeightPool = {
-            50000,
-            70000
+            500000,
+            670000
         },
-        XP = 12000,
+        XP = 6000,
         From = "Ancient Isle",
         Quips = {
             "WOAH The Meg!"
         },
-        Price = 20000,
+        Price = 10000,
         FavouriteBait = "Shark Head",
         Resilience = 5
     },
@@ -1398,7 +1405,7 @@ return {
             "OMG A Phanerorhynchus!",
             "Wow, a Phanerorhynchus!"
         },
-        Hint = "Where does this key open up?...",
+        Hint = "Found in the dark waters of the Archives...",
         Description = "Phanerorhynchus is an extinct, predatory fish from the Late Devonian period. Known for its elongated body and sharp, backward-curving teeth, it was a formidable predator in ancient aquatic ecosystems.",
         Price = 450,
         From = "Ancient Archives",
@@ -1605,7 +1612,7 @@ return {
             "OMG A Diplurus!",
             "I can't believe I caught a Diplurus!"
         },
-        Hint = "Where does this key open up?...",
+        Hint = "Found in the dark waters of the Archives...",
         Description = "Diplurus is an extinct fish from the Late Devonian period, distinguished by its unique, two-lobed tail. It was an active predator, preying on smaller fish and invertebrates in ancient freshwater habitats.",
         Price = 800,
         From = "Ancient Archives",
@@ -1628,12 +1635,14 @@ return {
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
         SparkleColor = Color3.new(0.8941176533699, 1, 0.54901963472366),
-        Quips = {},
+        Quips = {
+            "Ancient Wood!"
+        },
         Hint = "Legends whisper of Sunstone Island radiating an aura of ancient power",
         Description = "Reputed to harbor the essence of Ancient Wisdom, etched into the very grain of its timeless wood.",
         Price = 450,
         From = "None",
-        Chance = 0.2,
+        Chance = 0.5,
         Weather = {
             "None"
         },
@@ -2007,7 +2016,7 @@ return {
             "OMG A Amblypterus!",
             "I can't believe I caught an Amblypterus!"
         },
-        Hint = "Where does this key open up?...",
+        Hint = "Found in the dark waters of the Archives...",
         Description = "Amblypterus is an extinct genus of prehistoric fish from the Carboniferous period, known for its unusual body shape and large, complex pectoral fins that allowed for agile, precise movement.",
         Price = 2500,
         From = "Ancient Archives",
@@ -2233,7 +2242,7 @@ return {
             "Woah! A Ghoulfish!",
             "Ouu! A Ghoulfish!",
             "what? there's nothing there..",
-            "\240\159\145\187\240\159\145\187\240\159\145\187"
+            "\xF0\x9F\x91\xBB\xF0\x9F\x91\xBB\xF0\x9F\x91\xBB"
         },
         XP = 600,
         Price = 1000,
@@ -2331,7 +2340,7 @@ return {
     ["Cursed Eel"] = {
         FavouriteTime = "Night",
         SparkleColor = Color3.new(0.2392156869173, 0.46666666865349, 1),
-        Description = "Cursed Eels linger in darker waters, giving off an eerie glow. They\226\128\153re a spooky find for night anglers.",
+        Description = "Cursed Eels linger in darker waters, giving off an eerie glow. They\xE2\x80\x99re a spooky find for night anglers.",
         FavouriteBait = "Coal",
         Chance = 25,
         Weather = {
@@ -2406,9 +2415,12 @@ return {
             4,
             14
         },
-        From = "Ancient Isle",
-        Quips = {},
         FromMeteor = true,
+        From = "Ancient Isle",
+        Quips = {
+            "Ouu, shiny!"
+        },
+        Evaluation = "Lapis Lazuli has been ground into powder for use in luxurious paints and cosmetics for millennia, symbolizing royalty and spirituality.",
         Price = 700,
         Resilience = 100
     },
@@ -2429,7 +2441,7 @@ return {
             "IS THAT A GOLDEN SEAHORSE?!"
         },
         Hint = "Drifting near seaweed & algae in the Oceanside.",
-        Description = "Golden Sea Horses are small but enchanting, drifting near seaweed & algae. Gentle and rare, they\226\128\153re a delight to find.",
+        Description = "Golden Sea Horses are small but enchanting, drifting near seaweed & algae. Gentle and rare, they\xE2\x80\x99re a delight to find.",
         Price = 2900,
         From = "Forsaken Shores",
         Chance = 0.001,
@@ -2631,11 +2643,11 @@ return {
         "Legendary",
         "Mythical",
         "Divine",
-        "Limited",
-        "Relic",
         "Exotic",
+        "Relic",
         "Fragment",
-        "Gemstone"
+        "Gemstone",
+        "Limited"
     },
     ["Fish Barrel"] = {
         SparkleColor = Color3.new(1, 1, 1),
@@ -2936,7 +2948,7 @@ return {
         Description = "Xiphactinus is a massive, fast predator from the Cretaceous, with sharp teeth, sleek body, and incredible hunting efficiency.",
         Price = 170,
         From = "Ancient Isle",
-        Chance = 20,
+        Chance = 45,
         Weather = {
             "None"
         },
@@ -3159,9 +3171,12 @@ return {
             7,
             20
         },
-        From = "Ancient Isle",
-        Quips = {},
         FromMeteor = true,
+        From = "Ancient Isle",
+        Quips = {
+            "Ouu, shiny!"
+        },
+        Evaluation = "Forming in marble or basalt environments under intense heat and pressure of Roslits Volcano. ",
         Price = 200,
         Resilience = 100
     },
@@ -3628,17 +3643,17 @@ return {
         Seasons = {
             "None"
         },
-        Rarity = "Exotic",
+        Rarity = "Limited",
         WeightPool = {
-            50000,
-            70000
+            500000,
+            670000
         },
-        XP = 14500,
+        XP = 12000,
         From = "Ancient Isle",
         Quips = {
             "WOAH THE PHANTOM MEG!"
         },
-        Price = 26000,
+        Price = 20000,
         FavouriteBait = "Shark Head",
         Resilience = 5
     },
@@ -3691,15 +3706,15 @@ return {
         },
         Rarity = "Exotic",
         WeightPool = {
-            50000,
-            70000
+            500000,
+            700000
         },
-        XP = 13000,
+        XP = 9000,
         From = "Ancient Isle",
         Quips = {
             "WOAH THE ANCIENT MEG!"
         },
-        Price = 22000,
+        Price = 16000,
         FavouriteBait = "Shark Head",
         Resilience = 5
     },
@@ -4053,7 +4068,7 @@ return {
         Description = "Acanthodii, commonly known as Spiny Sharks, possess many scales that form a diamond pattern along its body. They prey on smaller creatures among the Ancient Isle's waters, and are active both during the day and night. They went extinct around 250 million years ago, at the end of the Permian period.",
         Price = 160,
         From = "Ancient Isle",
-        Chance = 25,
+        Chance = 41,
         Weather = {
             "None"
         },
@@ -4711,7 +4726,7 @@ return {
             "OMG A Birgeria!",
             "Look at this, a Birgeria!"
         },
-        Hint = "Where does this key open up?...",
+        Hint = "Found in the dark waters of the Archives...",
         Description = "Birgeria is a genus of extinct fish from the Late Triassic period, recognized for its large size and long, slender body. It was a carnivorous predator that roamed ancient seas, hunting smaller fish and invertebrates.",
         Price = 200,
         From = "Ancient Archives",
@@ -4955,7 +4970,7 @@ return {
         Description = "Cladoselache is a sleek, agile predator from the Devonian era, hunting fish and cephalopods.",
         Price = 90,
         From = "Ancient Isle",
-        Chance = 80,
+        Chance = 87,
         Weather = {
             "None"
         },
@@ -4986,7 +5001,7 @@ return {
         Description = "Piranhas are aggressive fish with incredibly sharp teeth, which they use to hunt their prey. Ranking high on the local food chain, they are still no match for the larger and fiercer apex predators of the Ancient Isle.",
         Price = 85,
         From = "Ancient Isle",
-        Chance = 90,
+        Chance = 100,
         Weather = {
             "None"
         },
@@ -5050,7 +5065,7 @@ return {
     ToHex = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     Wiifish = {
         SparkleColor = Color3.new(1, 0.53333336114883, 0.20000000298023),
-        Description = "The Wiifish is a legendary tropic fish that can only be found in the saltwater\226\128\153s Sunstone Island during the day. They are an extremely old fish, dating back over 230,000,000 years ago. While the Wiifish is a slow swimmer, they can put up an immense fight for even advanced anglers.",
+        Description = "The Wiifish is a legendary tropic fish that can only be found in the saltwater\xE2\x80\x99s Sunstone Island during the day. They are an extremely old fish, dating back over 230,000,000 years ago. While the Wiifish is a slow swimmer, they can put up an immense fight for even advanced anglers.",
         FavouriteBait = "None",
         Chance = 1,
         Weather = {
@@ -5799,9 +5814,12 @@ return {
             8,
             16
         },
-        From = "Ancient Isle",
-        Quips = {},
         FromMeteor = true,
+        From = "Ancient Isle",
+        Quips = {
+            "Ouu, shiny!"
+        },
+        Evaluation = "Amethyst forms in volcanic rock cavities called geodes, where mineral-rich water deposits quartz crystals over time. It was once as valuable as diamonds and associated with preventing overindulgence.",
         Price = 150,
         Resilience = 100
     },
@@ -5825,6 +5843,9 @@ return {
             80
         },
         BaitContents = {
+            "Garbage",
+            "Garbage",
+            "Garbage",
             "Shrimp",
             "Seaweed",
             "Bagel",
@@ -6019,9 +6040,12 @@ return {
             9,
             32
         },
-        From = "Ancient Isle",
-        Quips = {},
         FromMeteor = true,
+        From = "Ancient Isle",
+        Quips = {
+            "Ouu, shiny!"
+        },
+        Evaluation = "Opals form in arid, sunstone soils, where water evaporates and leaves behind dazzling mineral deposits.",
         Price = 500,
         Resilience = 100
     },
@@ -6437,7 +6461,7 @@ return {
             "I caught a Bluegill!!",
             "Lovely, a Bluegill!"
         },
-        Hint = "Found in saltwater\226\128\153s near Snowcap.",
+        Hint = "Found in saltwater\xE2\x80\x99s near Snowcap.",
         Description = "A small, round freshwater fish with bright blue and orange hues, easily recognized by its distinct gill spot. It can be found all over the waters of Snowcap.",
         Price = 60,
         From = "Snowcap",
@@ -6657,7 +6681,7 @@ return {
     },
     ["Volcanic Geode"] = {
         SparkleColor = Color3.new(1, 1, 1),
-        Description = "The Volcanic Geode encases a magma crystal core, preserving its contents with an amber-like quality. Within this geode, you might find a trove of rare or extinct treasures\226\128\148 it's like a volcanic Christmas!",
+        Description = "The Volcanic Geode encases a magma crystal core, preserving its contents with an amber-like quality. Within this geode, you might find a trove of rare or extinct treasures\xE2\x80\x94 it's like a volcanic Christmas!",
         FavouriteBait = "Magnet",
         Chance = 17,
         Weather = {
@@ -7399,7 +7423,9 @@ return {
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
         SparkleColor = Color3.new(1, 0.50588238239288, 0.098039217293262),
-        Quips = {},
+        Quips = {
+            "Woah, Inferno Wood!"
+        },
         Hint = "???",
         Description = "Holds the Power of Earth's Magma Core... Said to be used in crafting one of the strongest Rods...",
         Price = 700,
@@ -7948,7 +7974,7 @@ return {
             "An Anchovy!",
             "It really put up a battle!"
         },
-        Hint = "Caught in all saltwater\226\128\153s of Moosewood",
+        Hint = "Caught in all saltwater\xE2\x80\x99s of Moosewood",
         Description = "Anchovies are extremely small and slender fish, with a silvery sheen. They are known for their schooling behaviour and are a common catch near Moosewood.",
         Price = 30,
         From = "Moosewood",
@@ -8251,7 +8277,7 @@ return {
         SparkleColor = Color3.new(1, 0.63137257099152, 0.30588236451149),
         Description = "The Floppy is an interesting fish in the Ancient Isle. Exhibiting signs of intense energy, attempting to catch the Floppy will not be an easy task. They spend most of the day swimming around the pond, ",
         FavouriteBait = "Super Flakes",
-        Chance = 0.3,
+        Chance = 0.05,
         Weather = {
             "None"
         },
@@ -8296,7 +8322,7 @@ return {
             "Woah, a Corsair Grouper!!"
         },
         Hint = "commonly caught in Forsaken Shores.",
-        Description = "The Corsair Grouper is a resilient, bulky fish, often hiding among shores. Known for its powerful bites, it\226\128\153s a decent challenge for beginners.",
+        Description = "The Corsair Grouper is a resilient, bulky fish, often hiding among shores. Known for its powerful bites, it\xE2\x80\x99s a decent challenge for beginners.",
         Price = 35,
         From = "Forsaken Shores",
         Chance = 120,
@@ -8353,7 +8379,7 @@ return {
             "OMG A Lepidotes!",
             "I can't believe I caught a Lepidotes!"
         },
-        Hint = "Where does this key open up?...",
+        Hint = "Found in the dark waters of the Archives...",
         Description = "Lepidotes is an extinct fish from the Mesozoic era. Known for its large, heavily armored body and prominent fin structure, it was a significant predator in ancient oceans.",
         Price = 1800,
         From = "Ancient Archives",
