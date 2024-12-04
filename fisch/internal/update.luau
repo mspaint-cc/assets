@@ -72,7 +72,7 @@ end
 for module, data in pairs(UpdateLibraries) do
     local message = ConsoleUtils.custom_print(`[mspaint utils]: Updating {module}...`)
 
-	UpdateGithubFile({
+    UpdateGithubFile({
         Github = {
             Owner = "mspaint-cc",
             Repo = "assets",    
