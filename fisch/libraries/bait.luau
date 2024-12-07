@@ -13,6 +13,13 @@ return {
         Rarity = "Common",
         Resilience = 0
     },
+    ["Peppermint Worm"] = {
+        LureSpeed = -5,
+        Luck = 50,
+        GenerelLuck = 30,
+        Rarity = "Unusual",
+        Resilience = 20
+    },
     Coal = {
         LureSpeed = 0,
         Luck = 45,
@@ -42,6 +49,20 @@ return {
         Resilience = 0
     },
     Give = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
+    ["Night Shrimp"] = {
+        LureSpeed = 15,
+        Luck = 0,
+        GenerelLuck = 90,
+        Rarity = "Legendary",
+        Resilience = 0
+    },
+    ["Deep Coral"] = {
+        LureSpeed = 0,
+        Luck = -10,
+        GenerelLuck = 0,
+        Rarity = "Legendary",
+        Resilience = 50
+    },
     ["Super Flakes"] = {
         LureSpeed = 0,
         Luck = 0,
@@ -85,18 +106,18 @@ return {
         Resilience = 0
     },
     Garbage = {
-        LureSpeed = -250,
-        Luck = 0,
+        LureSpeed = -5,
+        Luck = -250,
         GenerelLuck = 0,
         Rarity = "Common",
         Resilience = 50
     },
-    ["Night Shrimp"] = {
-        LureSpeed = 15,
-        Luck = 0,
-        GenerelLuck = 90,
+    ["Holly Berry"] = {
+        LureSpeed = -5,
+        Luck = 80,
+        GenerelLuck = 30,
         Rarity = "Legendary",
-        Resilience = 0
+        Resilience = 10
     },
     ["Rapid Catcher"] = {
         LureSpeed = 35,
@@ -133,12 +154,12 @@ return {
         Rarity = "Common",
         Resilience = -3
     },
-    ["Deep Coral"] = {
-        LureSpeed = 0,
-        Luck = -10,
-        GenerelLuck = 0,
-        Rarity = "Legendary",
-        Resilience = 50
+    ["Aurora Bait"] = {
+        LureSpeed = -5,
+        Luck = 100,
+        GenerelLuck = 30,
+        Rarity = "Mythical",
+        Resilience = 10
     },
     Bagel = {
         LureSpeed = 0,
