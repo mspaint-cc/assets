@@ -6654,29 +6654,30 @@ return {
     },
     ["Spined Fin"] = {
         FavouriteTime = "None",
-        Seasons = {
-            "None"
-        },
-        Rarity = "Limited",
-        FavouriteBait = "None",
-        WeightPool = {
-            20,
-            50
-        },
         SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832),
-        Quips = {
-            "Woah a bone!"
-        },
         Description = "A jagged, bony fin from a formidable fish, crafted by nature for defense.",
-        XP = 120,
-        Price = 300,
-        FromLimited = "Archeological Site",
-        Hint = "This appears to be something a fish from the coldest regions would rely on for survival...",
+        FavouriteBait = "None",
         Chance = 1,
         Weather = {
             "None"
         },
         ProgressEfficiency = 0.9,
+        Hint = "This appears to be something a fish from the coldest regions would rely on for survival...",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.bigbasic,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            20,
+            50
+        },
+        FromLimited = "Archeological Site",
+        Quips = {
+            "Woah a bone!"
+        },
+        XP = 120,
+        Price = 300,
         Resilience = 100
     },
     ["Volcanic Geode"] = {
