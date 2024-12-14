@@ -32,9 +32,26 @@ return {
             OnlyBuyOne = true,
             Rarity = "Unusual"
         },
+        ["Skin Crate"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Bag of Presents"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
         ["Crab Cage"] = {
             Rarity = "Unusual",
             Price = 45
+        },
+        ["Elite Token"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        Tidebreaker = {
+            Price = 80000,
+            OnlyBuyOne = true,
+            Rarity = "Mythical"
         },
         Flippers = {
             Price = 9000,
@@ -94,10 +111,9 @@ return {
             Rarity = "Rare",
             Price = 10000
         },
-        Tidebreaker = {
-            Price = 80000,
-            OnlyBuyOne = true,
-            Rarity = "Mythical"
+        ["Regular Token"] = {
+            Rarity = "Exotic",
+            Price = math.huge
         },
         Firework = {
             Rarity = "Limited",
