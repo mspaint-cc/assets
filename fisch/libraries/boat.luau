@@ -9,9 +9,22 @@ return {
             BobbingSpeed = 1,
             MaxSpeed = 150,
             StopEfficiency = 1.5,
-            Level = 50,
+            Level = 1,
             TurningSpeed = 0.54,
             Accel = 0.3
+        },
+        ["Snowmobile Jetski"] = {
+            Dedscriptipon = "Jetski frozen christmas version!",
+            BackwardsEfficiency = 1,
+            Price = -1,
+            Bobbing = 2,
+            BobbingSpeed = 0.4,
+            MaxSpeed = 200,
+            StopEfficiency = 3.5,
+            TurningSpeed = 0.7,
+            Level = 60,
+            Accel = 0.3,
+            ObtainText = "Obtain on Christmas Bundle"
         },
         ["Archaeological Boat"] = {
             Dedscriptipon = "Boat used by archaeologists from ancient island.",
@@ -63,17 +76,41 @@ return {
             Icon = "rbxassetid://71002238163754",
             ObtainText = "Obtain on Starter Pack"
         },
-        Titan = {
-            Dedscriptipon = "Huh? Who would want this?",
+        ["The Pearl"] = {
+            Dedscriptipon = "No one knows what sails this ship...",
             BackwardsEfficiency = 1,
-            Price = 5000,
-            Bobbing = 3,
-            BobbingSpeed = 1,
-            MaxSpeed = 45,
-            StopEfficiency = 1.5,
-            Level = 40,
-            TurningSpeed = 0.2,
+            Price = 50000,
+            Bobbing = 6,
+            BobbingSpeed = 3,
+            MaxSpeed = 95,
+            StopEfficiency = 3,
+            Level = 90,
+            TurningSpeed = 0.3,
             Accel = 0.2
+        },
+        ["Flying Dutchman"] = {
+            Dedscriptipon = "Only available during FischFright-2024",
+            BackwardsEfficiency = 1,
+            Price = -1,
+            Bobbing = 6,
+            BobbingSpeed = 3,
+            MaxSpeed = 80,
+            StopEfficiency = 2,
+            Level = 0,
+            TurningSpeed = 0.3,
+            Accel = 0.2
+        },
+        Sleigh = {
+            Dedscriptipon = "Deliver presents at ridiculous speeds! [Only obtainable during Fischmas 2024]",
+            BackwardsEfficiency = 0.85,
+            Price = -1,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            MaxSpeed = 90,
+            StopEfficiency = 1.5,
+            Level = 1,
+            TurningSpeed = 0.6,
+            Accel = 0.4
         },
         ["Quack Cruiser"] = {
             Dedscriptipon = "This duck sailed up to the lemonade stand.",
@@ -99,29 +136,17 @@ return {
             TurningSpeed = 0.5,
             Accel = 0.25
         },
-        ["The Pearl"] = {
-            Dedscriptipon = "No one knows what sails this ship...",
+        ["Luxury Speedboat"] = {
+            Dedscriptipon = "Sail around at unpresedented speeds!",
             BackwardsEfficiency = 1,
-            Price = 50000,
-            Bobbing = 6,
-            BobbingSpeed = 3,
-            MaxSpeed = 95,
-            StopEfficiency = 3,
-            Level = 90,
-            TurningSpeed = 0.3,
-            Accel = 0.2
-        },
-        ["Flying Dutchman"] = {
-            Dedscriptipon = "Only available during FischFright-2024",
-            BackwardsEfficiency = 1,
-            Price = -1,
-            Bobbing = 6,
-            BobbingSpeed = 3,
-            MaxSpeed = 80,
-            StopEfficiency = 2,
-            Level = 0,
-            TurningSpeed = 0.3,
-            Accel = 0.2
+            Price = 20000,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            MaxSpeed = 150,
+            StopEfficiency = 1.5,
+            Level = 50,
+            TurningSpeed = 0.54,
+            Accel = 0.3
         },
         Pontoon = {
             Dedscriptipon = "Great for parties with some buddies!",
@@ -133,6 +158,18 @@ return {
             StopEfficiency = 2,
             Level = 30,
             TurningSpeed = 0.4,
+            Accel = 0.2
+        },
+        Titan = {
+            Dedscriptipon = "Huh? Who would want this?",
+            BackwardsEfficiency = 1,
+            Price = 5000,
+            Bobbing = 3,
+            BobbingSpeed = 1,
+            MaxSpeed = 45,
+            StopEfficiency = 1.5,
+            Level = 40,
+            TurningSpeed = 0.2,
             Accel = 0.2
         },
         ["Pirate Ship"] = {
@@ -147,17 +184,17 @@ return {
             TurningSpeed = 0.3,
             Accel = 0.2
         },
-        ["Luxury Speedboat"] = {
-            Dedscriptipon = "Sail around at unpresedented speeds!",
+        ["Reindeer Cruiser"] = {
+            Dedscriptipon = "A ducky boat with a pretty convincing reindeer disguise. [Only obtainable during Fischmas 2024]",
             BackwardsEfficiency = 1,
-            Price = 20000,
-            Bobbing = 2,
-            BobbingSpeed = 1,
-            MaxSpeed = 150,
-            StopEfficiency = 1.5,
-            Level = 50,
-            TurningSpeed = 0.54,
-            Accel = 0.3
+            Price = -1,
+            Bobbing = 4,
+            BobbingSpeed = 0.5,
+            MaxSpeed = 55,
+            StopEfficiency = 2,
+            Level = 1,
+            TurningSpeed = 0.5,
+            Accel = 0.25
         },
         Surfboard = {
             Dedscriptipon = "Surf the waves, catch the sharks!",
