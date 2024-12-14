@@ -107,8 +107,8 @@ return {
     },
     Garbage = {
         LureSpeed = -5,
-        Luck = -250,
-        GenerelLuck = 0,
+        Luck = 0,
+        GenerelLuck = -250,
         Rarity = "Common",
         Resilience = 50
     },
