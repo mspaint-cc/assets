@@ -29,6 +29,32 @@ return {
         XP = 35,
         Resilience = 200
     },
+    Icicle = {
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        Price = 130,
+        WeightPool = {
+            4,
+            12
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.258823543787, 0.92549020051956, 1),
+        Quips = {
+            "Woah, an Icicle!"
+        },
+        Hint = "???",
+        Description = "A strong and frigid ice formation with a pointy end.",
+        FromLimited = "Fischmas",
+        FavouriteBait = "Holly Berry",
+        Chance = 1,
+        Weather = {
+            "None"
+        },
+        XP = 60,
+        Resilience = 100
+    },
     Lingcod = {
         FavouriteTime = "Day",
         SparkleColor = Color3.new(0.29803922772408, 0.45098039507866, 0.21568627655506),
@@ -1387,6 +1413,41 @@ return {
         XP = 75,
         Resilience = 90
     },
+    Olmdeer = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(0.54117649793625, 0.42352941632271, 0.37647059559822),
+        Description = "The Olmdeer is a unique species of Olm, possessing two antlers on its head like those of a reindeer, hence its name. They have been heard to lead Santa's sleigh through the night sky.",
+        FavouriteBait = "Holly Berry",
+        Chance = 2,
+        Weather = {
+            "Clear",
+            "Foggy"
+        },
+        ProgressEfficiency = 0.9,
+        Hint = "Only can be caught during Fischmas24.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            1,
+            4
+        },
+        FromLimited = "Fischmas",
+        ViewportSizeOffset = 2,
+        Quips = {
+            "An Olmdeer!",
+            "I caught an Olmdeer!",
+            "Olm.. my gosh!        deer",
+            "An Olmdeer!!",
+            "Woah, an Olmdeer!",
+            "It looks like a recorder.. but jolly!"
+        },
+        XP = 300,
+        Price = 400,
+        Resilience = 75
+    },
     Phanerorhynchus = {
         FavouriteTime = "Night",
         Seasons = {
@@ -1647,6 +1708,33 @@ return {
             "None"
         },
         XP = 50,
+        Resilience = 100
+    },
+    Cookie = {
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        Price = 20,
+        WeightPool = {
+            1,
+            6
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.88235294818878, 0.65098041296005, 0.45098039507866),
+        Quips = {
+            "Woah, a Cookie!",
+            "Om nom nom"
+        },
+        Hint = "Only can be caught during Fischmas24.",
+        Description = "A delicious cookie, favored by Santa Claus. Goes well together with a warm glass of milk.",
+        FromLimited = "Fischmas",
+        FavouriteBait = "Holly Berry",
+        Chance = 90,
+        Weather = {
+            "None"
+        },
+        XP = 9,
         Resilience = 100
     },
     Crab = {
@@ -3896,6 +3984,84 @@ return {
         XP = 20,
         Resilience = 80
     },
+    ["Supreme Present"] = {
+        SparkleColor = Color3.new(0.38823530077934, 1, 0.59215688705444),
+        Description = "A gistening christmas present wrapped in magical gift paper. Maybe it has some great goodies inside!",
+        FavouriteBait = "Magnet",
+        Chance = 0.4,
+        Weather = {
+            "None"
+        },
+        XP = 120,
+        Hint = "Only can be caught during Fischmas24.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.crate,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            90,
+            90
+        },
+        CoinContents = {
+            450,
+            800
+        },
+        IsCrate = true,
+        FromLimited = "Fischmas",
+        FishContents = {
+            "Icicle",
+            "Icicle",
+            "Icicle",
+            "Icicle",
+            "Icicle",
+            "Icicle",
+            "Candy Cane Carp",
+            "Candy Cane Carp",
+            "Candy Cane Carp",
+            "Candy Cane Carp",
+            "Candy Cane Carp",
+            "Santa Salmon",
+            "Santa Salmon",
+            "Santa Salmon",
+            "Santa Salmon",
+            "Santa Salmon",
+            "Santa Salmon",
+            "Santa Salmon",
+            "Ornament Fish",
+            "Ornament Fish",
+            "Ornament Fish",
+            "Ornament Fish",
+            "Ornament Fish",
+            "Ornament Fish",
+            "Gingerbread Fish",
+            "Gingerbread Fish",
+            "Gingerbread Fish",
+            "Gingerbread Fish",
+            "Gingerbread Fish",
+            "Gingerbread Fish",
+            "Snowflake Flounder",
+            "Snowflake Flounder",
+            "Snowflake Flounder",
+            "Snowflake Flounder",
+            "Olmdeer",
+            "Olmdeer",
+            "Olmdeer",
+            "Santa Pufferfish",
+            "Santa Pufferfish",
+            "Enchant Relic",
+            "Enchant Relic",
+            "Enchant Relic"
+        },
+        Quips = {
+            "A Present!",
+            "Woah! A Present!",
+            "It's my lucky day!"
+        },
+        CrateType = "FishAndCoins",
+        Price = 650,
+        Resilience = 45
+    },
     Axolotl = {
         FavouriteTime = "Night",
         SparkleColor = Color3.new(1, 0.5137255191803, 0.5137255191803),
@@ -4327,6 +4493,35 @@ return {
         XP = 80,
         Resilience = 100
     },
+    ["Gingerbread Fish"] = {
+        Seasons = {
+            "Winter"
+        },
+        Rarity = "Limited",
+        Price = 135,
+        WeightPool = {
+            20,
+            35
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        SparkleColor = Color3.new(0.64705884456635, 0.34901961684227, 0.21176470816135),
+        Quips = {
+            "Woah, a Gingerbread Fish!",
+            "No way! A Gingerbread Fish!",
+            "I caught a Gingerbread Fish!",
+            "You can't catch me, I'm the Gingerbread Fish!"
+        },
+        Hint = "Only can be caught during Fischmas24.",
+        Description = "A gingerbread cookie that was decorated with frosting and gumdrops to look like a fish. It seems to have come to life. Also makes for a yummy snack!",
+        FromLimited = "Fischmas",
+        FavouriteBait = "Peppermint Worm",
+        Chance = 20,
+        Weather = {
+            "Clear"
+        },
+        XP = 150,
+        Resilience = 50
+    },
     ["Barreleye Fish"] = {
         FavouriteTime = "Night",
         SparkleColor = Color3.new(0.35686275362968, 0.49411764740944, 0.40784314274788),
@@ -4622,6 +4817,7 @@ return {
         Price = 1200,
         Resilience = 20
     },
+    ToHex = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     ["Fossil Fan"] = {
         FavouriteTime = "None",
         Seasons = {
@@ -4648,6 +4844,134 @@ return {
         },
         XP = 22,
         Resilience = 100
+    },
+    ["Grey Carp"] = {
+        Seasons = {
+            "None"
+        },
+        Rarity = "Uncommon",
+        FavouriteBait = "Seaweed",
+        WeightPool = {
+            20,
+            70
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(1, 1, 1),
+        Quips = {
+            "Is it grey magic?",
+            "Woah, a Grey Carp!",
+            "It's a Carp!",
+            "Woahh! A Grey Carp!!",
+            "Carp-tastic!",
+            "!!!",
+            "Woah! Grey Carp!"
+        },
+        Hint = "Found in Mushgrove Swamp near the fallen watch tower.",
+        Description = "The Grey Carp is a sturdy freshwater fish known for its strength and adaptability. They can be found in Mushgrove Swamp feeding on plants and small insects. The Grey Carp is extremely strong, and is a tough battle to catch.",
+        Price = 120,
+        From = "Mushgrove",
+        Chance = 55,
+        Weather = {
+            "Autumn"
+        },
+        XP = 75,
+        Resilience = 60
+    },
+    ["Bull Shark"] = {
+        Seasons = {
+            "Spring"
+        },
+        Rarity = "Legendary",
+        FavouriteBait = "Fish Head",
+        WeightPool = {
+            900,
+            1300
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
+        SparkleColor = Color3.new(1, 0.96078431606293, 0.77254903316498),
+        Quips = {
+            "A Bull Shark!",
+            "Thats some Bull Shark!",
+            "I caught a Bull Shark!"
+        },
+        Hint = "Found roaming in all types of waters and on the coasts.",
+        Description = "Bull sharks have robust bodies, and an extremely powerful nature. They have a special ability to adapt to both saltwater and freshwater, which is quite rare for sharks. Bull Sharks can be found most commonly near coats, and in freshwaters.",
+        Price = 400,
+        From = "Ocean",
+        Chance = 0.3,
+        Weather = {
+            "Rain",
+            "Foggy"
+        },
+        XP = 150,
+        Resilience = 20
+    },
+    Olm = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(1, 0.69803923368454, 0.69803923368454),
+        Description = "The Olm is an aquatic salamander which is an exclusively cave-dwelling species. The olm is mostly found in dark and moist areas of freshwater. They are most notable for their adaptations to a life of darkness with-in their caves. The Olm has severely under underdeveloped eyes, leaving it blind. This blindness gives them an acute sense of smell and hearing.",
+        FavouriteBait = "Flakes",
+        Chance = 2,
+        Weather = {
+            "Clear",
+            "Foggy"
+        },
+        ProgressEfficiency = 0.95,
+        Hint = "Resides on the floor of caves and dark rocky areas. Loves the night.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Legendary",
+        WeightPool = {
+            1,
+            4
+        },
+        ViewportSizeOffset = 2,
+        From = "Terrapin",
+        Quips = {
+            "An Olm!",
+            "I caught an Olm!",
+            "Olm.. my gosh!",
+            "An Olm!!",
+            "Woah, an Olm!",
+            "This ain't no Axolotl..",
+            "It looks like a recorder"
+        },
+        XP = 500,
+        Price = 900,
+        Resilience = 80
+    },
+    Alligator = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(0.60000002384186, 1, 0.45490196347237),
+        Description = "The Alligator is a massive, fearsome reptile known for its powerful bite and armoured body. Found in Mushgrove Swamp, Alligators are the apex predator with a stealthy and ambush-based hunting style.",
+        FavouriteBait = "Fish Head",
+        Chance = 0.9,
+        Weather = {
+            "Foggy, Rain"
+        },
+        ProgressEfficiency = 0.8,
+        Hint = "Found in Mushgrove Swamp during the night.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
+        Seasons = {
+            "Spring"
+        },
+        Rarity = "Legendary",
+        WeightPool = {
+            1500,
+            3000
+        },
+        From = "Mushgrove",
+        Quips = {
+            "WOAH!!",
+            "OH MY GOD!!",
+            "AN ALLIGATOR!",
+            "WHAT????"
+        },
+        XP = 400,
+        Price = 700,
+        Resilience = 15
     },
     Ice = {
         Seasons = {
@@ -4852,6 +5176,34 @@ return {
         XP = 75,
         Resilience = 100
     },
+    ["Ornament Fish"] = {
+        SparkleColor = Color3.new(0.88235294818878, 0.19607843458652, 0.24313725531101),
+        Description = "An decorative ornament in the shape of a fish. Seems to exhibit signs of low intelligence.",
+        FavouriteBait = "Holly Berry",
+        Chance = 15,
+        Weather = {
+            "None"
+        },
+        ProgressEfficiency = 0.95,
+        Hint = "Only can be caught during Fischmas24.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        Seasons = {
+            "Autumn"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            3,
+            7
+        },
+        FromLimited = "Fischmas",
+        Quips = {
+            "Woah, an Ornament!",
+            "Ouu! An Ornament Fish!"
+        },
+        XP = 165,
+        Price = 140,
+        Resilience = 80
+    },
     ["Swamp Scallop"] = {
         Seasons = {
             "Winter"
@@ -4880,6 +5232,133 @@ return {
             "None"
         },
         XP = 40,
+        Resilience = 90
+    },
+    ["Santa Salmon"] = {
+        Seasons = {
+            "Spring",
+            "Winter"
+        },
+        Rarity = "Limited",
+        Price = 120,
+        WeightPool = {
+            80,
+            200
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.60392159223557, 0.85490196943283, 0.56078433990479),
+        Quips = {
+            "A Santa Salmon!",
+            "Woah, A Santa Salmon!",
+            "A Santa Salmon!!!",
+            "Ho-ho-ho!"
+        },
+        Hint = "Only can be caught during Fischmas24.",
+        Description = "Santa Salmons are very old and heavy salmons. They also possess a jolly santa hat and a long white beard. How festive!",
+        FromLimited = "Fischmas",
+        FavouriteBait = "Holly Berry",
+        Chance = 50,
+        Weather = {
+            "Rain",
+            "Clear"
+        },
+        XP = 130,
+        Resilience = 70
+    },
+    Halibut = {
+        Seasons = {
+            "Summer",
+            "Spring"
+        },
+        Rarity = "Rare",
+        FavouriteBait = "Squid",
+        WeightPool = {
+            1000,
+            2000
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.81176471710205, 0.50588238239288, 0.3647058904171),
+        Quips = {
+            "A Halibut!",
+            "A Flatfish!",
+            "I Caught a Halibut!",
+            "Ou! A Halibut!"
+        },
+        Hint = "Found on the floor ocean. Best found near Haddock.",
+        Description = "The Halibut is a large flatfish known for their impressive size and strength. They commonly feed on Haddock and can be found hunting near 'Haddock Rock' and in deep waters. ",
+        Price = 250,
+        From = "Ocean",
+        Chance = 40,
+        Weather = {
+            "Rain"
+        },
+        XP = 100,
+        Resilience = 40
+    },
+    ["Glass of Milk"] = {
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        Price = 20,
+        WeightPool = {
+            1,
+            6
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.90588235855103, 0.90588235855103, 0.90588235855103),
+        Quips = {
+            "Woah, a Glass of Milk!",
+            "Yum!"
+        },
+        Hint = "Only can be caught during Fischmas24.",
+        Description = "A delicious glass of milk, favored by Santa Claus. Goes well together with a cookie.",
+        FromLimited = "Fischmas",
+        FavouriteBait = "Peppermint Worm",
+        Chance = 90,
+        Weather = {
+            "None"
+        },
+        XP = 9,
+        Resilience = 100
+    },
+    ["Festive Bait Crate"] = {
+        SparkleColor = Color3.new(1, 1, 1),
+        Description = "A festive wooden crate with patterend fabric over top to preserve the bait inside. Seems like it fell off of santa's sleigh! Opening it might give you an array of jolly baits!",
+        FavouriteBait = "Magnet",
+        Chance = 2.5,
+        Weather = {
+            "None"
+        },
+        XP = 300,
+        Hint = "Only can be caught during Fischmas24.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.crate,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            80,
+            80
+        },
+        BaitContents = {
+            "Peppermint Worm",
+            "Holly Berry"
+        },
+        IsCrate = true,
+        FromLimited = "Fischmas",
+        CrateType = "Bait",
+        Quips = {
+            "A Crate of Festive Bait!",
+            "A Festive Bait Crate!",
+            "Woah! A Crate!",
+            "A Crate!",
+            "Who left this here?",
+            "Oh, the worms still moving?",
+            "A Crate full of Jolly Bait!"
+        },
+        Price = 500,
+        BuyMult = 2.3,
         Resilience = 90
     },
     ["Barbed Shark"] = {
@@ -5062,7 +5541,37 @@ return {
         XP = 30,
         Resilience = 80
     },
-    ToHex = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
+    Sailfish = {
+        SparkleColor = Color3.new(1, 0.94901961088181, 0.36862745881081),
+        Description = "Sailfish are known for their incredible speed, long bill, and their striking sail-like dorsal fin. It's sleek body is built for fast swimming, allowing it to dart through water in bursts of speed. They are found in tropical and warmer ocean waters.",
+        FavouriteBait = "Minnow",
+        Chance = 16,
+        Weather = {
+            "Windy",
+            "Clear"
+        },
+        XP = 300,
+        Hint = "Found in ocean water. Extremely strong.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
+        Seasons = {
+            "Spring"
+        },
+        Rarity = "Rare",
+        WeightPool = {
+            400,
+            600
+        },
+        From = "Ocean",
+        Quips = {
+            "A Sailfish!",
+            "WOAH! A Sailfish!!",
+            "It's a Sailfish!",
+            "I caught a Sailfish!!"
+        },
+        ViewportSizeOffset = 0.9,
+        Price = 800,
+        Resilience = 40
+    },
     Wiifish = {
         SparkleColor = Color3.new(1, 0.53333336114883, 0.20000000298023),
         Description = "The Wiifish is a legendary tropic fish that can only be found in the saltwater\xE2\x80\x99s Sunstone Island during the day. They are an extremely old fish, dating back over 230,000,000 years ago. While the Wiifish is a slow swimmer, they can put up an immense fight for even advanced anglers.",
@@ -5093,37 +5602,37 @@ return {
         Price = 1200,
         Resilience = 40
     },
-    ["Grey Carp"] = {
+    Ringle = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(0.34117648005486, 0.87843137979507, 1),
+        Description = "The Ringle is an interesting and elusive fish that swims at extremely low and cold depths. They have a Rhino-like horn that they use to attack their prey. Most commonly found in the open ocean of Snowcap Island.",
+        FavouriteBait = "Bagel",
+        Chance = 0.01,
+        Weather = {
+            "Clear",
+            "Foggy"
+        },
+        ProgressEfficiency = 0.5,
+        Hint = "Found in the open ocean of Snowcap Island during the night.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
         Seasons = {
             "None"
         },
-        Rarity = "Uncommon",
-        FavouriteBait = "Seaweed",
+        Rarity = "Mythical",
         WeightPool = {
-            20,
-            70
+            1,
+            4
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 1, 1),
+        From = "Snowcap",
         Quips = {
-            "Is it grey magic?",
-            "Woah, a Grey Carp!",
-            "It's a Carp!",
-            "Woahh! A Grey Carp!!",
-            "Carp-tastic!",
-            "!!!",
-            "Woah! Grey Carp!"
+            "A Ringle!",
+            "I caught a Ringle!",
+            "A Ringle!!",
+            "Woah, a Ringle!"
         },
-        Hint = "Found in Mushgrove Swamp near the fallen watch tower.",
-        Description = "The Grey Carp is a sturdy freshwater fish known for its strength and adaptability. They can be found in Mushgrove Swamp feeding on plants and small insects. The Grey Carp is extremely strong, and is a tough battle to catch.",
-        Price = 120,
-        From = "Mushgrove",
-        Chance = 55,
-        Weather = {
-            "Autumn"
-        },
-        XP = 75,
-        Resilience = 60
+        XP = 500,
+        Price = 900,
+        Resilience = 80
     },
     Nessie = {
         FavouriteTime = "Night",
@@ -5547,41 +6056,36 @@ return {
         XP = 50,
         Resilience = 70
     },
-    Olm = {
+    ["Santa Pufferfish"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(1, 0.69803923368454, 0.69803923368454),
-        Description = "The Olm is an aquatic salamander which is an exclusively cave-dwelling species. The olm is mostly found in dark and moist areas of freshwater. They are most notable for their adaptations to a life of darkness with-in their caves. The Olm has severely under underdeveloped eyes, leaving it blind. This blindness gives them an acute sense of smell and hearing.",
-        FavouriteBait = "Flakes",
-        Chance = 2,
+        SparkleColor = Color3.new(1, 0.062745101749897, 0.062745101749897),
+        Description = "A pufferfish, but with a santa hat! How jolly!",
+        FavouriteBait = "Peppermint Worm",
+        Chance = 0.1,
         Weather = {
-            "Clear",
             "Foggy"
         },
-        ProgressEfficiency = 0.95,
-        Hint = "Resides on the floor of caves and dark rocky areas. Loves the night.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        ProgressEfficiency = 0.875,
+        Hint = "Only can be caught during Fischmas24.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
         Seasons = {
-            "None"
+            "Winter"
         },
-        Rarity = "Legendary",
+        Rarity = "Limited",
         WeightPool = {
-            1,
-            4
+            8,
+            25
         },
-        ViewportSizeOffset = 2,
-        From = "Terrapin",
+        FromLimited = "Fischmas",
         Quips = {
-            "An Olm!",
-            "I caught an Olm!",
-            "Olm.. my gosh!",
-            "An Olm!!",
-            "Woah, an Olm!",
-            "This ain't no Axolotl..",
-            "It looks like a recorder"
+            "Woah! a Santa Pufferfish!",
+            "A Santa Pufferfish!",
+            "Woah, A Santa Pufferfish!",
+            "Ho-ho-ho!"
         },
-        XP = 500,
-        Price = 900,
-        Resilience = 80
+        XP = 1200,
+        Price = 2000,
+        Resilience = 50
     },
     ["King Oyster"] = {
         Seasons = {
@@ -6081,37 +6585,48 @@ return {
         XP = 30,
         Resilience = 80
     },
-    Ringle = {
-        FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.34117648005486, 0.87843137979507, 1),
-        Description = "The Ringle is an interesting and elusive fish that swims at extremely low and cold depths. They have a Rhino-like horn that they use to attack their prey. Most commonly found in the open ocean of Snowcap Island.",
-        FavouriteBait = "Bagel",
-        Chance = 0.01,
+    ["Basic Present"] = {
+        SparkleColor = Color3.new(1, 1, 1),
+        Description = "A nice christmas present wrapped in white and red gift paper. Maybe it has some goodies inside!",
+        FavouriteBait = "Magnet",
+        Chance = 9,
         Weather = {
-            "Clear",
-            "Foggy"
+            "None"
         },
-        ProgressEfficiency = 0.5,
-        Hint = "Found in the open ocean of Snowcap Island during the night.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        XP = 40,
+        Hint = "Only can be caught during Fischmas24.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.crate,
         Seasons = {
             "None"
         },
-        Rarity = "Mythical",
+        Rarity = "Limited",
         WeightPool = {
-            1,
-            4
+            90,
+            90
         },
-        From = "Snowcap",
+        CoinContents = {
+            30,
+            50
+        },
+        IsCrate = true,
+        FromLimited = "Fischmas",
+        FishContents = {
+            "Cookie",
+            "Cookie",
+            "Glass of Milk",
+            "Glass of Milk",
+            "Candy Cane Carp",
+            "Santa Salmon",
+            "Ornament Fish"
+        },
         Quips = {
-            "A Ringle!",
-            "I caught a Ringle!",
-            "A Ringle!!",
-            "Woah, a Ringle!"
+            "A Present!",
+            "Woah! A Present!",
+            "It's my lucky day!"
         },
-        XP = 500,
-        Price = 900,
-        Resilience = 80
+        CrateType = "FishAndCoins",
+        Price = 120,
+        Resilience = 60
     },
     Blackfish = {
         FavouriteTime = "Night",
@@ -7350,34 +7865,37 @@ return {
         Price = 1800,
         Resilience = 20
     },
-    ["Bull Shark"] = {
-        Seasons = {
-            "Spring"
-        },
-        Rarity = "Legendary",
-        FavouriteBait = "Fish Head",
-        WeightPool = {
-            900,
-            1300
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
-        SparkleColor = Color3.new(1, 0.96078431606293, 0.77254903316498),
-        Quips = {
-            "A Bull Shark!",
-            "Thats some Bull Shark!",
-            "I caught a Bull Shark!"
-        },
-        Hint = "Found roaming in all types of waters and on the coasts.",
-        Description = "Bull sharks have robust bodies, and an extremely powerful nature. They have a special ability to adapt to both saltwater and freshwater, which is quite rare for sharks. Bull Sharks can be found most commonly near coats, and in freshwaters.",
-        Price = 400,
-        From = "Ocean",
-        Chance = 0.3,
+    ["Northstar Serpent"] = {
+        FavouriteTime = "None",
+        SparkleColor = Color3.new(1, 0.92941176891327, 0.53725492954254),
+        Description = "The Northstar Serpent is an insanely large and menacing sea serpent species. They have a long and spiny body, with bioluminescent fins throught it. Near their heads, they have six large tentacle-like appendages, which are spun in a screw motion to move at incredible speeds. Attempting to catch the Northstar Serpent will almost always result in catastrophe, those who are capable of hooking and catching such a formidable beast are truly legendary anglers.",
+        FavouriteBait = "Holly Berry",
+        Chance = 0.02,
         Weather = {
-            "Rain",
             "Foggy"
         },
-        XP = 150,
-        Resilience = 20
+        ProgressEfficiency = 0.1,
+        Hint = "???",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            140000,
+            200000
+        },
+        FromLimited = "Fischmas",
+        Quips = {
+            "A NORTHSTAR SERPENT!!",
+            "IT'S HEAVY!",
+            "WHAT IS THIS THING?!",
+            "WOAH!!!",
+            "SERPENT!!!!!"
+        },
+        XP = 5000,
+        Price = 20000,
+        Resilience = 10
     },
     ["Cookiecutter Shark"] = {
         FavouriteTime = "Night",
@@ -7438,36 +7956,68 @@ return {
         XP = 90,
         Resilience = 100
     },
-    Sailfish = {
-        SparkleColor = Color3.new(1, 0.94901961088181, 0.36862745881081),
-        Description = "Sailfish are known for their incredible speed, long bill, and their striking sail-like dorsal fin. It's sleek body is built for fast swimming, allowing it to dart through water in bursts of speed. They are found in tropical and warmer ocean waters.",
-        FavouriteBait = "Minnow",
-        Chance = 16,
+    ["Unique Present"] = {
+        SparkleColor = Color3.new(1, 1, 1),
+        Description = "A nice christmas present wrapped in white and teal gift paper. Maybe it has some better goodies inside!",
+        FavouriteBait = "Magnet",
+        Chance = 4,
         Weather = {
-            "Windy",
-            "Clear"
+            "None"
         },
-        XP = 300,
-        Hint = "Found in ocean water. Extremely strong.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
+        XP = 55,
+        Hint = "Only can be caught during Fischmas24.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.crate,
         Seasons = {
-            "Spring"
+            "None"
         },
-        Rarity = "Rare",
+        Rarity = "Limited",
         WeightPool = {
-            400,
-            600
+            90,
+            90
         },
-        From = "Ocean",
+        CoinContents = {
+            90,
+            130
+        },
+        IsCrate = true,
+        FromLimited = "Fischmas",
+        FishContents = {
+            "Icicle",
+            "Icicle",
+            "Icicle",
+            "Glass of Milk",
+            "Glass of Milk",
+            "Glass of Milk",
+            "Candy Cane Carp",
+            "Candy Cane Carp",
+            "Candy Cane Carp",
+            "Candy Cane Carp",
+            "Candy Cane Carp",
+            "Candy Cane Carp",
+            "Ornament Fish",
+            "Ornament Fish",
+            "Ornament Fish",
+            "Ornament Fish",
+            "Santa Salmon",
+            "Santa Salmon",
+            "Santa Salmon",
+            "Santa Salmon",
+            "Santa Salmon",
+            "Santa Salmon",
+            "Gingerbread Fish",
+            "Gingerbread Fish",
+            "Gingerbread Fish",
+            "Enchant Relic",
+            "Enchant Relic"
+        },
         Quips = {
-            "A Sailfish!",
-            "WOAH! A Sailfish!!",
-            "It's a Sailfish!",
-            "I caught a Sailfish!!"
+            "A Present!",
+            "Woah! A Present!",
+            "It's my lucky day!"
         },
-        ViewportSizeOffset = 0.9,
-        Price = 800,
-        Resilience = 40
+        CrateType = "FishAndCoins",
+        Price = 180,
+        Resilience = 50
     },
     Anglerfish = {
         FavouriteTime = "Night",
@@ -7531,35 +8081,39 @@ return {
         XP = 90,
         Resilience = 65
     },
-    Halibut = {
+    ["Candy Cane Carp"] = {
+        FavouriteTime = "Day",
         Seasons = {
-            "Summer",
-            "Spring"
+            "Winter"
         },
-        Rarity = "Rare",
-        FavouriteBait = "Squid",
+        Rarity = "Limited",
+        Price = 75,
         WeightPool = {
-            1000,
-            2000
+            10,
+            50
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.81176471710205, 0.50588238239288, 0.3647058904171),
+        SparkleColor = Color3.new(1, 0.45882353186607, 0.45882353186607),
         Quips = {
-            "A Halibut!",
-            "A Flatfish!",
-            "I Caught a Halibut!",
-            "Ou! A Halibut!"
+            "Woah, a Candy Cane Carp!",
+            "It's a Candy Cane Carp!",
+            "Woahh! This is bigger than I thought.",
+            "Carp-tastic!",
+            "!!!",
+            "Woah!",
+            "A Candy Cane Carp! My skill are sharp!",
+            "Candy Cane Carp Tuah!"
         },
-        Hint = "Found on the floor ocean. Best found near Haddock.",
-        Description = "The Halibut is a large flatfish known for their impressive size and strength. They commonly feed on Haddock and can be found hunting near 'Haddock Rock' and in deep waters. ",
-        Price = 250,
-        From = "Ocean",
-        Chance = 40,
+        Hint = "Only can be caught during Fischmas24.",
+        Description = "Candy Cane Carps are an interesting Fischmas fish. They exhibit coloration like that of a candy cane, as well as having a bunch of candy canes sticking out all round their body. They also taste like peppermint!",
+        FromLimited = "Fischmas",
+        FavouriteBait = "Peppermint Worm",
+        Chance = 60,
         Weather = {
-            "Rain"
+            "None"
         },
-        XP = 100,
-        Resilience = 40
+        XP = 85,
+        Resilience = 70
     },
     Coelacanth = {
         FavouriteTime = "Night",
@@ -7770,36 +8324,34 @@ return {
         XP = 35,
         Resilience = 200
     },
-    Alligator = {
+    ["Snowflake Flounder"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.60000002384186, 1, 0.45490196347237),
-        Description = "The Alligator is a massive, fearsome reptile known for its powerful bite and armoured body. Found in Mushgrove Swamp, Alligators are the apex predator with a stealthy and ambush-based hunting style.",
-        FavouriteBait = "Fish Head",
-        Chance = 0.9,
-        Weather = {
-            "Foggy, Rain"
-        },
-        ProgressEfficiency = 0.8,
-        Hint = "Found in Mushgrove Swamp during the night.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
         Seasons = {
-            "Spring"
+            "None"
         },
-        Rarity = "Legendary",
+        Rarity = "Limited",
+        Price = 145,
         WeightPool = {
-            1500,
-            3000
+            15,
+            55
         },
-        From = "Mushgrove",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.53725492954254, 0.80392158031464, 0.92549020051956),
         Quips = {
-            "WOAH!!",
-            "OH MY GOD!!",
-            "AN ALLIGATOR!",
-            "WHAT????"
+            "A Snowflake Flounder!",
+            "A Snowflake!",
+            "I caught a Snowflake Flounder!"
         },
-        XP = 400,
-        Price = 700,
-        Resilience = 15
+        Hint = "Only can be caught during Fischmas24.",
+        Description = "A very cold Flounder with a unique snowflake-like pattern on its body. Beware when holding - it's freezing cold!",
+        FromLimited = "Fischmas",
+        FavouriteBait = "Peppermint Worm",
+        Chance = 10,
+        Weather = {
+            "Rainy"
+        },
+        XP = 180,
+        Resilience = 80
     },
     ["Red Drum"] = {
         Seasons = {
