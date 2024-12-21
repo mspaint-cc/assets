@@ -4,14 +4,14 @@ return {
             Rarity = "Rare",
             Price = 2000
         },
-        ["Conception Conch"] = {
-            Rarity = "Mythical",
-            Price = 444
-        },
-        Glider = {
-            Price = 900,
+        Tidebreaker = {
+            Price = 80000,
             OnlyBuyOne = true,
-            Rarity = "Rare"
+            Rarity = "Mythical"
+        },
+        ["Blizzard Totem"] = {
+            Rarity = "Mythical",
+            Price = 275000
         },
         ["Magic Thread"] = {
             Price = math.huge,
@@ -22,49 +22,15 @@ return {
             Rarity = "Rare",
             Price = 2000
         },
-        ["Super Flippers"] = {
-            Price = 30000,
-            OnlyBuyOne = true,
-            Rarity = "Legendary"
-        },
-        ["Advanced Diving Gear"] = {
-            Price = 15000,
-            OnlyBuyOne = true,
-            Rarity = "Unusual"
-        },
-        ["Skin Crate"] = {
+        ["Ancient Thread"] = {
+            Price = math.huge,
             Rarity = "Exotic",
-            Price = math.huge
-        },
-        ["Bag of Presents"] = {
-            Rarity = "Exotic",
-            Price = math.huge
-        },
-        ["Crab Cage"] = {
-            Rarity = "Unusual",
-            Price = 45
-        },
-        ["Elite Token"] = {
-            Rarity = "Exotic",
-            Price = math.huge
-        },
-        Tidebreaker = {
-            Price = 80000,
-            OnlyBuyOne = true,
-            Rarity = "Mythical"
+            SellValue = 700
         },
         Flippers = {
             Price = 9000,
             OnlyBuyOne = true,
             Rarity = "Unusual"
-        },
-        ["Handwritten Note"] = {
-            Rarity = "Exotic",
-            Price = math.huge
-        },
-        ["Treasure Map"] = {
-            Rarity = "Exotic",
-            Price = math.huge
         },
         ["Lunar Thread"] = {
             Price = math.huge,
@@ -79,6 +45,80 @@ return {
             Price = 3000,
             OnlyBuyOne = true,
             Rarity = "Uncommon"
+        },
+        ["Beginner Oxygen Tank"] = {
+            Price = 3500,
+            OnlyBuyOne = true,
+            Rarity = "Unusual"
+        },
+        ["Witches Ingredient"] = {
+            Rarity = "Rare",
+            Price = 10000
+        },
+        Firework = {
+            Rarity = "Limited",
+            Price = 130
+        },
+        ["Avalanche Totem"] = {
+            Rarity = "Mythical",
+            Price = 150000
+        },
+        ["Conception Conch"] = {
+            Rarity = "Mythical",
+            Price = 444
+        },
+        Glider = {
+            Price = 900,
+            OnlyBuyOne = true,
+            Rarity = "Rare"
+        },
+        ["Advanced Oxygen Tank"] = {
+            Price = 25000,
+            OnlyBuyOne = true,
+            Rarity = "Legendary"
+        },
+        ["Winter Cloak"] = {
+            Price = 7500,
+            OnlyBuyOne = true,
+            Rarity = "Unusual"
+        },
+        ["Super Flippers"] = {
+            Price = 30000,
+            OnlyBuyOne = true,
+            Rarity = "Legendary"
+        },
+        ["Advanced Diving Gear"] = {
+            Price = 15000,
+            OnlyBuyOne = true,
+            Rarity = "Unusual"
+        },
+        ["Crab Cage"] = {
+            Rarity = "Unusual",
+            Price = 45
+        },
+        ["Skin Crate"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Bag of Presents"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Treasure Map"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Elite Token"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Regular Token"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Handwritten Note"] = {
+            Rarity = "Exotic",
+            Price = math.huge
         },
         Fillionaire = {
             Rarity = "Exotic",
@@ -98,26 +138,35 @@ return {
             Rarity = "Legendary",
             Price = 75000
         },
-        ["Ancient Thread"] = {
-            Price = math.huge,
-            Rarity = "Exotic",
-            SellValue = 700
+        Pickaxe = {
+            Price = 5000,
+            OnlyBuyOne = true,
+            Rarity = "Rare"
         },
         ["Sundial Totem"] = {
             Rarity = "Rare",
             Price = 2000
         },
-        ["Witches Ingredient"] = {
-            Rarity = "Rare",
-            Price = 10000
+        ["Intermediate Oxygen Tank"] = {
+            Price = 10000,
+            OnlyBuyOne = true,
+            Rarity = "Rare"
         },
-        ["Regular Token"] = {
-            Rarity = "Exotic",
-            Price = math.huge
+        ["Advanced Glider"] = {
+            Price = 2500,
+            OnlyBuyOne = true,
+            Rarity = "Rare"
         },
-        Firework = {
-            Rarity = "Limited",
-            Price = 130
+        ["Fish Radar"] = {
+            Price = 8000,
+            OnlyBuyOne = true,
+            Rarity = "Legendary",
+            Icon = "rbxassetid://132119413174655"
+        },
+        ["Basic Oxygen Tank"] = {
+            Price = 1000,
+            OnlyBuyOne = true,
+            Rarity = "Uncommon"
         },
         ["Eclipse Totem"] = {
             Rarity = "Mythical",
@@ -126,12 +175,6 @@ return {
         ["Smokescreen Totem"] = {
             Rarity = "Rare",
             Price = 2000
-        },
-        ["Fish Radar"] = {
-            Price = 8000,
-            OnlyBuyOne = true,
-            Rarity = "Legendary",
-            Icon = "rbxassetid://132119413174655"
         }
     },
     Rarities = {
