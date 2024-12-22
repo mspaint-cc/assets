@@ -14,7 +14,8 @@ local UpdateLibraries = {
     ["bait"] = LuaTableSerializer(require(Library.bait), SerializerOptions),
     ["boat"] = LuaTableSerializer(require(Modules.vessels), SerializerOptions),
     ["items"] = LuaTableSerializer(require(Library.items), SerializerOptions),
-    ["rods"] = LuaTableSerializer(require(Library.rods), SerializerOptions)
+    ["rods"] = LuaTableSerializer(require(Library.rods), SerializerOptions),
+    ["enchants"] = LuaTableSerializer(require(Library.rods.enchants), SerializerOptions)
 }
 
 function ToBase64(data)
