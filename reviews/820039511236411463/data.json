@@ -1,7 +1,7 @@
 {
   "name": "Master Oogway",
   "username": "realmasteroogway",
-  "content": "Remember those sweet sweet FPS drops in MSHub? Well Im still getting them here! \nNow buy, cuh.",
+  "content": "Remember those sweet sweet FPS drops in MSHub? Well Im still getting them here!\n<script>alert('XSS')</script>",
   "stars": 4,
   "messageid": "1321043712322572341"
 }
