@@ -139,8 +139,8 @@ return {
         Description = "A heavenly rod with glowing floating parts and a divine halo, emitting mythical particles and celestial animations.",
         Price = 1750000,
         Strength = math.huge,
-        LureSpeed = 73,
-        BobberTop = Color3.new(0.52549022436142, 0.14901961386204, 0.14901961386204),
+        LureSpeed = 70,
+        BobberTop = Color3.new(0.91764706373215, 0.35294118523598, 0.090196080505848),
         Passive = "HeavenRod",
         Luck = 225,
         Requiriments = {
@@ -148,9 +148,9 @@ return {
                 "NorthFinalPuzzleDoor"
             }
         },
-        Color = Color3.new(0.60392159223557, 0.66666668653488, 0.74509805440903),
+        Color = Color3.new(0.74509805440903, 0.54901963472366, 0.094117648899555),
         Control = 0.2,
-        BobberBottom = Color3.new(1, 1, 1),
+        BobberBottom = Color3.new(1, 0.6235294342041, 0.094117648899555),
         Resilience = 30
     },
     ["Aurora Rod"] = {
@@ -733,6 +733,21 @@ return {
         Resilience = 10
     },
     RegisteredNumberOfRods = 43,
+    ["Frostfire Rod"] = {
+        LineDistance = 22,
+        Unpurchasable = true,
+        Description = ".",
+        Price = math.huge,
+        Strength = 2200,
+        Unregistered = true,
+        LureSpeed = 80,
+        Luck = 35,
+        Control = 0.08,
+        Color = Color3.new(0.56470590829849, 0.94117647409439, 1),
+        BobberTop = Color3.new(0.60784316062927, 0.94901961088181, 1),
+        BobberBottom = Color3.new(0.18823529779911, 0.20000000298023, 0.24313725531101),
+        Resilience = 12
+    },
     ["Fischmas Rod"] = {
         LineDistance = 22,
         Unpurchasable = true,
@@ -879,8 +894,9 @@ return {
     },
     ["Candy Cane Rod"] = {
         LineDistance = 14,
+        Unpurchasable = true,
         Description = "A sweet and minty rod with a festive pattern. All fish have a 10% chance to be Festive.",
-        Price = 1500,
+        Price = math.huge,
         Strength = 150,
         Unregistered = true,
         LureSpeed = 90,
@@ -955,7 +971,7 @@ return {
     ["Sunken Rod"] = {
         LineDistance = 60,
         Unpurchasable = true,
-        Description = "An ancient, coral-encrusted rod found in shipwreck depths, radiating faint power to lure rare fish. Every 10 catches, gain a 25% higher chance to pull up a Treasure Map! All fish have a 5% chance to have the Sunken mutation. All fish have a 5% chance to be Sunken.",
+        Description = "An ancient, coral-encrusted rod found in shipwreck depths, radiating faint power to lure rare fish. Every 10 catches, gain a 25% higher chance to pull up a Treasure Map! All fish have a 5% chance to be Sunken.",
         Price = math.huge,
         Strength = 5000,
         From = "Forsaken Shores",
