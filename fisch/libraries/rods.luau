@@ -470,7 +470,7 @@ return {
     ["Katana Rod"] = {
         LineDistance = 100,
         Unpurchasable = true,
-        Description = "[For @ennnryu]",
+        Description = "Good at cutting fruit. [Developer-Exclusive]",
         Price = math.huge,
         Strength = math.huge,
         DEV = true,
