@@ -2,6 +2,20 @@ return {
     OnBoatProductPurchase = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     Spawn = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     library = {
+        ["Pride of Fisch"] = {
+            Dedscriptipon = "A majestic mega-yacht designed for true captains.",
+            BackwardsEfficiency = 1,
+            Price = -1,
+            Bobbing = 1,
+            BobbingSpeed = 1,
+            Unpurchasable = true,
+            MaxSpeed = 230,
+            StopEfficiency = 2,
+            TurningSpeed = 0.3,
+            Level = 1,
+            Icon = "rbxassetid://126957372936382",
+            Accel = 0.2
+        },
         ["Holiday Themed - Speedboat"] = {
             Dedscriptipon = "Sail around at unpresedented speeds! HOLIDAY XMAS!",
             BackwardsEfficiency = 1,
@@ -30,19 +44,43 @@ return {
             Icon = "rbxassetid://90047369440873",
             Accel = 0.25
         },
-        ["Pride of Fisch"] = {
-            Dedscriptipon = "A majestic mega-yacht designed for true captains.",
-            BackwardsEfficiency = 1,
+        ["Dr. Glimmerfin's Boat"] = {
+            Dedscriptipon = "Dr. Glimmerfin's Boat Quest Boat",
+            BackwardsEfficiency = 1.1,
             Price = -1,
-            Bobbing = 1,
+            Bobbing = 2.5,
+            BobbingSpeed = 3,
+            MaxSpeed = 100,
+            StopEfficiency = 2.2,
+            Level = 75,
+            TurningSpeed = 0.33,
+            Accel = 0.25
+        },
+        ["Fishing Boat"] = {
+            Dedscriptipon = "A trusty boat to reel in even the biggest fish!",
+            BackwardsEfficiency = 1,
+            Price = 20000,
+            Bobbing = 2,
+            BobbingSpeed = 1.5,
+            MaxSpeed = 75,
+            StopEfficiency = 2,
+            Level = 25,
+            TurningSpeed = 0.5,
+            Accel = 0.3
+        },
+        ["Sea Pegasus"] = {
+            Dedscriptipon = "The Sea Pegasus!",
+            BackwardsEfficiency = 1.1,
+            Price = -1,
+            Bobbing = 2,
             BobbingSpeed = 1,
             Unpurchasable = true,
-            MaxSpeed = 230,
-            StopEfficiency = 2,
-            TurningSpeed = 0.3,
+            MaxSpeed = 180,
+            StopEfficiency = 1.8,
+            TurningSpeed = 0.6,
             Level = 1,
-            Icon = "rbxassetid://126957372936382",
-            Accel = 0.2
+            Icon = "rbxassetid://72935532824780",
+            Accel = 0.35
         },
         ["Snowmobile Jetski"] = {
             Dedscriptipon = "Jetski frozen christmas version!",
@@ -57,31 +95,6 @@ return {
             Level = 60,
             Accel = 0.3,
             ObtainText = "Obtain on Christmas Bundle"
-        },
-        Titan = {
-            Dedscriptipon = "Huh? Who would want this?",
-            BackwardsEfficiency = 1,
-            Price = 5000,
-            Bobbing = 3,
-            BobbingSpeed = 1,
-            MaxSpeed = 45,
-            StopEfficiency = 1.5,
-            Level = 40,
-            TurningSpeed = 0.2,
-            Accel = 0.2
-        },
-        ["Archaeological Boat"] = {
-            Dedscriptipon = "Boat used by archaeologists from ancient island.",
-            BackwardsEfficiency = 1,
-            Price = 20000,
-            Bobbing = 1,
-            BobbingSpeed = 3,
-            MaxSpeed = 80,
-            Unpurchasable = true,
-            StopEfficiency = 2,
-            Level = 30,
-            TurningSpeed = 0.3,
-            Accel = 0.2
         },
         ["Coral Cruiser Boat"] = {
             Dedscriptipon = "Fischer Special Special!",
@@ -98,6 +111,19 @@ return {
             Icon = "rbxassetid://71002238163754",
             ObtainText = "Obtain on Starter Pack"
         },
+        ["Archaeological Boat"] = {
+            Dedscriptipon = "Boat used by archaeologists from ancient island.",
+            BackwardsEfficiency = 1,
+            Price = 20000,
+            Bobbing = 1,
+            BobbingSpeed = 3,
+            MaxSpeed = 80,
+            Unpurchasable = true,
+            StopEfficiency = 2,
+            Level = 30,
+            TurningSpeed = 0.3,
+            Accel = 0.2
+        },
         ["The Pearl"] = {
             Dedscriptipon = "No one knows what sails this ship...",
             BackwardsEfficiency = 1,
@@ -107,6 +133,19 @@ return {
             MaxSpeed = 95,
             StopEfficiency = 3,
             Level = 90,
+            TurningSpeed = 0.3,
+            Accel = 0.2
+        },
+        ["Flying Dutchman"] = {
+            Dedscriptipon = "Only available during FischFright-2024",
+            BackwardsEfficiency = 1,
+            Price = -1,
+            Bobbing = 6,
+            BobbingSpeed = 3,
+            MaxSpeed = 80,
+            Unpurchasable = true,
+            StopEfficiency = 2,
+            Level = 0,
             TurningSpeed = 0.3,
             Accel = 0.2
         },
@@ -122,23 +161,10 @@ return {
             TurningSpeed = 0.7,
             Accel = 0.3
         },
-        ["Flying Dutchman"] = {
-            Dedscriptipon = "Only available during FischFright-2024",
+        ["Luxury Speedboat"] = {
+            Dedscriptipon = "Sail around at unpresedented speeds!",
             BackwardsEfficiency = 1,
-            Price = -1,
-            Bobbing = 6,
-            BobbingSpeed = 3,
-            MaxSpeed = 80,
-            Unpurchasable = true,
-            StopEfficiency = 2,
-            Level = 0,
-            TurningSpeed = 0.3,
-            Accel = 0.2
-        },
-        ["Midnight Cruiser"] = {
-            Dedscriptipon = "Midnight Cruiser!",
-            BackwardsEfficiency = 1,
-            Price = -1,
+            Price = 20000,
             Bobbing = 2,
             BobbingSpeed = 1,
             MaxSpeed = 150,
@@ -146,6 +172,18 @@ return {
             Level = 50,
             TurningSpeed = 0.54,
             Accel = 0.3
+        },
+        Pontoon = {
+            Dedscriptipon = "Great for parties with some buddies!",
+            BackwardsEfficiency = 1,
+            Price = 20000,
+            Bobbing = 1,
+            BobbingSpeed = 1,
+            MaxSpeed = 40,
+            StopEfficiency = 2,
+            Level = 30,
+            TurningSpeed = 0.4,
+            Accel = 0.2
         },
         Rowboat = {
             Dedscriptipon = "Sail the seas with your trusty paddles!",
@@ -176,29 +214,32 @@ return {
             Icon = "rbxassetid://98034431985434",
             Accel = 0.2
         },
-        Pontoon = {
-            Dedscriptipon = "Great for parties with some buddies!",
-            BackwardsEfficiency = 1,
-            Price = 20000,
-            Bobbing = 1,
-            BobbingSpeed = 1,
-            MaxSpeed = 40,
-            StopEfficiency = 2,
-            Level = 30,
-            TurningSpeed = 0.4,
-            Accel = 0.2
-        },
-        ["Fishing Boat"] = {
-            Dedscriptipon = "A trusty boat to reel in even the biggest fish!",
-            BackwardsEfficiency = 1,
-            Price = 20000,
+        ["Santa\xE2\x80\x99s Jetski"] = {
+            Dedscriptipon = "Santa\xE2\x80\x99s Jetski christmas version!",
+            BackwardsEfficiency = 1.1,
+            Price = -1,
             Bobbing = 2,
-            BobbingSpeed = 1.5,
-            MaxSpeed = 75,
-            StopEfficiency = 2,
-            Level = 25,
-            TurningSpeed = 0.5,
-            Accel = 0.3
+            Unpurchasable = true,
+            BobbingSpeed = 0.4,
+            StopEfficiency = 3.7,
+            MaxSpeed = 220,
+            ProductId = 2677594486,
+            TurningSpeed = 0.8,
+            Level = 1,
+            Icon = "rbxassetid://140332102870016",
+            Accel = 0.4
+        },
+        Titan = {
+            Dedscriptipon = "Huh? Who would want this?",
+            BackwardsEfficiency = 1,
+            Price = 5000,
+            Bobbing = 3,
+            BobbingSpeed = 1,
+            MaxSpeed = 45,
+            StopEfficiency = 1.5,
+            Level = 40,
+            TurningSpeed = 0.2,
+            Accel = 0.2
         },
         ["Celestial Cruiser"] = {
             ExpirationDate = DateTime.fromUnixTimestamp(1736607600),
@@ -268,21 +309,6 @@ return {
             Icon = "rbxassetid://130906482985374",
             Accel = 0.35
         },
-        ["Santa\xE2\x80\x99s Jetski"] = {
-            Dedscriptipon = "Santa\xE2\x80\x99s Jetski christmas version!",
-            BackwardsEfficiency = 1.1,
-            Price = -1,
-            Bobbing = 2,
-            Unpurchasable = true,
-            BobbingSpeed = 0.4,
-            StopEfficiency = 3.7,
-            MaxSpeed = 220,
-            ProductId = 2677594486,
-            TurningSpeed = 0.8,
-            Level = 1,
-            Icon = "rbxassetid://140332102870016",
-            Accel = 0.4
-        },
         ["Reindeer Cruiser"] = {
             Dedscriptipon = "A ducky boat with a pretty convincing reindeer disguise. [Only obtainable during Fischmas 2024]",
             BackwardsEfficiency = 1,
@@ -296,6 +322,18 @@ return {
             TurningSpeed = 0.5,
             Accel = 0.25
         },
+        ["Bass Boat"] = {
+            Dedscriptipon = "Great for fishing with pals!",
+            BackwardsEfficiency = 1,
+            Price = 6000,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            MaxSpeed = 45,
+            StopEfficiency = 0.7,
+            Level = 10,
+            TurningSpeed = 0.4,
+            Accel = 0.22
+        },
         ["Pirate Ship"] = {
             Dedscriptipon = "Argggg Matey!!",
             BackwardsEfficiency = 1,
@@ -308,10 +346,10 @@ return {
             TurningSpeed = 0.3,
             Accel = 0.2
         },
-        ["Luxury Speedboat"] = {
-            Dedscriptipon = "Sail around at unpresedented speeds!",
+        ["Midnight Cruiser"] = {
+            Dedscriptipon = "Midnight Cruiser!",
             BackwardsEfficiency = 1,
-            Price = 20000,
+            Price = -1,
             Bobbing = 2,
             BobbingSpeed = 1,
             MaxSpeed = 150,
@@ -359,17 +397,19 @@ return {
             TurningSpeed = 0.4,
             Accel = 0.22
         },
-        ["Bass Boat"] = {
-            Dedscriptipon = "Great for fishing with pals!",
-            BackwardsEfficiency = 1,
-            Price = 6000,
+        ["Loot Rider"] = {
+            Dedscriptipon = "The Loot Rider!",
+            BackwardsEfficiency = 1.1,
+            Price = -1,
             Bobbing = 2,
             BobbingSpeed = 1,
-            MaxSpeed = 45,
-            StopEfficiency = 0.7,
-            Level = 10,
-            TurningSpeed = 0.4,
-            Accel = 0.22
+            Unpurchasable = true,
+            MaxSpeed = 190,
+            StopEfficiency = 1.8,
+            TurningSpeed = 0.6,
+            Level = 1,
+            Icon = "rbxassetid://80827578890451",
+            Accel = 0.35
         }
     },
     Give = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end
