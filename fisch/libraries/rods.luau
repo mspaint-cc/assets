@@ -134,24 +134,25 @@ return {
         BobberBottom = Color3.new(0.48627451062202, 0.28235295414925, 0.031372550874949),
         Resilience = 0
     },
-    ["Heaven's Rod"] = {
-        LineDistance = 70,
-        Description = "A heavenly rod with glowing floating parts and a divine halo, emitting mythical particles and celestial animations.",
-        Price = 1750000,
-        Strength = math.huge,
-        LureSpeed = 70,
-        BobberTop = Color3.new(0.91764706373215, 0.35294118523598, 0.090196080505848),
-        Passive = "HeavenRod",
-        Luck = 225,
+    ["Auric Rod"] = {
+        LineDistance = 20,
+        Unpurchasable = true,
+        Description = "A rod forged with many valuable gemstones. Fish caught with this rod have a random sell value between 2-6x.",
+        Price = math.huge,
+        Strength = 2500,
+        Unregistered = true,
+        Control = 0.05,
+        LureSpeed = 80,
+        Luck = 25,
         Requiriments = {
             GatesOpened = {
-                "NorthFinalPuzzleDoor"
+                "RelicRodGate"
             }
         },
-        Color = Color3.new(0.74509805440903, 0.54901963472366, 0.094117648899555),
-        Control = 0.2,
-        BobberBottom = Color3.new(1, 0.6235294342041, 0.094117648899555),
-        Resilience = 30
+        BobberTop = Color3.new(0.80000001192093, 0.20392157137394, 0.054901961237192),
+        Color = Color3.new(0.58039218187332, 0.074509806931019, 0.16862745583057),
+        BobberBottom = Color3.new(0.31764706969261, 0.090196080505848, 0.050980392843485),
+        Resilience = 20
     },
     ["Aurora Rod"] = {
         LineDistance = 20,
@@ -570,6 +571,20 @@ return {
         BobberBottom = Color3.new(1, 1, 1),
         Resilience = 15
     },
+    ["Firework Rod"] = {
+        LineDistance = 100,
+        Description = "A rod imbued with festive magic. 15% chance for Firework Mutation (3.5x sell price). Reduces whale progress speed by 20% and gives a +0.2% whale encounter rate.",
+        Price = 35000,
+        Strength = 25000,
+        LureSpeed = 65,
+        Passive = "FireworkRod",
+        Luck = 45,
+        Control = 0.15,
+        BobberTop = Color3.new(0.52549022436142, 0.14901961386204, 0.14901961386204),
+        Color = Color3.new(0.60392159223557, 0.66666668653488, 0.74509805440903),
+        BobberBottom = Color3.new(1, 1, 1),
+        Resilience = 15
+    },
     ["The Twig"] = {
         LineDistance = 100,
         Unpurchasable = true,
@@ -585,6 +600,20 @@ return {
         BobberTop = Color3.new(0.6745098233223, 0.6745098233223, 0.6745098233223),
         BobberBottom = Color3.new(0.23137255012989, 0.23137255012989, 0.23137255012989),
         Resilience = 50
+    },
+    ["Rod Of The Exalted One"] = {
+        LineDistance = 70,
+        Unpurchasable = true,
+        Description = "Originally created for the most magnificent royals, was lost in time and sealed away. Exalted Relics now have a 2.5x higher chance to be caught.",
+        Price = math.huge,
+        Strength = 70000,
+        LureSpeed = 45,
+        Luck = 170,
+        Control = 0.15,
+        Color = Color3.new(1, 0.50196081399918, 0.97647058963776),
+        BobberTop = Color3.new(0.58039218187332, 0.98039215803146, 1),
+        BobberBottom = Color3.new(1, 0.48627451062202, 0.93333333730698),
+        Resilience = 20
     },
     ["Rod Of The Forgotten Fang"] = {
         LineDistance = 100,
@@ -621,6 +650,8 @@ return {
         ["Abyssal Spinecaster"] = "Abyssal Spinecaster",
         ["Frostbane Rod"] = "Frostbane Rod",
         ["Frost Warden Rod"] = "Frost Warden Rod",
+        ["Auric Rod"] = "Auric Rod",
+        ["Electric Guitar"] = "Electric Guitar",
         ["Mystic Staff"] = "Mystic Staff",
         ["Executive Rod"] = "Executive Rod",
         ["Rex Umbrarum"] = "Rex Umbrarum",
@@ -732,7 +763,7 @@ return {
         BobberBottom = Color3.new(0.75294119119644, 0.91372549533844, 1),
         Resilience = 10
     },
-    RegisteredNumberOfRods = 43,
+    RegisteredNumberOfRods = 45,
     ["Frostfire Rod"] = {
         LineDistance = 22,
         Unpurchasable = true,
@@ -775,6 +806,41 @@ return {
         BobberTop = Color3.new(0.52549022436142, 0.14901961386204, 0.14901961386204),
         BobberBottom = Color3.new(1, 1, 1),
         Resilience = 15
+    },
+    ["Heaven's Rod"] = {
+        LineDistance = 70,
+        Description = "A heavenly rod with glowing floating parts and a divine halo, emitting mythical particles and celestial animations.",
+        Price = 1750000,
+        Strength = math.huge,
+        LureSpeed = 70,
+        BobberTop = Color3.new(0.91764706373215, 0.35294118523598, 0.090196080505848),
+        Passive = "HeavenRod",
+        Luck = 225,
+        Requiriments = {
+            GatesOpened = {
+                "NorthFinalPuzzleDoor"
+            }
+        },
+        Color = Color3.new(0.74509805440903, 0.54901963472366, 0.094117648899555),
+        Control = 0.2,
+        BobberBottom = Color3.new(1, 0.6235294342041, 0.094117648899555),
+        Resilience = 30
+    },
+    ["Electric Guitar"] = {
+        LineDistance = 100,
+        Unpurchasable = true,
+        Description = "In courtesy of Mila [For @kwijt]",
+        Price = math.huge,
+        Strength = math.huge,
+        DEV = true,
+        Unregistered = true,
+        LureSpeed = 35,
+        Luck = 150,
+        Control = 0.15,
+        Color = Color3.new(0.41568627953529, 0.10588235408068, 0.10588235408068),
+        BobberTop = Color3.new(0.48627451062202, 0.45882353186607, 0.44705882668495),
+        BobberBottom = Color3.new(0.24313725531101, 0.094117648899555, 0.078431375324726),
+        Resilience = 10
     },
     ["Antler Rod"] = {
         LineDistance = 24,
