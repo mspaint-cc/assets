@@ -186,6 +186,7 @@ return {
         "Legendary",
         "Mythical",
         "Exotic",
+        "Secret",
         "Limited",
         "Developer"
     },
@@ -198,9 +199,10 @@ return {
         Uncommon = Color3.new(0.63137257099152, 1, 0.66274511814117),
         Rare = Color3.new(0.46666666865349, 0.42352941632271, 0.70980393886566),
         Legendary = Color3.new(0.94117647409439, 0.70980393886566, 0.42745098471642),
+        Limited = Color3.new(1, 0.50980395078659, 0.22352941334248),
         Extinct = Color3.new(0.21176470816135, 0.28627452254295, 0.6235294342041),
         Relic = Color3.new(0.4705882370472, 1, 0.71764707565308),
-        Limited = Color3.new(1, 0.50980395078659, 0.22352941334248),
+        Secret = Color3.new(1, 1, 1),
         Mythical = Color3.new(1, 0.24313725531101, 0.4705882370472)
     },
     ToHex = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end
