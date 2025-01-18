@@ -2,6 +2,23 @@ return {
     OnBoatProductPurchase = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     Spawn = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     library = {
+        ["Fishscale Waverider"] = {
+            ExpirationDate = DateTime.fromUnixTimestamp(1737817200),
+            BackwardsEfficiency = 1.1,
+            Unpurchasable = true,
+            Price = -1,
+            Bobbing = 2,
+            TurningSpeed = 0.8,
+            StopEfficiency = 3.7,
+            BobbingSpeed = 0.4,
+            Dedscriptipon = "Insane waverider!!",
+            MaxSpeed = 230,
+            ProductId = 2701902604,
+            LimitedAmount = 10000,
+            Level = 1,
+            Icon = "rbxassetid://72839527239663",
+            Accel = 0.4
+        },
         ["Pride of Fisch"] = {
             Dedscriptipon = "A majestic mega-yacht designed for true captains.",
             BackwardsEfficiency = 1,
@@ -242,7 +259,7 @@ return {
             Accel = 0.2
         },
         ["Celestial Cruiser"] = {
-            ExpirationDate = DateTime.fromUnixTimestamp(1736607600),
+            ExpirationDate = DateTime.fromUnixTimestamp(1737212400),
             BackwardsEfficiency = 1.1,
             Unpurchasable = true,
             Price = -1,
