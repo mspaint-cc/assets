@@ -41,19 +41,19 @@ return {
         Rarity = "Uncommon",
         Resilience = -5
     },
+    Give = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
+    ["Kraken Tentacle"] = {
+        LureSpeed = 35,
+        Luck = 100,
+        GenerelLuck = 35,
+        Rarity = "Legendary",
+        Resilience = 15
+    },
     Insect = {
         LureSpeed = 5,
         Luck = 35,
         GenerelLuck = 0,
         Rarity = "Common",
-        Resilience = 0
-    },
-    Give = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
-    ["Night Shrimp"] = {
-        LureSpeed = 15,
-        Luck = 0,
-        GenerelLuck = 90,
-        Rarity = "Legendary",
         Resilience = 0
     },
     ["Deep Coral"] = {
@@ -62,6 +62,21 @@ return {
         GenerelLuck = 0,
         Rarity = "Legendary",
         Resilience = 50
+    },
+    ["Night Shrimp"] = {
+        LureSpeed = 15,
+        Luck = 0,
+        GenerelLuck = 90,
+        Rarity = "Legendary",
+        Resilience = 0
+    },
+    ["Hangman's Hook"] = {
+        ProgressSpeed = 45,
+        LureSpeed = -5,
+        Luck = 150,
+        GenerelLuck = 35,
+        Rarity = "Mythical",
+        Resilience = 20
     },
     ["Super Flakes"] = {
         LureSpeed = 0,
