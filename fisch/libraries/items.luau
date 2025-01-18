@@ -59,6 +59,11 @@ return {
             Rarity = "Limited",
             Price = 130
         },
+        ["Water Bubble"] = {
+            Price = 25000,
+            OnlyBuyOne = true,
+            Rarity = "Legendary"
+        },
         ["Avalanche Totem"] = {
             Rarity = "Mythical",
             Price = 150000
