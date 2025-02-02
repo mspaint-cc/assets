@@ -27,6 +27,11 @@ return {
             Rarity = "Exotic",
             SellValue = 700
         },
+        ["Heart Of Zeus"] = {
+            Price = math.huge,
+            purchasable = false,
+            Rarity = "Mythical"
+        },
         Flippers = {
             Price = 9000,
             OnlyBuyOne = true,
@@ -77,6 +82,10 @@ return {
             OnlyBuyOne = true,
             Rarity = "Rare"
         },
+        ["Zeus Storm Totem"] = {
+            Rarity = "Mythical",
+            Price = 1500000
+        },
         ["Advanced Oxygen Tank"] = {
             Price = 25000,
             OnlyBuyOne = true,
@@ -109,10 +118,6 @@ return {
             Rarity = "Exotic",
             Price = math.huge
         },
-        ["Treasure Map"] = {
-            Rarity = "Exotic",
-            Price = math.huge
-        },
         ["Elite Token"] = {
             Rarity = "Exotic",
             Price = math.huge
@@ -120,6 +125,19 @@ return {
         ["Regular Token"] = {
             Rarity = "Exotic",
             Price = math.huge
+        },
+        ["Treasure Map"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Poseidon Wrath Totem"] = {
+            Rarity = "Mythical",
+            Price = 1500000
+        },
+        TNT = {
+            Price = math.huge,
+            purchasable = false,
+            Rarity = "Rare"
         },
         ["Handwritten Note"] = {
             Rarity = "Exotic",
