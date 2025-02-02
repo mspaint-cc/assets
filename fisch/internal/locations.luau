@@ -1,9 +1,16 @@
 return {
     SpecialEvents = {
+        "Orcas Pool",
+
         "Megalodon Default",
         "Megalodon Ancient",
-        "Orcas Pool",
-        "Whale Shark"
+
+        "Whale Shark",
+        "Great Hammerhead Shark",
+        "Great White Shark",
+
+        "Isonade",
+        "Golden Tide"
     },
 
     NPCs = {
