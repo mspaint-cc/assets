@@ -8,9 +8,9 @@ return {
             Chance = 0
         },
         ["Electric Shock"] = {
-            PriceMultiply = 0.5,
+            PriceMultiply = 3.5,
             Color = Color3.new(0.29803922772408, 0.29803922772408, 0.29803922772408),
-            Display = "Charred",
+            Display = "Electric Shock",
             Chance = 0
         },
         Silver = {
@@ -94,6 +94,12 @@ return {
             Display = "Charred",
             Chance = 0
         },
+        Studded = {
+            PriceMultiply = 1.1,
+            Color = Color3.new(0.63921570777893, 0.63529413938522, 0.64705884456635),
+            Display = "Studded",
+            Chance = 0
+        },
         Blighted = {
             PriceMultiply = 3,
             Color = Color3.new(0.41568627953529, 0.3137255012989, 0.81176471710205),
@@ -114,6 +120,18 @@ return {
             },
             Display = "Amber",
             Chance = 8
+        },
+        Lightning = {
+            PriceMultiply = 1,
+            Color = Color3.new(0.89803922176361, 0.71764707565308, 0),
+            Display = "Lightning",
+            Chance = 0
+        },
+        Hexed = {
+            PriceMultiply = 1.5,
+            Color = Color3.new(0.65098041296005, 0, 0),
+            Display = "Hexed",
+            Chance = 15
         },
         Frozen = {
             PriceMultiply = 1.3,
@@ -277,11 +295,11 @@ return {
             Display = "Crystalized",
             Chance = 0
         },
-        Hexed = {
-            PriceMultiply = 1.5,
-            Color = Color3.new(0.65098041296005, 0, 0),
-            Display = "Hexed",
-            Chance = 15
+        Wrath = {
+            PriceMultiply = 6.5,
+            Color = Color3.new(0, 0.66666668653488, 0.49803921580315),
+            Display = "Wrath",
+            Chance = 0
         },
         Electric = {
             PriceMultiply = 1.45,
