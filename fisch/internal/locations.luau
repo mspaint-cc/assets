@@ -1,4 +1,11 @@
 return {
+    SpecialEvents = {
+        "Megalodon Default",
+        "Megalodon Ancient",
+        "Orcas Pool",
+        "Whale Shark"
+    },
+
     NPCs = {
         ["1Appraiser"] = CFrame.new(453.182373, 150.500031, 206.908783, 0, 0, 1, 0, 1, -0, -1, 0, 0),
         ["2Shipwright"] = CFrame.new(361.154297, 133.615952, 257.741211, -0.140875623, 4.26487077e-08, 0.990027308, -2.82988688e-10, 1, -4.31185825e-08, -0.990027308, -6.35452357e-09, -0.140875623),
