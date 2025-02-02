@@ -91,7 +91,7 @@ return {
     ["Riptide Rod"] = {
         LineDistance = 50,
         Unpurchasable = true,
-        Description = "The Riptide Rod fills its Tide Meter by 20% with each Perfect Cast. At max, it enters `High Tide` for 3 casts, boosting rarity chance by 30% and bite speed by 25%.",
+        Description = "The Riptide Rod fills its Tide Meter by 20% with each Perfect Catch. At max, it enters `High Tide` for 3 casts, boosting rarity chance by 30% and bite speed by 25%.",
         Price = math.huge,
         Strength = 3500,
         LureSpeed = 80,
@@ -212,16 +212,16 @@ return {
     },
     ["Champions Rod"] = {
         LineDistance = 20,
-        Description = "A rod designed for champions, offering a balanced mix of speed and strength for those progressing through the mid-game.",
+        Description = "Wielded by legendary tournament winners, this balanced rod embodies competitive excellence. Its versatile design combines tournament-tested speed with professional-grade strength, making it the perfect choice for aspiring champions.",
         Price = 1000000,
-        Strength = 125000,
+        Strength = 200000,
         LureSpeed = 55,
-        Luck = 25,
-        Control = 0.3,
+        Luck = 65,
+        Control = 0.2,
         Color = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
         BobberTop = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
-        BobberBottom = Color3.new(0.66666668653488, 0, 0.66666668653488),
-        Resilience = 5
+        BobberBottom = Color3.new(1, 0.66666668653488, 0),
+        Resilience = 25
     },
     ["Frostbane Rod"] = {
         LineDistance = 22,
@@ -264,6 +264,22 @@ return {
         BobberTop = Color3.new(0.91764706373215, 0.30588236451149, 1),
         BobberBottom = Color3.new(1, 0.45490196347237, 0.20000000298023),
         Resilience = -10
+    },
+    ["???"] = {
+        LineDistance = 125,
+        Unpurchasable = true,
+        Description = "a hot, presumably super-sharp blade of energy [Admin Rod, for @yvlyf]",
+        Price = math.huge,
+        Strength = math.huge,
+        DEV = true,
+        Unregistered = true,
+        LureSpeed = 65,
+        Luck = 150,
+        Control = 0.35,
+        Color = Color3.new(0.41568627953529, 0.10588235408068, 0.10588235408068),
+        BobberTop = Color3.new(0.48627451062202, 0.45882353186607, 0.44705882668495),
+        BobberBottom = Color3.new(0.24313725531101, 0.054901961237192, 0.054901961237192),
+        Resilience = 40
     },
     ["Relic Rod"] = {
         LineDistance = 20,
@@ -495,16 +511,32 @@ return {
     },
     ["Tempest Rod"] = {
         LineDistance = 20,
-        Description = "A lightning-fast rod designed for players who prioritize speed. Harness the power of the tempest to catch fish at unparalleled rates.",
+        Description = "Born from the essence of a perpetual storm, this rod moves faster than the eye can follow. Its wind-blessed line cuts through water like lightning, allowing for rapid-fire casting and retrieval that leaves other anglers in awe.",
         Price = 1850000,
-        Strength = math.huge,
-        LureSpeed = 5,
-        Luck = 35,
+        Strength = 80000,
+        LureSpeed = 40,
+        Luck = 120,
         Control = 0.15,
         Color = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
-        BobberTop = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
-        BobberBottom = Color3.new(0.66666668653488, 0, 0.66666668653488),
-        Resilience = 10
+        BobberTop = Color3.new(0.86274510622025, 0.86274510622025, 0.86274510622025),
+        BobberBottom = Color3.new(0.33333334326744, 1, 1),
+        Resilience = 40
+    },
+    ReRod = {
+        LineDistance = 252,
+        Unpurchasable = true,
+        Description = "my mom keeps calling me ReRod :d [For @RoReddo]",
+        Price = math.huge,
+        Strength = 2525252525,
+        DEV = true,
+        Unregistered = true,
+        LureSpeed = -125,
+        Luck = 225,
+        Control = 0.25,
+        Color = Color3.new(0.93333333730698, 0, 0.015686275437474),
+        BobberTop = Color3.new(1, 0, 0),
+        BobberBottom = Color3.new(0.15294118225574, 0.15294118225574, 0.15294118225574),
+        Resilience = 25
     },
     ["Rapid Rod"] = {
         LineDistance = 21,
@@ -565,6 +597,20 @@ return {
         BobberBottom = Color3.new(0.48627451062202, 0.28235295414925, 0.031372550874949),
         Resilience = 8
     },
+    ["Ice Warpers Rod"] = {
+        LineDistance = 70,
+        Description = "A frost-themed rod with glowing blue accents and icy particle effects.",
+        Price = 65000,
+        Strength = 75000,
+        LureSpeed = 50,
+        Passive = "IceWarpers",
+        Luck = 60,
+        Control = 0.15,
+        BobberTop = Color3.new(0.52549022436142, 0.14901961386204, 0.14901961386204),
+        Color = Color3.new(0.60392159223557, 0.66666668653488, 0.74509805440903),
+        BobberBottom = Color3.new(1, 1, 1),
+        Resilience = 20
+    },
     ["Fast Rod"] = {
         LineDistance = 20,
         Description = "Quick rod that seems to catch fish in a fly! You can tell it's fast from the racing stripes.",
@@ -580,37 +626,19 @@ return {
         Resilience = -12
     },
     ["Abyssal Specter Rod"] = {
-        LineDistance = 20,
-        Description = "A rod of immense power, perfect for players who seek unmatched strength. Dive into the abyss and haul in the heaviest catches with ease.",
-        Price = 2000000,
+        LineDistance = 80,
+        Description = "Forged in the darkest depths of the ocean's trenches, this spectral rod radiates an otherworldly strength. Its phantom line reaches impossible depths, while its ghostly power grants the ability to haul in catches that would snap lesser rods.",
+        Price = 1000000,
         Strength = math.huge,
         LureSpeed = 75,
-        Luck = 65,
-        Control = 0.5,
-        Color = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
-        BobberTop = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
-        BobberBottom = Color3.new(0.66666668653488, 0, 0.66666668653488),
-        Resilience = 60
-    },
-    ["Heaven's Rod"] = {
-        LineDistance = 70,
-        Description = "A heavenly rod with glowing floating parts and a divine halo, emitting mythical particles and celestial animations.",
-        Price = 1750000,
-        Strength = math.huge,
-        LureSpeed = 70,
-        BobberTop = Color3.new(0.91764706373215, 0.35294118523598, 0.090196080505848),
-        Passive = "HeavenRod",
-        Luck = 225,
-        Requiriments = {
-            GatesOpened = {
-                "NorthFinalPuzzleDoor"
-            }
-        },
-        Color = Color3.new(0.74509805440903, 0.54901963472366, 0.094117648899555),
+        Luck = 90,
         Control = 0.2,
-        BobberBottom = Color3.new(1, 0.6235294342041, 0.094117648899555),
-        Resilience = 30
+        Color = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
+        BobberTop = Color3.new(0.1843137294054, 0.96078431606293, 0.6745098233223),
+        BobberBottom = Color3.new(0.10196078568697, 0.10196078568697, 0.10196078568697),
+        Resilience = 70
     },
+    RegisteredNumberOfRods = 53,
     CocoRod = {
         LineDistance = 100,
         Unpurchasable = true,
@@ -657,7 +685,21 @@ return {
         BobberBottom = Color3.new(0.23137255012989, 0.23137255012989, 0.23137255012989),
         Resilience = 50
     },
-    RegisteredNumberOfRods = 52,
+    ["Frostfire Rod"] = {
+        LineDistance = 22,
+        Unpurchasable = true,
+        Description = "A sleek fishing rod wreathed in flames and frost, designed to tackle the toughest catches with elemental flair.",
+        Price = math.huge,
+        Strength = 2200,
+        Unregistered = true,
+        LureSpeed = 80,
+        Luck = 35,
+        Control = 0.08,
+        Color = Color3.new(0.56470590829849, 0.94117647409439, 1),
+        BobberTop = Color3.new(0.60784316062927, 0.94901961088181, 1),
+        BobberBottom = Color3.new(0.18823529779911, 0.20000000298023, 0.24313725531101),
+        Resilience = 12
+    },
     ["Rod Of The Exalted One"] = {
         LineDistance = 70,
         Unpurchasable = true,
@@ -687,25 +729,10 @@ return {
         BobberBottom = Color3.new(0.15294118225574, 0.23137255012989, 0.48627451062202),
         Resilience = 25
     },
-    ["Frostfire Rod"] = {
-        LineDistance = 22,
-        Unpurchasable = true,
-        Description = ".",
-        Price = math.huge,
-        Strength = 2200,
-        Unregistered = true,
-        LureSpeed = 80,
-        Luck = 35,
-        Control = 0.08,
-        Color = Color3.new(0.56470590829849, 0.94117647409439, 1),
-        BobberTop = Color3.new(0.60784316062927, 0.94901961088181, 1),
-        BobberBottom = Color3.new(0.18823529779911, 0.20000000298023, 0.24313725531101),
-        Resilience = 12
-    },
     ["Fischmas Rod"] = {
         LineDistance = 22,
         Unpurchasable = true,
-        Description = ".",
+        Description = "A festive fishing rod wrapped in holiday cheer, perfect for reeling in seasonal treasures.",
         Price = math.huge,
         Strength = 2200,
         Unregistered = true,
@@ -729,6 +756,25 @@ return {
         BobberTop = Color3.new(0.52549022436142, 0.14901961386204, 0.14901961386204),
         BobberBottom = Color3.new(1, 1, 1),
         Resilience = 15
+    },
+    ["Heaven's Rod"] = {
+        LineDistance = 70,
+        Description = "A heavenly rod with glowing floating parts and a divine halo, emitting mythical particles and celestial animations.",
+        Price = 1750000,
+        Strength = math.huge,
+        LureSpeed = 70,
+        BobberTop = Color3.new(0.91764706373215, 0.35294118523598, 0.090196080505848),
+        Passive = "HeavenRod",
+        Luck = 225,
+        Requiriments = {
+            GatesOpened = {
+                "NorthFinalPuzzleDoor"
+            }
+        },
+        Color = Color3.new(0.74509805440903, 0.54901963472366, 0.094117648899555),
+        Control = 0.2,
+        BobberBottom = Color3.new(1, 0.6235294342041, 0.094117648899555),
+        Resilience = 30
     },
     ["Fischer's Rod"] = {
         LineDistance = 20,
@@ -754,7 +800,9 @@ return {
         ["Auric Rod"] = "Auric Rod",
         ["Evil Pitchfork of Doom Rod"] = "Evil Pitchfork of Doom Rod",
         ["Prismatic Rod"] = "Prismatic Rod",
+        ["Brick Rod"] = "Brick Rod",
         ["Frostbane Rod"] = "Frostbane Rod",
+        ["???"] = "???",
         ["Electric Guitar"] = "Electric Guitar",
         ["Relic Rod"] = "Relic Rod",
         ["Executive Rod"] = "Executive Rod",
@@ -764,16 +812,16 @@ return {
         ["North-Star Rod"] = "North-Star Rod",
         ["Antler Rod"] = "Antler Rod",
         ["Tetra Rod"] = "Tetra Rod",
-        ["Test Rod"] = "Test Rod",
-        ["Seraphic Rod"] = "Seraphic Rod",
-        ["Event Horizon Rod"] = "Event Horizon Rod",
         ["Fischmas Rod"] = "Fischmas Rod",
-        ["Ultratech Rod"] = "Ultratech Rod",
+        ["Test Rod"] = "Test Rod",
+        ["Event Horizon Rod"] = "Event Horizon Rod",
         ["Fischer's Rod"] = "Fischer's Rod",
+        ["Ultratech Rod"] = "Ultratech Rod",
         ["Buddy Bond Rod"] = "Buddy Bond Rod",
-        ["The Brick Rod"] = "The Brick Rod",
         CocoRod = "CocoRod",
+        ["The Brick Rod"] = "The Brick Rod",
         ["Venomfang Rod"] = "Venomfang Rod",
+        ReRod = "ReRod",
         ["Fabulous Rod"] = "Fabulous Rod",
         ["Pen Rod"] = "Pen Rod",
         ["Nates Blade"] = "Nates Blade",
@@ -795,20 +843,6 @@ return {
         BobberBottom = Color3.new(0.48627451062202, 0.28235295414925, 0.031372550874949),
         Resilience = 0
     },
-    ["Ice Warpers Rod"] = {
-        LineDistance = 70,
-        Description = "A frost-themed rod with glowing blue accents and icy particle effects.",
-        Price = 65000,
-        Strength = 75000,
-        LureSpeed = 50,
-        Passive = "IceWarpers",
-        Luck = 60,
-        Control = 0.15,
-        BobberTop = Color3.new(0.52549022436142, 0.14901961386204, 0.14901961386204),
-        Color = Color3.new(0.60392159223557, 0.66666668653488, 0.74509805440903),
-        BobberBottom = Color3.new(1, 1, 1),
-        Resilience = 20
-    },
     ["Crystalized Rod"] = {
         LineDistance = 100,
         Description = "A luminous rod with a bright yellow glow and crystal-like effects.",
@@ -821,6 +855,21 @@ return {
         BobberTop = Color3.new(0.52549022436142, 0.14901961386204, 0.14901961386204),
         Color = Color3.new(0.60392159223557, 0.66666668653488, 0.74509805440903),
         BobberBottom = Color3.new(1, 1, 1),
+        Resilience = 15
+    },
+    ["Frost Warden Rod"] = {
+        LineDistance = 22,
+        Unpurchasable = true,
+        Description = "A frigid rod wielded by fierce anglers. Built to fish in the coldest of waters.",
+        Price = math.huge,
+        Strength = 2200,
+        Unregistered = true,
+        LureSpeed = 90,
+        Luck = 45,
+        Control = 0.05,
+        Color = Color3.new(0.56470590829849, 0.94117647409439, 1),
+        BobberTop = Color3.new(0.60784316062927, 0.94901961088181, 1),
+        BobberBottom = Color3.new(0.18823529779911, 0.20000000298023, 0.24313725531101),
         Resilience = 15
     },
     ["Scurvy Rod"] = {
@@ -895,21 +944,6 @@ return {
         BobberBottom = Color3.new(0.75294119119644, 0.91372549533844, 1),
         Resilience = 10
     },
-    ["Frost Warden Rod"] = {
-        LineDistance = 22,
-        Unpurchasable = true,
-        Description = "A frigid rod wielded by fierce anglers. Built to fish in the coldest of waters.",
-        Price = math.huge,
-        Strength = 2200,
-        Unregistered = true,
-        LureSpeed = 90,
-        Luck = 45,
-        Control = 0.05,
-        Color = Color3.new(0.56470590829849, 0.94117647409439, 1),
-        BobberTop = Color3.new(0.60784316062927, 0.94901961088181, 1),
-        BobberBottom = Color3.new(0.18823529779911, 0.20000000298023, 0.24313725531101),
-        Resilience = 15
-    },
     ["Candy Cane Rod"] = {
         LineDistance = 14,
         Unpurchasable = true,
@@ -940,17 +974,19 @@ return {
         BobberBottom = Color3.new(1, 0.81960785388947, 0.40000000596046),
         Resilience = 12
     },
-    ["Fungal Rod"] = {
-        LineDistance = 15,
-        Description = "70% chance for the rod to sprout suspicious spores, giving you Luck IV for 45 seconds! Prettyy funky!",
+    ["Buddy Bond Rod"] = {
+        LineDistance = 20,
+        Unpurchasable = true,
+        Description = "A friendly Rod!",
         Price = math.huge,
-        Strength = 200,
-        LureSpeed = 110,
-        Luck = 45,
+        Strength = 300,
+        Unregistered = true,
+        LureSpeed = 100,
+        Luck = 5,
         Control = 0,
-        Color = Color3.new(0.30588236451149, 1, 0.30588236451149),
-        BobberTop = Color3.new(0.20000000298023, 0.29019609093666, 0.17647059261799),
-        BobberBottom = Color3.new(0.34117648005486, 0.42745098471642, 0.3098039329052),
+        Color = Color3.new(0.5686274766922, 1, 0.45098039507866),
+        BobberTop = Color3.new(0.63529413938522, 1, 0.52549022436142),
+        BobberBottom = Color3.new(0.13333334028721, 0.20784313976765, 0.258823543787),
         Resilience = 0
     },
     ["Venomfang Rod"] = {
@@ -985,19 +1021,32 @@ return {
         BobberBottom = Color3.new(0.48627451062202, 0.28235295414925, 0.031372550874949),
         Resilience = 15
     },
-    ["Poseidon Rod"] = {
-        LineDistance = 20,
-        Description = "Forged by Poseidon, this rod is ideal for those seeking fortune. Catch fish blessed with unmatched weight and value",
-        Price = math.huge,
+    ["Brick Rod"] = {
+        LineDistance = 200,
+        Description = "Wait.. it's real?",
+        Price = 13337,
         Strength = math.huge,
+        LureSpeed = 100,
+        Luck = 75,
+        Control = 0.35,
+        Color = Color3.new(0.96078431606293, 0.35294118523598, 0.35294118523598),
+        BobberTop = Color3.new(0.96078431606293, 0.40392157435417, 0.40392157435417),
+        BobberBottom = Color3.new(0.2392156869173, 0.13725490868092, 0.13725490868092),
+        Resilience = 35
+    },
+    ["Poseidon Rod"] = {
+        LineDistance = 65,
+        Description = "Blessed by the God of the Seas himself, this trident-inspired rod commands the ocean's bounty. Its golden gleam attracts the most valuable aquatic treasures, while its divine essence ensures catches of legendary proportions.",
+        Price = 1555555,
+        Strength = 100000,
         LureSpeed = 50,
         Passive = "PoseidonRod",
         Luck = 165,
-        Control = 0.35,
-        BobberTop = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
+        Control = 0.2,
+        BobberTop = Color3.new(1, 0.66666668653488, 0),
         Color = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
-        BobberBottom = Color3.new(0.66666668653488, 0, 0.66666668653488),
-        Resilience = 30
+        BobberBottom = Color3.new(0.13333334028721, 0.74901962280273, 0.52549022436142),
+        Resilience = 40
     },
     ["Antler Rod"] = {
         LineDistance = 24,
@@ -1071,33 +1120,33 @@ return {
         Resilience = 0
     },
     ["Zeus Rod"] = {
-        LineDistance = 20,
-        Description = "A divine rod imbued with the power of Zeus, offering unparalleled speed and unique passive abilities.",
+        LineDistance = 70,
+        Description = "Forged in the heart of Mount Olympus, this divine rod crackles with Zeus's lightning. Its celestial power grants unprecedented casting speed and the ability to command storms, making it a formidable tool for the most ambitious anglers.",
         Price = 1700000,
         Strength = math.huge,
-        LureSpeed = 25,
+        LureSpeed = 30,
         Passive = "ZeusRod",
         Luck = 70,
         Control = 0.25,
         BobberTop = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
         Color = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
-        BobberBottom = Color3.new(0.66666668653488, 0, 0.66666668653488),
-        Resilience = 15
+        BobberBottom = Color3.new(0.078431375324726, 0.078431375324726, 0.078431375324726),
+        Resilience = 20
     },
-    ["Buddy Bond Rod"] = {
-        LineDistance = 20,
+    ["Sunken Rod"] = {
+        LineDistance = 60,
         Unpurchasable = true,
-        Description = "A friendly Rod!",
+        Description = "An ancient, coral-encrusted rod found in shipwreck depths, radiating faint power to lure rare fish. Every 10 catches, gain a 25% higher chance to pull up a Treasure Map! All fish have a 5% chance to be Sunken.",
         Price = math.huge,
-        Strength = 300,
-        Unregistered = true,
-        LureSpeed = 100,
-        Luck = 5,
-        Control = 0,
+        Strength = 5000,
+        From = "Forsaken Shores",
+        LureSpeed = 70,
+        Luck = 150,
+        Control = 0.15,
         Color = Color3.new(0.5686274766922, 1, 0.45098039507866),
         BobberTop = Color3.new(0.63529413938522, 1, 0.52549022436142),
         BobberBottom = Color3.new(0.13333334028721, 0.20784313976765, 0.258823543787),
-        Resilience = 0
+        Resilience = 15
     },
     ["Tetra Rod"] = {
         LineDistance = 100,
@@ -1115,36 +1164,35 @@ return {
         BobberBottom = Color3.new(0.33725491166115, 0, 0),
         Resilience = 10
     },
-    ["Sunken Rod"] = {
-        LineDistance = 60,
+    ["Haunted Rod"] = {
+        LineDistance = 30,
         Unpurchasable = true,
-        Description = "An ancient, coral-encrusted rod found in shipwreck depths, radiating faint power to lure rare fish. Every 10 catches, gain a 25% higher chance to pull up a Treasure Map! All fish have a 5% chance to be Sunken.",
+        Description = "Only obtainable during FischFright; The rod is cursed the constant energy of FischFright, allowing it to catch FischFright mutations all year around.",
         Price = math.huge,
-        Strength = 5000,
-        From = "Forsaken Shores",
-        LureSpeed = 70,
-        Luck = 150,
-        Control = 0.15,
-        Color = Color3.new(0.5686274766922, 1, 0.45098039507866),
-        BobberTop = Color3.new(0.63529413938522, 1, 0.52549022436142),
-        BobberBottom = Color3.new(0.13333334028721, 0.20784313976765, 0.258823543787),
-        Resilience = 15
+        Strength = 1000,
+        LureSpeed = 100,
+        Luck = 50,
+        Control = 0.05,
+        Color = Color3.new(0.36862745881081, 1, 0.41176471114159),
+        BobberTop = Color3.new(0.36862745881081, 1, 0.41176471114159),
+        BobberBottom = Color3.new(0.070588238537312, 0.070588238537312, 0.070588238537312),
+        Resilience = 0
     },
     ["Seraphic Rod"] = {
-        LineDistance = 100,
+        LineDistance = 130,
         Unpurchasable = true,
-        Description = "Holy moly! [Developer-Exclusive]",
+        Description = "TOUCH SOME GRASS BUDDY",
         Price = math.huge,
         Strength = math.huge,
         DEV = true,
         Unregistered = true,
-        LureSpeed = 35,
+        LureSpeed = 5,
         Luck = 150,
-        Control = 0.15,
-        Color = Color3.new(1, 1, 1),
-        BobberTop = Color3.new(1, 0.79215687513351, 0.17254902422428),
-        BobberBottom = Color3.new(0.55294120311737, 0, 0),
-        Resilience = 10
+        Control = 0.25,
+        Color = Color3.new(1, 0.66666668653488, 0),
+        BobberTop = Color3.new(1, 0.80000001192093, 0),
+        BobberBottom = Color3.new(1, 1, 1),
+        Resilience = 20
     },
     ["Reinforced Rod"] = {
         LineDistance = 32,
@@ -1159,18 +1207,17 @@ return {
         BobberBottom = Color3.new(0.15294118225574, 0.12156862765551, 0.098039217293262),
         Resilience = 0
     },
-    ["Haunted Rod"] = {
-        LineDistance = 30,
-        Unpurchasable = true,
-        Description = "Only obtainable during FischFright; The rod is cursed the constant energy of FischFright, allowing it to catch FischFright mutations all year around.",
+    ["Fungal Rod"] = {
+        LineDistance = 15,
+        Description = "70% chance for the rod to sprout suspicious spores, giving you Luck IV for 45 seconds! Prettyy funky!",
         Price = math.huge,
-        Strength = 1000,
-        LureSpeed = 100,
-        Luck = 50,
-        Control = 0.05,
-        Color = Color3.new(0.36862745881081, 1, 0.41176471114159),
-        BobberTop = Color3.new(0.36862745881081, 1, 0.41176471114159),
-        BobberBottom = Color3.new(0.070588238537312, 0.070588238537312, 0.070588238537312),
+        Strength = 200,
+        LureSpeed = 110,
+        Luck = 45,
+        Control = 0,
+        Color = Color3.new(0.30588236451149, 1, 0.30588236451149),
+        BobberTop = Color3.new(0.20000000298023, 0.29019609093666, 0.17647059261799),
+        BobberBottom = Color3.new(0.34117648005486, 0.42745098471642, 0.3098039329052),
         Resilience = 0
     },
     ["Ultratech Rod"] = {
@@ -1249,20 +1296,20 @@ return {
         Resilience = 5
     },
     ["Electric Guitar"] = {
-        LineDistance = 250,
+        LineDistance = 777,
         Unpurchasable = true,
         Description = "In courtesy of Mila [For @kwijt]",
         Price = math.huge,
-        Strength = math.huge,
+        Strength = 777777777,
         DEV = true,
         Unregistered = true,
-        LureSpeed = 1,
-        Luck = 250,
-        Control = 0.4,
+        LureSpeed = -677,
+        Luck = 777,
+        Control = 777,
         Color = Color3.new(0.41568627953529, 0.10588235408068, 0.10588235408068),
         BobberTop = Color3.new(0.48627451062202, 0.45882353186607, 0.44705882668495),
         BobberBottom = Color3.new(0.24313725531101, 0.094117648899555, 0.078431375324726),
-        Resilience = 99
+        Resilience = 777
     },
     ["Abyssal Spinecaster"] = {
         LineDistance = 100,
@@ -1281,16 +1328,16 @@ return {
         Resilience = 10
     },
     ["Depthseeker Rod"] = {
-        LineDistance = 20,
-        Description = "Built for those who dive deep into the waters, this rod excels in strength and resilience, allowing players to reel in tougher catches while exploring mid-game challenges.",
-        Price = 850000,
+        LineDistance = 50,
+        Description = "Engineered with deep-sea technology, this resilient rod thrives in challenging conditions. Its reinforced construction and adaptive strength make it ideal for anglers ready to venture beyond the shallows and face tougher aquatic adversaries.",
+        Price = 125000,
         Strength = 50000,
-        LureSpeed = 65,
+        LureSpeed = 45,
         Luck = 20,
-        Control = 0.25,
+        Control = 0.17,
         Color = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
-        BobberTop = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
-        BobberBottom = Color3.new(0.66666668653488, 0, 0.66666668653488),
+        BobberTop = Color3.new(0.258823543787, 1, 0.93725490570068),
+        BobberBottom = Color3.new(0.10588235408068, 0.10588235408068, 0.10588235408068),
         Resilience = 25
     },
     ["Evil Pitchfork of Doom Rod"] = {
@@ -1331,17 +1378,17 @@ return {
         Resilience = 10
     },
     ["Kraken Rod"] = {
-        LineDistance = 20,
-        Description = "A powerful rod shrouded in mystery, offering a balance of strength and versatility. Unleash the Kraken\xE2\x80\x99s wrath for guaranteed mythical catches, double fish, and rare mutations",
-        Price = 1500000,
-        Strength = math.huge,
-        LureSpeed = 55,
+        LineDistance = 60,
+        Description = "Crafted from the tentacle of an ancient Kraken, this mysterious rod pulses with dark energy. Its otherworldly power guarantees mythical catches, while its curse brings forth mutated specimens and doubles your haul through supernatural means.",
+        Price = 1333333,
+        Strength = 115000,
+        LureSpeed = 40,
         Passive = "KrakenRod",
         Luck = 185,
-        Control = 0.4,
-        BobberTop = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
+        Control = 0.2,
+        BobberTop = Color3.new(0.66666668653488, 0, 0),
         Color = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
-        BobberBottom = Color3.new(0.66666668653488, 0, 0.66666668653488),
-        Resilience = 10
+        BobberBottom = Color3.new(0.33333334326744, 0, 0),
+        Resilience = 15
     }
 }
