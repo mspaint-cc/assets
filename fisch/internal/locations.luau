@@ -9,6 +9,9 @@ return {
         "Great Hammerhead Shark",
         "Great White Shark",
 
+        "The Kraken Pool",
+        "Ancient Kraken Pool",
+
         "Isonade",
         "Golden Tide"
     },
