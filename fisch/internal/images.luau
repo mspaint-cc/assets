@@ -3,17 +3,20 @@ local LuaEncode = loadstring(game:HttpGet("https://raw.githubusercontent.com/reg
 local HttpService = game:GetService("HttpService")
 
 local function GetImageURL(name)
-    local encodedName = HttpService:UrlEncode(name:gsub(" ","_"))
+    local encodedName = HttpService:UrlEncode(name:gsub(" ", "_"))
     local url = string.format(
         "https://fischipedia.org/w/api.php?aiprefix=%s.png&action=query&list=allimages&format=json",
         encodedName
     )
+
     local response = request({
         Url = url,
         Method = "GET"
     })
+    if response.StatusCode ~= 200 then return nil; end
+
     local data = HttpService:JSONDecode(response.Body)
-    return data.query.allimages[1].url
+    return #data.query.allimages > 0 and data.query.allimages[1].url or nil;
 end
 
 local ImageData = {}
@@ -35,15 +38,20 @@ for category, items in pairs(Datatable) do
 
         task.spawn(function()
             local success, imageURL = pcall(function()
+                if category == "Baits" then
+                    return GetImageURL(identifier) or GetImageURL("Bait " .. identifier)
+                end
+
                 return GetImageURL(identifier)
             end)
+
             finishedCount = finishedCount + 1
 
             if success then
                 ImageData[category][identifier] = imageURL
-                print("Successfully Fetched Data for " .. identifier)
+                print("Successfully Fetched Data for '" .. identifier .. "'")
             else
-                warn("COULD NOT FETCH DATA FOR " .. identifier)
+                warn("COULD NOT FETCH DATA FOR '" .. identifier .. "'", imageURL)
             end
         end)
 
