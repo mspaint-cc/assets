@@ -9,7 +9,7 @@ return {
         },
         ["Electric Shock"] = {
             PriceMultiply = 3.5,
-            Color = Color3.new(0.29803922772408, 0.29803922772408, 0.29803922772408),
+            Color = Color3.new(0.54117649793625, 0.086274512112141, 0.86666667461395),
             Display = "Electric Shock",
             Chance = 0
         },
@@ -110,6 +110,12 @@ return {
             PriceMultiply = 4,
             Color = Color3.new(0.54901963472366, 0.24313725531101, 0.027450980618596),
             Display = "Aureate",
+            Chance = 0
+        },
+        Chocolate = {
+            PriceMultiply = 2.5,
+            Color = Color3.new(0.42352941632271, 0.30196079611778, 0.2549019753933),
+            Display = "Chocolate",
             Chance = 0
         },
         Amber = {
