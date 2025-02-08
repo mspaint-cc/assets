@@ -1,6 +1,10 @@
 return {
   SpecialEvents = {
+        "Lovestorm Eel",
+        "Lovestorm Eel Supercharged",
+        
         "Orcas Pool",
+        "Ancient Orcas Pool",
 
         "Megalodon Default",
         "Megalodon Ancient",
