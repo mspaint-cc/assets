@@ -49,11 +49,26 @@ return {
         Rarity = "Legendary",
         Resilience = 15
     },
+    ["Hangman's Hook"] = {
+        ProgressSpeed = 45,
+        LureSpeed = -5,
+        Luck = 150,
+        GenerelLuck = 35,
+        Rarity = "Mythical",
+        Resilience = 20
+    },
     Insect = {
         LureSpeed = 5,
         Luck = 35,
         GenerelLuck = 0,
         Rarity = "Common",
+        Resilience = 0
+    },
+    ["Night Shrimp"] = {
+        LureSpeed = 15,
+        Luck = 0,
+        GenerelLuck = 90,
+        Rarity = "Legendary",
         Resilience = 0
     },
     ["Deep Coral"] = {
@@ -63,20 +78,13 @@ return {
         Rarity = "Legendary",
         Resilience = 50
     },
-    ["Night Shrimp"] = {
-        LureSpeed = 15,
-        Luck = 0,
-        GenerelLuck = 90,
-        Rarity = "Legendary",
-        Resilience = 0
-    },
-    ["Hangman's Hook"] = {
-        ProgressSpeed = 45,
-        LureSpeed = -5,
-        Luck = 150,
-        GenerelLuck = 35,
+    ["Chocolate Fish"] = {
+        LureSpeed = 20,
+        Luck = 200,
         Rarity = "Mythical",
-        Resilience = 20
+        Mutation = "Chocolate",
+        GenerelLuck = 150,
+        Resilience = 15
     },
     ["Super Flakes"] = {
         LureSpeed = 0,
