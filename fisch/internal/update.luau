@@ -16,7 +16,8 @@ local UpdateLibraries = {
     ["items"] = LuaTableSerializer(require(Library.items), SerializerOptions),
     ["rods"] = LuaTableSerializer(require(Library.rods), SerializerOptions),
     ["enchants"] = LuaTableSerializer(require(Library.rods.enchants), SerializerOptions),
-    ["mutations"] = LuaTableSerializer(require(Modules.fishing.mutations), SerializerOptions)
+    ["mutations"] = LuaTableSerializer(require(Modules.fishing.mutations), SerializerOptions),
+    ["images"] = LuaTableSerializer(loadstring(game:HttpGet("https://raw.githubusercontent.com/mspaint-cc/assets/refs/heads/main/fisch/internal/images.luau"))(), SerializerOptions)
 }
 
 function ToBase64(data)
