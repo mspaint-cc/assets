@@ -193,20 +193,18 @@ return {
             TurningSpeed = 0.54,
             Accel = 0.3
         },
-        ["Fischmas Speedboat"] = {
-            Dedscriptipon = "The Fischmas Speedboat!",
-            BackwardsEfficiency = 1.1,
+        Mila = {
+            Dedscriptipon = "\xF0\x9F\xA5\x9D",
+            BackwardsEfficiency = 1,
             Price = -1,
             Bobbing = 2,
-            Unpurchasable = true,
             BobbingSpeed = 1,
-            StopEfficiency = 1.8,
-            MaxSpeed = 180,
-            ProductId = 2677594734,
-            TurningSpeed = 0.6,
+            MaxSpeed = 250,
+            Unpurchasable = true,
+            StopEfficiency = 2,
             Level = 1,
-            Icon = "rbxassetid://130906482985374",
-            Accel = 0.35
+            TurningSpeed = 2,
+            Accel = 0.65
         },
         Hovercraft = {
             Dedscriptipon = "Hover around the seas! [Submission; @DDkreep, @LiamGame09, @kylecat11]",
@@ -292,6 +290,50 @@ return {
             Icon = "rbxassetid://92057714698349",
             Accel = 0.8
         },
+        ["Swan Boat"] = {
+            Dedscriptipon = "The Swan Boat!",
+            BackwardsEfficiency = 1.1,
+            Price = -1,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            Unpurchasable = true,
+            MaxSpeed = 180,
+            StopEfficiency = 1.8,
+            TurningSpeed = 0.6,
+            Level = 1,
+            Icon = "rbxassetid://72911569404830",
+            Accel = 0.35
+        },
+        ["Love Crasher"] = {
+            Dedscriptipon = "What's better than spending your day on the beautiful Love Crasher?",
+            BackwardsEfficiency = 1.1,
+            Price = -1,
+            Bobbing = 2,
+            Unpurchasable = true,
+            StopEfficiency = 3.7,
+            BobbingSpeed = 0.4,
+            TurningSpeed = 0.35,
+            MaxSpeed = 190,
+            ProductId = 2837613164,
+            LimitedAmount = 8000,
+            Level = 1,
+            Icon = "rbxassetid://121237191241453",
+            Accel = 0.6
+        },
+        Gondola = {
+            Dedscriptipon = "HOW CAN A GONDOLA GO THIS FAST??",
+            BackwardsEfficiency = 1.1,
+            Price = -1,
+            Bobbing = 2,
+            BobbingSpeed = 0.4,
+            Unpurchasable = true,
+            MaxSpeed = 230,
+            StopEfficiency = 2,
+            TurningSpeed = 0.6,
+            Level = 1,
+            Icon = "rbxassetid://86464358166303",
+            Accel = 0.4
+        },
         ["Hollywave Cruiser"] = {
             ExpirationDate = DateTime.fromUnixTimestamp(1736607600),
             BackwardsEfficiency = 1,
@@ -308,6 +350,18 @@ return {
             Level = 1,
             Icon = "rbxassetid://98034431985434",
             Accel = 0.2
+        },
+        ["Bass Boat"] = {
+            Dedscriptipon = "Great for fishing with pals!",
+            BackwardsEfficiency = 1,
+            Price = 6000,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            MaxSpeed = 45,
+            StopEfficiency = 0.7,
+            Level = 10,
+            TurningSpeed = 0.4,
+            Accel = 0.22
         },
         ["Coral Cruiser Boat"] = {
             Dedscriptipon = "Fischer Special Special!",
@@ -375,18 +429,6 @@ return {
             TurningSpeed = 0.5,
             Accel = 0.25
         },
-        ["Bass Boat"] = {
-            Dedscriptipon = "Great for fishing with pals!",
-            BackwardsEfficiency = 1,
-            Price = 6000,
-            Bobbing = 2,
-            BobbingSpeed = 1,
-            MaxSpeed = 45,
-            StopEfficiency = 0.7,
-            Level = 10,
-            TurningSpeed = 0.4,
-            Accel = 0.22
-        },
         Pontoon = {
             Dedscriptipon = "Great for parties with some buddies!",
             BackwardsEfficiency = 1,
@@ -435,6 +477,21 @@ return {
             Level = 1,
             TurningSpeed = 0.5,
             Accel = 0.25
+        },
+        ["Fischmas Speedboat"] = {
+            Dedscriptipon = "The Fischmas Speedboat!",
+            BackwardsEfficiency = 1.1,
+            Price = -1,
+            Bobbing = 2,
+            Unpurchasable = true,
+            BobbingSpeed = 1,
+            StopEfficiency = 1.8,
+            MaxSpeed = 180,
+            ProductId = 2677594734,
+            TurningSpeed = 0.6,
+            Level = 1,
+            Icon = "rbxassetid://130906482985374",
+            Accel = 0.35
         },
         Surfboard = {
             Dedscriptipon = "Surf the waves, catch the sharks!",
