@@ -66,5 +66,7 @@ repeat
     task.wait()
 until finishedCount >= totalTasks
 
-print("Written to file")
-writefile("fisch_final_images.luau", LuaEncode(ImageData, { Prettify = true }))
+--print("Written to file")
+--writefile("fisch_final_images.luau", LuaEncode(ImageData, { Prettify = true }))
+warn("Done!")
+return ImageData
