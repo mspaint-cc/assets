@@ -32,6 +32,10 @@ return {
             purchasable = false,
             Rarity = "Mythical"
         },
+        ["Metal Panels"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
         Flippers = {
             Price = 9000,
             OnlyBuyOne = true,
@@ -68,6 +72,18 @@ return {
             Price = 25000,
             OnlyBuyOne = true,
             Rarity = "Legendary"
+        },
+        ["Submarine Top"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Skin Crate"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Back Fins"] = {
+            Rarity = "Exotic",
+            Price = math.huge
         },
         ["Avalanche Totem"] = {
             Rarity = "Mythical",
@@ -106,11 +122,20 @@ return {
             OnlyBuyOne = true,
             Rarity = "Unusual"
         },
+        ["Side Fins"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        Drill = {
+            Price = math.huge,
+            OnlyBuyOne = true,
+            Rarity = "Exotic"
+        },
         ["Crab Cage"] = {
             Rarity = "Unusual",
             Price = 45
         },
-        ["Skin Crate"] = {
+        Windows = {
             Rarity = "Exotic",
             Price = math.huge
         },
