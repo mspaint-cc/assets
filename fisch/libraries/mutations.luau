@@ -77,7 +77,7 @@ return {
             Chance = 30
         },
         ["Tentacle Surge"] = {
-            PriceMultiply = 1.5,
+            PriceMultiply = 10,
             Color = Color3.new(0.66666668653488, 0.66666668653488, 1),
             Display = "Tentacle Surge",
             Chance = 0
@@ -87,6 +87,12 @@ return {
             Color = Color3.new(1, 1, 0.49803921580315),
             Display = "King\xE2\x80\x99s Blessing",
             Chance = 0
+        },
+        Hexed = {
+            PriceMultiply = 1.5,
+            Color = Color3.new(0.65098041296005, 0, 0),
+            Display = "Hexed",
+            Chance = 15
         },
         Charred = {
             PriceMultiply = 0.5,
@@ -112,6 +118,12 @@ return {
             Display = "Aureate",
             Chance = 0
         },
+        Electric = {
+            PriceMultiply = 1.45,
+            Color = Color3.new(1, 0.96078431606293, 0.38823530077934),
+            Display = "Electric",
+            Chance = 15
+        },
         Chocolate = {
             PriceMultiply = 2.5,
             Color = Color3.new(0.42352941632271, 0.30196079611778, 0.2549019753933),
@@ -133,11 +145,11 @@ return {
             Display = "Lightning",
             Chance = 0
         },
-        Hexed = {
-            PriceMultiply = 1.5,
-            Color = Color3.new(0.65098041296005, 0, 0),
-            Display = "Hexed",
-            Chance = 15
+        ["Mila's Magic"] = {
+            PriceMultiply = 2.5,
+            Color = Color3.new(1, 0.80392158031464, 0.69019609689713),
+            Display = "Mila's Magic",
+            Chance = 0
         },
         Frozen = {
             PriceMultiply = 1.3,
@@ -307,11 +319,11 @@ return {
             Display = "Wrath",
             Chance = 0
         },
-        Electric = {
-            PriceMultiply = 1.45,
-            Color = Color3.new(1, 0.96078431606293, 0.38823530077934),
-            Display = "Electric",
-            Chance = 15
+        Doomsday = {
+            PriceMultiply = 4,
+            Color = Color3.new(1, 0.37254902720451, 0),
+            Display = "Doomsday",
+            Chance = 0
         },
         Sleet = {
             PriceMultiply = 2.4,
