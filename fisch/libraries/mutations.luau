@@ -49,6 +49,18 @@ return {
             Display = "Fossilized",
             Chance = 4
         },
+        Minty = {
+            PriceMultiply = 2.2,
+            Color = Color3.new(0.50196081399918, 1, 0.72549021244049),
+            Display = "Minty",
+            Chance = 0
+        },
+        Hexed = {
+            PriceMultiply = 1.5,
+            Color = Color3.new(0.65098041296005, 0, 0),
+            Display = "Hexed",
+            Chance = 15
+        },
         Albino = {
             PriceMultiply = 1.1,
             Color = Color3.new(0.98823529481888, 0.99607843160629, 1),
@@ -82,17 +94,17 @@ return {
             Display = "Tentacle Surge",
             Chance = 0
         },
-        ["King\xE2\x80\x99s Blessing"] = {
-            PriceMultiply = 1.5,
-            Color = Color3.new(1, 1, 0.49803921580315),
-            Display = "King\xE2\x80\x99s Blessing",
+        Prismize = {
+            PriceMultiply = 8,
+            Color = Color3.new(0.16078431904316, 0, 0.24313725531101),
+            Display = "Prismize",
             Chance = 0
         },
-        Hexed = {
-            PriceMultiply = 1.5,
-            Color = Color3.new(0.65098041296005, 0, 0),
-            Display = "Hexed",
-            Chance = 15
+        Chocolate = {
+            PriceMultiply = 2.5,
+            Color = Color3.new(0.42352941632271, 0.30196079611778, 0.2549019753933),
+            Display = "Chocolate",
+            Chance = 0
         },
         Charred = {
             PriceMultiply = 0.5,
@@ -118,16 +130,16 @@ return {
             Display = "Aureate",
             Chance = 0
         },
-        Electric = {
-            PriceMultiply = 1.45,
-            Color = Color3.new(1, 0.96078431606293, 0.38823530077934),
-            Display = "Electric",
-            Chance = 15
+        Lightning = {
+            PriceMultiply = 1,
+            Color = Color3.new(0.89803922176361, 0.71764707565308, 0),
+            Display = "Lightning",
+            Chance = 0
         },
-        Chocolate = {
-            PriceMultiply = 2.5,
-            Color = Color3.new(0.42352941632271, 0.30196079611778, 0.2549019753933),
-            Display = "Chocolate",
+        Heavenly = {
+            PriceMultiply = 5,
+            Color = Color3.new(1, 0.97254902124405, 0.77254903316498),
+            Display = "Heavenly",
             Chance = 0
         },
         Amber = {
@@ -139,10 +151,10 @@ return {
             Display = "Amber",
             Chance = 8
         },
-        Lightning = {
-            PriceMultiply = 1,
-            Color = Color3.new(0.89803922176361, 0.71764707565308, 0),
-            Display = "Lightning",
+        Firework = {
+            PriceMultiply = 3.5,
+            Color = Color3.new(0.52941179275513, 0.49411764740944, 1),
+            Display = "Firework",
             Chance = 0
         },
         ["Mila's Magic"] = {
@@ -157,10 +169,10 @@ return {
             Display = "Frozen",
             Chance = 10
         },
-        Firework = {
-            PriceMultiply = 3.5,
-            Color = Color3.new(0.52941179275513, 0.49411764740944, 1),
-            Display = "Firework",
+        Festive = {
+            PriceMultiply = 1.4,
+            Color = Color3.new(1, 0.48627451062202, 0.48627451062202),
+            Display = "Festive",
             Chance = 0
         },
         Aurous = {
@@ -169,10 +181,10 @@ return {
             Display = "Aurous",
             Chance = 0
         },
-        Minty = {
-            PriceMultiply = 2.2,
-            Color = Color3.new(0.50196081399918, 1, 0.72549021244049),
-            Display = "Minty",
+        ["King\xE2\x80\x99s Blessing"] = {
+            PriceMultiply = 1.5,
+            Color = Color3.new(1, 1, 0.49803921580315),
+            Display = "King\xE2\x80\x99s Blessing",
             Chance = 0
         },
         Mythical = {
@@ -193,16 +205,16 @@ return {
             Display = "Sandy",
             Chance = 0
         },
-        Festive = {
-            PriceMultiply = 1.4,
-            Color = Color3.new(1, 0.48627451062202, 0.48627451062202),
-            Display = "Festive",
+        Aurulent = {
+            PriceMultiply = 5,
+            Color = Color3.new(0.63529413938522, 0.36078432202339, 0.023529412224889),
+            Display = "Aurulent",
             Chance = 0
         },
-        Heavenly = {
+        Subspace = {
             PriceMultiply = 5,
-            Color = Color3.new(1, 0.97254902124405, 0.77254903316498),
-            Display = "Heavenly",
+            Color = Color3.new(1, 0, 0.7843137383461),
+            Display = "Subspace",
             Chance = 0
         },
         Unsellable = {
@@ -223,10 +235,10 @@ return {
             Display = "Glossy",
             Chance = 25
         },
-        Subspace = {
+        Aureolin = {
             PriceMultiply = 5,
-            Color = Color3.new(1, 0, 0.7843137383461),
-            Display = "Subspace",
+            Color = Color3.new(0.86274510622025, 0.60392159223557, 0.0039215688593686),
+            Display = "Aurulent",
             Chance = 0
         },
         Midas = {
@@ -259,10 +271,10 @@ return {
             Display = "Nuclear",
             Chance = 0
         },
-        Aureolin = {
-            PriceMultiply = 5,
-            Color = Color3.new(0.86274510622025, 0.60392159223557, 0.0039215688593686),
-            Display = "Aurulent",
+        Aurelian = {
+            PriceMultiply = 3,
+            Color = Color3.new(0.56470590829849, 0.15294118225574, 0.027450980618596),
+            Display = "Aurelian",
             Chance = 0
         },
         Seasonal = {
@@ -277,22 +289,16 @@ return {
             Display = "Negative",
             Chance = 30
         },
-        Aurulent = {
-            PriceMultiply = 5,
-            Color = Color3.new(0.63529413938522, 0.36078432202339, 0.023529412224889),
-            Display = "Aurulent",
-            Chance = 0
-        },
-        Aurelian = {
-            PriceMultiply = 3,
-            Color = Color3.new(0.56470590829849, 0.15294118225574, 0.027450980618596),
-            Display = "Aurelian",
-            Chance = 0
-        },
         Revitalized = {
             PriceMultiply = 4,
             Color = Color3.new(0.64313727617264, 1, 0.66666668653488),
             Display = "Revitalized",
+            Chance = 0
+        },
+        ["Ashen Fortune"] = {
+            PriceMultiply = 5,
+            Color = Color3.new(1, 0.66666668653488, 0),
+            Display = "Ashen Fortune",
             Chance = 0
         },
         Purified = {
@@ -300,6 +306,12 @@ return {
             Color = Color3.new(0.43137255311012, 1, 0.4705882370472),
             Display = "Purified",
             Chance = 0
+        },
+        Electric = {
+            PriceMultiply = 1.45,
+            Color = Color3.new(1, 0.96078431606293, 0.38823530077934),
+            Display = "Electric",
+            Chance = 15
         },
         Sunken = {
             PriceMultiply = 4,
