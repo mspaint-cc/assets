@@ -45,7 +45,7 @@ local data = {
 
 print("============== Loading DataTables ===============")
 local LuaEncode = loadstring(game:HttpGet("https://raw.githubusercontent.com/regginator/LuaEncode/refs/heads/master/src/LuaEncode.lua"))()
-local datatables = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lythicals/script/refs/heads/main/datatables"))()
+local datatables = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lythicals/script/refs/heads/main/newdatatables"))()
 
 local TpSpots = workspace.world.spawns.TpSpots
 local FishingZones = workspace.zones.fishing
