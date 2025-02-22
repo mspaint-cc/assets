@@ -41,6 +41,16 @@ return {
             OnlyBuyOne = true,
             Rarity = "Unusual"
         },
+        ["Glimmerfin Suit Lvl 2"] = {
+            Price = 7500,
+            OnlyBuyOne = true,
+            Icon = "rbxassetid://120382468340755",
+            Rarity = "Exotic"
+        },
+        ["Skin Crate"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
         ["Lunar Thread"] = {
             Price = math.huge,
             Rarity = "Exotic",
@@ -60,9 +70,35 @@ return {
             OnlyBuyOne = true,
             Rarity = "Unusual"
         },
+        ["Crossbow Base"] = {
+            Price = math.huge,
+            Rarity = "Exotic",
+            NonPersistent = true
+        },
+        ["Ice Crystal"] = {
+            Price = math.huge,
+            Icon = "rbxassetid://87113404726717",
+            Rarity = "Exotic"
+        },
+        ["Submarine Top"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Poseidon Wrath Totem"] = {
+            Rarity = "Mythical",
+            Price = 1500000
+        },
+        ["Back Fins"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
         ["Witches Ingredient"] = {
             Rarity = "Rare",
             Price = 10000
+        },
+        ["Side Fins"] = {
+            Rarity = "Exotic",
+            Price = math.huge
         },
         Firework = {
             Rarity = "Limited",
@@ -73,15 +109,17 @@ return {
             OnlyBuyOne = true,
             Rarity = "Legendary"
         },
-        ["Submarine Top"] = {
-            Rarity = "Exotic",
-            Price = math.huge
+        Drill = {
+            Price = math.huge,
+            OnlyBuyOne = true,
+            Rarity = "Exotic"
         },
-        ["Skin Crate"] = {
-            Rarity = "Exotic",
-            Price = math.huge
+        ["Lava Crystal"] = {
+            Price = math.huge,
+            Icon = "rbxassetid://94081558964669",
+            Rarity = "Exotic"
         },
-        ["Back Fins"] = {
+        ["Bag of Presents"] = {
             Rarity = "Exotic",
             Price = math.huge
         },
@@ -122,14 +160,13 @@ return {
             OnlyBuyOne = true,
             Rarity = "Unusual"
         },
-        ["Side Fins"] = {
+        ["Elite Token"] = {
             Rarity = "Exotic",
             Price = math.huge
         },
-        Drill = {
-            Price = math.huge,
-            OnlyBuyOne = true,
-            Rarity = "Exotic"
+        ["Regular Token"] = {
+            Rarity = "Exotic",
+            Price = math.huge
         },
         ["Crab Cage"] = {
             Rarity = "Unusual",
@@ -139,30 +176,30 @@ return {
             Rarity = "Exotic",
             Price = math.huge
         },
-        ["Bag of Presents"] = {
-            Rarity = "Exotic",
-            Price = math.huge
+        TNT = {
+            Price = math.huge,
+            purchasable = false,
+            Rarity = "Rare"
         },
-        ["Elite Token"] = {
+        ["Crossbow Arrow"] = {
+            Price = math.huge,
             Rarity = "Exotic",
-            Price = math.huge
+            NonPersistent = true
         },
-        ["Regular Token"] = {
+        ["Crossbow Bow"] = {
+            Price = math.huge,
             Rarity = "Exotic",
-            Price = math.huge
+            NonPersistent = true
         },
         ["Treasure Map"] = {
             Rarity = "Exotic",
             Price = math.huge
         },
-        ["Poseidon Wrath Totem"] = {
-            Rarity = "Mythical",
-            Price = 1500000
-        },
-        TNT = {
-            Price = math.huge,
-            purchasable = false,
-            Rarity = "Rare"
+        ["Glimmerfin Suit Lvl 1"] = {
+            Price = 7500,
+            OnlyBuyOne = true,
+            Icon = "rbxassetid://107405457740294",
+            Rarity = "Exotic"
         },
         ["Handwritten Note"] = {
             Rarity = "Exotic",
@@ -176,6 +213,11 @@ return {
             Rarity = "Exotic",
             Price = math.huge
         },
+        Pickaxe = {
+            Price = 5000,
+            OnlyBuyOne = true,
+            Rarity = "Rare"
+        },
         GPS = {
             Price = 100,
             OnlyBuyOne = true,
@@ -186,10 +228,11 @@ return {
             Rarity = "Legendary",
             Price = 75000
         },
-        Pickaxe = {
-            Price = 5000,
+        ["Glimmerfin Suit Lvl 3"] = {
+            Price = 7500,
             OnlyBuyOne = true,
-            Rarity = "Rare"
+            Icon = "rbxassetid://137334347694202",
+            Rarity = "Exotic"
         },
         ["Sundial Totem"] = {
             Rarity = "Rare",
