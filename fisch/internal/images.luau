@@ -1,4 +1,4 @@
-local Datatable = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lythicals/script/refs/heads/main/datatables"))()
+local Datatable = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lythicals/script/refs/heads/main/newdatatables"))()
 local LuaEncode = loadstring(game:HttpGet("https://raw.githubusercontent.com/regginator/LuaEncode/refs/heads/master/src/LuaEncode.lua"))()
 local HttpService = game:GetService("HttpService")
 
