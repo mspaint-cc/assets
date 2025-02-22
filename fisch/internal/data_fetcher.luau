@@ -1,7 +1,6 @@
 local data = {
     SpecialEvents = { -- needs to be manually updated
-        "Lovestorm Eel",
-        "Lovestorm Eel Supercharged",
+        "Forsaken Veil - Scylla",
         
         "Orcas Pool",
         "Ancient Orcas Pool",
