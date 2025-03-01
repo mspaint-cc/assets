@@ -243,6 +243,20 @@ return {
             TurningSpeed = 2.5,
             Accel = 0.95
         },
+        ["Fischmas Jetski"] = {
+            Dedscriptipon = "The Fischmas Jetski!",
+            BackwardsEfficiency = 1.1,
+            Price = -1,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            Unpurchasable = true,
+            MaxSpeed = 220,
+            StopEfficiency = 1.8,
+            TurningSpeed = 0.6,
+            Level = 1,
+            Icon = "rbxassetid://130906482985374",
+            Accel = 0.35
+        },
         ["The Pearl"] = {
             Dedscriptipon = "No one knows what sails this ship...",
             BackwardsEfficiency = 1,
@@ -331,7 +345,7 @@ return {
             Unpurchasable = true,
             Price = -1,
             Bobbing = 2,
-            TurningSpeed = 0.32,
+            TurningSpeed = 0.65,
             StopEfficiency = 3.7,
             BobbingSpeed = 0.4,
             Dedscriptipon = "Deep-sea vessel inspired by the elusive anglerfish, featuring bioluminescent lures and a gaping maw ready to prowl the abyss.",
@@ -579,19 +593,20 @@ return {
             TurningSpeed = 0.5,
             Accel = 0.25
         },
-        ["Fischmas Jetski"] = {
-            Dedscriptipon = "The Fischmas Jetski!",
-            BackwardsEfficiency = 1.1,
+        ["Flipper Express"] = {
+            Dedscriptipon = "The ultimate whale-inspired luxury yacht! With a sleek, fin-like design and a powerful tail-shaped stern, it glides through the waves with effortless grace.",
+            BackwardsEfficiency = 1,
             Price = -1,
-            Bobbing = 2,
+            Bobbing = 1,
+            AlternateSpawn = 50,
             BobbingSpeed = 1,
             Unpurchasable = true,
-            MaxSpeed = 220,
-            StopEfficiency = 1.8,
-            TurningSpeed = 0.6,
+            MaxSpeed = 245,
+            StopEfficiency = 2,
+            TurningSpeed = 0.3,
             Level = 1,
-            Icon = "rbxassetid://130906482985374",
-            Accel = 0.35
+            Icon = "rbxassetid://94391641146651",
+            Accel = 0.4
         },
         ["Fischmas Speedboat"] = {
             Dedscriptipon = "The Fischmas Speedboat!",
