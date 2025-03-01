@@ -494,6 +494,33 @@ return {
         XP = 20,
         Resilience = 80
     },
+    ["Baby Pond Emperor"] = {
+        Seasons = {
+            "Summer"
+        },
+        Rarity = "Mythical",
+        FavouriteBait = "Seaweed",
+        WeightPool = {
+            5,
+            20
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        SparkleColor = Color3.new(1, 0.8901960849762, 0.058823529630899),
+        Quips = {
+            "Woah! a Baby Pond Emperor!",
+            "A Baby Pond Emperor..?"
+        },
+        Hint = "Found in reefs and deepwaters.",
+        Description = "It's a mini Pond Emperor!",
+        Price = 230,
+        From = "Ocean",
+        Chance = 12,
+        Weather = {
+            "None"
+        },
+        XP = 100,
+        Resilience = 65
+    },
     Walleye = {
         Seasons = {
             "Spring",
@@ -762,6 +789,7 @@ return {
         XP = 50,
         Resilience = 60
     },
+    ToHex = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     ["Mushgrove Algae"] = {
         FavouriteTime = "None",
         SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832),
@@ -821,6 +849,7 @@ return {
         IsLimitedBestiary = true,
         Resilience = 80
     },
+    ToInteger = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     ["Moon Wood"] = {
         Seasons = {
             "None"
@@ -873,94 +902,64 @@ return {
         XP = 35,
         Resilience = 100
     },
-    ToHex = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
-    ToInteger = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
-    ["Glacier Pike"] = {
+    Banditfish = {
         Seasons = {
-            "Autumn",
             "Spring"
         },
-        Rarity = "Unusual",
+        Rarity = "Rare",
         FavouriteBait = "Insect",
         WeightPool = {
-            12,
-            35
+            150,
+            200
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.3647058904171, 0.54901963472366, 0.42745098471642),
+        SparkleColor = Color3.new(0.77647060155869, 0.61568629741669, 1),
         Quips = {
-            "A Glacier Pike!",
-            "I caught a Glacier Pike!",
-            "Woah! a Glacier Pike!",
-            "GLACIER PIKE!!!",
-            "I'd prefer a lance.",
-            "A Glacier Pike?!",
-            "That's a big Glacier Pike!"
+            "I caught a Bandit Fish!",
+            "It's a Bandit Fish!",
+            "Woahhh, A Bandit Fish",
+            "It pickpocketed me! >:("
         },
-        Hint = "Found in Snowcaps freshwater. Seems to prefer insect baits.",
-        Description = "Pikes are a long, predatory freshwater fish known for its aggressive nature and sharp teeth. Glacier Pikes are supremely found in cold freshwaters in Snowcap Island. They can be determined by their unique ice-coloured scales and longer fins.",
-        Price = 230,
-        From = "Snowcap",
-        Chance = 45,
-        Weather = {
-            "Rain"
-        },
-        XP = 90,
-        Resilience = 55
-    },
-    ["Gilded Pearl"] = {
-        SparkleColor = Color3.new(1, 0.83529412746429, 0.42352941632271),
-        Description = "A golden pearl with a shiny appearance... Could this hold special powers within it...?",
-        FavouriteBait = "None",
-        Chance = 25,
-        Weather = {
-            "None"
-        },
-        XP = 0,
-        Hint = "From catching Clams.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        Seasons = {
-            "None"
-        },
-        Rarity = "Unusual",
-        WeightPool = {
-            1,
-            4
-        },
-        From = "Roslit",
-        Quips = {},
-        IsPearl = true,
-        Price = 120,
-        Resilience = 100
-    },
-    ["Icy Carp"] = {
-        FavouriteTime = "None",
-        Seasons = {
-            "Winter"
-        },
-        Rarity = "Unusual",
-        FavouriteBait = "Bagel",
-        WeightPool = {
-            30,
-            70
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.61176472902298, 0.93725490570068, 1),
-        Quips = {
-            "An Icy Carp!",
-            "Look at those patterns!",
-            "Quite the catch!"
-        },
-        Hint = "Prefers the deeper pools within the cave.",
-        Description = "A hardy carp whose scales have adapted to form intricate ice-crystal patterns.",
+        Hint = "Caught in the Desolate Deep",
+        Description = "Banditfish are insanely fast hunters and swimmers, hence their name. They have a single rudder-like fin at the back of their bodies, which they move in a swaying motion to glide throughout the waters. Despite being remarkably good at hunting smaller prey, they are still no match for the greater creatures within the Desolate Deep.",
         Price = 250,
-        From = "Overgrowth Caves",
-        Chance = 45,
+        From = "Desolate Deep",
+        Chance = 1050,
         Weather = {
             "None"
         },
-        XP = 120,
-        Resilience = 65
+        XP = 100,
+        Resilience = 30
+    },
+    ["Leviathan Bass"] = {
+        FavouriteTime = "Night",
+        Seasons = {
+            "None"
+        },
+        Rarity = "Unusual",
+        FavouriteBait = "Fish Head",
+        WeightPool = {
+            80,
+            160
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.bigbasic,
+        SparkleColor = Color3.new(0.39607843756676, 0.64313727617264, 1),
+        Quips = {
+            "A LEVIATHAN BASS!",
+            "MASSIVE!",
+            "POSEIDON'S BASS!",
+            "WHAT POWER!"
+        },
+        Hint = "Creates disturbances in Poseidon's Pool when hunting, Poseidon Pool fish.",
+        Description = "A bass grown to monstrous proportions under Poseidon's influence. Its strikes can create small whirlpools in the water.",
+        Price = 400,
+        From = "Atlantis",
+        Chance = 30,
+        Weather = {
+            "None"
+        },
+        XP = 200,
+        Resilience = 60
     },
     ["Twilight Tentaclefish"] = {
         SparkleColor = Color3.new(1, 1, 1),
@@ -1048,6 +1047,166 @@ return {
         Price = 4000,
         Resilience = 30
     },
+    ["Icy Carp"] = {
+        FavouriteTime = "None",
+        Seasons = {
+            "Winter"
+        },
+        Rarity = "Unusual",
+        FavouriteBait = "Bagel",
+        WeightPool = {
+            30,
+            70
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.61176472902298, 0.93725490570068, 1),
+        Quips = {
+            "An Icy Carp!",
+            "Look at those patterns!",
+            "Quite the catch!"
+        },
+        Hint = "Prefers the deeper pools within the cave.",
+        Description = "A hardy carp whose scales have adapted to form intricate ice-crystal patterns.",
+        Price = 250,
+        From = "Overgrowth Caves",
+        Chance = 45,
+        Weather = {
+            "None"
+        },
+        XP = 120,
+        Resilience = 65
+    },
+    Turkey = {
+        SparkleColor = Color3.new(0.81568628549576, 0.40784314274788, 0.52941179275513),
+        Description = "Turkeys are large and heavy birds with a uniquely-shaped tail consisting of many feathers that line up to create a circular pattern. However, the poor Turkey is the desired choice of food for many fischers for Fischgiving dinner.",
+        FavouriteBait = "Insect",
+        Chance = 0,
+        Weather = {
+            "None"
+        },
+        ProgressEfficiency = 0.35,
+        Hint = "Only obtainable during Fischgiving",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        Seasons = {
+            "Autumn"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            80,
+            300
+        },
+        FromLimited = "Fischgiving",
+        Quips = {
+            "Woah! a Turkey!",
+            "A Turkey!",
+            "Gobble Gobble!",
+            "Woah, A Turkey!"
+        },
+        XP = 1700,
+        Price = 4000,
+        Resilience = 20
+    },
+    ["Gorgon Grouper"] = {
+        SparkleColor = Color3.new(1, 1, 1),
+        Description = "A stone-like fish with glowing eyes and a body covered in moss.",
+        FavouriteBait = "Minnow",
+        Chance = 25,
+        Weather = {
+            "Clear"
+        },
+        ProgressEfficiency = 0.8,
+        Hint = "Prefers to swim in groups, where conditions are clear.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Unusual",
+        WeightPool = {
+            600,
+            1650
+        },
+        From = "Veil of the Forsaken",
+        Quips = {
+            "A Gorgon Grouper!",
+            "Doesn't look like a monster to me!"
+        },
+        XP = 1350,
+        Price = 1500,
+        Resilience = 55
+    },
+    ["Volcanic Geode"] = {
+        SparkleColor = Color3.new(1, 1, 1),
+        Description = "The Volcanic Geode encases a magma crystal core, preserving its contents with an amber-like quality. Within this geode, you might find a trove of rare or extinct treasures\xE2\x80\x94 it's like a volcanic Christmas!",
+        FavouriteBait = "Magnet",
+        Chance = 17,
+        Weather = {
+            "None"
+        },
+        XP = 20,
+        Hint = "Chipped off a volcanic geode.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.crate,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Rare",
+        WeightPool = {
+            200,
+            200
+        },
+        BaitContents = {
+            "Coal",
+            "Coal",
+            "Coal",
+            "Coal",
+            "Maggot",
+            "Maggot",
+            "Minnow",
+            "Truffle Worm",
+            "Coal",
+            "Night Shrimp",
+            "Rapid Catcher",
+            "Instant Catcher",
+            "Super Flakes",
+            "Night Shrimp",
+            "Rapid Catcher",
+            "Super Flakes"
+        },
+        CrateType = "All",
+        CoinContents = {
+            150,
+            500
+        },
+        IsCrate = true,
+        FishContents = {
+            "Ember Snapper",
+            "Pyrogrub",
+            "Sturgeon",
+            "Magma Tang",
+            "Alligator Gar",
+            "Pufferfish",
+            "Sea Urchin",
+            "Sea Urchin",
+            "Perch",
+            "Perch",
+            "Perch",
+            "Angelfish",
+            "Rock",
+            "Rock",
+            "Rock",
+            "Magma Tang"
+        },
+        From = "Roslit Volcano",
+        Quips = {
+            "Ooo, shiny!",
+            "A rock...?!",
+            "Woah! Glowy thing!",
+            "A Geode!",
+            "What's this thing?"
+        },
+        Price = 200,
+        BuyMult = 3,
+        Resilience = 120
+    },
     Swordfish = {
         SparkleColor = Color3.new(0.3647058904171, 0.50196081399918, 1),
         Description = "Swordfish are extremely strong and notable due to their long flattened bill that resembles a sword, as their name implies. They are a great catch, and anglers around the globe are impressed by a Swordfish catch.",
@@ -1112,34 +1271,34 @@ return {
         Price = 7000,
         Resilience = 25
     },
-    Banana = {
-        SparkleColor = Color3.new(1, 0.94901961088181, 0.24313725531101),
-        Description = "A simple banana, rich in potassium. How did it get in the water?",
-        FavouriteBait = "None",
-        BlockPassiveCapture = true,
-        Chance = 0.005,
+    ["Serpent Surgeonfish"] = {
+        SparkleColor = Color3.new(1, 1, 1),
+        Description = "A long, snake-like fish with sharp fins and glowing eyes.",
+        FavouriteBait = "Bagel",
+        Chance = 55,
         Weather = {
-            "Rain"
+            "Foggy"
         },
-        XP = 6900,
-        Hint = "???",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        ProgressEfficiency = 0.95,
+        Hint = "A swift fish that is typically difficult to spot due to foggy conditions.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
         Seasons = {
-            "Summer"
+            "None"
         },
-        Rarity = "Secret",
+        Rarity = "Uncommon",
         WeightPool = {
-            4,
-            10
+            850,
+            2100
         },
-        From = "Ancient Isle",
+        From = "Veil of the Forsaken",
         Quips = {
-            "A BANANA!!",
-            "I CAUGHT A BANANA!",
-            "A Banana!"
+            "A Serpent Surgeonfish!",
+            "That's no doctor!",
+            "Where did it get a scalpel..."
         },
-        Price = 18500,
-        Resilience = 45
+        XP = 220,
+        Price = 1250,
+        Resilience = 75
     },
     ["Cockatoo Squid"] = {
         FavouriteTime = "Night",
@@ -1226,35 +1385,32 @@ return {
         XP = 20,
         Resilience = 100
     },
-    Palaeoniscus = {
-        FavouriteTime = "Night",
+    ["Prismatic Parrotfish"] = {
         Seasons = {
-            "Spring",
-            "Autumn"
+            "Spring"
         },
-        Rarity = "Unusual",
-        FavouriteBait = "Fish Head",
+        Rarity = "Rare",
+        FavouriteBait = "Minnow",
         WeightPool = {
-            25,
-            700
+            80,
+            240
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.1294117718935, 0.41568627953529, 0.47843137383461),
+        SparkleColor = Color3.new(0.33333334326744, 0.98039215803146, 0.86274510622025),
         Quips = {
-            "A Palaeoniscus!",
-            "OMG A Palaeoniscus!",
-            "I can't believe I caught a Palaeoniscus!"
+            "A Prismatic Parrotfish!",
+            "It isn't talking back!"
         },
-        Hint = "Found within the Ancient Isle's waterfall.",
-        Description = "Palaeoniscus is an ancient ray-finned fish from the Early Permian period, approximately 290 million years ago. Known for its robust ganoid scales and streamlined body, it represents early actinopterygian evolution, the ancestor of most modern fish.",
-        Price = 125,
-        From = "Ancient Archives",
-        Chance = 40,
+        Hint = "Located in clear waters with a glistening rainbow shine.",
+        Description = "A colorful fish with scales that reflect every color of the rainbow.",
+        Price = 1500,
+        From = "Calm Zone",
+        Chance = 10,
         Weather = {
             "Clear"
         },
-        XP = 35,
-        Resilience = 70
+        XP = 650,
+        Resilience = 40
     },
     Lurkerfish = {
         SparkleColor = Color3.new(0.54901963472366, 1, 0.69019609689713),
@@ -1287,63 +1443,62 @@ return {
         Price = 1500,
         Resilience = 20
     },
-    ["Gorgon Grouper"] = {
-        SparkleColor = Color3.new(1, 1, 1),
-        Description = "A stone-like fish with glowing eyes and a body covered in moss.",
-        FavouriteBait = "Minnow",
-        Chance = 25,
-        Weather = {
-            "Clear"
-        },
-        ProgressEfficiency = 0.8,
-        Hint = "Prefers to swim in groups, where conditions are clear.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+    ["Hydra Haddock"] = {
         Seasons = {
             "None"
         },
-        Rarity = "Unusual",
+        Rarity = "Common",
+        FavouriteBait = "Insect",
         WeightPool = {
-            600,
-            1650
+            210,
+            470
         },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        SparkleColor = Color3.new(1, 1, 1),
+        Quips = {
+            "A Hydra Haddock!",
+            "Fierce!"
+        },
+        Hint = "A steady fish, commonly spotted during windy conditions.",
+        Description = "A small, hydra-type fish with dark scales and glowing eyes.",
+        Price = 400,
         From = "Veil of the Forsaken",
-        Quips = {
-            "A Gorgon Grouper!",
-            "Doesn't look like a monster to me!"
-        },
-        XP = 1350,
-        Price = 1500,
-        Resilience = 55
-    },
-    Halibut = {
-        Seasons = {
-            "Summer",
-            "Spring"
-        },
-        Rarity = "Rare",
-        FavouriteBait = "Squid",
-        WeightPool = {
-            1000,
-            2000
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.81176471710205, 0.50588238239288, 0.3647058904171),
-        Quips = {
-            "A Halibut!",
-            "A Flatfish!",
-            "I Caught a Halibut!",
-            "Ou! A Halibut!"
-        },
-        Hint = "Found on the floor ocean. Best found near Haddock.",
-        Description = "The Halibut is a large flatfish known for their impressive size and strength. They commonly feed on Haddock and can be found hunting near 'Haddock Rock' and in deep waters. ",
-        Price = 250,
-        From = "Ocean",
-        Chance = 40,
+        Chance = 65,
         Weather = {
-            "Rain"
+            "Windy"
         },
-        XP = 100,
-        Resilience = 40
+        XP = 160,
+        Resilience = 90
+    },
+    ["Blisterback Blenny"] = {
+        FavouriteTime = "Day",
+        SparkleColor = Color3.new(1, 0.40000000596046, 0.1803921610117),
+        Description = "A colossal fish with jagged, obsidian fins and an inner fire that lights up its body. It is said to be faster than a tsunami.",
+        FavouriteBait = "Fish Head",
+        Chance = 0.01,
+        Weather = {
+            "Clear"
+        },
+        Icon = "rbxassetid://110086622505618",
+        Hint = "If the skies are clear and the air is hot, be ready.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "Summer"
+        },
+        Rarity = "Mythical",
+        WeightPool = {
+            10000,
+            28000
+        },
+        XP = 1500,
+        From = "Volcanic Vents",
+        Quips = {
+            "A BLISTERBACK BLENNY!?",
+            "THE MOLTEN HUNTER!"
+        },
+        Price = 6300,
+        ProgressEfficiency = 0.35,
+        Resilience = 10
     },
     ["Crystal Corydoras"] = {
         FavouriteTime = "Night",
@@ -1515,34 +1670,37 @@ return {
         XP = 250,
         Resilience = 100
     },
-    ["Serpent Surgeonfish"] = {
-        SparkleColor = Color3.new(1, 1, 1),
-        Description = "A long, snake-like fish with sharp fins and glowing eyes.",
-        FavouriteBait = "Bagel",
-        Chance = 55,
+    Nessie = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(0.50588238239288, 1, 0.70980393886566),
+        Description = "Nessie is thought to be a complete myth. Little did these anglers know, you found the impossible catch... Nessie... Only obtainable during FischFright ",
+        FavouriteBait = "Truffle Worm",
+        BlockPassiveCapture = true,
+        Chance = 0.01,
         Weather = {
             "Foggy"
         },
-        ProgressEfficiency = 0.95,
-        Hint = "A swift fish that is typically difficult to spot due to foggy conditions.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        ProgressEfficiency = 0.2,
+        Hint = "Only obtainable during FischFright",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
         Seasons = {
             "None"
         },
-        Rarity = "Uncommon",
+        Rarity = "Limited",
         WeightPool = {
-            850,
-            2100
+            20000,
+            40000
         },
-        From = "Veil of the Forsaken",
+        FromLimited = "FischFright",
         Quips = {
-            "A Serpent Surgeonfish!",
-            "That's no doctor!",
-            "Where did it get a scalpel..."
+            "WOAH, NESSIE!?!",
+            "MY BACCKK",
+            "I CAN'T BELIEVE IT! NESSIE!",
+            "I DIDN'T THINK IT WAS REAL!!"
         },
-        XP = 220,
-        Price = 1250,
-        Resilience = 75
+        XP = 3000,
+        Price = 6500,
+        Resilience = 5
     },
     ["Frozen Walnut"] = {
         FavouriteTime = "None",
@@ -1574,32 +1732,32 @@ return {
         Price = 2500,
         Resilience = 15
     },
-    ["Hydra Haddock"] = {
+    ["Molten Moray"] = {
         Seasons = {
-            "None"
+            "Spring"
         },
-        Rarity = "Common",
-        FavouriteBait = "Insect",
+        Rarity = "Rare",
+        FavouriteBait = "Minnow",
         WeightPool = {
-            210,
-            470
+            80,
+            230
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(1, 1, 1),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.bigbasic,
+        SparkleColor = Color3.new(1, 0.40000000596046, 0.1803921610117),
         Quips = {
-            "A Hydra Haddock!",
-            "Fierce!"
+            "A Molten Moray!",
+            "It melted my hook!"
         },
-        Hint = "A steady fish, commonly spotted during windy conditions.",
-        Description = "A small, hydra-type fish with dark scales and glowing eyes.",
-        Price = 400,
-        From = "Veil of the Forsaken",
-        Chance = 65,
+        Hint = "Small yet blindingly bright. When it rains, it hunts.",
+        Description = "A long, slender fish with dark, heat-resistant scales. Hot to the touch.",
+        Price = 1300,
+        From = "Volcanic Vents",
+        Chance = 15,
         Weather = {
-            "Windy"
+            "Rain"
         },
-        XP = 160,
-        Resilience = 90
+        XP = 450,
+        Resilience = 35
     },
     ["Vortex Barracuda"] = {
         FavouriteTime = "None",
@@ -1659,35 +1817,33 @@ return {
         XP = 100,
         Resilience = 45
     },
-    ["Blisterback Blenny"] = {
-        FavouriteTime = "Day",
-        SparkleColor = Color3.new(1, 0.40000000596046, 0.1803921610117),
-        Description = "A colossal fish with jagged, obsidian fins and an inner fire that lights up its body. It is said to be faster than a tsunami.",
-        FavouriteBait = "Fish Head",
-        Chance = 0.01,
-        Weather = {
-            "Clear"
-        },
-        Icon = "rbxassetid://110086622505618",
-        Hint = "If the skies are clear and the air is hot, be ready.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+    ["Pyrite Pufferfish"] = {
+        FavouriteTime = "Night",
         Seasons = {
-            "Summer"
+            "Autumn"
         },
-        Rarity = "Mythical",
+        Rarity = "Rare",
+        FavouriteBait = "Shrimp",
         WeightPool = {
-            10000,
-            28000
+            75,
+            190
         },
-        XP = 1500,
-        From = "Volcanic Vents",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(1, 0.40000000596046, 0.1803921610117),
         Quips = {
-            "A BLISTERBACK BLENNY!?",
-            "THE MOLTEN HUNTER!"
+            "A Pyrite Pufferfish!",
+            "It seems angered..."
         },
-        Price = 6300,
-        ProgressEfficiency = 0.35,
-        Resilience = 10
+        Hint = "Found absent from the crowd, it prefers to avoid direct sunlight.",
+        Description = "A round, spiky fish with a flaming sheen. Its body hardens when threatened.",
+        Price = 1100,
+        From = "Volcanic Vents",
+        Chance = 20,
+        Weather = {
+            "None"
+        },
+        XP = 250,
+        Resilience = 60
     },
     ["Atlantean Guardian"] = {
         Seasons = {
@@ -1717,65 +1873,62 @@ return {
         XP = 150,
         Resilience = 50
     },
-    ["Cookiecutter Shark"] = {
+    ["Smoldering Stingray"] = {
         FavouriteTime = "Night",
         Seasons = {
-            "Summer",
             "Spring"
         },
-        Rarity = "Rare",
-        FavouriteBait = "Bagel",
+        Rarity = "Unusual",
+        FavouriteBait = "Seaweed",
         WeightPool = {
-            5,
-            15
+            80,
+            170
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.40392157435417, 0.40392157435417),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        SparkleColor = Color3.new(1, 0.40000000596046, 0.1803921610117),
         Quips = {
-            "A Cookiecutter Shark!",
-            "Woah, a Cookiecutter!",
-            "Nice, I can make some Gingerbread!",
-            "A Cookiecutter Shark!",
-            "I caught a Cookiecutter Shark!"
+            "A Smoldering Stingray!",
+            "Ouch!"
         },
-        Hint = "Found during a shark hunt during the night.",
-        Description = "The Cookiecutter Shark is a small, nocturnal shark with an unusual feeding habit- t bites circular chunks from larger animals, leaving a 'cookie-cutter' wound. They can be found primarily alongside sharks during shark hunts.",
-        Price = 500,
-        From = "Ocean",
-        Chance = 40,
+        Hint = "Prefers warm, still waters under the cover of night.",
+        Description = "A broad stingray with glowing magma veins running along its wings.",
+        Price = 900,
+        From = "Volcanic Vents",
+        Chance = 35,
         Weather = {
-            "Clear",
-            "Foggy"
+            "None"
         },
-        XP = 300,
-        Resilience = 30
+        XP = 150,
+        Resilience = 75
     },
-    ["Molten Moray"] = {
+    ["Voidfin Mahi"] = {
         Seasons = {
             "Spring"
         },
         Rarity = "Rare",
-        FavouriteBait = "Minnow",
+        FavouriteBait = "Truffle Worm",
         WeightPool = {
-            80,
-            230
+            75,
+            155
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.bigbasic,
-        SparkleColor = Color3.new(1, 0.40000000596046, 0.1803921610117),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.32549020648003, 0.26274511218071, 0.41568627953529),
         Quips = {
-            "A Molten Moray!",
-            "It melted my hook!"
+            "I caught a Voidfin Mahi!",
+            "Woah, a Voidfin Mahi!!",
+            "It's a Voidfin Mahi!"
         },
-        Hint = "Small yet blindingly bright. When it rains, it hunts.",
-        Description = "A long, slender fish with dark, heat-resistant scales. Hot to the touch.",
-        Price = 1300,
-        From = "Volcanic Vents",
-        Chance = 15,
+        Hint = "Found in Vertigo.",
+        Description = "The Voidfin Mahi are extremely fast and sensitive fish. They can sense a heartbeat from hundreds of miles, and are capable of swimming through some solid bio-matters, such as wood.",
+        Price = 450,
+        From = "Vertigo",
+        Chance = 10,
         Weather = {
-            "Rain"
+            "Clear",
+            "Windy"
         },
-        XP = 450,
-        Resilience = 35
+        XP = 400,
+        Resilience = 10
     },
     ["Pyro Pike"] = {
         SparkleColor = Color3.new(0.60392159223557, 0.85490196943283, 0.56078433990479),
@@ -1837,61 +1990,62 @@ return {
         XP = 100,
         Resilience = 65
     },
-    ["Pyrite Pufferfish"] = {
-        FavouriteTime = "Night",
+    ["Diamond Discus"] = {
+        FavouriteTime = "Day",
         Seasons = {
-            "Autumn"
+            "Winter"
         },
-        Rarity = "Rare",
-        FavouriteBait = "Shrimp",
+        Rarity = "Uncommon",
+        FavouriteBait = "Flakes",
         WeightPool = {
-            75,
-            190
+            800,
+            1750
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.40000000596046, 0.1803921610117),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        SparkleColor = Color3.new(0.33333334326744, 0.98039215803146, 0.86274510622025),
         Quips = {
-            "A Pyrite Pufferfish!",
-            "It seems angered..."
+            "A Diamond Discus!",
+            "Not moissanite!",
+            "Mining away!"
         },
-        Hint = "Found absent from the crowd, it prefers to avoid direct sunlight.",
-        Description = "A round, spiky fish with a flaming sheen. Its body hardens when threatened.",
-        Price = 1100,
-        From = "Volcanic Vents",
-        Chance = 20,
+        Hint = "Glistening in freezing waters, notably when the sky is clear.",
+        Description = "A flat, disc-shaped fish with diamond-like scales that reflect light beautifully.",
+        Price = 1200,
+        From = "Calm Zone",
+        Chance = 55,
         Weather = {
-            "None"
+            "Clear"
         },
-        XP = 250,
-        Resilience = 60
+        XP = 110,
+        Resilience = 85
     },
-    ["Smoldering Stingray"] = {
+    ["Hellfire Haddock"] = {
         FavouriteTime = "Night",
         Seasons = {
-            "Spring"
+            "Summer"
         },
-        Rarity = "Unusual",
-        FavouriteBait = "Seaweed",
+        Rarity = "Common",
+        FavouriteBait = "Worm",
         WeightPool = {
-            80,
-            170
+            25,
+            60
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         SparkleColor = Color3.new(1, 0.40000000596046, 0.1803921610117),
         Quips = {
-            "A Smoldering Stingray!",
-            "Ouch!"
+            "A Hellfire Haddock!",
+            "Scorching!"
         },
-        Hint = "Prefers warm, still waters under the cover of night.",
-        Description = "A broad stingray with glowing magma veins running along its wings.",
-        Price = 900,
+        Hint = "Common within the dark, especially after rainfall.",
+        Description = "A small, scorching fish that flickers like a dying flame.",
+        Price = 50,
         From = "Volcanic Vents",
-        Chance = 35,
+        Chance = 70,
         Weather = {
-            "None"
+            "Rain"
         },
-        XP = 150,
-        Resilience = 75
+        XP = 20,
+        Resilience = 95
     },
     Helicoprion = {
         SparkleColor = Color3.new(0.66274511814117, 0.88235294818878, 1),
@@ -1923,39 +2077,35 @@ return {
         Price = 6000,
         Resilience = 20
     },
-    Moonfish = {
-        FavouriteTime = "Night",
-        SparkleColor = Color3.new(1, 0.47843137383461, 0.27450981736183),
-        Description = "The Moonfish is a sizable, flat, bony fish that inhabits deep and occasionally warm waters. While their behaviour resembles that of the Ocean Sunfish, Moonfish are far more aggressive, using their rock-hard skulls to charge at fish, boats, and swimmers.",
-        FavouriteBait = "Minnow",
-        Chance = 0.2,
+    ["Inferno Hide"] = {
+        FavouriteTime = "None",
+        SparkleColor = Color3.new(0.66666668653488, 1, 1),
+        Description = "Inferno Hide.. Used to craft something?",
+        FavouriteBait = "None",
+        BlockPassiveCapture = true,
+        Chance = 20,
         Weather = {
-            "Clear"
+            "None"
         },
-        ProgressEfficiency = 0.6,
-        Hint = "???",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Icon = "rbxassetid://114499683111142",
+        Hint = "Its pretty",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         Seasons = {
-            "Winter"
+            "None"
         },
-        Rarity = "Legendary",
+        Rarity = "Common",
         WeightPool = {
-            2500,
-            5000
+            30,
+            80
         },
-        From = "Ocean",
+        XP = 250,
+        From = "Volcanic Vents",
         Quips = {
-            "I think my backbone snapped..",
-            "Woah!!",
-            "OH MY! A MOONFISH?",
-            "A Moonfish!!",
-            "Woah, a Moonfish!!",
-            "How did I pull this up?",
-            "A Moonfish!!!"
+            "Thats pretty"
         },
-        XP = 900,
-        Price = 1800,
-        Resilience = 20
+        Price = 50,
+        ProgressEfficiency = 0.8,
+        Resilience = 100
     },
     Porgy = {
         FavouriteTime = "Day",
@@ -1990,32 +2140,35 @@ return {
         XP = 40,
         Resilience = 65
     },
-    ["Prismatic Parrotfish"] = {
-        Seasons = {
-            "Spring"
-        },
-        Rarity = "Rare",
-        FavouriteBait = "Minnow",
-        WeightPool = {
-            80,
-            240
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+    ["Shimmering Silverside"] = {
+        FavouriteTime = "Night",
         SparkleColor = Color3.new(0.33333334326744, 0.98039215803146, 0.86274510622025),
-        Quips = {
-            "A Prismatic Parrotfish!",
-            "It isn't talking back!"
-        },
-        Hint = "Located in clear waters with a glistening rainbow shine.",
-        Description = "A colorful fish with scales that reflect every color of the rainbow.",
-        Price = 1500,
-        From = "Calm Zone",
-        Chance = 10,
+        Description = "A sleek, silver fish with scales that shimmer like liquid metal.",
+        FavouriteBait = "Truffle Worm",
+        Chance = 3,
         Weather = {
             "Clear"
         },
-        XP = 650,
-        Resilience = 40
+        ProgressEfficiency = 0.8,
+        Hint = "Located in clear waters with a unique indescribable shine, rarely spotted within the darkness.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        Seasons = {
+            "Spring"
+        },
+        Rarity = "Mythical",
+        WeightPool = {
+            250,
+            700
+        },
+        From = "Calm Zone",
+        Quips = {
+            "A SHIMMERING SILVERSIDE!?",
+            "UNMATCHED BEAUTY!",
+            "ONE OF A KIND!"
+        },
+        XP = 2400,
+        Price = 7800,
+        Resilience = 20
     },
     ["Buccaneer Barracuda"] = {
         FavouriteTime = "Night",
@@ -2046,45 +2199,45 @@ return {
         XP = 100,
         Resilience = 50
     },
-    ["Hellfire Haddock"] = {
+    ["Ruby Rasbora"] = {
         FavouriteTime = "Night",
         Seasons = {
-            "Summer"
+            "Winter"
         },
-        Rarity = "Common",
-        FavouriteBait = "Worm",
+        Rarity = "Rare",
+        FavouriteBait = "Squid",
         WeightPool = {
-            25,
-            60
+            395,
+            1000
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 0.40000000596046, 0.1803921610117),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        SparkleColor = Color3.new(0.33333334326744, 0.98039215803146, 0.86274510622025),
         Quips = {
-            "A Hellfire Haddock!",
-            "Scorching!"
+            "A Ruby Rasbora!",
+            "Red like a rose!"
         },
-        Hint = "Common within the dark, especially after rainfall.",
-        Description = "A small, scorching fish that flickers like a dying flame.",
-        Price = 50,
-        From = "Volcanic Vents",
-        Chance = 70,
+        Hint = "Located in clear waters with a glistening red shine, typically during cold nights.",
+        Description = "A small, red fish with ruby-like scales that shimmer in the light.",
+        Price = 1400,
+        From = "Calm Zone",
+        Chance = 20,
         Weather = {
-            "Rain"
+            "Clear"
         },
-        XP = 20,
-        Resilience = 95
+        XP = 350,
+        Resilience = 70
     },
-    ["Inferno Hide"] = {
+    Cryoskin = {
         FavouriteTime = "None",
         SparkleColor = Color3.new(0.66666668653488, 1, 1),
-        Description = "Inferno Hide.. Used to craft something?",
+        Description = "Cyroskin... Used to craft something?",
         FavouriteBait = "None",
         BlockPassiveCapture = true,
-        Chance = 20,
+        Chance = 10,
         Weather = {
             "None"
         },
-        Icon = "rbxassetid://114499683111142",
+        Icon = "rbxassetid://96530556200239",
         Hint = "Its pretty",
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         Seasons = {
@@ -2096,7 +2249,7 @@ return {
             80
         },
         XP = 250,
-        From = "Volcanic Vents",
+        From = "Challenger's Deep",
         Quips = {
             "Thats pretty"
         },
@@ -2133,35 +2286,34 @@ return {
         XP = 160,
         Resilience = 60
     },
-    ["Shimmering Silverside"] = {
-        FavouriteTime = "Night",
+    ["Emerald Elephantnose"] = {
+        FavouriteTime = "Day",
+        Seasons = {
+            "Summer"
+        },
+        Rarity = "Uncommon",
+        FavouriteBait = "Bagel",
+        WeightPool = {
+            600,
+            1600
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         SparkleColor = Color3.new(0.33333334326744, 0.98039215803146, 0.86274510622025),
-        Description = "A sleek, silver fish with scales that shimmer like liquid metal.",
-        FavouriteBait = "Truffle Worm",
-        Chance = 3,
+        Quips = {
+            "An Emerald Elephantnose!",
+            "Perfect for trading!",
+            "Not quite elephant-sized..."
+        },
+        Hint = "Located in clear waters with a glistening green shine, typically during the day.",
+        Description = "A small fish with an elongated nose and emerald-green scales.",
+        Price = 1000,
+        From = "Calm Zone",
+        Chance = 45,
         Weather = {
             "Clear"
         },
-        ProgressEfficiency = 0.8,
-        Hint = "Located in clear waters with a unique indescribable shine, rarely spotted within the darkness.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        Seasons = {
-            "Spring"
-        },
-        Rarity = "Mythical",
-        WeightPool = {
-            250,
-            700
-        },
-        From = "Calm Zone",
-        Quips = {
-            "A SHIMMERING SILVERSIDE!?",
-            "UNMATCHED BEAUTY!",
-            "ONE OF A KIND!"
-        },
-        XP = 2400,
-        Price = 7800,
-        Resilience = 20
+        XP = 100,
+        Resilience = 90
     },
     ["Embertail Eel"] = {
         FavouriteTime = "Night",
@@ -2252,33 +2404,33 @@ return {
         FavouriteBait = "Shark Head",
         Resilience = 5
     },
-    ["Ruby Rasbora"] = {
-        FavouriteTime = "Night",
+    ["Quartzfin Queenfish"] = {
+        FavouriteTime = "Day",
         Seasons = {
-            "Winter"
+            "Summer"
         },
-        Rarity = "Rare",
-        FavouriteBait = "Squid",
+        Rarity = "Common",
+        FavouriteBait = "Insect",
         WeightPool = {
-            395,
-            1000
+            180,
+            400
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         SparkleColor = Color3.new(0.33333334326744, 0.98039215803146, 0.86274510622025),
         Quips = {
-            "A Ruby Rasbora!",
-            "Red like a rose!"
+            "A Quartzfin Queenfish!",
+            "From the Nether!"
         },
-        Hint = "Located in clear waters with a glistening red shine, typically during cold nights.",
-        Description = "A small, red fish with ruby-like scales that shimmer in the light.",
-        Price = 1400,
+        Hint = "Found in shallow, clear waters, especially on warm days.",
+        Description = "A small, shimmering fish with quartz-like fins that sparkle in the light.",
+        Price = 300,
         From = "Calm Zone",
-        Chance = 20,
+        Chance = 65,
         Weather = {
             "Clear"
         },
-        XP = 350,
-        Resilience = 70
+        XP = 50,
+        Resilience = 100
     },
     ["Bluefin Tuna"] = {
         Seasons = {
@@ -2310,33 +2462,34 @@ return {
         XP = 120,
         Resilience = 30
     },
-    ["Chillshadow Chub"] = {
-        FavouriteTime = "Day",
-        Seasons = {
-            "None"
-        },
-        Rarity = "Uncommon",
-        FavouriteBait = "Insect",
-        WeightPool = {
-            6,
-            16
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.40000000596046, 0.69803923368454, 1),
-        Quips = {
-            "A Chillshadow Chub!",
-            "Slippery little guy!"
-        },
-        Hint = "Found in areas with heavy ice cover, especially under clear skies.",
-        Description = "A small fish that blends into the icy shadows of the deep.",
-        Price = 100,
-        From = "Challenger's Deep",
-        Chance = 45,
+    ["Giant Seadevil"] = {
+        SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
+        Description = "A massive, terrifying fish with a glowing lure and teeth as sharp as the finest of blades.",
+        FavouriteBait = "Fish Head",
+        Chance = 0.01,
         Weather = {
             "Clear"
         },
-        XP = 100,
-        Resilience = 70
+        ProgressEfficiency = 0.2,
+        Hint = "Swims in the deepest parts of the trench, especially under clear skies.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "Autumn"
+        },
+        Rarity = "Mythical",
+        WeightPool = {
+            20000,
+            50000
+        },
+        From = "Abyssal Zenith",
+        Quips = {
+            "A GIANT SEADEVIL!?",
+            "MONSTER!",
+            "IT GREW UP!"
+        },
+        XP = 3800,
+        Price = 9000,
+        Resilience = 8
     },
     ["Long Pike"] = {
         SparkleColor = Color3.new(0.3647058904171, 0.54901963472366, 0.42745098471642),
@@ -2371,34 +2524,33 @@ return {
         Price = 18000,
         Resilience = 55
     },
-    ["Emerald Elephantnose"] = {
-        FavouriteTime = "Day",
-        Seasons = {
-            "Summer"
-        },
-        Rarity = "Uncommon",
-        FavouriteBait = "Bagel",
-        WeightPool = {
-            600,
-            1600
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.33333334326744, 0.98039215803146, 0.86274510622025),
-        Quips = {
-            "An Emerald Elephantnose!",
-            "Perfect for trading!",
-            "Not quite elephant-sized..."
-        },
-        Hint = "Located in clear waters with a glistening green shine, typically during the day.",
-        Description = "A small fish with an elongated nose and emerald-green scales.",
-        Price = 1000,
-        From = "Calm Zone",
-        Chance = 45,
+    ["Infant Giant Seadevil"] = {
+        SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
+        Description = "A juvenile version of the Giant Seadevil, with a bright lure and razor-sharp teeth.",
+        FavouriteBait = "Truffle Worm",
+        Chance = 0.005,
         Weather = {
             "Clear"
         },
-        XP = 100,
-        Resilience = 90
+        ProgressEfficiency = 0.45,
+        Hint = "Found in the deeper parts of the trench, especially within cool temperatures.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "Autumn"
+        },
+        Rarity = "Legendary",
+        WeightPool = {
+            6000,
+            17000
+        },
+        From = "Abyssal Zenith",
+        Quips = {
+            "AN INFANT GIANT SEADEVIL!?",
+            "YOUNG YET DANGEROUS!"
+        },
+        XP = 2600,
+        Price = 5000,
+        Resilience = 12
     },
     ["Yellow Energy Crystal"] = {
         Seasons = {
@@ -2489,34 +2641,35 @@ return {
         Price = 9000,
         Resilience = 10
     },
-    ["Diamond Discus"] = {
-        FavouriteTime = "Day",
+    Bowfin = {
+        FavouriteTime = "Night",
         Seasons = {
-            "Winter"
+            "Spring",
+            "Summer"
         },
         Rarity = "Uncommon",
-        FavouriteBait = "Flakes",
+        FavouriteBait = "Worm",
         WeightPool = {
-            800,
-            1750
+            30,
+            60
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.33333334326744, 0.98039215803146, 0.86274510622025),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.74117648601532, 0.49019607901573, 0.37254902720451),
         Quips = {
-            "A Diamond Discus!",
-            "Not moissanite!",
-            "Mining away!"
+            "A Mudfish!",
+            "Ouu, A Mudfish!",
+            "I caught a Mudfish!"
         },
-        Hint = "Glistening in freezing waters, notably when the sky is clear.",
-        Description = "A flat, disc-shaped fish with diamond-like scales that reflect light beautifully.",
-        Price = 1200,
-        From = "Calm Zone",
-        Chance = 55,
+        Hint = "Caught in Mushgrove Swamp at night.",
+        Description = "The Mudfish, also known as Bowfin, is a resilient, ancient fish species known for its ability to survive in harsh, low-oxygen environments like swamps and muddy waters. They can be found all over Mushgrove Swamp, especially lurking in dense vegetation and during the night.",
+        Price = 100,
+        From = "Mushgrove",
+        Chance = 60,
         Weather = {
-            "Clear"
+            "Rain"
         },
-        XP = 110,
-        Resilience = 85
+        XP = 50,
+        Resilience = 60
     },
     Mackerel = {
         FavouriteTime = "Day",
@@ -2612,119 +2765,119 @@ return {
         XP = 100,
         Resilience = 50
     },
-    ["Quartzfin Queenfish"] = {
-        FavouriteTime = "Day",
+    ["Mahi Mahi"] = {
         Seasons = {
-            "Summer"
+            "Spring"
         },
-        Rarity = "Common",
+        Rarity = "Rare",
+        FavouriteBait = "None",
+        WeightPool = {
+            70,
+            150
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(1, 0.97647058963776, 0.34901961684227),
+        Quips = {
+            "I caught a Mahi Mahi!",
+            "Woah, a Mahi Mahi!!",
+            "It's a Mahi Mahi!"
+        },
+        Hint = "Found near Sunstone Island.",
+        Description = "The Mahi Mahi is a vibrant, fast-swimming fish known for its striking colors of blue, green, and yellow. They can be found all around Sunstone island, and is prized by many anglers.",
+        Price = 150,
+        From = "Sunstone",
+        Chance = 20,
+        Weather = {
+            "Clear",
+            "Windy"
+        },
+        XP = 90,
+        Resilience = 30
+    },
+    ["Radiant Triplewart Seadevil"] = {
+        Seasons = {
+            "Autumn"
+        },
+        Rarity = "Unusual",
+        FavouriteBait = "Shrimp",
+        WeightPool = {
+            100,
+            210
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
+        Quips = {
+            "A Radiant Triplewart Seadevil!",
+            "Greater than immortal!"
+        },
+        Hint = "Prefers cool, still waters with empty skies.",
+        Description = "A bizarre fish with three glowing lures and a body covered in bioluminescent spots.",
+        Price = 600,
+        From = "Abyssal Zenith",
+        Chance = 35,
+        Weather = {
+            "Clear"
+        },
+        XP = 200,
+        Resilience = 55
+    },
+    ["Abyssal Bearded Seadevil"] = {
+        FavouriteTime = "None",
+        SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
+        Description = "A terrifying fish with a glowing beard-like lure and razor-sharp teeth.",
         FavouriteBait = "Insect",
+        Chance = 60,
+        Weather = {
+            "None"
+        },
+        Icon = "rbxassetid://124054246093053",
+        Hint = "Located in the coldest parts of the trench, typically found in groups.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        Seasons = {
+            "Winter"
+        },
+        Rarity = "Uncommon",
         WeightPool = {
             180,
             400
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.33333334326744, 0.98039215803146, 0.86274510622025),
-        Quips = {
-            "A Quartzfin Queenfish!",
-            "From the Nether!"
-        },
-        Hint = "Found in shallow, clear waters, especially on warm days.",
-        Description = "A small, shimmering fish with quartz-like fins that sparkle in the light.",
-        Price = 300,
-        From = "Calm Zone",
-        Chance = 65,
-        Weather = {
-            "Clear"
-        },
-        XP = 50,
-        Resilience = 100
-    },
-    ["Giant Seadevil"] = {
-        SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
-        Description = "A massive, terrifying fish with a glowing lure and teeth as sharp as the finest of blades.",
-        FavouriteBait = "Fish Head",
-        Chance = 0.01,
-        Weather = {
-            "Clear"
-        },
-        ProgressEfficiency = 0.2,
-        Hint = "Swims in the deepest parts of the trench, especially under clear skies.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        Seasons = {
-            "Autumn"
-        },
-        Rarity = "Mythical",
-        WeightPool = {
-            20000,
-            50000
-        },
         From = "Abyssal Zenith",
         Quips = {
-            "A GIANT SEADEVIL!?",
-            "MONSTER!",
-            "IT GREW UP!"
+            "An Abyssal Bearded Seadevil!",
+            "Horrifying!",
+            "Could use a shave..."
         },
-        XP = 3800,
-        Price = 9000,
-        Resilience = 8
+        XP = 95,
+        Price = 120,
+        Resilience = 85
     },
-    ["Infant Giant Seadevil"] = {
-        SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
-        Description = "A juvenile version of the Giant Seadevil, with a bright lure and razor-sharp teeth.",
-        FavouriteBait = "Truffle Worm",
-        Chance = 0.005,
-        Weather = {
-            "Clear"
-        },
-        ProgressEfficiency = 0.45,
-        Hint = "Found in the deeper parts of the trench, especially within cool temperatures.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+    ["Leviathan Humpback Anglerfish"] = {
+        FavouriteTime = "None",
         Seasons = {
-            "Autumn"
+            "Summer"
         },
-        Rarity = "Legendary",
+        Rarity = "Common",
+        FavouriteBait = "Worm",
         WeightPool = {
-            6000,
-            17000
-        },
-        From = "Abyssal Zenith",
-        Quips = {
-            "AN INFANT GIANT SEADEVIL!?",
-            "YOUNG YET DANGEROUS!"
-        },
-        XP = 2600,
-        Price = 5000,
-        Resilience = 12
-    },
-    ["Marsh Gar"] = {
-        Seasons = {
-            "Winter"
-        },
-        Rarity = "Rare",
-        FavouriteBait = "Fish Head",
-        WeightPool = {
-            170,
-            380
+            35,
+            80
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.70588237047195, 0.14117647707462, 0.14117647707462),
+        SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
         Quips = {
-            "A Gar!",
-            "I caught a Marsh Gar!",
-            "Woah! A Marsh Gar!",
-            "Oh my Gar!"
+            "A Leviathan Humpback Anglerfish!",
+            "Like a lantern!"
         },
-        Hint = "Found under the bridges of Mushgrove Swamp.",
-        Description = "The Marsh Gar is a large vicious marsh water fish that can be found in Mushgrove Swamp. March Gar are extremely strong hunters, using their whiskers to sense prey in foggy waters.",
-        Price = 280,
-        From = "Mushgrove",
-        Chance = 30,
+        Hint = "Noticed within the warmer parts of the abyss, especially during rainfall.",
+        Description = "An anglerfish with a humpback and a glowing lure that pulses like a heartbeat.",
+        Price = 40,
+        From = "Abyssal Zenith",
+        Chance = 70,
         Weather = {
-            "Foggy"
+            "Rain"
         },
-        XP = 100,
-        Resilience = 30
+        XP = 25,
+        Resilience = 90
     },
     Minnow = {
         Seasons = {
@@ -2787,34 +2940,33 @@ return {
         IsLimitedBestiary = true,
         Resilience = 85
     },
-    ["Dumbo Octopus"] = {
-        SparkleColor = Color3.new(1, 0.55686277151108, 0.35294118523598),
-        Description = "The Dumbo Octopus is a deep-sea dweller, named for its ear like fins that resemble the ears of Disney's famous elephant character. With a soft, gelatinous body and gentle movements, it glides through the oceans and coral reefs of Roslit Bay.",
-        FavouriteBait = "Worm",
-        Chance = 0.1,
+    ["Titanic Black Seadevil"] = {
+        FavouriteTime = "None",
+        Seasons = {
+            "None"
+        },
+        Rarity = "Common",
+        FavouriteBait = "Bagel",
+        WeightPool = {
+            55,
+            105
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
+        Quips = {
+            "A Titanic Black Seadevil!",
+            "Glowy!"
+        },
+        Hint = "Commonly swims around shallow trenches, typically during storms.",
+        Description = "An all black anglerfish with a glowing lure that can be seen from miles away.",
+        Price = 45,
+        From = "Abyssal Zenith",
+        Chance = 80,
         Weather = {
             "Rain"
         },
-        ProgressEfficiency = 0.85,
-        Hint = "Caught in Roslit Bays coral reef.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        Seasons = {
-            "Winter"
-        },
-        Rarity = "Legendary",
-        WeightPool = {
-            15,
-            40
-        },
-        From = "Roslit",
-        Quips = {
-            "Woah, I caught a Dumbo!",
-            "A Dumbo Octopus!",
-            "No way! A Dumbo Octupus!"
-        },
-        XP = 400,
-        Price = 900,
-        Resilience = 30
+        XP = 20,
+        Resilience = 95
     },
     ["Thunder Bass"] = {
         FavouriteTime = "Night",
@@ -2846,32 +2998,37 @@ return {
         XP = 250,
         Resilience = 45
     },
-    ["Radiant Triplewart Seadevil"] = {
-        Seasons = {
-            "Autumn"
-        },
-        Rarity = "Unusual",
-        FavouriteBait = "Shrimp",
-        WeightPool = {
-            100,
-            210
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
-        Quips = {
-            "A Radiant Triplewart Seadevil!",
-            "Greater than immortal!"
-        },
-        Hint = "Prefers cool, still waters with empty skies.",
-        Description = "A bizarre fish with three glowing lures and a body covered in bioluminescent spots.",
-        Price = 600,
-        From = "Abyssal Zenith",
-        Chance = 35,
+    Moby = {
+        SparkleColor = Color3.new(0.33333334326744, 1, 1),
+        Description = "A monstrous whale with a fearsome reputation, known to attack those who dare cross its path",
+        HideFishModel = true,
+        BlockPassiveCapture = true,
+        Chance = 0.0006,
         Weather = {
-            "Clear"
+            "None"
         },
-        XP = 200,
-        Resilience = 55
+        ProgressEfficiency = 0.05,
+        Hint = "???",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "Summer"
+        },
+        Rarity = "Secret",
+        WeightPool = {
+            900000,
+            2000000
+        },
+        XP = 60000,
+        From = "Ocean",
+        Quips = {
+            "Moby?! IMPOSSIBLE!",
+            "BIG FOREHEAD!",
+            "UNMATCHED STRENGTH!",
+            "IT DIDN'T DESTROY MY BOAT!"
+        },
+        Price = 75000,
+        FavouriteBait = "Squid",
+        Resilience = 1
     },
     ["Polar Alligator"] = {
         FavouriteTime = "Night",
@@ -2968,35 +3125,36 @@ return {
         XP = 180,
         Resilience = 70
     },
-    ["Abyssal Bearded Seadevil"] = {
-        FavouriteTime = "None",
-        SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
-        Description = "A terrifying fish with a glowing beard-like lure and razor-sharp teeth.",
-        FavouriteBait = "Insect",
-        Chance = 60,
+    ["Blue Whale"] = {
+        SparkleColor = Color3.new(0.33333334326744, 1, 1),
+        Description = "A massive whale, often seen in cold waters during feeding season.",
+        FavouriteBait = "Shrimp",
+        BlockPassiveCapture = true,
+        Chance = 5,
         Weather = {
             "None"
         },
-        Icon = "rbxassetid://124054246093053",
-        Hint = "Located in the coldest parts of the trench, typically found in groups.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        ProgressEfficiency = 0.1,
+        Hint = "Known for its rarity and immense size, only the keenest eyes will spot it.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
         Seasons = {
-            "Winter"
+            "Summer"
         },
-        Rarity = "Uncommon",
+        Rarity = "Exotic",
         WeightPool = {
-            180,
-            400
+            1300000,
+            3000000
         },
-        From = "Abyssal Zenith",
+        From = "Ocean",
         Quips = {
-            "An Abyssal Bearded Seadevil!",
-            "Horrifying!",
-            "Could use a shave..."
+            "BLUE WHALE!",
+            "PRETTY BLUE!",
+            "I'll need a line replacement!",
+            "Extra large!"
         },
-        XP = 95,
-        Price = 120,
-        Resilience = 85
+        XP = 25000,
+        Price = 30000,
+        Resilience = 15
     },
     Phanerorhynchus = {
         FavouriteTime = "Night",
@@ -3027,33 +3185,34 @@ return {
         XP = 90,
         Resilience = 40
     },
-    ["Leviathan Humpback Anglerfish"] = {
-        FavouriteTime = "None",
-        Seasons = {
-            "Summer"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Worm",
-        WeightPool = {
-            35,
-            80
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
-        Quips = {
-            "A Leviathan Humpback Anglerfish!",
-            "Like a lantern!"
-        },
-        Hint = "Noticed within the warmer parts of the abyss, especially during rainfall.",
-        Description = "An anglerfish with a humpback and a glowing lure that pulses like a heartbeat.",
-        Price = 40,
-        From = "Abyssal Zenith",
-        Chance = 70,
+    ["Ancient Orca"] = {
+        SparkleColor = Color3.new(0.33333334326744, 1, 1),
+        Description = "A rare orca, tend to migrate from time to time.",
+        FavouriteBait = "Shark Head",
+        BlockPassiveCapture = true,
+        Chance = 1e-08,
         Weather = {
-            "Rain"
+            "None"
         },
-        XP = 25,
-        Resilience = 90
+        ProgressEfficiency = 0.2,
+        Hint = "Search the ocean for migrating orcas",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Secret",
+        WeightPool = {
+            20000,
+            25000
+        },
+        From = "Ocean",
+        Quips = {
+            "Ancient Orca! IMPOSSIBLE!",
+            "The tide bows to its eternal majesty!"
+        },
+        XP = 10000,
+        Price = 15000,
+        Resilience = 5
     },
     ["Mutated Shark"] = {
         FavouriteTime = "Night",
@@ -3112,66 +3271,65 @@ return {
         XP = 10,
         Resilience = 100
     },
-    ["Titanic Black Seadevil"] = {
-        FavouriteTime = "None",
-        Seasons = {
-            "None"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Bagel",
-        WeightPool = {
-            55,
-            105
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
-        Quips = {
-            "A Titanic Black Seadevil!",
-            "Glowy!"
-        },
-        Hint = "Commonly swims around shallow trenches, typically during storms.",
-        Description = "An all black anglerfish with a glowing lure that can be seen from miles away.",
-        Price = 45,
-        From = "Abyssal Zenith",
-        Chance = 80,
-        Weather = {
-            "Rain"
-        },
-        XP = 20,
-        Resilience = 95
-    },
-    ["Ancient Orca"] = {
+    Orca = {
         SparkleColor = Color3.new(0.33333334326744, 1, 1),
-        Description = "A rare orca, tend to migrate from time to time.",
+        Description = "Orcas tend to migrate from time to time.",
         FavouriteBait = "Shark Head",
-        BlockPassiveCapture = true,
         CustomProgressEfficiency = {
             {
-                Value = 0.2
+                Value = -0.8
             }
         },
-        Chance = 2,
+        Chance = 10,
         Weather = {
             "None"
         },
-        XP = 10000,
+        XP = 8000,
         Hint = "Search the ocean for migrating orcas",
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
         Seasons = {
             "None"
         },
-        Rarity = "Secret",
+        Rarity = "Exotic",
         WeightPool = {
-            20000,
-            25000
+            10000,
+            15000
         },
         From = "Ocean",
         Quips = {
-            "Ancient Orca! IMPOSSIBLE!",
+            "ORCA! IMPOSSIBLE!",
             "The tide bows to its eternal majesty!"
         },
-        Price = 15000,
-        Resilience = 5
+        Price = 12000,
+        Resilience = 4
+    },
+    ["Ancient Serpent Skull"] = {
+        FavouriteTime = "None",
+        SparkleColor = Color3.new(0.49411764740944, 0.047058824449778, 0.047058824449778),
+        Description = "A haunting, bone-chilling relic from a monstrous, lost predator, shrouded in eerie mystery. Beware... Locals say the skull holds a haunting power...",
+        FavouriteBait = "None",
+        Chance = 0.005,
+        Weather = {
+            "None"
+        },
+        ProgressEfficiency = 0.8,
+        Hint = "???",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            50,
+            100
+        },
+        FromLimited = "Archeological Site",
+        Quips = {
+            "WOAH ANCIENT SERPENT'S SKULL!"
+        },
+        XP = 400,
+        Price = 1200,
+        Resilience = 100
     },
     ["Goblin Shark"] = {
         FavouriteTime = "Night",
@@ -3259,70 +3417,6 @@ return {
         XP = 250,
         Resilience = 55
     },
-    Orca = {
-        SparkleColor = Color3.new(0.33333334326744, 1, 1),
-        Description = "Orcas tend to migrate from time to time.",
-        FavouriteBait = "Shark Head",
-        CustomProgressEfficiency = {
-            {
-                Value = 0.2
-            }
-        },
-        Chance = 10,
-        Weather = {
-            "None"
-        },
-        XP = 8000,
-        Hint = "Search the ocean for migrating orcas",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        Seasons = {
-            "None"
-        },
-        Rarity = "Exotic",
-        WeightPool = {
-            10000,
-            15000
-        },
-        From = "Ocean",
-        Quips = {
-            "ORCA! IMPOSSIBLE!",
-            "The tide bows to its eternal majesty!"
-        },
-        Price = 12000,
-        Resilience = 4
-    },
-    ["Grey Carp"] = {
-        Seasons = {
-            "None"
-        },
-        Rarity = "Uncommon",
-        FavouriteBait = "Seaweed",
-        WeightPool = {
-            20,
-            70
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 1, 1),
-        Quips = {
-            "Is it grey magic?",
-            "Woah, a Grey Carp!",
-            "It's a Carp!",
-            "Woahh! A Grey Carp!!",
-            "Carp-tastic!",
-            "!!!",
-            "Woah! Grey Carp!"
-        },
-        Hint = "Found in Mushgrove Swamp near the fallen watch tower.",
-        Description = "The Grey Carp is a sturdy freshwater fish known for its strength and adaptability. They can be found in Mushgrove Swamp feeding on plants and small insects. The Grey Carp is extremely strong, and is a tough battle to catch.",
-        Price = 120,
-        From = "Mushgrove",
-        Chance = 55,
-        Weather = {
-            "Autumn"
-        },
-        XP = 75,
-        Resilience = 60
-    },
     ["The Kraken"] = {
         FavouriteTime = "Night",
         SparkleColor = Color3.new(0.79215687513351, 0.66274511814117, 0.87843137979507),
@@ -3355,62 +3449,6 @@ return {
         Price = 20000,
         FavouriteBait = "Truffle Worm",
         Resilience = 5
-    },
-    ["Reef Minnow"] = {
-        FavouriteTime = "None",
-        Seasons = {
-            "None"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Seaweed",
-        WeightPool = {
-            1,
-            6
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.63137257099152, 1, 0.96862745285034),
-        Quips = {},
-        Hint = "Found swimming among shallow coral reefs.",
-        Description = "A quick, small reef fish that swims in tight groups near coral formations. They use their silvery scales and small size to hide from predators, darting between coral branches when threatened.",
-        Price = 85,
-        From = "Grand Reef",
-        Chance = 65,
-        Weather = {
-            "None"
-        },
-        XP = 65,
-        Resilience = 90
-    },
-    ["Icebeard Shark"] = {
-        FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.57647061347961, 0.77647060155869, 1),
-        Description = "A massive, ancient shark with frost-covered skin and icicle-like protrusions.",
-        FavouriteBait = "Truffle Worm",
-        Chance = 0.01,
-        Weather = {
-            "None"
-        },
-        ProgressEfficiency = 0.5,
-        Hint = "Only appears in the deepest, darkest parts of the Glacial Grotto.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        Seasons = {
-            "Winter"
-        },
-        Rarity = "Mythical",
-        WeightPool = {
-            3000,
-            6000
-        },
-        From = "Glacial Grotto",
-        Quips = {
-            "AN ICEBEARD SHARK!",
-            "THE LEGEND EXISTS!",
-            "INCREDIBLE!",
-            "THE FROZEN TERROR!"
-        },
-        XP = 2500,
-        Price = 8000,
-        Resilience = 10
     },
     ["Abyssal Devourer"] = {
         FavouriteTime = "Night",
@@ -3474,6 +3512,62 @@ return {
         Price = 6000,
         Resilience = 15
     },
+    ["Reef Minnow"] = {
+        FavouriteTime = "None",
+        Seasons = {
+            "None"
+        },
+        Rarity = "Common",
+        FavouriteBait = "Seaweed",
+        WeightPool = {
+            1,
+            6
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.63137257099152, 1, 0.96862745285034),
+        Quips = {},
+        Hint = "Found swimming among shallow coral reefs.",
+        Description = "A quick, small reef fish that swims in tight groups near coral formations. They use their silvery scales and small size to hide from predators, darting between coral branches when threatened.",
+        Price = 85,
+        From = "Grand Reef",
+        Chance = 65,
+        Weather = {
+            "None"
+        },
+        XP = 65,
+        Resilience = 90
+    },
+    ["Icebeard Shark"] = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(0.57647061347961, 0.77647060155869, 1),
+        Description = "A massive, ancient shark with frost-covered skin and icicle-like protrusions.",
+        FavouriteBait = "Truffle Worm",
+        Chance = 0.01,
+        Weather = {
+            "None"
+        },
+        ProgressEfficiency = 0.5,
+        Hint = "Only appears in the deepest, darkest parts of the Glacial Grotto.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "Winter"
+        },
+        Rarity = "Mythical",
+        WeightPool = {
+            3000,
+            6000
+        },
+        From = "Glacial Grotto",
+        Quips = {
+            "AN ICEBEARD SHARK!",
+            "THE LEGEND EXISTS!",
+            "INCREDIBLE!",
+            "THE FROZEN TERROR!"
+        },
+        XP = 2500,
+        Price = 8000,
+        Resilience = 10
+    },
     ["Abyssal King"] = {
         FavouriteTime = "Night",
         SparkleColor = Color3.new(0.63529413938522, 0.50196081399918, 0.72156864404678),
@@ -3505,64 +3599,33 @@ return {
         Price = 4000,
         Resilience = 20
     },
-    Abyssacuda = {
+    ["Twilight Eel"] = {
         Seasons = {
-            "Spring",
-            "Summer"
+            "Winter"
         },
-        Rarity = "Rare",
-        FavouriteBait = "Minnow",
+        Rarity = "Uncommon",
+        FavouriteBait = "Insect",
         WeightPool = {
-            55,
-            110
+            100,
+            200
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.34117648005486, 0.30196079611778, 0.45490196347237),
+        SparkleColor = Color3.new(0.50196081399918, 1, 0.4745098054409),
         Quips = {
-            "Woah, a n Abyssacuda!",
-            "I caught an Abyssacuda!",
-            "An Abyssacuda!!",
-            "Abyssacudaaaaa!!"
+            "Woah, a Twilight Eel!",
+            "I caught an Eel!",
+            "It looks like a tadpole!"
         },
-        Hint = "Found in Vertigos calm waters.",
-        Description = "Abyssacudas are large predatory fish, known for their fearsome appearance and ferocious behaviour. They are adept swimmers, and are a top predator for the Twilight Eel. Abyssacudas are related to the Barracuda, however their cause for being primarily innate to Vertigo is unknown.",
-        Price = 400,
+        Hint = "Found in Vertigo's Dip.",
+        Description = "The Twilight Eel, whilst resembling a giant tadpole, is an Eel. Twilight Eels are extremely slimy, and use the bulb on their head to attract prey.",
+        Price = 90,
         From = "Vertigo",
-        Chance = 20,
+        Chance = 70,
         Weather = {
             "None"
         },
-        XP = 90,
-        Resilience = 10
-    },
-    ["Voidfin Mahi"] = {
-        Seasons = {
-            "Spring"
-        },
-        Rarity = "Rare",
-        FavouriteBait = "Truffle Worm",
-        WeightPool = {
-            75,
-            155
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.32549020648003, 0.26274511218071, 0.41568627953529),
-        Quips = {
-            "I caught a Voidfin Mahi!",
-            "Woah, a Voidfin Mahi!!",
-            "It's a Voidfin Mahi!"
-        },
-        Hint = "Found in Vertigo.",
-        Description = "The Voidfin Mahi are extremely fast and sensitive fish. They can sense a heartbeat from hundreds of miles, and are capable of swimming through some solid bio-matters, such as wood.",
-        Price = 450,
-        From = "Vertigo",
-        Chance = 10,
-        Weather = {
-            "Clear",
-            "Windy"
-        },
-        XP = 400,
-        Resilience = 10
+        XP = 100,
+        Resilience = 40
     },
     ["Eldritch Horror"] = {
         FavouriteTime = "Night",
@@ -3593,6 +3656,96 @@ return {
         },
         XP = 600,
         Resilience = 40
+    },
+    Abyssacuda = {
+        Seasons = {
+            "Spring",
+            "Summer"
+        },
+        Rarity = "Rare",
+        FavouriteBait = "Minnow",
+        WeightPool = {
+            55,
+            110
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.34117648005486, 0.30196079611778, 0.45490196347237),
+        Quips = {
+            "Woah, a n Abyssacuda!",
+            "I caught an Abyssacuda!",
+            "An Abyssacuda!!",
+            "Abyssacudaaaaa!!"
+        },
+        Hint = "Found in Vertigos calm waters.",
+        Description = "Abyssacudas are large predatory fish, known for their fearsome appearance and ferocious behaviour. They are adept swimmers, and are a top predator for the Twilight Eel. Abyssacudas are related to the Barracuda, however their cause for being primarily innate to Vertigo is unknown.",
+        Price = 400,
+        From = "Vertigo",
+        Chance = 20,
+        Weather = {
+            "None"
+        },
+        XP = 90,
+        Resilience = 10
+    },
+    ["Zeus' Herald"] = {
+        FavouriteTime = "Night",
+        Seasons = {
+            "None"
+        },
+        Rarity = "Mythical",
+        FavouriteBait = "None",
+        WeightPool = {
+            1500,
+            3000
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        SparkleColor = Color3.new(1, 0.93333333730698, 0.50196081399918),
+        Quips = {
+            "Zeus' HERALD!",
+            "THE LIGHTNING LORD!",
+            "THUNDER INCARNATE!",
+            "THE STORM KING'S MESSENGER!"
+        },
+        Hint = "Appears only during the most powerful thunderstorms in zeus pool.",
+        Description = "A legendary fish said to be Zeus' messenger, its body pure lightning given form. Its presence heralds the greatest of storms.",
+        Price = 5000,
+        From = "Atlantis",
+        Chance = 0.02,
+        Weather = {
+            "Rain"
+        },
+        XP = 2000,
+        Resilience = 15
+    },
+    ["Tentacle Eel"] = {
+        FavouriteTime = "Night",
+        Seasons = {
+            "None"
+        },
+        Rarity = "Unusual",
+        FavouriteBait = "Fish Head",
+        WeightPool = {
+            100,
+            200
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.bigbasic,
+        SparkleColor = Color3.new(0.38431373238564, 0.24313725531101, 0.4705882370472),
+        Quips = {
+            "A TENTACLE EEL!",
+            "IT REACHES!",
+            "VOID-TOUCHED!",
+            "THE TENDRILS GRASP!"
+        },
+        Hint = "Watch for reaching tendrils in dark waters, Kraken Pool.",
+        Description = "An eel twisted by void energies, its body now covered in small tentacles that reach for anything nearby. Even other Kraken-touched creatures avoid it.",
+        Price = 450,
+        From = "Atlantis",
+        Chance = 30,
+        Weather = {
+            "None"
+        },
+        XP = 250,
+        Resilience = 65
     },
     ["Chillfin Chimaera"] = {
         FavouriteTime = "Night",
@@ -3706,34 +3859,38 @@ return {
         XP = 9,
         Resilience = 100
     },
-    ["Chinook Salmon"] = {
+    ["Cookiecutter Shark"] = {
+        FavouriteTime = "Night",
         Seasons = {
-            "Autumn"
+            "Summer",
+            "Spring"
         },
-        Rarity = "Unusual",
-        FavouriteBait = "Minnow",
+        Rarity = "Rare",
+        FavouriteBait = "Bagel",
         WeightPool = {
-            100,
-            400
+            5,
+            15
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 1, 1),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(1, 0.40392157435417, 0.40392157435417),
         Quips = {
-            "Ou! A Chinook Salmon!",
-            "A King Salmon!",
-            "I Caught a King Salmon!",
-            "Woah, a King Salmon!"
+            "A Cookiecutter Shark!",
+            "Woah, a Cookiecutter!",
+            "Nice, I can make some Gingerbread!",
+            "A Cookiecutter Shark!",
+            "I caught a Cookiecutter Shark!"
         },
-        Hint = "Found in the waters of Terrapin Island, and general ocean waters.",
-        Description = "The Chinook Salmon, also known as King Salmon, are large silver fish with a slightly forked tail and a black mouth. They are highly prized; and are a common target for sport and commercial fishing. The King Salmon are commonly in ocean waters, but during the Autumn they migrate to Terrapin Island to lay eggs.",
-        Price = 230,
-        From = "Terrapin",
-        Chance = 30,
+        Hint = "Found during a shark hunt during the night.",
+        Description = "The Cookiecutter Shark is a small, nocturnal shark with an unusual feeding habit- t bites circular chunks from larger animals, leaving a 'cookie-cutter' wound. They can be found primarily alongside sharks during shark hunts.",
+        Price = 500,
+        From = "Ocean",
+        Chance = 40,
         Weather = {
-            "None"
+            "Clear",
+            "Foggy"
         },
-        XP = 100,
-        Resilience = 50
+        XP = 300,
+        Resilience = 30
     },
     Crab = {
         Seasons = {
@@ -3852,60 +4009,66 @@ return {
         IsLimitedBestiary = true,
         Resilience = 70
     },
-    ["Tentacle Eel"] = {
+    ["King Jellyfish"] = {
         FavouriteTime = "Night",
         Seasons = {
-            "None"
+            "Winter"
         },
-        Rarity = "Unusual",
-        FavouriteBait = "Fish Head",
+        Rarity = "Mythical",
+        FavouriteBait = "Truffle Worm",
         WeightPool = {
-            100,
-            200
+            3000,
+            5000
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.bigbasic,
-        SparkleColor = Color3.new(0.38431373238564, 0.24313725531101, 0.4705882370472),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        SparkleColor = Color3.new(0.61960786581039, 0, 1),
         Quips = {
-            "A TENTACLE EEL!",
-            "IT REACHES!",
-            "VOID-TOUCHED!",
-            "THE TENDRILS GRASP!"
+            "THE KING JELLYFISH!",
+            "RULER OF THE VOID!",
+            "LIVING ETHEREAL!"
         },
-        Hint = "Watch for reaching tendrils in dark waters, Kraken Pool.",
-        Description = "An eel twisted by void energies, its body now covered in small tentacles that reach for anything nearby. Even other Kraken-touched creatures avoid it.",
-        Price = 450,
+        Hint = "Ethereal Abyss Pool",
+        Description = "A behemoth composed partly of pure ethereal energy, this jellyfish is believed to be an ancient guardian of the abyss. It pulses with otherworldly power and commands lesser creatures with its presence.",
+        Price = 3500,
         From = "Atlantis",
-        Chance = 30,
-        Weather = {
-            "None"
-        },
-        XP = 250,
-        Resilience = 65
-    },
-    ["Golden Sea Pearl"] = {
-        SparkleColor = Color3.new(1, 0.8941176533699, 0.50980395078659),
-        Description = "A strikingly shiny pearl, rumored to have originated from the deepest depths of Atlantis.",
-        FavouriteBait = "None",
         Chance = 0.2,
         Weather = {
-            "None"
+            "Clear"
         },
-        XP = 600,
-        Hint = "From catching Clams.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        XP = 1800,
+        Resilience = 12
+    },
+    ["Grey Carp"] = {
         Seasons = {
             "None"
         },
-        Rarity = "Exotic",
+        Rarity = "Uncommon",
+        FavouriteBait = "Seaweed",
         WeightPool = {
-            1,
-            4
+            20,
+            70
         },
-        From = "Roslit",
-        Quips = {},
-        IsPearl = true,
-        Price = 3500,
-        Resilience = 100
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(1, 1, 1),
+        Quips = {
+            "Is it grey magic?",
+            "Woah, a Grey Carp!",
+            "It's a Carp!",
+            "Woahh! A Grey Carp!!",
+            "Carp-tastic!",
+            "!!!",
+            "Woah! Grey Carp!"
+        },
+        Hint = "Found in Mushgrove Swamp near the fallen watch tower.",
+        Description = "The Grey Carp is a sturdy freshwater fish known for its strength and adaptability. They can be found in Mushgrove Swamp feeding on plants and small insects. The Grey Carp is extremely strong, and is a tough battle to catch.",
+        Price = 120,
+        From = "Mushgrove",
+        Chance = 55,
+        Weather = {
+            "Autumn"
+        },
+        XP = 75,
+        Resilience = 60
     },
     ["Frostling Goby"] = {
         FavouriteTime = "Day",
@@ -4021,67 +4184,6 @@ return {
         XP = 45,
         Resilience = 80
     },
-    ["King Jellyfish"] = {
-        FavouriteTime = "Night",
-        Seasons = {
-            "Winter"
-        },
-        Rarity = "Mythical",
-        FavouriteBait = "Truffle Worm",
-        WeightPool = {
-            3000,
-            5000
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.61960786581039, 0, 1),
-        Quips = {
-            "THE KING JELLYFISH!",
-            "RULER OF THE VOID!",
-            "LIVING ETHEREAL!"
-        },
-        Hint = "Ethereal Abyss Pool",
-        Description = "A behemoth composed partly of pure ethereal energy, this jellyfish is believed to be an ancient guardian of the abyss. It pulses with otherworldly power and commands lesser creatures with its presence.",
-        Price = 3500,
-        From = "Atlantis",
-        Chance = 0.2,
-        Weather = {
-            "Clear"
-        },
-        XP = 1800,
-        Resilience = 12
-    },
-    Catfish = {
-        FavouriteTime = "Night",
-        Seasons = {
-            "Autumn",
-            "Summer"
-        },
-        Rarity = "Rare",
-        FavouriteBait = "Worm",
-        WeightPool = {
-            50,
-            150
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 1, 1),
-        Quips = {
-            "A Catfish!",
-            "Meowwww!",
-            "Where is Dogfish?",
-            "Kitty Cat Meow Meow",
-            "I caught a Catfish!"
-        },
-        Hint = "Can be found in Mushgrove Swamp during the night.",
-        Description = "The Catfish is a large, whiskered bottom-dweller with a sturdy build and smooth, scale-less skin. Known for its whisker-like barbels, which help it sense food in murky waters of Mushgrove Swamp, the catfish is a resilient and adaptable fish.",
-        Price = 300,
-        From = "Mushgrove",
-        Chance = 20,
-        Weather = {
-            "Foggy"
-        },
-        XP = 120,
-        Resilience = 30
-    },
     ["Starlit Weaver"] = {
         FavouriteTime = "Night",
         Seasons = {
@@ -4110,6 +4212,65 @@ return {
         },
         XP = 500,
         Resilience = 25
+    },
+    ["Voidscale Guppy"] = {
+        FavouriteTime = "Night",
+        Seasons = {
+            "Winter"
+        },
+        Rarity = "Rare",
+        FavouriteBait = "Night Shrimp",
+        WeightPool = {
+            150,
+            300
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.19607843458652, 0.19607843458652, 0.19607843458652),
+        Quips = {
+            "A Voidscale Guppy!",
+            "Shadow of the abyss!",
+            "Darkness swims!"
+        },
+        Hint = "Ethereal Abyss Pool",
+        Description = "These small but remarkable fish have scales that seem to absorb light itself. They create patches of pure darkness in the water, making them nearly invisible when still.",
+        Price = 650,
+        From = "Atlantis",
+        Chance = 12,
+        Weather = {
+            "Clear"
+        },
+        XP = 400,
+        Resilience = 30
+    },
+    ["Molten Banshee"] = {
+        SparkleColor = Color3.new(1, 0.36078432202339, 0.10980392247438),
+        Description = "The Molten Banshee is a complex fish of unknown terrestrial origin, that has resided inside the Roslit Volcano. It possesses a torpedo-like body with many sharp mandibles and scorching hot encrustments. They are rumored to have possibly come from another planet, and may be a bio-mechanical lifeform.",
+        FavouriteBait = "Truffle Worm",
+        Chance = 0.01,
+        Weather = {
+            "Clear"
+        },
+        ProgressEfficiency = 0.65,
+        Hint = "???",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "Summer"
+        },
+        Rarity = "Exotic",
+        WeightPool = {
+            3000,
+            5500
+        },
+        From = "Roslit Volcano",
+        Quips = {
+            "A Molten Banshee!",
+            "WOAH! A Molten Banshee!!",
+            "MOLTEN BANSHEEEEEEEEE",
+            "I caught a Molten Banshee!!"
+        },
+        XP = 2000,
+        Price = 6500,
+        Resilience = 40
     },
     Prawn = {
         FavouriteTime = "Night",
@@ -4203,64 +4364,6 @@ return {
         XP = 45,
         Resilience = 85
     },
-    ["Voidscale Guppy"] = {
-        FavouriteTime = "Night",
-        Seasons = {
-            "Winter"
-        },
-        Rarity = "Rare",
-        FavouriteBait = "Night Shrimp",
-        WeightPool = {
-            150,
-            300
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.19607843458652, 0.19607843458652, 0.19607843458652),
-        Quips = {
-            "A Voidscale Guppy!",
-            "Shadow of the abyss!",
-            "Darkness swims!"
-        },
-        Hint = "Ethereal Abyss Pool",
-        Description = "These small but remarkable fish have scales that seem to absorb light itself. They create patches of pure darkness in the water, making them nearly invisible when still.",
-        Price = 650,
-        From = "Atlantis",
-        Chance = 12,
-        Weather = {
-            "Clear"
-        },
-        XP = 400,
-        Resilience = 30
-    },
-    Nautilus = {
-        FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.79607844352722, 0.68235296010971, 0.54509806632996),
-        Description = "An ancient, spiral-shelled mollusc with a glowing & graceful body, tentacle-filled movements. The Nautilus is an elusive octopus that creates a thick, spiral-shaped shell around its body for protection.",
-        FavouriteBait = "None",
-        Chance = 0.2,
-        Weather = {
-            "None"
-        },
-        ProgressEfficiency = 0.9,
-        Hint = "Dwells in deep coral reefs and rocky underwater caves, mostly visible during the Night.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        Seasons = {
-            "Spring",
-            "Summer"
-        },
-        Rarity = "Legendary",
-        WeightPool = {
-            400,
-            800
-        },
-        From = "The Depths",
-        Quips = {
-            "Nautilus... OMG!!"
-        },
-        XP = 300,
-        Price = 1000,
-        Resilience = 30
-    },
     ["Siren Singer"] = {
         FavouriteTime = "Night",
         Seasons = {
@@ -4289,6 +4392,63 @@ return {
         },
         XP = 220,
         Resilience = 35
+    },
+    ["Oracle's Eye"] = {
+        FavouriteTime = "Night",
+        Seasons = {
+            "Winter"
+        },
+        Rarity = "Unusual",
+        FavouriteBait = "Night Shrimp",
+        WeightPool = {
+            45,
+            90
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        SparkleColor = Color3.new(0.7294117808342, 0.55294120311737, 1),
+        Quips = {
+            "An Oracle's Eye!",
+            "What does it see?",
+            "The future swims!"
+        },
+        Hint = "Ethereal Abyss Pool",
+        Description = "These unusual fish have eye-like patterns that seem to shimmer with prophetic visions. Ancient mystics believed they could see glimpses of the future in their scales.",
+        Price = 350,
+        From = "Atlantis",
+        Chance = 25,
+        Weather = {
+            "Foggy"
+        },
+        XP = 200,
+        Resilience = 40
+    },
+    ["Echo Fisher"] = {
+        FavouriteTime = "Night",
+        Seasons = {
+            "None"
+        },
+        Rarity = "Uncommon",
+        FavouriteBait = "Shrimp",
+        WeightPool = {
+            30,
+            65
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.57647061347961, 0.76862746477127, 1),
+        Quips = {
+            "An Echo Fisher!",
+            "The whispers of the deep!"
+        },
+        Hint = "Ethereal Abyss Pool",
+        Description = "These clever fish use echolocation to navigate the darkest corners of the abyss. Their clicking sounds bounce off the ancient walls in patterns that some say form words in the old tongue.",
+        Price = 190,
+        From = "Atlantis",
+        Chance = 48,
+        Weather = {
+            "Foggy"
+        },
+        XP = 115,
+        Resilience = 60
     },
     ["Tidal Pike"] = {
         SparkleColor = Color3.new(0.60392159223557, 0.85490196943283, 0.56078433990479),
@@ -4434,62 +4594,64 @@ return {
         XP = 1000,
         Resilience = 20
     },
-    ["Oracle's Eye"] = {
-        FavouriteTime = "Night",
+    ["Red Snapper"] = {
         Seasons = {
-            "Winter"
+            "Summer",
+            "Autumn"
         },
-        Rarity = "Unusual",
-        FavouriteBait = "Night Shrimp",
+        Rarity = "Common",
+        FavouriteBait = "None",
         WeightPool = {
-            45,
-            90
+            10,
+            70
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.7294117808342, 0.55294120311737, 1),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(1, 0.29019609093666, 0.29019609093666),
         Quips = {
-            "An Oracle's Eye!",
-            "What does it see?",
-            "The future swims!"
+            "A Red Snapper!",
+            "Woah! I caught a Red Snapper!",
+            "I caught a Red Snapper!",
+            "Red Snapper!!!",
+            "Oh Snap!"
         },
-        Hint = "Ethereal Abyss Pool",
-        Description = "These unusual fish have eye-like patterns that seem to shimmer with prophetic visions. Ancient mystics believed they could see glimpses of the future in their scales.",
-        Price = 350,
-        From = "Atlantis",
-        Chance = 25,
+        Hint = "Found in saltwater near Moosewood Docks. Prefers the Summer and Autumn.",
+        Description = "The Red Snapper is a common salt water fish that can be commonly found all around Moosewoods oceans. They are a very noticeable fish with their obvious red and light red tones.",
+        Price = 70,
+        From = "Moosewood",
+        Chance = 75,
         Weather = {
-            "Foggy"
+            "None"
         },
-        XP = 200,
-        Resilience = 40
+        XP = 80,
+        Resilience = 75
     },
-    ["Echo Fisher"] = {
-        FavouriteTime = "Night",
+    ["Temple Drifter"] = {
+        FavouriteTime = "Day",
         Seasons = {
             "None"
         },
         Rarity = "Uncommon",
-        FavouriteBait = "Shrimp",
+        FavouriteBait = "Deep Coral",
         WeightPool = {
-            30,
-            65
+            25,
+            55
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.57647061347961, 0.76862746477127, 1),
+        SparkleColor = Color3.new(1, 0.85098040103912, 0.56078433990479),
         Quips = {
-            "An Echo Fisher!",
-            "The whispers of the deep!"
+            "A Temple Drifter!",
+            "Guardian of sacred waters!"
         },
         Hint = "Ethereal Abyss Pool",
-        Description = "These clever fish use echolocation to navigate the darkest corners of the abyss. Their clicking sounds bounce off the ancient walls in patterns that some say form words in the old tongue.",
-        Price = 190,
+        Description = "These serene fish float gracefully through ethereal temples, their fins flowing like ceremonial robes. They seem to follow ancient patrol routes of the temple guardians.",
+        Price = 170,
         From = "Atlantis",
-        Chance = 48,
+        Chance = 50,
         Weather = {
-            "Foggy"
+            "Clear"
         },
-        XP = 115,
-        Resilience = 60
+        XP = 105,
+        Resilience = 65
     },
     ["Lava Lamprey"] = {
         SparkleColor = Color3.new(0.60392159223557, 0.85490196943283, 0.56078433990479),
@@ -4672,36 +4834,31 @@ return {
         XP = 300,
         Resilience = 35
     },
-    Bream = {
+    ["Aqua Scribe"] = {
         FavouriteTime = "Day",
         Seasons = {
-            "Spring",
-            "Winter"
+            "None"
         },
         Rarity = "Common",
-        FavouriteBait = "Worm",
+        FavouriteBait = "Seaweed",
         WeightPool = {
-            11,
-            27
+            4,
+            11
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 1, 0.75686275959015),
+        SparkleColor = Color3.new(0.5686274766922, 1, 0.97647058963776),
         Quips = {
-            "A Bream!",
-            "Bream!",
-            "I caught a Bream!",
-            "Woah, a Bream!",
-            "Hello, Bream!"
+            "An Aqua Scribe!"
         },
-        Hint = "Found in freshwaters, and along ocean beaches. Prefers day.",
-        Description = "Breams are school fish with deep bodies, flat sides and a small head. The bream loves worms and is most commonly found in Moosewoods freshwater.",
+        Hint = "Ethereal Abyss Pool",
+        Description = "These peculiar fish are often seen tracing patterns in the ethereal silt that resemble ancient script. Some scholars believe they're connected to the abyss's lost knowledge.",
         Price = 60,
-        From = "Moosewood",
-        Chance = 75,
+        From = "Atlantis",
+        Chance = 85,
         Weather = {
-            "Foggy"
+            "Clear"
         },
-        XP = 30,
+        XP = 40,
         Resilience = 80
     },
     ["Glacier Swordfish"] = {
@@ -4733,60 +4890,59 @@ return {
         XP = 400,
         Resilience = 40
     },
-    ["Temple Drifter"] = {
+    ["Neptune's Nibbler"] = {
         FavouriteTime = "Day",
         Seasons = {
-            "None"
-        },
-        Rarity = "Uncommon",
-        FavouriteBait = "Deep Coral",
-        WeightPool = {
-            25,
-            55
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 0.85098040103912, 0.56078433990479),
-        Quips = {
-            "A Temple Drifter!",
-            "Guardian of sacred waters!"
-        },
-        Hint = "Ethereal Abyss Pool",
-        Description = "These serene fish float gracefully through ethereal temples, their fins flowing like ceremonial robes. They seem to follow ancient patrol routes of the temple guardians.",
-        Price = 170,
-        From = "Atlantis",
-        Chance = 50,
-        Weather = {
-            "Clear"
-        },
-        XP = 105,
-        Resilience = 65
-    },
-    ["Aqua Scribe"] = {
-        FavouriteTime = "Day",
-        Seasons = {
-            "None"
+            "Spring",
+            "Summer"
         },
         Rarity = "Common",
         FavouriteBait = "Seaweed",
         WeightPool = {
-            4,
-            11
+            5,
+            15
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.5686274766922, 1, 0.97647058963776),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.33725491166115, 0.74509805440903, 1),
         Quips = {
-            "An Aqua Scribe!"
+            "A Neptune's Nibbler!"
         },
         Hint = "Ethereal Abyss Pool",
-        Description = "These peculiar fish are often seen tracing patterns in the ethereal silt that resemble ancient script. Some scholars believe they're connected to the abyss's lost knowledge.",
-        Price = 60,
+        Description = "These small, vibrant fish are known for nibbling on the enchanted coral that grows in the ethereal abyss. Their diet gives them a slight blue glow at night.",
+        Price = 45,
         From = "Atlantis",
         Chance = 85,
         Weather = {
             "Clear"
         },
-        XP = 40,
-        Resilience = 80
+        XP = 30,
+        Resilience = 90
+    },
+    ["Column Crawler"] = {
+        Seasons = {
+            "None"
+        },
+        Rarity = "Common",
+        FavouriteBait = "Worm",
+        WeightPool = {
+            5,
+            12
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.74117648601532, 0.74117648601532, 0.74117648601532),
+        Quips = {
+            "A Column Crawler!"
+        },
+        Hint = "Ethereal Abyss Pool",
+        Description = "These agile fish have adapted to life among the ethereal columns. Their flattened bodies allow them to slip through the narrowest gaps in the mysterious structures.",
+        Price = 55,
+        From = "Atlantis",
+        Chance = 80,
+        Weather = {
+            "None"
+        },
+        XP = 35,
+        Resilience = 85
     },
     Amblypterus = {
         FavouriteTime = "Day",
@@ -4918,7 +5074,7 @@ return {
         BlockPassiveCapture = true,
         CustomProgressEfficiency = {
             {
-                Value = 0.05
+                Value = -0.95
             }
         },
         Chance = 0.1,
@@ -5097,59 +5253,63 @@ return {
         XP = 80,
         Resilience = 70
     },
-    ["Neptune's Nibbler"] = {
-        FavouriteTime = "Day",
+    ["Celestial Koi"] = {
+        FavouriteTime = "Night",
         Seasons = {
-            "Spring",
-            "Summer"
+            "Winter"
         },
-        Rarity = "Common",
-        FavouriteBait = "Seaweed",
+        Rarity = "Mythical",
+        FavouriteBait = "Truffle Worm",
         WeightPool = {
-            5,
-            15
+            5000,
+            10000
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.33725491166115, 0.74509805440903, 1),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        SparkleColor = Color3.new(0, 0.71764707565308, 1),
         Quips = {
-            "A Neptune's Nibbler!"
+            "THE CELESTIAL KOI!",
+            "GUIDE OF THE DEPTHS!",
+            "THE ANCIENT ONE APPEARS!"
         },
-        Hint = "Ethereal Abyss Pool",
-        Description = "These small, vibrant fish are known for nibbling on the enchanted coral that grows in the ethereal abyss. Their diet gives them a slight blue glow at night.",
-        Price = 45,
+        Hint = "Sunken's Depth Pool",
+        Description = "A Celestial koi fish that ancient texts claim once guided lost souls through the depths. Its scales shine with otherworldly light, and its presence causes the surrounding waters to swirl with magical energy.",
+        Price = 8000,
         From = "Atlantis",
-        Chance = 85,
+        Chance = 0.1,
         Weather = {
-            "Clear"
+            "Rain"
         },
-        XP = 30,
-        Resilience = 90
+        XP = 3000,
+        Resilience = 10
     },
-    ["Column Crawler"] = {
-        Seasons = {
-            "None"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Worm",
-        WeightPool = {
-            5,
-            12
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.74117648601532, 0.74117648601532, 0.74117648601532),
-        Quips = {
-            "A Column Crawler!"
-        },
-        Hint = "Ethereal Abyss Pool",
-        Description = "These agile fish have adapted to life among the ethereal columns. Their flattened bodies allow them to slip through the narrowest gaps in the mysterious structures.",
-        Price = 55,
-        From = "Atlantis",
-        Chance = 80,
+    ["Countdown Perch"] = {
+        SparkleColor = Color3.new(0.60392159223557, 0.85490196943283, 0.56078433990479),
+        Description = "This peculiar perch species appears as the Golden Tide approaches, with markings on its fins that seem to shift and change like the hands of a clock. Legend says it can sense the turning of the tide.",
+        FavouriteBait = "Weird Algae",
+        Chance = 35,
         Weather = {
             "None"
         },
-        XP = 35,
-        Resilience = 85
+        XP = 1200,
+        Hint = "???",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            3000,
+            5000
+        },
+        FromLimited = "Golden Tide",
+        Quips = {
+            "A Countdown Perch! Time is ticking!",
+            "The tide is turning!",
+            "Right on schedule!"
+        },
+        Price = 2000,
+        IsLimitedBestiary = true,
+        Resilience = 40
     },
     Hyneria = {
         Seasons = {
@@ -5243,73 +5403,65 @@ return {
         Price = 7500,
         Resilience = 25
     },
-    ["Celestial Koi"] = {
-        FavouriteTime = "Night",
-        Seasons = {
-            "Winter"
+    Sailfish = {
+        SparkleColor = Color3.new(1, 0.94901961088181, 0.36862745881081),
+        Description = "Sailfish are known for their incredible speed, long bill, and their striking sail-like dorsal fin. It's sleek body is built for fast swimming, allowing it to dart through water in bursts of speed. They are found in tropical and warmer ocean waters.",
+        FavouriteBait = "Minnow",
+        Chance = 16,
+        Weather = {
+            "Windy",
+            "Clear"
         },
-        Rarity = "Mythical",
-        FavouriteBait = "Truffle Worm",
+        XP = 300,
+        Hint = "Found in ocean water. Extremely strong.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
+        Seasons = {
+            "Spring"
+        },
+        Rarity = "Rare",
         WeightPool = {
-            5000,
-            10000
+            400,
+            600
+        },
+        From = "Ocean",
+        Quips = {
+            "A Sailfish!",
+            "WOAH! A Sailfish!!",
+            "It's a Sailfish!",
+            "I caught a Sailfish!!"
+        },
+        ViewportSizeOffset = 0.9,
+        Price = 800,
+        Resilience = 40
+    },
+    ["Helios Ray"] = {
+        FavouriteTime = "Day",
+        Seasons = {
+            "Summer"
+        },
+        Rarity = "Unusual",
+        FavouriteBait = "Fish Head",
+        WeightPool = {
+            30,
+            60
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0, 0.71764707565308, 1),
+        SparkleColor = Color3.new(1, 0.71372550725937, 1),
         Quips = {
-            "THE CELESTIAL KOI!",
-            "GUIDE OF THE DEPTHS!",
-            "THE ANCIENT ONE APPEARS!"
+            "A Helios Ray!",
+            "Light of the deep!",
+            "Sun beneath the waves!"
         },
         Hint = "Sunken's Depth Pool",
-        Description = "A Celestial koi fish that ancient texts claim once guided lost souls through the depths. Its scales shine with otherworldly light, and its presence causes the surrounding waters to swirl with magical energy.",
-        Price = 8000,
+        Description = "These ray-like fish have skin that seems to capture and store sunlight, making them glow like miniature suns in the darker depths. Ancient texts suggest they once lit the streets of the sunken city.",
+        Price = 180,
         From = "Atlantis",
-        Chance = 0.1,
+        Chance = 45,
         Weather = {
-            "Rain"
+            "Clear"
         },
-        XP = 3000,
-        Resilience = 10
-    },
-    ["Eternal Frostwhale"] = {
-        SparkleColor = Color3.new(0.60392159223557, 0.85490196943283, 0.56078433990479),
-        Description = "An ancient behemoth that emerges only during the Golden Tide, its crystalline body seemming to contain an entire frozen cosmos. This legendary creature is said to have witnessed countless celebrations, its presence marking truly special occasions.",
-        FavouriteBait = "Shark Head",
-        CustomProgressEfficiency = {
-            {
-                Rod = "Firework Rod",
-                Value = 0.4
-            },
-            {
-                Value = 0.2
-            }
-        },
-        Chance = 0.01,
-        Weather = {
-            "None"
-        },
-        XP = 8000,
-        Hint = "???",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        Seasons = {
-            "None"
-        },
-        Rarity = "Limited",
-        WeightPool = {
-            10000,
-            15000
-        },
-        FromLimited = "Golden Tide",
-        Quips = {
-            "THE ETERNAL FROSTWHALE! IMPOSSIBLE!",
-            "A legend frozen in time!",
-            "The ancient one appears!",
-            "The tide bows to its eternal majesty!"
-        },
-        Price = 12000,
-        IsLimitedBestiary = true,
-        Resilience = 3
+        XP = 110,
+        Resilience = 55
     },
     ["Hollow Flake Catfish"] = {
         FavouriteTime = "None",
@@ -5368,34 +5520,35 @@ return {
         XP = 350,
         Resilience = 35
     },
-    ["Bull Shark"] = {
-        Seasons = {
-            "Spring"
-        },
-        Rarity = "Legendary",
-        FavouriteBait = "Fish Head",
-        WeightPool = {
-            900,
-            1300
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
-        SparkleColor = Color3.new(1, 0.96078431606293, 0.77254903316498),
-        Quips = {
-            "A Bull Shark!",
-            "Thats some Bull Shark!",
-            "I caught a Bull Shark!"
-        },
-        Hint = "Found roaming in all types of waters and on the coasts.",
-        Description = "Bull sharks have robust bodies, and an extremely powerful nature. They have a special ability to adapt to both saltwater and freshwater, which is quite rare for sharks. Bull Sharks can be found most commonly near coats, and in freshwaters.",
-        Price = 400,
-        From = "Ocean",
-        Chance = 0.3,
+    Pyrogrub = {
+        SparkleColor = Color3.new(1, 0.59215688705444, 0.1803921610117),
+        Description = "The Pyrogrub is a fearsome, lava swimming eel that thrives in the most volcanic of environments. The Pyrogrub sports thick dragon-like scales which allow it's inner body to not react to any form of outside temperature.",
+        FavouriteBait = "Coal",
+        Chance = 25,
         Weather = {
-            "Rain",
-            "Foggy"
+            "None"
         },
-        XP = 150,
-        Resilience = 20
+        ProgressEfficiency = 0.8,
+        Hint = "Found in volcanic regions.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        Seasons = {
+            "Winter"
+        },
+        Rarity = "Rare",
+        WeightPool = {
+            300,
+            600
+        },
+        From = "Roslit Volcano",
+        Quips = {
+            "A Pyrogrub!",
+            "I caught a Pyrogrub!",
+            "Woah, a Pyrogrub!",
+            "What the?!"
+        },
+        XP = 120,
+        Price = 340,
+        Resilience = 25
     },
     ["Sea Snake"] = {
         FavouriteTime = "Night",
@@ -5425,63 +5578,6 @@ return {
         Price = 5000,
         Resilience = 10
     },
-    ["Helios Ray"] = {
-        FavouriteTime = "Day",
-        Seasons = {
-            "Summer"
-        },
-        Rarity = "Unusual",
-        FavouriteBait = "Fish Head",
-        WeightPool = {
-            30,
-            60
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(1, 0.71372550725937, 1),
-        Quips = {
-            "A Helios Ray!",
-            "Light of the deep!",
-            "Sun beneath the waves!"
-        },
-        Hint = "Sunken's Depth Pool",
-        Description = "These ray-like fish have skin that seems to capture and store sunlight, making them glow like miniature suns in the darker depths. Ancient texts suggest they once lit the streets of the sunken city.",
-        Price = 180,
-        From = "Atlantis",
-        Chance = 45,
-        Weather = {
-            "Clear"
-        },
-        XP = 110,
-        Resilience = 55
-    },
-    ["Ancient Serpent Skull"] = {
-        FavouriteTime = "None",
-        SparkleColor = Color3.new(0.49411764740944, 0.047058824449778, 0.047058824449778),
-        Description = "A haunting, bone-chilling relic from a monstrous, lost predator, shrouded in eerie mystery. Beware... Locals say the skull holds a haunting power...",
-        FavouriteBait = "None",
-        Chance = 0.005,
-        Weather = {
-            "None"
-        },
-        ProgressEfficiency = 0.8,
-        Hint = "???",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        Seasons = {
-            "None"
-        },
-        Rarity = "Limited",
-        WeightPool = {
-            50,
-            100
-        },
-        FromLimited = "Archeological Site",
-        Quips = {
-            "WOAH ANCIENT SERPENT'S SKULL!"
-        },
-        XP = 400,
-        Price = 1200,
-        Resilience = 100
-    },
     ["Marble Maiden"] = {
         Seasons = {
             "Spring",
@@ -5510,35 +5606,6 @@ return {
         },
         XP = 80,
         Resilience = 70
-    },
-    ["Cursed Eel"] = {
-        FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.2392156869173, 0.46666666865349, 1),
-        Description = "Cursed Eels linger in darker waters, giving off an eerie glow. They\xE2\x80\x99re a spooky find for night anglers.",
-        FavouriteBait = "Coal",
-        Chance = 25,
-        Weather = {
-            "Rain"
-        },
-        ProgressEfficiency = 0.5,
-        Hint = "Found in darker waters in the oceanside.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        Seasons = {
-            "Summer"
-        },
-        Rarity = "Rare",
-        WeightPool = {
-            80,
-            250
-        },
-        From = "Forsaken Shores",
-        Quips = {
-            "Cursed Eel!",
-            "Am I gonna get shocked?!"
-        },
-        XP = 250,
-        Price = 700,
-        Resilience = 15
     },
     ["Poseidon's Perch"] = {
         FavouriteTime = "Day",
@@ -5598,6 +5665,92 @@ return {
         XP = 30,
         Resilience = 90
     },
+    ["Cursed Eel"] = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(0.2392156869173, 0.46666666865349, 1),
+        Description = "Cursed Eels linger in darker waters, giving off an eerie glow. They\xE2\x80\x99re a spooky find for night anglers.",
+        FavouriteBait = "Coal",
+        Chance = 25,
+        Weather = {
+            "Rain"
+        },
+        ProgressEfficiency = 0.5,
+        Hint = "Found in darker waters in the oceanside.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        Seasons = {
+            "Summer"
+        },
+        Rarity = "Rare",
+        WeightPool = {
+            80,
+            250
+        },
+        From = "Forsaken Shores",
+        Quips = {
+            "Cursed Eel!",
+            "Am I gonna get shocked?!"
+        },
+        XP = 250,
+        Price = 700,
+        Resilience = 15
+    },
+    ["Atlantean Anchovy"] = {
+        Seasons = {
+            "None"
+        },
+        Rarity = "Common",
+        FavouriteBait = "None",
+        WeightPool = {
+            2,
+            8
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(1, 0.87450981140137, 0.50196081399918),
+        Quips = {
+            "An Atlantean Anchovy!",
+            "Tiny but magnificent!",
+            "A piece of the depths!"
+        },
+        Hint = "Sunken's Depth Pool",
+        Description = "These small silver fish gather in massive schools throughout the sunken depths. Their scales have taken on a slight golden tinge from generations of exposure to ancient magic.",
+        Price = 40,
+        From = "Atlantis",
+        Chance = 85,
+        Weather = {
+            "None"
+        },
+        XP = 25,
+        Resilience = 95
+    },
+    ["Sunken Silverscale"] = {
+        FavouriteTime = "Day",
+        Seasons = {
+            "Summer"
+        },
+        Rarity = "Common",
+        FavouriteBait = "Shrimp",
+        WeightPool = {
+            4,
+            14
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.75294119119644, 0.75294119119644, 0.75294119119644),
+        Quips = {
+            "A Sunken Silverscale!",
+            "Treasure of the deep!",
+            "Like swimming silver!"
+        },
+        Hint = "Sunken's Depth Pool",
+        Description = "These fish have adapted to live among the submerged silver treasures. Their scales have taken on a metallic sheen that mimics the precious artifacts they swim among.",
+        Price = 65,
+        From = "Atlantis",
+        Chance = 85,
+        Weather = {
+            "Clear"
+        },
+        XP = 45,
+        Resilience = 85
+    },
     Grayling = {
         FavouriteTime = "Day",
         Seasons = {
@@ -5656,62 +5809,67 @@ return {
         Price = 700,
         Resilience = 100
     },
-    ["Atlantean Anchovy"] = {
-        Seasons = {
-            "None"
-        },
-        Rarity = "Common",
-        FavouriteBait = "None",
-        WeightPool = {
-            2,
-            8
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.87450981140137, 0.50196081399918),
-        Quips = {
-            "An Atlantean Anchovy!",
-            "Tiny but magnificent!",
-            "A piece of the depths!"
-        },
-        Hint = "Sunken's Depth Pool",
-        Description = "These small silver fish gather in massive schools throughout the sunken depths. Their scales have taken on a slight golden tinge from generations of exposure to ancient magic.",
-        Price = 40,
-        From = "Atlantis",
-        Chance = 85,
+    ["Abyssal Goliath"] = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(0.16862745583057, 0.38823530077934, 1),
+        Description = "A colossal deep-sea fish of impossible size, its mere presence creates currents in the water. Its true size is unknown as none have ever seen its full form.",
+        FavouriteBait = "Truffle Worm",
+        Chance = 0.08,
         Weather = {
             "None"
         },
-        XP = 25,
-        Resilience = 95
+        ProgressEfficiency = 0.25,
+        Hint = "The deepest parts of Poseidon's Pool occasionally tremble with its presence, Poseidon Pool.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Mythical",
+        WeightPool = {
+            7000,
+            12000
+        },
+        From = "Atlantis",
+        Quips = {
+            "THE ABYSSAL GOLIATH!",
+            "POSEIDON'S GIANT!",
+            "IMPOSSIBLE SIZE!",
+            "THE DEEP'S MASTER!"
+        },
+        XP = 2500,
+        Price = 6000,
+        Resilience = 15
     },
-    ["Sunken Silverscale"] = {
-        FavouriteTime = "Day",
-        Seasons = {
-            "Summer"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Shrimp",
-        WeightPool = {
-            4,
-            14
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.75294119119644, 0.75294119119644, 0.75294119119644),
-        Quips = {
-            "A Sunken Silverscale!",
-            "Treasure of the deep!",
-            "Like swimming silver!"
-        },
-        Hint = "Sunken's Depth Pool",
-        Description = "These fish have adapted to live among the submerged silver treasures. Their scales have taken on a metallic sheen that mimics the precious artifacts they swim among.",
-        Price = 65,
-        From = "Atlantis",
-        Chance = 85,
+    ["Deep Behemoth"] = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(0.16862745583057, 0.38823530077934, 1),
+        Description = "A deep-sea creature of terrifying proportions. Its exact species is unknown, but its size and strength suggest ancient origins from Poseidon's earliest creations.",
+        FavouriteBait = "Truffle Worm",
+        Chance = 0.2,
         Weather = {
-            "Clear"
+            "None"
         },
-        XP = 45,
-        Resilience = 85
+        ProgressEfficiency = 0.35,
+        Hint = "The deepest parts of the pool grow still when it approaches, Poseidon Pool fish.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Legendary",
+        WeightPool = {
+            3000,
+            6000
+        },
+        From = "Atlantis",
+        Quips = {
+            "A DEEP BEHEMOTH!",
+            "ANCIENT ONE!",
+            "THE DEEP'S TERROR!",
+            "UNBELIEVABLE SIZE!"
+        },
+        XP = 2000,
+        Price = 4000,
+        Resilience = 20
     },
     ["Static Ray"] = {
         Seasons = {
@@ -5801,36 +5959,36 @@ return {
         Price = 2000,
         Resilience = 40
     },
-    ["Abyssal Goliath"] = {
+    ["Deep Emperor"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.16862745583057, 0.38823530077934, 1),
-        Description = "A colossal deep-sea fish of impossible size, its mere presence creates currents in the water. Its true size is unknown as none have ever seen its full form.",
-        FavouriteBait = "Truffle Worm",
-        Chance = 0.08,
+        SparkleColor = Color3.new(0.29803922772408, 0.56078433990479, 1),
+        Description = "A massive predator from the ocean's greatest depths, its body adapted to crushing pressures. Few have ever seen one and lived to tell the tale.",
+        FavouriteBait = "Fish Head",
+        Chance = 0.4,
         Weather = {
             "None"
         },
-        ProgressEfficiency = 0.25,
-        Hint = "The deepest parts of Poseidon's Pool occasionally tremble with its presence, Poseidon Pool.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        ProgressEfficiency = 0.4,
+        Hint = "Lurks in the darkest depths of Poseidon's Pool.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.bigbasic,
         Seasons = {
             "None"
         },
-        Rarity = "Mythical",
+        Rarity = "Legendary",
         WeightPool = {
-            7000,
-            12000
+            2500,
+            5000
         },
         From = "Atlantis",
         Quips = {
-            "THE ABYSSAL GOLIATH!",
-            "POSEIDON'S GIANT!",
-            "IMPOSSIBLE SIZE!",
-            "THE DEEP'S MASTER!"
+            "THE DEEP EMPEROR!",
+            "RULER OF THE ABYSS!",
+            "WHAT A MONSTER!",
+            "POSEIDON'S CHOSEN!"
         },
-        XP = 2500,
-        Price = 6000,
-        Resilience = 15
+        XP = 1500,
+        Price = 3000,
+        Resilience = 25
     },
     Sardine = {
         FavouriteTime = "Day",
@@ -5893,36 +6051,37 @@ return {
         XP = 80,
         Resilience = 20
     },
-    ["Deep Behemoth"] = {
-        FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.16862745583057, 0.38823530077934, 1),
-        Description = "A deep-sea creature of terrifying proportions. Its exact species is unknown, but its size and strength suggest ancient origins from Poseidon's earliest creations.",
-        FavouriteBait = "Truffle Worm",
-        Chance = 0.2,
-        Weather = {
-            "None"
-        },
-        ProgressEfficiency = 0.35,
-        Hint = "The deepest parts of the pool grow still when it approaches, Poseidon Pool fish.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+    Clownfish = {
         Seasons = {
-            "None"
+            "Spring",
+            "Summer"
         },
-        Rarity = "Legendary",
+        Rarity = "Uncommon",
+        FavouriteBait = "Flakes",
         WeightPool = {
-            3000,
-            6000
+            1,
+            6
         },
-        From = "Atlantis",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(1, 0.65490198135376, 0.16862745583057),
         Quips = {
-            "A DEEP BEHEMOTH!",
-            "ANCIENT ONE!",
-            "THE DEEP'S TERROR!",
-            "UNBELIEVABLE SIZE!"
+            "Ouu a Clownfish!",
+            "Woah, a Clownfish!",
+            "A Clownfish!",
+            "I caught a Clownfish!",
+            "I caught a Clownfish!",
+            "What kind of circus is this?"
         },
-        XP = 2000,
-        Price = 4000,
-        Resilience = 20
+        Hint = "Found in Roslit Bays coral reef.",
+        Description = "The clownfish, known for its vibrant orange and white stripes, is a small, hardy reef dweller. Often found alongside coral and see anemones inside the reef of Roslit Bay.\t\t\tBest paired with the Blue Tang!",
+        Price = 90,
+        From = "Roslit",
+        Chance = 60,
+        Weather = {
+            "Foggy"
+        },
+        XP = 90,
+        Resilience = 70
     },
     Mullet = {
         Seasons = {
@@ -6043,36 +6202,35 @@ return {
         XP = 110,
         Resilience = 50
     },
-    ["Deep Emperor"] = {
+    ["Titanic Sturgeon"] = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.29803922772408, 0.56078433990479, 1),
-        Description = "A massive predator from the ocean's greatest depths, its body adapted to crushing pressures. Few have ever seen one and lived to tell the tale.",
-        FavouriteBait = "Fish Head",
-        Chance = 0.4,
-        Weather = {
-            "None"
-        },
-        ProgressEfficiency = 0.4,
-        Hint = "Lurks in the darkest depths of Poseidon's Pool.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.bigbasic,
         Seasons = {
             "None"
         },
-        Rarity = "Legendary",
+        Rarity = "Rare",
+        FavouriteBait = "Seaweed",
         WeightPool = {
-            2500,
-            5000
+            250,
+            500
         },
-        From = "Atlantis",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        SparkleColor = Color3.new(0.61960786581039, 0.74509805440903, 1),
         Quips = {
-            "THE DEEP EMPEROR!",
-            "RULER OF THE ABYSS!",
-            "WHAT A MONSTER!",
-            "POSEIDON'S CHOSEN!"
+            "A TITANIC STURGEON!",
+            "ANCIENT ONE!",
+            "POSEIDON'S ARMOR!",
+            "WHAT A BEAST!"
         },
-        XP = 1500,
-        Price = 3000,
-        Resilience = 25
+        Hint = "Patrols the deep waters of Poseidon's Pool.",
+        Description = "An ancient species grown to impossible size in Poseidon's domain. Its armored scales could withstand the pressure of the deepest trenches.",
+        Price = 900,
+        From = "Atlantis",
+        Chance = 12,
+        Weather = {
+            "None"
+        },
+        XP = 450,
+        Resilience = 40
     },
     ["Snowback Char"] = {
         FavouriteTime = "Day",
@@ -6260,65 +6418,66 @@ return {
         Price = 1200,
         Resilience = 25
     },
-    ["Titanic Sturgeon"] = {
-        FavouriteTime = "Night",
-        Seasons = {
-            "None"
-        },
-        Rarity = "Rare",
-        FavouriteBait = "Seaweed",
-        WeightPool = {
-            250,
-            500
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.61960786581039, 0.74509805440903, 1),
-        Quips = {
-            "A TITANIC STURGEON!",
-            "ANCIENT ONE!",
-            "POSEIDON'S ARMOR!",
-            "WHAT A BEAST!"
-        },
-        Hint = "Patrols the deep waters of Poseidon's Pool.",
-        Description = "An ancient species grown to impossible size in Poseidon's domain. Its armored scales could withstand the pressure of the deepest trenches.",
-        Price = 900,
-        From = "Atlantis",
-        Chance = 12,
-        Weather = {
-            "None"
-        },
-        XP = 450,
-        Resilience = 40
-    },
-    ["Leviathan Bass"] = {
-        FavouriteTime = "Night",
+    ["Giant Manta"] = {
+        FavouriteTime = "Day",
         Seasons = {
             "None"
         },
         Rarity = "Unusual",
-        FavouriteBait = "Fish Head",
+        FavouriteBait = "Shrimp",
         WeightPool = {
-            80,
-            160
+            60,
+            120
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.bigbasic,
-        SparkleColor = Color3.new(0.39607843756676, 0.64313727617264, 1),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        SparkleColor = Color3.new(0.33725491166115, 0.60392159223557, 1),
         Quips = {
-            "A LEVIATHAN BASS!",
-            "MASSIVE!",
-            "POSEIDON'S BASS!",
-            "WHAT POWER!"
+            "A GIANT MANTA!",
+            "THE OCEAN'S WINGS!",
+            "WHAT A WINGSPAN!",
+            "MAJESTIC GIANT!"
         },
-        Hint = "Creates disturbances in Poseidon's Pool when hunting, Poseidon Pool fish.",
-        Description = "A bass grown to monstrous proportions under Poseidon's influence. Its strikes can create small whirlpools in the water.",
-        Price = 400,
+        Hint = "Watch for massive shadows gliding beneath the surface, Poseidon Pool fish.",
+        Description = "An enormous manta ray blessed by Poseidon's power. Its wingspan can cast shadows over entire sections of the pool, and its movements create powerful currents.",
+        Price = 350,
         From = "Atlantis",
-        Chance = 30,
+        Chance = 35,
         Weather = {
             "None"
         },
-        XP = 200,
-        Resilience = 60
+        XP = 180,
+        Resilience = 65
+    },
+    Voltfish = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(1, 0.60392159223557, 0.27843138575554),
+        Description = "The Voltfish is a lightning-fast relative of the Mythic Fish. They swim solo near the surface of the waters surrounding Sunstone, and make sporadic movements when hooked.",
+        FavouriteBait = "Super Flakes",
+        Chance = 0.01,
+        Weather = {
+            "Rain"
+        },
+        ProgressEfficiency = 0.4,
+        Hint = "Found swimming near Sunstone Island during the Night.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Mythical",
+        WeightPool = {
+            8,
+            16
+        },
+        From = "Sunstone",
+        Quips = {
+            "A Voltfish!",
+            "Woah, a Voltfish!",
+            "Ouu! A Voltfish!",
+            "It zapped me!"
+        },
+        XP = 850,
+        Price = 2200,
+        Resilience = 30
     },
     ["Coral Geode"] = {
         SparkleColor = Color3.new(1, 1, 1),
@@ -6354,7 +6513,7 @@ return {
             "Deep Coral",
             "Night Shrimp",
             "Rapid Catcher",
-            "instant Catcher",
+            "Instant Catcher",
             "Super Flakes",
             "Night Shrimp",
             "Rapid Catcher",
@@ -6424,35 +6583,35 @@ return {
         XP = 80,
         Resilience = 40
     },
-    ["Giant Manta"] = {
+    ["Colossal Carp"] = {
         FavouriteTime = "Day",
         Seasons = {
             "None"
         },
-        Rarity = "Unusual",
-        FavouriteBait = "Shrimp",
+        Rarity = "Uncommon",
+        FavouriteBait = "Seaweed",
         WeightPool = {
-            60,
-            120
+            20,
+            50
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.33725491166115, 0.60392159223557, 1),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        SparkleColor = Color3.new(0.52549022436142, 0.70588237047195, 1),
         Quips = {
-            "A GIANT MANTA!",
-            "THE OCEAN'S WINGS!",
-            "WHAT A WINGSPAN!",
-            "MAJESTIC GIANT!"
+            "A COLOSSAL CARP!",
+            "GIANT SCALES!",
+            "POSEIDON'S BLESSING!",
+            "ENORMOUS!"
         },
-        Hint = "Watch for massive shadows gliding beneath the surface, Poseidon Pool fish.",
-        Description = "An enormous manta ray blessed by Poseidon's power. Its wingspan can cast shadows over entire sections of the pool, and its movements create powerful currents.",
-        Price = 350,
+        Hint = "Makes large waves when surfacing in Poseidon's Pool.",
+        Description = "A normally peaceful species grown enormous in Poseidon's waters. Their size alone commands respect from other inhabitants.",
+        Price = 180,
         From = "Atlantis",
-        Chance = 35,
+        Chance = 60,
         Weather = {
             "None"
         },
-        XP = 180,
-        Resilience = 65
+        XP = 100,
+        Resilience = 75
     },
     ["Deep One"] = {
         FavouriteTime = "Night",
@@ -6605,35 +6764,34 @@ return {
         XP = 80,
         Resilience = 60
     },
-    ["Colossal Carp"] = {
-        FavouriteTime = "Day",
+    ["Stormcloud Angelfish"] = {
         Seasons = {
             "None"
         },
-        Rarity = "Uncommon",
-        FavouriteBait = "Seaweed",
+        Rarity = "Rare",
+        FavouriteBait = "Shrimp",
         WeightPool = {
-            20,
-            50
+            600,
+            1200
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.52549022436142, 0.70588237047195, 1),
+        SparkleColor = Color3.new(0.63137257099152, 0.76862746477127, 1),
         Quips = {
-            "A COLOSSAL CARP!",
-            "GIANT SCALES!",
-            "POSEIDON'S BLESSING!",
-            "ENORMOUS!"
+            "A Stormcloud Angel!",
+            "Zeus' beauty!",
+            "Storm incarnate!",
+            "Magnificent!"
         },
-        Hint = "Makes large waves when surfacing in Poseidon's Pool.",
-        Description = "A normally peaceful species grown enormous in Poseidon's waters. Their size alone commands respect from other inhabitants.",
-        Price = 180,
+        Hint = "Found in deeper parts of Zeus Pool during storms.",
+        Description = "A majestic fish whose fins ripple like storm clouds. They can generate powerful electrical fields that mirror Zeus' lightning.",
+        Price = 310,
         From = "Atlantis",
-        Chance = 60,
+        Chance = 25,
         Weather = {
-            "None"
+            "Rain"
         },
-        XP = 100,
-        Resilience = 75
+        XP = 231,
+        Resilience = 30
     },
     ["Scurvy Sailfish"] = {
         FavouriteTime = "Night",
@@ -6685,92 +6843,6 @@ return {
         Quips = {},
         IsPearl = true,
         Price = 200,
-        Resilience = 100
-    },
-    ["Zeus' Herald"] = {
-        FavouriteTime = "Night",
-        Seasons = {
-            "None"
-        },
-        Rarity = "Mythical",
-        FavouriteBait = "None",
-        WeightPool = {
-            1500,
-            3000
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(1, 0.93333333730698, 0.50196081399918),
-        Quips = {
-            "Zeus' HERALD!",
-            "THE LIGHTNING LORD!",
-            "THUNDER INCARNATE!",
-            "THE STORM KING'S MESSENGER!"
-        },
-        Hint = "Appears only during the most powerful thunderstorms in zeus pool.",
-        Description = "A legendary fish said to be Zeus' messenger, its body pure lightning given form. Its presence heralds the greatest of storms.",
-        Price = 5000,
-        From = "Atlantis",
-        Chance = 0.02,
-        Weather = {
-            "Rain"
-        },
-        XP = 2000,
-        Resilience = 15
-    },
-    ["Stormcloud Angelfish"] = {
-        Seasons = {
-            "None"
-        },
-        Rarity = "Rare",
-        FavouriteBait = "Shrimp",
-        WeightPool = {
-            600,
-            1200
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.63137257099152, 0.76862746477127, 1),
-        Quips = {
-            "A Stormcloud Angel!",
-            "Zeus' beauty!",
-            "Storm incarnate!",
-            "Magnificent!"
-        },
-        Hint = "Found in deeper parts of Zeus Pool during storms.",
-        Description = "A majestic fish whose fins ripple like storm clouds. They can generate powerful electrical fields that mirror Zeus' lightning.",
-        Price = 310,
-        From = "Atlantis",
-        Chance = 25,
-        Weather = {
-            "Rain"
-        },
-        XP = 231,
-        Resilience = 30
-    },
-    ["Barracuda's Spine"] = {
-        FavouriteTime = "None",
-        Seasons = {
-            "None"
-        },
-        Rarity = "Limited",
-        Price = 50,
-        WeightPool = {
-            25,
-            50
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832),
-        Quips = {
-            "Woah a bone!"
-        },
-        Hint = "Divers have found the Barracuda Spine quite often around Moosewood...",
-        Description = "The Barracuda's fearsome backbone.",
-        FromLimited = "Archeological Site",
-        FavouriteBait = "None",
-        Chance = 40,
-        Weather = {
-            "None"
-        },
-        XP = 20,
         Resilience = 100
     },
     ["Sparkfin Tetra"] = {
@@ -6832,37 +6904,123 @@ return {
         XP = 143,
         Resilience = 35
     },
-    ["Night Shrimp"] = {
+    ["Barracuda's Spine"] = {
+        FavouriteTime = "None",
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        Price = 50,
+        WeightPool = {
+            25,
+            50
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832),
+        Quips = {
+            "Woah a bone!"
+        },
+        Hint = "Divers have found the Barracuda Spine quite often around Moosewood...",
+        Description = "The Barracuda's fearsome backbone.",
+        FromLimited = "Archeological Site",
+        FavouriteBait = "None",
+        Chance = 40,
+        Weather = {
+            "None"
+        },
+        XP = 20,
+        Resilience = 100
+    },
+    ["Sea Turtle"] = {
+        FavouriteTime = "Day",
+        SparkleColor = Color3.new(0.62745100259781, 1, 0.32549020648003),
+        Description = "The Sea Turtle is a graceful marine creature with a streamlined shell and paddle-like flippers, found gliding peacefully in warm coastal waters. Known for their calm demeanour and protected status, Sea Turtles are a rare and beautiful sight that often symbolizes good fortune.",
+        FavouriteBait = "None",
+        Chance = 0.005,
+        Weather = {
+            "None"
+        },
+        ProgressEfficiency = 0.9,
+        Hint = "Caught near Terrapin Island during the day.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Mythical",
+        WeightPool = {
+            700,
+            1500
+        },
+        From = "Terrapin",
+        Quips = {
+            "A TURTLEEE!",
+            "WOAH.. A TURTLE!",
+            "I like turtles :3",
+            "I caught a Sea Turtle!"
+        },
+        XP = 1000,
+        Price = 2000,
+        Resilience = 10
+    },
+    ["Storm Eel"] = {
+        FavouriteTime = "Night",
+        Seasons = {
+            "None"
+        },
+        Rarity = "Unusual",
+        FavouriteBait = "Fish Head",
+        WeightPool = {
+            400,
+            800
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(1, 0.85098040103912, 0.45490196347237),
+        Quips = {
+            "A Storm Eel!",
+            "Lightning in water!",
+            "Zeus' serpent!",
+            "What a shock!"
+        },
+        Hint = "Hunts during thunderstorms in Zeus Pool.",
+        Description = "A serpentine fish that generates powerful electrical fields. Their bodies glow with inner lightning during storms.",
+        Price = 550,
+        From = "Atlantis",
+        Chance = 35,
+        Weather = {
+            "Rain"
+        },
+        XP = 300,
+        Resilience = 40
+    },
+    ["Lightning Minnow"] = {
         FavouriteTime = "Day",
         Seasons = {
-            "Summer",
-            "Winter"
+            "None"
         },
         Rarity = "Common",
-        FavouriteBait = "None",
+        FavouriteBait = "Flakes",
         WeightPool = {
-            1,
-            2
+            5,
+            15
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.19215686619282, 0.20000000298023, 0.29019609093666),
+        SparkleColor = Color3.new(1, 0.96470588445663, 0.49803921580315),
         Quips = {
-            "A Night Shrimp!",
-            "Woah! A Night Shrimp",
-            "Awesome!",
-            "A Night Shrimp!",
-            "Ou! A Night Shrimpy!"
+            "Ouch! Static shock!",
+            "A Lightning Minnow!",
+            "Tingly little one!",
+            "Zeus' smallest spark!"
         },
-        Hint = "Caught with crab cages in Vertigo.",
-        Description = "Night Shrimp are small, versatile crustaceans that can be found in an abundance in Vertigo's calm water. night Shrimp are predominantly diurnal, making day fishing the most effective time.",
-        Price = 55,
-        From = "Vertigo",
-        Chance = 45,
+        Hint = "Found darting in schools through Zeus Pool.",
+        Description = "A tiny, energetic fish that seems to crackle with electricity. Their scales generate small static charges, making them tingle when caught.",
+        Price = 120,
+        From = "Atlantis",
+        Chance = 75,
         Weather = {
-            "Clear"
+            "Rain"
         },
-        XP = 35,
-        Resilience = 200
+        XP = 80,
+        Resilience = 70
     },
     ["Cinder Carp"] = {
         SparkleColor = Color3.new(0.60392159223557, 0.85490196943283, 0.56078433990479),
@@ -6923,35 +7081,37 @@ return {
         XP = 350,
         Resilience = 50
     },
-    ["Storm Eel"] = {
+    ["Frozen Leviathan"] = {
         FavouriteTime = "Night",
-        Seasons = {
-            "None"
-        },
-        Rarity = "Unusual",
-        FavouriteBait = "Fish Head",
-        WeightPool = {
-            400,
-            800
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 0.85098040103912, 0.45490196347237),
-        Quips = {
-            "A Storm Eel!",
-            "Lightning in water!",
-            "Zeus' serpent!",
-            "What a shock!"
-        },
-        Hint = "Hunts during thunderstorms in Zeus Pool.",
-        Description = "A serpentine fish that generates powerful electrical fields. Their bodies glow with inner lightning during storms.",
-        Price = 550,
-        From = "Atlantis",
-        Chance = 35,
+        SparkleColor = Color3.new(0.40000000596046, 0.69803923368454, 1),
+        Description = "A chilling creature with icy tentacles that can freeze anything it touches. Legends say it guards the deepest parts of the ocean.",
+        FavouriteBait = "Truffle Worm",
+        BlockPassiveCapture = true,
+        Chance = 0.1,
         Weather = {
-            "Rain"
+            "Clear"
         },
-        XP = 300,
-        Resilience = 40
+        Icon = "rbxassetid://81152570606021",
+        Hint = "Appears during the coldest nights, when the moon is full.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "Winter"
+        },
+        Rarity = "Secret",
+        WeightPool = {
+            60000,
+            140000
+        },
+        XP = 20000,
+        From = "Challenger's Deep",
+        Quips = {
+            "THE FROZEN LEVIATHAN!?!",
+            "ABSOLUTE ZERO!",
+            "FREEZING KRAKEN!?"
+        },
+        Price = 18000,
+        ProgressEfficiency = 0.1,
+        Resilience = 3
     },
     ["Emperor Jellyfish"] = {
         SparkleColor = Color3.new(0.56078433990479, 0.54509806632996, 1),
@@ -6983,35 +7143,34 @@ return {
         Price = 6000,
         Resilience = 20
     },
-    ["Lightning Minnow"] = {
+    ["Shiverfin Haddock"] = {
         FavouriteTime = "Day",
         Seasons = {
+            "Winter"
+        },
+        Rarity = "Rare",
+        FavouriteBait = "Fish Head",
+        WeightPool = {
+            50,
+            120
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.45098039507866, 0.82745099067688, 1),
+        Quips = {
+            "A Shiverfin Haddock!",
+            "Look at those patterns!",
+            "Frosty fins!"
+        },
+        Hint = "Prefers the deeper grotto waters.",
+        Description = "A fish with frosty blue scales and faint frost patterns across its fins.",
+        Price = 500,
+        From = "Glacial Grotto",
+        Chance = 35,
+        Weather = {
             "None"
         },
-        Rarity = "Common",
-        FavouriteBait = "Flakes",
-        WeightPool = {
-            5,
-            15
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.96470588445663, 0.49803921580315),
-        Quips = {
-            "Ouch! Static shock!",
-            "A Lightning Minnow!",
-            "Tingly little one!",
-            "Zeus' smallest spark!"
-        },
-        Hint = "Found darting in schools through Zeus Pool.",
-        Description = "A tiny, energetic fish that seems to crackle with electricity. Their scales generate small static charges, making them tingle when caught.",
-        Price = 120,
-        From = "Atlantis",
-        Chance = 75,
-        Weather = {
-            "Rain"
-        },
-        XP = 80,
-        Resilience = 70
+        XP = 220,
+        Resilience = 50
     },
     Angelfish = {
         Seasons = {
@@ -7040,36 +7199,34 @@ return {
         XP = 60,
         Resilience = 60
     },
-    ["Frozen Leviathan"] = {
+    Nautilus = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.40000000596046, 0.69803923368454, 1),
-        Description = "A chilling creature with icy tentacles that can freeze anything it touches. Legends say it guards the deepest parts of the ocean.",
-        FavouriteBait = "Truffle Worm",
-        Chance = 0.1,
+        SparkleColor = Color3.new(0.79607844352722, 0.68235296010971, 0.54509806632996),
+        Description = "An ancient, spiral-shelled mollusc with a glowing & graceful body, tentacle-filled movements. The Nautilus is an elusive octopus that creates a thick, spiral-shaped shell around its body for protection.",
+        FavouriteBait = "None",
+        Chance = 0.2,
         Weather = {
-            "Clear"
+            "None"
         },
-        Icon = "rbxassetid://81152570606021",
-        Hint = "Appears during the coldest nights, when the moon is full.",
+        ProgressEfficiency = 0.9,
+        Hint = "Dwells in deep coral reefs and rocky underwater caves, mostly visible during the Night.",
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
         Seasons = {
-            "Winter"
+            "Spring",
+            "Summer"
         },
-        Rarity = "Secret",
+        Rarity = "Legendary",
         WeightPool = {
-            60000,
-            140000
+            400,
+            800
         },
-        XP = 20000,
-        From = "Challenger's Deep",
+        From = "The Depths",
         Quips = {
-            "THE FROZEN LEVIATHAN!?!",
-            "ABSOLUTE ZERO!",
-            "FREEZING KRAKEN!?"
+            "Nautilus... OMG!!"
         },
-        Price = 18000,
-        ProgressEfficiency = 0.1,
-        Resilience = 3
+        XP = 300,
+        Price = 1000,
+        Resilience = 30
     },
     Oyster = {
         Seasons = {
@@ -7102,65 +7259,61 @@ return {
         XP = 35,
         Resilience = 95
     },
-    ["Shiverfin Haddock"] = {
+    ["Chillshadow Chub"] = {
+        FavouriteTime = "Day",
+        Seasons = {
+            "None"
+        },
+        Rarity = "Uncommon",
+        FavouriteBait = "Insect",
+        WeightPool = {
+            6,
+            16
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        SparkleColor = Color3.new(0.40000000596046, 0.69803923368454, 1),
+        Quips = {
+            "A Chillshadow Chub!",
+            "Slippery little guy!"
+        },
+        Hint = "Found in areas with heavy ice cover, especially under clear skies.",
+        Description = "A small fish that blends into the icy shadows of the deep.",
+        Price = 100,
+        From = "Challenger's Deep",
+        Chance = 45,
+        Weather = {
+            "Clear"
+        },
+        XP = 100,
+        Resilience = 70
+    },
+    ["Subzero Stargazer"] = {
         FavouriteTime = "Day",
         Seasons = {
             "Winter"
         },
-        Rarity = "Rare",
-        FavouriteBait = "Fish Head",
+        Rarity = "Uncommon",
+        FavouriteBait = "Flakes",
         WeightPool = {
-            50,
-            120
+            20,
+            45
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.45098039507866, 0.82745099067688, 1),
-        Quips = {
-            "A Shiverfin Haddock!",
-            "Look at those patterns!",
-            "Frosty fins!"
-        },
-        Hint = "Prefers the deeper grotto waters.",
-        Description = "A fish with frosty blue scales and faint frost patterns across its fins.",
-        Price = 500,
-        From = "Glacial Grotto",
-        Chance = 35,
-        Weather = {
-            "None"
-        },
-        XP = 220,
-        Resilience = 50
-    },
-    ["Enchant Relic"] = {
-        SparkleColor = Color3.new(0.49411764740944, 1, 0.84705883264542),
-        Description = "A stone filled with the blessing of a Divine Lantern Keeper.. Returning it to it's throne under the Statue of Sovereignty will result in your currently equipped rod being engulfed in its power.",
-        FavouriteBait = "None",
-        Chance = 0.2,
-        Weather = {
-            "None"
-        },
-        ProgressEfficiency = 0.8,
-        Hint = "???",
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        Seasons = {
+        SparkleColor = Color3.new(0.40000000596046, 0.69803923368454, 1),
+        Quips = {
+            "A Subzero Stargazer!",
+            "Rollin', Rollin', Rollin'..."
+        },
+        Hint = "Lurks near the surface of freezing waters, seeking light.",
+        Description = "A unique fish with glowing eyes that stare into the abyss. Its body is covered in frost.",
+        Price = 100,
+        From = "Challenger's Deep",
+        Chance = 50,
+        Weather = {
             "None"
         },
-        Rarity = "Relic",
-        WeightPool = {
-            210,
-            210
-        },
-        From = "None",
-        Quips = {
-            "I feel it's power..",
-            "Woah.. A Relic??",
-            "A Relic!!",
-            "I caught a Relic!",
-            "Please don't give me Wormhole.."
-        },
-        XP = 800,
-        Price = 3500,
-        Resilience = 35
+        XP = 110,
+        Resilience = 80
     },
     ["Sapphire Stargazer"] = {
         Seasons = {
@@ -7274,63 +7427,73 @@ return {
         XP = 90,
         Resilience = 80
     },
-    ["Subzero Stargazer"] = {
-        FavouriteTime = "Day",
+    ["Eternal Frostwhale"] = {
+        SparkleColor = Color3.new(0.60392159223557, 0.85490196943283, 0.56078433990479),
+        Description = "An ancient behemoth that emerges only during the Golden Tide, its crystalline body seemming to contain an entire frozen cosmos. This legendary creature is said to have witnessed countless celebrations, its presence marking truly special occasions.",
+        FavouriteBait = "Shark Head",
+        CustomProgressEfficiency = {
+            {
+                Rod = "Firework Rod",
+                Value = -0.6
+            },
+            {
+                Value = 0.2
+            }
+        },
+        Chance = 0.01,
+        Weather = {
+            "None"
+        },
+        XP = 8000,
+        Hint = "???",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
         Seasons = {
-            "Winter"
+            "None"
         },
-        Rarity = "Uncommon",
-        FavouriteBait = "Flakes",
+        Rarity = "Limited",
         WeightPool = {
-            20,
-            45
+            10000,
+            15000
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.40000000596046, 0.69803923368454, 1),
+        FromLimited = "Golden Tide",
         Quips = {
-            "A Subzero Stargazer!",
-            "Rollin', Rollin', Rollin'..."
+            "THE ETERNAL FROSTWHALE! IMPOSSIBLE!",
+            "A legend frozen in time!",
+            "The ancient one appears!",
+            "The tide bows to its eternal majesty!"
         },
-        Hint = "Lurks near the surface of freezing waters, seeking light.",
-        Description = "A unique fish with glowing eyes that stare into the abyss. Its body is covered in frost.",
-        Price = 100,
-        From = "Challenger's Deep",
-        Chance = 50,
-        Weather = {
-            "None"
-        },
-        XP = 110,
-        Resilience = 80
+        Price = 12000,
+        IsLimitedBestiary = true,
+        Resilience = 3
     },
-    Cryoskin = {
-        FavouriteTime = "None",
-        SparkleColor = Color3.new(0.66666668653488, 1, 1),
-        Description = "Cyroskin... Used to craft something?",
-        FavouriteBait = "None",
-        BlockPassiveCapture = true,
-        Chance = 10,
+    ["Hourglass Bass"] = {
+        SparkleColor = Color3.new(0.60392159223557, 0.85490196943283, 0.56078433990479),
+        Description = "A mesmerizing bass with markings that resemble flowing sand in an hourglass. Its transparent fins seem to sparkle with golden particles, making it a living timekeeper of the Golden Tide celebration.",
+        FavouriteBait = "Aurora Bait",
+        Chance = 25,
         Weather = {
             "None"
         },
-        Icon = "rbxassetid://96530556200239",
-        Hint = "Its pretty",
+        XP = 2000,
+        Hint = "???",
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         Seasons = {
             "None"
         },
-        Rarity = "Common",
+        Rarity = "Limited",
         WeightPool = {
-            30,
-            80
+            8000,
+            12000
         },
-        XP = 250,
-        From = "Challenger's Deep",
+        FromLimited = "Golden Tide",
         Quips = {
-            "Thats pretty"
+            "An Hourglass Bass! Time stands still!",
+            "The sands of time caught in my net!",
+            "What perfect timing!"
         },
-        Price = 50,
-        ProgressEfficiency = 0.8,
-        Resilience = 100
+        Price = 3000,
+        IsLimitedBestiary = true,
+        Resilience = 25
     },
     ["Shark Fang"] = {
         FavouriteTime = "None",
@@ -7420,63 +7583,65 @@ return {
         XP = 500,
         Resilience = 25
     },
-    ["Hourglass Bass"] = {
-        SparkleColor = Color3.new(0.60392159223557, 0.85490196943283, 0.56078433990479),
-        Description = "A mesmerizing bass with markings that resemble flowing sand in an hourglass. Its transparent fins seem to sparkle with golden particles, making it a living timekeeper of the Golden Tide celebration.",
-        FavouriteBait = "Aurora Bait",
-        Chance = 25,
+    ["Enchant Relic"] = {
+        SparkleColor = Color3.new(0.49411764740944, 1, 0.84705883264542),
+        Description = "A stone filled with the blessing of a Divine Lantern Keeper.. Returning it to it's throne under the Statue of Sovereignty will result in your currently equipped rod being engulfed in its power.",
+        FavouriteBait = "None",
+        Chance = 0.2,
         Weather = {
             "None"
         },
-        XP = 2000,
+        ProgressEfficiency = 0.8,
         Hint = "???",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
         Seasons = {
             "None"
         },
-        Rarity = "Limited",
+        Rarity = "Relic",
         WeightPool = {
-            8000,
-            12000
+            210,
+            210
         },
-        FromLimited = "Golden Tide",
+        From = "None",
         Quips = {
-            "An Hourglass Bass! Time stands still!",
-            "The sands of time caught in my net!",
-            "What perfect timing!"
+            "I feel it's power..",
+            "Woah.. A Relic??",
+            "A Relic!!",
+            "I caught a Relic!",
+            "Please don't give me Wormhole.."
         },
-        Price = 3000,
-        IsLimitedBestiary = true,
-        Resilience = 25
+        XP = 800,
+        Price = 3500,
+        Resilience = 35
     },
-    ["Countdown Perch"] = {
-        SparkleColor = Color3.new(0.60392159223557, 0.85490196943283, 0.56078433990479),
-        Description = "This peculiar perch species appears as the Golden Tide approaches, with markings on its fins that seem to shift and change like the hands of a clock. Legend says it can sense the turning of the tide.",
-        FavouriteBait = "Weird Algae",
-        Chance = 35,
+    Chub = {
+        FavouriteTime = "Day",
+        Seasons = {
+            "Spring",
+            "Summer"
+        },
+        Rarity = "Common",
+        FavouriteBait = "Seaweed",
+        WeightPool = {
+            10,
+            30
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(1, 1, 1),
+        Quips = {
+            "I caught a Chub!",
+            "Woah, a Chub!!"
+        },
+        Hint = "commonly caught in Roslit Pond.",
+        Description = "The Chub is a hardy and adaptable freshwater fish, typically found in Roslit Pond. The Chub is an easy catch for novice anglers and is thankfully a common catch.",
+        Price = 40,
+        From = "Roslit",
+        Chance = 100,
         Weather = {
             "None"
         },
-        XP = 1200,
-        Hint = "???",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        Seasons = {
-            "None"
-        },
-        Rarity = "Limited",
-        WeightPool = {
-            3000,
-            5000
-        },
-        FromLimited = "Golden Tide",
-        Quips = {
-            "A Countdown Perch! Time is ticking!",
-            "The tide is turning!",
-            "Right on schedule!"
-        },
-        Price = 2000,
-        IsLimitedBestiary = true,
-        Resilience = 40
+        XP = 40,
+        Resilience = 80
     },
     ["Deep Freeze Devilfish"] = {
         Seasons = {
@@ -7505,34 +7670,32 @@ return {
         XP = 250,
         Resilience = 65
     },
-    ["Sea Bass"] = {
-        Seasons = {
-            "Spring",
-            "Summer"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Squid",
-        WeightPool = {
-            20,
-            60
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.79607844352722, 0.79607844352722, 0.79607844352722),
-        Quips = {
-            "A Sea Bass!",
-            "I caught a Sea Bass!",
-            "Woah! A Sea Bass!",
-            "Ouu! A Bass!"
-        },
-        Hint = "In salt waters.",
-        Description = "The Sea Bass is a popular catch for many anglers, known for its elongated body and aggressive fighting behaviour when hooked. They can be found all over the world in all sorts of salt waters.",
-        Price = 95,
-        From = "Ocean",
-        Chance = 75,
+    ["Ornament Fish"] = {
+        SparkleColor = Color3.new(0.88235294818878, 0.19607843458652, 0.24313725531101),
+        Description = "An decorative ornament in the shape of a fish. Seems to exhibit signs of low intelligence.",
+        FavouriteBait = "Holly Berry",
+        Chance = 15,
         Weather = {
-            "Clear"
+            "None"
         },
-        XP = 90,
+        ProgressEfficiency = 0.95,
+        Hint = "Only can be caught during Fischmas24.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        Seasons = {
+            "Autumn"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            3,
+            7
+        },
+        FromLimited = "Fischmas",
+        Quips = {
+            "Woah, an Ornament!",
+            "Ouu! An Ornament Fish!"
+        },
+        XP = 165,
+        Price = 140,
         Resilience = 80
     },
     ["Chronos Deep Swimmer"] = {
@@ -7620,94 +7783,6 @@ return {
         IsLimitedBestiary = true,
         Resilience = 25
     },
-    ["Ornament Fish"] = {
-        SparkleColor = Color3.new(0.88235294818878, 0.19607843458652, 0.24313725531101),
-        Description = "An decorative ornament in the shape of a fish. Seems to exhibit signs of low intelligence.",
-        FavouriteBait = "Holly Berry",
-        Chance = 15,
-        Weather = {
-            "None"
-        },
-        ProgressEfficiency = 0.95,
-        Hint = "Only can be caught during Fischmas24.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        Seasons = {
-            "Autumn"
-        },
-        Rarity = "Limited",
-        WeightPool = {
-            3,
-            7
-        },
-        FromLimited = "Fischmas",
-        Quips = {
-            "Woah, an Ornament!",
-            "Ouu! An Ornament Fish!"
-        },
-        XP = 165,
-        Price = 140,
-        Resilience = 80
-    },
-    Bluegill = {
-        Seasons = {
-            "Summer",
-            "Spring"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Insect",
-        WeightPool = {
-            1,
-            6
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.58431375026703, 1, 0.73725491762161),
-        Quips = {
-            "A Bluegill!",
-            "But I pinked the Red Pill!",
-            "I caught a Bluegill!!",
-            "Lovely, a Bluegill!"
-        },
-        Hint = "Found in saltwater\xE2\x80\x99s near Snowcap.",
-        Description = "A small, round freshwater fish with bright blue and orange hues, easily recognized by its distinct gill spot. It can be found all over the waters of Snowcap.",
-        Price = 60,
-        From = "Snowcap",
-        Chance = 85,
-        Weather = {
-            "Clear"
-        },
-        XP = 90,
-        Resilience = 90
-    },
-    ["Swamp Bass"] = {
-        Seasons = {
-            "Spring",
-            "Summer"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Worm",
-        WeightPool = {
-            20,
-            60
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.53725492954254, 1, 0.45490196347237),
-        Quips = {
-            "A Swamp Bass!",
-            "I caught a Swamp Bass!",
-            "Woah! A Swamp Bass!",
-            "Ouu! A Swamp Bass!"
-        },
-        Hint = "Can be found in Mushgrove Swamp.",
-        Description = "The Swamp Bass is species of Bass that can only be found in Swamp water. They are extremely similar to Smallmouth Bass besides their special adaptation; They have chameleon-like camouflage. This allows them to nearly entirely avoid being a prey of larger fish and Alligators.",
-        Price = 60,
-        From = "Mushgrove",
-        Chance = 80,
-        Weather = {
-            "Windy"
-        },
-        XP = 50,
-        Resilience = 80
-    },
     ["Santa Salmon"] = {
         Seasons = {
             "Spring",
@@ -7769,6 +7844,36 @@ return {
         XP = 110,
         Resilience = 60
     },
+    ["Swamp Bass"] = {
+        Seasons = {
+            "Spring",
+            "Summer"
+        },
+        Rarity = "Common",
+        FavouriteBait = "Worm",
+        WeightPool = {
+            20,
+            60
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.53725492954254, 1, 0.45490196347237),
+        Quips = {
+            "A Swamp Bass!",
+            "I caught a Swamp Bass!",
+            "Woah! A Swamp Bass!",
+            "Ouu! A Swamp Bass!"
+        },
+        Hint = "Can be found in Mushgrove Swamp.",
+        Description = "The Swamp Bass is species of Bass that can only be found in Swamp water. They are extremely similar to Smallmouth Bass besides their special adaptation; They have chameleon-like camouflage. This allows them to nearly entirely avoid being a prey of larger fish and Alligators.",
+        Price = 60,
+        From = "Mushgrove",
+        Chance = 80,
+        Weather = {
+            "Windy"
+        },
+        XP = 50,
+        Resilience = 80
+    },
     ["Glass of Milk"] = {
         Seasons = {
             "None"
@@ -7795,6 +7900,75 @@ return {
         },
         XP = 9,
         Resilience = 100
+    },
+    ["Festive Bait Crate"] = {
+        SparkleColor = Color3.new(1, 1, 1),
+        Description = "A festive wooden crate with patterend fabric over top to preserve the bait inside. Seems like it fell off of santa's sleigh! Opening it might give you an array of jolly baits!",
+        FavouriteBait = "Magnet",
+        Chance = 2.5,
+        Weather = {
+            "None"
+        },
+        XP = 300,
+        Hint = "Only can be caught during Fischmas24.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.crate,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            80,
+            80
+        },
+        BaitContents = {
+            "Peppermint Worm",
+            "Holly Berry"
+        },
+        IsCrate = true,
+        FromLimited = "Fischmas",
+        CrateType = "Bait",
+        Quips = {
+            "A Crate of Festive Bait!",
+            "A Festive Bait Crate!",
+            "Woah! A Crate!",
+            "A Crate!",
+            "Who left this here?",
+            "Oh, the worms still moving?",
+            "A Crate full of Jolly Bait!"
+        },
+        Price = 500,
+        BuyMult = 2.3,
+        Resilience = 90
+    },
+    Floppy = {
+        SparkleColor = Color3.new(1, 0.63137257099152, 0.30588236451149),
+        Description = "The Floppy is an interesting fish in the Ancient Isle. Exhibiting signs of intense energy, attempting to catch the Floppy will not be an easy task. They spend most of the day swimming around the pond, ",
+        FavouriteBait = "Super Flakes",
+        Chance = 0.05,
+        Weather = {
+            "None"
+        },
+        ProgressEfficiency = 0.9,
+        Hint = "Can be found in the waters of the Ancient Isle.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        Seasons = {
+            "Autumn"
+        },
+        Rarity = "Legendary",
+        WeightPool = {
+            80,
+            100
+        },
+        From = "Ancient Isle",
+        Quips = {
+            "A Floppy!",
+            "I caught a Floppy!",
+            "Woah! A Floppy!",
+            "Ouu! A Floppy!"
+        },
+        XP = 1200,
+        Price = 2000,
+        Resilience = 25
     },
     ["Chillback Whitefish"] = {
         FavouriteTime = "None",
@@ -8011,80 +8185,64 @@ return {
         BuyMult = 1.6,
         Resilience = 120
     },
-    ["Festive Bait Crate"] = {
-        SparkleColor = Color3.new(1, 1, 1),
-        Description = "A festive wooden crate with patterend fabric over top to preserve the bait inside. Seems like it fell off of santa's sleigh! Opening it might give you an array of jolly baits!",
-        FavouriteBait = "Magnet",
-        Chance = 2.5,
-        Weather = {
-            "None"
-        },
-        XP = 300,
-        Hint = "Only can be caught during Fischmas24.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.crate,
-        Seasons = {
-            "None"
-        },
-        Rarity = "Limited",
-        WeightPool = {
-            80,
-            80
-        },
-        BaitContents = {
-            "Peppermint Worm",
-            "Holly Berry"
-        },
-        IsCrate = true,
-        FromLimited = "Fischmas",
-        CrateType = "Bait",
-        Quips = {
-            "A Crate of Festive Bait!",
-            "A Festive Bait Crate!",
-            "Woah! A Crate!",
-            "A Crate!",
-            "Who left this here?",
-            "Oh, the worms still moving?",
-            "A Crate full of Jolly Bait!"
-        },
-        Price = 500,
-        BuyMult = 2.3,
-        Resilience = 90
-    },
-    Sunfish = {
-        FavouriteTime = "Day",
-        SparkleColor = Color3.new(1, 0.90980392694473, 0.38823530077934),
-        Description = "Sunfish are the heaviest bony fish species alive today. Common sunfish can weigh up to one metric tonne but on rare instances they can way two metric tonnes! The largest appeal of the ocean Sunfish is the unusual shape of it's body and it's astonishing weight. Sunfish have the name for their love of basking in the sun by floating to the surface of the water.",
+    Banana = {
+        SparkleColor = Color3.new(1, 0.94901961088181, 0.24313725531101),
+        Description = "A simple banana, rich in potassium. How did it get in the water?",
         FavouriteBait = "None",
-        Chance = 1,
+        BlockPassiveCapture = true,
+        Chance = 0.005,
         Weather = {
-            "Clear"
+            "Rain"
         },
-        ProgressEfficiency = 0.4,
-        Hint = "Caught near Sunstone Island and can sometimes weigh over 1,000 kg.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        XP = 6900,
+        Hint = "???",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
         Seasons = {
             "Summer"
         },
-        Rarity = "Legendary",
+        Rarity = "Secret",
         WeightPool = {
-            4000,
-            10000
+            4,
+            10
         },
-        From = "Sunstone",
+        From = "Ancient Isle",
         Quips = {
-            "I think my backbone snapped..",
-            "Woah!!",
-            "OH MY! A SUNFISH?",
-            "A sunfish!",
-            "Woah, a Sunfish!",
-            "Nice tan..",
-            "How did I pull this up?",
-            "A SUNFISH!",
-            "MOLA MOLA!"
+            "A BANANA!!",
+            "I CAUGHT A BANANA!",
+            "A Banana!"
         },
-        XP = 550,
-        Price = 1500,
-        Resilience = 70
+        Price = 18500,
+        Resilience = 45
+    },
+    ["Nurse Shark"] = {
+        FavouriteTime = "Night",
+        Seasons = {
+            "Summer",
+            "Autumn"
+        },
+        Rarity = "Unusual",
+        FavouriteBait = "Minnow",
+        WeightPool = {
+            1000,
+            1500
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(1, 0.59607845544815, 0.59607845544815),
+        Quips = {
+            "A Nurse Shark!",
+            "Woah! A Nurse Shark!",
+            "I Caught a Nurse Shark!"
+        },
+        Hint = "Caught at night in the ocean.",
+        Description = "Nurse Sharks are a nocturnal bottom feeder, spending most of their time on the ocean floor or in small crevices. Despite their appearance, they are gentle and slow-moving. Nurse Sharks can 'suction feed', using their powerful jaws to scrape algae off surfaces.",
+        Price = 200,
+        From = "Ocean",
+        Chance = 35,
+        Weather = {
+            "None"
+        },
+        XP = 100,
+        Resilience = 35
     },
     ["Cyclone Scorpionfish"] = {
         SparkleColor = Color3.new(1, 1, 1),
@@ -8175,35 +8333,33 @@ return {
         Price = 4000,
         Resilience = 15
     },
-    Turkey = {
-        SparkleColor = Color3.new(0.81568628549576, 0.40784314274788, 0.52941179275513),
-        Description = "Turkeys are large and heavy birds with a uniquely-shaped tail consisting of many feathers that line up to create a circular pattern. However, the poor Turkey is the desired choice of food for many fischers for Fischgiving dinner.",
-        FavouriteBait = "Insect",
-        Chance = 0,
-        Weather = {
-            "None"
-        },
-        ProgressEfficiency = 0.35,
-        Hint = "Only obtainable during Fischgiving",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+    Skelefish = {
         Seasons = {
-            "Autumn"
+            "Winter"
         },
         Rarity = "Limited",
+        Price = 200,
         WeightPool = {
-            80,
-            300
+            5,
+            10
         },
-        FromLimited = "Fischgiving",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
-            "Woah! a Turkey!",
-            "A Turkey!",
-            "Gobble Gobble!",
-            "Woah, A Turkey!"
+            "Woah, a Skelefish!",
+            "No way! A Skelefish!",
+            "I caught a Skelefish!"
         },
-        XP = 1700,
-        Price = 4000,
-        Resilience = 20
+        Hint = "Only can be caught during FischFright.",
+        Description = "The Skelefish is a literal fish skeleton, eerily animated as if it still had flesh. Its bony structure drifts through the water, with jagged, rib-like bones and a hollow skull that stares blankly ahead. Only can be caught during FischFright.",
+        FromLimited = "FischFright",
+        FavouriteBait = "Fish Head",
+        Chance = 10,
+        Weather = {
+            "Clear"
+        },
+        XP = 400,
+        Resilience = 50
     },
     ["Globe Jellyfish"] = {
         Seasons = {
@@ -8233,39 +8389,38 @@ return {
         XP = 150,
         Resilience = 25
     },
-    Nessie = {
+    Coelacanth = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.50588238239288, 1, 0.70980393886566),
-        Description = "Nessie is thought to be a complete myth. Little did these anglers know, you found the impossible catch... Nessie... Only obtainable during FischFright ",
-        FavouriteBait = "Truffle Worm",
-        BlockPassiveCapture = true,
-        Chance = 0.01,
-        Weather = {
-            "Foggy"
-        },
-        ProgressEfficiency = 0.2,
-        Hint = "Only obtainable during FischFright",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
         Seasons = {
-            "None"
+            "Spring",
+            "Autumn"
         },
-        Rarity = "Limited",
+        Rarity = "Rare",
+        FavouriteBait = "None",
         WeightPool = {
-            20000,
-            40000
+            70,
+            100
         },
-        FromLimited = "FischFright",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.29803922772408, 0.29803922772408, 0.29803922772408),
         Quips = {
-            "WOAH, NESSIE!?!",
-            "MY BACCKK",
-            "I CAN'T BELIEVE IT! NESSIE!",
-            "I DIDN'T THINK IT WAS REAL!!"
+            "Woah, a Coelacanth!",
+            "I caught a Coelacanth!",
+            "It's a Coelacanth!",
+            "Nice! It's a Coelacanth!"
         },
-        XP = 3000,
-        Price = 6500,
-        Resilience = 5
+        Hint = "Found in the Deep Ocean.",
+        Description = "The Coelacanth is an ancient fish with a distinctive shape and strong swimming behaviours Known as a 'living fossil,' this fish was thought to be extinct until its rediscovery in 1938. Coelacanths are deep-sea dwellers, often found in underwater caves and steep slopes.",
+        Price = 370,
+        From = "Ocean",
+        Chance = 14,
+        Weather = {
+            "Clear"
+        },
+        XP = 300,
+        Resilience = 40
     },
-    Skelefish = {
+    ["Candy Fish"] = {
         Seasons = {
             "Winter"
         },
@@ -8275,17 +8430,17 @@ return {
             5,
             10
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 1, 1),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        SparkleColor = Color3.new(1, 0.20000000298023, 0.20000000298023),
         Quips = {
-            "Woah, a Skelefish!",
-            "No way! A Skelefish!",
-            "I caught a Skelefish!"
+            "Woah, a Candy Fisch!",
+            "No way! A Candy Fisch!",
+            "I caught a Candy Fisch!"
         },
         Hint = "Only can be caught during FischFright.",
-        Description = "The Skelefish is a literal fish skeleton, eerily animated as if it still had flesh. Its bony structure drifts through the water, with jagged, rib-like bones and a hollow skull that stares blankly ahead. Only can be caught during FischFright.",
+        Description = "The Candy Fisch is a vibrant, bright coloured fish, formed from glucose and carbon. Known for their playful nature, and sweet gummy texture. Only can be caught during FischFright.",
         FromLimited = "FischFright",
-        FavouriteBait = "Fish Head",
+        FavouriteBait = "Flakes",
         Chance = 10,
         Weather = {
             "Clear"
@@ -8379,33 +8534,34 @@ return {
         XP = 40,
         Resilience = 80
     },
-    ["Candy Fish"] = {
+    ["Chillfin Herring"] = {
+        FavouriteTime = "Day",
         Seasons = {
             "Winter"
         },
-        Rarity = "Limited",
-        Price = 200,
+        Rarity = "Rare",
+        FavouriteBait = "Seaweed",
         WeightPool = {
-            5,
-            10
+            30,
+            70
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(1, 0.20000000298023, 0.20000000298023),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.74117648601532, 0.85490196943283, 1),
         Quips = {
-            "Woah, a Candy Fisch!",
-            "No way! A Candy Fisch!",
-            "I caught a Candy Fisch!"
+            "A Chillfin Herring!",
+            "So shiny!",
+            "Frosty little one!"
         },
-        Hint = "Only can be caught during FischFright.",
-        Description = "The Candy Fisch is a vibrant, bright coloured fish, formed from glucose and carbon. Known for their playful nature, and sweet gummy texture. Only can be caught during FischFright.",
-        FromLimited = "FischFright",
-        FavouriteBait = "Flakes",
-        Chance = 10,
+        Hint = "Schools in the colder currents of the canal.",
+        Description = "A sleek fish with a reflective, icy-gray body and frost-tipped fins.",
+        Price = 450,
+        From = "Cryogenic Canal",
+        Chance = 35,
         Weather = {
-            "Clear"
+            "None"
         },
-        XP = 400,
-        Resilience = 50
+        XP = 200,
+        Resilience = 45
     },
     ["Infernal Iguanafish"] = {
         FavouriteTime = "Night",
@@ -8495,34 +8651,34 @@ return {
         XP = 250,
         Resilience = 45
     },
-    ["Chillfin Herring"] = {
-        FavouriteTime = "Day",
+    ["Bull Shark"] = {
         Seasons = {
-            "Winter"
+            "Spring"
         },
-        Rarity = "Rare",
-        FavouriteBait = "Seaweed",
+        Rarity = "Legendary",
+        FavouriteBait = "Fish Head",
         WeightPool = {
-            30,
-            70
+            900,
+            1300
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.74117648601532, 0.85490196943283, 1),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
+        SparkleColor = Color3.new(1, 0.96078431606293, 0.77254903316498),
         Quips = {
-            "A Chillfin Herring!",
-            "So shiny!",
-            "Frosty little one!"
+            "A Bull Shark!",
+            "Thats some Bull Shark!",
+            "I caught a Bull Shark!"
         },
-        Hint = "Schools in the colder currents of the canal.",
-        Description = "A sleek fish with a reflective, icy-gray body and frost-tipped fins.",
-        Price = 450,
-        From = "Cryogenic Canal",
-        Chance = 35,
+        Hint = "Found roaming in all types of waters and on the coasts.",
+        Description = "Bull sharks have robust bodies, and an extremely powerful nature. They have a special ability to adapt to both saltwater and freshwater, which is quite rare for sharks. Bull Sharks can be found most commonly near coats, and in freshwaters.",
+        Price = 400,
+        From = "Ocean",
+        Chance = 0.3,
         Weather = {
-            "None"
+            "Rain",
+            "Foggy"
         },
-        XP = 200,
-        Resilience = 45
+        XP = 150,
+        Resilience = 20
     },
     ["Kraken's Herald"] = {
         FavouriteTime = "Night",
@@ -8584,36 +8740,37 @@ return {
         XP = 130,
         Resilience = 60
     },
-    ["Crown Bass"] = {
-        FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.79607844352722, 0.63921570777893, 0.27450981736183),
-        Description = "The Crown Bass is a special type of bass that is known for its vibrant colours, and its luminescent 'crown' on its head. They use this crown to attract prey, and see easily at night. They can be found all over the world in all sorts of salt waters, especially warmer waters during the night.",
-        FavouriteBait = "Squid",
-        Chance = 0.2,
-        Weather = {
-            "Foggy"
-        },
-        ProgressEfficiency = 0.8,
-        Hint = "In salt waters during the night. ",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+    ["Night Shrimp"] = {
+        FavouriteTime = "Day",
         Seasons = {
-            "Summer"
+            "Summer",
+            "Winter"
         },
-        Rarity = "Legendary",
+        Rarity = "Common",
+        FavouriteBait = "None",
         WeightPool = {
-            20,
-            60
+            1,
+            2
         },
-        From = "Ocean",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.19215686619282, 0.20000000298023, 0.29019609093666),
         Quips = {
-            "A Crown Bass!",
-            "I caught a Crown Bass!",
-            "Woah! A Crown Bass!",
-            "Ouu! A Crown Bass!"
+            "A Night Shrimp!",
+            "Woah! A Night Shrimp",
+            "Awesome!",
+            "A Night Shrimp!",
+            "Ou! A Night Shrimpy!"
         },
-        XP = 700,
-        Price = 1200,
-        Resilience = 20
+        Hint = "Caught with crab cages in Vertigo.",
+        Description = "Night Shrimp are small, versatile crustaceans that can be found in an abundance in Vertigo's calm water. night Shrimp are predominantly diurnal, making day fishing the most effective time.",
+        Price = 55,
+        From = "Vertigo",
+        Chance = 45,
+        Weather = {
+            "Clear"
+        },
+        XP = 35,
+        Resilience = 200
     },
     ["Ancient Algae"] = {
         FavouriteTime = "None",
@@ -8644,33 +8801,36 @@ return {
         Price = 50,
         Resilience = 100
     },
-    ["Twilight Eel"] = {
-        Seasons = {
-            "Winter"
-        },
-        Rarity = "Uncommon",
-        FavouriteBait = "Insect",
-        WeightPool = {
-            100,
-            200
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.50196081399918, 1, 0.4745098054409),
-        Quips = {
-            "Woah, a Twilight Eel!",
-            "I caught an Eel!",
-            "It looks like a tadpole!"
-        },
-        Hint = "Found in Vertigo's Dip.",
-        Description = "The Twilight Eel, whilst resembling a giant tadpole, is an Eel. Twilight Eels are extremely slimy, and use the bulb on their head to attract prey.",
-        Price = 90,
-        From = "Vertigo",
-        Chance = 70,
+    ["Manta Ray"] = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(0.34117648005486, 0.46274510025978, 1),
+        Description = "Manta Rays are very elegant and remarkably large creatures that coast alongside the coral reefs of Roslit Bay. They move their wing-like fins in a wavy motion to generate enough speed to guide through the ocean. Manta Rays typically feed on small fish during the night.",
+        FavouriteBait = "Shrimp",
+        Chance = 0.01,
         Weather = {
             "None"
         },
-        XP = 100,
-        Resilience = 40
+        ProgressEfficiency = 0.9,
+        Hint = "Found gliding through Roslit Bays coral reef during the night.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "Summer"
+        },
+        Rarity = "Mythical",
+        WeightPool = {
+            7750,
+            10000
+        },
+        From = "Roslit",
+        Quips = {
+            "WOAH.. A Manta Ray!",
+            "I caught a Manta Ray!",
+            "Woah.. A Manta Ray!!",
+            "Hol-ey Mol-ray!"
+        },
+        XP = 1000,
+        Price = 3000,
+        Resilience = 10
     },
     ["Ancient Megalodon"] = {
         FavouriteTime = "None",
@@ -8732,35 +8892,41 @@ return {
         XP = 1200,
         Resilience = 20
     },
-    ["Aurora Trout"] = {
+    Olm = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.63921570777893, 1, 0.78823530673981),
-        Description = "A radiant trout with iridescent scales that glow faintly, resembling the northern lights.",
-        FavouriteBait = "Truffle Worm",
-        Chance = 0.5,
+        SparkleColor = Color3.new(1, 0.69803923368454, 0.69803923368454),
+        Description = "The Olm is an aquatic salamander which is an exclusively cave-dwelling species. The olm is mostly found in dark and moist areas of freshwater. They are most notable for their adaptations to a life of darkness with-in their caves. The Olm has severely under underdeveloped eyes, leaving it blind. This blindness gives them an acute sense of smell and hearing.",
+        FavouriteBait = "Flakes",
+        Chance = 2,
         Weather = {
-            "Clear"
+            "Clear",
+            "Foggy"
         },
-        ProgressEfficiency = 0.6,
-        Hint = "Only appears when the aurora shimmers above the canal.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        ProgressEfficiency = 0.95,
+        Hint = "Resides on the floor of caves and dark rocky areas. Loves the night.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
         Seasons = {
-            "Winter"
+            "None"
         },
-        Rarity = "Mythical",
+        Rarity = "Legendary",
         WeightPool = {
-            2000,
-            4000
+            1,
+            4
         },
-        From = "Cryogenic Canal",
+        ViewportSizeOffset = 2,
+        From = "Terrapin",
         Quips = {
-            "AN AURORA TROUT!",
-            "LIKE THE NORTHERN LIGHTS!",
-            "MAGICAL!"
+            "An Olm!",
+            "I caught an Olm!",
+            "Olm.. my gosh!",
+            "An Olm!!",
+            "Woah, an Olm!",
+            "This ain't no Axolotl..",
+            "It looks like a recorder"
         },
-        XP = 2000,
-        Price = 6000,
-        Resilience = 15
+        XP = 500,
+        Price = 900,
+        Resilience = 80
     },
     Driftwood = {
         Seasons = {
@@ -8849,72 +9015,65 @@ return {
         XP = 30,
         Resilience = 80
     },
-    ["Sea Turtle"] = {
-        FavouriteTime = "Day",
-        SparkleColor = Color3.new(0.62745100259781, 1, 0.32549020648003),
-        Description = "The Sea Turtle is a graceful marine creature with a streamlined shell and paddle-like flippers, found gliding peacefully in warm coastal waters. Known for their calm demeanour and protected status, Sea Turtles are a rare and beautiful sight that often symbolizes good fortune.",
+    ["King Oyster"] = {
+        Seasons = {
+            "Summer",
+            "autumn"
+        },
+        Rarity = "Rare",
         FavouriteBait = "None",
-        Chance = 0.005,
-        Weather = {
-            "None"
-        },
-        ProgressEfficiency = 0.9,
-        Hint = "Caught near Terrapin Island during the day.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        Seasons = {
-            "None"
-        },
-        Rarity = "Mythical",
         WeightPool = {
-            700,
-            1500
+            4,
+            10
         },
-        From = "Terrapin",
-        Quips = {
-            "A TURTLEEE!",
-            "WOAH.. A TURTLE!",
-            "I like turtles :3",
-            "I caught a Sea Turtle!"
-        },
-        XP = 1000,
-        Price = 2000,
-        Resilience = 10
-    },
-    Olm = {
-        FavouriteTime = "Night",
-        SparkleColor = Color3.new(1, 0.69803923368454, 0.69803923368454),
-        Description = "The Olm is an aquatic salamander which is an exclusively cave-dwelling species. The olm is mostly found in dark and moist areas of freshwater. They are most notable for their adaptations to a life of darkness with-in their caves. The Olm has severely under underdeveloped eyes, leaving it blind. This blindness gives them an acute sense of smell and hearing.",
-        FavouriteBait = "Flakes",
-        Chance = 2,
-        Weather = {
-            "Clear",
-            "Foggy"
-        },
-        ProgressEfficiency = 0.95,
-        Hint = "Resides on the floor of caves and dark rocky areas. Loves the night.",
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        Seasons = {
+        SparkleColor = Color3.new(0.85098040103912, 0.84313726425171, 0.59215688705444),
+        Quips = {
+            "An Oyster!",
+            "Woah! A King Oyster",
+            "Awesome!",
+            "A King Oyster!",
+            "Ou! A King Oyster!"
+        },
+        Hint = "Can be easily caught while cage fishing. Only found near Terrapin Island.",
+        Description = "King Oysters are a special breed of oysters that can only be found around Terrapin Island. They filter almost all salt out of the water, making Terrapins water freshwater.",
+        Price = 200,
+        From = "Terrapin",
+        Chance = 20,
+        Weather = {
             "None"
         },
-        Rarity = "Legendary",
+        XP = 35,
+        Resilience = 95
+    },
+    ["Chinook Salmon"] = {
+        Seasons = {
+            "Autumn"
+        },
+        Rarity = "Unusual",
+        FavouriteBait = "Minnow",
         WeightPool = {
-            1,
-            4
+            100,
+            400
         },
-        ViewportSizeOffset = 2,
-        From = "Terrapin",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
-            "An Olm!",
-            "I caught an Olm!",
-            "Olm.. my gosh!",
-            "An Olm!!",
-            "Woah, an Olm!",
-            "This ain't no Axolotl..",
-            "It looks like a recorder"
+            "Ou! A Chinook Salmon!",
+            "A King Salmon!",
+            "I Caught a King Salmon!",
+            "Woah, a King Salmon!"
         },
-        XP = 500,
-        Price = 900,
-        Resilience = 80
+        Hint = "Found in the waters of Terrapin Island, and general ocean waters.",
+        Description = "The Chinook Salmon, also known as King Salmon, are large silver fish with a slightly forked tail and a black mouth. They are highly prized; and are a common target for sport and commercial fishing. The King Salmon are commonly in ocean waters, but during the Autumn they migrate to Terrapin Island to lay eggs.",
+        Price = 230,
+        From = "Terrapin",
+        Chance = 30,
+        Weather = {
+            "None"
+        },
+        XP = 100,
+        Resilience = 50
     },
     Barracuda = {
         FavouriteTime = "Day",
@@ -8975,36 +9134,34 @@ return {
         XP = 300,
         Resilience = 40
     },
-    ["King Oyster"] = {
+    Perch = {
         Seasons = {
-            "Summer",
-            "autumn"
-        },
-        Rarity = "Rare",
-        FavouriteBait = "None",
-        WeightPool = {
-            4,
-            10
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.85098040103912, 0.84313726425171, 0.59215688705444),
-        Quips = {
-            "An Oyster!",
-            "Woah! A King Oyster",
-            "Awesome!",
-            "A King Oyster!",
-            "Ou! A King Oyster!"
-        },
-        Hint = "Can be easily caught while cage fishing. Only found near Terrapin Island.",
-        Description = "King Oysters are a special breed of oysters that can only be found around Terrapin Island. They filter almost all salt out of the water, making Terrapins water freshwater.",
-        Price = 200,
-        From = "Terrapin",
-        Chance = 20,
-        Weather = {
             "None"
         },
-        XP = 35,
-        Resilience = 95
+        Rarity = "Common",
+        FavouriteBait = "Worm",
+        WeightPool = {
+            2,
+            12
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.46666666865349, 0.63921570777893, 0.30196079611778),
+        Quips = {
+            "A Perch!",
+            "I caught a Perch!",
+            "Woah, a Perch!",
+            "Aww! A Perch!"
+        },
+        Hint = "Found in freshwater of Roslit.",
+        Description = "The Perch is a common freshwater fish that is best found in Roslit Bays fresh water. They are known for their striped bodies and a playful behaviour.",
+        Price = 70,
+        From = "Roslit",
+        Chance = 80,
+        Weather = {
+            "Clear"
+        },
+        XP = 80,
+        Resilience = 70
     },
     ["Glacier Glowfish"] = {
         FavouriteTime = "None",
@@ -9095,68 +9252,70 @@ return {
         XP = 20,
         Resilience = 80
     },
-    Clownfish = {
-        Seasons = {
-            "Spring",
-            "Summer"
-        },
-        Rarity = "Uncommon",
-        FavouriteBait = "Flakes",
-        WeightPool = {
-            1,
-            6
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.65490198135376, 0.16862745583057),
-        Quips = {
-            "Ouu a Clownfish!",
-            "Woah, a Clownfish!",
-            "A Clownfish!",
-            "I caught a Clownfish!",
-            "I caught a Clownfish!",
-            "What kind of circus is this?"
-        },
-        Hint = "Found in Roslit Bays coral reef.",
-        Description = "The clownfish, known for its vibrant orange and white stripes, is a small, hardy reef dweller. Often found alongside coral and see anemones inside the reef of Roslit Bay.\t\t\tBest paired with the Blue Tang!",
-        Price = 90,
-        From = "Roslit",
-        Chance = 60,
-        Weather = {
-            "Foggy"
-        },
-        XP = 90,
-        Resilience = 70
-    },
-    Voltfish = {
-        FavouriteTime = "Night",
-        SparkleColor = Color3.new(1, 0.60392159223557, 0.27843138575554),
-        Description = "The Voltfish is a lightning-fast relative of the Mythic Fish. They swim solo near the surface of the waters surrounding Sunstone, and make sporadic movements when hooked.",
-        FavouriteBait = "Super Flakes",
-        Chance = 0.01,
-        Weather = {
-            "Rain"
-        },
-        ProgressEfficiency = 0.4,
-        Hint = "Found swimming near Sunstone Island during the Night.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+    Arapaima = {
         Seasons = {
             "None"
         },
-        Rarity = "Mythical",
+        Rarity = "Rare",
+        FavouriteBait = "Minnow",
         WeightPool = {
-            8,
-            16
+            1000,
+            2000
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        SparkleColor = Color3.new(0.60392159223557, 0.15294118225574, 0.15294118225574),
+        Quips = {
+            "An Arapaima!",
+            "I caught an Arapaima!",
+            "Woah, an Arapaima!"
+        },
+        Hint = "Found in Roslit Bays freshwater during the day.",
+        Description = "Arapaima are massive freshwater fish with large, broad bodies and a distinctive, armor-like scaled appearance. They have a unique respiratory system that allows them to breathe air, as well as gills.",
+        Price = 250,
+        From = "Roslit",
+        Chance = 15,
+        Weather = {
+            "Rain",
+            "Foggy"
+        },
+        XP = 150,
+        Resilience = 30
+    },
+    Sunfish = {
+        FavouriteTime = "Day",
+        SparkleColor = Color3.new(1, 0.90980392694473, 0.38823530077934),
+        Description = "Sunfish are the heaviest bony fish species alive today. Common sunfish can weigh up to one metric tonne but on rare instances they can way two metric tonnes! The largest appeal of the ocean Sunfish is the unusual shape of it's body and it's astonishing weight. Sunfish have the name for their love of basking in the sun by floating to the surface of the water.",
+        FavouriteBait = "None",
+        Chance = 1,
+        Weather = {
+            "Clear"
+        },
+        ProgressEfficiency = 0.4,
+        Hint = "Caught near Sunstone Island and can sometimes weigh over 1,000 kg.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "Summer"
+        },
+        Rarity = "Legendary",
+        WeightPool = {
+            4000,
+            10000
         },
         From = "Sunstone",
         Quips = {
-            "A Voltfish!",
-            "Woah, a Voltfish!",
-            "Ouu! A Voltfish!",
-            "It zapped me!"
+            "I think my backbone snapped..",
+            "Woah!!",
+            "OH MY! A SUNFISH?",
+            "A sunfish!",
+            "Woah, a Sunfish!",
+            "Nice tan..",
+            "How did I pull this up?",
+            "A SUNFISH!",
+            "MOLA MOLA!"
         },
-        XP = 850,
-        Price = 2200,
-        Resilience = 30
+        XP = 550,
+        Price = 1500,
+        Resilience = 70
     },
     ["Deeplight Footballfish"] = {
         Seasons = {
@@ -9346,64 +9505,63 @@ return {
         Price = 800,
         Resilience = 100
     },
-    ["Mahi Mahi"] = {
+    ["Longtail Bass"] = {
         Seasons = {
-            "Spring"
+            "Spring",
+            "Summer"
         },
-        Rarity = "Rare",
-        FavouriteBait = "None",
+        Rarity = "Uncommon",
+        FavouriteBait = "Shrimp",
         WeightPool = {
-            70,
-            150
+            20,
+            40
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 0.97647058963776, 0.34901961684227),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(1, 0.34901961684227, 0.34901961684227),
         Quips = {
-            "I caught a Mahi Mahi!",
-            "Woah, a Mahi Mahi!!",
-            "It's a Mahi Mahi!"
+            "A Longtail Bass!",
+            "I caught a Longtail Bass!"
         },
-        Hint = "Found near Sunstone Island.",
-        Description = "The Mahi Mahi is a vibrant, fast-swimming fish known for its striking colors of blue, green, and yellow. They can be found all around Sunstone island, and is prized by many anglers.",
-        Price = 150,
+        Hint = "Found in open ocean water and in Sunstone.",
+        Description = "The Longtail Bass is a striking species known for its elongated tail fin and vibrant coloration. It can be found all over the ocean, and is also a common catch of Sunstone Island!",
+        Price = 120,
         From = "Sunstone",
-        Chance = 20,
+        Chance = 50,
         Weather = {
-            "Clear",
-            "Windy"
+            "Foggy"
         },
-        XP = 90,
-        Resilience = 30
+        XP = 70,
+        Resilience = 70
     },
-    Floppy = {
-        SparkleColor = Color3.new(1, 0.63137257099152, 0.30588236451149),
-        Description = "The Floppy is an interesting fish in the Ancient Isle. Exhibiting signs of intense energy, attempting to catch the Floppy will not be an easy task. They spend most of the day swimming around the pond, ",
-        FavouriteBait = "Super Flakes",
-        Chance = 0.05,
+    ["White Perch"] = {
+        Seasons = {
+            "Spring",
+            "Autumn"
+        },
+        Rarity = "Common",
+        FavouriteBait = "Worm",
+        WeightPool = {
+            2,
+            12
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(1, 1, 1),
+        Quips = {
+            "A White Perch!",
+            "I caught a White Perch!",
+            "Woah, a White Perch!",
+            "Aww! A White Perch!"
+        },
+        Hint = "Found in Mushgrove.",
+        Description = "The Perch is a common freshwater fish that is best found in Mushgrove Swamp; Unlike the classic Perch, the White Perch has no noticeable stripes.",
+        Price = 80,
+        From = "Mushgrove",
+        Chance = 80,
         Weather = {
             "None"
         },
-        ProgressEfficiency = 0.9,
-        Hint = "Can be found in the waters of the Ancient Isle.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        Seasons = {
-            "Autumn"
-        },
-        Rarity = "Legendary",
-        WeightPool = {
-            80,
-            100
-        },
-        From = "Ancient Isle",
-        Quips = {
-            "A Floppy!",
-            "I caught a Floppy!",
-            "Woah! A Floppy!",
-            "Ouu! A Floppy!"
-        },
-        XP = 1200,
-        Price = 2000,
-        Resilience = 25
+        XP = 80,
+        Resilience = 70
     },
     Goldfish = {
         FavouriteTime = "Day",
@@ -9466,33 +9624,34 @@ return {
         Price = 12000,
         Resilience = 35
     },
-    ["Longtail Bass"] = {
+    Sweetfish = {
         Seasons = {
-            "Spring",
-            "Summer"
+            "Autumn"
         },
-        Rarity = "Uncommon",
-        FavouriteBait = "Shrimp",
+        Rarity = "Common",
+        FavouriteBait = "Worm",
         WeightPool = {
-            20,
-            40
+            2,
+            5
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.34901961684227, 0.34901961684227),
+        SparkleColor = Color3.new(0.61568629741669, 1, 0.37647059559822),
         Quips = {
-            "A Longtail Bass!",
-            "I caught a Longtail Bass!"
+            "A Sweetfish!",
+            "Is there a sour one?",
+            "Woah! A Sweetfish!",
+            "Hope it's not artificially sweet!"
         },
-        Hint = "Found in open ocean water and in Sunstone.",
-        Description = "The Longtail Bass is a striking species known for its elongated tail fin and vibrant coloration. It can be found all over the ocean, and is also a common catch of Sunstone Island!",
-        Price = 120,
+        Hint = "Found in the centre gap of Sunstone Island.",
+        Description = "The Sweetfish is known for its delicate sweet flavour, and its golden hue. They are very commonly found in short river-like gap of Sunstone Island.",
+        Price = 40,
         From = "Sunstone",
-        Chance = 50,
+        Chance = 75,
         Weather = {
-            "Foggy"
+            "Clear"
         },
-        XP = 70,
-        Resilience = 70
+        XP = 25,
+        Resilience = 85
     },
     ["Ancient Kraken"] = {
         FavouriteTime = "Night",
@@ -9527,34 +9686,37 @@ return {
         FavouriteBait = "Truffle Worm",
         Resilience = 1
     },
-    Sweetfish = {
-        Seasons = {
-            "Autumn"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Worm",
-        WeightPool = {
-            2,
-            5
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.61568629741669, 1, 0.37647059559822),
-        Quips = {
-            "A Sweetfish!",
-            "Is there a sour one?",
-            "Woah! A Sweetfish!",
-            "Hope it's not artificially sweet!"
-        },
-        Hint = "Found in the centre gap of Sunstone Island.",
-        Description = "The Sweetfish is known for its delicate sweet flavour, and its golden hue. They are very commonly found in short river-like gap of Sunstone Island.",
-        Price = 40,
-        From = "Sunstone",
-        Chance = 75,
+    Ringle = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(0.34117648005486, 0.87843137979507, 1),
+        Description = "The Ringle is an interesting and elusive fish that swims at extremely low and cold depths. They have a Rhino-like horn that they use to attack their prey. Most commonly found in the open ocean of Snowcap Island.",
+        FavouriteBait = "Bagel",
+        Chance = 0.01,
         Weather = {
-            "Clear"
+            "Clear",
+            "Foggy"
         },
-        XP = 25,
-        Resilience = 85
+        ProgressEfficiency = 0.5,
+        Hint = "Found in the open ocean of Snowcap Island during the night.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Mythical",
+        WeightPool = {
+            1,
+            4
+        },
+        From = "Snowcap",
+        Quips = {
+            "A Ringle!",
+            "I caught a Ringle!",
+            "A Ringle!!",
+            "Woah, a Ringle!"
+        },
+        XP = 500,
+        Price = 900,
+        Resilience = 80
     },
     ["Mushgrove Crab"] = {
         Seasons = {
@@ -9674,37 +9836,38 @@ return {
         XP = 60,
         Resilience = 45
     },
-    Ringle = {
-        FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.34117648005486, 0.87843137979507, 1),
-        Description = "The Ringle is an interesting and elusive fish that swims at extremely low and cold depths. They have a Rhino-like horn that they use to attack their prey. Most commonly found in the open ocean of Snowcap Island.",
-        FavouriteBait = "Bagel",
-        Chance = 0.01,
-        Weather = {
-            "Clear",
-            "Foggy"
-        },
-        ProgressEfficiency = 0.5,
-        Hint = "Found in the open ocean of Snowcap Island during the night.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+    ["Glacier Pike"] = {
         Seasons = {
-            "None"
+            "Autumn",
+            "Spring"
         },
-        Rarity = "Mythical",
+        Rarity = "Unusual",
+        FavouriteBait = "Insect",
         WeightPool = {
-            1,
-            4
+            12,
+            35
         },
-        From = "Snowcap",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.3647058904171, 0.54901963472366, 0.42745098471642),
         Quips = {
-            "A Ringle!",
-            "I caught a Ringle!",
-            "A Ringle!!",
-            "Woah, a Ringle!"
+            "A Glacier Pike!",
+            "I caught a Glacier Pike!",
+            "Woah! a Glacier Pike!",
+            "GLACIER PIKE!!!",
+            "I'd prefer a lance.",
+            "A Glacier Pike?!",
+            "That's a big Glacier Pike!"
         },
-        XP = 500,
-        Price = 900,
-        Resilience = 80
+        Hint = "Found in Snowcaps freshwater. Seems to prefer insect baits.",
+        Description = "Pikes are a long, predatory freshwater fish known for its aggressive nature and sharp teeth. Glacier Pikes are supremely found in cold freshwaters in Snowcap Island. They can be determined by their unique ice-coloured scales and longer fins.",
+        Price = 230,
+        From = "Snowcap",
+        Chance = 45,
+        Weather = {
+            "Rain"
+        },
+        XP = 90,
+        Resilience = 55
     },
     ["Frigid Taco"] = {
         FavouriteTime = "None",
@@ -9791,33 +9954,34 @@ return {
         XP = 280,
         Resilience = 40
     },
-    ["Sea Urchin"] = {
+    Blackfish = {
+        FavouriteTime = "Night",
         Seasons = {
             "None"
         },
-        Rarity = "Rare",
-        FavouriteBait = "None",
+        Rarity = "Uncommon",
+        FavouriteBait = "Worm",
         WeightPool = {
-            2,
-            9
+            5,
+            20
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.13333334028721, 0.12549020349979, 0.16470588743687),
+        SparkleColor = Color3.new(0.44313725829124, 0.44313725829124, 0.44313725829124),
         Quips = {
-            "A Sea Urchin!",
-            "I caught a Sea Urchin!",
-            "Woah, an Urchin!"
+            "A Blackfish!",
+            "I caught a Blackfish!",
+            "Oh, a Blackfish!"
         },
-        Hint = "Can be rarely caught while cage fishing, especially in the ocean.",
-        Description = "Sea Urchins are spiny, globular animals. Their hard shells are round and spiny. They use their spikes along with their tube feet to push themselves along the ocean terrain. Sea Urchins can be caught in any climate and traditionally only prefer sea water.",
-        Price = 320,
-        From = "Ocean",
-        Chance = 15,
+        Hint = "Found in Snowcap Pond during the night.",
+        Description = "Blackfish are small, black, nighttime swimmers that can be most commonly found in the cold the rocky waters of Snowcap Pond.",
+        Price = 100,
+        From = "Snowcap",
+        Chance = 80,
         Weather = {
-            "Foggy"
+            "None"
         },
-        XP = 80,
-        Resilience = 200
+        XP = 100,
+        Resilience = 60
     },
     ["Crowned Anglerfish"] = {
         FavouriteTime = "Night",
@@ -9921,64 +10085,65 @@ return {
         XP = 150,
         Resilience = 65
     },
-    Blackfish = {
+    ["Aurora Trout"] = {
         FavouriteTime = "Night",
-        Seasons = {
-            "None"
-        },
-        Rarity = "Uncommon",
-        FavouriteBait = "Worm",
-        WeightPool = {
-            5,
-            20
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.44313725829124, 0.44313725829124, 0.44313725829124),
-        Quips = {
-            "A Blackfish!",
-            "I caught a Blackfish!",
-            "Oh, a Blackfish!"
-        },
-        Hint = "Found in Snowcap Pond during the night.",
-        Description = "Blackfish are small, black, nighttime swimmers that can be most commonly found in the cold the rocky waters of Snowcap Pond.",
-        Price = 100,
-        From = "Snowcap",
-        Chance = 80,
-        Weather = {
-            "None"
-        },
-        XP = 100,
-        Resilience = 60
-    },
-    Bluefish = {
-        FavouriteTime = "Day",
-        Seasons = {
-            "Summer"
-        },
-        Rarity = "Unusual",
-        FavouriteBait = "Flakes",
-        WeightPool = {
-            4,
-            9
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.2352941185236, 0.24705882370472, 1),
-        Quips = {
-            "Woah, a Bluefish!",
-            "A Bluefish!",
-            "I caught a Bluefish!",
-            "Aw! I caught a Bluefish!"
-        },
-        Hint = "Swims quietly in Keepers Altar during the day.",
-        Description = "Bluefish are found inside Keepers Altar. They can inhabit some of the powerful keepers power that is present in Keepers Altars water. They are only awake during the day, as the power of the Altar is too much for them to handle during the night.",
-        Price = 65,
-        From = "Keepers Altar",
-        Chance = 40,
+        SparkleColor = Color3.new(0.63921570777893, 1, 0.78823530673981),
+        Description = "A radiant trout with iridescent scales that glow faintly, resembling the northern lights.",
+        FavouriteBait = "Truffle Worm",
+        Chance = 0.5,
         Weather = {
             "Clear"
         },
-        XP = 75,
-        Resilience = 34
+        ProgressEfficiency = 0.6,
+        Hint = "Only appears when the aurora shimmers above the canal.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "Winter"
+        },
+        Rarity = "Mythical",
+        WeightPool = {
+            2000,
+            4000
+        },
+        From = "Cryogenic Canal",
+        Quips = {
+            "AN AURORA TROUT!",
+            "LIKE THE NORTHERN LIGHTS!",
+            "MAGICAL!"
+        },
+        XP = 2000,
+        Price = 6000,
+        Resilience = 15
+    },
+    Bluegill = {
+        Seasons = {
+            "Summer",
+            "Spring"
+        },
+        Rarity = "Common",
+        FavouriteBait = "Insect",
+        WeightPool = {
+            1,
+            6
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.58431375026703, 1, 0.73725491762161),
+        Quips = {
+            "A Bluegill!",
+            "But I pinked the Red Pill!",
+            "I caught a Bluegill!!",
+            "Lovely, a Bluegill!"
+        },
+        Hint = "Found in saltwater\xE2\x80\x99s near Snowcap.",
+        Description = "A small, round freshwater fish with bright blue and orange hues, easily recognized by its distinct gill spot. It can be found all over the waters of Snowcap.",
+        Price = 60,
+        From = "Snowcap",
+        Chance = 85,
+        Weather = {
+            "Clear"
+        },
+        XP = 90,
+        Resilience = 90
     },
     Eel = {
         FavouriteTime = "Night",
@@ -10303,35 +10468,38 @@ return {
         XP = 120,
         Resilience = 75
     },
-    ["Molten Banshee"] = {
-        SparkleColor = Color3.new(1, 0.36078432202339, 0.10980392247438),
-        Description = "The Molten Banshee is a complex fish of unknown terrestrial origin, that has resided inside the Roslit Volcano. It possesses a torpedo-like body with many sharp mandibles and scorching hot encrustments. They are rumored to have possibly come from another planet, and may be a bio-mechanical lifeform.",
-        FavouriteBait = "Truffle Worm",
-        Chance = 0.01,
+    ["Obsidian Salmon"] = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(0.40000000596046, 0, 1),
+        Description = "The Obsidian Salmon is an extremely rare breed of Sockeye Salmon. The Obsidian Salmon breeds extremely deep in the heart of Roslit Volcano. They are extremely strong and are twice as dense as a common Sockeye Salmon.",
+        FavouriteBait = "Coal",
+        Chance = 3,
         Weather = {
-            "Clear"
+            "None"
         },
-        ProgressEfficiency = 0.65,
+        ProgressEfficiency = 0.9,
         Hint = "???",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         Seasons = {
-            "Summer"
+            "Winter"
         },
-        Rarity = "Exotic",
+        Rarity = "Legendary",
         WeightPool = {
-            3000,
-            5500
+            40,
+            180
         },
         From = "Roslit Volcano",
         Quips = {
-            "A Molten Banshee!",
-            "WOAH! A Molten Banshee!!",
-            "MOLTEN BANSHEEEEEEEEE",
-            "I caught a Molten Banshee!!"
+            "Obsidian Salmoff!",
+            "Woah! An Obsidian Salmon!",
+            "Awesome! An Obsidian Salmon",
+            "An Obsidian Salmon!",
+            "Woah, An Obsidian Salmon!",
+            "A Salmon!..? Made of obsidian?"
         },
-        XP = 2000,
-        Price = 6500,
-        Resilience = 40
+        XP = 300,
+        Price = 600,
+        Resilience = 15
     },
     ["Depth Octopus"] = {
         FavouriteTime = "Day",
@@ -10478,38 +10646,33 @@ return {
         XP = 25,
         Resilience = 70
     },
-    ["Obsidian Salmon"] = {
-        FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.40000000596046, 0, 1),
-        Description = "The Obsidian Salmon is an extremely rare breed of Sockeye Salmon. The Obsidian Salmon breeds extremely deep in the heart of Roslit Volcano. They are extremely strong and are twice as dense as a common Sockeye Salmon.",
-        FavouriteBait = "Coal",
-        Chance = 3,
-        Weather = {
+    ["Sea Urchin"] = {
+        Seasons = {
             "None"
         },
-        ProgressEfficiency = 0.9,
-        Hint = "???",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        Seasons = {
-            "Winter"
-        },
-        Rarity = "Legendary",
+        Rarity = "Rare",
+        FavouriteBait = "None",
         WeightPool = {
-            40,
-            180
+            2,
+            9
         },
-        From = "Roslit Volcano",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.13333334028721, 0.12549020349979, 0.16470588743687),
         Quips = {
-            "Obsidian Salmoff!",
-            "Woah! An Obsidian Salmon!",
-            "Awesome! An Obsidian Salmon",
-            "An Obsidian Salmon!",
-            "Woah, An Obsidian Salmon!",
-            "A Salmon!..? Made of obsidian?"
+            "A Sea Urchin!",
+            "I caught a Sea Urchin!",
+            "Woah, an Urchin!"
         },
-        XP = 300,
-        Price = 600,
-        Resilience = 15
+        Hint = "Can be rarely caught while cage fishing, especially in the ocean.",
+        Description = "Sea Urchins are spiny, globular animals. Their hard shells are round and spiny. They use their spikes along with their tube feet to push themselves along the ocean terrain. Sea Urchins can be caught in any climate and traditionally only prefer sea water.",
+        Price = 320,
+        From = "Ocean",
+        Chance = 15,
+        Weather = {
+            "Foggy"
+        },
+        XP = 80,
+        Resilience = 200
     },
     ["Green Energy Crystal"] = {
         Seasons = {
@@ -10537,35 +10700,35 @@ return {
         XP = 250,
         Resilience = 100
     },
-    Pyrogrub = {
-        SparkleColor = Color3.new(1, 0.59215688705444, 0.1803921610117),
-        Description = "The Pyrogrub is a fearsome, lava swimming eel that thrives in the most volcanic of environments. The Pyrogrub sports thick dragon-like scales which allow it's inner body to not react to any form of outside temperature.",
+    ["Ember Snapper"] = {
+        Seasons = {
+            "Summer"
+        },
+        Rarity = "Unusual",
         FavouriteBait = "Coal",
-        Chance = 25,
+        WeightPool = {
+            60,
+            120
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.74901962280273, 0.15294118225574, 0.098039217293262),
+        Quips = {
+            "An Ember Snapper!",
+            "Woah! I caught an Ember Snapper!",
+            "I caught an Ember Snapper!",
+            "Ember Snapper!!!",
+            "It burns!"
+        },
+        Hint = "Found in volcanic regions.",
+        Description = "The Ember Snapper is a lava swimming fish with a resemblance to the salt water 'Red Snapper'. The Ember Snapper is acute in volcanic habitats due to their thick skin and strong dorsal fins.",
+        Price = 200,
+        From = "Roslit Volcano",
+        Chance = 50,
         Weather = {
             "None"
         },
-        ProgressEfficiency = 0.8,
-        Hint = "Found in volcanic regions.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        Seasons = {
-            "Winter"
-        },
-        Rarity = "Rare",
-        WeightPool = {
-            300,
-            600
-        },
-        From = "Roslit Volcano",
-        Quips = {
-            "A Pyrogrub!",
-            "I caught a Pyrogrub!",
-            "Woah, a Pyrogrub!",
-            "What the?!"
-        },
         XP = 120,
-        Price = 340,
-        Resilience = 25
+        Resilience = 40
     },
     ["Frostbite Flounder"] = {
         FavouriteTime = "None",
@@ -10682,140 +10845,84 @@ return {
         Price = 1100,
         Resilience = 70
     },
-    ["Ember Snapper"] = {
-        Seasons = {
-            "Summer"
-        },
-        Rarity = "Unusual",
-        FavouriteBait = "Coal",
-        WeightPool = {
-            60,
-            120
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.74901962280273, 0.15294118225574, 0.098039217293262),
-        Quips = {
-            "An Ember Snapper!",
-            "Woah! I caught an Ember Snapper!",
-            "I caught an Ember Snapper!",
-            "Ember Snapper!!!",
-            "It burns!"
-        },
-        Hint = "Found in volcanic regions.",
-        Description = "The Ember Snapper is a lava swimming fish with a resemblance to the salt water 'Red Snapper'. The Ember Snapper is acute in volcanic habitats due to their thick skin and strong dorsal fins.",
-        Price = 200,
-        From = "Roslit Volcano",
-        Chance = 50,
-        Weather = {
-            "None"
-        },
-        XP = 120,
-        Resilience = 40
-    },
-    ["Volcanic Geode"] = {
-        SparkleColor = Color3.new(1, 1, 1),
-        Description = "The Volcanic Geode encases a magma crystal core, preserving its contents with an amber-like quality. Within this geode, you might find a trove of rare or extinct treasures\xE2\x80\x94 it's like a volcanic Christmas!",
-        FavouriteBait = "Magnet",
-        Chance = 17,
-        Weather = {
-            "None"
-        },
-        XP = 20,
-        Hint = "Chipped off a volcanic geode.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.crate,
-        Seasons = {
-            "None"
-        },
-        Rarity = "Rare",
-        WeightPool = {
-            200,
-            200
-        },
-        BaitContents = {
-            "Coal",
-            "Coal",
-            "Coal",
-            "Coal",
-            "Maggot",
-            "Maggot",
-            "Minnow",
-            "Truffle Worm",
-            "Coal",
-            "Night Shrimp",
-            "Rapid Catcher",
-            "instant Catcher",
-            "Super Flakes",
-            "Night Shrimp",
-            "Rapid Catcher",
-            "Super Flakes"
-        },
-        CrateType = "All",
-        CoinContents = {
-            150,
-            500
-        },
-        IsCrate = true,
-        FishContents = {
-            "Ember Snapper",
-            "Pyrogrub",
-            "Sturgeon",
-            "Magma Tang",
-            "Alligator Gar",
-            "Pufferfish",
-            "Sea Urchin",
-            "Sea Urchin",
-            "Perch",
-            "Perch",
-            "Perch",
-            "Angelfish",
-            "Rock",
-            "Rock",
-            "Rock",
-            "Magma Tang"
-        },
-        From = "Roslit Volcano",
-        Quips = {
-            "Ooo, shiny!",
-            "A rock...?!",
-            "Woah! Glowy thing!",
-            "A Geode!",
-            "What's this thing?"
-        },
-        Price = 200,
-        BuyMult = 3,
-        Resilience = 120
-    },
-    Shrimp = {
+    ["Ancient Eel"] = {
         FavouriteTime = "Night",
+        SparkleColor = Color3.new(0.20000000298023, 0.14509804546833, 0.49411764740944),
+        Description = "A long, snake-like eel with glowing patterns and a menacing, ancient presence. This is one of the oldest creatures known to man, with it dating back to 3400 BCE.",
+        FavouriteBait = "Coal",
+        Chance = 0.4,
+        Weather = {
+            "None"
+        },
+        ProgressEfficiency = 0.7,
+        Hint = "Found in deep ocean caves during the Night.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
         Seasons = {
             "Spring",
-            "Autumn"
+            "Summer"
         },
-        Rarity = "Common",
+        Rarity = "Legendary",
+        WeightPool = {
+            1000,
+            2000
+        },
+        From = "The Depths",
+        Quips = {
+            "A-A-Ancient Eel?!"
+        },
+        XP = 350,
+        Price = 1500,
+        Resilience = 10
+    },
+    ["Golden Sea Pearl"] = {
+        SparkleColor = Color3.new(1, 0.8941176533699, 0.50980395078659),
+        Description = "A strikingly shiny pearl, rumored to have originated from the deepest depths of Atlantis.",
         FavouriteBait = "None",
+        Chance = 0.2,
+        Weather = {
+            "None"
+        },
+        XP = 600,
+        Hint = "From catching Clams.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Exotic",
         WeightPool = {
             1,
-            2
+            4
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.419607847929, 0.37647059559822),
-        Quips = {
-            "A Shrimp!",
-            "Woah! A Shrimp",
-            "Awesome!",
-            "A Shrimp!",
-            "Ou! A Shrimpy!"
-        },
-        Hint = "Caught at night in deep oceans in crab cages.",
-        Description = "Shrimp are small, versatile crustaceans that are most active from spring to autumn, and can be found in an abundance in deep oceans. Shrimp are predominantly nocturnal, making night fishing the most effective time.",
-        Price = 45,
-        From = "Ocean",
-        Chance = 45,
+        From = "Roslit",
+        Quips = {},
+        IsPearl = true,
+        Price = 3500,
+        Resilience = 100
+    },
+    ["Aurora Pearl"] = {
+        SparkleColor = Color3.new(0.41568627953529, 1, 0.73725491762161),
+        Description = "The colors and light of the Aurora Borealis is prevalent within this glowing pearl.",
+        FavouriteBait = "None",
+        Chance = 2.5,
         Weather = {
-            "Rain"
+            "None"
         },
-        XP = 35,
-        Resilience = 200
+        XP = 0,
+        Hint = "From catching Clams.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Mythical",
+        WeightPool = {
+            1,
+            4
+        },
+        From = "Roslit",
+        Quips = {},
+        IsPearl = true,
+        Price = 2250,
+        Resilience = 100
     },
     Ice = {
         Seasons = {
@@ -11020,11 +11127,11 @@ return {
         XP = 75,
         Resilience = 100
     },
-    ["Aurora Pearl"] = {
-        SparkleColor = Color3.new(0.41568627953529, 1, 0.73725491762161),
-        Description = "The colors and light of the Aurora Borealis is prevalent within this glowing pearl.",
+    ["Deep Pearl"] = {
+        SparkleColor = Color3.new(0.32156863808632, 0.15294118225574, 1),
+        Description = "A gloomy pearl embued with the essence of the deep ocean.",
         FavouriteBait = "None",
-        Chance = 2.5,
+        Chance = 5,
         Weather = {
             "None"
         },
@@ -11034,7 +11141,7 @@ return {
         Seasons = {
             "None"
         },
-        Rarity = "Mythical",
+        Rarity = "Legendary",
         WeightPool = {
             1,
             4
@@ -11042,7 +11149,7 @@ return {
         From = "Roslit",
         Quips = {},
         IsPearl = true,
-        Price = 2250,
+        Price = 880,
         Resilience = 100
     },
     ["Swamp Scallop"] = {
@@ -11105,62 +11212,6 @@ return {
         XP = 300,
         Resilience = 40
     },
-    ["Manta Ray"] = {
-        FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.34117648005486, 0.46274510025978, 1),
-        Description = "Manta Rays are very elegant and remarkably large creatures that coast alongside the coral reefs of Roslit Bay. They move their wing-like fins in a wavy motion to generate enough speed to guide through the ocean. Manta Rays typically feed on small fish during the night.",
-        FavouriteBait = "Shrimp",
-        Chance = 0.01,
-        Weather = {
-            "None"
-        },
-        ProgressEfficiency = 0.9,
-        Hint = "Found gliding through Roslit Bays coral reef during the night.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        Seasons = {
-            "Summer"
-        },
-        Rarity = "Mythical",
-        WeightPool = {
-            7750,
-            10000
-        },
-        From = "Roslit",
-        Quips = {
-            "WOAH.. A Manta Ray!",
-            "I caught a Manta Ray!",
-            "Woah.. A Manta Ray!!",
-            "Hol-ey Mol-ray!"
-        },
-        XP = 1000,
-        Price = 3000,
-        Resilience = 10
-    },
-    ["Deep Pearl"] = {
-        SparkleColor = Color3.new(0.32156863808632, 0.15294118225574, 1),
-        Description = "A gloomy pearl embued with the essence of the deep ocean.",
-        FavouriteBait = "None",
-        Chance = 5,
-        Weather = {
-            "None"
-        },
-        XP = 0,
-        Hint = "From catching Clams.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        Seasons = {
-            "None"
-        },
-        Rarity = "Legendary",
-        WeightPool = {
-            1,
-            4
-        },
-        From = "Roslit",
-        Quips = {},
-        IsPearl = true,
-        Price = 880,
-        Resilience = 100
-    },
     Axolotl = {
         FavouriteTime = "Night",
         SparkleColor = Color3.new(1, 0.5137255191803, 0.5137255191803),
@@ -11193,6 +11244,64 @@ return {
         XP = 550,
         Price = 1000,
         Resilience = 75
+    },
+    ["Dumbo Octopus"] = {
+        SparkleColor = Color3.new(1, 0.55686277151108, 0.35294118523598),
+        Description = "The Dumbo Octopus is a deep-sea dweller, named for its ear like fins that resemble the ears of Disney's famous elephant character. With a soft, gelatinous body and gentle movements, it glides through the oceans and coral reefs of Roslit Bay.",
+        FavouriteBait = "Worm",
+        Chance = 0.1,
+        Weather = {
+            "Rain"
+        },
+        ProgressEfficiency = 0.85,
+        Hint = "Caught in Roslit Bays coral reef.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        Seasons = {
+            "Winter"
+        },
+        Rarity = "Legendary",
+        WeightPool = {
+            15,
+            40
+        },
+        From = "Roslit",
+        Quips = {
+            "Woah, I caught a Dumbo!",
+            "A Dumbo Octopus!",
+            "No way! A Dumbo Octupus!"
+        },
+        XP = 400,
+        Price = 900,
+        Resilience = 30
+    },
+    ["Marsh Gar"] = {
+        Seasons = {
+            "Winter"
+        },
+        Rarity = "Rare",
+        FavouriteBait = "Fish Head",
+        WeightPool = {
+            170,
+            380
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.70588237047195, 0.14117647707462, 0.14117647707462),
+        Quips = {
+            "A Gar!",
+            "I caught a Marsh Gar!",
+            "Woah! A Marsh Gar!",
+            "Oh my Gar!"
+        },
+        Hint = "Found under the bridges of Mushgrove Swamp.",
+        Description = "The Marsh Gar is a large vicious marsh water fish that can be found in Mushgrove Swamp. March Gar are extremely strong hunters, using their whiskers to sense prey in foggy waters.",
+        Price = 280,
+        From = "Mushgrove",
+        Chance = 30,
+        Weather = {
+            "Foggy"
+        },
+        XP = 100,
+        Resilience = 30
     },
     ["Barbed Shark"] = {
         SparkleColor = Color3.new(0.44705882668495, 0.22745098173618, 1),
@@ -11465,65 +11574,58 @@ return {
         Price = 4000,
         Resilience = 20
     },
-    Alligator = {
-        FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.60000002384186, 1, 0.45490196347237),
-        Description = "The Alligator is a massive, fearsome reptile known for its powerful bite and armoured body. Found in Mushgrove Swamp, Alligators are the apex predator with a stealthy and ambush-based hunting style.",
-        FavouriteBait = "Fish Head",
-        Chance = 0.9,
+    ["Rose Pearl"] = {
+        SparkleColor = Color3.new(1, 0.78823530673981, 0.93333333730698),
+        Description = "A pearl with a powerful pink hue.",
+        FavouriteBait = "None",
+        Chance = 25,
         Weather = {
-            "Foggy, Rain"
+            "None"
         },
-        ProgressEfficiency = 0.8,
-        Hint = "Found in Mushgrove Swamp during the night.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
-        Seasons = {
-            "Spring"
-        },
-        Rarity = "Legendary",
-        WeightPool = {
-            1500,
-            3000
-        },
-        From = "Mushgrove",
-        Quips = {
-            "WOAH!!",
-            "OH MY GOD!!",
-            "AN ALLIGATOR!",
-            "WHAT????"
-        },
-        XP = 400,
-        Price = 700,
-        Resilience = 15
-    },
-    Arapaima = {
+        XP = 0,
+        Hint = "From catching Clams.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
         Seasons = {
             "None"
         },
-        Rarity = "Rare",
-        FavouriteBait = "Minnow",
+        Rarity = "Unusual",
         WeightPool = {
-            1000,
-            2000
+            1,
+            4
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.60392159223557, 0.15294118225574, 0.15294118225574),
-        Quips = {
-            "An Arapaima!",
-            "I caught an Arapaima!",
-            "Woah, an Arapaima!"
-        },
-        Hint = "Found in Roslit Bays freshwater during the day.",
-        Description = "Arapaima are massive freshwater fish with large, broad bodies and a distinctive, armor-like scaled appearance. They have a unique respiratory system that allows them to breathe air, as well as gills.",
-        Price = 250,
         From = "Roslit",
-        Chance = 15,
-        Weather = {
-            "Rain",
-            "Foggy"
+        Quips = {},
+        IsPearl = true,
+        Price = 145,
+        Resilience = 100
+    },
+    ["Yellow Boxfish"] = {
+        FavouriteTime = "Day",
+        Seasons = {
+            "None"
         },
-        XP = 150,
-        Resilience = 30
+        Rarity = "Unusual",
+        FavouriteBait = "Seaweed",
+        WeightPool = {
+            5,
+            20
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(1, 0.87058824300766, 0.22352941334248),
+        Quips = {
+            "Ouu a Yellow Boxfish!",
+            "Woah, a Yellow Boxfish!"
+        },
+        Hint = "Found in Roslit Bays coral reef.",
+        Description = "Yellow Boxfish are known for their odd box-shaped body along with their vibrant yellow hue. Despite the cute appearance, they are incredibly toxic to the touch. They lurk around the coral reefs of Roslit Bay during the day.",
+        Price = 140,
+        From = "Roslit",
+        Chance = 18,
+        Weather = {
+            "Rain"
+        },
+        XP = 100,
+        Resilience = 40
     },
     ["Cyclone Mako"] = {
         FavouriteTime = "None",
@@ -11583,90 +11685,35 @@ return {
         XP = 60,
         Resilience = 85
     },
-    ["Slate Tuna"] = {
+    Palaeoniscum = {
+        FavouriteTime = "Night",
         Seasons = {
-            "Spring"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Super Flakes",
-        WeightPool = {
-            300,
-            600
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.50196081399918, 0.44313725829124, 0.678431391716),
-        Quips = {
-            "I caught a Slate Tuna!",
-            "Ouu! A Slate Tuna!",
-            "A Slate Tuna!",
-            "Slate Tuah!",
-            "Oh my slate!",
-            "Slate on that thang!"
-        },
-        Hint = "Found commonly in the Desolate Deep.",
-        Description = "With their Stone Exocranium on the front of their body, the invasive Slate Tuna is able to hunt and kill pray at alarmingly high rates. However, this stone noggin of theirs also ends up in slower swim speeds for this predator, resulting with this fish being lower down on the food chain in this deep chasm.",
-        Price = 70,
-        From = "Desolate Deep",
-        Chance = 1980,
-        Weather = {
-            "Clear",
-            "Rain"
-        },
-        XP = 25,
-        Resilience = 35
-    },
-    ["Rose Pearl"] = {
-        SparkleColor = Color3.new(1, 0.78823530673981, 0.93333333730698),
-        Description = "A pearl with a powerful pink hue.",
-        FavouriteBait = "None",
-        Chance = 25,
-        Weather = {
-            "None"
-        },
-        XP = 0,
-        Hint = "From catching Clams.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        Seasons = {
-            "None"
+            "Spring",
+            "Autumn"
         },
         Rarity = "Unusual",
+        FavouriteBait = "Fish Head",
         WeightPool = {
-            1,
-            4
+            25,
+            700
         },
-        From = "Roslit",
-        Quips = {},
-        IsPearl = true,
-        Price = 145,
-        Resilience = 100
-    },
-    ["Yellow Boxfish"] = {
-        FavouriteTime = "Day",
-        Seasons = {
-            "None"
-        },
-        Rarity = "Unusual",
-        FavouriteBait = "Seaweed",
-        WeightPool = {
-            5,
-            20
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.87058824300766, 0.22352941334248),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        SparkleColor = Color3.new(0.1294117718935, 0.41568627953529, 0.47843137383461),
         Quips = {
-            "Ouu a Yellow Boxfish!",
-            "Woah, a Yellow Boxfish!"
+            "A Palaeoniscum!",
+            "OMG A Palaeoniscum!",
+            "I can't believe I caught a Palaeoniscum!"
         },
-        Hint = "Found in Roslit Bays coral reef.",
-        Description = "Yellow Boxfish are known for their odd box-shaped body along with their vibrant yellow hue. Despite the cute appearance, they are incredibly toxic to the touch. They lurk around the coral reefs of Roslit Bay during the day.",
-        Price = 140,
-        From = "Roslit",
-        Chance = 18,
+        Hint = "Found within the Ancient Isle's waterfall.",
+        Description = "Palaeoniscum is an ancient ray-finned fish from the Early Permian period, approximately 290 million years ago. Known for its robust ganoid scales and streamlined body, it represents early actinopterygian evolution, the ancestor of most modern fish.",
+        Price = 125,
+        From = "Ancient Archives",
+        Chance = 40,
         Weather = {
-            "Rain"
+            "Clear"
         },
-        XP = 100,
-        Resilience = 40
+        XP = 35,
+        Resilience = 70
     },
     Squid = {
         FavouriteTime = "Night",
@@ -11696,6 +11743,64 @@ return {
         },
         XP = 95,
         Resilience = 45
+    },
+    ["Gilded Pearl"] = {
+        SparkleColor = Color3.new(1, 0.83529412746429, 0.42352941632271),
+        Description = "A golden pearl with a shiny appearance... Could this hold special powers within it...?",
+        FavouriteBait = "None",
+        Chance = 25,
+        Weather = {
+            "None"
+        },
+        XP = 0,
+        Hint = "From catching Clams.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Unusual",
+        WeightPool = {
+            1,
+            4
+        },
+        From = "Roslit",
+        Quips = {},
+        IsPearl = true,
+        Price = 120,
+        Resilience = 100
+    },
+    ["Blue Tang"] = {
+        FavouriteTime = "Day",
+        Seasons = {
+            "Spring",
+            "Summer"
+        },
+        Rarity = "Uncommon",
+        FavouriteBait = "Flakes",
+        WeightPool = {
+            3,
+            15
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.18823529779911, 0.27058824896812, 1),
+        Quips = {
+            "Ouu a Blue Tang!",
+            "Woah, a Blue Tang!",
+            "A Blue Tang!",
+            "I caught a Blue Tang!",
+            "I caught a Blue Tang!",
+            "Found her!"
+        },
+        Hint = "Found in Roslit Bays coral reef.",
+        Description = "The Blue Tang is most renowned for its vivid blue coloration and yellow tail. Often found alongside coral and see anemones inside the reef of Roslit Bay.\t\t\tBest paired with the Clownfish!",
+        Price = 90,
+        From = "Roslit",
+        Chance = 60,
+        Weather = {
+            "None"
+        },
+        XP = 90,
+        Resilience = 65
     },
     ["Titanfang Grouper"] = {
         FavouriteTime = "Night",
@@ -11818,38 +11923,36 @@ return {
         Price = 1200,
         Resilience = 5
     },
-    ["Blue Tang"] = {
-        FavouriteTime = "Day",
-        Seasons = {
-            "Spring",
-            "Summer"
-        },
-        Rarity = "Uncommon",
-        FavouriteBait = "Flakes",
-        WeightPool = {
-            3,
-            15
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.18823529779911, 0.27058824896812, 1),
-        Quips = {
-            "Ouu a Blue Tang!",
-            "Woah, a Blue Tang!",
-            "A Blue Tang!",
-            "I caught a Blue Tang!",
-            "I caught a Blue Tang!",
-            "Found her!"
-        },
-        Hint = "Found in Roslit Bays coral reef.",
-        Description = "The Blue Tang is most renowned for its vivid blue coloration and yellow tail. Often found alongside coral and see anemones inside the reef of Roslit Bay.\t\t\tBest paired with the Clownfish!",
-        Price = 90,
-        From = "Roslit",
-        Chance = 60,
+    Alligator = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(0.60000002384186, 1, 0.45490196347237),
+        Description = "The Alligator is a massive, fearsome reptile known for its powerful bite and armoured body. Found in Mushgrove Swamp, Alligators are the apex predator with a stealthy and ambush-based hunting style.",
+        FavouriteBait = "Fish Head",
+        Chance = 0.9,
         Weather = {
-            "None"
+            "Foggy, Rain"
         },
-        XP = 90,
-        Resilience = 65
+        ProgressEfficiency = 0.8,
+        Hint = "Found in Mushgrove Swamp during the night.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
+        Seasons = {
+            "Spring"
+        },
+        Rarity = "Legendary",
+        WeightPool = {
+            1500,
+            3000
+        },
+        From = "Mushgrove",
+        Quips = {
+            "WOAH!!",
+            "OH MY GOD!!",
+            "AN ALLIGATOR!",
+            "WHAT????"
+        },
+        XP = 400,
+        Price = 700,
+        Resilience = 15
     },
     ["White Bass"] = {
         FavouriteTime = "Day",
@@ -11913,123 +12016,6 @@ return {
         Price = 2000,
         Resilience = 50
     },
-    Perch = {
-        Seasons = {
-            "None"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Worm",
-        WeightPool = {
-            2,
-            12
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.46666666865349, 0.63921570777893, 0.30196079611778),
-        Quips = {
-            "A Perch!",
-            "I caught a Perch!",
-            "Woah, a Perch!",
-            "Aww! A Perch!"
-        },
-        Hint = "Found in freshwater of Roslit.",
-        Description = "The Perch is a common freshwater fish that is best found in Roslit Bays fresh water. They are known for their striped bodies and a playful behaviour.",
-        Price = 70,
-        From = "Roslit",
-        Chance = 80,
-        Weather = {
-            "Clear"
-        },
-        XP = 80,
-        Resilience = 70
-    },
-    ["Blistered Eel"] = {
-        SparkleColor = Color3.new(0.60392159223557, 0.85490196943283, 0.56078433990479),
-        Description = "Despite blistering skin, the Blistered Eel is capable of withstanding extreme temperatures.",
-        FavouriteBait = "Worm",
-        BlockPassiveCapture = true,
-        Chance = 80,
-        Weather = {
-            "Windy"
-        },
-        XP = 140,
-        Hint = "Only can be caught during Ashfall.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        Seasons = {
-            "None"
-        },
-        Rarity = "Limited",
-        WeightPool = {
-            115,
-            190
-        },
-        FromLimited = "Ashfall",
-        Quips = {
-            "Woah, a Blistered Eel!",
-            "It comes cooked!",
-            "It's well done!",
-            "Could use skin care..."
-        },
-        Price = 300,
-        IsLimitedBestiary = true,
-        Resilience = 45
-    },
-    Chub = {
-        FavouriteTime = "Day",
-        Seasons = {
-            "Spring",
-            "Summer"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Seaweed",
-        WeightPool = {
-            10,
-            30
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 1, 1),
-        Quips = {
-            "I caught a Chub!",
-            "Woah, a Chub!!"
-        },
-        Hint = "commonly caught in Roslit Pond.",
-        Description = "The Chub is a hardy and adaptable freshwater fish, typically found in Roslit Pond. The Chub is an easy catch for novice anglers and is thankfully a common catch.",
-        Price = 40,
-        From = "Roslit",
-        Chance = 100,
-        Weather = {
-            "None"
-        },
-        XP = 40,
-        Resilience = 80
-    },
-    ["Shortfin Mako Shark"] = {
-        FavouriteTime = "Night",
-        Seasons = {
-            "None"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Deep Coral",
-        WeightPool = {
-            250,
-            1000
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.bigbasic,
-        SparkleColor = Color3.new(0.27450981736183, 0.29803922772408, 0.49411764740944),
-        Quips = {
-            "WOAH! A SHORTFINNED MAKO!",
-            "OMG, IS THAT A SHORTFIN MAKO?"
-        },
-        Hint = "commonly caught in Forsaken Shores surrounding Ocean.",
-        Description = "The Shortfin Mako is a fast predator found in the forsaken ocean. Its speed and strength attract seasoned anglers.",
-        Price = 190,
-        From = "Forsaken Shores",
-        Chance = 100,
-        Weather = {
-            "Rain"
-        },
-        XP = 70,
-        Resilience = 80
-    },
     ["Whale Shark"] = {
         FavouriteTime = "Day",
         SparkleColor = Color3.new(0.73333334922791, 0.74509805440903, 1),
@@ -12063,6 +12049,37 @@ return {
         Price = 6500,
         Resilience = 50
     },
+    ["Blistered Eel"] = {
+        SparkleColor = Color3.new(0.60392159223557, 0.85490196943283, 0.56078433990479),
+        Description = "Despite blistering skin, the Blistered Eel is capable of withstanding extreme temperatures.",
+        FavouriteBait = "Worm",
+        BlockPassiveCapture = true,
+        Chance = 80,
+        Weather = {
+            "Windy"
+        },
+        XP = 140,
+        Hint = "Only can be caught during Ashfall.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            115,
+            190
+        },
+        FromLimited = "Ashfall",
+        Quips = {
+            "Woah, a Blistered Eel!",
+            "It comes cooked!",
+            "It's well done!",
+            "Could use skin care..."
+        },
+        Price = 300,
+        IsLimitedBestiary = true,
+        Resilience = 45
+    },
     ["Ancient Depth Serpent"] = {
         FavouriteTime = "Night",
         SparkleColor = Color3.new(0.10980392247438, 1, 0.39215686917305),
@@ -12090,6 +12107,34 @@ return {
         XP = 2200,
         Price = 8000,
         Resilience = 2
+    },
+    ["Shortfin Mako Shark"] = {
+        FavouriteTime = "Night",
+        Seasons = {
+            "None"
+        },
+        Rarity = "Common",
+        FavouriteBait = "Deep Coral",
+        WeightPool = {
+            250,
+            1000
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.bigbasic,
+        SparkleColor = Color3.new(0.27450981736183, 0.29803922772408, 0.49411764740944),
+        Quips = {
+            "WOAH! A SHORTFINNED MAKO!",
+            "OMG, IS THAT A SHORTFIN MAKO?"
+        },
+        Hint = "commonly caught in Forsaken Shores surrounding Ocean.",
+        Description = "The Shortfin Mako is a fast predator found in the forsaken ocean. Its speed and strength attract seasoned anglers.",
+        Price = 190,
+        From = "Forsaken Shores",
+        Chance = 100,
+        Weather = {
+            "Rain"
+        },
+        XP = 70,
+        Resilience = 80
     },
     ["Sea Pickle"] = {
         FavouriteTime = "Night",
@@ -12121,88 +12166,6 @@ return {
         },
         XP = 60,
         Resilience = 50
-    },
-    Amethyst = {
-        SparkleColor = Color3.new(0.61568629741669, 0.36078432202339, 1),
-        Description = "A purple variety of quartz with calming properties.",
-        FavouriteBait = "None",
-        Chance = 100,
-        Weather = {
-            "None"
-        },
-        XP = 35,
-        Hint = "From meteors.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        Seasons = {
-            "None"
-        },
-        Rarity = "Gemstone",
-        WeightPool = {
-            8,
-            16
-        },
-        FromMeteor = true,
-        From = "Ancient Isle",
-        Quips = {
-            "Ouu, shiny!"
-        },
-        Evaluation = "Amethyst forms in volcanic rock cavities called geodes, where mineral-rich water deposits quartz crystals over time. It was once as valuable as diamonds and associated with preventing overindulgence.",
-        Price = 150,
-        Resilience = 100
-    },
-    ["Bait Crate"] = {
-        SparkleColor = Color3.new(1, 1, 1),
-        Description = "A wooden crate with fabric over top to preserve the bait inside. Seemingly lost from a fishing boat of some kind. The bait is still alive and fresh. Therefore, finders keepers?- Opening it might give you an array of common and rare baits!",
-        FavouriteBait = "Magnet",
-        Chance = 15,
-        Weather = {
-            "None"
-        },
-        XP = 40,
-        Hint = "Fallen off of a fishing boat.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.crate,
-        Seasons = {
-            "None"
-        },
-        Rarity = "Uncommon",
-        WeightPool = {
-            80,
-            80
-        },
-        BaitContents = {
-            "Garbage",
-            "Garbage",
-            "Garbage",
-            "Shrimp",
-            "Seaweed",
-            "Bagel",
-            "Squid",
-            "Magnet",
-            "Worm",
-            "Minnow",
-            "Flakes",
-            "Insect",
-            "Fish Head",
-            "Rapid Catcher",
-            "instant Catcher",
-            "Super Flakes",
-            "Maggot"
-        },
-        IsCrate = true,
-        CrateType = "Bait",
-        From = "None",
-        Quips = {
-            "A Crate of Bait!",
-            "A Bait Crate!",
-            "Woah! A Crate!",
-            "A Crate!",
-            "Who left this here?",
-            "Oh, the shrimps still moving?",
-            "A Crate full of Bait!"
-        },
-        Price = 75,
-        BuyMult = 1.6,
-        Resilience = 120
     },
     ["Great Hammerhead Shark"] = {
         FavouriteTime = "Day",
@@ -12268,6 +12231,153 @@ return {
         XP = 900,
         Price = 6000,
         Resilience = 8
+    },
+    Amethyst = {
+        SparkleColor = Color3.new(0.61568629741669, 0.36078432202339, 1),
+        Description = "A purple variety of quartz with calming properties.",
+        FavouriteBait = "None",
+        Chance = 100,
+        Weather = {
+            "None"
+        },
+        XP = 35,
+        Hint = "From meteors.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Gemstone",
+        WeightPool = {
+            8,
+            16
+        },
+        FromMeteor = true,
+        From = "Ancient Isle",
+        Quips = {
+            "Ouu, shiny!"
+        },
+        Evaluation = "Amethyst forms in volcanic rock cavities called geodes, where mineral-rich water deposits quartz crystals over time. It was once as valuable as diamonds and associated with preventing overindulgence.",
+        Price = 150,
+        Resilience = 100
+    },
+    ["Bait Crate"] = {
+        SparkleColor = Color3.new(1, 1, 1),
+        Description = "A wooden crate with fabric over top to preserve the bait inside. Seemingly lost from a fishing boat of some kind. The bait is still alive and fresh. Therefore, finders keepers?- Opening it might give you an array of common and rare baits!",
+        FavouriteBait = "Magnet",
+        Chance = 15,
+        Weather = {
+            "None"
+        },
+        XP = 40,
+        Hint = "Fallen off of a fishing boat.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.crate,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Uncommon",
+        WeightPool = {
+            80,
+            80
+        },
+        BaitContents = {
+            "Garbage",
+            "Garbage",
+            "Garbage",
+            "Shrimp",
+            "Seaweed",
+            "Bagel",
+            "Squid",
+            "Magnet",
+            "Worm",
+            "Minnow",
+            "Flakes",
+            "Insect",
+            "Fish Head",
+            "Rapid Catcher",
+            "Instant Catcher",
+            "Super Flakes",
+            "Maggot"
+        },
+        IsCrate = true,
+        CrateType = "Bait",
+        From = "None",
+        Quips = {
+            "A Crate of Bait!",
+            "A Bait Crate!",
+            "Woah! A Crate!",
+            "A Crate!",
+            "Who left this here?",
+            "Oh, the shrimps still moving?",
+            "A Crate full of Bait!"
+        },
+        Price = 75,
+        BuyMult = 1.6,
+        Resilience = 120
+    },
+    ["Crown Bass"] = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(0.79607844352722, 0.63921570777893, 0.27450981736183),
+        Description = "The Crown Bass is a special type of bass that is known for its vibrant colours, and its luminescent 'crown' on its head. They use this crown to attract prey, and see easily at night. They can be found all over the world in all sorts of salt waters, especially warmer waters during the night.",
+        FavouriteBait = "Squid",
+        Chance = 0.2,
+        Weather = {
+            "Foggy"
+        },
+        ProgressEfficiency = 0.8,
+        Hint = "In salt waters during the night. ",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        Seasons = {
+            "Summer"
+        },
+        Rarity = "Legendary",
+        WeightPool = {
+            20,
+            60
+        },
+        From = "Ocean",
+        Quips = {
+            "A Crown Bass!",
+            "I caught a Crown Bass!",
+            "Woah! A Crown Bass!",
+            "Ouu! A Crown Bass!"
+        },
+        XP = 700,
+        Price = 1200,
+        Resilience = 20
+    },
+    Moonfish = {
+        FavouriteTime = "Night",
+        SparkleColor = Color3.new(1, 0.47843137383461, 0.27450981736183),
+        Description = "The Moonfish is a sizable, flat, bony fish that inhabits deep and occasionally warm waters. While their behaviour resembles that of the Ocean Sunfish, Moonfish are far more aggressive, using their rock-hard skulls to charge at fish, boats, and swimmers.",
+        FavouriteBait = "Minnow",
+        Chance = 0.2,
+        Weather = {
+            "Clear"
+        },
+        ProgressEfficiency = 0.6,
+        Hint = "???",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "Winter"
+        },
+        Rarity = "Legendary",
+        WeightPool = {
+            2500,
+            5000
+        },
+        From = "Ocean",
+        Quips = {
+            "I think my backbone snapped..",
+            "Woah!!",
+            "OH MY! A MOONFISH?",
+            "A Moonfish!!",
+            "Woah, a Moonfish!!",
+            "How did I pull this up?",
+            "A Moonfish!!!"
+        },
+        XP = 900,
+        Price = 1800,
+        Resilience = 20
     },
     Tire = {
         Seasons = {
@@ -12460,36 +12570,35 @@ return {
         Price = 120,
         Resilience = 60
     },
-    Sailfish = {
-        SparkleColor = Color3.new(1, 0.94901961088181, 0.36862745881081),
-        Description = "Sailfish are known for their incredible speed, long bill, and their striking sail-like dorsal fin. It's sleek body is built for fast swimming, allowing it to dart through water in bursts of speed. They are found in tropical and warmer ocean waters.",
-        FavouriteBait = "Minnow",
-        Chance = 16,
-        Weather = {
-            "Windy",
-            "Clear"
-        },
-        XP = 300,
-        Hint = "Found in ocean water. Extremely strong.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
+    Anglerfish = {
+        FavouriteTime = "Night",
         Seasons = {
-            "Spring"
+            "Winter",
+            "Autumn"
         },
         Rarity = "Rare",
+        FavouriteBait = "Squid",
         WeightPool = {
-            400,
-            600
+            5,
+            20
         },
-        From = "Ocean",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        SparkleColor = Color3.new(0.71372550725937, 0.098039217293262, 0.098039217293262),
         Quips = {
-            "A Sailfish!",
-            "WOAH! A Sailfish!!",
-            "It's a Sailfish!",
-            "I caught a Sailfish!!"
+            "Woah, an Anglerfish!",
+            "No way! An anglerfish!",
+            "I caught an Anglerfish!"
         },
-        ViewportSizeOffset = 0.9,
-        Price = 800,
-        Resilience = 40
+        Hint = "Found in the far, deep ocean during the night.",
+        Description = "The anglerfish is a deep-sea predator known for it's bioluminescent lure that dangles in front of its mouth to attract prey. With its menacing appearance, sharp teeth, and eerie glow, the Anglerfish thrives in dark, deep waters, making it a rare and exciting catch in the Deep Ocean.",
+        Price = 230,
+        From = "Ocean",
+        Chance = 12,
+        Weather = {
+            "Foggy"
+        },
+        XP = 100,
+        Resilience = 35
     },
     ["Ember Perch"] = {
         Seasons = {
@@ -12548,35 +12657,35 @@ return {
         XP = 175,
         Resilience = 40
     },
-    Anglerfish = {
-        FavouriteTime = "Night",
+    Halibut = {
         Seasons = {
-            "Winter",
-            "Autumn"
+            "Summer",
+            "Spring"
         },
         Rarity = "Rare",
         FavouriteBait = "Squid",
         WeightPool = {
-            5,
-            20
+            1000,
+            2000
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.71372550725937, 0.098039217293262, 0.098039217293262),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.81176471710205, 0.50588238239288, 0.3647058904171),
         Quips = {
-            "Woah, an Anglerfish!",
-            "No way! An anglerfish!",
-            "I caught an Anglerfish!"
+            "A Halibut!",
+            "A Flatfish!",
+            "I Caught a Halibut!",
+            "Ou! A Halibut!"
         },
-        Hint = "Found in the far, deep ocean during the night.",
-        Description = "The anglerfish is a deep-sea predator known for it's bioluminescent lure that dangles in front of its mouth to attract prey. With its menacing appearance, sharp teeth, and eerie glow, the Anglerfish thrives in dark, deep waters, making it a rare and exciting catch in the Deep Ocean.",
-        Price = 230,
+        Hint = "Found on the floor ocean. Best found near Haddock.",
+        Description = "The Halibut is a large flatfish known for their impressive size and strength. They commonly feed on Haddock and can be found hunting near 'Haddock Rock' and in deep waters. ",
+        Price = 250,
         From = "Ocean",
-        Chance = 12,
+        Chance = 40,
         Weather = {
-            "Foggy"
+            "Rain"
         },
         XP = 100,
-        Resilience = 35
+        Resilience = 40
     },
     Anomalocaris = {
         FavouriteTime = "Night",
@@ -12701,96 +12810,6 @@ return {
         XP = 100,
         Resilience = 65
     },
-    Coelacanth = {
-        FavouriteTime = "Night",
-        Seasons = {
-            "Spring",
-            "Autumn"
-        },
-        Rarity = "Rare",
-        FavouriteBait = "None",
-        WeightPool = {
-            70,
-            100
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.29803922772408, 0.29803922772408, 0.29803922772408),
-        Quips = {
-            "Woah, a Coelacanth!",
-            "I caught a Coelacanth!",
-            "It's a Coelacanth!",
-            "Nice! It's a Coelacanth!"
-        },
-        Hint = "Found in the Deep Ocean.",
-        Description = "The Coelacanth is an ancient fish with a distinctive shape and strong swimming behaviours Known as a 'living fossil,' this fish was thought to be extinct until its rediscovery in 1938. Coelacanths are deep-sea dwellers, often found in underwater caves and steep slopes.",
-        Price = 370,
-        From = "Ocean",
-        Chance = 14,
-        Weather = {
-            "Clear"
-        },
-        XP = 300,
-        Resilience = 40
-    },
-    ["Sea Mine"] = {
-        Seasons = {
-            "None"
-        },
-        Rarity = "Mythical",
-        FavouriteBait = "None",
-        WeightPool = {
-            2000,
-            3250
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.40392157435417, 0.40392157435417, 1),
-        Quips = {
-            "A Sea Mine?!",
-            "How did this get down here?",
-            "I hope it doesn't explode!",
-            "Why do I hear beeping..?"
-        },
-        Hint = "Caught with crab cages in the Desolate Deep.",
-        Description = "An inactive naval sea mine that has somehow made its way down here. Caught in crab cages in the Desolate Deep.",
-        Price = 3000,
-        From = "Desolate Deep",
-        Chance = 1,
-        Weather = {
-            "Clear"
-        },
-        XP = 1000,
-        Resilience = 200
-    },
-    ["Nurse Shark"] = {
-        FavouriteTime = "Night",
-        Seasons = {
-            "Summer",
-            "Autumn"
-        },
-        Rarity = "Unusual",
-        FavouriteBait = "Minnow",
-        WeightPool = {
-            1000,
-            1500
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 0.59607845544815, 0.59607845544815),
-        Quips = {
-            "A Nurse Shark!",
-            "Woah! A Nurse Shark!",
-            "I Caught a Nurse Shark!"
-        },
-        Hint = "Caught at night in the ocean.",
-        Description = "Nurse Sharks are a nocturnal bottom feeder, spending most of their time on the ocean floor or in small crevices. Despite their appearance, they are gentle and slow-moving. Nurse Sharks can 'suction feed', using their powerful jaws to scrape algae off surfaces.",
-        Price = 200,
-        From = "Ocean",
-        Chance = 35,
-        Weather = {
-            "None"
-        },
-        XP = 100,
-        Resilience = 35
-    },
     Cod = {
         Seasons = {
             "Winter",
@@ -12821,6 +12840,97 @@ return {
         },
         XP = 70,
         Resilience = 70
+    },
+    ["Sea Mine"] = {
+        Seasons = {
+            "None"
+        },
+        Rarity = "Mythical",
+        FavouriteBait = "None",
+        WeightPool = {
+            2000,
+            3250
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        SparkleColor = Color3.new(0.40392157435417, 0.40392157435417, 1),
+        Quips = {
+            "A Sea Mine?!",
+            "How did this get down here?",
+            "I hope it doesn't explode!",
+            "Why do I hear beeping..?"
+        },
+        Hint = "Caught with crab cages in the Desolate Deep.",
+        Description = "An inactive naval sea mine that has somehow made its way down here. Caught in crab cages in the Desolate Deep.",
+        Price = 3000,
+        From = "Desolate Deep",
+        Chance = 1,
+        Weather = {
+            "Clear"
+        },
+        XP = 1000,
+        Resilience = 200
+    },
+    Shrimp = {
+        FavouriteTime = "Night",
+        Seasons = {
+            "Spring",
+            "Autumn"
+        },
+        Rarity = "Common",
+        FavouriteBait = "None",
+        WeightPool = {
+            1,
+            2
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(1, 0.419607847929, 0.37647059559822),
+        Quips = {
+            "A Shrimp!",
+            "Woah! A Shrimp",
+            "Awesome!",
+            "A Shrimp!",
+            "Ou! A Shrimpy!"
+        },
+        Hint = "Caught at night in deep oceans in crab cages.",
+        Description = "Shrimp are small, versatile crustaceans that are most active from spring to autumn, and can be found in an abundance in deep oceans. Shrimp are predominantly nocturnal, making night fishing the most effective time.",
+        Price = 45,
+        From = "Ocean",
+        Chance = 45,
+        Weather = {
+            "Rain"
+        },
+        XP = 35,
+        Resilience = 200
+    },
+    ["Sea Bass"] = {
+        Seasons = {
+            "Spring",
+            "Summer"
+        },
+        Rarity = "Common",
+        FavouriteBait = "Squid",
+        WeightPool = {
+            20,
+            60
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.79607844352722, 0.79607844352722, 0.79607844352722),
+        Quips = {
+            "A Sea Bass!",
+            "I caught a Sea Bass!",
+            "Woah! A Sea Bass!",
+            "Ouu! A Bass!"
+        },
+        Hint = "In salt waters.",
+        Description = "The Sea Bass is a popular catch for many anglers, known for its elongated body and aggressive fighting behaviour when hooked. They can be found all over the world in all sorts of salt waters.",
+        Price = 95,
+        From = "Ocean",
+        Chance = 75,
+        Weather = {
+            "Clear"
+        },
+        XP = 90,
+        Resilience = 80
     },
     ["Sockeye Salmon"] = {
         SparkleColor = Color3.new(1, 0.62745100259781, 0.62745100259781),
@@ -12942,34 +13052,37 @@ return {
         Price = 4500,
         Resilience = 15
     },
-    ["Ancient Eel"] = {
+    Catfish = {
         FavouriteTime = "Night",
-        SparkleColor = Color3.new(0.20000000298023, 0.14509804546833, 0.49411764740944),
-        Description = "A long, snake-like eel with glowing patterns and a menacing, ancient presence. This is one of the oldest creatures known to man, with it dating back to 3400 BCE.",
-        FavouriteBait = "Coal",
-        Chance = 0.4,
-        Weather = {
-            "None"
-        },
-        ProgressEfficiency = 0.7,
-        Hint = "Found in deep ocean caves during the Night.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
         Seasons = {
-            "Spring",
+            "Autumn",
             "Summer"
         },
-        Rarity = "Legendary",
+        Rarity = "Rare",
+        FavouriteBait = "Worm",
         WeightPool = {
-            1000,
-            2000
+            50,
+            150
         },
-        From = "The Depths",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(1, 1, 1),
         Quips = {
-            "A-A-Ancient Eel?!"
+            "A Catfish!",
+            "Meowwww!",
+            "Where is Dogfish?",
+            "Kitty Cat Meow Meow",
+            "I caught a Catfish!"
         },
-        XP = 350,
-        Price = 1500,
-        Resilience = 10
+        Hint = "Can be found in Mushgrove Swamp during the night.",
+        Description = "The Catfish is a large, whiskered bottom-dweller with a sturdy build and smooth, scale-less skin. Known for its whisker-like barbels, which help it sense food in murky waters of Mushgrove Swamp, the catfish is a resilient and adaptable fish.",
+        Price = 300,
+        From = "Mushgrove",
+        Chance = 20,
+        Weather = {
+            "Foggy"
+        },
+        XP = 120,
+        Resilience = 30
     },
     ["Suckermouth Catfish"] = {
         FavouriteTime = "Day",
@@ -13143,94 +13256,37 @@ return {
         XP = 20,
         Resilience = 90
     },
-    Bowfin = {
-        FavouriteTime = "Night",
+    ["Pale Tang"] = {
         Seasons = {
             "Spring",
             "Summer"
         },
         Rarity = "Uncommon",
-        FavouriteBait = "Worm",
+        FavouriteBait = "Bagel",
         WeightPool = {
-            30,
-            60
+            3,
+            15
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(0.74117648601532, 0.49019607901573, 0.37254902720451),
+        SparkleColor = Color3.new(1, 0.73333334922791, 0.73333334922791),
         Quips = {
-            "A Mudfish!",
-            "Ouu, A Mudfish!",
-            "I caught a Mudfish!"
+            "Ouu a Pale Tang!",
+            "Woah, a Pale Tang!",
+            "A Pale Tang!",
+            "I caught a Pale Tang!",
+            "I caught a Pale Tang!",
+            "Found her!.. But albino!"
         },
-        Hint = "Caught in Mushgrove Swamp at night.",
-        Description = "The Mudfish, also known as Bowfin, is a resilient, ancient fish species known for its ability to survive in harsh, low-oxygen environments like swamps and muddy waters. They can be found all over Mushgrove Swamp, especially lurking in dense vegetation and during the night.",
+        Hint = "Found in Keepers Altar.",
+        Description = "The Pale Tang is a relatively common catch within Keepers Altar. Very similar to other Tangs such as the Red Tang, just pale!- No one is sure of the Pale Tangs origin, and how it got accustomed to the Keepers Altar.",
         Price = 100,
-        From = "Mushgrove",
-        Chance = 60,
-        Weather = {
-            "Rain"
-        },
-        XP = 50,
-        Resilience = 60
-    },
-    ["White Perch"] = {
-        Seasons = {
-            "Spring",
-            "Autumn"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Worm",
-        WeightPool = {
-            2,
-            12
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 1, 1),
-        Quips = {
-            "A White Perch!",
-            "I caught a White Perch!",
-            "Woah, a White Perch!",
-            "Aww! A White Perch!"
-        },
-        Hint = "Found in Mushgrove.",
-        Description = "The Perch is a common freshwater fish that is best found in Mushgrove Swamp; Unlike the classic Perch, the White Perch has no noticeable stripes.",
-        Price = 80,
-        From = "Mushgrove",
-        Chance = 80,
+        From = "Keepers Altar",
+        Chance = 55,
         Weather = {
             "None"
         },
-        XP = 80,
-        Resilience = 70
-    },
-    ["Keepers Guardian"] = {
-        Seasons = {
-            "Winter"
-        },
-        Rarity = "Rare",
-        FavouriteBait = "Worm",
-        WeightPool = {
-            200,
-            400
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.21960784494877, 0.20784313976765, 0.52549022436142),
-        Quips = {
-            "A Keepers Guardian!",
-            "I caught a Keepers Guardian!",
-            "Woah, a Keepers Guardian!",
-            "What the?! A Keepers Guardian?!"
-        },
-        Hint = "Found in Keepers Altar.",
-        Description = "Whilst it is named the 'Keepers Guardian', they are actually friendly creatures! The Guardian can sense peoples intentions, and will only become violent when they notice someone with a harmful intention to it or the Keepers Altar.",
-        Price = 250,
-        From = "Keepers Altar",
-        Chance = 15,
-        Weather = {
-            "Rain"
-        },
-        XP = 120,
-        Resilience = 25
+        XP = 90,
+        Resilience = 35
     },
     ["Whiptail Catfish"] = {
         FavouriteTime = "Night",
@@ -13293,32 +13349,37 @@ return {
         XP = 80,
         Resilience = 80
     },
-    ["Mosaic Swimmer"] = {
+    Bream = {
+        FavouriteTime = "Day",
         Seasons = {
-            "Spring"
+            "Spring",
+            "Winter"
         },
-        Rarity = "Uncommon",
-        FavouriteBait = "Coral",
+        Rarity = "Common",
+        FavouriteBait = "Worm",
         WeightPool = {
-            20,
-            40
+            11,
+            27
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 0.77647060155869, 0.43921568989754),
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(1, 1, 0.75686275959015),
         Quips = {
-            "A Mosaic Swimmer!",
-            "Living art!"
+            "A Bream!",
+            "Bream!",
+            "I caught a Bream!",
+            "Woah, a Bream!",
+            "Hello, Bream!"
         },
-        Hint = "Ethereal Abyss Pool",
-        Description = "The scales of these fish form intricate patterns matching the ethereal mosaics. They often gather in groups to create living recreations of the abyss's lost artwork.",
-        Price = 150,
-        From = "Atlantis",
-        Chance = 55,
+        Hint = "Found in freshwaters, and along ocean beaches. Prefers day.",
+        Description = "Breams are school fish with deep bodies, flat sides and a small head. The bream loves worms and is most commonly found in Moosewoods freshwater.",
+        Price = 60,
+        From = "Moosewood",
+        Chance = 75,
         Weather = {
-            "None"
+            "Foggy"
         },
-        XP = 95,
-        Resilience = 70
+        XP = 30,
+        Resilience = 80
     },
     Anchovy = {
         FavouriteTime = "Day",
@@ -13349,36 +13410,32 @@ return {
         XP = 20,
         Resilience = 100
     },
-    ["Red Snapper"] = {
+    ["Mosaic Swimmer"] = {
         Seasons = {
-            "Summer",
-            "Autumn"
+            "Spring"
         },
-        Rarity = "Common",
-        FavouriteBait = "None",
+        Rarity = "Uncommon",
+        FavouriteBait = "Coral",
         WeightPool = {
-            10,
-            70
+            20,
+            40
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(1, 0.29019609093666, 0.29019609093666),
+        SparkleColor = Color3.new(1, 0.77647060155869, 0.43921568989754),
         Quips = {
-            "A Red Snapper!",
-            "Woah! I caught a Red Snapper!",
-            "I caught a Red Snapper!",
-            "Red Snapper!!!",
-            "Oh Snap!"
+            "A Mosaic Swimmer!",
+            "Living art!"
         },
-        Hint = "Found in saltwater near Moosewood Docks. Prefers the Summer and Autumn.",
-        Description = "The Red Snapper is a common salt water fish that can be commonly found all around Moosewoods oceans. They are a very noticeable fish with their obvious red and light red tones.",
-        Price = 70,
-        From = "Moosewood",
-        Chance = 75,
+        Hint = "Ethereal Abyss Pool",
+        Description = "The scales of these fish form intricate patterns matching the ethereal mosaics. They often gather in groups to create living recreations of the abyss's lost artwork.",
+        Price = 150,
+        From = "Atlantis",
+        Chance = 55,
         Weather = {
             "None"
         },
-        XP = 80,
-        Resilience = 75
+        XP = 95,
+        Resilience = 70
     },
     ["Umbral Shark"] = {
         FavouriteTime = "Night",
@@ -13409,6 +13466,65 @@ return {
         XP = 500,
         Price = 1000,
         Resilience = 10
+    },
+    ["Keepers Guardian"] = {
+        Seasons = {
+            "Winter"
+        },
+        Rarity = "Rare",
+        FavouriteBait = "Worm",
+        WeightPool = {
+            200,
+            400
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        SparkleColor = Color3.new(0.21960784494877, 0.20784313976765, 0.52549022436142),
+        Quips = {
+            "A Keepers Guardian!",
+            "I caught a Keepers Guardian!",
+            "Woah, a Keepers Guardian!",
+            "What the?! A Keepers Guardian?!"
+        },
+        Hint = "Found in Keepers Altar.",
+        Description = "Whilst it is named the 'Keepers Guardian', they are actually friendly creatures! The Guardian can sense peoples intentions, and will only become violent when they notice someone with a harmful intention to it or the Keepers Altar.",
+        Price = 250,
+        From = "Keepers Altar",
+        Chance = 15,
+        Weather = {
+            "Rain"
+        },
+        XP = 120,
+        Resilience = 25
+    },
+    Bluefish = {
+        FavouriteTime = "Day",
+        Seasons = {
+            "Summer"
+        },
+        Rarity = "Unusual",
+        FavouriteBait = "Flakes",
+        WeightPool = {
+            4,
+            9
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        SparkleColor = Color3.new(0.2352941185236, 0.24705882370472, 1),
+        Quips = {
+            "Woah, a Bluefish!",
+            "A Bluefish!",
+            "I caught a Bluefish!",
+            "Aw! I caught a Bluefish!"
+        },
+        Hint = "Swims quietly in Keepers Altar during the day.",
+        Description = "Bluefish are found inside Keepers Altar. They can inhabit some of the powerful keepers power that is present in Keepers Altars water. They are only awake during the day, as the power of the Altar is too much for them to handle during the night.",
+        Price = 65,
+        From = "Keepers Altar",
+        Chance = 40,
+        Weather = {
+            "Clear"
+        },
+        XP = 75,
+        Resilience = 34
     },
     ["Fungal Cluster"] = {
         Seasons = {
@@ -13468,66 +13584,37 @@ return {
         XP = 50,
         Resilience = 80
     },
-    ["Pale Tang"] = {
-        Seasons = {
-            "Spring",
-            "Summer"
-        },
-        Rarity = "Uncommon",
-        FavouriteBait = "Bagel",
-        WeightPool = {
-            3,
-            15
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
-        SparkleColor = Color3.new(1, 0.73333334922791, 0.73333334922791),
-        Quips = {
-            "Ouu a Pale Tang!",
-            "Woah, a Pale Tang!",
-            "A Pale Tang!",
-            "I caught a Pale Tang!",
-            "I caught a Pale Tang!",
-            "Found her!.. But albino!"
-        },
-        Hint = "Found in Keepers Altar.",
-        Description = "The Pale Tang is a relatively common catch within Keepers Altar. Very similar to other Tangs such as the Red Tang, just pale!- No one is sure of the Pale Tangs origin, and how it got accustomed to the Keepers Altar.",
-        Price = 100,
-        From = "Keepers Altar",
-        Chance = 55,
-        Weather = {
-            "None"
-        },
-        XP = 90,
-        Resilience = 35
-    },
-    Banditfish = {
+    ["Slate Tuna"] = {
         Seasons = {
             "Spring"
         },
-        Rarity = "Rare",
-        FavouriteBait = "Insect",
+        Rarity = "Common",
+        FavouriteBait = "Super Flakes",
         WeightPool = {
-            150,
-            200
+            300,
+            600
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
-        SparkleColor = Color3.new(0.77647060155869, 0.61568629741669, 1),
+        SparkleColor = Color3.new(0.50196081399918, 0.44313725829124, 0.678431391716),
         Quips = {
-            "I caught a Bandit Fish!",
-            "It's a Bandit Fish!",
-            "Woahhh, A Bandit Fish",
-            "It pickpocketed me! >:("
+            "I caught a Slate Tuna!",
+            "Ouu! A Slate Tuna!",
+            "A Slate Tuna!",
+            "Slate Tuah!",
+            "Oh my slate!",
+            "Slate on that thang!"
         },
-        Hint = "Caught in the Desolate Deep",
-        Description = "Banditfish are insanely fast hunters and swimmers, hence their name. They have a single rudder-like fin at the back of their bodies, which they move in a swaying motion to glide throughout the waters. Despite being remarkably good at hunting smaller prey, they are still no match for the greater creatures within the Desolate Deep.",
-        Price = 250,
+        Hint = "Found commonly in the Desolate Deep.",
+        Description = "With their Stone Exocranium on the front of their body, the invasive Slate Tuna is able to hunt and kill pray at alarmingly high rates. However, this stone noggin of theirs also ends up in slower swim speeds for this predator, resulting with this fish being lower down on the food chain in this deep chasm.",
+        Price = 70,
         From = "Desolate Deep",
-        Chance = 1050,
+        Chance = 1980,
         Weather = {
-            "None"
+            "Clear",
+            "Rain"
         },
-        XP = 100,
-        Resilience = 30
+        XP = 25,
+        Resilience = 35
     },
     ["Horseshoe Crab"] = {
         Seasons = {
@@ -13590,6 +13677,37 @@ return {
         Price = 440,
         Resilience = 20
     },
+    Gazerfish = {
+        FavouriteTime = "Day",
+        Seasons = {
+            "Autumn",
+            "Winter"
+        },
+        Rarity = "Common",
+        FavouriteBait = "Worm",
+        WeightPool = {
+            80,
+            140
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.underweight,
+        SparkleColor = Color3.new(1, 0.61960786581039, 0.28627452254295),
+        Quips = {
+            "Ouu a Gazerfish!",
+            "Woah, a Gazerfish!",
+            "A Gazerfish!",
+            "I caught a Gazerfish!"
+        },
+        Hint = "Found in the Brine Pool during the day.",
+        Description = "The Gazerfish is a fast-moving prey fish within the Brine Pool of the Desolate Deep. They have a singular large eyeball on the front of their bodies, which they can close to disguise themselves from possible predators during the night. When they are most active during the day, they swim near the surface looking for smaller creatures to feed on.",
+        Price = 190,
+        From = "Brine Pool",
+        Chance = 2900,
+        Weather = {
+            "None"
+        },
+        XP = 100,
+        Resilience = 85
+    },
     ["Burnt Betta"] = {
         SparkleColor = Color3.new(0.60392159223557, 0.85490196943283, 0.56078433990479),
         Description = "With fierce intent, the Burnt Betta thrives in molten lava.",
@@ -13621,36 +13739,35 @@ return {
         IsLimitedBestiary = true,
         Resilience = 25
     },
-    Gazerfish = {
-        FavouriteTime = "Day",
-        Seasons = {
-            "Autumn",
-            "Winter"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Worm",
-        WeightPool = {
-            80,
-            140
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.underweight,
-        SparkleColor = Color3.new(1, 0.61960786581039, 0.28627452254295),
-        Quips = {
-            "Ouu a Gazerfish!",
-            "Woah, a Gazerfish!",
-            "A Gazerfish!",
-            "I caught a Gazerfish!"
-        },
-        Hint = "Found in the Brine Pool during the day.",
-        Description = "The Gazerfish is a fast-moving prey fish within the Brine Pool of the Desolate Deep. They have a singular large eyeball on the front of their bodies, which they can close to disguise themselves from possible predators during the night. When they are most active during the day, they swim near the surface looking for smaller creatures to feed on.",
-        Price = 190,
-        From = "Brine Pool",
-        Chance = 2900,
+    ["Song of the Deep"] = {
+        SparkleColor = Color3.new(0.8941176533699, 0.62745100259781, 1),
+        Description = "An immortal stone filled with the essence of a Divine Lantern Keeper.. Returning it to it's throne under the Statue of Sovereignty will result in your currently equipped rod being blessed with its immense power.",
+        FavouriteBait = "None",
+        Chance = 0.02,
         Weather = {
             "None"
         },
-        XP = 100,
-        Resilience = 85
+        ProgressEfficiency = 0.8,
+        Hint = "???",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Relic",
+        WeightPool = {
+            210,
+            210
+        },
+        From = "None",
+        Quips = {
+            "I feel it's power..",
+            "Woah.. An Exalted Relic??",
+            "An Exalted Relic!!",
+            "I caught an Exalted Relic!"
+        },
+        XP = 250,
+        Price = 1200,
+        Resilience = 35
     },
     ["Northstar Serpent"] = {
         FavouriteTime = "None",
@@ -14443,7 +14560,7 @@ return {
         BaitContents = {
             "Fish Head",
             "Rapid Catcher",
-            "instant Catcher",
+            "Instant Catcher",
             "Seaweed",
             "Seaweed",
             "Squid",
