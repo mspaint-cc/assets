@@ -146,7 +146,7 @@ return {
             Color = Color3.new(1, 0.45490196347237, 0.20000000298023),
             PriceMultiply = 0.5,
             SpecificZones = {
-                "Ancient Isles"
+                "Ancient Isle Ocean"
             },
             Display = "Amber",
             Chance = 8
