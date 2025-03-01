@@ -495,31 +495,34 @@ return {
         Resilience = 80
     },
     ["Baby Pond Emperor"] = {
-        Seasons = {
-            "Summer"
+        SparkleColor = Color3.new(1, 0.8901960849762, 0.058823529630899),
+        Description = "It's a mini Pond Emperor!",
+        FavouriteBait = "Squid",
+        BlockPassiveCapture = true,
+        Chance = 0.5,
+        Weather = {
+            "Clear"
         },
-        Rarity = "Mythical",
-        FavouriteBait = "Seaweed",
+        ProgressEfficiency = 0.2,
+        Hint = "Found in Snowcap Pond.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        Seasons = {
+            "Winter"
+        },
+        Rarity = "Secret",
         WeightPool = {
             5,
             20
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(1, 0.8901960849762, 0.058823529630899),
+        From = "Snowcap",
         Quips = {
             "Woah! a Baby Pond Emperor!",
-            "A Baby Pond Emperor..?"
-        },
-        Hint = "Found in reefs and deepwaters.",
-        Description = "It's a mini Pond Emperor!",
-        Price = 230,
-        From = "Ocean",
-        Chance = 12,
-        Weather = {
-            "None"
+            "A Baby Pond Emperor..?",
+            "It's so cute!"
         },
         XP = 100,
-        Resilience = 65
+        Price = 5000,
+        Resilience = 10
     },
     Walleye = {
         Seasons = {
@@ -11697,7 +11700,7 @@ return {
             25,
             700
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
         SparkleColor = Color3.new(0.1294117718935, 0.41568627953529, 0.47843137383461),
         Quips = {
             "A Palaeoniscum!",
