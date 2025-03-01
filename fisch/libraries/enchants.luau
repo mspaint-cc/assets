@@ -40,6 +40,14 @@ return {
             IsExalted = false,
             StrokeColor = Color3.new(0.14117647707462, 0.090196080505848, 0.050980392843485)
         },
+        Immortal = {
+            StatIncrease = 75,
+            Description = "Increases luck by 75%",
+            Color = Color3.new(0.90980392694473, 0.85098040103912, 1),
+            Display = "Immortal",
+            IsExalted = true,
+            StrokeColor = Color3.new(0.27058824896812, 0.2549019753933, 0.29803922772408)
+        },
         Divine = {
             StatIncrease = 45,
             Description = "Increases luck by 45%",
@@ -72,13 +80,13 @@ return {
             IsExalted = true,
             StrokeColor = Color3.new(0.16862745583057, 0.19607843458652, 0.22352941334248)
         },
-        Immortal = {
-            StatIncrease = 75,
-            Description = "Increases luck by 75%",
-            Color = Color3.new(0.90980392694473, 0.85098040103912, 1),
-            Display = "Immortal",
-            IsExalted = true,
-            StrokeColor = Color3.new(0.27058824896812, 0.2549019753933, 0.29803922772408)
+        ["Blessed Song"] = {
+            StatIncrease = 10,
+            Description = "Makes progress speed 10% faster",
+            Color = Color3.new(0, 0.66666668653488, 1),
+            Display = "Blessed Song",
+            IsSongOfTheDeep = true,
+            StrokeColor = Color3.new(0, 0.2352941185236, 0.35294118523598)
         },
         Steady = {
             StatIncrease = 25,
