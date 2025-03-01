@@ -159,8 +159,8 @@ RayParamLoc.FilterType = Enum.RaycastFilterType.Exclude
 
 local MakeFishingZoneLocation = function(locCFrame)
     RayParamLoc.FilterDescendantsInstances = {char, workspace.Terrain, FishingZones}
-    LocalPlayer:RequestStreamAroundAsync(locCFrame.Position, 1 / 0)
-    task.wait()
+    task.spawn(LocalPlayer.RequestStreamAroundAsync, LocalPlayer, locCFrame.Position, 1 / 0)
+    task.wait(.25)
 
     local hit = workspace:Raycast(locCFrame.Position + Vector3.new(0, 150, 0), Vector3.new(0, -500, 0), RayParamLoc)
     return (hit and hit.Position) and CFrame.new(hit.Position + Vector3.new(0, 10, 0)) or locCFrame, locCFrame;
