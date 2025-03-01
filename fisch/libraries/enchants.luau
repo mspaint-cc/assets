@@ -81,8 +81,8 @@ return {
             StrokeColor = Color3.new(0.16862745583057, 0.19607843458652, 0.22352941334248)
         },
         ["Blessed Song"] = {
-            StatIncrease = 10,
-            Description = "Makes progress speed 10% faster",
+            StatIncrease = 50,
+            Description = "Makes progress speed 50% faster",
             Color = Color3.new(0, 0.66666668653488, 1),
             Display = "Blessed Song",
             IsSongOfTheDeep = true,
