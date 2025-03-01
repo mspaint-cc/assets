@@ -1525,7 +1525,7 @@ return {
         },
         ProgressEfficiency = 0.95,
         Hint = "A swift fish that is typically difficult to spot due to foggy conditions.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
         Seasons = {
             "None"
         },
@@ -1584,7 +1584,7 @@ return {
             210,
             470
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
         SparkleColor = Color3.new(1, 1, 1),
         Quips = {
             "A Hydra Haddock!",
@@ -1760,7 +1760,7 @@ return {
             80,
             230
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.bigbasic,
         SparkleColor = Color3.new(1, 0.40000000596046, 0.1803921610117),
         Quips = {
             "A Molten Moray!",
@@ -1848,7 +1848,7 @@ return {
             75,
             190
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
         SparkleColor = Color3.new(1, 0.40000000596046, 0.1803921610117),
         Quips = {
             "A Pyrite Pufferfish!",
@@ -1876,7 +1876,7 @@ return {
             80,
             170
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
         SparkleColor = Color3.new(1, 0.40000000596046, 0.1803921610117),
         Quips = {
             "A Smoldering Stingray!",
@@ -2000,7 +2000,7 @@ return {
             80,
             240
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
         SparkleColor = Color3.new(0.33333334326744, 0.98039215803146, 0.86274510622025),
         Quips = {
             "A Prismatic Parrotfish!",
@@ -2057,7 +2057,7 @@ return {
             25,
             60
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         SparkleColor = Color3.new(1, 0.40000000596046, 0.1803921610117),
         Quips = {
             "A Hellfire Haddock!",
@@ -2086,7 +2086,7 @@ return {
         },
         Icon = "rbxassetid://114499683111142",
         Hint = "Its pretty",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         Seasons = {
             "None"
         },
@@ -2174,7 +2174,7 @@ return {
             18,
             40
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.bigbasic,
         SparkleColor = Color3.new(1, 0.40000000596046, 0.1803921610117),
         Quips = {
             "An Embertail Eel!",
@@ -2263,7 +2263,7 @@ return {
             395,
             1000
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
         SparkleColor = Color3.new(0.33333334326744, 0.98039215803146, 0.86274510622025),
         Quips = {
             "A Ruby Rasbora!",
@@ -2321,7 +2321,7 @@ return {
             6,
             16
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
         SparkleColor = Color3.new(0.40000000596046, 0.69803923368454, 1),
         Quips = {
             "A Chillshadow Chub!",
@@ -2382,7 +2382,7 @@ return {
             600,
             1600
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         SparkleColor = Color3.new(0.33333334326744, 0.98039215803146, 0.86274510622025),
         Quips = {
             "An Emerald Elephantnose!",
@@ -2568,8 +2568,8 @@ return {
         },
         Rarity = "Exotic",
         WeightPool = {
-            2000,
-            2200
+            20,
+            20
         },
         XP = 350,
         From = "None",
@@ -2623,7 +2623,7 @@ return {
             180,
             400
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         SparkleColor = Color3.new(0.33333334326744, 0.98039215803146, 0.86274510622025),
         Quips = {
             "A Quartzfin Queenfish!",
@@ -2679,7 +2679,7 @@ return {
         },
         ProgressEfficiency = 0.45,
         Hint = "Found in the deeper parts of the trench, especially within cool temperatures.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
         Seasons = {
             "Autumn"
         },
@@ -2856,7 +2856,7 @@ return {
             100,
             210
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
         SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
         Quips = {
             "A Radiant Triplewart Seadevil!",
@@ -2979,7 +2979,7 @@ return {
         },
         Icon = "rbxassetid://124054246093053",
         Hint = "Located in the coldest parts of the trench, typically found in groups.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
         Seasons = {
             "Winter"
         },
@@ -3038,7 +3038,7 @@ return {
             35,
             80
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
         Quips = {
             "A Leviathan Humpback Anglerfish!",
@@ -3123,7 +3123,7 @@ return {
             55,
             105
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
         SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
         Quips = {
             "A Titanic Black Seadevil!",
@@ -3605,7 +3605,7 @@ return {
         },
         ProgressEfficiency = 0.5,
         Hint = "Appears in the deepest, coldest waters, especially in the dark.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
         Seasons = {
             "Winter"
         },
@@ -6495,7 +6495,7 @@ return {
         },
         Icon = "rbxassetid://106979038247843",
         Hint = "Found in the deepest of trenches, most notably when the stars are present.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         Seasons = {
             "Winter"
         },
@@ -6906,7 +6906,7 @@ return {
             95,
             240
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
         SparkleColor = Color3.new(0.40000000596046, 0.69803923368454, 1),
         Quips = {
             "An Iceberg Isopod!",
@@ -7314,7 +7314,7 @@ return {
         },
         Icon = "rbxassetid://96530556200239",
         Hint = "Its pretty",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         Seasons = {
             "None"
         },
@@ -8418,7 +8418,7 @@ return {
         },
         Icon = "rbxassetid://95002653693710",
         Hint = "Not quite a lizard, typically found when under star-lit skies.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         Seasons = {
             "None"
         },
@@ -9168,7 +9168,7 @@ return {
             175,
             400
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
         SparkleColor = Color3.new(0.11372549086809, 0.1176470592618, 0.30196079611778),
         Quips = {
             "A Deeplight Footballfish!",
@@ -10663,7 +10663,7 @@ return {
         },
         ProgressEfficiency = 0.85,
         Hint = "Located in deeper waters, typically when the weather is still.",
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
         Seasons = {
             "None"
         },
