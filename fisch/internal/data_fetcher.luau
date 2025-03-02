@@ -144,7 +144,15 @@ if #HasMissing > 0 then
 
         local start = os.time();
         repeat task.wait(.25); until LocalPlayer.GameplayPaused == false or (os.time() - start) >= 7.5
-        task.wait(0.56);
+        task.wait(0.35);
+        task.spawn(function()
+            for i, v in workspace.world.map:GetDescendants() do
+                if v.ClassName == "Model" then
+                    v.ModelStreamingMode = Enum.ModelStreamingMode.Persistent;
+                end
+            end
+        end)
+        task.wait(0.35);
 
         if #HasMissing < 1 then break end
     end
@@ -160,7 +168,7 @@ RayParamLoc.FilterType = Enum.RaycastFilterType.Exclude
 local MakeFishingZoneLocation = function(locCFrame)
     RayParamLoc.FilterDescendantsInstances = {char, workspace.Terrain, FishingZones}
     task.spawn(LocalPlayer.RequestStreamAroundAsync, LocalPlayer, locCFrame.Position, 1 / 0)
-    task.wait(.25)
+    task.wait(.75)
 
     local hit = workspace:Raycast(locCFrame.Position + Vector3.new(0, 150, 0), Vector3.new(0, -500, 0), RayParamLoc)
     return (hit and hit.Position) and CFrame.new(hit.Position + Vector3.new(0, 10, 0)) or locCFrame, locCFrame;
@@ -190,7 +198,16 @@ local FetchBestLocationCFrameByLocationName = function(locName)
     return nil
 end
 
-for _, location in pairs(datatables.Locations) do
+local allFishLocations = datatables.Locations
+for _, fish in pairs(datatables.Fish) do
+    if not fish.Zone then continue end
+    if table.find(data.SpecialEvents, fish.Zone) then continue end
+    if table.find(allFishLocations, fish.Zone) then continue end
+    table.insert(allFishLocations, fish.Zone)
+end;
+
+for _, location in pairs(allFishLocations) do
+    if table.find(data.Locations.Safe.Names, location) and table.find(data.Locations.Unsafe.Names, location) then continue end
     print("Fetching " .. location .. "...")
 
     local locationCFrame, originalCFrame = FetchBestLocationCFrameByLocationName(location)
@@ -208,9 +225,11 @@ for _, location in pairs(datatables.Locations) do
     print(" - Fetched " .. location .. " from raycast.")
 end;
 
+task.wait(.25)
+head.Anchored = false;
 char:PivotTo(workspace.world.spawns.TpSpots.moosewood.CFrame * CFrame.new(0, 10, 0))
 task.wait(.25)
-head.Anchored = false
+head.Anchored = false;
 
 warn("========= FINISHED data.luau =========")
 return data
