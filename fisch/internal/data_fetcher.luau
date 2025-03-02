@@ -36,11 +36,11 @@ local data = {
 
     Interactables = {
         ["Enchant Altar"] = -1,
-        ['Challenger's Rod'] = -1,
-        ['Ethereal Prism Rod'] = -1,
-        ['Leviathan's Fang Rod'] = -1,
-        ['Rod Of The Zenith'] = -1,
-        ['Volcanic Rod'] = -1
+        ["Challenger's Rod"] = -1,
+        ["Ethereal Prism Rod"] = -1,
+        ["Leviathan's Fang Rod"] = -1,
+        ["Rod Of The Zenith"] = -1,
+        ["Volcanic Rod"] = -1
     },
 
     Locations = {
