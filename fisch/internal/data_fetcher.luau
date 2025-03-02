@@ -54,6 +54,8 @@ print("============== Loading DataTables ===============")
 local LuaEncode = loadstring(game:HttpGet("https://raw.githubusercontent.com/regginator/LuaEncode/refs/heads/master/src/LuaEncode.lua"))()
 local datatables = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lythicals/script/refs/heads/main/datatables"))()
 
+local allFishLocations = datatables.Locations;
+
 local TpSpots = workspace.world.spawns.TpSpots
 local FishingZones = workspace.zones.fishing
 local Spawns = workspace.world.spawns
@@ -72,7 +74,7 @@ head.Anchored = true
 npcs.ChildAdded:Connect(function(npc)
     if data.NPCs[npc.Name] == -1 then
         data.NPCs[npc.Name] = npc:GetPivot() * CFrame.new(0, 1.5, 0)
-        print(" - " .. npc.Name .. " re-fetched from ChildAdded.")
+        warn(" - " .. npc.Name .. " re-fetched from ChildAdded.")
 
         local idx = table.find(HasMissing, npc.Name)
         if idx then 
@@ -90,7 +92,7 @@ end)
 interactables.ChildAdded:Connect(function(interactable)
     if data.Interactables[interactable.Name] == -1 then
         data.Interactables[interactable.Name] = interactable:GetPivot() * CFrame.new(0, 1.5, 0)
-        print(" - " .. interactable.Name .. " re-fetched from ChildAdded.")
+        warn(" - " .. interactable.Name .. " re-fetched from ChildAdded.")
 
         local idx = table.find(HasMissing, interactable.Name)
         if idx then 
@@ -103,6 +105,14 @@ interactables.ChildAdded:Connect(function(interactable)
             end
         end
     end
+end)
+
+FishingZones.ChildAdded:Connect(function(zoneInst)
+    local zone = zoneInst.Name;
+    if table.find(data.SpecialEvents, zone) then return end
+    if table.find(allFishLocations, zone) then return end
+
+    warn(" - Re-fetched '", zone, "'"); table.insert(allFishLocations, zone)
 end)
 
 function fetch(location, name)
@@ -122,7 +132,7 @@ print("============== NPCs ===============")
 
 -- fetch npcs and interactables --
 for name, _ in pairs(data.NPCs) do
-    if data.NPCs[name] ~= -1 then warn(name, "was already fetched.") continue end
+    if data.NPCs[name] ~= -1 then print(name, "was already fetched.") continue end
 
     local cframe = fetch(npcs, name)
     if cframe then data.NPCs[name] = cframe end
@@ -131,7 +141,7 @@ end
 print("========= Interactables =========")
 
 for name, _ in pairs(data.Interactables) do
-    if data.Interactables[name] ~= -1 then warn(name, "was already fetched.") continue end
+    if data.Interactables[name] ~= -1 then print(name, "was already fetched.") continue end
 
     local cframe = fetch(interactables, name)
     if cframe then data.Interactables[name] = cframe end
@@ -202,25 +212,31 @@ local FetchBestLocationCFrameByLocationName = function(locName)
     return nil
 end
 
-local allFishLocations = datatables.Locations
+warn("=================================================")
+
 for _, fish in pairs(datatables.Fish) do
     if not fish.Zone then continue end
     local zone = data.ZonesAliases[fish.Zone] or fish.Zone;
 
     if table.find(data.SpecialEvents, zone) then continue end
     if table.find(allFishLocations, zone) then continue end
-    table.insert(allFishLocations, zone)
+
+    print("Added '", zone, "' [Fish Datatable]"); table.insert(allFishLocations, zone)
 end;
 
 for _, zoneInst in workspace.zones.fishing:GetChildren() do
     local zone = zoneInst.Name;
     if table.find(data.SpecialEvents, zone) then continue end
     if table.find(allFishLocations, zone) then continue end
-    table.insert(allFishLocations, zone)
+
+    print("Added '", zone, "' [Loaded Fishing Zones]"); table.insert(allFishLocations, zone)
 end;
+
+warn("=================================================")
 
 for _, location in pairs(allFishLocations) do
     if table.find(data.Locations.Safe.Names, location) and table.find(data.Locations.Unsafe.Names, location) then continue end
+    if table.find(data.SpecialEvents, location) then continue end
     print("Fetching " .. location .. "...")
 
     local locationCFrame, originalCFrame = FetchBestLocationCFrameByLocationName(location)
@@ -245,4 +261,7 @@ task.wait(.25)
 head.Anchored = false;
 
 warn("========= FINISHED data.luau =========")
+print(LuaEncode(
+    data.Locations.Safe.Names, {Prettify = true}
+))
 return data
