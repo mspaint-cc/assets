@@ -229,7 +229,7 @@ for _, zoneInst in workspace.zones.fishing:GetChildren() do
     print("Added '", zone, "' [Loaded Fishing Zones]"); table.insert(allFishLocations, zone)
 end;
 
-table.insert(allFishLocations, "Challengers Deep")
+-- table.insert(allFishLocations, "Challengers Deep")
 
 warn("=================================================")
 
