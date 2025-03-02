@@ -158,15 +158,7 @@ if #HasMissing > 0 then
 
         local start = os.time();
         repeat task.wait(.25); until LocalPlayer.GameplayPaused == false or (os.time() - start) >= 7.5
-        task.wait(0.35);
-        task.spawn(function()
-            for i, v in workspace.world.map:GetDescendants() do
-                if v.ClassName == "Model" then
-                    v.ModelStreamingMode = Enum.ModelStreamingMode.Persistent;
-                end
-            end
-        end)
-        task.wait(0.35);
+        task.wait(0.65);
 
         if #HasMissing < 1 then break end
     end
