@@ -23,6 +23,10 @@ local data = {
         "Golden Tide"
     },
 
+    ZonesAliases = {
+        ["Veil of the Forsaken"] = "Forsaken Veil"
+    },
+
     NPCs = {
         ["Appraiser"] = -1,
         ["Moosewood Shipwright"] = -1,
@@ -201,9 +205,11 @@ end
 local allFishLocations = datatables.Locations
 for _, fish in pairs(datatables.Fish) do
     if not fish.Zone then continue end
-    if table.find(data.SpecialEvents, fish.Zone) then continue end
-    if table.find(allFishLocations, fish.Zone) then continue end
-    table.insert(allFishLocations, fish.Zone)
+    local zone = data.ZonesAliases[fish.Zone] or fish.Zone;
+
+    if table.find(data.SpecialEvents, zone) then continue end
+    if table.find(allFishLocations, zone) then continue end
+    table.insert(allFishLocations, zone)
 end;
 
 for _, location in pairs(allFishLocations) do
