@@ -212,6 +212,13 @@ for _, fish in pairs(datatables.Fish) do
     table.insert(allFishLocations, zone)
 end;
 
+for _, zoneInst in workspace.zones.fishing:GetChildren() do
+    local zone = zoneInst.Name;
+    if table.find(data.SpecialEvents, zone) then continue end
+    if table.find(allFishLocations, zone) then continue end
+    table.insert(allFishLocations, zone)
+end;
+
 for _, location in pairs(allFishLocations) do
     if table.find(data.Locations.Safe.Names, location) and table.find(data.Locations.Unsafe.Names, location) then continue end
     print("Fetching " .. location .. "...")
