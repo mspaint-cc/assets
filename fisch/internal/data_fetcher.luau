@@ -331,7 +331,7 @@ for _, mainLocationName in pairs(allFishLocations) do
                     continue
                 end
 
-                data.Locations.HasAbundance[locationName] = true;
+                data.Locations.HasAbundance[mainLocationName] = true;
                 if not table.find(data.Locations.Safe.Names, locationName) then
                     table.insert(data.Locations.Safe.Names, locationName); data.Locations.Safe.CFrames[locationName] = partLocationCFrame;
                 end
