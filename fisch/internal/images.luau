@@ -34,7 +34,7 @@ local taskCounter = 0
 for category, items in pairs(Datatable) do
     for key, value in pairs(items) do
         local identifier = (category == "Locations") and value or key
-        print("Fetching Data for " .. identifier)
+        --print("Fetching Data for " .. identifier)
 
         task.spawn(function()
             local success, imageURL = pcall(function()
@@ -49,7 +49,7 @@ for category, items in pairs(Datatable) do
 
             if success then
                 ImageData[category][identifier] = imageURL
-                print("Successfully Fetched Data for '" .. identifier .. "'")
+                --print("Successfully Fetched Data for '" .. identifier .. "'")
             else
                 warn("COULD NOT FETCH DATA FOR '" .. identifier .. "'", imageURL)
             end
@@ -66,7 +66,5 @@ repeat
     task.wait()
 until finishedCount >= totalTasks
 
---print("Written to file")
---writefile("fisch_final_images.luau", LuaEncode(ImageData, { Prettify = true }))
 warn("Done!")
 return ImageData
