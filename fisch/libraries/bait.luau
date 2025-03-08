@@ -13,6 +13,13 @@ return {
         Rarity = "Common",
         Resilience = 0
     },
+    ["Golden Tentacle"] = {
+        LureSpeed = 50,
+        Luck = 150,
+        GenerelLuck = 40,
+        Rarity = "Legendary",
+        Resilience = 20
+    },
     ["Peppermint Worm"] = {
         LureSpeed = -5,
         Luck = 50,
