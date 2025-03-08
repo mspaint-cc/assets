@@ -37,7 +37,7 @@ local data = {
 
     Interactables = {
         ["Enchant Altar"] = -1,
-        ["Challenger's Rod"] = -1,
+        ["Challenger's Rod"] = CFrame.new(738, -3355, -1529),
         ["Ethereal Prism Rod"] = -1,
         ["Leviathan's Fang Rod"] = -1,
         ["Rod Of The Zenith"] = -1,
