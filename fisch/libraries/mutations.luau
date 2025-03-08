@@ -182,7 +182,7 @@ return {
             Chance = 0
         },
         ["King\xE2\x80\x99s Blessing"] = {
-            PriceMultiply = 1.5,
+            PriceMultiply = 3.5,
             Color = Color3.new(1, 1, 0.49803921580315),
             Display = "King\xE2\x80\x99s Blessing",
             Chance = 0
@@ -236,7 +236,7 @@ return {
             Chance = 25
         },
         Aureolin = {
-            PriceMultiply = 5,
+            PriceMultiply = 6,
             Color = Color3.new(0.86274510622025, 0.60392159223557, 0.0039215688593686),
             Display = "Aurulent",
             Chance = 0
