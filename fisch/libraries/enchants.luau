@@ -81,16 +81,16 @@ return {
             StrokeColor = Color3.new(0.16862745583057, 0.19607843458652, 0.22352941334248)
         },
         ["Blessed Song"] = {
-            StatIncrease = 50,
-            Description = "Makes progress speed 50% faster",
+            StatIncrease = 40,
+            Description = "Makes progress speed 40% faster",
             Color = Color3.new(0, 0.66666668653488, 1),
             Display = "Blessed Song",
             IsSongOfTheDeep = true,
             StrokeColor = Color3.new(0, 0.2352941185236, 0.35294118523598)
         },
         Steady = {
-            StatIncrease = 25,
-            Description = "Reduces progress loss by 25% when fishing",
+            StatIncrease = 20,
+            Description = "Makes progress speed 20% faster",
             Color = Color3.new(0.89803922176361, 0.81176471710205, 0.74901962280273),
             Display = "Steady",
             IsExalted = false,
