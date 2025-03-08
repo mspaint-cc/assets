@@ -45,6 +45,8 @@ local data = {
     },
 
     Locations = {
+        HasAbundance = {},
+
         Safe = {
             Names = {},
             CFrames = {}
@@ -59,6 +61,8 @@ local data = {
 print("============== Loading DataTables ===============")
 local LuaEncode = loadstring(game:HttpGet("https://raw.githubusercontent.com/regginator/LuaEncode/refs/heads/master/src/LuaEncode.lua"))()
 local datatables = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lythicals/script/refs/heads/main/datatables"))()
+local console = loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/utils/console/main.lua"))()
+local messages = {}
 
 local allFishLocations = datatables.Locations;
 
@@ -80,7 +84,16 @@ head.Anchored = true
 npcs.ChildAdded:Connect(function(npc)
     if data.NPCs[npc.Name] == -1 then
         data.NPCs[npc.Name] = npc:GetPivot() * CFrame.new(0, 1.5, 0)
-        warn(" - " .. npc.Name .. " re-fetched from ChildAdded.")
+
+        if not messages[npc.Name] then
+            messages[npc.Name] = console.custom_print("[" .. npc.Name .. "] Loading....")
+        end
+
+        messages[npc.Name].update_message({
+            message = "[" .. npc.Name .. "] Re-fetched from ChildAdded.",
+            image = "rbxasset://textures/AudioDiscovery/done.png",
+            color = Color3.fromRGB(0, 255, 0)
+        })
 
         local idx = table.find(HasMissing, npc.Name)
         if idx then 
@@ -98,7 +111,16 @@ end)
 interactables.ChildAdded:Connect(function(interactable)
     if data.Interactables[interactable.Name] == -1 then
         data.Interactables[interactable.Name] = interactable:GetPivot() * CFrame.new(0, 1.5, 0)
-        warn(" - " .. interactable.Name .. " re-fetched from ChildAdded.")
+
+        if not messages[interactable.Name] then
+            messages[interactable.Name] = console.custom_print("[" .. interactable.Name .. "] Loading....")
+        end
+
+        messages[interactable.Name].update_message({
+            message = "[" .. interactable.Name .. "] Re-fetched from ChildAdded.",
+            image = "rbxasset://textures/AudioDiscovery/done.png",
+            color = Color3.fromRGB(0, 255, 0)
+        })
 
         local idx = table.find(HasMissing, interactable.Name)
         if idx then 
@@ -118,27 +140,37 @@ FishingZones.ChildAdded:Connect(function(zoneInst)
     if table.find(data.SpecialEvents, zone) then return end
     if table.find(allFishLocations, zone) then return end
 
-    warn(" - Re-fetched '", zone, "'"); table.insert(allFishLocations, zone)
+    warn(" - Re-fetched '", zone, "'");
+    table.insert(allFishLocations, zone)
 end)
 
 function fetch(location, name)
-    print("Fetching " .. name .. "...")
+    messages[name] = console.custom_print("[" .. name .. "] Loading....")
 
     local instance = location:FindFirstChild(name)
     if instance then
-        print(" - " .. name .. " fetched from an already loaded model.")
+        messages[name].update_message({
+            message = "[" .. name .. "] Fetched from loaded models.",
+            image = "rbxasset://textures/AudioDiscovery/done.png",
+            color = Color3.fromRGB(0, 255, 0)
+        })
+
         return instance:GetPivot() * CFrame.new(0, 1.5, 0)
     end
 
-    table.insert(HasMissing, name)
-    warn(" - Failed to fetch " .. name .. ".")
+    table.insert(HasMissing, name);
+    messages[name].update_message({
+        message = "[" .. name .. "] Failed to fetch from loaded assets.",
+        image = "rbxasset://textures/AudioDiscovery/done.png",
+        color = Color3.fromRGB(255, 62, 62)
+    })
 end
 
 print("============== NPCs ===============")
 
 -- fetch npcs and interactables --
 for name, _ in pairs(data.NPCs) do
-    if data.NPCs[name] ~= -1 then print(name, "was already fetched.") continue end
+    if data.NPCs[name] ~= -1 then continue end
 
     local cframe = fetch(npcs, name)
     if cframe then data.NPCs[name] = cframe end
@@ -147,17 +179,19 @@ end
 print("========= Interactables =========")
 
 for name, _ in pairs(data.Interactables) do
-    if data.Interactables[name] ~= -1 then print(name, "was already fetched.") continue end
+    if data.Interactables[name] ~= -1 then continue end
 
     local cframe = fetch(interactables, name)
     if cframe then data.Interactables[name] = cframe end
 end
 
 if #HasMissing > 0 then
-    print("========= Fetching unloaded =========")
+    local unloaded = console.custom_print("[Unloaded] Loading area (???) ...")
 
     for _, spot in pairs(spots) do
-        print("     - Loading location", spot.Name)
+        unloaded.update_message({
+            message = "[Unloaded] Loading area (" .. spot.Name .. ") [" .. tostring(_) .. "/" .. tostring(#spots) .. "] - " .. tostring(#HasMissing),
+        })
 
         task.spawn(function() LocalPlayer:RequestStreamAroundAsync(spot:GetPivot().Position, 0.1); end)
         char:PivotTo(spot:GetPivot());
@@ -168,6 +202,12 @@ if #HasMissing > 0 then
 
         if #HasMissing < 1 then break end
     end
+
+    unloaded.update_message({
+        message = "[Unloaded] Loaded!",
+        image = "rbxasset://textures/AudioDiscovery/done.png",
+        color = Color3.fromRGB(0, 255, 0)
+    })
 end
 
 -- locations --
@@ -234,24 +274,86 @@ end;
 
 warn("=================================================")
 
-for _, location in pairs(allFishLocations) do
-    if table.find(data.Locations.Safe.Names, location) and table.find(data.Locations.Unsafe.Names, location) then continue end
-    if table.find(data.SpecialEvents, location) then continue end
-    print("Fetching " .. location .. "...")
+for _, mainLocationName in pairs(allFishLocations) do
+    if table.find(data.Locations.Safe.Names, mainLocationName) and table.find(data.Locations.Unsafe.Names, mainLocationName) then continue end
+    if table.find(data.SpecialEvents, mainLocationName) then continue end
 
-    local locationCFrame, originalCFrame = FetchBestLocationCFrameByLocationName(location)
-    if not locationCFrame then warn(" - Failed to fetch " .. location .. "!"); continue end
-    originalCFrame = originalCFrame or locationCFrame;
+    local mainMessage = console.custom_print("[" .. mainLocationName .. "] Loading....")
 
-    if not table.find(data.Locations.Safe.Names, location) then
-        table.insert(data.Locations.Safe.Names, location); data.Locations.Safe.CFrames[location] = locationCFrame;
+    local mainLocationCFrame, mainOriginalCFrame = FetchBestLocationCFrameByLocationName(mainLocationName)
+    if not mainLocationCFrame then
+        mainMessage.update_message({
+            message = "[" .. mainLocationName .. "] Failed to fetch the location...",
+            image = "rbxasset://textures/AudioDiscovery/done.png",
+            color = Color3.fromRGB(255, 62, 62)
+        })
+
+        continue
+    end
+    mainOriginalCFrame = mainOriginalCFrame or mainLocationCFrame;
+
+    if not table.find(data.Locations.Safe.Names, mainLocationName) then
+        table.insert(data.Locations.Safe.Names, mainLocationName); data.Locations.Safe.CFrames[mainLocationName] = mainLocationCFrame;
     end
 
-    if not table.find(data.Locations.Unsafe.Names, location) then
-        table.insert(data.Locations.Unsafe.Names, location); data.Locations.Unsafe.CFrames[location] = originalCFrame;
+    if not table.find(data.Locations.Unsafe.Names, mainLocationName) then
+        table.insert(data.Locations.Unsafe.Names, mainLocationName); data.Locations.Unsafe.CFrames[mainLocationName] = mainOriginalCFrame;
     end
 
-    print(" - Fetched " .. location .. " from raycast.")
+    --// abundance support \\--
+    if FishingZones:FindFirstChild(mainLocationName) then
+        for _, part in ipairs(FishingZones:GetChildren()) do
+            if part.Name == mainLocationName and part:FindFirstChild("Abundance") then
+                local locationName = mainLocationName .. " - " .. part.Abundance.Value
+                if table.find(data.Locations.Safe.Names, locationName) and table.find(data.Locations.Unsafe.Names, locationName) then continue end
+
+                local partMessage = console.custom_print("[" .. locationName .. "] Loading....")
+
+                local partLocationCFrame, partOriginalCFrame = MakeFishingZoneLocation(part.CFrame)
+                if not partLocationCFrame then
+                    partMessage.update_message({
+                        message = "[" .. locationName .. "] Failed to fetch the location...",
+                        image = "rbxasset://textures/AudioDiscovery/done.png",
+                        color = Color3.fromRGB(255, 62, 62)
+                    })
+
+                    continue
+                end
+
+                partOriginalCFrame = partOriginalCFrame or partLocationCFrame;
+                if partOriginalCFrame == mainOriginalCFrame then
+                    partMessage.update_message({
+                        message = "[" .. locationName .. "] Skipped, same as main location.",
+                        image = "rbxasset://textures/AudioDiscovery/done.png",
+                        color = Color3.fromRGB(255, 62, 62)
+                    })
+
+                    continue
+                end
+
+                data.Locations.HasAbundance[locationName] = true;
+                if not table.find(data.Locations.Safe.Names, locationName) then
+                    table.insert(data.Locations.Safe.Names, locationName); data.Locations.Safe.CFrames[locationName] = partLocationCFrame;
+                end
+
+                if not table.find(data.Locations.Unsafe.Names, locationName) then
+                    table.insert(data.Locations.Unsafe.Names, locationName); data.Locations.Unsafe.CFrames[locationName] = partOriginalCFrame;
+                end
+
+                partMessage.update_message({
+                    message = "[" .. locationName .. "] Fetched successfully.",
+                    image = "rbxasset://textures/AudioDiscovery/done.png",
+                    color = Color3.fromRGB(0, 255, 0)
+                })
+            end
+        end
+    end
+
+    mainMessage.update_message({
+        message = "[" .. mainLocationName .. "] Fetched successfully.",
+        image = "rbxasset://textures/AudioDiscovery/done.png",
+        color = Color3.fromRGB(0, 255, 0)
+    })
 end;
 
 task.wait(.25)
