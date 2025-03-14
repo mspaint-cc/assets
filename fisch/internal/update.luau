@@ -6,7 +6,7 @@ local SerializerOptions = {
 
 local GithubToken = "github_pat_"
 
-local Modules = game:GetService("ReplicatedStorage").modules
+local Modules = game:GetService("ReplicatedStorage").shared.modules
 local Library = Modules.library
 
 local UpdateLibraries = {
