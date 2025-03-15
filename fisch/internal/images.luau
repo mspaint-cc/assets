@@ -33,7 +33,7 @@ end
 local taskCounter = 0
 for category, items in pairs(Datatable) do
     for key, value in pairs(items) do
-        local identifier = (category == "Locations") and value or key
+        local identifier = (category == "Locations" or category == "Rarities") and value or key
         --print("Fetching Data for " .. identifier)
 
         task.spawn(function()
@@ -51,7 +51,14 @@ for category, items in pairs(Datatable) do
                 ImageData[category][identifier] = imageURL
                 --print("Successfully Fetched Data for '" .. identifier .. "'")
             else
-                warn("COULD NOT FETCH DATA FOR '" .. identifier .. "'", imageURL)
+                warn(
+                    "[FAILED TO FETCH DATA]\n",
+                    "   - ID:", identifier, "\n",
+                    "   - Value:", value, "\n",
+                    "   - Key:", key, "\n",
+                    "   - ERROR:", imageURL, "\n",
+                    "======================="
+                )
             end
         end)
 
@@ -66,5 +73,5 @@ repeat
     task.wait()
 until finishedCount >= totalTasks
 
-warn("Done!")
+warn("Done!", os.time())
 return ImageData
