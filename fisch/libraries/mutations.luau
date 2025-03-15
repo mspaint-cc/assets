@@ -43,23 +43,35 @@ return {
             Display = "Scorched",
             Chance = 9
         },
+        ["Mila's Magic"] = {
+            PriceMultiply = 2.5,
+            Color = Color3.new(1, 0.80392158031464, 0.69019609689713),
+            Display = "Mila's Magic",
+            Chance = 0
+        },
         Fossilized = {
             PriceMultiply = 2.5,
             Color = Color3.new(0.81568628549576, 0.70980393886566, 1),
             Display = "Fossilized",
             Chance = 4
         },
-        Minty = {
-            PriceMultiply = 2.2,
-            Color = Color3.new(0.50196081399918, 1, 0.72549021244049),
-            Display = "Minty",
-            Chance = 0
-        },
         Hexed = {
             PriceMultiply = 1.5,
             Color = Color3.new(0.65098041296005, 0, 0),
             Display = "Hexed",
             Chance = 15
+        },
+        Chocolate = {
+            PriceMultiply = 2.5,
+            Color = Color3.new(0.42352941632271, 0.30196079611778, 0.2549019753933),
+            Display = "Chocolate",
+            Chance = 0
+        },
+        Subspace = {
+            PriceMultiply = 5,
+            Color = Color3.new(1, 0, 0.7843137383461),
+            Display = "Subspace",
+            Chance = 0
         },
         Albino = {
             PriceMultiply = 1.1,
@@ -100,10 +112,10 @@ return {
             Display = "Prismize",
             Chance = 0
         },
-        Chocolate = {
-            PriceMultiply = 2.5,
-            Color = Color3.new(0.42352941632271, 0.30196079611778, 0.2549019753933),
-            Display = "Chocolate",
+        Minty = {
+            PriceMultiply = 2.2,
+            Color = Color3.new(0.50196081399918, 1, 0.72549021244049),
+            Display = "Minty",
             Chance = 0
         },
         Charred = {
@@ -157,10 +169,10 @@ return {
             Display = "Firework",
             Chance = 0
         },
-        ["Mila's Magic"] = {
-            PriceMultiply = 2.5,
-            Color = Color3.new(1, 0.80392158031464, 0.69019609689713),
-            Display = "Mila's Magic",
+        Clover = {
+            PriceMultiply = 4.5,
+            Color = Color3.new(0.48235294222832, 1, 0),
+            Display = "Clover",
             Chance = 0
         },
         Frozen = {
@@ -211,10 +223,10 @@ return {
             Display = "Aurulent",
             Chance = 0
         },
-        Subspace = {
-            PriceMultiply = 5,
-            Color = Color3.new(1, 0, 0.7843137383461),
-            Display = "Subspace",
+        Blarney = {
+            PriceMultiply = 4.5,
+            Color = Color3.new(0.21960784494877, 0.6235294342041, 0.074509806931019),
+            Display = "Blarney",
             Chance = 0
         },
         Unsellable = {
