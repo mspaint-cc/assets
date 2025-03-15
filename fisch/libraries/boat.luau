@@ -20,11 +20,12 @@ return {
             Price = -1,
             Bobbing = 2,
             BobbingSpeed = 1,
-            MaxSpeed = 150,
             Unpurchasable = true,
+            MaxSpeed = 150,
             StopEfficiency = 1.5,
-            Level = 1,
             TurningSpeed = 0.54,
+            Level = 1,
+            Icon = "rbxassetid://75366616883373",
             Accel = 0.3
         },
         ["Holiday Steampunk Ship"] = {
@@ -61,13 +62,14 @@ return {
             BackwardsEfficiency = 1,
             Price = -1,
             Bobbing = 2,
-            BobbingSpeed = 0.4,
             Unpurchasable = true,
-            MaxSpeed = 200,
+            BobbingSpeed = 0.4,
             StopEfficiency = 3.5,
+            MaxSpeed = 200,
             TurningSpeed = 0.7,
-            Level = 60,
             Accel = 0.3,
+            Level = 60,
+            Icon = "rbxassetid://132722267987667",
             ObtainText = "Obtain on Christmas Bundle"
         },
         ["Archaeological Boat"] = {
@@ -76,11 +78,12 @@ return {
             Price = 20000,
             Bobbing = 1,
             BobbingSpeed = 3,
-            MaxSpeed = 80,
             Unpurchasable = true,
+            MaxSpeed = 80,
             StopEfficiency = 2,
-            Level = 30,
             TurningSpeed = 0.3,
+            Level = 30,
+            Icon = "rbxassetid://82626003313983",
             Accel = 0.2
         },
         Jetski = {
@@ -91,9 +94,24 @@ return {
             BobbingSpeed = 0.4,
             MaxSpeed = 180,
             StopEfficiency = 3.5,
-            Level = 60,
             TurningSpeed = 0.7,
+            Level = 60,
+            Icon = "rbxassetid://129451187335290",
             Accel = 0.3
+        },
+        ["Irish Jig"] = {
+            Dedscriptipon = "A lively vessel that dances upon the waves like a true Celtic tune! The Irish Jig is a vibrant and sturdy boat, built for both adventure and celebration.",
+            BackwardsEfficiency = 1.5,
+            Price = -1,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            Unpurchasable = true,
+            MaxSpeed = 228,
+            StopEfficiency = 1.4,
+            TurningSpeed = 0.7,
+            Level = 1,
+            Icon = "rbxassetid://116084539386855",
+            Accel = 0.6
         },
         Rowboat = {
             Dedscriptipon = "Sail the seas with your trusty paddles!",
@@ -103,9 +121,27 @@ return {
             BobbingSpeed = 1,
             MaxSpeed = 25,
             StopEfficiency = 2,
-            Level = 5,
             TurningSpeed = 0.4,
+            Level = 5,
+            Icon = "rbxassetid://134432015160761",
             Accel = 0.15
+        },
+        ["Lucky Racer"] = {
+            FakePrice = 4999,
+            BackwardsEfficiency = 1.1,
+            Unpurchasable = true,
+            Price = -1,
+            Bobbing = 2,
+            TurningSpeed = 0.8,
+            StopEfficiency = 3.7,
+            BobbingSpeed = 0.4,
+            Dedscriptipon = "Feeling Lucky? Take this out for a spin...",
+            MaxSpeed = 235,
+            ProductId = 3238002412,
+            LimitedAmount = 15000,
+            Level = 1,
+            Icon = "rbxassetid://103178311237682",
+            Accel = 0.8
         },
         ["Orca Boat"] = {
             Dedscriptipon = "The Orca Boat glides through the waves with sleek black-and-white patterns, mimicking the grace of a real life Orca.",
@@ -186,6 +222,19 @@ return {
             Icon = "rbxassetid://134110214330233",
             Accel = 0.6
         },
+        ["Lucky Pot"] = {
+            Dedscriptipon = "Huh? I'm a lucky guy",
+            BackwardsEfficiency = 1,
+            Price = 5000,
+            Bobbing = 3,
+            BobbingSpeed = 1,
+            MaxSpeed = 100,
+            StopEfficiency = 1.5,
+            TurningSpeed = 0.6,
+            Level = 1,
+            Icon = "rbxassetid://122341403504224",
+            Accel = 0.2
+        },
         ["Volcanic Research Boat"] = {
             Dedscriptipon = "Dr. Finneus's Volcanic Research Quest Boat!",
             BackwardsEfficiency = 1.1,
@@ -197,7 +246,7 @@ return {
             StopEfficiency = 1.75,
             TurningSpeed = 0.45,
             Level = 1,
-            Icon = "rbxassetid://72911569404830",
+            Icon = "rbxassetid://116581949935250",
             Accel = 0.3
         },
         ["Fischmas Speedboat"] = {
@@ -237,8 +286,9 @@ return {
             BobbingSpeed = 3,
             MaxSpeed = 80,
             StopEfficiency = 2,
-            Level = 30,
             TurningSpeed = 0.3,
+            Level = 30,
+            Icon = "rbxassetid://88689922648864",
             Accel = 0.2
         },
         ["Camera Boat"] = {
@@ -247,11 +297,12 @@ return {
             Price = -1,
             Bobbing = 2,
             BobbingSpeed = 0.4,
-            MaxSpeed = 200,
             Unpurchasable = true,
+            MaxSpeed = 200,
             StopEfficiency = 4,
-            Level = 1,
             TurningSpeed = 1,
+            Level = 1,
+            Icon = "rbxassetid://98664846868494",
             Accel = 0.6
         },
         ["Luxury Speedboat"] = {
@@ -262,8 +313,9 @@ return {
             BobbingSpeed = 1,
             MaxSpeed = 150,
             StopEfficiency = 1.5,
-            Level = 50,
             TurningSpeed = 0.54,
+            Level = 50,
+            Icon = "rbxassetid://128624450327470",
             Accel = 0.3
         },
         Mila = {
@@ -272,11 +324,12 @@ return {
             Price = -1,
             Bobbing = 2,
             BobbingSpeed = 1,
-            MaxSpeed = 250,
             Unpurchasable = true,
+            MaxSpeed = 250,
             StopEfficiency = 2,
-            Level = 1,
             TurningSpeed = 2,
+            Level = 1,
+            Icon = "rbxassetid://73843249851684",
             Accel = 0.65
         },
         Hovercraft = {
@@ -287,8 +340,9 @@ return {
             BobbingSpeed = 1,
             MaxSpeed = 55,
             StopEfficiency = 0.7,
-            Level = 15,
             TurningSpeed = 0.4,
+            Level = 15,
+            Icon = "rbxassetid://86981907121786",
             Accel = 0.22
         },
         ["Serpent Cruiser"] = {
@@ -311,11 +365,12 @@ return {
             Price = -1,
             Bobbing = 2,
             BobbingSpeed = 1,
-            MaxSpeed = 199,
             Unpurchasable = true,
+            MaxSpeed = 199,
             StopEfficiency = 2,
-            Level = 1,
             TurningSpeed = 2.5,
+            Level = 1,
+            Icon = "rbxassetid://115979227935769",
             Accel = 0.95
         },
         ["Dead Fish Express"] = {
@@ -340,8 +395,9 @@ return {
             BobbingSpeed = 3,
             MaxSpeed = 95,
             StopEfficiency = 3,
-            Level = 90,
             TurningSpeed = 0.3,
+            Level = 90,
+            Icon = "rbxassetid://140297535873347",
             Accel = 0.2
         },
         ["Fishscale Waverider"] = {
@@ -369,8 +425,9 @@ return {
             BobbingSpeed = 3,
             MaxSpeed = 100,
             StopEfficiency = 2.2,
-            Level = 75,
             TurningSpeed = 0.33,
+            Level = 75,
+            Icon = "rbxassetid://139332412278271",
             Accel = 0.25
         },
         ["The Mawrider"] = {
@@ -409,13 +466,14 @@ return {
             BackwardsEfficiency = 1,
             Price = -1,
             Bobbing = 2,
-            BobbingSpeed = 0.4,
             IsSubmarine = true,
-            MaxSpeed = 180,
+            BobbingSpeed = 0.4,
             Unpurchasable = true,
+            MaxSpeed = 180,
             StopEfficiency = 3.5,
-            Level = 70,
             TurningSpeed = 0.7,
+            Level = 70,
+            Icon = "rbxassetid://94549000992556",
             Accel = 0.3
         },
         ["Volcanic Speedboat"] = {
@@ -505,8 +563,9 @@ return {
             BobbingSpeed = 1,
             MaxSpeed = 45,
             StopEfficiency = 1.5,
-            Level = 40,
             TurningSpeed = 0.2,
+            Level = 40,
+            Icon = "rbxassetid://124154643224531",
             Accel = 0.2
         },
         ["Coral Cruiser Boat"] = {
@@ -532,8 +591,9 @@ return {
             BobbingSpeed = 1,
             MaxSpeed = 45,
             StopEfficiency = 0.7,
-            Level = 10,
             TurningSpeed = 0.4,
+            Level = 10,
+            Icon = "rbxassetid://82321210811947",
             Accel = 0.22
         },
         ["Hollywave Cruiser"] = {
@@ -559,11 +619,12 @@ return {
             Price = -1,
             Bobbing = 2,
             BobbingSpeed = 1,
-            MaxSpeed = 500,
             Unpurchasable = true,
+            MaxSpeed = 500,
             StopEfficiency = 2,
-            Level = 1,
             TurningSpeed = 2,
+            Level = 1,
+            Icon = "rbxassetid://130682434368049",
             Accel = 2.95
         },
         Pontoon = {
@@ -574,8 +635,9 @@ return {
             BobbingSpeed = 1,
             MaxSpeed = 40,
             StopEfficiency = 2,
-            Level = 30,
             TurningSpeed = 0.4,
+            Level = 30,
+            Icon = "rbxassetid://126083630313652",
             Accel = 0.2
         },
         ["Pride of Fisch"] = {
@@ -598,11 +660,12 @@ return {
             Price = -1,
             Bobbing = 2,
             BobbingSpeed = 1,
-            MaxSpeed = 90,
             Unpurchasable = true,
+            MaxSpeed = 90,
             StopEfficiency = 1.5,
-            Level = 1,
             TurningSpeed = 0.6,
+            Level = 1,
+            Icon = "rbxassetid://113467920745327",
             Accel = 0.4
         },
         ["Quack Cruiser"] = {
@@ -613,8 +676,9 @@ return {
             BobbingSpeed = 0.5,
             MaxSpeed = 45,
             StopEfficiency = 2,
-            Level = 35,
             TurningSpeed = 0.5,
+            Level = 35,
+            Icon = "rbxassetid://110958729645045",
             Accel = 0.2
         },
         Speedboat = {
@@ -625,8 +689,9 @@ return {
             BobbingSpeed = 1,
             MaxSpeed = 85,
             StopEfficiency = 1.3,
-            Level = 20,
             TurningSpeed = 0.5,
+            Level = 20,
+            Icon = "rbxassetid://130743409246855",
             Accel = 0.25
         },
         ["Fishing Boat"] = {
@@ -637,8 +702,9 @@ return {
             BobbingSpeed = 1.5,
             MaxSpeed = 75,
             StopEfficiency = 2,
-            Level = 25,
             TurningSpeed = 0.5,
+            Level = 25,
+            Icon = "rbxassetid://76012409822158",
             Accel = 0.3
         },
         ["Reindeer Cruiser"] = {
@@ -647,11 +713,12 @@ return {
             Price = -1,
             Bobbing = 4,
             BobbingSpeed = 0.5,
-            MaxSpeed = 55,
             Unpurchasable = true,
+            MaxSpeed = 55,
             StopEfficiency = 2,
-            Level = 1,
             TurningSpeed = 0.5,
+            Level = 1,
+            Icon = "rbxassetid://127716910078260",
             Accel = 0.25
         },
         ["Fischmas Jetski"] = {
@@ -689,10 +756,12 @@ return {
             Price = -1,
             Bobbing = 2,
             BobbingSpeed = 1,
+            Unpurchasable = true,
             MaxSpeed = 150,
             StopEfficiency = 1.5,
-            Level = 50,
             TurningSpeed = 0.54,
+            Level = 50,
+            Icon = "rbxassetid://111198001071610",
             Accel = 0.3
         },
         Surfboard = {
@@ -703,8 +772,9 @@ return {
             BobbingSpeed = 0.5,
             MaxSpeed = 30,
             StopEfficiency = 2,
-            Level = 7,
             TurningSpeed = 0.5,
+            Level = 7,
+            Icon = "rbxassetid://140475994837078",
             Accel = 0.2
         },
         ["Flying Dutchman"] = {
@@ -713,11 +783,12 @@ return {
             Price = -1,
             Bobbing = 6,
             BobbingSpeed = 3,
-            MaxSpeed = 80,
             Unpurchasable = true,
+            MaxSpeed = 80,
             StopEfficiency = 2,
-            Level = 0,
             TurningSpeed = 0.3,
+            Level = 0,
+            Icon = "rbxassetid://86518345531497",
             Accel = 0.2
         },
         ["King of the Kraken"] = {
