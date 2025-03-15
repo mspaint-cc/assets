@@ -24,7 +24,8 @@ local data = {
     },
 
     ZonesAliases = {
-        ["Veil of the Forsaken"] = "Forsaken Veil"
+        ["Veil of the Forsaken"] = "Forsaken Veil",
+        ["Challenger's Deep"] = "Challengers Deep"
     },
 
     NPCs = {
@@ -81,6 +82,10 @@ local head = char.Head
 local HasMissing = {}
 head.Anchored = true
 
+local MaybeUnloadedZones = Instance.new("Model", workspace)
+MaybeUnloadedZones.Name = "wooow"
+MaybeUnloadedZones.ModelStreamingMode = Enum.ModelStreamingMode.Persistent
+
 npcs.ChildAdded:Connect(function(npc)
     if data.NPCs[npc.Name] == -1 then
         data.NPCs[npc.Name] = npc:GetPivot() * CFrame.new(0, 1.5, 0)
@@ -136,6 +141,8 @@ interactables.ChildAdded:Connect(function(interactable)
 end)
 
 FishingZones.ChildAdded:Connect(function(zoneInst)
+    zoneInst:Clone().Parent = MaybeUnloadedZones
+
     local zone = zoneInst.Name;
     if table.find(data.SpecialEvents, zone) then return end
     if table.find(allFishLocations, zone) then return end
@@ -161,7 +168,7 @@ function fetch(location, name)
     table.insert(HasMissing, name);
     messages[name].update_message({
         message = "[" .. name .. "] Failed to fetch from loaded assets.",
-        image = "rbxasset://textures/AudioDiscovery/done.png",
+        image = "rbxasset://textures/AudioDiscovery/error.png",
         color = Color3.fromRGB(255, 62, 62)
     })
 end
@@ -197,8 +204,10 @@ if #HasMissing > 0 then
         char:PivotTo(spot:GetPivot());
 
         local start = os.time();
-        repeat task.wait(.25); until LocalPlayer.GameplayPaused == false or (os.time() - start) >= 7.5
-        task.wait(0.65);
+        repeat task.wait(); until LocalPlayer.GameplayPaused == false or (os.time() - start) >= 7.5
+        if (os.time() - start) < 7.5 then
+            task.wait(0.5);
+        end
 
         if #HasMissing < 1 then break end
     end
@@ -245,6 +254,10 @@ local FetchBestLocationCFrameByLocationName = function(locName)
     elseif FishingZones:FindFirstChild(locName) then
         local locCFrame = FishingZones[locName].CFrame;
         return MakeFishingZoneLocation(locCFrame);
+
+    elseif MaybeUnloadedZones:FindFirstChild(locName) then
+        local locCFrame = MaybeUnloadedZones[locName].CFrame;
+        return MakeFishingZoneLocation(locCFrame);
     end
 
     return nil
@@ -284,7 +297,7 @@ for _, mainLocationName in pairs(allFishLocations) do
     if not mainLocationCFrame then
         mainMessage.update_message({
             message = "[" .. mainLocationName .. "] Failed to fetch the location...",
-            image = "rbxasset://textures/AudioDiscovery/done.png",
+            image = "rbxasset://textures/AudioDiscovery/error.png",
             color = Color3.fromRGB(255, 62, 62)
         })
 
@@ -313,7 +326,7 @@ for _, mainLocationName in pairs(allFishLocations) do
                 if not partLocationCFrame then
                     partMessage.update_message({
                         message = "[" .. locationName .. "] Failed to fetch the location...",
-                        image = "rbxasset://textures/AudioDiscovery/done.png",
+                        image = "rbxasset://textures/AudioDiscovery/error.png",
                         color = Color3.fromRGB(255, 62, 62)
                     })
 
@@ -324,7 +337,7 @@ for _, mainLocationName in pairs(allFishLocations) do
                 if partOriginalCFrame == mainOriginalCFrame then
                     partMessage.update_message({
                         message = "[" .. locationName .. "] Skipped, same as main location.",
-                        image = "rbxasset://textures/AudioDiscovery/done.png",
+                        image = "rbxasset://textures/AudioDiscovery/error.png",
                         color = Color3.fromRGB(255, 62, 62)
                     })
 
@@ -356,6 +369,7 @@ for _, mainLocationName in pairs(allFishLocations) do
     })
 end;
 
+MaybeUnloadedZones:Destroy()
 task.wait(.25)
 head.Anchored = false;
 char:PivotTo(workspace.world.spawns.TpSpots.moosewood.CFrame * CFrame.new(0, 10, 0))
@@ -363,6 +377,7 @@ task.wait(.25)
 head.Anchored = false;
 
 warn("========= FINISHED data.luau =========")
+warn("Total Zones:", #data.Locations.Safe.Names)
 print(LuaEncode(
     data.Locations.Safe.Names, {Prettify = true}
 ))
