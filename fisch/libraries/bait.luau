@@ -1,10 +1,16 @@
 return {
-    Magnet = {
-        LureSpeed = 0,
+    Lucky = {
+        MutationChance = {
+            1,
+            100,
+            50
+        },
+        LureSpeed = 20,
         Luck = 200,
-        GenerelLuck = 0,
-        Rarity = "Unusual",
-        Resilience = 0
+        Rarity = "Mythical",
+        Mutation = "Blarney",
+        GenerelLuck = 150,
+        Resilience = 15
     },
     Worm = {
         LureSpeed = 15,
@@ -13,11 +19,13 @@ return {
         Rarity = "Common",
         Resilience = 0
     },
+    Give = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     ["Golden Tentacle"] = {
         LureSpeed = 50,
         Luck = 150,
-        GenerelLuck = 40,
         Rarity = "Legendary",
+        GenerelLuck = 40,
+        Icon = "rbxassetid://83405723534819",
         Resilience = 20
     },
     ["Peppermint Worm"] = {
@@ -48,7 +56,6 @@ return {
         Rarity = "Uncommon",
         Resilience = -5
     },
-    Give = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     ["Kraken Tentacle"] = {
         LureSpeed = 35,
         Luck = 100,
@@ -64,18 +71,18 @@ return {
         Rarity = "Mythical",
         Resilience = 20
     },
+    ["Rapid Catcher"] = {
+        LureSpeed = 35,
+        Luck = 0,
+        GenerelLuck = 0,
+        Rarity = "Rare",
+        Resilience = -15
+    },
     Insect = {
         LureSpeed = 5,
         Luck = 35,
         GenerelLuck = 0,
         Rarity = "Common",
-        Resilience = 0
-    },
-    ["Night Shrimp"] = {
-        LureSpeed = 15,
-        Luck = 0,
-        GenerelLuck = 90,
-        Rarity = "Legendary",
         Resilience = 0
     },
     ["Deep Coral"] = {
@@ -84,6 +91,13 @@ return {
         GenerelLuck = 0,
         Rarity = "Legendary",
         Resilience = 50
+    },
+    ["Shark Head"] = {
+        LureSpeed = -5,
+        Luck = 225,
+        GenerelLuck = 30,
+        Rarity = "Mythical",
+        Resilience = 10
     },
     ["Chocolate Fish"] = {
         LureSpeed = 20,
@@ -114,12 +128,12 @@ return {
         Rarity = "Legendary",
         Resilience = -15
     },
-    ["Shark Head"] = {
-        LureSpeed = -5,
-        Luck = 225,
-        GenerelLuck = 30,
-        Rarity = "Mythical",
-        Resilience = 10
+    ["Night Shrimp"] = {
+        LureSpeed = 15,
+        Luck = 0,
+        GenerelLuck = 90,
+        Rarity = "Legendary",
+        Resilience = 0
     },
     ["Fish Head"] = {
         LureSpeed = 10,
@@ -149,19 +163,19 @@ return {
         Rarity = "Legendary",
         Resilience = 10
     },
-    ["Rapid Catcher"] = {
-        LureSpeed = 35,
-        Luck = 0,
-        GenerelLuck = 0,
-        Rarity = "Rare",
-        Resilience = -15
-    },
     Minnow = {
         LureSpeed = 0,
         Luck = 65,
         GenerelLuck = 0,
         Rarity = "Unusual",
         Resilience = -10
+    },
+    Coral = {
+        LureSpeed = 20,
+        Luck = 0,
+        GenerelLuck = 0,
+        Rarity = "Unusual",
+        Resilience = 20
     },
     Maggot = {
         LureSpeed = -10,
@@ -170,12 +184,12 @@ return {
         Rarity = "Uncommon",
         Resilience = 0
     },
-    Coral = {
-        LureSpeed = 20,
-        Luck = 0,
+    Magnet = {
+        LureSpeed = 0,
+        Luck = 200,
         GenerelLuck = 0,
         Rarity = "Unusual",
-        Resilience = 20
+        Resilience = 0
     },
     Flakes = {
         LureSpeed = 10,
@@ -201,8 +215,9 @@ return {
     ["Truffle Worm"] = {
         LureSpeed = -10,
         Luck = 300,
-        GenerelLuck = 0,
         Rarity = "Legendary",
+        GenerelLuck = 0,
+        Icon = "rbxassetid://93019675927218",
         Resilience = 0
     }
 }
