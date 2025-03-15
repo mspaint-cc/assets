@@ -1,4 +1,4 @@
-{
+return {
     Locations = {
         ["The Depths"] = "https://static.wikitide.net/fischwiki/a/ae/The_Depths.png",
         ["Kraken Pool"] = "https://static.wikitide.net/fischwiki/1/10/Kraken_Pool.png",
