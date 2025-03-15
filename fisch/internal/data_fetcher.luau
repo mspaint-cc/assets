@@ -243,6 +243,7 @@ end
 
 local FetchBestLocationCFrameByLocationName = function(locName)
     if typeof(locName) ~= "string" then return end
+    locName = data.ZonesAliases[locName] or locName;
 
     local lowerCase = string.lower(locName)
     local noSpaceLowerCase = lowerCase:gsub(" ", "")
@@ -294,6 +295,8 @@ end;
 warn("=================================================")
 
 for _, mainLocationName in pairs(allFishLocations) do
+    mainLocationName = data.ZonesAliases[mainLocationName] or mainLocationName
+
     if table.find(data.Locations.Safe.Names, mainLocationName) and table.find(data.Locations.Unsafe.Names, mainLocationName) then continue end
     if table.find(data.SpecialEvents, mainLocationName) then continue end
 
@@ -322,7 +325,9 @@ for _, mainLocationName in pairs(allFishLocations) do
     --// abundance support \\--
     if FishingZones:FindFirstChild(mainLocationName) then
         for _, part in ipairs(FishingZones:GetChildren()) do
-            if part.Name == mainLocationName and part:FindFirstChild("Abundance") then
+            local partName = data.ZonesAliases[part.Name] or part.Name;
+            
+            if partName == mainLocationName and part:FindFirstChild("Abundance") then
                 local locationName = mainLocationName .. " - " .. part.Abundance.Value
                 if table.find(data.Locations.Safe.Names, locationName) and table.find(data.Locations.Unsafe.Names, locationName) then continue end
 
