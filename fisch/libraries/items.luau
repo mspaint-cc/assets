@@ -98,6 +98,11 @@ return {
             OnlyBuyOne = true,
             Rarity = "Unusual"
         },
+        ["Physpax Gun"] = {
+            Price = math.huge,
+            Unpurchasable = true,
+            Rarity = "Exotic"
+        },
         ["Megalodon Egg"] = {
             Price = math.huge,
             Unpurchasable = true,
