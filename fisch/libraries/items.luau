@@ -9,9 +9,10 @@ return {
             OnlyBuyOne = true,
             Rarity = "Mythical"
         },
-        ["Blizzard Totem"] = {
-            Rarity = "Mythical",
-            Price = 275000
+        ["Hourglass Hull"] = {
+            Price = math.huge,
+            Unpurchasable = true,
+            Rarity = "Exotic"
         },
         ["Magic Thread"] = {
             Price = math.huge,
@@ -33,14 +34,20 @@ return {
             Unpurchasable = true,
             Rarity = "Exotic"
         },
-        ["Metal Panels"] = {
-            Rarity = "Exotic",
-            Price = math.huge
+        ["Timeless Threading"] = {
+            Price = math.huge,
+            Unpurchasable = true,
+            Rarity = "Exotic"
         },
-        Flippers = {
-            Price = 9000,
-            OnlyBuyOne = true,
-            Rarity = "Unusual"
+        ["Mythical Essence"] = {
+            Price = math.huge,
+            Unpurchasable = true,
+            Rarity = "Exotic"
+        },
+        ["1000-Year-Old Wood"] = {
+            Price = math.huge,
+            Unpurchasable = true,
+            Rarity = "Exotic"
         },
         Drill = {
             Price = math.huge,
@@ -116,11 +123,30 @@ return {
             Rarity = "Exotic",
             Price = math.huge
         },
+        ["Cursed Storm Totem"] = {
+            Price = 1000000,
+            DataInstanceRequiriment = {
+                "Cache.CanPurchaseCursedTotem",
+                true,
+                "You need to unlock the item before purchasing!"
+            },
+            Rarity = "Rare"
+        },
+        ["Sand Of Time"] = {
+            Price = math.huge,
+            Unpurchasable = true,
+            Rarity = "Exotic"
+        },
         GPS = {
             Price = 100,
             OnlyBuyOne = true,
             Rarity = "Uncommon",
             Icon = "rbxassetid://92660360174055"
+        },
+        ["Eternal Fuel"] = {
+            Price = math.huge,
+            Unpurchasable = true,
+            Rarity = "Exotic"
         },
         ["Regular Token"] = {
             Rarity = "Exotic",
@@ -132,9 +158,10 @@ return {
             Rarity = "Legendary",
             Icon = "rbxassetid://132119413174655"
         },
-        ["Side Fins"] = {
-            Rarity = "Exotic",
-            Price = math.huge
+        ["Hourglass Lantern"] = {
+            Price = math.huge,
+            Unpurchasable = true,
+            Rarity = "Exotic"
         },
         ["Crossbow Arrow"] = {
             Price = math.huge,
@@ -185,14 +212,31 @@ return {
             Unpurchasable = true,
             Rarity = "Exotic"
         },
+        ["Back Fins"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
         Firework = {
             Rarity = "Limited",
             Price = 130
+        },
+        ["Ice Crystal"] = {
+            Price = math.huge,
+            Icon = "rbxassetid://87113404726717",
+            Rarity = "Exotic"
+        },
+        ["Eclipse Totem"] = {
+            Rarity = "Mythical",
+            Price = 250000
         },
         ["Lava Crystal"] = {
             Price = math.huge,
             Icon = "rbxassetid://94081558964669",
             Rarity = "Exotic"
+        },
+        ["Metal Panels"] = {
+            Rarity = "Exotic",
+            Price = math.huge
         },
         ["Avalanche Totem"] = {
             Rarity = "Mythical",
@@ -207,36 +251,23 @@ return {
             OnlyBuyOne = true,
             Rarity = "Rare"
         },
-        ["Advanced Oxygen Tank"] = {
-            Price = 25000,
-            OnlyBuyOne = true,
-            Rarity = "Legendary"
+        ["Side Fins"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Ethereal Glass"] = {
+            Price = math.huge,
+            Unpurchasable = true,
+            Rarity = "Exotic"
         },
         ["Winter Cloak"] = {
             Price = 7500,
             OnlyBuyOne = true,
             Rarity = "Unusual"
         },
-        ["Ice Crystal"] = {
-            Price = math.huge,
-            Icon = "rbxassetid://87113404726717",
-            Rarity = "Exotic"
-        },
-        ["Eclipse Totem"] = {
-            Rarity = "Mythical",
-            Price = 250000
-        },
-        ["Back Fins"] = {
-            Rarity = "Exotic",
-            Price = math.huge
-        },
         ["Skin Crate"] = {
             Rarity = "Exotic",
             Price = math.huge
-        },
-        ["Crab Cage"] = {
-            Rarity = "Unusual",
-            Price = 45
         },
         ["Bag of Presents"] = {
             Rarity = "Exotic",
@@ -250,6 +281,10 @@ return {
             Rarity = "Mythical",
             Price = 1500000
         },
+        ["Crab Cage"] = {
+            Rarity = "Unusual",
+            Price = 45
+        },
         ["Crossbow Bow"] = {
             Price = math.huge,
             Rarity = "Exotic",
@@ -259,12 +294,6 @@ return {
             Rarity = "Exotic",
             Price = math.huge
         },
-        ["Glimmerfin Suit Lvl 1"] = {
-            Price = 7500,
-            OnlyBuyOne = true,
-            Icon = "rbxassetid://107405457740294",
-            Rarity = "Exotic"
-        },
         Fillionaire = {
             Rarity = "Exotic",
             Price = math.huge
@@ -273,15 +302,36 @@ return {
             Rarity = "Exotic",
             Price = math.huge
         },
-        ["Silver Egg Trophy Bobber"] = {
-            Rarity = "Exotic",
-            Price = math.huge
+        ["Intermediate Oxygen Tank"] = {
+            Price = 10000,
+            OnlyBuyOne = true,
+            Rarity = "Rare"
+        },
+        ["Glimmerfin Suit Lvl 1"] = {
+            Price = 7500,
+            OnlyBuyOne = true,
+            Icon = "rbxassetid://107405457740294",
+            Rarity = "Exotic"
+        },
+        Flippers = {
+            Price = 9000,
+            OnlyBuyOne = true,
+            Rarity = "Unusual"
         },
         ["Glimmerfin Suit Lvl 3"] = {
             Price = 7500,
             OnlyBuyOne = true,
             Icon = "rbxassetid://137334347694202",
             Rarity = "Exotic"
+        },
+        ["Silver Egg Trophy Bobber"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Advanced Oxygen Tank"] = {
+            Price = 25000,
+            OnlyBuyOne = true,
+            Rarity = "Legendary"
         },
         Pickaxe = {
             Price = 5000,
@@ -292,20 +342,19 @@ return {
             Rarity = "Legendary",
             Price = 75000
         },
-        ["Intermediate Oxygen Tank"] = {
-            Price = 10000,
+        ["Basic Oxygen Tank"] = {
+            Price = 1000,
             OnlyBuyOne = true,
-            Rarity = "Rare"
+            Rarity = "Uncommon"
         },
         ["Orca Egg"] = {
             Price = math.huge,
             Unpurchasable = true,
             Rarity = "Exotic"
         },
-        ["Basic Oxygen Tank"] = {
-            Price = 1000,
-            OnlyBuyOne = true,
-            Rarity = "Uncommon"
+        ["Blizzard Totem"] = {
+            Rarity = "Mythical",
+            Price = 275000
         },
         ["Advanced Glider"] = {
             Price = 2500,
