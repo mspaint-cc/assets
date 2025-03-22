@@ -4,7 +4,7 @@ local SerializerOptions = {
     Prettify = true
 }
 
-local GithubToken = "github_pat_"
+local GithubToken = github_token or "github_pat_"
 
 local Modules = game:GetService("ReplicatedStorage").shared.modules
 local Library = Modules.library
