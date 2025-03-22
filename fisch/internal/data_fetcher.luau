@@ -205,9 +205,9 @@ if #HasMissing > 0 then
         char:PivotTo(spot:GetPivot());
 
         local start = os.time();
-        repeat task.wait(.05); until LocalPlayer.GameplayPaused == false or (os.time() - start) >= 7.5
+        repeat task.wait(.125); until LocalPlayer.GameplayPaused == false or (os.time() - start) >= 7.5
         --if (os.time() - start) > 7 then
-        task.wait(.05);
+        task.wait(.5);
         --end
 
         if #HasMissing < 1 then break end
