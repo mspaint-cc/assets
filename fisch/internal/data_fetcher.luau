@@ -205,9 +205,9 @@ if #HasMissing > 0 then
 
         local start = os.time();
         repeat task.wait(); until LocalPlayer.GameplayPaused == false or (os.time() - start) >= 7.5
-        if (os.time() - start) < 7.5 then
-            task.wait(0.5);
-        end
+        --if (os.time() - start) > 7 then
+            task.wait(0.65);
+        --end
 
         if #HasMissing < 1 then break end
     end
