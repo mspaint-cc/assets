@@ -200,13 +200,14 @@ if #HasMissing > 0 then
             message = "[Unloaded] Loading area (" .. spot.Name .. ") [" .. tostring(_) .. "/" .. tostring(#spots) .. "] - " .. tostring(#HasMissing),
         })
 
-        task.spawn(function() LocalPlayer:RequestStreamAroundAsync(spot:GetPivot().Position, 0.1); end)
+        task.spawn(function() LocalPlayer:RequestStreamAroundAsync(spot:GetPivot().Position, 1); end)
+        task.wait(.25);
         char:PivotTo(spot:GetPivot());
 
         local start = os.time();
-        repeat task.wait(); until LocalPlayer.GameplayPaused == false or (os.time() - start) >= 7.5
+        repeat task.wait(.05); until LocalPlayer.GameplayPaused == false or (os.time() - start) >= 7.5
         --if (os.time() - start) > 7 then
-            task.wait(0.65);
+        task.wait(.05);
         --end
 
         if #HasMissing < 1 then break end
