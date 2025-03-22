@@ -1,11 +1,5 @@
 local data = {
     SpecialEvents = { -- needs to be manually updated
-        "Rowdy McCharm",
-        "O'Mango Goldgrin",
-        "Sunny O'Coin",
-        "Blarney McBreeze",
-        "Plumrick O'Luck",
-
         "Whales Pool",
         "Forsaken Veil - Scylla",
 
