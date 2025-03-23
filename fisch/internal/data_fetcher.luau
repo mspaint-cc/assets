@@ -377,7 +377,6 @@ warn("=================================================")
 for _, mainLocationName in pairs(allFishLocations) do
     mainLocationName = data.ZonesAliases[mainLocationName] or mainLocationName
 
-    if true then break end
     if table.find(data.Locations.Safe.Names, mainLocationName) and table.find(data.Locations.Unsafe.Names, mainLocationName) then continue end
     if table.find(data.SpecialEvents, mainLocationName) then continue end
 
