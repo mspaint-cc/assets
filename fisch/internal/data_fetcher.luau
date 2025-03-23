@@ -263,39 +263,6 @@ if #HasMissing > 0 then
         end
     until #HasMissing < 1
 
-    unloaded.update_message({
-        message = "[Unloaded] Loaded!",
-        image = "rbxasset://textures/AudioDiscovery/done.png",
-        color = Color3.fromRGB(0, 255, 0)
-    }) 
-
-    repeat task.wait(0.5)
-        for _, spot in pairs(spots) do
-            unloaded.update_message({
-                message = "[Unloaded] Loading area (" .. spot.Name .. ") [" .. tostring(_) .. "/" .. tostring(#spots) .. "] - " .. tostring(#HasMissing),
-            })
-
-            LocalPlayer.ReplicationFocus = spot;
-            local pivot = spot:GetPivot();
-            char:PivotTo(pivot);
-            task.spawn(function() LocalPlayer:RequestStreamAroundAsync(pivot.Position) end)
-
-            task.wait(0.25)
-            local op = OverlapParams.new()
-            op.FilterType = Enum.RaycastFilterType.Exclude
-            op.FilterDescendantsInstances = {char, spot, workspace.zones}
-
-            local start = tick()
-            while task.wait() do
-                local parts = workspace:GetPartBoundsInBox(char:GetPivot(), Vector3.new(250, 250, 250), op)
-                if #parts >= 250 or (tick() - start) >= 5 then break end
-            end
-            task.wait(0.65)
-
-            if #HasMissing < 1 then break end
-        end
-    until #HasMissing < 1
-
     LocalPlayer.ReplicationFocus = head;
 
     unloaded.update_message({
