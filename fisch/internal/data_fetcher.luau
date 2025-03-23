@@ -80,7 +80,7 @@ local char = LocalPlayer.Character
 local head = char.Head
 
 local HasMissing = {}
-head.Anchored = true
+head.Anchored = false
 
 local MaybeUnloadedZones = Instance.new("Model", workspace)
 MaybeUnloadedZones.Name = "wooow"
@@ -192,27 +192,111 @@ for name, _ in pairs(data.Interactables) do
     if cframe then data.Interactables[name] = cframe end
 end
 
+task.spawn(function()
+    char.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming, false);
+    char.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall, false);
+
+    repeat task.wait()
+        char.Humanoid:ChangeState(Enum.HumanoidStateType.Running);
+    until #HasMissing < 1
+
+    char.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Swimming, true);
+    char.Humanoid:SetStateEnabled(Enum.HumanoidStateType.Freefall, true);
+end)
+
 if #HasMissing > 0 then
     local unloaded = console.custom_print("[Unloaded] Loading area (???) ...")
 
-    for _, spot in pairs(spots) do
-        unloaded.update_message({
-            message = "[Unloaded] Loading area (" .. spot.Name .. ") [" .. tostring(_) .. "/" .. tostring(#spots) .. "] - " .. tostring(#HasMissing),
-        })
+    repeat task.wait(0.5)
+        for _, spot in pairs(spots) do
+            if #HasMissing < 1 then break end
 
-        -- task.spawn(function() LocalPlayer:RequestStreamAroundAsync(spot:GetPivot().Position, 1); end)
-        task.wait(.25);
-        char:PivotTo(spot:GetPivot());
-        task.wait(.25);
+            local suffix = "[" .. tostring(_) .. "/" .. tostring(#spots) .. "] - " .. tostring(#HasMissing);
+            local pivot = spot:GetPivot()
 
-        local start = os.time();
-        repeat task.wait(.05); until LocalPlayer.GameplayPaused == false or (os.time() - start) >= 7.5
-        --if (os.time() - start) > 7 then
-        task.wait(.65);
-        --end
+            unloaded.update_message({
+                message = "[Unloaded] Loading area (" .. spot.Name .. ") " .. suffix,
+            })
 
-        if #HasMissing < 1 then break end
-    end
+            task.spawn(function() LocalPlayer:RequestStreamAroundAsync(pivot.Position, 1) end)
+            LocalPlayer.ReplicationFocus = spot
+            task.wait(0.5);
+
+            unloaded.update_message({
+                message = "[Unloaded] Loading area (" .. spot.Name .. ") - Teleporting... - " .. suffix,
+            })
+
+            char:PivotTo(pivot)
+
+            local op = OverlapParams.new()
+            op.FilterType = Enum.RaycastFilterType.Exclude
+            op.FilterDescendantsInstances = {char, spot, workspace.zones}
+
+            local start = tick()
+            local success = false
+            while task.wait(0.05) do
+                local parts = workspace:GetPartBoundsInBox(char:GetPivot(), Vector3.new(500, 500, 500), op)
+                unloaded.update_message({
+                    message = "[Unloaded] Loading area (" .. spot.Name .. ") - Total Loaded Parts: " .. tostring(#parts) .. " - " .. suffix,
+                })
+
+                if #parts >= ((tick() - start) >= 3 and 150 or 250) then
+                    unloaded.update_message({
+                        message = "[Unloaded] Loading area (" .. spot.Name .. ") - Waiting... - " .. suffix,
+                    })
+
+                    task.wait(0.25)
+                    break
+                end
+
+                if (tick() - start) >= 6.5 then
+                    unloaded.update_message({
+                        message = "[Unloaded] Loading area (" .. spot.Name .. ") - Failed to load properly... - " .. suffix
+                    })
+
+                    break 
+                end
+            end
+
+            LocalPlayer.ReplicationFocus = head
+            task.wait(0.5)
+        end
+    until #HasMissing < 1
+
+    unloaded.update_message({
+        message = "[Unloaded] Loaded!",
+        image = "rbxasset://textures/AudioDiscovery/done.png",
+        color = Color3.fromRGB(0, 255, 0)
+    }) 
+
+    repeat task.wait(0.5)
+        for _, spot in pairs(spots) do
+            unloaded.update_message({
+                message = "[Unloaded] Loading area (" .. spot.Name .. ") [" .. tostring(_) .. "/" .. tostring(#spots) .. "] - " .. tostring(#HasMissing),
+            })
+
+            LocalPlayer.ReplicationFocus = spot;
+            local pivot = spot:GetPivot();
+            char:PivotTo(pivot);
+            task.spawn(function() LocalPlayer:RequestStreamAroundAsync(pivot.Position) end)
+
+            task.wait(0.25)
+            local op = OverlapParams.new()
+            op.FilterType = Enum.RaycastFilterType.Exclude
+            op.FilterDescendantsInstances = {char, spot, workspace.zones}
+
+            local start = tick()
+            while task.wait() do
+                local parts = workspace:GetPartBoundsInBox(char:GetPivot(), Vector3.new(250, 250, 250), op)
+                if #parts >= 250 or (tick() - start) >= 5 then break end
+            end
+            task.wait(0.65)
+
+            if #HasMissing < 1 then break end
+        end
+    until #HasMissing < 1
+
+    LocalPlayer.ReplicationFocus = head;
 
     unloaded.update_message({
         message = "[Unloaded] Loaded!",
@@ -293,6 +377,7 @@ warn("=================================================")
 for _, mainLocationName in pairs(allFishLocations) do
     mainLocationName = data.ZonesAliases[mainLocationName] or mainLocationName
 
+    if true then break end
     if table.find(data.Locations.Safe.Names, mainLocationName) and table.find(data.Locations.Unsafe.Names, mainLocationName) then continue end
     if table.find(data.SpecialEvents, mainLocationName) then continue end
 
