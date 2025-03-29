@@ -7390,7 +7390,7 @@ return {
                 Chance = 0
             },
             Bloom = {
-                PriceMultiply = 1,
+                PriceMultiply = 5,
                 Chance = 0
             },
             Greedy = {
@@ -7404,217 +7404,217 @@ return {
         },
         Baits = {
             ["Rapid Catcher"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = 35,
                 PreferredLuck = 0,
                 Rarity = "Rare"
             },
             Worm = {
-                UniversalLuck = -1,
+                UniversalLuck = 25,
                 LureSpeed = 15,
                 PreferredLuck = 0,
                 Rarity = "Common"
             },
             ["Golden Tentacle"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 150,
                 LureSpeed = 50,
                 PreferredLuck = 40,
                 Rarity = "Legendary"
             },
             ["Peppermint Worm"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 50,
                 LureSpeed = -5,
                 PreferredLuck = 30,
                 Rarity = "Unusual"
             },
             Squid = {
-                UniversalLuck = -1,
+                UniversalLuck = 55,
                 LureSpeed = -25,
                 PreferredLuck = 45,
                 Rarity = "Unusual"
             },
             ["Fish Head"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 150,
                 LureSpeed = 10,
                 PreferredLuck = 0,
                 Rarity = "Legendary"
             },
             Insect = {
-                UniversalLuck = -1,
+                UniversalLuck = 35,
                 LureSpeed = 5,
                 PreferredLuck = 0,
                 Rarity = "Common"
             },
             ["Toxic Jelly Core"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 180,
                 LureSpeed = -5,
                 PreferredLuck = 90,
                 Rarity = "Legendary"
             },
             ["Hangman's Hook"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 150,
                 LureSpeed = -5,
                 PreferredLuck = 35,
                 Rarity = "Mythical"
             },
             ["Super Flakes"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = 0,
                 PreferredLuck = 70,
                 Rarity = "Rare"
             },
             ["Nightmare Larva"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 120,
                 LureSpeed = 25,
                 PreferredLuck = 35,
                 Rarity = "Mythical"
             },
             ["Weird Algae"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = -35,
                 PreferredLuck = 200,
                 Rarity = "Legendary"
             },
             ["Shark Head"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 225,
                 LureSpeed = -5,
                 PreferredLuck = 30,
                 Rarity = "Mythical"
             },
             ["Phantom Leech"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 55,
                 LureSpeed = 10,
                 PreferredLuck = 30,
                 Rarity = "Rare"
             },
             ["Deep Coral"] = {
-                UniversalLuck = -1,
+                UniversalLuck = -10,
                 LureSpeed = 0,
                 PreferredLuck = 0,
                 Rarity = "Legendary"
             },
             ["Aurora Bait"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 100,
                 LureSpeed = -5,
                 PreferredLuck = 30,
                 Rarity = "Mythical"
             },
             Bagel = {
-                UniversalLuck = -1,
+                UniversalLuck = 25,
                 LureSpeed = 0,
                 PreferredLuck = 0,
                 Rarity = "Common"
             },
             Magnet = {
-                UniversalLuck = -1,
+                UniversalLuck = 200,
                 LureSpeed = 0,
                 PreferredLuck = 0,
                 Rarity = "Unusual"
             },
             ["Neuro Slug"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 90,
                 LureSpeed = -20,
                 PreferredLuck = 100,
                 Rarity = "Legendary"
             },
             Coal = {
-                UniversalLuck = -1,
+                UniversalLuck = 45,
                 LureSpeed = 0,
                 PreferredLuck = 0,
                 Rarity = "Rare"
             },
             Shrimp = {
-                UniversalLuck = -1,
+                UniversalLuck = 45,
                 LureSpeed = 0,
                 PreferredLuck = 25,
                 Rarity = "Uncommon"
             },
             Coral = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = 20,
                 PreferredLuck = 0,
                 Rarity = "Unusual"
             },
             ["Chocolate Fish"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 200,
                 LureSpeed = 20,
                 PreferredLuck = 150,
                 Rarity = "Mythical"
             },
             ["Night Shrimp"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = 15,
                 PreferredLuck = 90,
                 Rarity = "Legendary"
             },
             ["Instant Catcher"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = 65,
                 PreferredLuck = -20,
                 Rarity = "Legendary"
             },
             ["Golden Worm"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 200,
                 LureSpeed = 20,
                 PreferredLuck = 100,
                 Rarity = "Exotic"
             },
             ["Kraken Tentacle"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 100,
                 LureSpeed = 35,
                 PreferredLuck = 35,
                 Rarity = "Legendary"
             },
             Garbage = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = -5,
                 PreferredLuck = -250,
                 Rarity = "Common"
             },
             ["Holly Berry"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 80,
                 LureSpeed = -5,
                 PreferredLuck = 30,
                 Rarity = "Legendary"
             },
             ["Glass Beetle"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 125,
                 LureSpeed = 30,
                 PreferredLuck = -80,
                 Rarity = "Rare"
             },
             Maggot = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = -10,
                 PreferredLuck = 35,
                 Rarity = "Uncommon"
             },
             Seaweed = {
-                UniversalLuck = -1,
+                UniversalLuck = 35,
                 LureSpeed = 20,
                 PreferredLuck = 0,
                 Rarity = "Unusual"
             },
             Flakes = {
-                UniversalLuck = -1,
+                UniversalLuck = 55,
                 LureSpeed = 10,
                 PreferredLuck = 0,
                 Rarity = "Common"
             },
             Lucky = {
-                UniversalLuck = -1,
+                UniversalLuck = 200,
                 LureSpeed = 20,
                 PreferredLuck = 150,
                 Rarity = "Mythical"
             },
             Minnow = {
-                UniversalLuck = -1,
+                UniversalLuck = 65,
                 LureSpeed = 0,
                 PreferredLuck = 0,
                 Rarity = "Unusual"
             },
             ["Truffle Worm"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 300,
                 LureSpeed = -10,
                 PreferredLuck = 0,
                 Rarity = "Legendary"
@@ -10291,7 +10291,7 @@ return {
                 Chance = 0
             },
             Bloom = {
-                PriceMultiply = 1,
+                PriceMultiply = 5,
                 Chance = 0
             },
             Greedy = {
@@ -10305,217 +10305,217 @@ return {
         },
         Baits = {
             ["Rapid Catcher"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = 35,
                 PreferredLuck = 0,
                 Rarity = "Rare"
             },
             Worm = {
-                UniversalLuck = -1,
+                UniversalLuck = 25,
                 LureSpeed = 15,
                 PreferredLuck = 0,
                 Rarity = "Common"
             },
             ["Golden Tentacle"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 150,
                 LureSpeed = 50,
                 PreferredLuck = 40,
                 Rarity = "Legendary"
             },
             ["Peppermint Worm"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 50,
                 LureSpeed = -5,
                 PreferredLuck = 30,
                 Rarity = "Unusual"
             },
             Squid = {
-                UniversalLuck = -1,
+                UniversalLuck = 55,
                 LureSpeed = -25,
                 PreferredLuck = 45,
                 Rarity = "Unusual"
             },
             ["Fish Head"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 150,
                 LureSpeed = 10,
                 PreferredLuck = 0,
                 Rarity = "Legendary"
             },
             Insect = {
-                UniversalLuck = -1,
+                UniversalLuck = 35,
                 LureSpeed = 5,
                 PreferredLuck = 0,
                 Rarity = "Common"
             },
             ["Toxic Jelly Core"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 180,
                 LureSpeed = -5,
                 PreferredLuck = 90,
                 Rarity = "Legendary"
             },
             ["Hangman's Hook"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 150,
                 LureSpeed = -5,
                 PreferredLuck = 35,
                 Rarity = "Mythical"
             },
             ["Super Flakes"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = 0,
                 PreferredLuck = 70,
                 Rarity = "Rare"
             },
             ["Nightmare Larva"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 120,
                 LureSpeed = 25,
                 PreferredLuck = 35,
                 Rarity = "Mythical"
             },
             ["Weird Algae"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = -35,
                 PreferredLuck = 200,
                 Rarity = "Legendary"
             },
             ["Shark Head"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 225,
                 LureSpeed = -5,
                 PreferredLuck = 30,
                 Rarity = "Mythical"
             },
             ["Phantom Leech"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 55,
                 LureSpeed = 10,
                 PreferredLuck = 30,
                 Rarity = "Rare"
             },
             ["Deep Coral"] = {
-                UniversalLuck = -1,
+                UniversalLuck = -10,
                 LureSpeed = 0,
                 PreferredLuck = 0,
                 Rarity = "Legendary"
             },
             ["Aurora Bait"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 100,
                 LureSpeed = -5,
                 PreferredLuck = 30,
                 Rarity = "Mythical"
             },
             Bagel = {
-                UniversalLuck = -1,
+                UniversalLuck = 25,
                 LureSpeed = 0,
                 PreferredLuck = 0,
                 Rarity = "Common"
             },
             Magnet = {
-                UniversalLuck = -1,
+                UniversalLuck = 200,
                 LureSpeed = 0,
                 PreferredLuck = 0,
                 Rarity = "Unusual"
             },
             ["Neuro Slug"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 90,
                 LureSpeed = -20,
                 PreferredLuck = 100,
                 Rarity = "Legendary"
             },
             Coal = {
-                UniversalLuck = -1,
+                UniversalLuck = 45,
                 LureSpeed = 0,
                 PreferredLuck = 0,
                 Rarity = "Rare"
             },
             Shrimp = {
-                UniversalLuck = -1,
+                UniversalLuck = 45,
                 LureSpeed = 0,
                 PreferredLuck = 25,
                 Rarity = "Uncommon"
             },
             Coral = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = 20,
                 PreferredLuck = 0,
                 Rarity = "Unusual"
             },
             ["Chocolate Fish"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 200,
                 LureSpeed = 20,
                 PreferredLuck = 150,
                 Rarity = "Mythical"
             },
             ["Night Shrimp"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = 15,
                 PreferredLuck = 90,
                 Rarity = "Legendary"
             },
             ["Instant Catcher"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = 65,
                 PreferredLuck = -20,
                 Rarity = "Legendary"
             },
             ["Golden Worm"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 200,
                 LureSpeed = 20,
                 PreferredLuck = 100,
                 Rarity = "Exotic"
             },
             ["Kraken Tentacle"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 100,
                 LureSpeed = 35,
                 PreferredLuck = 35,
                 Rarity = "Legendary"
             },
             Garbage = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = -5,
                 PreferredLuck = -250,
                 Rarity = "Common"
             },
             ["Holly Berry"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 80,
                 LureSpeed = -5,
                 PreferredLuck = 30,
                 Rarity = "Legendary"
             },
             ["Glass Beetle"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 125,
                 LureSpeed = 30,
                 PreferredLuck = -80,
                 Rarity = "Rare"
             },
             Maggot = {
-                UniversalLuck = -1,
+                UniversalLuck = 0,
                 LureSpeed = -10,
                 PreferredLuck = 35,
                 Rarity = "Uncommon"
             },
             Seaweed = {
-                UniversalLuck = -1,
+                UniversalLuck = 35,
                 LureSpeed = 20,
                 PreferredLuck = 0,
                 Rarity = "Unusual"
             },
             Flakes = {
-                UniversalLuck = -1,
+                UniversalLuck = 55,
                 LureSpeed = 10,
                 PreferredLuck = 0,
                 Rarity = "Common"
             },
             Lucky = {
-                UniversalLuck = -1,
+                UniversalLuck = 200,
                 LureSpeed = 20,
                 PreferredLuck = 150,
                 Rarity = "Mythical"
             },
             Minnow = {
-                UniversalLuck = -1,
+                UniversalLuck = 65,
                 LureSpeed = 0,
                 PreferredLuck = 0,
                 Rarity = "Unusual"
             },
             ["Truffle Worm"] = {
-                UniversalLuck = -1,
+                UniversalLuck = 300,
                 LureSpeed = -10,
                 PreferredLuck = 0,
                 Rarity = "Legendary"
