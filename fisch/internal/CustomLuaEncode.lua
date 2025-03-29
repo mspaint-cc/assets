@@ -218,7 +218,6 @@ local function LuaEncode(inputTable, options)
     CheckType(options.SerializeMathHuge, "options.SerializeMathHuge", "boolean", "nil")
     
     CheckType(options._StackLevel, "options._StackLevel", "number", "nil")
-    CheckType(options._VisitedTables, "options._VisitedTables", "table", "nil")
 
     local Prettify = (options.Prettify == nil and options.PrettyPrinting == nil and false) or (options.Prettify ~= nil and options.Prettify) or (options.PrettyPrinting and options.PrettyPrinting)
     local IndentCount = options.IndentCount or (Prettify and 4) or 0
@@ -229,7 +228,6 @@ local function LuaEncode(inputTable, options)
     local SerializeMathHuge = (options.SerializeMathHuge == nil and true) or options.SerializeMathHuge
 
     local StackLevel = options._StackLevel or 1
-    local VisitedTables = options._VisitedTables or {} -- [Ref: table] = true
 
     -- Lazy serialization reference values
     local PositiveInf = (SerializeMathHuge and "math.huge") or "1/0"
@@ -317,15 +315,10 @@ local function LuaEncode(inputTable, options)
         -- arguments for constructor functions
         TypeCases["table"] = function(value, isKey)
             -- Primarily for tables-as-keys
-            --if VisitedTables[value] and OutputWarnings then
-                --return "{--[[LuaEncode: Duplicate reference]]}"
-            --end
-
             local NewOptions = setmetatable({}, {__index = options}) do
                 NewOptions.Prettify = (isKey and false) or Prettify
                 NewOptions.IndentCount = (isKey and ((not Prettify and IndentCount) or 1)) or IndentCount
                 NewOptions._StackLevel = (isKey and 1) or StackLevel + 1
-                NewOptions._VisitedTables = VisitedTables
             end
 
             return LuaEncode(value, NewOptions)
@@ -665,9 +658,7 @@ local function LuaEncode(inputTable, options)
             Output[#Output+1] = NewEntryString .. EndingIndentString
         else
             Output[#Output+1] = ","
-        end
-
-        VisitedTables[TablePointer] = true
+	end
 
         -- Just because of control flow restrictions with Lua compatibility
         local SkipStackPop = false 
@@ -720,7 +711,7 @@ local function LuaEncode(inputTable, options)
                             end
                         end
 
-                        if not VisitedTables[Value] then
+                        
                             if IndexPath then
                                 RefMaps[Value] = RefMaps[TablePointer] .. IndexPath
                             end
@@ -734,16 +725,7 @@ local function LuaEncode(inputTable, options)
                             IsNewTable = true
                             SkipStackPop = true
                             break
-                        else
-                            EncodedValueOrError = string_format(
-                                "{%s}",
-                                (OutputWarnings and "--[[LuaEncode: Duplicate reference]]") or ""
-                            )
-
-                            if IndexPath then
-                                CycleMaps[IndexPath] = RefMaps[Value]
-                            end
-                        end
+                        
                     end
 
                     -- Append value like normal
