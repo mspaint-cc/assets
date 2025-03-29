@@ -12,7 +12,7 @@ return {
         ["Hourglass Hull"] = {
             Price = math.huge,
             Unpurchasable = true,
-            Rarity = "Exotic"
+            Rarity = "Mythical"
         },
         ["Magic Thread"] = {
             Price = math.huge,
@@ -42,7 +42,7 @@ return {
         ["Mythical Essence"] = {
             Price = math.huge,
             Unpurchasable = true,
-            Rarity = "Exotic"
+            Rarity = "Mythical"
         },
         ["1000-Year-Old Wood"] = {
             Price = math.huge,
@@ -135,7 +135,7 @@ return {
         ["Sand Of Time"] = {
             Price = math.huge,
             Unpurchasable = true,
-            Rarity = "Exotic"
+            Rarity = "Legendary"
         },
         GPS = {
             Price = 100,
@@ -144,6 +144,11 @@ return {
             Icon = "rbxassetid://92660360174055"
         },
         ["Eternal Fuel"] = {
+            Price = math.huge,
+            Unpurchasable = true,
+            Rarity = "Mythical"
+        },
+        ["Cursed Egg"] = {
             Price = math.huge,
             Unpurchasable = true,
             Rarity = "Exotic"
@@ -188,6 +193,11 @@ return {
             Icon = "rbxassetid://120382468340755",
             Rarity = "Exotic"
         },
+        ["Keepers Torch"] = {
+            Price = math.huge,
+            Unpurchasable = true,
+            Rarity = "Exotic"
+        },
         ["Lunar Thread"] = {
             Price = math.huge,
             Rarity = "Exotic",
@@ -207,32 +217,36 @@ return {
             Unpurchasable = true,
             Rarity = "Exotic"
         },
+        ["Lava Crystal"] = {
+            Price = math.huge,
+            Icon = "rbxassetid://94081558964669",
+            Rarity = "Exotic"
+        },
         ["Orca Egg Premium"] = {
             Price = math.huge,
             Unpurchasable = true,
             Rarity = "Exotic"
-        },
-        ["Back Fins"] = {
-            Rarity = "Exotic",
-            Price = math.huge
-        },
-        Firework = {
-            Rarity = "Limited",
-            Price = 130
         },
         ["Ice Crystal"] = {
             Price = math.huge,
             Icon = "rbxassetid://87113404726717",
             Rarity = "Exotic"
         },
+        Firework = {
+            Rarity = "Limited",
+            Price = 130
+        },
         ["Eclipse Totem"] = {
             Rarity = "Mythical",
             Price = 250000
         },
-        ["Lava Crystal"] = {
-            Price = math.huge,
-            Icon = "rbxassetid://94081558964669",
-            Rarity = "Exotic"
+        ["Back Fins"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Cursed Nuke"] = {
+            Rarity = "Exotic",
+            Price = math.huge
         },
         ["Metal Panels"] = {
             Rarity = "Exotic",
@@ -258,7 +272,7 @@ return {
         ["Ethereal Glass"] = {
             Price = math.huge,
             Unpurchasable = true,
-            Rarity = "Exotic"
+            Rarity = "Mythical"
         },
         ["Winter Cloak"] = {
             Price = 7500,
