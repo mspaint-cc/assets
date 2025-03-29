@@ -97,7 +97,7 @@ end
 print("Total Images:", totalTasks)
 repeat
     task.wait()
-    print(finishedCount, "/" , totalTasks)
+    --print(finishedCount, "/" , totalTasks)
 until finishedCount >= totalTasks
 
 print("Done!", os.time())
