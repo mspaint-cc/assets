@@ -73,14 +73,14 @@ for world, Datatable in datatables do
                     ImageData[category][identifier] = imageURL
                     --print("Successfully Fetched Data for '" .. identifier .. "'")
                 else
-                    warn(
+                    --[[warn(
                         "[FAILED TO FETCH DATA]\n",
                         "   - ID:", identifier, "\n",
                         "   - Value:", value, "\n",
                         "   - Key:", key, "\n",
                         "   - ERROR:", imageURL, "\n",
                         "======================="
-                    )
+                    )--]]
                 end
             end)
 
