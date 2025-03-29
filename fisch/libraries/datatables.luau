@@ -723,7 +723,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Common",
                 Weight = 2,
-                Price = 20,
+                Price = 10,
                 Zone = "Ocean",
                 CrabCages = true
             },
@@ -734,7 +734,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 50,
+                Price = 1,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -745,7 +745,7 @@ return {
                 FavoriteBait = "Holly Berry",
                 Rarity = "Limited",
                 Weight = 12,
-                Price = 130,
+                Price = 10.833333333333,
                 CrabCages = false
             },
             ["Hydra Haddock"] = {
@@ -755,7 +755,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Common",
                 Weight = 470,
-                Price = 400,
+                Price = 0.85106382978723,
                 Zone = "Veil of the Forsaken",
                 CrabCages = false
             },
@@ -766,7 +766,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Mythical",
                 Weight = 5000,
-                Price = 5500,
+                Price = 1.1,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -778,7 +778,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Trash",
                 Weight = 3,
-                Price = 9,
+                Price = 3,
                 Zone = "None",
                 CrabCages = true
             },
@@ -789,7 +789,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Rare",
                 Weight = 350,
-                Price = 200,
+                Price = 0.57142857142857,
                 Zone = "Sunstone",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -801,7 +801,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Exotic",
                 Weight = 13,
-                Price = 800,
+                Price = 61.538461538462,
                 Zone = "Sunstone",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -813,7 +813,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Rare",
                 Weight = 450,
-                Price = 900,
+                Price = 2,
                 Zone = "Atlantean Storm",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -825,7 +825,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Exotic",
                 Weight = 20,
-                Price = 5000,
+                Price = 250,
                 Zone = "Snowcap",
                 CrabCages = false
             },
@@ -836,7 +836,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Uncommon",
                 Weight = 40,
-                Price = 90,
+                Price = 2.25,
                 Zone = "Terrapin",
                 CrabCages = false
             },
@@ -847,7 +847,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Rare",
                 Weight = 800,
-                Price = 300,
+                Price = 0.375,
                 Zone = "Snowcap",
                 CrabCages = false
             },
@@ -858,7 +858,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Uncommon",
                 Weight = 60,
-                Price = 80,
+                Price = 1.3333333333333,
                 Zone = "Snowcap",
                 CrabCages = false
             },
@@ -869,7 +869,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Mythical",
                 Weight = 10000,
-                Price = 3000,
+                Price = 0.3,
                 Zone = "Roslit",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -881,7 +881,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Unusual",
                 Weight = 28,
-                Price = 130,
+                Price = 4.6428571428571,
                 Zone = "Ocean",
                 CrabCages = true
             },
@@ -892,7 +892,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Legendary",
                 Weight = 11000,
-                Price = 2200,
+                Price = 0.2,
                 Zone = "Ancient Isle",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -904,7 +904,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Uncommon",
                 Weight = 70,
-                Price = 110,
+                Price = 1.5714285714286,
                 Zone = "Ancient Isle",
                 CrabCages = false
             },
@@ -915,7 +915,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Common",
                 Weight = 50,
-                Price = 70,
+                Price = 1.4,
                 Zone = "Snowcap",
                 CrabCages = false
             },
@@ -926,7 +926,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Common",
                 Weight = 15,
-                Price = 45,
+                Price = 3,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -938,7 +938,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Uncommon",
                 Weight = 60,
-                Price = 100,
+                Price = 1.6666666666667,
                 Zone = "Mushgrove",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -950,7 +950,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Unusual",
                 Weight = 80,
-                Price = 350,
+                Price = 4.375,
                 Zone = "Frigid Cavern",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -962,7 +962,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Rare",
                 Weight = 2500,
-                Price = 850,
+                Price = 0.34,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -973,7 +973,7 @@ return {
                 FavoriteBait = "Shark Head",
                 Rarity = "Secret",
                 Weight = 25000,
-                Price = 15000,
+                Price = 0.6,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -984,7 +984,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Trash",
                 Weight = 45,
-                Price = 35,
+                Price = 0.77777777777778,
                 Zone = "The Depths",
                 CrabCages = true,
                 FavoriteTime = "Day"
@@ -996,7 +996,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Rare",
                 Weight = 240,
-                Price = 1500,
+                Price = 6.25,
                 Zone = "Calm Zone",
                 CrabCages = false
             },
@@ -1007,7 +1007,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Uncommon",
                 Weight = 2000,
-                Price = 100,
+                Price = 0.05,
                 Zone = "Abyssal Zenith",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -1019,7 +1019,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Secret",
                 Weight = 2000000,
-                Price = 75000,
+                Price = 0.0375,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -1030,7 +1030,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Unusual",
                 Weight = 160,
-                Price = 600,
+                Price = 3.75,
                 Zone = "Atlantean Storm",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -1042,7 +1042,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Unusual",
                 Weight = 80,
-                Price = 250,
+                Price = 3.125,
                 Zone = "Atlantis",
                 CrabCages = false
             },
@@ -1053,7 +1053,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Limited",
                 Weight = 45,
-                Price = 500,
+                Price = 11.111111111111,
                 CrabCages = false
             },
             ["Voltfin Carp"] = {
@@ -1063,7 +1063,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 250,
-                Price = 180,
+                Price = 0.72,
                 Zone = "Atlantis",
                 CrabCages = false
             },
@@ -1074,7 +1074,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Mythical",
                 Weight = 4200,
-                Price = 6000,
+                Price = 1.4285714285714,
                 Zone = "Ancient Isle",
                 CrabCages = false
             },
@@ -1085,7 +1085,7 @@ return {
                 FavoriteBait = "Deep Coral",
                 Rarity = "Rare",
                 Weight = 400,
-                Price = 800,
+                Price = 2,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1096,7 +1096,7 @@ return {
                 },
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 110,
+                Price = 2.2,
                 Zone = "Crypt",
                 CrabCages = false
             },
@@ -1107,7 +1107,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Trash",
                 Weight = 12,
-                Price = 15,
+                Price = 1.25,
                 Zone = "None",
                 CrabCages = true
             },
@@ -1118,7 +1118,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Rare",
                 Weight = 2200,
-                Price = 350,
+                Price = 0.15909090909091,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -1129,7 +1129,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Secret",
                 Weight = 35,
-                Price = 18000,
+                Price = 514.28571428571,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -1140,7 +1140,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 130000,
-                Price = 9000,
+                Price = 0.069230769230769,
                 Zone = "Brine Pool",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1152,7 +1152,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Common",
                 Weight = 40,
-                Price = 75,
+                Price = 1.875,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1164,7 +1164,7 @@ return {
                 FavoriteBait = "Night Shrimp",
                 Rarity = "Unusual",
                 Weight = 90,
-                Price = 350,
+                Price = 3.8888888888889,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1176,7 +1176,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Rare",
                 Weight = 300,
-                Price = 230,
+                Price = 0.76666666666667,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1188,7 +1188,7 @@ return {
                 FavoriteBait = "Bagel",
                 Rarity = "Common",
                 Weight = 6,
-                Price = 45,
+                Price = 7.5,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -1199,7 +1199,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Unusual",
                 Weight = 600,
-                Price = 450,
+                Price = 0.75,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1211,7 +1211,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 7500,
-                Price = 13000,
+                Price = 1.7333333333333,
                 Zone = "Veil of the Forsaken",
                 CrabCages = false
             },
@@ -1222,7 +1222,7 @@ return {
                 FavoriteBait = "Holly Berry",
                 Rarity = "Limited",
                 Weight = 4,
-                Price = 400,
+                Price = 100,
                 CrabCages = false,
                 FavoriteTime = "Night"
             },
@@ -1233,7 +1233,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Uncommon",
                 Weight = 120,
-                Price = 300,
+                Price = 2.5,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1245,7 +1245,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Uncommon",
                 Weight = 50,
-                Price = 180,
+                Price = 3.6,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1257,7 +1257,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Mythical",
                 Weight = 4000,
-                Price = 3000,
+                Price = 0.75,
                 Zone = "The Depths",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1269,7 +1269,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Legendary",
                 Weight = 45,
-                Price = 700,
+                Price = 15.555555555556,
                 Zone = "Terrapin",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1281,7 +1281,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 10000,
-                Price = 8000,
+                Price = 0.8,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1293,7 +1293,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Common",
                 Weight = 90,
-                Price = 25,
+                Price = 0.27777777777778,
                 Zone = "Desolate Deep",
                 CrabCages = true
             },
@@ -1304,7 +1304,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Mythical",
                 Weight = 26000,
-                Price = 4000,
+                Price = 0.15384615384615,
                 Zone = "Challenger's Deep",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1316,7 +1316,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Uncommon",
                 Weight = 14,
-                Price = 100,
+                Price = 7.1428571428571,
                 Zone = "Ocean",
                 CrabCages = true
             },
@@ -1327,7 +1327,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Limited",
                 Weight = 130,
-                Price = 750,
+                Price = 5.7692307692308,
                 CrabCages = false
             },
             ["Frostling Goby"] = {
@@ -1337,7 +1337,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Uncommon",
                 Weight = 28,
-                Price = 180,
+                Price = 6.4285714285714,
                 Zone = "Glacial Grotto",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1349,7 +1349,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Unusual",
                 Weight = 60,
-                Price = 200,
+                Price = 3.3333333333333,
                 Zone = "The Depths",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1361,7 +1361,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Rare",
                 Weight = 10,
-                Price = 200,
+                Price = 20,
                 Zone = "Terrapin",
                 CrabCages = true
             },
@@ -1372,7 +1372,7 @@ return {
                 FavoriteBait = "Chocolate Fish",
                 Rarity = "Secret",
                 Weight = 70000,
-                Price = 15000,
+                Price = 0.21428571428571,
                 CrabCages = false
             },
             Snook = {
@@ -1382,7 +1382,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Unusual",
                 Weight = 70,
-                Price = 110,
+                Price = 1.5714285714286,
                 Zone = "Moosewood",
                 CrabCages = false
             },
@@ -1393,7 +1393,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Relic",
                 Weight = 210,
-                Price = 3500,
+                Price = 16.666666666667,
                 Zone = "None",
                 CrabCages = false
             },
@@ -1404,7 +1404,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Limited",
                 Weight = 750,
-                Price = 350,
+                Price = 0.46666666666667,
                 CrabCages = false
             },
             ["Massive Marlin"] = {
@@ -1414,7 +1414,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Rare",
                 Weight = 450,
-                Price = 800,
+                Price = 1.7777777777778,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1426,7 +1426,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Uncommon",
                 Weight = 100,
-                Price = 130,
+                Price = 1.3,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -1437,7 +1437,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Legendary",
                 Weight = 4,
-                Price = 880,
+                Price = 220,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -1448,7 +1448,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Rare",
                 Weight = 450,
-                Price = 276,
+                Price = 0.61333333333333,
                 Zone = "Atlantis",
                 CrabCages = false
             },
@@ -1459,7 +1459,7 @@ return {
                 FavoriteBait = "Deep Coral",
                 Rarity = "Rare",
                 Weight = 200,
-                Price = 500,
+                Price = 2.5,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1471,7 +1471,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Secret",
                 Weight = 40,
-                Price = 19000,
+                Price = 475,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -1482,7 +1482,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Limited",
                 Weight = 10,
-                Price = 200,
+                Price = 20,
                 CrabCages = false
             },
             Scylla = {
@@ -1492,7 +1492,7 @@ return {
                 FavoriteBait = "Shark Head",
                 Rarity = "Secret",
                 Weight = 5000000,
-                Price = 200000,
+                Price = 0.04,
                 Zone = "Veil of the Forsaken",
                 CrabCages = false
             },
@@ -1503,7 +1503,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Rare",
                 Weight = 230,
-                Price = 1300,
+                Price = 5.6521739130435,
                 Zone = "Volcanic Vents",
                 CrabCages = false
             },
@@ -1514,7 +1514,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Unusual",
                 Weight = 200,
-                Price = 450,
+                Price = 2.25,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1526,7 +1526,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Uncommon",
                 Weight = 1750,
-                Price = 1200,
+                Price = 0.68571428571429,
                 Zone = "Calm Zone",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1538,7 +1538,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Limited",
                 Weight = 120,
-                Price = 1000,
+                Price = 8.3333333333333,
                 CrabCages = false
             },
             Mosasaurus = {
@@ -1548,7 +1548,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 140000,
-                Price = 7500,
+                Price = 0.053571428571429,
                 Zone = "Ancient Isle",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1560,7 +1560,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Rare",
                 Weight = 400,
-                Price = 800,
+                Price = 2,
                 Zone = "Cryogenic Canal",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1572,7 +1572,7 @@ return {
                 FavoriteBait = "Weird Algae",
                 Rarity = "Rare",
                 Weight = 160,
-                Price = 440,
+                Price = 2.75,
                 Zone = "Brine Pool",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1584,7 +1584,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Uncommon",
                 Weight = 300,
-                Price = 280,
+                Price = 0.93333333333333,
                 Zone = "Atlantis",
                 CrabCages = false
             },
@@ -1595,7 +1595,7 @@ return {
                 FavoriteBait = "Weird Algae",
                 Rarity = "Mythical",
                 Weight = 8,
-                Price = 2900,
+                Price = 362.5,
                 Zone = "Forsaken Shores",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1607,7 +1607,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Rare",
                 Weight = 800,
-                Price = 1200,
+                Price = 1.5,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1619,7 +1619,7 @@ return {
                 FavoriteBait = "Bagel",
                 Rarity = "Common",
                 Weight = 20,
-                Price = 90,
+                Price = 4.5,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -1630,7 +1630,7 @@ return {
                 FavoriteBait = "Bagel",
                 Rarity = "Common",
                 Weight = 70,
-                Price = 30,
+                Price = 0.42857142857143,
                 Zone = "Challenger's Deep",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1642,7 +1642,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 1000,
-                Price = 3100,
+                Price = 3.1,
                 Zone = "Moosewood",
                 CrabCages = false
             },
@@ -1653,7 +1653,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Uncommon",
                 Weight = 35,
-                Price = 80,
+                Price = 2.2857142857143,
                 Zone = "Snowcap",
                 CrabCages = false
             },
@@ -1664,7 +1664,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Unusual",
                 Weight = 75,
-                Price = 320,
+                Price = 4.2666666666667,
                 Zone = "Cryogenic Canal",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1676,7 +1676,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 24000,
-                Price = 8000,
+                Price = 0.33333333333333,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1688,7 +1688,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Uncommon",
                 Weight = 400,
-                Price = 115,
+                Price = 0.2875,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1700,7 +1700,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Rare",
                 Weight = 450,
-                Price = 900,
+                Price = 2,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1712,7 +1712,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Uncommon",
                 Weight = 1360,
-                Price = 120,
+                Price = 0.088235294117647,
                 Zone = "Moosewood",
                 CrabCages = false
             },
@@ -1723,7 +1723,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Rare",
                 Weight = 4,
-                Price = 200,
+                Price = 50,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -1734,7 +1734,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 50,
+                Price = 1,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -1745,7 +1745,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Rare",
                 Weight = 240,
-                Price = 400,
+                Price = 1.6666666666667,
                 Zone = "Challenger's Deep",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1757,7 +1757,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 230,
-                Price = 7000,
+                Price = 30.434782608696,
                 CrabCages = false
             },
             ["Hourglass Bass"] = {
@@ -1767,7 +1767,7 @@ return {
                 FavoriteBait = "Aurora Bait",
                 Rarity = "Limited",
                 Weight = 12000,
-                Price = 3000,
+                Price = 0.25,
                 CrabCages = false
             },
             ["Sapphire Stargazer"] = {
@@ -1777,7 +1777,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Unusual",
                 Weight = 1400,
-                Price = 1300,
+                Price = 0.92857142857143,
                 Zone = "Calm Zone",
                 CrabCages = false
             },
@@ -1788,7 +1788,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Exotic",
                 Weight = 13,
-                Price = 800,
+                Price = 61.538461538462,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -1800,7 +1800,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 135,
+                Price = 2.7,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -1811,7 +1811,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Rare",
                 Weight = 400,
-                Price = 800,
+                Price = 2,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1823,7 +1823,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Unusual",
                 Weight = 190,
-                Price = 300,
+                Price = 1.5789473684211,
                 Zone = "Challenger's Deep",
                 CrabCages = false
             },
@@ -1834,7 +1834,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Unusual",
                 Weight = 9,
-                Price = 65,
+                Price = 7.2222222222222,
                 Zone = "Keepers Altar",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1846,7 +1846,7 @@ return {
                 FavoriteBait = "Maggot",
                 Rarity = "Limited",
                 Weight = 18,
-                Price = 375,
+                Price = 20.833333333333,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -1857,7 +1857,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 60,
-                Price = 60,
+                Price = 1,
                 Zone = "Mushgrove",
                 CrabCages = false
             },
@@ -1868,7 +1868,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Unusual",
                 Weight = 20,
-                Price = 100,
+                Price = 5,
                 Zone = "Sunstone",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1880,7 +1880,7 @@ return {
                 FavoriteBait = "Lucky",
                 Rarity = "Limited",
                 Weight = 3000,
-                Price = 5000,
+                Price = 1.6666666666667,
                 Zone = "Lucky Event",
                 CrabCages = false
             },
@@ -1891,7 +1891,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Trash",
                 Weight = 210,
-                Price = 15,
+                Price = 0.071428571428571,
                 Zone = "None",
                 CrabCages = true
             },
@@ -1902,7 +1902,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Legendary",
                 Weight = 1300,
-                Price = 400,
+                Price = 0.30769230769231,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -1913,7 +1913,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Rare",
                 Weight = 1200,
-                Price = 1800,
+                Price = 1.5,
                 Zone = "Veil of the Forsaken",
                 CrabCages = false
             },
@@ -1924,7 +1924,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Common",
                 Weight = 6,
-                Price = 60,
+                Price = 10,
                 Zone = "Snowcap",
                 CrabCages = false
             },
@@ -1935,7 +1935,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Legendary",
                 Weight = 25000,
-                Price = 4000,
+                Price = 0.16,
                 Zone = "Volcanic Vents",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -1947,7 +1947,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Unusual",
                 Weight = 240,
-                Price = 300,
+                Price = 1.25,
                 Zone = "Brine Pool",
                 CrabCages = false
             },
@@ -1958,7 +1958,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Mythical",
                 Weight = 50,
-                Price = 1500,
+                Price = 30,
                 Zone = "None",
                 CrabCages = false
             },
@@ -1969,7 +1969,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Uncommon",
                 Weight = 20,
-                Price = 120,
+                Price = 6,
                 Zone = "Volcanic Vents",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -1981,7 +1981,7 @@ return {
                 FavoriteBait = "Shark Head",
                 Rarity = "Limited",
                 Weight = 670000,
-                Price = 20000,
+                Price = 0.029850746268657,
                 Zone = "Ancient Isle",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -1993,7 +1993,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Mythical",
                 Weight = 28000,
-                Price = 6300,
+                Price = 0.225,
                 Zone = "Volcanic Vents",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -2005,7 +2005,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 50,
+                Price = 1,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -2016,7 +2016,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Unusual",
                 Weight = 800,
-                Price = 550,
+                Price = 0.6875,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -2028,7 +2028,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Trash",
                 Weight = 6,
-                Price = 10,
+                Price = 1.6666666666667,
                 Zone = "None",
                 CrabCages = true
             },
@@ -2039,7 +2039,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Uncommon",
                 Weight = 5,
-                Price = 90,
+                Price = 18,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -2050,7 +2050,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Rare",
                 Weight = 2000,
-                Price = 250,
+                Price = 0.125,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -2061,7 +2061,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Rare",
                 Weight = 450,
-                Price = 800,
+                Price = 1.7777777777778,
                 Zone = "Frigid Cavern",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -2073,7 +2073,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 2800,
-                Price = 4500,
+                Price = 1.6071428571429,
                 CrabCages = false
             },
             Stalactite = {
@@ -2083,7 +2083,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Trash",
                 Weight = 130,
-                Price = 35,
+                Price = 0.26923076923077,
                 Zone = "Desolate Deep",
                 CrabCages = true
             },
@@ -2094,7 +2094,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Rare",
                 Weight = 400,
-                Price = 1000,
+                Price = 2.5,
                 Zone = "Abyssal Zenith",
                 CrabCages = false
             },
@@ -2105,7 +2105,7 @@ return {
                 FavoriteBait = "Coral",
                 Rarity = "Rare",
                 Weight = 200,
-                Price = 900,
+                Price = 4.5,
                 Zone = "Grand Reef",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -2117,7 +2117,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 50,
+                Price = 1,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -2128,7 +2128,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Uncommon",
                 Weight = 70,
-                Price = 120,
+                Price = 1.7142857142857,
                 Zone = "Mushgrove",
                 CrabCages = false
             },
@@ -2139,7 +2139,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Relic",
                 Weight = 210,
-                Price = 12000,
+                Price = 57.142857142857,
                 Zone = "None",
                 CrabCages = false
             },
@@ -2150,7 +2150,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Common",
                 Weight = 400,
-                Price = 300,
+                Price = 0.75,
                 Zone = "Calm Zone",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -2162,7 +2162,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Legendary",
                 Weight = 10000,
-                Price = 1500,
+                Price = 0.15,
                 Zone = "Sunstone",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -2174,7 +2174,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Limited",
                 Weight = 30,
-                Price = 200,
+                Price = 6.6666666666667,
                 CrabCages = false
             },
             ["Scrap Metal"] = {
@@ -2184,7 +2184,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Trash",
                 Weight = 50,
-                Price = 40,
+                Price = 0.8,
                 Zone = "The Depths",
                 CrabCages = true,
                 FavoriteTime = "Day"
@@ -2196,7 +2196,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Rare",
                 Weight = 250,
-                Price = 650,
+                Price = 2.6,
                 Zone = "Cryogenic Canal",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -2208,7 +2208,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Exotic",
                 Weight = 180000,
-                Price = 22000,
+                Price = 0.12222222222222,
                 Zone = "Abyssal Zenith",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -2220,7 +2220,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Uncommon",
                 Weight = 20,
-                Price = 250,
+                Price = 12.5,
                 Zone = "Atlantean Storm",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -2232,7 +2232,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Exotic",
                 Weight = 140000,
-                Price = 18000,
+                Price = 0.12857142857143,
                 Zone = "Challenger's Deep",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -2244,7 +2244,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Common",
                 Weight = 10,
-                Price = 30,
+                Price = 3,
                 Zone = "Vertigo",
                 CrabCages = false
             },
@@ -2255,7 +2255,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Uncommon",
                 Weight = 15,
-                Price = 110,
+                Price = 7.3333333333333,
                 Zone = "Roslit",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -2267,7 +2267,7 @@ return {
                 FavoriteBait = "Peppermint Worm",
                 Rarity = "Limited",
                 Weight = 35,
-                Price = 135,
+                Price = 3.8571428571429,
                 CrabCages = false
             },
             ["Barreleye Fish"] = {
@@ -2277,7 +2277,7 @@ return {
                 FavoriteBait = "Deep Coral",
                 Rarity = "Mythical",
                 Weight = 150,
-                Price = 4500,
+                Price = 30,
                 Zone = "The Depths",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -2289,7 +2289,7 @@ return {
                 FavoriteBait = "Coral",
                 Rarity = "Unusual",
                 Weight = 80,
-                Price = 175,
+                Price = 2.1875,
                 Zone = "The Depths",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -2301,7 +2301,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Unusual",
                 Weight = 150,
-                Price = 150,
+                Price = 1,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -2312,7 +2312,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Unusual",
                 Weight = 10,
-                Price = 13,
+                Price = 1.3,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -2334,7 +2334,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Rare",
                 Weight = 300,
-                Price = 750,
+                Price = 2.5,
                 Zone = "Glacial Grotto",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -2346,7 +2346,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Legendary",
                 Weight = 1000,
-                Price = 1200,
+                Price = 1.2,
                 Zone = "Overgrowth Caves",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -2358,7 +2358,7 @@ return {
                 FavoriteBait = "Bagel",
                 Rarity = "Common",
                 Weight = 105,
-                Price = 45,
+                Price = 0.42857142857143,
                 Zone = "Abyssal Zenith",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -2370,7 +2370,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Uncommon",
                 Weight = 2800,
-                Price = 1100,
+                Price = 0.39285714285714,
                 Zone = "Veil of the Forsaken",
                 CrabCages = false
             },
@@ -2381,7 +2381,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Trash",
                 Weight = 60,
-                Price = 15,
+                Price = 0.25,
                 Zone = "Snowcap",
                 CrabCages = false
             },
@@ -2392,7 +2392,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 700,
-                Price = 7800,
+                Price = 11.142857142857,
                 Zone = "Calm Zone",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -2404,7 +2404,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Limited",
                 Weight = 80,
-                Price = 500,
+                Price = 6.25,
                 CrabCages = false
             },
             ["Longtail Bass"] = {
@@ -2414,7 +2414,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Uncommon",
                 Weight = 40,
-                Price = 120,
+                Price = 3,
                 Zone = "Sunstone",
                 CrabCages = false
             },
@@ -2425,7 +2425,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Unusual",
                 Weight = 90,
-                Price = 150,
+                Price = 1.6666666666667,
                 Zone = "The Depths",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -2437,7 +2437,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Unusual",
                 Weight = 14,
-                Price = 150,
+                Price = 10.714285714286,
                 Zone = "Mushgrove",
                 CrabCages = true
             },
@@ -2448,7 +2448,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Uncommon",
                 Weight = 5,
-                Price = 100,
+                Price = 20,
                 Zone = "Ocean",
                 CrabCages = true
             },
@@ -2459,7 +2459,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Unusual",
                 Weight = 1500,
-                Price = 200,
+                Price = 0.13333333333333,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -2471,7 +2471,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Common",
                 Weight = 50,
-                Price = 85,
+                Price = 1.7,
                 Zone = "Ancient Isle",
                 CrabCages = false
             },
@@ -2482,7 +2482,7 @@ return {
                 FavoriteBait = "Deep Coral",
                 Rarity = "Common",
                 Weight = 40,
-                Price = 45,
+                Price = 1.125,
                 Zone = "The Depths",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -2494,7 +2494,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Legendary",
                 Weight = 400,
-                Price = 1200,
+                Price = 3,
                 Zone = "Sunstone",
                 CrabCages = false
             },
@@ -2505,7 +2505,7 @@ return {
                 FavoriteBait = "Coal",
                 Rarity = "Legendary",
                 Weight = 180,
-                Price = 600,
+                Price = 3.3333333333333,
                 Zone = "Roslit Volcano",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -2517,7 +2517,7 @@ return {
                 FavoriteBait = "Super Flakes",
                 Rarity = "Common",
                 Weight = 600,
-                Price = 70,
+                Price = 0.11666666666667,
                 Zone = "Desolate Deep",
                 CrabCages = false
             },
@@ -2528,7 +2528,7 @@ return {
                 FavoriteBait = "Chocolate Fish",
                 Rarity = "Secret",
                 Weight = 105000,
-                Price = 25000,
+                Price = 0.23809523809524,
                 CrabCages = false
             },
             Dolphin = {
@@ -2538,7 +2538,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Legendary",
                 Weight = 2000,
-                Price = 1200,
+                Price = 0.6,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -2550,7 +2550,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Uncommon",
                 Weight = 65,
-                Price = 190,
+                Price = 2.9230769230769,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -2562,7 +2562,7 @@ return {
                 FavoriteBait = "Peppermint Worm",
                 Rarity = "Limited",
                 Weight = 25,
-                Price = 2000,
+                Price = 80,
                 CrabCages = false,
                 FavoriteTime = "Night"
             },
@@ -2573,7 +2573,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Limited",
                 Weight = 190,
-                Price = 300,
+                Price = 1.5789473684211,
                 CrabCages = false
             },
             ["Shortfin Mako Shark"] = {
@@ -2583,7 +2583,7 @@ return {
                 FavoriteBait = "Deep Coral",
                 Rarity = "Common",
                 Weight = 1000,
-                Price = 190,
+                Price = 0.19,
                 Zone = "Forsaken Shores",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -2595,7 +2595,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Common",
                 Weight = 70,
-                Price = 70,
+                Price = 1,
                 Zone = "Moosewood",
                 CrabCages = false
             },
@@ -2606,7 +2606,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Trash",
                 Weight = 110,
-                Price = 20,
+                Price = 0.18181818181818,
                 Zone = "None",
                 CrabCages = true
             },
@@ -2617,7 +2617,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Mythical",
                 Weight = 2500,
-                Price = 2500,
+                Price = 1,
                 Zone = "Roslit Volcano",
                 CrabCages = false
             },
@@ -2628,7 +2628,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Gemstone",
                 Weight = 32,
-                Price = 500,
+                Price = 15.625,
                 Zone = "Ancient Isle",
                 CrabCages = false
             },
@@ -2639,7 +2639,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Limited",
                 Weight = 90,
-                Price = 120,
+                Price = 1.3333333333333,
                 CrabCages = false
             },
             ["Ember Perch"] = {
@@ -2649,7 +2649,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Unusual",
                 Weight = 15,
-                Price = 160,
+                Price = 10.666666666667,
                 Zone = "Roslit Volcano",
                 CrabCages = false
             },
@@ -2660,7 +2660,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Unusual",
                 Weight = 250,
-                Price = 500,
+                Price = 2,
                 Zone = "Forsaken Shores",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -2672,7 +2672,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Mythical",
                 Weight = 12000,
-                Price = 6000,
+                Price = 0.5,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -2683,7 +2683,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Limited",
                 Weight = 10,
-                Price = 200,
+                Price = 20,
                 CrabCages = false
             },
             ["Blarney McBreeze"] = {
@@ -2693,7 +2693,7 @@ return {
                 FavoriteBait = "Lucky",
                 Rarity = "Limited",
                 Weight = 1600,
-                Price = 5500,
+                Price = 3.4375,
                 Zone = "Lucky Event",
                 CrabCages = false
             },
@@ -2704,7 +2704,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Legendary",
                 Weight = 2000,
-                Price = 2500,
+                Price = 1.25,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -2716,7 +2716,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Exotic",
                 Weight = 13,
-                Price = 800,
+                Price = 61.538461538462,
                 Zone = "Mushgrove",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -2728,7 +2728,7 @@ return {
                 FavoriteBait = "Coral",
                 Rarity = "Uncommon",
                 Weight = 40,
-                Price = 150,
+                Price = 3.75,
                 Zone = "Atlantis",
                 CrabCages = false
             },
@@ -2739,7 +2739,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Trash",
                 Weight = 9,
-                Price = 9,
+                Price = 1,
                 Zone = "Mushgrove",
                 CrabCages = true
             },
@@ -2750,7 +2750,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Common",
                 Weight = 11,
-                Price = 70,
+                Price = 6.3636363636364,
                 Zone = "Snowcap",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -2762,7 +2762,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Limited",
                 Weight = 8000,
-                Price = 3000,
+                Price = 0.375,
                 CrabCages = false
             },
             ["Northstar Serpent"] = {
@@ -2772,7 +2772,7 @@ return {
                 FavoriteBait = "Holly Berry",
                 Rarity = "Limited",
                 Weight = 200000,
-                Price = 20000,
+                Price = 0.1,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -2783,7 +2783,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Secret",
                 Weight = 10,
-                Price = 18500,
+                Price = 1850,
                 Zone = "Ancient Isle",
                 CrabCages = false
             },
@@ -2794,7 +2794,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Uncommon",
                 Weight = 15,
-                Price = 100,
+                Price = 6.6666666666667,
                 Zone = "Sunstone",
                 CrabCages = false
             },
@@ -2805,7 +2805,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Mythical",
                 Weight = 12000,
-                Price = 6500,
+                Price = 0.54166666666667,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -2817,7 +2817,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Uncommon",
                 Weight = 100,
-                Price = 180,
+                Price = 1.8,
                 Zone = "Overgrowth Caves",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -2829,7 +2829,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Mythical",
                 Weight = 60,
-                Price = 1000,
+                Price = 16.666666666667,
                 Zone = "Mushgrove",
                 CrabCages = false
             },
@@ -2840,7 +2840,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Mythical",
                 Weight = 3000,
-                Price = 5000,
+                Price = 1.6666666666667,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -2852,7 +2852,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Unusual",
                 Weight = 35,
-                Price = 300,
+                Price = 8.5714285714286,
                 Zone = "Overgrowth Caves",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -2864,7 +2864,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Rare",
                 Weight = 120,
-                Price = 500,
+                Price = 4.1666666666667,
                 Zone = "Glacial Grotto",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -2876,7 +2876,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Rare",
                 Weight = 120,
-                Price = 150,
+                Price = 1.25,
                 Zone = "None",
                 CrabCages = false
             },
@@ -2887,7 +2887,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Exotic",
                 Weight = 4,
-                Price = 3500,
+                Price = 875,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -2898,7 +2898,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Rare",
                 Weight = 380,
-                Price = 280,
+                Price = 0.73684210526316,
                 Zone = "Mushgrove",
                 CrabCages = false
             },
@@ -2909,7 +2909,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Uncommon",
                 Weight = 20,
-                Price = 155,
+                Price = 7.75,
                 Zone = "Frigid Cavern",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -2921,7 +2921,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Uncommon",
                 Weight = 40,
-                Price = 300,
+                Price = 7.5,
                 Zone = "Atlantean Storm",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -2933,7 +2933,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Legendary",
                 Weight = 300,
-                Price = 4000,
+                Price = 13.333333333333,
                 Zone = "Grand Reef",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -2945,7 +2945,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Unusual",
                 Weight = 60,
-                Price = 180,
+                Price = 3,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -2957,7 +2957,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Unusual",
                 Weight = 140,
-                Price = 110,
+                Price = 0.78571428571429,
                 Zone = "Snowcap",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -2981,7 +2981,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Legendary",
                 Weight = 1500,
-                Price = 1200,
+                Price = 0.8,
                 Zone = "The Depths",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -2993,7 +2993,7 @@ return {
                 FavoriteBait = "Coral",
                 Rarity = "Unusual",
                 Weight = 70,
-                Price = 300,
+                Price = 4.2857142857143,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3005,7 +3005,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Mythical",
                 Weight = 50000,
-                Price = 9000,
+                Price = 0.18,
                 Zone = "Abyssal Zenith",
                 CrabCages = false
             },
@@ -3016,7 +3016,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Legendary",
                 Weight = 30,
-                Price = 1100,
+                Price = 36.666666666667,
                 Zone = "Desolate Deep",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3028,7 +3028,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Common",
                 Weight = 50,
-                Price = 65,
+                Price = 1.3,
                 Zone = "Moosewood",
                 CrabCages = false
             },
@@ -3039,7 +3039,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Legendary",
                 Weight = 60,
-                Price = 1100,
+                Price = 18.333333333333,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -3050,7 +3050,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Rare",
                 Weight = 600,
-                Price = 800,
+                Price = 1.3333333333333,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -3061,7 +3061,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 25,
-                Price = 1700,
+                Price = 68,
                 Zone = "Forsaken Shores",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3073,7 +3073,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Uncommon",
                 Weight = 16,
-                Price = 100,
+                Price = 6.25,
                 Zone = "Challenger's Deep",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3085,7 +3085,7 @@ return {
                 FavoriteBait = "Weird Algae",
                 Rarity = "Limited",
                 Weight = 5000,
-                Price = 2000,
+                Price = 0.4,
                 CrabCages = false
             },
             ["Giant Manta"] = {
@@ -3095,7 +3095,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Unusual",
                 Weight = 120,
-                Price = 350,
+                Price = 2.9166666666667,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3107,7 +3107,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Mythical",
                 Weight = 5000,
-                Price = 3000,
+                Price = 0.6,
                 Zone = "Frigid Cavern",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -3119,7 +3119,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Exotic",
                 Weight = 3000000,
-                Price = 30000,
+                Price = 0.01,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -3130,7 +3130,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 100,
-                Price = 1200,
+                Price = 12,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -3141,7 +3141,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Legendary",
                 Weight = 2,
-                Price = 450,
+                Price = 225,
                 Zone = "None",
                 CrabCages = false
             },
@@ -3152,7 +3152,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Uncommon",
                 Weight = 100,
-                Price = 90,
+                Price = 0.9,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -3163,7 +3163,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Unusual",
                 Weight = 4,
-                Price = 120,
+                Price = 30,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -3174,7 +3174,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Unusual",
                 Weight = 160,
-                Price = 400,
+                Price = 2.5,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3186,7 +3186,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Rare",
                 Weight = 190,
-                Price = 1100,
+                Price = 5.7894736842105,
                 Zone = "Volcanic Vents",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3198,7 +3198,7 @@ return {
                 FavoriteBait = "Holly Berry",
                 Rarity = "Limited",
                 Weight = 7,
-                Price = 140,
+                Price = 20,
                 CrabCages = false
             },
             Arapaima = {
@@ -3208,7 +3208,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Rare",
                 Weight = 2000,
-                Price = 250,
+                Price = 0.125,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -3219,7 +3219,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Limited",
                 Weight = 20,
-                Price = 1500,
+                Price = 75,
                 CrabCages = false
             },
             ["Crystal Corydoras"] = {
@@ -3229,7 +3229,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Legendary",
                 Weight = 4000,
-                Price = 3000,
+                Price = 0.75,
                 Zone = "Calm Zone",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3241,7 +3241,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Common",
                 Weight = 10,
-                Price = 35,
+                Price = 3.5,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3253,7 +3253,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Rare",
                 Weight = 100,
-                Price = 200,
+                Price = 2,
                 Zone = "Ancient Isle",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3265,7 +3265,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Trash",
                 Weight = 25,
-                Price = 30,
+                Price = 1.2,
                 Zone = "Brine Pool",
                 CrabCages = false
             },
@@ -3276,7 +3276,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Rare",
                 Weight = 150,
-                Price = 150,
+                Price = 1,
                 Zone = "Sunstone",
                 CrabCages = false
             },
@@ -3287,7 +3287,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Uncommon",
                 Weight = 1400,
-                Price = 115,
+                Price = 0.082142857142857,
                 Zone = "Ancient Isle",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3299,7 +3299,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Unusual",
                 Weight = 160,
-                Price = 150,
+                Price = 0.9375,
                 Zone = "Snowcap",
                 CrabCages = false
             },
@@ -3310,7 +3310,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 1800,
-                Price = 2500,
+                Price = 1.3888888888889,
                 CrabCages = false
             },
             Porgy = {
@@ -3320,7 +3320,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Common",
                 Weight = 30,
-                Price = 90,
+                Price = 3,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3332,7 +3332,7 @@ return {
                 FavoriteBait = "Deep Coral",
                 Rarity = "Uncommon",
                 Weight = 250,
-                Price = 250,
+                Price = 1,
                 Zone = "Forsaken Shores",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3344,7 +3344,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Unusual",
                 Weight = 90,
-                Price = 350,
+                Price = 3.8888888888889,
                 Zone = "Glacial Grotto",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3356,7 +3356,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Uncommon",
                 Weight = 40,
-                Price = 130,
+                Price = 3.25,
                 Zone = "Volcanic Vents",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3368,7 +3368,7 @@ return {
                 FavoriteBait = "Shark Head",
                 Rarity = "Exotic",
                 Weight = 670000,
-                Price = 10000,
+                Price = 0.014925373134328,
                 Zone = "Ancient Isle",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -3391,7 +3391,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Legendary",
                 Weight = 5000,
-                Price = 3000,
+                Price = 0.6,
                 Zone = "Atlantean Storm",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -3403,7 +3403,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Exotic",
                 Weight = 20,
-                Price = 1200,
+                Price = 60,
                 Zone = "None",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -3415,7 +3415,7 @@ return {
                 FavoriteBait = "Bagel",
                 Rarity = "Limited",
                 Weight = 200,
-                Price = 275,
+                Price = 1.375,
                 CrabCages = false
             },
             ["Polar Alligator"] = {
@@ -3425,7 +3425,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Legendary",
                 Weight = 1500,
-                Price = 3000,
+                Price = 2,
                 Zone = "Frigid Cavern",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3437,7 +3437,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Legendary",
                 Weight = 3000,
-                Price = 700,
+                Price = 0.23333333333333,
                 Zone = "Mushgrove",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3449,7 +3449,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Common",
                 Weight = 3,
-                Price = 40,
+                Price = 13.333333333333,
                 Zone = "Terrapin",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3461,7 +3461,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Rare",
                 Weight = 450,
-                Price = 450,
+                Price = 1,
                 Zone = "The Depths",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3473,7 +3473,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Uncommon",
                 Weight = 90,
-                Price = 250,
+                Price = 2.7777777777778,
                 Zone = "Grand Reef",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -3484,7 +3484,7 @@ return {
                 },
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 110,
+                Price = 2.2,
                 Zone = "Crypt",
                 CrabCages = false
             },
@@ -3495,7 +3495,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 6000,
-                Price = 8000,
+                Price = 1.3333333333333,
                 Zone = "Glacial Grotto",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3507,7 +3507,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Common",
                 Weight = 14,
-                Price = 65,
+                Price = 4.6428571428571,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3519,7 +3519,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 12,
-                Price = 55,
+                Price = 4.5833333333333,
                 Zone = "Atlantis",
                 CrabCages = false
             },
@@ -3530,7 +3530,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Legendary",
                 Weight = 2,
-                Price = 450,
+                Price = 225,
                 Zone = "None",
                 CrabCages = false
             },
@@ -3541,7 +3541,7 @@ return {
                 FavoriteBait = "Holly Berry",
                 Rarity = "Limited",
                 Weight = 6,
-                Price = 20,
+                Price = 3.3333333333333,
                 CrabCages = false
             },
             ["The Kraken"] = {
@@ -3551,7 +3551,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Exotic",
                 Weight = 70000,
-                Price = 20000,
+                Price = 0.28571428571429,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3563,7 +3563,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Rare",
                 Weight = 400,
-                Price = 800,
+                Price = 2,
                 Zone = "Overgrowth Caves",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3575,7 +3575,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Common",
                 Weight = 120,
-                Price = 90,
+                Price = 0.75,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3587,7 +3587,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Exotic",
                 Weight = 5500,
-                Price = 6500,
+                Price = 1.1818181818182,
                 Zone = "Roslit Volcano",
                 CrabCages = false
             },
@@ -3598,7 +3598,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Exotic",
                 Weight = 10000,
-                Price = 8000,
+                Price = 0.8,
                 Zone = "The Depths",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3610,7 +3610,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Trash",
                 Weight = 75,
-                Price = 124,
+                Price = 1.6533333333333,
                 Zone = "None",
                 CrabCages = false
             },
@@ -3621,7 +3621,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Rare",
                 Weight = 20,
-                Price = 230,
+                Price = 11.5,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3633,7 +3633,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Unusual",
                 Weight = 210,
-                Price = 600,
+                Price = 2.8571428571429,
                 Zone = "Abyssal Zenith",
                 CrabCages = false
             },
@@ -3644,7 +3644,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Unusual",
                 Weight = 1650,
-                Price = 1500,
+                Price = 0.90909090909091,
                 Zone = "Veil of the Forsaken",
                 CrabCages = false
             },
@@ -3655,7 +3655,7 @@ return {
                 FavoriteBait = "Night Shrimp",
                 Rarity = "Limited",
                 Weight = 2500,
-                Price = 1500,
+                Price = 0.6,
                 CrabCages = false
             },
             ["Frost Minnow"] = {
@@ -3665,7 +3665,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Uncommon",
                 Weight = 16,
-                Price = 150,
+                Price = 9.375,
                 Zone = "Cryogenic Canal",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3677,7 +3677,7 @@ return {
                 FavoriteBait = "Deep Coral",
                 Rarity = "Rare",
                 Weight = 250,
-                Price = 550,
+                Price = 2.2,
                 Zone = "The Depths",
                 CrabCages = true,
                 FavoriteTime = "Day"
@@ -3689,7 +3689,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Limited",
                 Weight = 300,
-                Price = 4000,
+                Price = 13.333333333333,
                 CrabCages = false
             },
             Orca = {
@@ -3699,7 +3699,7 @@ return {
                 FavoriteBait = "Shark Head",
                 Rarity = "Exotic",
                 Weight = 15000,
-                Price = 12000,
+                Price = 0.8,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -3710,7 +3710,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 450,
-                Price = 6800,
+                Price = 15.111111111111,
                 CrabCages = false
             },
             ["Glass Diamond"] = {
@@ -3720,7 +3720,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Mythical",
                 Weight = 50,
-                Price = 1500,
+                Price = 30,
                 Zone = "Overgrowth Caves",
                 CrabCages = false
             },
@@ -3731,7 +3731,7 @@ return {
                 FavoriteBait = "Deep Coral",
                 Rarity = "Unusual",
                 Weight = 95,
-                Price = 380,
+                Price = 4,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3743,7 +3743,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 5000,
-                Price = 3500,
+                Price = 0.7,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3755,7 +3755,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Mythical",
                 Weight = 1800,
-                Price = 2500,
+                Price = 1.3888888888889,
                 Zone = "Ancient Archives",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3767,7 +3767,7 @@ return {
                 FavoriteBait = "Deep Coral",
                 Rarity = "Limited",
                 Weight = 1200,
-                Price = 1200,
+                Price = 1,
                 CrabCages = false
             },
             ["Crystal Wrasse"] = {
@@ -3777,7 +3777,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Unusual",
                 Weight = 90,
-                Price = 450,
+                Price = 5,
                 Zone = "Grand Reef",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -3789,7 +3789,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Limited",
                 Weight = 10,
-                Price = 150,
+                Price = 15,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -3800,7 +3800,7 @@ return {
                 FavoriteBait = "Coal",
                 Rarity = "Uncommon",
                 Weight = 30,
-                Price = 130,
+                Price = 4.3333333333333,
                 Zone = "Roslit Volcano",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3812,7 +3812,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Unusual",
                 Weight = 15,
-                Price = 115,
+                Price = 7.6666666666667,
                 Zone = "Terrapin",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3824,7 +3824,7 @@ return {
                 FavoriteBait = "Bagel",
                 Rarity = "Uncommon",
                 Weight = 50,
-                Price = 110,
+                Price = 2.2,
                 Zone = "Moosewood",
                 CrabCages = false
             },
@@ -3835,7 +3835,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Unusual",
                 Weight = 18000,
-                Price = 145,
+                Price = 0.0080555555555556,
                 Zone = "Ancient Isle",
                 CrabCages = false
             },
@@ -3846,7 +3846,7 @@ return {
                 FavoriteBait = "Deep Coral",
                 Rarity = "Uncommon",
                 Weight = 55,
-                Price = 170,
+                Price = 3.0909090909091,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3858,7 +3858,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Rare",
                 Weight = 1200,
-                Price = 310,
+                Price = 0.25833333333333,
                 Zone = "Atlantis",
                 CrabCages = false
             },
@@ -3869,7 +3869,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 450,
+                Price = 9,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -3880,7 +3880,7 @@ return {
                 FavoriteBait = "Bagel",
                 Rarity = "Uncommon",
                 Weight = 2100,
-                Price = 1250,
+                Price = 0.5952380952381,
                 Zone = "Veil of the Forsaken",
                 CrabCages = false
             },
@@ -3891,7 +3891,7 @@ return {
                 FavoriteBait = "Coal",
                 Rarity = "Rare",
                 Weight = 250,
-                Price = 700,
+                Price = 2.8,
                 Zone = "Forsaken Shores",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3903,7 +3903,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Common",
                 Weight = 20,
-                Price = 80,
+                Price = 4,
                 Zone = "Snowcap",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3915,7 +3915,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Gemstone",
                 Weight = 14,
-                Price = 700,
+                Price = 50,
                 Zone = "Ancient Isle",
                 CrabCages = false
             },
@@ -3926,7 +3926,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Mythical",
                 Weight = 14,
-                Price = 2000,
+                Price = 142.85714285714,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3938,7 +3938,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Common",
                 Weight = 3,
-                Price = 30,
+                Price = 10,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3950,7 +3950,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Legendary",
                 Weight = 17000,
-                Price = 5000,
+                Price = 0.29411764705882,
                 Zone = "Abyssal Zenith",
                 CrabCages = false
             },
@@ -3961,7 +3961,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Rare",
                 Weight = 70,
-                Price = 450,
+                Price = 6.4285714285714,
                 Zone = "Cryogenic Canal",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -3973,7 +3973,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Uncommon",
                 Weight = 150,
-                Price = 80,
+                Price = 0.53333333333333,
                 Zone = "None",
                 CrabCages = false
             },
@@ -3984,7 +3984,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Legendary",
                 Weight = 50,
-                Price = 1200,
+                Price = 24,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -3996,7 +3996,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Uncommon",
                 Weight = 180,
-                Price = 200,
+                Price = 1.1111111111111,
                 Zone = "Desolate Deep",
                 CrabCages = false
             },
@@ -4007,7 +4007,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Legendary",
                 Weight = 23000,
-                Price = 1500,
+                Price = 0.065217391304348,
                 Zone = "Challenger's Deep",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4019,7 +4019,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 17000,
-                Price = 2900,
+                Price = 0.17058823529412,
                 CrabCages = false
             },
             ["Inferno Hide"] = {
@@ -4029,7 +4029,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Common",
                 Weight = 80,
-                Price = 50,
+                Price = 0.625,
                 Zone = "Volcanic Vents",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -4041,7 +4041,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Unusual",
                 Weight = 700,
-                Price = 300,
+                Price = 0.42857142857143,
                 Zone = "Forsaken Shores",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4053,7 +4053,7 @@ return {
                 FavoriteBait = "Coal",
                 Rarity = "Legendary",
                 Weight = 2000,
-                Price = 1500,
+                Price = 0.75,
                 Zone = "The Depths",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4065,7 +4065,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Limited",
                 Weight = 80,
-                Price = 600,
+                Price = 7.5,
                 CrabCages = false
             },
             ["Emperor Jellyfish"] = {
@@ -4075,7 +4075,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Mythical",
                 Weight = 8000,
-                Price = 6000,
+                Price = 0.75,
                 Zone = "Desolate Deep",
                 CrabCages = false
             },
@@ -4086,7 +4086,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Unusual",
                 Weight = 20,
-                Price = 120,
+                Price = 6,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -4097,7 +4097,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Rare",
                 Weight = 100,
-                Price = 370,
+                Price = 3.7,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4109,7 +4109,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Gemstone",
                 Weight = 20,
-                Price = 200,
+                Price = 10,
                 Zone = "Ancient Isle",
                 CrabCages = false
             },
@@ -4132,7 +4132,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 17,
-                Price = 70,
+                Price = 4.1176470588235,
                 Zone = "Terrapin",
                 CrabCages = false
             },
@@ -4143,7 +4143,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Mythical",
                 Weight = 50,
-                Price = 5,
+                Price = 0.1,
                 Zone = "None",
                 CrabCages = false
             },
@@ -4154,7 +4154,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Rare",
                 Weight = 1000,
-                Price = 1400,
+                Price = 1.4,
                 Zone = "Calm Zone",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4166,7 +4166,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Unusual",
                 Weight = 100,
-                Price = 400,
+                Price = 4,
                 Zone = "Atlantis",
                 CrabCages = false
             },
@@ -4177,7 +4177,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Secret",
                 Weight = 80,
-                Price = 800,
+                Price = 10,
                 Zone = "Mushgrove",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -4189,7 +4189,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Unusual",
                 Weight = 55,
-                Price = 280,
+                Price = 5.0909090909091,
                 Zone = "Glacial Grotto",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -4201,7 +4201,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Legendary",
                 Weight = 6000,
-                Price = 1500,
+                Price = 0.25,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4213,7 +4213,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Common",
                 Weight = 2,
-                Price = 20,
+                Price = 10,
                 Zone = "Ocean",
                 CrabCages = true
             },
@@ -4224,7 +4224,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Uncommon",
                 Weight = 80,
-                Price = 80,
+                Price = 1,
                 Zone = "None",
                 CrabCages = false
             },
@@ -4235,7 +4235,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Uncommon",
                 Weight = 3,
-                Price = 230,
+                Price = 76.666666666667,
                 Zone = "Brine Pool",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -4247,7 +4247,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Uncommon",
                 Weight = 50,
-                Price = 160,
+                Price = 3.2,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4259,7 +4259,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Uncommon",
                 Weight = 40,
-                Price = 85,
+                Price = 2.125,
                 Zone = "Sunstone",
                 CrabCages = false
             },
@@ -4270,7 +4270,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Rare",
                 Weight = 500,
-                Price = 900,
+                Price = 1.8,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4282,7 +4282,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Rare",
                 Weight = 250,
-                Price = 600,
+                Price = 2.4,
                 Zone = "Overgrowth Caves",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -4294,7 +4294,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Legendary",
                 Weight = 5000,
-                Price = 3000,
+                Price = 0.6,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4306,7 +4306,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Unusual",
                 Weight = 45,
-                Price = 280,
+                Price = 6.2222222222222,
                 Zone = "Frigid Cavern",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -4318,7 +4318,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Uncommon",
                 Weight = 35,
-                Price = 120,
+                Price = 3.4285714285714,
                 Zone = "Atlantis",
                 CrabCages = false
             },
@@ -4329,7 +4329,7 @@ return {
                 FavoriteBait = "Shark Head",
                 Rarity = "Exotic",
                 Weight = 700000,
-                Price = 16000,
+                Price = 0.022857142857143,
                 Zone = "Ancient Isle",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -4341,7 +4341,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Legendary",
                 Weight = 2000,
-                Price = 2500,
+                Price = 1.25,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4353,7 +4353,7 @@ return {
                 FavoriteBait = "Deep Coral",
                 Rarity = "Rare",
                 Weight = 400,
-                Price = 500,
+                Price = 1.25,
                 Zone = "The Depths",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4365,7 +4365,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Limited",
                 Weight = 150,
-                Price = 1800,
+                Price = 12,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -4376,7 +4376,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Unusual",
                 Weight = 45,
-                Price = 250,
+                Price = 5.5555555555556,
                 Zone = "Cryogenic Canal",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -4388,7 +4388,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Common",
                 Weight = 15,
-                Price = 120,
+                Price = 8,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -4400,7 +4400,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Uncommon",
                 Weight = 110,
-                Price = 150,
+                Price = 1.3636363636364,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -4412,7 +4412,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Legendary",
                 Weight = 1600,
-                Price = 3500,
+                Price = 2.1875,
                 Zone = "Glacial Grotto",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4436,7 +4436,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 50,
+                Price = 1,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -4447,7 +4447,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Uncommon",
                 Weight = 70,
-                Price = 220,
+                Price = 3.1428571428571,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -4459,7 +4459,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Mythical",
                 Weight = 1000,
-                Price = 2500,
+                Price = 2.5,
                 Zone = "Overgrowth Caves",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -4471,7 +4471,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Legendary",
                 Weight = 5000,
-                Price = 3000,
+                Price = 0.6,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4483,7 +4483,7 @@ return {
                 FavoriteBait = "Deep Coral",
                 Rarity = "Mythical",
                 Weight = 2000,
-                Price = 1800,
+                Price = 0.9,
                 Zone = "Ancient Archives",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4495,7 +4495,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 60,
-                Price = 100,
+                Price = 1.6666666666667,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -4506,7 +4506,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Limited",
                 Weight = 90,
-                Price = 650,
+                Price = 7.2222222222222,
                 CrabCages = false
             },
             ["Void Emperor"] = {
@@ -4516,7 +4516,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 12000,
-                Price = 6000,
+                Price = 0.5,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4528,7 +4528,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Legendary",
                 Weight = 15,
-                Price = 1000,
+                Price = 66.666666666667,
                 Zone = "Roslit",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4540,7 +4540,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 80,
-                Price = 800,
+                Price = 10,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -4551,7 +4551,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Legendary",
                 Weight = 800,
-                Price = 1000,
+                Price = 1.25,
                 Zone = "The Depths",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4563,7 +4563,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Limited",
                 Weight = 80,
-                Price = 650,
+                Price = 8.125,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -4574,7 +4574,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Uncommon",
                 Weight = 7,
-                Price = 65,
+                Price = 9.2857142857143,
                 Zone = "Moosewood",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -4586,7 +4586,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Rare",
                 Weight = 210,
-                Price = 500,
+                Price = 2.3809523809524,
                 Zone = "Challenger's Deep",
                 CrabCages = false
             },
@@ -4597,7 +4597,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Gemstone",
                 Weight = 28,
-                Price = 1000,
+                Price = 35.714285714286,
                 Zone = "Ancient Isle",
                 CrabCages = false
             },
@@ -4608,7 +4608,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 45,
-                Price = 85,
+                Price = 1.8888888888889,
                 Zone = "Moosewood",
                 CrabCages = false
             },
@@ -4619,7 +4619,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Legendary",
                 Weight = 6500,
-                Price = 3000,
+                Price = 0.46153846153846,
                 Zone = "Brine Pool",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4631,7 +4631,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Rare",
                 Weight = 14,
-                Price = 330,
+                Price = 23.571428571429,
                 Zone = "Mushgrove",
                 CrabCages = true
             },
@@ -4642,7 +4642,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 600,
-                Price = 800,
+                Price = 1.3333333333333,
                 Zone = "Snowcap",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4654,7 +4654,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Unusual",
                 Weight = 160,
-                Price = 160,
+                Price = 1,
                 Zone = "Ancient Isle",
                 CrabCages = false
             },
@@ -4665,7 +4665,7 @@ return {
                 FavoriteBait = "Weird Algae",
                 Rarity = "Uncommon",
                 Weight = 60,
-                Price = 140,
+                Price = 2.3333333333333,
                 Zone = "Desolate Deep",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4677,7 +4677,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Mythical",
                 Weight = 2500,
-                Price = 4000,
+                Price = 1.6,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -4688,7 +4688,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Rare",
                 Weight = 250,
-                Price = 600,
+                Price = 2.4,
                 Zone = "Frigid Cavern",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -4700,7 +4700,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 27,
-                Price = 60,
+                Price = 2.2222222222222,
                 Zone = "Moosewood",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -4712,7 +4712,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Legendary",
                 Weight = 1550,
-                Price = 1000,
+                Price = 0.64516129032258,
                 Zone = "Keepers Altar",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4724,7 +4724,7 @@ return {
                 FavoriteBait = "Super Flakes",
                 Rarity = "Legendary",
                 Weight = 100,
-                Price = 2000,
+                Price = 20,
                 Zone = "Ancient Isle",
                 CrabCages = false
             },
@@ -4735,7 +4735,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Common",
                 Weight = 8,
-                Price = 40,
+                Price = 5,
                 Zone = "Atlantis",
                 CrabCages = false
             },
@@ -4746,7 +4746,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Relic",
                 Weight = 210,
-                Price = 1200,
+                Price = 5.7142857142857,
                 Zone = "None",
                 CrabCages = false
             },
@@ -4757,7 +4757,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Uncommon",
                 Weight = 30,
-                Price = 200,
+                Price = 6.6666666666667,
                 Zone = "Grand Reef",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -4769,7 +4769,7 @@ return {
                 FavoriteBait = "Bagel",
                 Rarity = "Unusual",
                 Weight = 70,
-                Price = 250,
+                Price = 3.5714285714286,
                 Zone = "Overgrowth Caves",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -4781,7 +4781,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Uncommon",
                 Weight = 5,
-                Price = 30,
+                Price = 6,
                 Zone = "Ocean",
                 CrabCages = true
             },
@@ -4791,7 +4791,7 @@ return {
                 },
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 110,
+                Price = 2.2,
                 Zone = "Crypt",
                 CrabCages = false
             },
@@ -4802,7 +4802,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Unusual",
                 Weight = 45,
-                Price = 130,
+                Price = 2.8888888888889,
                 Zone = "Moosewood",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4814,7 +4814,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 4000,
-                Price = 6000,
+                Price = 1.5,
                 Zone = "Cryogenic Canal",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4826,7 +4826,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Legendary",
                 Weight = 2,
-                Price = 350,
+                Price = 175,
                 Zone = "None",
                 CrabCages = false
             },
@@ -4837,7 +4837,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Legendary",
                 Weight = 6500,
-                Price = 3000,
+                Price = 0.46153846153846,
                 CrabCages = false,
                 FavoriteTime = "Night"
             },
@@ -4848,7 +4848,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 14000,
-                Price = 15000,
+                Price = 1.0714285714286,
                 CrabCages = false
             },
             Banditfish = {
@@ -4858,7 +4858,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Rare",
                 Weight = 200,
-                Price = 250,
+                Price = 1.25,
                 Zone = "Desolate Deep",
                 CrabCages = false
             },
@@ -4869,7 +4869,7 @@ return {
                 FavoriteBait = "Holly Berry",
                 Rarity = "Limited",
                 Weight = 200,
-                Price = 120,
+                Price = 0.6,
                 CrabCages = false
             },
             ["Abyssal Bearded Seadevil"] = {
@@ -4879,7 +4879,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Uncommon",
                 Weight = 400,
-                Price = 120,
+                Price = 0.3,
                 Zone = "Abyssal Zenith",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -4891,7 +4891,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Common",
                 Weight = 20,
-                Price = 120,
+                Price = 6,
                 Zone = "Grand Reef",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -4903,7 +4903,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Uncommon",
                 Weight = 50,
-                Price = 200,
+                Price = 4,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -4915,7 +4915,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Common",
                 Weight = 3,
-                Price = 30,
+                Price = 10,
                 Zone = "Moosewood",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -4926,7 +4926,7 @@ return {
                 },
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 110,
+                Price = 2.2,
                 Zone = "Crypt",
                 CrabCages = false
             },
@@ -4937,7 +4937,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 80,
-                Price = 250,
+                Price = 3.125,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -4948,7 +4948,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 13000,
-                Price = 8000,
+                Price = 0.61538461538462,
                 Zone = "Vertigo",
                 CrabCages = false
             },
@@ -4959,7 +4959,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Limited",
                 Weight = 7,
-                Price = 400,
+                Price = 57.142857142857,
                 CrabCages = false
             },
             ["Pale Tang"] = {
@@ -4969,7 +4969,7 @@ return {
                 FavoriteBait = "Bagel",
                 Rarity = "Uncommon",
                 Weight = 15,
-                Price = 100,
+                Price = 6.6666666666667,
                 Zone = "Keepers Altar",
                 CrabCages = false
             },
@@ -4980,7 +4980,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 180,
-                Price = 1300,
+                Price = 7.2222222222222,
                 CrabCages = false
             },
             ["Ice Anchovy"] = {
@@ -4990,7 +4990,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Uncommon",
                 Weight = 6,
-                Price = 140,
+                Price = 23.333333333333,
                 Zone = "Overgrowth Caves",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5002,7 +5002,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Rare",
                 Weight = 400,
-                Price = 250,
+                Price = 0.625,
                 Zone = "Keepers Altar",
                 CrabCages = false
             },
@@ -5013,7 +5013,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Uncommon",
                 Weight = 15,
-                Price = 90,
+                Price = 6,
                 Zone = "Roslit",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5025,7 +5025,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Unusual",
                 Weight = 55,
-                Price = 120,
+                Price = 2.1818181818182,
                 Zone = "Moosewood",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5037,7 +5037,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 60,
+                Price = 1.2,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -5048,7 +5048,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 800,
-                Price = 7000,
+                Price = 8.75,
                 Zone = "Grand Reef",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -5060,7 +5060,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Legendary",
                 Weight = 30,
-                Price = 600,
+                Price = 20,
                 Zone = "Moosewood",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5072,7 +5072,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Unusual",
                 Weight = 20,
-                Price = 200,
+                Price = 10,
                 Zone = "Desolate Deep",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5084,7 +5084,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Uncommon",
                 Weight = 200,
-                Price = 190,
+                Price = 0.95,
                 Zone = "Forsaken Shores",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5096,7 +5096,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Unusual",
                 Weight = 400,
-                Price = 230,
+                Price = 0.575,
                 Zone = "Terrapin",
                 CrabCages = false
             },
@@ -5107,7 +5107,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 60,
-                Price = 80,
+                Price = 1.3333333333333,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -5118,7 +5118,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Unusual",
                 Weight = 1200,
-                Price = 200,
+                Price = 0.16666666666667,
                 Zone = "Ancient Archives",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5130,7 +5130,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Legendary",
                 Weight = 10000,
-                Price = 3000,
+                Price = 0.3,
                 Zone = "Ancient Isle",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5142,7 +5142,7 @@ return {
                 FavoriteBait = "Coral",
                 Rarity = "Legendary",
                 Weight = 300,
-                Price = 1200,
+                Price = 4,
                 Zone = "Forsaken Shores",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5154,7 +5154,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Common",
                 Weight = 7,
-                Price = 50,
+                Price = 7.1428571428571,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5166,7 +5166,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Unusual",
                 Weight = 12,
-                Price = 65,
+                Price = 5.4166666666667,
                 Zone = "Desolate Deep",
                 CrabCages = true
             },
@@ -5177,7 +5177,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 5000,
-                Price = 7000,
+                Price = 1.4,
                 Zone = "Cryogenic Canal",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5189,7 +5189,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Mythical",
                 Weight = 2,
-                Price = 700,
+                Price = 350,
                 Zone = "None",
                 CrabCages = false
             },
@@ -5200,7 +5200,7 @@ return {
                 FavoriteBait = "Night Shrimp",
                 Rarity = "Rare",
                 Weight = 300,
-                Price = 650,
+                Price = 2.1666666666667,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5212,7 +5212,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Mythical",
                 Weight = 20,
-                Price = 1500,
+                Price = 75,
                 Zone = "None",
                 CrabCages = false
             },
@@ -5223,7 +5223,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Common",
                 Weight = 60,
-                Price = 95,
+                Price = 1.5833333333333,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -5234,7 +5234,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Common",
                 Weight = 2,
-                Price = 45,
+                Price = 22.5,
                 Zone = "Ocean",
                 CrabCages = true,
                 FavoriteTime = "Night"
@@ -5246,7 +5246,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Legendary",
                 Weight = 9500,
-                Price = 8300,
+                Price = 0.87368421052632,
                 Zone = "Desolate Deep",
                 CrabCages = false
             },
@@ -5256,7 +5256,7 @@ return {
                 },
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 110,
+                Price = 2.2,
                 Zone = "Crypt",
                 CrabCages = false
             },
@@ -5267,7 +5267,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 240,
-                Price = 90,
+                Price = 0.375,
                 Zone = "Ancient Isle",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5279,7 +5279,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Uncommon",
                 Weight = 5,
-                Price = 45,
+                Price = 9,
                 Zone = "Ocean",
                 CrabCages = true,
                 FavoriteTime = "Night"
@@ -5291,7 +5291,7 @@ return {
                 FavoriteBait = "Bagel",
                 Rarity = "Rare",
                 Weight = 15,
-                Price = 500,
+                Price = 33.333333333333,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5303,7 +5303,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Unusual",
                 Weight = 8,
-                Price = 120,
+                Price = 15,
                 Zone = "The Depths",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5315,7 +5315,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Legendary",
                 Weight = 1000,
-                Price = 2000,
+                Price = 2,
                 Zone = "Cryogenic Canal",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5327,7 +5327,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Legendary",
                 Weight = 5000,
-                Price = 1800,
+                Price = 0.36,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5339,7 +5339,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Exotic",
                 Weight = 45,
-                Price = 4000,
+                Price = 88.888888888889,
                 Zone = "Moosewood",
                 CrabCages = false
             },
@@ -5350,7 +5350,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Mythical",
                 Weight = 10,
-                Price = 2000,
+                Price = 200,
                 Zone = "Ocean",
                 CrabCages = true,
                 FavoriteTime = "Night"
@@ -5362,7 +5362,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Mythical",
                 Weight = 100000,
-                Price = 6500,
+                Price = 0.065,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5374,7 +5374,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Rare",
                 Weight = 800,
-                Price = 1200,
+                Price = 1.5,
                 Zone = "Atlantean Storm",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -5386,7 +5386,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 40,
-                Price = 50,
+                Price = 1.25,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5398,7 +5398,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Unusual",
                 Weight = 700,
-                Price = 125,
+                Price = 0.17857142857143,
                 Zone = "Ancient Archives",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5410,7 +5410,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Common",
                 Weight = 30,
-                Price = 40,
+                Price = 1.3333333333333,
                 Zone = "Roslit",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5422,7 +5422,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Rare",
                 Weight = 450,
-                Price = 1000,
+                Price = 2.2222222222222,
                 Zone = "Glacial Grotto",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -5434,7 +5434,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 12,
-                Price = 70,
+                Price = 5.8333333333333,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -5445,7 +5445,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Rare",
                 Weight = 600,
-                Price = 1000,
+                Price = 1.6666666666667,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5457,7 +5457,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Legendary",
                 Weight = 34000,
-                Price = 9000,
+                Price = 0.26470588235294,
                 Zone = "Veil of the Forsaken",
                 CrabCages = false
             },
@@ -5468,7 +5468,7 @@ return {
                 FavoriteBait = "Coal",
                 Rarity = "Unusual",
                 Weight = 120,
-                Price = 200,
+                Price = 1.6666666666667,
                 Zone = "Roslit Volcano",
                 CrabCages = false
             },
@@ -5479,7 +5479,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Uncommon",
                 Weight = 6,
-                Price = 90,
+                Price = 15,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -5490,7 +5490,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Unusual",
                 Weight = 25,
-                Price = 140,
+                Price = 5.6,
                 Zone = "Roslit",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5502,7 +5502,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Legendary",
                 Weight = 6000,
-                Price = 4000,
+                Price = 0.66666666666667,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5514,7 +5514,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Unusual",
                 Weight = 20,
-                Price = 140,
+                Price = 7,
                 Zone = "Roslit",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5526,7 +5526,7 @@ return {
                 FavoriteBait = "Bagel",
                 Rarity = "Uncommon",
                 Weight = 1600,
-                Price = 1000,
+                Price = 0.625,
                 Zone = "Calm Zone",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5538,7 +5538,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 60,
-                Price = 50,
+                Price = 0.83333333333333,
                 Zone = "Volcanic Vents",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5550,7 +5550,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 780,
-                Price = 2200,
+                Price = 2.8205128205128,
                 CrabCages = false
             },
             ["Glacier Pike"] = {
@@ -5560,7 +5560,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Unusual",
                 Weight = 35,
-                Price = 230,
+                Price = 6.5714285714286,
                 Zone = "Snowcap",
                 CrabCages = false
             },
@@ -5571,7 +5571,7 @@ return {
                 FavoriteBait = "Deep Coral",
                 Rarity = "Rare",
                 Weight = 1400,
-                Price = 450,
+                Price = 0.32142857142857,
                 Zone = "Ancient Archives",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5583,7 +5583,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Rare",
                 Weight = 450,
-                Price = 220,
+                Price = 0.48888888888889,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -5594,7 +5594,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 140,
-                Price = 190,
+                Price = 1.3571428571429,
                 Zone = "Brine Pool",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5606,7 +5606,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Gemstone",
                 Weight = 16,
-                Price = 150,
+                Price = 9.375,
                 Zone = "Ancient Isle",
                 CrabCages = false
             },
@@ -5617,7 +5617,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Uncommon",
                 Weight = 80,
-                Price = 75,
+                Price = 0.9375,
                 Zone = "None",
                 CrabCages = false
             },
@@ -5628,7 +5628,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Unusual",
                 Weight = 170,
-                Price = 900,
+                Price = 5.2941176470588,
                 Zone = "Volcanic Vents",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5640,7 +5640,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Common",
                 Weight = 6,
-                Price = 85,
+                Price = 14.166666666667,
                 Zone = "Grand Reef",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -5652,7 +5652,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Mythical",
                 Weight = 4,
-                Price = 2250,
+                Price = 562.5,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -5663,7 +5663,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Unusual",
                 Weight = 380,
-                Price = 170,
+                Price = 0.44736842105263,
                 Zone = "Vertigo",
                 CrabCages = false
             },
@@ -5674,7 +5674,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Mythical",
                 Weight = 3250,
-                Price = 3000,
+                Price = 0.92307692307692,
                 Zone = "Desolate Deep",
                 CrabCages = true
             },
@@ -5685,7 +5685,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Legendary",
                 Weight = 40,
-                Price = 900,
+                Price = 22.5,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -5696,7 +5696,7 @@ return {
                 FavoriteBait = "Night Shrimp",
                 Rarity = "Rare",
                 Weight = 300,
-                Price = 650,
+                Price = 2.1666666666667,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5708,7 +5708,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Rare",
                 Weight = 110,
-                Price = 400,
+                Price = 3.6363636363636,
                 Zone = "Vertigo",
                 CrabCages = false
             },
@@ -5731,7 +5731,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Legendary",
                 Weight = 60,
-                Price = 1200,
+                Price = 20,
                 Zone = "Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5743,7 +5743,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Legendary",
                 Weight = 1600,
-                Price = 800,
+                Price = 0.5,
                 Zone = "Ancient Archives",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5755,7 +5755,7 @@ return {
                 FavoriteBait = "Lucky",
                 Rarity = "Limited",
                 Weight = 2100,
-                Price = 6500,
+                Price = 3.0952380952381,
                 Zone = "Lucky Event",
                 CrabCages = false
             },
@@ -5766,7 +5766,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Uncommon",
                 Weight = 400,
-                Price = 90,
+                Price = 0.225,
                 Zone = "Ancient Isle",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5778,7 +5778,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Unusual",
                 Weight = 35,
-                Price = 230,
+                Price = 6.5714285714286,
                 Zone = "Moosewood",
                 CrabCages = false
             },
@@ -5789,7 +5789,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Legendary",
                 Weight = 2500,
-                Price = 900,
+                Price = 0.36,
                 Zone = "Snowcap",
                 CrabCages = false
             },
@@ -5800,7 +5800,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Rare",
                 Weight = 20,
-                Price = 230,
+                Price = 11.5,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -5811,7 +5811,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Rare",
                 Weight = 9,
-                Price = 320,
+                Price = 35.555555555556,
                 Zone = "Ocean",
                 CrabCages = true
             },
@@ -5822,7 +5822,7 @@ return {
                 FavoriteBait = "Super Flakes",
                 Rarity = "Mythical",
                 Weight = 16,
-                Price = 2200,
+                Price = 137.5,
                 Zone = "Sunstone",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5834,7 +5834,7 @@ return {
                 FavoriteBait = "Coal",
                 Rarity = "Rare",
                 Weight = 600,
-                Price = 340,
+                Price = 0.56666666666667,
                 Zone = "Roslit Volcano",
                 CrabCages = false
             },
@@ -5845,7 +5845,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Uncommon",
                 Weight = 20,
-                Price = 180,
+                Price = 9,
                 Zone = "Cryogenic Canal",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5857,7 +5857,7 @@ return {
                 FavoriteBait = "Bagel",
                 Rarity = "Common",
                 Weight = 70,
-                Price = 45,
+                Price = 0.64285714285714,
                 Zone = "Moosewood",
                 CrabCages = false
             },
@@ -5868,7 +5868,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Trash",
                 Weight = 210,
-                Price = 15,
+                Price = 0.071428571428571,
                 Zone = "Roslit Volcano",
                 CrabCages = false
             },
@@ -5879,7 +5879,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Common",
                 Weight = 4,
-                Price = 60,
+                Price = 15,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -5890,7 +5890,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 12000,
-                Price = 4500,
+                Price = 0.375,
                 Zone = "Atlantean Storm",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -5902,7 +5902,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Uncommon",
                 Weight = 20,
-                Price = 100,
+                Price = 5,
                 Zone = "Snowcap",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5914,7 +5914,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Rare",
                 Weight = 170,
-                Price = 160,
+                Price = 0.94117647058824,
                 Zone = "Roslit",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5926,7 +5926,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 300,
+                Price = 6,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -5936,7 +5936,7 @@ return {
                 },
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 110,
+                Price = 2.2,
                 Zone = "Crypt",
                 CrabCages = false
             },
@@ -5947,7 +5947,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Legendary",
                 Weight = 23000,
-                Price = 7500,
+                Price = 0.32608695652174,
                 Zone = "Abyssal Zenith",
                 CrabCages = false
             },
@@ -5958,7 +5958,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Common",
                 Weight = 4,
-                Price = 45,
+                Price = 11.25,
                 Zone = "Sunstone",
                 CrabCages = false
             },
@@ -5969,7 +5969,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Common",
                 Weight = 35,
-                Price = 35,
+                Price = 1,
                 Zone = "The Depths",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -5981,7 +5981,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Common",
                 Weight = 200,
-                Price = 35,
+                Price = 0.175,
                 Zone = "Forsaken Shores",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -5993,7 +5993,7 @@ return {
                 FavoriteBait = "Shark Head",
                 Rarity = "Exotic",
                 Weight = 1200000,
-                Price = 35000,
+                Price = 0.029166666666667,
                 Zone = "Calm Zone",
                 CrabCages = false
             },
@@ -6004,7 +6004,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Legendary",
                 Weight = 1000,
-                Price = 2000,
+                Price = 2,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -6016,7 +6016,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Legendary",
                 Weight = 30000,
-                Price = 3500,
+                Price = 0.11666666666667,
                 Zone = "Ancient Isle",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -6028,7 +6028,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Exotic",
                 Weight = 140000,
-                Price = 25000,
+                Price = 0.17857142857143,
                 Zone = "Volcanic Vents",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -6039,7 +6039,7 @@ return {
                 },
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 110,
+                Price = 2.2,
                 Zone = "Crypt",
                 CrabCages = false
             },
@@ -6050,7 +6050,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Rare",
                 Weight = 700,
-                Price = 230,
+                Price = 0.32857142857143,
                 Zone = "Ancient Isle",
                 CrabCages = false
             },
@@ -6061,7 +6061,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Rare",
                 Weight = 150,
-                Price = 300,
+                Price = 2,
                 Zone = "Mushgrove",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -6073,7 +6073,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Legendary",
                 Weight = 4,
-                Price = 900,
+                Price = 225,
                 Zone = "Terrapin",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -6085,7 +6085,7 @@ return {
                 FavoriteBait = "Lucky",
                 Rarity = "Limited",
                 Weight = 2400,
-                Price = 4500,
+                Price = 1.875,
                 Zone = "Lucky Event",
                 CrabCages = false
             },
@@ -6096,7 +6096,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Mythical",
                 Weight = 1500,
-                Price = 2000,
+                Price = 1.3333333333333,
                 Zone = "Terrapin",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -6108,7 +6108,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Common",
                 Weight = 2,
-                Price = 55,
+                Price = 27.5,
                 Zone = "Vertigo",
                 CrabCages = true,
                 FavoriteTime = "Day"
@@ -6120,7 +6120,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Uncommon",
                 Weight = 200,
-                Price = 90,
+                Price = 0.45,
                 Zone = "Vertigo",
                 CrabCages = false
             },
@@ -6131,7 +6131,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Mythical",
                 Weight = 800,
-                Price = 5000,
+                Price = 6.25,
                 Zone = "The Depths",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -6143,7 +6143,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Unusual",
                 Weight = 4,
-                Price = 145,
+                Price = 36.25,
                 Zone = "Roslit",
                 CrabCages = false
             },
@@ -6154,7 +6154,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 12000,
-                Price = 6000,
+                Price = 0.5,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -6166,7 +6166,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Rare",
                 Weight = 155,
-                Price = 450,
+                Price = 2.9032258064516,
                 Zone = "Vertigo",
                 CrabCages = false
             },
@@ -6177,7 +6177,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Uncommon",
                 Weight = 25,
-                Price = 110,
+                Price = 4.4,
                 Zone = "Terrapin",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -6189,7 +6189,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Limited",
                 Weight = 40000,
-                Price = 6500,
+                Price = 0.1625,
                 CrabCages = false,
                 FavoriteTime = "Night"
             },
@@ -6200,7 +6200,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 5,
-                Price = 40,
+                Price = 8,
                 Zone = "Sunstone",
                 CrabCages = false
             },
@@ -6211,7 +6211,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Limited",
                 Weight = 90,
-                Price = 180,
+                Price = 2,
                 CrabCages = false
             },
             Lapisjack = {
@@ -6221,7 +6221,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Rare",
                 Weight = 400,
-                Price = 115,
+                Price = 0.2875,
                 Zone = "Keepers Altar",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -6233,7 +6233,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 12,
-                Price = 80,
+                Price = 6.6666666666667,
                 Zone = "Mushgrove",
                 CrabCages = false
             },
@@ -6244,7 +6244,7 @@ return {
                 FavoriteBait = "Peppermint Worm",
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 75,
+                Price = 1.5,
                 CrabCages = false,
                 FavoriteTime = "Day"
             },
@@ -6255,7 +6255,7 @@ return {
                 FavoriteBait = "Peppermint Worm",
                 Rarity = "Limited",
                 Weight = 6,
-                Price = 20,
+                Price = 3.3333333333333,
                 CrabCages = false
             },
             Xiphactinus = {
@@ -6265,7 +6265,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Unusual",
                 Weight = 2000,
-                Price = 170,
+                Price = 0.085,
                 Zone = "Ancient Isle",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -6277,7 +6277,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Limited",
                 Weight = 30,
-                Price = 60,
+                Price = 2,
                 CrabCages = false,
                 FavoriteTime = "None"
             },
@@ -6288,7 +6288,7 @@ return {
                 FavoriteBait = "Shark Head",
                 Rarity = "Limited",
                 Weight = 15000,
-                Price = 12000,
+                Price = 0.8,
                 CrabCages = false
             },
             ["Reefrunner Snapper"] = {
@@ -6298,7 +6298,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Rare",
                 Weight = 250,
-                Price = 750,
+                Price = 3,
                 Zone = "Forsaken Shores",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -6310,7 +6310,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Common",
                 Weight = 25,
-                Price = 70,
+                Price = 2.8,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -6333,7 +6333,7 @@ return {
                 FavoriteBait = "Peppermint Worm",
                 Rarity = "Limited",
                 Weight = 55,
-                Price = 145,
+                Price = 2.6363636363636,
                 CrabCages = false,
                 FavoriteTime = "Night"
             },
@@ -6344,7 +6344,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Common",
                 Weight = 25,
-                Price = 80,
+                Price = 3.2,
                 Zone = "Snowcap",
                 CrabCages = false
             },
@@ -6355,7 +6355,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Uncommon",
                 Weight = 25,
-                Price = 160,
+                Price = 6.4,
                 Zone = "Glacial Grotto",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -6366,7 +6366,7 @@ return {
                 },
                 Rarity = "Limited",
                 Weight = 50,
-                Price = 110,
+                Price = 2.2,
                 Zone = "Crypt",
                 CrabCages = false
             },
@@ -6377,7 +6377,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 80,
-                Price = 40,
+                Price = 0.5,
                 Zone = "Abyssal Zenith",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -6389,7 +6389,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Uncommon",
                 Weight = 8,
-                Price = 175,
+                Price = 21.875,
                 Zone = "Frigid Cavern",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -6401,7 +6401,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Common",
                 Weight = 80,
-                Price = 50,
+                Price = 0.625,
                 Zone = "Challenger's Deep",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -6413,7 +6413,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Common",
                 Weight = 11,
-                Price = 60,
+                Price = 5.4545454545455,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -6425,7 +6425,7 @@ return {
                 FavoriteBait = "Fish Head",
                 Rarity = "Rare",
                 Weight = 450,
-                Price = 650,
+                Price = 1.4444444444444,
                 Zone = "Glacial Grotto",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -6437,7 +6437,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Unusual",
                 Weight = 90,
-                Price = 450,
+                Price = 5,
                 Zone = "Atlantean Storm",
                 CrabCages = false,
                 FavoriteTime = "None"
@@ -6449,7 +6449,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Uncommon",
                 Weight = 45,
-                Price = 100,
+                Price = 2.2222222222222,
                 Zone = "Challenger's Deep",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -6461,7 +6461,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Rare",
                 Weight = 200,
-                Price = 200,
+                Price = 1,
                 Zone = "Roslit Volcano",
                 CrabCages = false
             },
@@ -6472,7 +6472,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Exotic",
                 Weight = 1000,
-                Price = 800,
+                Price = 0.8,
                 Zone = "Vertigo",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -6484,7 +6484,7 @@ return {
                 FavoriteBait = "None",
                 Rarity = "Legendary",
                 Weight = 7,
-                Price = 900,
+                Price = 128.57142857143,
                 Zone = "Vertigo",
                 CrabCages = false
             },
@@ -6495,7 +6495,7 @@ return {
                 FavoriteBait = "Coal",
                 Rarity = "Limited",
                 Weight = 16000,
-                Price = 24000,
+                Price = 1.5,
                 CrabCages = false
             },
             ["Ancient Kraken"] = {
@@ -6505,7 +6505,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Secret",
                 Weight = 200000,
-                Price = 50000,
+                Price = 0.25,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -6517,7 +6517,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Rare",
                 Weight = 160,
-                Price = 140,
+                Price = 0.875,
                 Zone = "None",
                 CrabCages = false
             },
@@ -6528,7 +6528,7 @@ return {
                 FavoriteBait = "Bagel",
                 Rarity = "Mythical",
                 Weight = 4,
-                Price = 900,
+                Price = 225,
                 Zone = "Snowcap",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -6540,7 +6540,7 @@ return {
                 FavoriteBait = "Lucky",
                 Rarity = "Limited",
                 Weight = 1500,
-                Price = 10000,
+                Price = 6.6666666666667,
                 Zone = "Lucky Event",
                 CrabCages = false
             },
@@ -6551,7 +6551,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Legendary",
                 Weight = 6000,
-                Price = 4000,
+                Price = 0.66666666666667,
                 Zone = "Atlantis",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -6563,7 +6563,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Rare",
                 Weight = 2500,
-                Price = 4000,
+                Price = 1.6,
                 Zone = "Veil of the Forsaken",
                 CrabCages = false
             }
@@ -7975,21 +7975,36 @@ return {
         },
         WorldName = "Sea 2",
         Rods = {
-            ReRod = {--[[LuaEncode: Duplicate reference]]},
+            ReRod = {
+                Price = 1/0,
+                Passive = true,
+                Requirements = false,
+                LineDistance = 2525
+            },
             ["Frog Rod"] = {
                 Price = 12000,
                 Passive = true,
                 Requirements = false,
                 LineDistance = 15
             },
-            ["Developers Rod"] = {--[[LuaEncode: Duplicate reference]]},
+            ["Developers Rod"] = {
+                Price = 1/0,
+                Passive = false,
+                Requirements = false,
+                LineDistance = 150
+            },
             ["Great Dreamer Rod"] = {
                 Price = 500000,
                 Passive = true,
                 Requirements = false,
                 LineDistance = 60
             },
-            ["Polaris Serenade"] = {--[[LuaEncode: Duplicate reference]]},
+            ["Polaris Serenade"] = {
+                Price = 1/0,
+                Passive = true,
+                Requirements = false,
+                LineDistance = 250
+            },
             ["Azure Of Lagoon"] = {
                 Price = 100000,
                 Passive = false,
@@ -8002,8 +8017,18 @@ return {
                 Requirements = false,
                 LineDistance = 25
             },
-            ["Cat's Got Your Fish"] = {--[[LuaEncode: Duplicate reference]]},
-            ["Tryhard Rod"] = {--[[LuaEncode: Duplicate reference]]},
+            ["Cat's Got Your Fish"] = {
+                Price = 1/0,
+                Passive = true,
+                Requirements = false,
+                LineDistance = 100
+            },
+            ["Tryhard Rod"] = {
+                Price = 1/0,
+                Passive = false,
+                Requirements = false,
+                LineDistance = 150
+            },
             ["Wildflower Rod"] = {
                 Price = 7000,
                 Passive = false,
@@ -8043,7 +8068,7 @@ return {
                 FavoriteBait = "Gale Grub",
                 Rarity = "Legendary",
                 Weight = 120,
-                Price = 1340,
+                Price = 11.166666666667,
                 Zone = "Pine Shoal",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8055,7 +8080,7 @@ return {
                 FavoriteBait = "Sapphire Krill",
                 Rarity = "Rare",
                 Weight = 1080,
-                Price = 950,
+                Price = 0.87962962962963,
                 Zone = "The Cursed Shores",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8067,7 +8092,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Uncommon",
                 Weight = 320,
-                Price = 110,
+                Price = 0.34375,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8079,7 +8104,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Rare",
                 Weight = 960,
-                Price = 700,
+                Price = 0.72916666666667,
                 Zone = "The Cursed Shores",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8091,7 +8116,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Uncommon",
                 Weight = 340,
-                Price = 90,
+                Price = 0.26470588235294,
                 Zone = "Lushgrove",
                 CrabCages = false
             },
@@ -8102,7 +8127,7 @@ return {
                 FavoriteBait = "Golden Worm",
                 Rarity = "Exotic",
                 Weight = 15000,
-                Price = 4967,
+                Price = 0.33113333333333,
                 Zone = "Isle of New Beginnings",
                 CrabCages = false
             },
@@ -8113,7 +8138,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Common",
                 Weight = 180,
-                Price = 52,
+                Price = 0.28888888888889,
                 Zone = "Isle of New Beginnings",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8125,7 +8150,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Uncommon",
                 Weight = 140,
-                Price = 90,
+                Price = 0.64285714285714,
                 Zone = "Waveborne",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8137,7 +8162,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Unusual",
                 Weight = 600,
-                Price = 150,
+                Price = 0.25,
                 Zone = "Waveborne",
                 CrabCages = false
             },
@@ -8148,7 +8173,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Rare",
                 Weight = 1560,
-                Price = 515,
+                Price = 0.33012820512821,
                 Zone = "Azure Lagoon",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8160,7 +8185,7 @@ return {
                 FavoriteBait = "Golden Worm",
                 Rarity = "Exotic",
                 Weight = 18000,
-                Price = 7500,
+                Price = 0.41666666666667,
                 Zone = "Azure Lagoon",
                 CrabCages = false
             },
@@ -8171,7 +8196,7 @@ return {
                 FavoriteBait = "Mist Worms",
                 Rarity = "Legendary",
                 Weight = 2400,
-                Price = 1750,
+                Price = 0.72916666666667,
                 Zone = "Azure Lagoon",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8183,7 +8208,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Uncommon",
                 Weight = 2160,
-                Price = 170,
+                Price = 0.078703703703704,
                 Zone = "Emberreach",
                 CrabCages = false
             },
@@ -8194,7 +8219,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Legendary",
                 Weight = 2640,
-                Price = 1260,
+                Price = 0.47727272727273,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8206,7 +8231,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Unusual",
                 Weight = 2250,
-                Price = 179,
+                Price = 0.079555555555556,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8218,7 +8243,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Uncommon",
                 Weight = 400,
-                Price = 240,
+                Price = 0.6,
                 Zone = "The Cursed Shores",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8230,7 +8255,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Uncommon",
                 Weight = 510,
-                Price = 105,
+                Price = 0.20588235294118,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8242,7 +8267,7 @@ return {
                 FavoriteBait = "Sapphire Krill",
                 Rarity = "Common",
                 Weight = 100,
-                Price = 40,
+                Price = 0.4,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8254,7 +8279,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Unusual",
                 Weight = 5940,
-                Price = 168,
+                Price = 0.028282828282828,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8266,7 +8291,7 @@ return {
                 FavoriteBait = "Truffle Worm",
                 Rarity = "Mythical",
                 Weight = 1400,
-                Price = 2100,
+                Price = 1.5,
                 Zone = "Waveborne",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8278,7 +8303,7 @@ return {
                 FavoriteBait = "Lagoon Leech",
                 Rarity = "Uncommon",
                 Weight = 260,
-                Price = 100,
+                Price = 0.38461538461538,
                 Zone = "Open Ocean",
                 CrabCages = false
             },
@@ -8289,7 +8314,7 @@ return {
                 FavoriteBait = "Golden Worm",
                 Rarity = "Exotic",
                 Weight = 17000,
-                Price = 4300,
+                Price = 0.25294117647059,
                 Zone = "Lushgrove",
                 CrabCages = false
             },
@@ -8300,7 +8325,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Rare",
                 Weight = 18000,
-                Price = 400,
+                Price = 0.022222222222222,
                 Zone = "Waveborne",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8312,7 +8337,7 @@ return {
                 FavoriteBait = "Gale Grub",
                 Rarity = "Legendary",
                 Weight = 800,
-                Price = 1100,
+                Price = 1.375,
                 Zone = "Waveborne",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8324,7 +8349,7 @@ return {
                 FavoriteBait = "Golden Worm",
                 Rarity = "Exotic",
                 Weight = 51000,
-                Price = 4515,
+                Price = 0.088529411764706,
                 Zone = "Emberreach",
                 CrabCages = false
             },
@@ -8335,7 +8360,7 @@ return {
                 FavoriteBait = "Shark Head",
                 Rarity = "Exotic",
                 Weight = 15000,
-                Price = 12000,
+                Price = 0.8,
                 Zone = "Ocean",
                 CrabCages = false
             },
@@ -8346,7 +8371,7 @@ return {
                 FavoriteBait = "Lushrooms",
                 Rarity = "Legendary",
                 Weight = 1600,
-                Price = 1300,
+                Price = 0.8125,
                 Zone = "Lushgrove",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8358,7 +8383,7 @@ return {
                 FavoriteBait = "Ember Berries",
                 Rarity = "Legendary",
                 Weight = 4860,
-                Price = 1365,
+                Price = 0.28086419753086,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8370,7 +8395,7 @@ return {
                 FavoriteBait = "Mist Worms",
                 Rarity = "Legendary",
                 Weight = 1920,
-                Price = 2000,
+                Price = 1.0416666666667,
                 Zone = "The Cursed Shores",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8382,7 +8407,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Rare",
                 Weight = 660,
-                Price = 485,
+                Price = 0.73484848484848,
                 Zone = "Isle of New Beginnings",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8394,7 +8419,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Rare",
                 Weight = 12300,
-                Price = 441,
+                Price = 0.035853658536585,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8406,7 +8431,7 @@ return {
                 FavoriteBait = "Gale Grub",
                 Rarity = "Legendary",
                 Weight = 1400,
-                Price = 1350,
+                Price = 0.96428571428571,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8418,7 +8443,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Unusual",
                 Weight = 660,
-                Price = 420,
+                Price = 0.63636363636364,
                 Zone = "The Cursed Shores",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8430,7 +8455,7 @@ return {
                 FavoriteBait = "Coal",
                 Rarity = "Rare",
                 Weight = 12600,
-                Price = 441,
+                Price = 0.035,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8442,7 +8467,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 240,
-                Price = 37,
+                Price = 0.15416666666667,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8454,7 +8479,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Common",
                 Weight = 1200,
-                Price = 40,
+                Price = 0.033333333333333,
                 Zone = "Waveborne",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8466,7 +8491,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Uncommon",
                 Weight = 6000,
-                Price = 165,
+                Price = 0.0275,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8478,7 +8503,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Common",
                 Weight = 140,
-                Price = 50,
+                Price = 0.35714285714286,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8490,7 +8515,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Uncommon",
                 Weight = 1350,
-                Price = 80,
+                Price = 0.059259259259259,
                 Zone = "Waveborne",
                 CrabCages = false
             },
@@ -8501,7 +8526,7 @@ return {
                 FavoriteBait = "Lushrooms",
                 Rarity = "Legendary",
                 Weight = 900,
-                Price = 1200,
+                Price = 1.3333333333333,
                 Zone = "Lushgrove",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8513,7 +8538,7 @@ return {
                 FavoriteBait = "Luminous Larva",
                 Rarity = "Secret",
                 Weight = 9600,
-                Price = 13860,
+                Price = 1.44375,
                 Zone = "Isle of New Beginnings",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8525,7 +8550,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Rare",
                 Weight = 5760,
-                Price = 465,
+                Price = 0.080729166666667,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8537,7 +8562,7 @@ return {
                 FavoriteBait = "Luminous Larva",
                 Rarity = "Secret",
                 Weight = 300,
-                Price = 12500,
+                Price = 41.666666666667,
                 Zone = "Pine Shoal",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8549,7 +8574,7 @@ return {
                 FavoriteBait = "Luminous Larva",
                 Rarity = "Exotic",
                 Weight = 11000,
-                Price = 7500,
+                Price = 0.68181818181818,
                 Zone = "Waveborne",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8560,7 +8585,7 @@ return {
                 },
                 Rarity = "Exotic",
                 Weight = 200,
-                Price = 8450,
+                Price = 42.25,
                 Zone = "Pine Shoal",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8572,7 +8597,7 @@ return {
                 FavoriteBait = "Coal",
                 Rarity = "Unusual",
                 Weight = 6300,
-                Price = 168,
+                Price = 0.026666666666667,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8584,7 +8609,7 @@ return {
                 FavoriteBait = "Luminous Larva",
                 Rarity = "Secret",
                 Weight = 36000,
-                Price = 12600,
+                Price = 0.35,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8596,7 +8621,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Uncommon",
                 Weight = 300,
-                Price = 105,
+                Price = 0.35,
                 Zone = "Isle of New Beginnings",
                 CrabCages = false
             },
@@ -8607,7 +8632,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Unusual",
                 Weight = 2000,
-                Price = 160,
+                Price = 0.08,
                 Zone = "Lushgrove",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8619,7 +8644,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Rare",
                 Weight = 1900,
-                Price = 450,
+                Price = 0.23684210526316,
                 Zone = "Lushgrove",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8631,7 +8656,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Common",
                 Weight = 210,
-                Price = 35,
+                Price = 0.16666666666667,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8643,7 +8668,7 @@ return {
                 FavoriteBait = "Ember Berries",
                 Rarity = "Common",
                 Weight = 3600,
-                Price = 47,
+                Price = 0.013055555555556,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8655,7 +8680,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Uncommon",
                 Weight = 160,
-                Price = 100,
+                Price = 0.625,
                 Zone = "Lushgrove",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8667,7 +8692,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Common",
                 Weight = 480,
-                Price = 115,
+                Price = 0.23958333333333,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8679,7 +8704,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Uncommon",
                 Weight = 1050,
-                Price = 95,
+                Price = 0.09047619047619,
                 Zone = "Emberreach",
                 CrabCages = false
             },
@@ -8690,7 +8715,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Uncommon",
                 Weight = 60,
-                Price = 65,
+                Price = 1.0833333333333,
                 Zone = "Pine Shoal",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8702,7 +8727,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Unusual",
                 Weight = 2190,
-                Price = 175,
+                Price = 0.079908675799087,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8714,7 +8739,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Unusual",
                 Weight = 700,
-                Price = 170,
+                Price = 0.24285714285714,
                 Zone = "Lushgrove",
                 CrabCages = false
             },
@@ -8725,7 +8750,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 55,
-                Price = 30,
+                Price = 0.54545454545455,
                 Zone = "Waveborne",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8737,7 +8762,7 @@ return {
                 FavoriteBait = "Mist Worms",
                 Rarity = "Common",
                 Weight = 120,
-                Price = 45,
+                Price = 0.375,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8749,7 +8774,7 @@ return {
                 FavoriteBait = "Crystal Bananas",
                 Rarity = "Uncommon",
                 Weight = 280,
-                Price = 105,
+                Price = 0.375,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8761,7 +8786,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Uncommon",
                 Weight = 720,
-                Price = 110,
+                Price = 0.15277777777778,
                 Zone = "Azure Lagoon",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8773,7 +8798,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Rare",
                 Weight = 5610,
-                Price = 473,
+                Price = 0.084313725490196,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8785,7 +8810,7 @@ return {
                 FavoriteBait = "Crystal Bananas",
                 Rarity = "Mythical",
                 Weight = 2300,
-                Price = 2700,
+                Price = 1.1739130434783,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8797,7 +8822,7 @@ return {
                 FavoriteBait = "Mist Worms",
                 Rarity = "Exotic",
                 Weight = 43200,
-                Price = 8500,
+                Price = 0.19675925925926,
                 Zone = "The Cursed Shores",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8809,7 +8834,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Mythical",
                 Weight = 4680,
-                Price = 2525,
+                Price = 0.53952991452991,
                 Zone = "Emberreach",
                 CrabCages = false
             },
@@ -8820,7 +8845,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Rare",
                 Weight = 4000,
-                Price = 380,
+                Price = 0.095,
                 Zone = "Waveborne",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8832,7 +8857,7 @@ return {
                 FavoriteBait = "Luminous Larva",
                 Rarity = "Secret",
                 Weight = 200000,
-                Price = 13200,
+                Price = 0.066,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8844,7 +8869,7 @@ return {
                 FavoriteBait = "Mist Worms",
                 Rarity = "Mythical",
                 Weight = 3000,
-                Price = 3950,
+                Price = 1.3166666666667,
                 Zone = "Azure Lagoon",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8856,7 +8881,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Unusual",
                 Weight = 390,
-                Price = 185,
+                Price = 0.47435897435897,
                 Zone = "Isle of New Beginnings",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8868,7 +8893,7 @@ return {
                 FavoriteBait = "Mist Worms",
                 Rarity = "Legendary",
                 Weight = 2160,
-                Price = 1855,
+                Price = 0.8587962962963,
                 Zone = "Azure Lagoon",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8880,7 +8905,7 @@ return {
                 FavoriteBait = "Crystal Bananas",
                 Rarity = "Legendary",
                 Weight = 900,
-                Price = 1386,
+                Price = 1.54,
                 Zone = "Isle of New Beginnings",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8892,7 +8917,7 @@ return {
                 FavoriteBait = "Crystal Bananas",
                 Rarity = "Mythical",
                 Weight = 1140,
-                Price = 2772,
+                Price = 2.4315789473684,
                 Zone = "Isle of New Beginnings",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8904,7 +8929,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Common",
                 Weight = 1020,
-                Price = 93,
+                Price = 0.091176470588235,
                 Zone = "Emberreach",
                 CrabCages = false
             },
@@ -8915,7 +8940,7 @@ return {
                 FavoriteBait = "Lushrooms",
                 Rarity = "Rare",
                 Weight = 900,
-                Price = 480,
+                Price = 0.53333333333333,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8927,7 +8952,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Unusual",
                 Weight = 1900,
-                Price = 140,
+                Price = 0.073684210526316,
                 Zone = "Waveborne",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8939,7 +8964,7 @@ return {
                 FavoriteBait = "Luminous Larva",
                 Rarity = "Secret",
                 Weight = 12000,
-                Price = 12000,
+                Price = 1,
                 Zone = "Lushgrove",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8951,7 +8976,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 150,
-                Price = 41,
+                Price = 0.27333333333333,
                 Zone = "Isle of New Beginnings",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8963,7 +8988,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Unusual",
                 Weight = 600,
-                Price = 380,
+                Price = 0.63333333333333,
                 Zone = "The Cursed Shores",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -8975,7 +9000,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Unusual",
                 Weight = 80,
-                Price = 125,
+                Price = 1.5625,
                 Zone = "Pine Shoal",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -8987,7 +9012,7 @@ return {
                 FavoriteBait = "Mist Worms",
                 Rarity = "Mythical",
                 Weight = 2880,
-                Price = 3000,
+                Price = 1.0416666666667,
                 Zone = "The Cursed Shores",
                 CrabCages = false
             },
@@ -8998,7 +9023,7 @@ return {
                 FavoriteBait = "Ember Berries",
                 Rarity = "Mythical",
                 Weight = 4830,
-                Price = 2500,
+                Price = 0.5175983436853,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9010,7 +9035,7 @@ return {
                 FavoriteBait = "Mist Worms",
                 Rarity = "Secret",
                 Weight = 200,
-                Price = 20000,
+                Price = 100,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9022,7 +9047,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Unusual",
                 Weight = 460,
-                Price = 185,
+                Price = 0.40217391304348,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9034,7 +9059,7 @@ return {
                 FavoriteBait = "Luminous Larva",
                 Rarity = "Secret",
                 Weight = 57600,
-                Price = 25000,
+                Price = 0.43402777777778,
                 Zone = "The Cursed Shores",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9046,7 +9071,7 @@ return {
                 FavoriteBait = "Ember Berries",
                 Rarity = "Unusual",
                 Weight = 540,
-                Price = 180,
+                Price = 0.33333333333333,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9058,7 +9083,7 @@ return {
                 FavoriteBait = "Sapphire Krill",
                 Rarity = "Uncommon",
                 Weight = 2040,
-                Price = 179,
+                Price = 0.087745098039216,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9070,7 +9095,7 @@ return {
                 FavoriteBait = "Golden Worm",
                 Rarity = "Secret",
                 Weight = 1500,
-                Price = 10000,
+                Price = 6.6666666666667,
                 Zone = "Waveborne",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9082,7 +9107,7 @@ return {
                 FavoriteBait = "Crystal Bananas",
                 Rarity = "Legendary",
                 Weight = 1500,
-                Price = 1320,
+                Price = 0.88,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9094,7 +9119,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Common",
                 Weight = 45,
-                Price = 35,
+                Price = 0.77777777777778,
                 Zone = "Pine Shoal",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9106,7 +9131,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Rare",
                 Weight = 1000,
-                Price = 460,
+                Price = 0.46,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9118,7 +9143,7 @@ return {
                 FavoriteBait = "Neuro Slug",
                 Rarity = "Legendary",
                 Weight = 1500,
-                Price = 1200,
+                Price = 0.8,
                 Zone = "Waveborne",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9130,7 +9155,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Common",
                 Weight = 220,
-                Price = 110,
+                Price = 0.5,
                 Zone = "The Cursed Shores",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9142,7 +9167,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 70,
-                Price = 35,
+                Price = 0.5,
                 Zone = "Lushgrove",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9154,7 +9179,7 @@ return {
                 FavoriteBait = "Gale Grub",
                 Rarity = "Mythical",
                 Weight = 150,
-                Price = 2850,
+                Price = 19,
                 Zone = "Pine Shoal",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9166,7 +9191,7 @@ return {
                 FavoriteBait = "Lagoon Leech",
                 Rarity = "Legendary",
                 Weight = 1700,
-                Price = 1380,
+                Price = 0.81176470588235,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9178,7 +9203,7 @@ return {
                 FavoriteBait = "Mist Worms",
                 Rarity = "Secret",
                 Weight = 400,
-                Price = 21000,
+                Price = 52.5,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9190,7 +9215,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Legendary",
                 Weight = 1600,
-                Price = 1400,
+                Price = 0.875,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9202,7 +9227,7 @@ return {
                 FavoriteBait = "Gale Grub",
                 Rarity = "Unusual",
                 Weight = 500,
-                Price = 175,
+                Price = 0.35,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9214,7 +9239,7 @@ return {
                 FavoriteBait = "Mist Worms",
                 Rarity = "Legendary",
                 Weight = 1440,
-                Price = 1700,
+                Price = 1.1805555555556,
                 Zone = "The Cursed Shores",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9226,7 +9251,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Uncommon",
                 Weight = 600,
-                Price = 105,
+                Price = 0.175,
                 Zone = "Azure Lagoon",
                 CrabCages = false
             },
@@ -9237,7 +9262,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Unusual",
                 Weight = 1200,
-                Price = 200,
+                Price = 0.16666666666667,
                 Zone = "Azure Lagoon",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9249,7 +9274,7 @@ return {
                 FavoriteBait = "Shrimp",
                 Rarity = "Common",
                 Weight = 1300,
-                Price = 45,
+                Price = 0.034615384615385,
                 Zone = "Lushgrove",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9261,7 +9286,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 450,
-                Price = 45,
+                Price = 0.1,
                 Zone = "Azure Lagoon",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9273,7 +9298,7 @@ return {
                 FavoriteBait = "Mist Worms",
                 Rarity = "Exotic",
                 Weight = 40000,
-                Price = 10000,
+                Price = 0.25,
                 Zone = "Isle of New Beginnings",
                 CrabCages = false
             },
@@ -9284,7 +9309,7 @@ return {
                 FavoriteBait = "Lushrooms",
                 Rarity = "Mythical",
                 Weight = 1600,
-                Price = 2400,
+                Price = 1.5,
                 Zone = "Lushgrove",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9296,7 +9321,7 @@ return {
                 FavoriteBait = "Minnow",
                 Rarity = "Uncommon",
                 Weight = 360,
-                Price = 220,
+                Price = 0.61111111111111,
                 Zone = "The Cursed Shores",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9308,7 +9333,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 40,
-                Price = 30,
+                Price = 0.75,
                 Zone = "Pine Shoal",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9320,7 +9345,7 @@ return {
                 FavoriteBait = "Flakes",
                 Rarity = "Unusual",
                 Weight = 960,
-                Price = 195,
+                Price = 0.203125,
                 Zone = "Azure Lagoon",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9332,7 +9357,7 @@ return {
                 FavoriteBait = "Mist Worms",
                 Rarity = "Mythical",
                 Weight = 60000,
-                Price = 2650,
+                Price = 0.044166666666667,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9344,7 +9369,7 @@ return {
                 FavoriteBait = "Sapphire Krill",
                 Rarity = "Exotic",
                 Weight = 7500,
-                Price = 4750,
+                Price = 0.63333333333333,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9356,7 +9381,7 @@ return {
                 FavoriteBait = "Sapphire Krill",
                 Rarity = "Mythical",
                 Weight = 2200,
-                Price = 2600,
+                Price = 1.1818181818182,
                 Zone = "Open Ocean",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9368,7 +9393,7 @@ return {
                 FavoriteBait = "Luminous Larva",
                 Rarity = "Secret",
                 Weight = 12000,
-                Price = 25000,
+                Price = 2.0833333333333,
                 Zone = "Azure Lagoon",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9380,7 +9405,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Rare",
                 Weight = 1800,
-                Price = 510,
+                Price = 0.28333333333333,
                 Zone = "Azure Lagoon",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9392,7 +9417,7 @@ return {
                 FavoriteBait = "Worm",
                 Rarity = "Common",
                 Weight = 200,
-                Price = 100,
+                Price = 0.5,
                 Zone = "The Cursed Shores",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9404,7 +9429,7 @@ return {
                 FavoriteBait = "Nightmare Larva",
                 Rarity = "Mythical",
                 Weight = 12000,
-                Price = 2200,
+                Price = 0.18333333333333,
                 Zone = "Waveborne",
                 CrabCages = false
             },
@@ -9415,7 +9440,7 @@ return {
                 FavoriteBait = "Insect",
                 Rarity = "Legendary",
                 Weight = 2730,
-                Price = 1270,
+                Price = 0.46520146520147,
                 Zone = "Emberreach",
                 CrabCages = false
             },
@@ -9426,7 +9451,7 @@ return {
                 FavoriteBait = "Squid",
                 Rarity = "Rare",
                 Weight = 100,
-                Price = 230,
+                Price = 2.3,
                 Zone = "Pine Shoal",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9438,7 +9463,7 @@ return {
                 FavoriteBait = "Seaweed",
                 Rarity = "Common",
                 Weight = 3900,
-                Price = 43,
+                Price = 0.011025641025641,
                 Zone = "Emberreach",
                 CrabCages = false,
                 FavoriteTime = "Night"
@@ -9450,7 +9475,7 @@ return {
                 FavoriteBait = "Magnet",
                 Rarity = "Rare",
                 Weight = 4200,
-                Price = 420,
+                Price = 0.1,
                 Zone = "Lushgrove",
                 CrabCages = false,
                 FavoriteTime = "Day"
@@ -9559,7 +9584,22 @@ return {
                 Exalted = false
             }
         },
-        Rarities = {--[[LuaEncode: Duplicate reference]]},
+        Rarities = {
+            "Trash",
+            "Common",
+            "Uncommon",
+            "Unusual",
+            "Rare",
+            "Legendary",
+            "Mythical",
+            "Divine",
+            "Exotic",
+            "Secret",
+            "Relic",
+            "Fragment",
+            "Gemstone",
+            "Limited"
+        },
         Items = {
             ["Windset Totem"] = {
                 Price = 2000,
