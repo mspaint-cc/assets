@@ -1,4 +1,4 @@
-{
+return {
     [16732694052] = {
         Locations = {
             "Ocean",
