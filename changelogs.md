@@ -1,18 +1,11 @@
 ```diff
-+ Fixed bad fireproximityprompt on executors with replicatesignal (MacSploit for example)
-
-[MM2]
-+ Fixed Teleport to Lobby
-
-[Doors]
-+ Unblocked Delete Entities FE for bad executors
-+ Hopefully fixed Auto Wardrobe softlock
+[DOORS]
++ Fixed loading in Ranked mode
++ Added "Auto Collect Pads" in Ranked mode
 
 [Fisch]
-+ Updated to latest game data
-+ Added Kill Cthulu (in Misc -> Exploits)
++ Fixed typo
 
-+ Fixed an "c stack overflow" error with teleport dropdowns
-+ Fixed an edge case with Drop Bobber not working after re-enabking it
-- Removed "Complete The Hunt Event" button
+[Word Bomb]
++ Fixed Longest word list
 ```
