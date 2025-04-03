@@ -1,5 +1,7 @@
 ```diff
-[DOORS]
-+ Added Anticheat Bypass (ladder method) in Ranked mode
-+ Added Anti-Giggle in Ranked mode
+[Pressure - Lobby]
++ Join Three Nights at the Blacksite button
+
+[Pressure - Three Nights at the Blacksite]
++ Added Support for subplace
 ```
