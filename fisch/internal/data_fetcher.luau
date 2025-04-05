@@ -1,12 +1,3 @@
-local ZonesAliases = {
-    ["Veil of the Forsaken"] = "Forsaken Veil",
-    ["Challenger's Deep"] = "Challengers Deep"
-}
-
-local SpecialEventsAliases = {
-    ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" }
-}
-
 local data = {
     [16732694052] = {
         SpecialEvents = { -- needs to be manually updated
@@ -36,8 +27,13 @@ local data = {
             "Golden Tide"
         },
 
-        SpecialEventsAliases = SpecialEventsAliases,
-        ZonesAliases = ZonesAliases,
+        SpecialEventsAliases = {
+            ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" }
+        },
+        ZonesAliases = {
+            ["Veil of the Forsaken"] = "Forsaken Veil",
+            ["Challenger's Deep"] = "Challengers Deep"
+        },
 
         NPCs = {
             ["Appraiser"] = -1,
@@ -76,8 +72,12 @@ local data = {
             "Animal Pool - Second Sea"
         },
 
-        SpecialEventsAliases = SpecialEventsAliases,
-        ZonesAliases = ZonesAliases,
+        SpecialEventsAliases = {
+            ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" }
+        },
+        ZonesAliases = {
+            
+        },
 
         NPCs = {
             ["Appraiser"] = -1,
@@ -146,6 +146,25 @@ local MaybeUnloadedZones = Instance.new("Model", workspace)
 MaybeUnloadedZones.Name = "wooow"
 MaybeUnloadedZones.ModelStreamingMode = Enum.ModelStreamingMode.Persistent
 
+local function isSpecialZone(zoneName)
+    local placeData = data[game.PlaceId]
+    if not placeData then return false end
+
+    if table.find(placeData.SpecialEvents, zoneName) then
+        return true
+    end
+
+    for _, specialZoneData in pairs(placeData.SpecialEventsAliases) do
+        for _, actualName in pairs(specialZoneData) do
+            if zoneName == actualName then
+                return true
+            end
+        end
+    end
+
+    return false
+end
+
 npcs.ChildAdded:Connect(function(npc)
     if data[game.PlaceId].NPCs[npc.Name] == -1 then
         data[game.PlaceId].NPCs[npc.Name] = npc:GetPivot() * CFrame.new(0, 1.5, 0)
@@ -204,8 +223,8 @@ FishingZones.ChildAdded:Connect(function(zoneInst)
     zoneInst:Clone().Parent = MaybeUnloadedZones
 
     local zone = zoneInst.Name;
-    if table.find(data[game.PlaceId].SpecialEvents, zone) then return end
     if table.find(allFishLocations, zone) then return end
+    if isSpecialZone(zone) then return end
 
     warn(" - Re-fetched '", zone, "'");
     table.insert(allFishLocations, zone)
@@ -382,7 +401,7 @@ for _, fish in pairs(datatables.Fish) do
     if not fish.Zone then continue end
     local zone = data[game.PlaceId].ZonesAliases[fish.Zone] or fish.Zone;
 
-    if table.find(data[game.PlaceId].SpecialEvents, zone) then continue end
+    if isSpecialZone(zone) then continue end
     if table.find(allFishLocations, zone) then continue end
 
     print("Added '", zone, "' [Fish Datatable]"); table.insert(allFishLocations, zone)
@@ -390,7 +409,8 @@ end;
 
 for _, zoneInst in workspace.zones.fishing:GetChildren() do
     local zone = zoneInst.Name;
-    if table.find(data[game.PlaceId].SpecialEvents, zone) then continue end
+
+    if isSpecialZone(zone) then continue end
     if table.find(allFishLocations, zone) then continue end
 
     print("Added '", zone, "' [Loaded Fishing Zones]"); table.insert(allFishLocations, zone)
@@ -404,7 +424,7 @@ for _, mainLocationName in pairs(allFishLocations) do
     mainLocationName = data[game.PlaceId].ZonesAliases[mainLocationName] or mainLocationName
 
     if table.find(data[game.PlaceId].Locations.Safe.Names, mainLocationName) and table.find(data[game.PlaceId].Locations.Unsafe.Names, mainLocationName) then continue end
-    if table.find(data[game.PlaceId].SpecialEvents, mainLocationName) then continue end
+    if isSpecialZone(mainLocationName) then continue end
 
     local mainMessage = console.custom_print("[" .. mainLocationName .. "] Loading....")
 
