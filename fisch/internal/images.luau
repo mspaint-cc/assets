@@ -1,108 +1,134 @@
 local datatables = loadstring(game:HttpGet("https://raw.githubusercontent.com/mspaint-cc/assets/refs/heads/main/fisch/libraries/datatables.luau"))()
 local HttpService = game:GetService("HttpService")
 
-warn("Loading")
-
-local function GetImageURL(name)
-    local encodedName = HttpService:UrlEncode(name:gsub(" ", "_"))
-    local url = string.format(
-        "https://fischipedia.org/w/api.php?aiprefix=%s.png&action=query&list=allimages&format=json",
-        encodedName
-    )
-
-    local response = request({
-        Url = url,
-        Method = "GET",
-        Timeout = 1
-    })
-    if response.StatusCode ~= 200 then return "not found"; end
-
-    local data = HttpService:JSONDecode(response.Body)
-    return #data.query.allimages > 0 and data.query.allimages[1].url or "not found";
-end
-
+warn("Loading...")
+local MAX_CONCURRENT_REQUESTS = 100
+local RETRY_DELAY = 30
+local MAX_RETRIES = 2
+------------------------------
 local ImageData = {}
+local taskQueue = {}
+local activeRequests = 0
 local finishedCount = 0
 local totalTasks = 0
+local ratelimited = false
 
-for world, Datatable in datatables do
-    for category, items in pairs(Datatable) do
-        if typeof(items) ~= "table" then continue end
+------------------------------
+local function GetImageURL(name)
+	local encodedName = HttpService:UrlEncode(name:gsub(" ", "_"))
+	local url = string.format(
+		"https://fischipedia.org/w/api.php?aiprefix=%s.png&action=query&list=allimages&format=json",
+		encodedName
+	)
 
-        warn("Loading", category, "in", world)
-        ImageData[category] = {}
+	local response = request({
+		Url = url,
+		Method = "GET",
+		Timeout = 5
+	})
 
-        for _ in pairs(items) do
-            totalTasks = totalTasks + 1
-        end
-    end
+	if response.StatusCode == 429 then
+		return "ratelimited"
+	elseif response.StatusCode ~= 200 then
+		return "error"
+	end
 
-    print("===================================")
+	local data = HttpService:JSONDecode(response.Body)
+	return #data.query.allimages > 0 and data.query.allimages[1].url or "not found"
 end
 
-local taskCounter = 0
-for world, Datatable in datatables do
-    for category, items in pairs(Datatable) do
-        if typeof(items) ~= "table" then continue end
-        warn("Starting fetch for", category, "in", world)
+local function ProcessQueue()
+	while #taskQueue > 0 and activeRequests < MAX_CONCURRENT_REQUESTS do
+		local taskData = table.remove(taskQueue, 1)
+		activeRequests += 1
 
-        for key, value in pairs(items) do
-            local identifier = (category == "Locations" or category == "Rarities") and value or key
-            --print("Fetching Data for " .. identifier)
-            if ImageData[category][identifier] then continue end
+		task.spawn(function()
+			local retries = 0
+			local result = nil
 
-            task.spawn(function()
-                local success, imageURL = nil, nil;
-                task.spawn(function()
-                    success, imageURL = pcall(function()
-                        if category == "Baits" then
-                            return GetImageURL(identifier) or GetImageURL("Bait " .. identifier)
-                        end
-    
-                        return GetImageURL(identifier)
-                    end)
-                end)
+			repeat
+				local success, res = pcall(function()
+					if taskData.category == "Baits" then
+						local attempt1 = GetImageURL(taskData.identifier)
 
-                local start = tick()
-                repeat task.wait() until typeof(success) == "boolean" or (tick() - start) >= 2.5
+						if attempt1 == "not found" then
+                            task.wait()
+							return GetImageURL("Bait " .. taskData.identifier)
+						end
 
-                finishedCount = finishedCount + 1;
-                if imageURL == "not found" then success = false; end
+						return attempt1
+					else
+						return GetImageURL(taskData.identifier)
+					end
+				end)
 
-                if finishedCount % 100 == 0 then 
-                    print(world, "-", category, "is now at", finishedCount)
-                end
+				if success then
+					result = res
+				else
+					result = "error"
+				end
 
-                if success == true then
-                    ImageData[category][identifier] = imageURL
-                    --print("Successfully Fetched Data for '" .. identifier .. "'")
-                else
-                    --[[warn(
-                        "[FAILED TO FETCH DATA]\n",
-                        "   - ID:", identifier, "\n",
-                        "   - Value:", value, "\n",
-                        "   - Key:", key, "\n",
-                        "   - ERROR:", imageURL, "\n",
-                        "======================="
-                    )--]]
-                end
-            end)
+				if result == "ratelimited" then
+					ratelimited = true
+					warn("[RATELIMITED] Retrying after", RETRY_DELAY, "seconds")
+					task.wait(RETRY_DELAY)
+					retries += 1
+				elseif result == "error" then
+					warn("[REQUEST ERROR] ID:", taskData.identifier, "Attempt:", retries)
+					task.wait(1)
+					retries += 1
+				end
+			until result ~= "ratelimited" and result ~= "error" or retries >= MAX_RETRIES
 
-            taskCounter = taskCounter + 1
-            if taskCounter % 25 == 0 then
-                task.wait()
-            end
-        end
+			if result ~= "not found" and result ~= "error" then
+				ImageData[taskData.category][taskData.identifier] = result
+			end
 
-        task.wait()
-    end
+			finishedCount += 1
+			activeRequests -= 1
+
+			-- Schedule next task
+			ProcessQueue()
+		end)
+	end
 end
 
-print("Total Images:", totalTasks)
-repeat
-    task.wait()
-    --print(finishedCount, "/" , totalTasks)
-until finishedCount >= totalTasks
+------------------------------
+for world, Datatable in datatables do
+	for category, items in pairs(Datatable) do
+		if typeof(items) ~= "table" then continue end
 
-print("Done!", os.time())
+		warn("Loading", category, "in", world)
+		ImageData[category] = {}
+
+		for key, value in pairs(items) do
+			totalTasks += 1
+
+			local identifier = (category == "Locations" or category == "Rarities") and (value) or (key)
+			table.insert(taskQueue, {
+				category = category,
+				identifier = identifier,
+				key = key,
+				value = value,
+				world = world
+			})
+		end
+
+		print("===================================")
+	end
+end
+
+------------------------------
+warn("Starting...")
+for i = 1, MAX_CONCURRENT_REQUESTS do
+	ProcessQueue()
+end
+
+-- wait for completion -- 
+while finishedCount < totalTasks do
+	task.wait(1)
+	print(string.format("Progress: %d / %d (Ratelimited: %s)", finishedCount, totalTasks, tostring(ratelimited)))
+end
+
+warn("Done!", os.time())
 return ImageData
