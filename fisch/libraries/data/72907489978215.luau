@@ -11,6 +11,7 @@ return {
                 Waveborne = CFrame.new(444.02059936523, 82.187675476074, 810.67791748047, 1, 0, 0, 0, 1, 0, 0, 0, 1),
                 ["Azure Lagoon"] = CFrame.new(1349.2205810547, 102.68767547607, 2259.0783691406, 1, 0, 0, 0, 1, 0, 0, 0, 1),
                 ["The Cursed Shores"] = CFrame.new(-220.32946777344, 90.037673950195, 1957.4782714844, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+                ["Octophant Pool Without Elephant"] = CFrame.new(1533.2833251953, 32.016025543213, -81.737670898438, 1, 0, 0, 0, 1, 0, 0, 0, 1),
                 Emberreach = CFrame.new(3104.7194824219, 141.6725769043, 487.33245849609, 1, 0, 0, 0, 1, 0, 0, 0, 1),
                 Lushgrove = CFrame.new(978.07061767578, 148.83767700195, -778.07202148438, 1, 0, 0, 0, 1, 0, 0, 0, 1),
                 ["Emberreach Lava"] = CFrame.new(3478.3139648438, 682.85736083984, 521.52136230469, 1, 0, 0, 0, 1, 0, 0, 0, 1),
@@ -28,7 +29,8 @@ return {
                 "The Cursed Shores",
                 "Waveborne",
                 "Emberreach Lava",
-                "Emberreach Ponds"
+                "Emberreach Ponds",
+                "Octophant Pool Without Elephant"
             }
         },
         HasAbundance = {},
@@ -38,6 +40,7 @@ return {
                 Waveborne = CFrame.new(444.02059936523, 82.187675476074, 810.67791748047, 1, 0, 0, 0, 1, 0, 0, 0, 1),
                 ["Azure Lagoon"] = CFrame.new(1349.2205810547, 102.68767547607, 2259.0783691406, 1, 0, 0, 0, 1, 0, 0, 0, 1),
                 ["The Cursed Shores"] = CFrame.new(-220.32946777344, 90.037673950195, 1957.4782714844, 1, 0, 0, 0, 1, 0, 0, 0, 1),
+                ["Octophant Pool Without Elephant"] = CFrame.new(1533.2833251953, 73.89688873291, -81.737670898438, -1, 0, 0, 0, 1, 0, 0, 0, -1),
                 Emberreach = CFrame.new(3104.7194824219, 58.022998809814, 487.33251953125, 1, 0, 0, 0, 1, 0, 0, 0, 1),
                 Lushgrove = CFrame.new(978.07061767578, 148.83767700195, -778.07202148438, 1, 0, 0, 0, 1, 0, 0, 0, 1),
                 ["Emberreach Lava"] = CFrame.new(3478.3139648438, 701.27453613281, 521.52136230469, -0.96598494052887, 0.019054109230638, 0.25789546966553, 0.0021595768630505, 0.99784141778946, -0.065634585916996, -0.25858938694, -0.062845073640347, -0.96394097805023),
@@ -55,14 +58,24 @@ return {
                 "The Cursed Shores",
                 "Waveborne",
                 "Emberreach Lava",
-                "Emberreach Ponds"
+                "Emberreach Ponds",
+                "Octophant Pool Without Elephant"
             }
         }
     },
-    SpecialEvents = {},
+    Interactables = {},
+    SpecialEvents = {
+        "Octophant Pool",
+        "Animal Pool - Second Sea"
+    },
     ZonesAliases = {
         ["Challenger's Deep"] = "Challengers Deep",
         ["Veil of the Forsaken"] = "Forsaken Veil"
     },
-    Interactables = {}
+    SpecialEventsAliases = {
+        ["Octophant Pool"] = {
+            "Octophant Pool Without Elephant",
+            "Octophant Pool With Elephant"
+        }
+    }
 }
