@@ -19,6 +19,7 @@ local UpdateLibraries = {
     ["rods"] = LuaTableSerializer(require(Library.rods), SerializerOptions),
     ["enchants"] = LuaTableSerializer(require(Library.rods.enchants), SerializerOptions),
     ["mutations"] = LuaTableSerializer(require(Modules.fishing.mutations), SerializerOptions),
+    ["images"] = LuaTableSerializer(loadstring(game:HttpGet("https://raw.githubusercontent.com/mspaint-cc/assets/refs/heads/main/fisch/internal/images.luau"))(), SerializerOptions),
     ["data/" .. tostring(game.PlaceId)] = LuaTableSerializer(loadstring(game:HttpGet("https://raw.githubusercontent.com/mspaint-cc/assets/refs/heads/main/fisch/internal/data_fetcher.luau"))()[game.PlaceId], SerializerOptions)
 }
 
@@ -104,9 +105,5 @@ end
 for module, data in pairs(UpdateLibraries) do
     UpdateModule(module, data)
 end
-
-UpdateModule(
-    "images", LuaTableSerializer(loadstring(game:HttpGet("https://raw.githubusercontent.com/mspaint-cc/assets/refs/heads/main/fisch/internal/images.luau"))(), SerializerOptions)
-)
 
 print("Successfully updated assets!")
