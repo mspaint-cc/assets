@@ -4,9 +4,11 @@ local SerializerOptions = {
     Prettify = true
 }
 
-local GithubToken = github_token or "github_pat_"
+local GithubToken = "github_pat_"
 
-local Modules = game:GetService("ReplicatedStorage").shared.modules
+local HttpService = game:GetService("HttpService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Modules = ReplicatedStorage.shared.modules
 local Library = Modules.library
 
 local UpdateLibraries = {
@@ -17,7 +19,6 @@ local UpdateLibraries = {
     ["rods"] = LuaTableSerializer(require(Library.rods), SerializerOptions),
     ["enchants"] = LuaTableSerializer(require(Library.rods.enchants), SerializerOptions),
     ["mutations"] = LuaTableSerializer(require(Modules.fishing.mutations), SerializerOptions),
-    ["images"] = LuaTableSerializer(loadstring(game:HttpGet("https://raw.githubusercontent.com/mspaint-cc/assets/refs/heads/main/fisch/internal/images.luau"))(), SerializerOptions),
     ["data/" .. tostring(game.PlaceId)] = LuaTableSerializer(loadstring(game:HttpGet("https://raw.githubusercontent.com/mspaint-cc/assets/refs/heads/main/fisch/internal/data_fetcher.luau"))()[game.PlaceId], SerializerOptions)
 }
 
@@ -52,13 +53,13 @@ function UpdateGithubFile(options)
 
     assert(CurrentFileDataResponse.Success, `Had an error while fetching File Data. HTTP STATUS: {CurrentFileDataResponse.StatusCode}`)
 
-    local CurrentFileData = game:GetService("HttpService"):JSONDecode(CurrentFileDataResponse.Body)
+    local CurrentFileData = HttpService:JSONDecode(CurrentFileDataResponse.Body)
     local CurrentFileSha = CurrentFileData["sha"]
 
     local UpdateFileDataResponse = request({
         Url = `{BaseURL}/contents/{options.Path}`,
         Method = "PUT",
-        Body = game:GetService("HttpService"):JSONEncode({
+        Body = HttpService:JSONEncode({
             ["message"] = options.Commit.Message,
             ["committer"] = {
                 ["name"] = options.Commit.Name,
@@ -73,7 +74,7 @@ function UpdateGithubFile(options)
     return UpdateFileDataResponse
 end
 
-for module, data in pairs(UpdateLibraries) do
+local function UpdateModule(module, data)
     local message = ConsoleUtils.custom_print(`[mspaint utils]: Updating {module}...`)
 
     UpdateGithubFile({
@@ -99,5 +100,13 @@ for module, data in pairs(UpdateLibraries) do
         color = Color3.fromRGB(0, 255, 0)
     })
 end
+
+for module, data in pairs(UpdateLibraries) do
+    UpdateModule(module, data)
+end
+
+UpdateModule(
+    "images", LuaTableSerializer(loadstring(game:HttpGet("https://raw.githubusercontent.com/mspaint-cc/assets/refs/heads/main/fisch/internal/images.luau"))(), SerializerOptions)
+)
 
 print("Successfully updated assets!")
