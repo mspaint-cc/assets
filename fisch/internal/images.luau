@@ -2,7 +2,7 @@ local datatables = loadstring(game:HttpGet("https://raw.githubusercontent.com/ms
 local HttpService = game:GetService("HttpService")
 
 warn("Loading...")
-local MAX_CONCURRENT_REQUESTS = 100
+local MAX_CONCURRENT_REQUESTS = 50
 local RETRY_DELAY = 30
 local MAX_RETRIES = 2
 ------------------------------
