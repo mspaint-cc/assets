@@ -14,7 +14,7 @@
 
 [Fisch]
 + Teleport to Sea 1/Sea 2
-+ Support new special event zones
++ Support for new special event zones
 + Fixed Drop Bobber not working in Sea 2 (auto load configs)
 + Fixed Auto Enchant
 
