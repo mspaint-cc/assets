@@ -64,7 +64,7 @@ for world, Datatable in datatables do
                 end)
 
                 local start = tick()
-                repeat task.wait() until typeof(success) == "boolean" or (tick() - start) >= 20
+                repeat task.wait() until typeof(success) == "boolean" or (tick() - start) >= 2.5
 
                 finishedCount = finishedCount + 1;
                 if imageURL == "not found" then success = false; end
