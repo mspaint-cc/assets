@@ -48,6 +48,14 @@ return {
         Icon = "rbxassetid://82318594895677",
         Resilience = -10
     },
+    ["Ember Berries"] = {
+        LureSpeed = 5,
+        Luck = 120,
+        Rarity = "Unusual",
+        GenerelLuck = 45,
+        Icon = "rbxassetid://106591280919281",
+        Resilience = 15
+    },
     Insect = {
         LureSpeed = 5,
         Luck = 35,
@@ -55,6 +63,14 @@ return {
         GenerelLuck = 0,
         Icon = "rbxassetid://82228384077490",
         Resilience = 0
+    },
+    ["Crystal Bananas"] = {
+        LureSpeed = 0,
+        Luck = 150,
+        Rarity = "Rare",
+        GenerelLuck = 90,
+        Icon = "rbxassetid://132112236254457",
+        Resilience = 25
     },
     ["Toxic Jelly Core"] = {
         LureSpeed = -5,
@@ -170,6 +186,14 @@ return {
         Icon = "rbxassetid://129458957024181",
         Resilience = -5
     },
+    ["Luminous Larva"] = {
+        LureSpeed = 10,
+        Luck = 200,
+        Rarity = "Exotic",
+        GenerelLuck = 175,
+        Icon = "rbxassetid://98270395522373",
+        Resilience = 50
+    },
     Coral = {
         LureSpeed = 20,
         Luck = 0,
@@ -177,6 +201,22 @@ return {
         GenerelLuck = 0,
         Icon = "rbxassetid://88295442439044",
         Resilience = 20
+    },
+    ["Gale Grub"] = {
+        LureSpeed = 30,
+        Luck = 75,
+        Rarity = "Common",
+        GenerelLuck = -10,
+        Icon = "rbxassetid://89278213759164",
+        Resilience = -5
+    },
+    ["Sapphire Krill"] = {
+        LureSpeed = 5,
+        Luck = 150,
+        Rarity = "Mythical",
+        GenerelLuck = 150,
+        Icon = "rbxassetid://105153897307029",
+        Resilience = 40
     },
     ["Chocolate Fish"] = {
         LureSpeed = 20,
@@ -195,6 +235,14 @@ return {
         Icon = "rbxassetid://93937013256967",
         Resilience = 0
     },
+    Lushrooms = {
+        LureSpeed = 10,
+        Luck = 50,
+        Rarity = "Common",
+        GenerelLuck = 20,
+        Icon = "rbxassetid://96329947106909",
+        Resilience = 10
+    },
     ["Instant Catcher"] = {
         LureSpeed = 65,
         Luck = 0,
@@ -210,6 +258,14 @@ return {
         GenerelLuck = 100,
         Icon = "rbxassetid://92588934474259",
         Resilience = 45
+    },
+    ["Lagoon Leech"] = {
+        LureSpeed = 15,
+        Luck = 65,
+        Rarity = "Rare",
+        GenerelLuck = -10,
+        Icon = "rbxassetid://131228054836930",
+        Resilience = 20
     },
     ["Kraken Tentacle"] = {
         LureSpeed = 35,
@@ -235,6 +291,14 @@ return {
         GenerelLuck = 30,
         Icon = "rbxassetid://78831863135519",
         DontGiveToANewAccount = true
+    },
+    ["Mist Worms"] = {
+        LureSpeed = 20,
+        Luck = 100,
+        Rarity = "Legendary",
+        GenerelLuck = 80,
+        Icon = "rbxassetid://75993334361705",
+        Resilience = 25
     },
     ["Rapid Catcher"] = {
         LureSpeed = 35,
