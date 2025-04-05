@@ -40,7 +40,8 @@ local data = {
             ["Moosewood Shipwright"] = -1,
             ["Jack Marrow"] = -1,
             ["Merlin"] = -1,
-            ["Moosewood Angler"] = -1
+            ["Moosewood Angler"] = -1,
+            ["Sea Traveler"] = -1
         },
 
         Interactables = {
@@ -82,7 +83,8 @@ local data = {
         NPCs = {
             ["Appraiser"] = -1,
             ["Waveborne Shipwright"] = -1,
-            ["Waveborne Angler"] = -1
+            ["Waveborne Angler"] = -1,
+            ["Sea Traveler"] = -1
         },
 
         Interactables = {
