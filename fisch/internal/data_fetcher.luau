@@ -3,9 +3,16 @@ local ZonesAliases = {
     ["Challenger's Deep"] = "Challengers Deep"
 }
 
+local SpecialEventsAliases = {
+    ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" }
+}
+
 local data = {
     [16732694052] = {
         SpecialEvents = { -- needs to be manually updated
+            "Octophant Pool",
+            "Animal Pool",
+    
             "Whales Pool",
             "Forsaken Veil - Scylla",
 
@@ -29,6 +36,7 @@ local data = {
             "Golden Tide"
         },
 
+        SpecialEventsAliases = SpecialEventsAliases,
         ZonesAliases = ZonesAliases,
 
         NPCs = {
@@ -64,9 +72,11 @@ local data = {
 
     [72907489978215] = {
         SpecialEvents = { -- needs to be manually updated
-            
+            "Octophant Pool",
+            "Animal Pool - Second Sea"
         },
 
+        SpecialEventsAliases = SpecialEventsAliases,
         ZonesAliases = ZonesAliases,
 
         NPCs = {
