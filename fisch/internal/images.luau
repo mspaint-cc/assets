@@ -69,6 +69,10 @@ for world, Datatable in datatables do
                 finishedCount = finishedCount + 1;
                 if imageURL == "not found" then success = false; end
 
+                if finishedCount % 100 == 0 then 
+                    print(world, "-", category, "is now at", finishedCount)
+                end
+
                 if success == true then
                     ImageData[category][identifier] = imageURL
                     --print("Successfully Fetched Data for '" .. identifier .. "'")
