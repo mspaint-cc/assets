@@ -46,7 +46,8 @@ return {
         Strength = math.huge,
         BobberBottom = Color3.new(0.070588238537312, 0.28235295414925, 0.082352943718433),
         Worlds = {
-            "Sea 1"
+            "Sea 1",
+            "Sea 2"
         },
         LureSpeed = 5,
         Luck = 300,
@@ -87,7 +88,8 @@ return {
         Strength = math.huge,
         DEV = true,
         Worlds = {
-            "Sea 1"
+            "Sea 1",
+            "Sea 2"
         },
         Unregistered = true,
         BobberBottom = Color3.new(1, 0.74117648601532, 0.52941179275513),
@@ -234,25 +236,43 @@ return {
         Icon = "rbxassetid://88485869703847",
         Resilience = -500
     },
+    ["Brick Rod"] = {
+        LineDistance = 200,
+        Description = "Wait.. it's real?",
+        Price = 13337,
+        Strength = math.huge,
+        BobberBottom = Color3.new(0.2392156869173, 0.13725490868092, 0.13725490868092),
+        Worlds = {
+            "Sea 1"
+        },
+        LureSpeed = 100,
+        Luck = 75,
+        Control = 0.35,
+        BobberTop = Color3.new(0.96078431606293, 0.40392157435417, 0.40392157435417),
+        Color = Color3.new(0.96078431606293, 0.35294118523598, 0.35294118523598),
+        Icon = "rbxassetid://91667481081888",
+        Resilience = 35
+    },
     ["Great Dreamer Rod"] = {
         LineDistance = 60,
         Unpurchasable = true,
         Description = "The Great Dreamer Rod pulses with energy, its eldritch glow channeling the madness and mystery of the Dreamer himself.",
-        From = "The Cursed Shores",
+        From = "Great Dreamer",
         Price = 500000,
         BobberTop = Color3.new(0.81960785388947, 0.68235296010971, 0.12156862765551),
-        Strength = 4000,
+        Strength = 8000,
         BobberBottom = Color3.new(1, 1, 1),
         Worlds = {
-            "Sea 2"
+            "Sea 2",
+            "Sea 1"
         },
         Passive = "GreatDreamerRod",
-        Luck = 40,
-        Control = 0.06,
+        Luck = 80,
+        Control = 0.12,
         Color = Color3.new(0.070588238537312, 0.36078432202339, 0.34901961684227),
-        LureSpeed = 99,
+        LureSpeed = 35,
         Icon = "rbxassetid://75008223790936",
-        Resilience = 6
+        Resilience = 12
     },
     ["Midas Rod"] = {
         LineDistance = 15,
@@ -272,6 +292,7 @@ return {
         Icon = "rbxassetid://89341341318928",
         Resilience = -20
     },
+    RegisteredNumberOfRods = 68,
     ["Precision Rod"] = {
         LineDistance = 100,
         Unpurchasable = true,
@@ -290,24 +311,48 @@ return {
         Icon = "rbxassetid://137576340928631",
         Resilience = 5
     },
-    ["Brick Rod"] = {
-        LineDistance = 200,
-        Description = "Wait.. it's real?",
-        Price = 13337,
+    ["Fish Photographer"] = {
+        LineDistance = 125,
+        Description = "If I catch you fishy.. if I catch you [CC Only]",
+        Price = math.huge,
+        Passive = "ContentCreatorEntity",
+        Luck = 250,
+        Icon = "rbxassetid://91420661762791",
+        Unpurchasable = true,
         Strength = math.huge,
-        BobberBottom = Color3.new(0.2392156869173, 0.13725490868092, 0.13725490868092),
+        DEV = true,
+        Worlds = {
+            "Sea 1",
+            "Sea 2"
+        },
+        Unregistered = true,
+        BobberBottom = Color3.new(1, 1, 1),
+        Control = 0.3,
+        BobberTop = Color3.new(0, 0, 0),
+        Color = Color3.new(1, 0.9450980424881, 0.80784314870834),
+        LureSpeed = 30,
+        Resilience = 40
+    },
+    ["View Smasher"] = {
+        LineDistance = 100,
+        Unpurchasable = true,
+        Description = "HIT THAT FOLLOW BUTTON!! [CC Only]",
+        DEV = true,
+        Price = math.huge,
+        Unregistered = true,
+        Strength = math.huge,
+        BobberBottom = Color3.new(1, 1, 1),
         Worlds = {
             "Sea 1"
         },
-        LureSpeed = 100,
-        Luck = 75,
-        Control = 0.35,
-        BobberTop = Color3.new(0.96078431606293, 0.40392157435417, 0.40392157435417),
-        Color = Color3.new(0.96078431606293, 0.35294118523598, 0.35294118523598),
-        Icon = "rbxassetid://91667481081888",
-        Resilience = 35
+        LureSpeed = 40,
+        Luck = 230,
+        Control = 0.25,
+        BobberTop = Color3.new(0, 0, 0),
+        Color = Color3.new(1, 0.56470590829849, 0.56470590829849),
+        Icon = "rbxassetid://96835545397522",
+        Resilience = 25
     },
-    RegisteredNumberOfRods = 68,
     ["Nocturnal Rod"] = {
         LineDistance = 15,
         Description = "Seems to wake up fish just by throwing the bobber in!-- Can catch nocturnal and diurnal fish at any time!",
@@ -367,18 +412,19 @@ return {
         Description = "It has a feeble, yet strangely familiar feel...",
         Price = 0,
         BobberBottom = Color3.new(1, 1, 1),
-        Strength = 52,
+        Strength = 104,
         From = "Waveborne",
         Worlds = {
-            "Sea 2"
+            "Sea 2",
+            "Sea 1"
         },
-        LureSpeed = 99,
-        Luck = 5,
+        LureSpeed = 90,
+        Luck = 10,
         Control = 0,
         BobberTop = Color3.new(0.52549022436142, 0.14901961386204, 0.14901961386204),
         Color = Color3.new(0.60392159223557, 0.66666668653488, 0.74509805440903),
         Icon = "rbxassetid://76879636597435",
-        Resilience = 3
+        Resilience = 5
     },
     ["Fischmas Rod"] = {
         LineDistance = 22,
@@ -534,7 +580,8 @@ return {
         Strength = math.huge,
         BobberBottom = Color3.new(0.24313725531101, 0.054901961237192, 0.054901961237192),
         Worlds = {
-            "Sea 1"
+            "Sea 1",
+            "Sea 2"
         },
         LureSpeed = 20,
         Luck = 150,
@@ -663,23 +710,28 @@ return {
     },
     ["Free Spirit Rod"] = {
         LineDistance = 60,
-        Unpurchasable = true,
         Description = "An odd looking skeletal arm rod clutching a glowing gemstone, pulsing with the restless energy of the beyond.",
-        From = "None",
         Price = 200000,
-        BobberTop = Color3.new(0.20392157137394, 0.92156863212585, 0.56078433990479),
-        Strength = 2500,
-        BobberBottom = Color3.new(1, 1, 1),
-        Worlds = {
-            "Sea 2"
-        },
         Passive = "FreeSpiritRod",
-        Luck = 75,
-        Control = 0.075,
-        Color = Color3.new(0.20392157137394, 0.92156863212585, 0.56078433990479),
-        LureSpeed = 99,
+        Luck = 150,
         Icon = "rbxassetid://104542411388743",
-        Resilience = 5
+        Unpurchasable = true,
+        Strength = 5000,
+        From = "Isle of New Beginnings",
+        Worlds = {
+            "Sea 2",
+            "Sea 1"
+        },
+        BestiaryRequirement = {
+            Requirement = 70,
+            Island = "Isle of New Beginnings"
+        },
+        BobberBottom = Color3.new(1, 1, 1),
+        Control = 0.15,
+        BobberTop = Color3.new(0.20392157137394, 0.92156863212585, 0.56078433990479),
+        Color = Color3.new(0.20392157137394, 0.92156863212585, 0.56078433990479),
+        LureSpeed = 75,
+        Resilience = 10
     },
     ["Frost Warden Rod"] = {
         LineDistance = 22,
@@ -985,21 +1037,22 @@ return {
         LineDistance = 60,
         Unpurchasable = true,
         Description = "Massive forest-forged scissors that slice through water and foliage alike, perfect for taming the overgrown waters.",
-        From = "None",
+        From = "Lushgrove",
         Price = 100000,
         BobberTop = Color3.new(0.20392157137394, 0.92156863212585, 0.56078433990479),
-        Strength = 2500,
+        Strength = 5000,
         BobberBottom = Color3.new(1, 1, 1),
         Worlds = {
-            "Sea 2"
+            "Sea 2",
+            "Sea 1"
         },
         Passive = "VerdantShearRod",
-        Luck = 75,
-        Control = 0.075,
+        Luck = 150,
+        Control = 0.15,
         Color = Color3.new(0.20392157137394, 0.92156863212585, 0.56078433990479),
-        LureSpeed = 99,
+        LureSpeed = 75,
         Icon = "rbxassetid://124187964263474",
-        Resilience = 5
+        Resilience = 10
     },
     ["Tempest Rod"] = {
         LineDistance = 20,
@@ -1462,18 +1515,19 @@ return {
         LineDistance = 60,
         Unpurchasable = true,
         Description = "\t\t\tAn ancient, coral-encrusted rod found in shipwreck depths, radiating faint power to lure rare fish.\n\t\t\tEvery 10 catches, gain a 25% higher chance to pull up a Treasure Map! All fish have a 5% chance to be Sunken.\n\t\t",
-        Price = math.huge,
         From = "Forsaken Shores",
+        Price = math.huge,
+        BobberTop = Color3.new(0.63529413938522, 1, 0.52549022436142),
         Strength = 5000,
         BobberBottom = Color3.new(0.13333334028721, 0.20784313976765, 0.258823543787),
         Worlds = {
             "Sea 1"
         },
-        LureSpeed = 70,
+        Passive = "SunkenRod",
         Luck = 150,
         Control = 0.15,
-        BobberTop = Color3.new(0.63529413938522, 1, 0.52549022436142),
         Color = Color3.new(0.5686274766922, 1, 0.45098039507866),
+        LureSpeed = 70,
         Icon = "rbxassetid://71914328148447",
         Resilience = 15
     },
@@ -1509,31 +1563,33 @@ return {
         ["Clickbait Caster"] = "Clickbait Caster",
         ["Polaris Serenade"] = "Polaris Serenade",
         ["Evil Pitchfork of Doom Rod"] = "Evil Pitchfork of Doom Rod",
-        ["Prismatic Rod"] = "Prismatic Rod",
         ["Auric Rod"] = "Auric Rod",
-        ["Brick Rod"] = "Brick Rod",
         ["Krampus's Rod"] = "Krampus's Rod",
-        ["Frostbane Rod"] = "Frostbane Rod",
+        ["Prismatic Rod"] = "Prismatic Rod",
         ["Candy Cane Rod"] = "Candy Cane Rod",
+        ["Brick Rod"] = "Brick Rod",
         ["North-Star Rod"] = "North-Star Rod",
+        ["View Smasher"] = "View Smasher",
+        ["Antler Rod"] = "Antler Rod",
+        ["Relic Rod"] = "Relic Rod",
         ["???"] = "???",
         ["Electric Guitar"] = "Electric Guitar",
         ["Cat's Got Your Fish"] = "Cat's Got Your Fish",
         ["Executive Rod"] = "Executive Rod",
         ["Rex Umbrarum"] = "Rex Umbrarum",
-        ["Antler Rod"] = "Antler Rod",
-        ["Yin Yang Rod"] = "Yin Yang Rod",
-        ["Buddy Bond Rod"] = "Buddy Bond Rod",
         ["Test Rod"] = "Test Rod",
-        ["Tetra Rod"] = "Tetra Rod",
+        ["Yin Yang Rod"] = "Yin Yang Rod",
         ["Fischmas Rod"] = "Fischmas Rod",
         ["Fischer's Rod"] = "Fischer's Rod",
+        ["Tetra Rod"] = "Tetra Rod",
+        ["Frostbane Rod"] = "Frostbane Rod",
+        ["Buddy Bond Rod"] = "Buddy Bond Rod",
         ["Event Horizon Rod"] = "Event Horizon Rod",
-        ["Relic Rod"] = "Relic Rod",
-        ["Ultratech Rod"] = "Ultratech Rod",
         CocoRod = "CocoRod",
-        ["Venomfang Rod"] = "Venomfang Rod",
+        ["Ultratech Rod"] = "Ultratech Rod",
         ["The Brick Rod"] = "The Brick Rod",
+        ["Venomfang Rod"] = "Venomfang Rod",
+        ["Fish Photographer"] = "Fish Photographer",
         ReRod = "ReRod",
         ["Mila's Wand Of Magic"] = "Mila's Wand Of Magic",
         ["Fabulous Rod"] = "Fabulous Rod",
@@ -1621,18 +1677,19 @@ return {
         Description = "Entwined with blooming vines and the essence of the wild. Fish drawn to nature will find it hard to resist.",
         Price = 7000,
         BobberBottom = Color3.new(1, 1, 1),
-        Strength = 350,
+        Strength = 700,
         From = "Waveborne",
         Worlds = {
-            "Sea 2"
+            "Sea 2",
+            "Sea 1"
         },
-        LureSpeed = 99,
-        Luck = 28,
-        Control = 0.035,
+        LureSpeed = 70,
+        Luck = 55,
+        Control = 0.07,
         BobberTop = Color3.new(0.21176470816135, 0.13725490868092, 0.035294119268656),
         Color = Color3.new(0.40392157435417, 1, 0.6235294342041),
         Icon = "rbxassetid://116994808867429",
-        Resilience = 6
+        Resilience = 12
     },
     ["Kings Rod"] = {
         LineDistance = 13,
@@ -1784,6 +1841,10 @@ return {
     },
     ["Ethereal Prism Rod"] = {
         LineDistance = 70,
+        BestiaryRequirement = {
+            Requirement = 100,
+            Island = "Veil of the Forsaken"
+        },
         Description = "A rod infused with the spectral essence of rare, mutated exotics, bending reality itself to refine the perfect catch.",
         MinDistanceToPurchase = 30,
         Price = 15000000,
@@ -1880,14 +1941,15 @@ return {
         LineDistance = 20,
         Description = "Humming with energy, and a line glowing like a trail of fireflies in the night. Some say the faster you reel, the brighter it shines.",
         Price = 9500,
-        Strength = 88,
+        Strength = 175,
         From = "Waveborne",
         Worlds = {
-            "Sea 2"
+            "Sea 2",
+            "Sea 1"
         },
-        LureSpeed = 99,
-        Luck = 18,
-        Control = -0.005,
+        LureSpeed = 25,
+        Luck = 35,
+        Control = -0.01,
         Color = Color3.new(1, 1, 0.28627452254295),
         BobberTop = Color3.new(0.34509804844856, 0.258823543787, 0.13725490868092),
         BobberBottom = Color3.new(1, 1, 1),
@@ -1996,18 +2058,19 @@ return {
         BobberTop = Color3.new(0.3137255012989, 0.52549022436142, 0.3137255012989),
         Price = 12000,
         From = "Waveborne",
-        Strength = 325,
+        Strength = 650,
         BobberBottom = Color3.new(1, 1, 1),
         Worlds = {
-            "Sea 2"
+            "Sea 2",
+            "Sea 1"
         },
         Passive = "Frog",
-        Luck = 50,
-        Control = 0.025,
+        Luck = 100,
+        Control = 0.05,
         Color = Color3.new(0.73725491762161, 1, 0.74509805440903),
-        LureSpeed = 99,
+        LureSpeed = 80,
         Icon = "rbxassetid://127553879968301",
-        Resilience = 3
+        Resilience = 5
     },
     ["Reinforced Rod"] = {
         LineDistance = 32,
@@ -2154,21 +2217,22 @@ return {
         LineDistance = 25,
         Unpurchasable = true,
         Description = "Forged in relentless heat, this rod's power builds with every perfect catch, drawing forth creatures touched by flame.",
-        From = "None",
+        From = "Emberreach",
         Price = 70000,
         BobberTop = Color3.new(0.090196080505848, 0.066666670143604, 0),
-        Strength = 2500,
+        Strength = 5000,
         BobberBottom = Color3.new(1, 1, 1),
         Worlds = {
-            "Sea 2"
+            "Sea 2",
+            "Sea 1"
         },
         Passive = "BlazebringerRod",
-        Luck = 45,
-        Control = 0.075,
+        Luck = 90,
+        Control = 0.15,
         Color = Color3.new(1, 0.53333336114883, 0),
-        LureSpeed = 99,
+        LureSpeed = 90,
         Icon = "rbxassetid://105245729086566",
-        Resilience = 4
+        Resilience = 8
     },
     ["Abyssal Specter Rod"] = {
         LineDistance = 80,
@@ -2229,18 +2293,19 @@ return {
         Description = "Its delicate form belies a sharp, cutting force. It dances effortlessly through the waters, with an almost eerie precision.",
         Price = 100000,
         BobberBottom = Color3.new(1, 1, 1),
-        Strength = 50000,
+        Strength = 100000,
         From = "Azure Lagoon",
         Worlds = {
-            "Sea 2"
+            "Sea 2",
+            "Sea 1"
         },
-        LureSpeed = 99,
-        Luck = 53,
-        Control = -0.005,
+        LureSpeed = 75,
+        Luck = 105,
+        Control = -0.01,
         BobberTop = Color3.new(0.2392156869173, 0.92549020051956, 1),
         Color = Color3.new(0.2392156869173, 0.27843138575554, 1),
         Icon = "rbxassetid://140227427404605",
-        Resilience = 28
+        Resilience = 55
     },
     ["Kraken Rod"] = {
         LineDistance = 60,
