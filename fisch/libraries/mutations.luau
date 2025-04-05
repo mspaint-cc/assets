@@ -239,7 +239,7 @@ return {
             Chance = 0
         },
         Bloom = {
-            PriceMultiply = 1,
+            PriceMultiply = 5,
             Color = Color3.new(0.33333334326744, 0.33333334326744, 0.49803921580315),
             Display = "Bloom",
             Chance = 0
