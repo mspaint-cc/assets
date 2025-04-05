@@ -13,6 +13,11 @@
 + Projectile Silent Aim
 
 [Fisch]
-+ Refactored Appraising for the new Fisch system (should also fix Auto ROTD)
++ Teleport to Sea 1/Sea 2
++ Support new special event zones
++ Fixed Drop Bobber not working in Sea 2 (auto load configs)
 + Fixed Auto Enchant
+
++ Refactored Appraising for the new Fisch system (should also fix Auto ROTD)
+- !! Configs are now saved in subfolders based on the sea you're currently in (e.g. fisch/settings/Sea 1) !!
 ```
