@@ -1,7 +1,18 @@
 ```diff
-[Pressure - Lobby]
-+ Join Three Nights at the Blacksite button
++ Improved Noclip System and refactored Universal Helpers (thanks MikeFeng for the bug report)
++ Fixed outdated variables and certain modules not unloading
 
-[Pressure - Three Nights at the Blacksite]
-+ Added Support for subplace
+[DOORS]
++ No Firedamp Effect
++ Refactored the main RenderStepped
++ Fixed FOV twitching (thanks MikeFeng)
+
+[DOORS - Ranked]
++ Auto Pickup Projectiles
++ Auto Throw At Players
++ Projectile Silent Aim
+
+[Fisch]
++ Refactored Appraising for the new Fisch system (should also fix Auto ROTD)
++ Fixed Auto Enchant
 ```
