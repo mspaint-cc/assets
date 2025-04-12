@@ -1,23 +1,17 @@
 ```diff
-+ Improved Noclip System and refactored Universal Helpers (thanks MikeFeng for the bug report)
-+ Fixed outdated variables and certain modules not unloading
-
 [DOORS]
-+ No Firedamp Effect
-+ Refactored the main RenderStepped
-+ Fixed FOV twitching (thanks MikeFeng)
-
-[DOORS - Ranked]
-+ Auto Pickup Projectiles
-+ Auto Throw At Players
-+ Projectile Silent Aim
++ Added back Death Farm (The Hotel floor tab & requires queue_on_teleport and replicatesignal)
++ Fixed No Camera Shake
 
 [Fisch]
-+ Teleport to Sea 1/Sea 2
-+ Support for new special event zones
-+ Fixed Drop Bobber not working in Sea 2 (auto load configs)
-+ Fixed Auto Enchant
++ Added Fast Reel Delay
++ Fixed Bobber ESP not working in certain edge cases
++ Fixed Skin Changer not working
 
-+ Refactored Appraising for the new Fisch system (should also fix Auto ROTD)
-- !! Configs are now saved in subfolders based on the sea you're currently in (e.g. fisch/settings/Sea 1) !!
+[Grace]
++ Moved Beta Server Features to Public Script
++ Fixed Disable Carnation
+
+[R&D]
++ Fixed R&D not loading
 ```
