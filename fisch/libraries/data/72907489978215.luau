@@ -62,6 +62,7 @@ return {
     },
     Interactables = {},
     SpecialEvents = {
+"Blue Moon Pool",
         "Octophant Pool",
         "Animal Pool - Second Sea"
     },
