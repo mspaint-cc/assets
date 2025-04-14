@@ -228,7 +228,7 @@ return {
             "Sea 1",
             "Sea 2"
         },
-        LureSpeed = 25,
+        LureSpeed = 20,
         Luck = 999,
         Control = -0.26,
         BobberTop = Color3.new(1, 0, 0),
@@ -263,8 +263,8 @@ return {
         Strength = 8000,
         BobberBottom = Color3.new(1, 1, 1),
         Worlds = {
-            "Sea 2",
-            "Sea 1"
+            "Sea 1",
+            "Sea 2"
         },
         Passive = "GreatDreamerRod",
         Luck = 80,
@@ -415,8 +415,8 @@ return {
         Strength = 104,
         From = "Waveborne",
         Worlds = {
-            "Sea 2",
-            "Sea 1"
+            "Sea 1",
+            "Sea 2"
         },
         LureSpeed = 90,
         Luck = 10,
@@ -719,8 +719,8 @@ return {
         Strength = 5000,
         From = "Isle of New Beginnings",
         Worlds = {
-            "Sea 2",
-            "Sea 1"
+            "Sea 1",
+            "Sea 2"
         },
         BestiaryRequirement = {
             Requirement = 70,
@@ -1034,23 +1034,23 @@ return {
         Resilience = 3
     },
     ["Verdant Shear Rod"] = {
-        LineDistance = 60,
+        LineDistance = 15,
         Unpurchasable = true,
         Description = "Massive forest-forged scissors that slice through water and foliage alike, perfect for taming the overgrown waters.",
         From = "Lushgrove",
-        Price = 100000,
+        Price = 40000,
         BobberTop = Color3.new(0.20392157137394, 0.92156863212585, 0.56078433990479),
-        Strength = 5000,
+        Strength = 2000,
         BobberBottom = Color3.new(1, 1, 1),
         Worlds = {
-            "Sea 2",
-            "Sea 1"
+            "Sea 1",
+            "Sea 2"
         },
         Passive = "VerdantShearRod",
-        Luck = 150,
-        Control = 0.15,
+        Luck = 75,
+        Control = 0.1,
         Color = Color3.new(0.20392157137394, 0.92156863212585, 0.56078433990479),
-        LureSpeed = 75,
+        LureSpeed = 30,
         Icon = "rbxassetid://124187964263474",
         Resilience = 10
     },
@@ -1680,8 +1680,8 @@ return {
         Strength = 700,
         From = "Waveborne",
         Worlds = {
-            "Sea 2",
-            "Sea 1"
+            "Sea 1",
+            "Sea 2"
         },
         LureSpeed = 70,
         Luck = 55,
@@ -1944,8 +1944,8 @@ return {
         Strength = 175,
         From = "Waveborne",
         Worlds = {
-            "Sea 2",
-            "Sea 1"
+            "Sea 1",
+            "Sea 2"
         },
         LureSpeed = 25,
         Luck = 35,
@@ -2061,8 +2061,8 @@ return {
         Strength = 650,
         BobberBottom = Color3.new(1, 1, 1),
         Worlds = {
-            "Sea 2",
-            "Sea 1"
+            "Sea 1",
+            "Sea 2"
         },
         Passive = "Frog",
         Luck = 100,
@@ -2223,16 +2223,16 @@ return {
         Strength = 5000,
         BobberBottom = Color3.new(1, 1, 1),
         Worlds = {
-            "Sea 2",
-            "Sea 1"
+            "Sea 1",
+            "Sea 2"
         },
         Passive = "BlazebringerRod",
         Luck = 90,
         Control = 0.15,
         Color = Color3.new(1, 0.53333336114883, 0),
-        LureSpeed = 90,
+        LureSpeed = 40,
         Icon = "rbxassetid://105245729086566",
-        Resilience = 8
+        Resilience = 15
     },
     ["Abyssal Specter Rod"] = {
         LineDistance = 80,
@@ -2296,8 +2296,8 @@ return {
         Strength = 100000,
         From = "Azure Lagoon",
         Worlds = {
-            "Sea 2",
-            "Sea 1"
+            "Sea 1",
+            "Sea 2"
         },
         LureSpeed = 75,
         Luck = 105,
