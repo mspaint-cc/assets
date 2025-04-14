@@ -29,7 +29,7 @@ local data = {
 
         SpecialEventsAliases = {
             ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" },
-            ["Blue Moon Pool"] = { "Blue Moon Pool", "Blue Moon - First Sea" }
+            ["Blue Moon Pool"] = { "Blue Moon - First Sea" }
         },
         ZonesAliases = {
             ["Veil of the Forsaken"] = "Forsaken Veil",
