@@ -65,16 +65,14 @@ return {
         }
     },
     Interactables = {},
+    ZonesAliases = {},
+
     SpecialEvents = {
         "Blue Moon Pool",
-        "Octophant Pool",
-        "Animal Pool - Second Sea"
+        "Octophant Pool"
     },
-    ZonesAliases = {},
     SpecialEventsAliases = {
-        ["Octophant Pool"] = {
-            "Octophant Pool Without Elephant",
-            "Octophant Pool With Elephant"
-        }
+        ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" },
+        ["Blue Moon Pool"] = { "Blue Moon - Second Sea" }
     }
 }
