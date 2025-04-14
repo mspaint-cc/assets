@@ -187,6 +187,10 @@ return {
             purchasable = false,
             Rarity = "Mythical"
         },
+        ["Consumable XP"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
         ["Glimmerfin Suit Lvl 2"] = {
             Price = 7500,
             OnlyBuyOne = true,
@@ -207,6 +211,10 @@ return {
             Rarity = "Mythical",
             Price = 500000
         },
+        ["Sporey's Soup"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
         ["Beginner Oxygen Tank"] = {
             Price = 3500,
             OnlyBuyOne = true,
@@ -217,14 +225,17 @@ return {
             Unpurchasable = true,
             Rarity = "Exotic"
         },
+        ["Mermaid\xE2\x80\x99s Favor"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Magnifying Glass"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
         ["Lava Crystal"] = {
             Price = math.huge,
             Icon = "rbxassetid://94081558964669",
-            Rarity = "Exotic"
-        },
-        ["Orca Egg Premium"] = {
-            Price = math.huge,
-            Unpurchasable = true,
             Rarity = "Exotic"
         },
         ["Ice Crystal"] = {
@@ -232,15 +243,24 @@ return {
             Icon = "rbxassetid://87113404726717",
             Rarity = "Exotic"
         },
-        Firework = {
-            Rarity = "Limited",
-            Price = 130
+        ["Orca Egg Premium"] = {
+            Price = math.huge,
+            Unpurchasable = true,
+            Rarity = "Exotic"
         },
         ["Eclipse Totem"] = {
             Rarity = "Mythical",
             Price = 250000
         },
+        Firework = {
+            Rarity = "Limited",
+            Price = 130
+        },
         ["Back Fins"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Metal Panels"] = {
             Rarity = "Exotic",
             Price = math.huge
         },
@@ -248,7 +268,7 @@ return {
             Rarity = "Exotic",
             Price = math.huge
         },
-        ["Metal Panels"] = {
+        ["Side Fins"] = {
             Rarity = "Exotic",
             Price = math.huge
         },
@@ -265,7 +285,7 @@ return {
             OnlyBuyOne = true,
             Rarity = "Rare"
         },
-        ["Side Fins"] = {
+        ["Skin Crate"] = {
             Rarity = "Exotic",
             Price = math.huge
         },
@@ -274,14 +294,9 @@ return {
             Unpurchasable = true,
             Rarity = "Mythical"
         },
-        ["Winter Cloak"] = {
-            Price = 7500,
-            OnlyBuyOne = true,
-            Rarity = "Unusual"
-        },
-        ["Skin Crate"] = {
-            Rarity = "Exotic",
-            Price = math.huge
+        ["Blue Moon Totem"] = {
+            Rarity = "Rare",
+            Price = 500000
         },
         ["Bag of Presents"] = {
             Rarity = "Exotic",
@@ -295,14 +310,14 @@ return {
             Rarity = "Mythical",
             Price = 1500000
         },
-        ["Crab Cage"] = {
-            Rarity = "Unusual",
-            Price = 45
-        },
         ["Crossbow Bow"] = {
             Price = math.huge,
             Rarity = "Exotic",
             NonPersistent = true
+        },
+        ["Crab Cage"] = {
+            Rarity = "Unusual",
+            Price = 45
         },
         ["Handwritten Note"] = {
             Rarity = "Exotic",
@@ -321,22 +336,27 @@ return {
             OnlyBuyOne = true,
             Rarity = "Rare"
         },
+        Flippers = {
+            Price = 9000,
+            OnlyBuyOne = true,
+            Rarity = "Unusual"
+        },
         ["Glimmerfin Suit Lvl 1"] = {
             Price = 7500,
             OnlyBuyOne = true,
             Icon = "rbxassetid://107405457740294",
             Rarity = "Exotic"
         },
-        Flippers = {
-            Price = 9000,
-            OnlyBuyOne = true,
-            Rarity = "Unusual"
-        },
         ["Glimmerfin Suit Lvl 3"] = {
             Price = 7500,
             OnlyBuyOne = true,
             Icon = "rbxassetid://137334347694202",
             Rarity = "Exotic"
+        },
+        ["Winter Cloak"] = {
+            Price = 7500,
+            OnlyBuyOne = true,
+            Rarity = "Unusual"
         },
         ["Silver Egg Trophy Bobber"] = {
             Rarity = "Exotic",
