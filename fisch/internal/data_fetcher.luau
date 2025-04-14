@@ -3,7 +3,6 @@ local data = {
         SpecialEvents = { -- needs to be manually updated
             "Blue Moon Pool",
             "Octophant Pool",
-            "Animal Pool",
     
             "Whales Pool",
             "Forsaken Veil - Scylla",
@@ -29,7 +28,8 @@ local data = {
         },
 
         SpecialEventsAliases = {
-            ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" }
+            ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" },
+            ["Blue Moon Pool"] = { "Blue Moon Pool", "Blue Moon - First Sea" }
         },
         ZonesAliases = {
             ["Veil of the Forsaken"] = "Forsaken Veil",
@@ -71,12 +71,12 @@ local data = {
     [72907489978215] = {
         SpecialEvents = { -- needs to be manually updated
             "Blue Moon Pool",
-            "Octophant Pool",
-            "Animal Pool - Second Sea"
+            "Octophant Pool"
         },
 
         SpecialEventsAliases = {
-            ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" }
+            ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" },
+            ["Blue Moon Pool"] = { "Blue Moon - Second Sea" }
         },
         ZonesAliases = {
             
