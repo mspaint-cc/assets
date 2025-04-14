@@ -56,7 +56,6 @@ return {
                 ["Ocean - Amberjack"] = CFrame.new(1519.1353759766, 15.287614822388, -2478.4377441406, 1, 0, 0, 0, 1, 0, 0, 0, 1),
                 ["Snowcap Pond - Glacier Pike"] = CFrame.new(2780.6892089844, 271.28384399414, 2585.564453125, 1, 0, 0, 0, 1, 0, 0, 0, 1),
                 ["Roslit Bay"] = CFrame.new(-1521.0557861328, 100.14752960205, 517.99505615234, 0.99024629592896, -0, -0.13932803273201, 0, 1, -0, 0.13932803273201, 0, 0.99024629592896),
-                ["Blue Moon - First Sea"] = CFrame.new(2723.8615722656, 195.34284973145, 2530.0378417969, 1, 0, 0, 0, 1, 0, 0, 0, 1),
                 ["The Depths"] = CFrame.new(568.15270996094, -698.88110351562, 1230.8479003906, -1, 0, 0, 0, 1, 0, 0, 0, -1),
                 Sunstone = CFrame.new(-933.25970458984, 131.14395141602, -1119.5206298828, -0.34204268455505, 0, -0.93968439102173, 0, 1, 0, 0.93968439102173, 0, -0.34204268455505),
                 ["Roslit Bay Ocean - Squid"] = CFrame.new(-2123.0400390625, 153.97428894043, 601.70068359375, 1, 0, 0, 0, 1, 0, 0, 0, 1),
@@ -248,7 +247,6 @@ return {
                 "Ancient Isle Pond - Hallucigenia",
                 "Notes Island Pool",
                 "Cults Curse Pool",
-                "Blue Moon - First Sea",
                 "Snowcap Ocean",
                 "Snowcap Ocean - Glacierfish",
                 "Snowcap Ocean - Herring",
@@ -349,7 +347,6 @@ return {
                 ["Ocean - Amberjack"] = CFrame.new(1519.1353759766, 26.385051727295, -2478.4377441406, 1, 0, 0, 0, 1, 0, 0, 0, 1),
                 ["Snowcap Pond - Glacier Pike"] = CFrame.new(2780.6892089844, 262.70303344727, 2585.564453125, 0.77431267499924, 0, 0.63280320167542, 0, 1, 0, -0.63280320167542, 0, 0.77431267499924),
                 ["Roslit Bay"] = CFrame.new(-1521.0557861328, 100.14752960205, 517.99505615234, 0.99024629592896, -0, -0.13932803273201, 0, 1, -0, 0.13932803273201, 0, 0.99024629592896),
-                ["Blue Moon - First Sea"] = CFrame.new(2723.8615722656, 112.55303192139, 2530.0378417969, 0.37044590711594, 0, 0.9288541674614, 0, 1, 0, -0.9288541674614, 0, 0.37044590711594),
                 ["The Depths"] = CFrame.new(568.15270996094, -698.88110351562, 1230.8479003906, -1, 0, 0, 0, 1, 0, 0, 0, -1),
                 Sunstone = CFrame.new(-933.25970458984, 131.14395141602, -1119.5206298828, -0.34204268455505, 0, -0.93968439102173, 0, 1, 0, 0.93968439102173, 0, -0.34204268455505),
                 ["Roslit Bay Ocean - Squid"] = CFrame.new(-2123.0400390625, 26.385051727295, 601.70068359375, 1, 0, 0, 0, 1, 0, 0, 0, 1),
@@ -541,7 +538,6 @@ return {
                 "Ancient Isle Pond - Hallucigenia",
                 "Notes Island Pool",
                 "Cults Curse Pool",
-                "Blue Moon - First Sea",
                 "Snowcap Ocean",
                 "Snowcap Ocean - Glacierfish",
                 "Snowcap Ocean - Herring",
@@ -579,7 +575,6 @@ return {
     SpecialEvents = {
         "Blue Moon Pool",
         "Octophant Pool",
-        "Animal Pool",
         "Whales Pool",
         "Forsaken Veil - Scylla",
         "Lovestorm Eel",
@@ -601,9 +596,7 @@ return {
         ["Veil of the Forsaken"] = "Forsaken Veil"
     },
     SpecialEventsAliases = {
-        ["Octophant Pool"] = {
-            "Octophant Pool Without Elephant",
-            "Octophant Pool With Elephant"
-        }
+        ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" },
+        ["Blue Moon Pool"] = { "Blue Moon - First Sea" }
     }
 }
