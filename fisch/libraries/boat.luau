@@ -710,6 +710,20 @@ return {
             Icon = "rbxassetid://94549000992556",
             Accel = 0.3
         },
+        ["King\xE2\x80\x99s Throne"] = {
+            StopEfficiency = 1.5,
+            Description = "Placeholder.",
+            Price = -1,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            Unpurchasable = true,
+            MaxSpeed = 230,
+            BackwardsEfficiency = 1.1,
+            TurningSpeed = 0.6,
+            Level = 1,
+            Icon = "rbxassetid://127922702096875",
+            Accel = 0.2
+        },
         ["Volcanic Speedboat"] = {
             FakePrice = 4999,
             Description = "A fiery, high-speed vessel forged from volcanic rock and molten metal. Its sleek, ember-lined hull cuts through the water, leaving a trail of steam and glowing lava streaks in its wake.",
