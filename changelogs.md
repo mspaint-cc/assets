@@ -1,6 +1,10 @@
 ```diff
-[Dead Rails]
-+ Released support 😱
-```
++ Hopefully Fixed Xeno Loading Issues (thanks rizve for the very working websocket library)
 
-Has cool features like Aimbot, Hitbox Expander, Teleport to End, and other stuff
+[Dead Rails]
++ Gun Aura
++ Noclip
++ Auto Fuel Train
++ Auto Store Items
++ Auto Collect Bonds
+```
