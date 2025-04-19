@@ -29,7 +29,7 @@ local data = {
 
         SpecialEventsAliases = {
             ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" },
-            ["Blue Moon Pool"] = { "Blue Moon - First Sea" }
+            ["Blue Moon Pool"] = { "Blue Moon Pool", "Blue Moon - First Sea" }
         },
         ZonesAliases = {
             ["Veil of the Forsaken"] = "Forsaken Veil",
@@ -71,12 +71,14 @@ local data = {
     [72907489978215] = {
         SpecialEvents = { -- needs to be manually updated
             "Blue Moon Pool",
-            "Octophant Pool"
+            "Octophant Pool",
+            "Animal Pool"
         },
 
         SpecialEventsAliases = {
             ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" },
-            ["Blue Moon Pool"] = { "Blue Moon - Second Sea" }
+            ["Blue Moon Pool"] = { "Blue Moon Pool", "Blue Moon - Second Sea" },
+            ["Animal Pool"] = { "Animal Pool - Second Sea" }
         },
         ZonesAliases = {
             
@@ -284,7 +286,7 @@ function fetch(location, name)
         return instance:GetPivot() * CFrame.new(0, 1.5, 0)
     end
 
-    table.insert(HasMissing, name);
+    if not table.find(HasMissing, name) then table.insert(HasMissing, name); end
     messages[name].update_message({
         message = "[" .. name .. "] Failed to fetch from loaded assets.",
         image = "rbxasset://textures/AudioDiscovery/error.png",
