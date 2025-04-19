@@ -1,10 +1,10 @@
 ```diff
-+ Hopefully Fixed Xeno Loading Issues (thanks rizve for the very working websocket library)
-
 [Dead Rails]
-+ Gun Aura
-+ Noclip
-+ Auto Fuel Train
-+ Auto Store Items
-+ Auto Collect Bonds
++ Added End Crank Available Timer
++ Fixed one edge case in Teleport to End
+
+[Fisch]
++ Enabled Auto Claim Crates and Auto Enchant in Sea 2
++ Fixed loading error
+- Executors without require are no longer supported (Fisch remade the inventory data system)
 ```
