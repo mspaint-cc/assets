@@ -86,11 +86,11 @@ local data = {
             ["Appraiser"] = -1,
             ["Waveborne Shipwright"] = -1,
             ["Waveborne Angler"] = -1,
-            ["Sea Traveler"] = -1,
-            ["Enchant Altar"] = -1
+            ["Sea Traveler"] = -1
         },
 
         Interactables = {
+            ["Enchant Altar"] = -1
         },
 
         Locations = {
