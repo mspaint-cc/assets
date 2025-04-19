@@ -86,7 +86,8 @@ local data = {
             ["Appraiser"] = -1,
             ["Waveborne Shipwright"] = -1,
             ["Waveborne Angler"] = -1,
-            ["Sea Traveler"] = -1
+            ["Sea Traveler"] = -1,
+            ["Enchant Altar"] = -1
         },
 
         Interactables = {
@@ -198,6 +199,33 @@ end)
 
 interactables.ChildAdded:Connect(function(interactable)
     if data[game.PlaceId].Interactables[interactable.Name] == -1 then
+        data[game.PlaceId].Interactables[interactable.Name] = interactable:GetPivot() * CFrame.new(0, 1.5, 0)
+
+        if not messages[interactable.Name] then
+            messages[interactable.Name] = console.custom_print("[" .. interactable.Name .. "] Loading....")
+        end
+
+        messages[interactable.Name].update_message({
+            message = "[" .. interactable.Name .. "] Re-fetched from ChildAdded.",
+            image = "rbxasset://textures/AudioDiscovery/done.png",
+            color = Color3.fromRGB(0, 255, 0)
+        })
+
+        local idx = table.find(HasMissing, interactable.Name)
+        if idx then 
+            table.remove(HasMissing, idx) 
+        else
+            for idx, name in pairs(HasMissing) do
+                if name == interactable.Name then
+                    table.remove(HasMissing, idx)
+                end
+            end
+        end
+    end
+end)
+
+workspace.ChildAdded:Connect(function(interactable)
+    if interactable:IsA("Model") and data[game.PlaceId].Interactables[interactable.Name] == -1 then
         data[game.PlaceId].Interactables[interactable.Name] = interactable:GetPivot() * CFrame.new(0, 1.5, 0)
 
         if not messages[interactable.Name] then
