@@ -263,10 +263,18 @@ FishingZones.ChildAdded:Connect(function(zoneInst)
 end)
 
 function fetch(location, name)
-    messages[name] = console.custom_print("[" .. name .. "] Loading....")
+    if not messages[name] then 
+        messages[name] = console.custom_print("[" .. name .. "] Loading....")
+    else
+        messages[name].update_message({
+            message = "[" .. name .. "] Loading....",
+            image = "rbxasset://textures/AudioDiscovery/error.png",
+            color = Color3.fromRGB(255, 255, 255)
+        })
+    end
 
     local instance = location:FindFirstChild(name)
-    if instance then
+    if instance and instance:IsA("Model") then
         messages[name].update_message({
             message = "[" .. name .. "] Fetched from loaded models.",
             image = "rbxasset://textures/AudioDiscovery/done.png",
@@ -282,6 +290,8 @@ function fetch(location, name)
         image = "rbxasset://textures/AudioDiscovery/error.png",
         color = Color3.fromRGB(255, 62, 62)
     })
+
+    return nil
 end
 
 print("============== NPCs ===============")
@@ -299,7 +309,7 @@ print("========= Interactables =========")
 for name, _ in pairs(data[game.PlaceId].Interactables) do
     if data[game.PlaceId].Interactables[name] ~= -1 then continue end
 
-    local cframe = fetch(interactables, name)
+    local cframe = fetch(interactables, name) or fetch(workspace, name)
     if cframe then data[game.PlaceId].Interactables[name] = cframe end
 end
 
