@@ -230,8 +230,9 @@ return {
             Price = math.huge
         },
         ["Magnifying Glass"] = {
-            Rarity = "Exotic",
-            Price = math.huge
+            Price = math.huge,
+            Icon = "rbxassetid://127487029816682",
+            Rarity = "Exotic"
         },
         ["Lava Crystal"] = {
             Price = math.huge,
