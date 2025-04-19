@@ -78,7 +78,7 @@ local data = {
         SpecialEventsAliases = {
             ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" },
             ["Blue Moon Pool"] = { "Blue Moon Pool", "Blue Moon - Second Sea" },
-            ["Animal Pool"] = { "Animal Pool - Second Sea" }
+            ["Animal Pool"] = { "Animal Pool", "Animal Pool - Second Sea" }
         },
         ZonesAliases = {
             
