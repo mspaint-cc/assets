@@ -145,6 +145,20 @@ return {
             Icon = "rbxassetid://132147167716037",
             Accel = 0.3
         },
+        ["Bunny Jetski"] = {
+            StopEfficiency = 1.5,
+            Description = "Unstoppable Easter joy!",
+            Price = -1,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            Unpurchasable = true,
+            MaxSpeed = 245,
+            BackwardsEfficiency = 1.1,
+            TurningSpeed = 0.8,
+            Level = 1,
+            Icon = "rbxassetid://137056616134430",
+            Accel = 0.9
+        },
         ["Santa\xE2\x80\x99s Jetski"] = {
             StopEfficiency = 3.7,
             Description = "Santa\xE2\x80\x99s Jetski christmas version!",
@@ -466,6 +480,19 @@ return {
             Icon = "rbxassetid://132722267987667",
             ObtainText = "Obtain on Christmas Bundle"
         },
+        ["Easter Basket"] = {
+            StopEfficiency = 2,
+            Description = "Ride through Easter in style!",
+            Price = -1,
+            Bobbing = 2.85,
+            BobbingSpeed = 2,
+            MaxSpeed = 190,
+            BackwardsEfficiency = 1.1,
+            TurningSpeed = 0.8,
+            Level = 1,
+            Icon = "rbxassetid://125990379782355",
+            Accel = 0.35
+        },
         Jetski = {
             StopEfficiency = 3.5,
             Description = "Ski around with a friend at insane speeds!",
@@ -709,6 +736,23 @@ return {
             Level = 70,
             Icon = "rbxassetid://94549000992556",
             Accel = 0.3
+        },
+        ["Desolate Dragon"] = {
+            FakePrice = 4999,
+            Description = "Ride on the almighty fury of the Desolate Dragon.",
+            Unpurchasable = true,
+            Price = -1,
+            Bobbing = 2.2,
+            BackwardsEfficiency = 1.2,
+            StopEfficiency = 1.8,
+            BobbingSpeed = 1,
+            TurningSpeed = 0.5,
+            MaxSpeed = 230,
+            ProductId = 3268963621,
+            LimitedAmount = 25000,
+            Level = 1,
+            Icon = "rbxassetid://117449588157233",
+            Accel = 0.2
         },
         ["King\xE2\x80\x99s Throne"] = {
             StopEfficiency = 1.5,
