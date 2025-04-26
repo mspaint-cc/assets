@@ -104,6 +104,16 @@ return {
             IsExalted = false,
             StrokeColor = Color3.new(0.14117647707462, 0.14117647707462, 0.094117648899555)
         },
+        Chronos = {
+            StatIncrease = 0,
+            Description = "Occasionally freeze fish in place",
+            Color = Color3.new(0.11372549086809, 0.32941177487373, 0.82745099067688),
+            Worlds = {
+                "Sea 2"
+            },
+            Display = "Chronos",
+            StrokeColor = Color3.new(0.04313725605607, 0.050980392843485, 0.13725490868092)
+        },
         Clever = {
             StatIncrease = 2.25,
             Description = "2.25X XP after catching a fish",
@@ -164,6 +174,17 @@ return {
             IsExalted = false,
             StrokeColor = Color3.new(0.050980392843485, 0.031372550874949, 0.086274512112141)
         },
+        ["Blood Reckoning"] = {
+            StatIncrease = 0,
+            Description = "Sacrifice health for a health-dependent chance to apply the Sanguine mutation",
+            Worlds = {
+                "Sea 2"
+            },
+            Color = Color3.new(0.29019609093666, 0.031372550874949, 0.031372550874949),
+            HealthCost = 20,
+            Display = "Blood Reckoning",
+            StrokeColor = Color3.new(0.63921570777893, 0.066666670143604, 0.066666670143604)
+        },
         Controlled = {
             StatIncrease = 0.15,
             Description = "Increases Control by 0.15",
@@ -171,6 +192,17 @@ return {
             Display = "Controlled",
             IsExalted = false,
             StrokeColor = Color3.new(0.12549020349979, 0.10980392247438, 0.15294118225574)
+        },
+        Momentum = {
+            StatIncrease = 0,
+            Description = "Perfect Catches increase Lure, Resilience & Progress Speed incrementally",
+            Worlds = {
+                "Sea 2"
+            },
+            Color = Color3.new(0.82745099067688, 0.70196080207825, 0.50196081399918),
+            Display = "Momentum",
+            ProgressSpeedBoost = 0,
+            StrokeColor = Color3.new(0.13725490868092, 0.10588235408068, 0.070588238537312)
         },
         Chaotic = {
             StatIncrease = 8,
