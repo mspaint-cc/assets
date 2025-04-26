@@ -178,6 +178,15 @@ return {
         Icon = "rbxassetid://128813695014519",
         Resilience = -10
     },
+    ["Hourglass Bait"] = {
+        LureSpeed = 5,
+        Luck = 150,
+        Rarity = "Mythical",
+        XpBoost = 1,
+        GenerelLuck = 150,
+        Icon = "rbxassetid://136590369641722",
+        Resilience = 40
+    },
     Shrimp = {
         LureSpeed = 0,
         Luck = 45,
@@ -185,6 +194,22 @@ return {
         GenerelLuck = 25,
         Icon = "rbxassetid://129458957024181",
         Resilience = -5
+    },
+    ["Colossal Ink Bait"] = {
+        LureSpeed = 5,
+        Luck = 150,
+        Rarity = "Mythical",
+        GenerelLuck = 150,
+        Icon = "rbxassetid://78817927104320",
+        Resilience = 40
+    },
+    ["Stud Bait"] = {
+        LureSpeed = 50,
+        Luck = 150,
+        Rarity = "Legendary",
+        GenerelLuck = 40,
+        Icon = "rbxassetid://92827044886722",
+        Resilience = 20
     },
     ["Luminous Larva"] = {
         LureSpeed = 10,
