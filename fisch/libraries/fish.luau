@@ -263,6 +263,37 @@ return {
         IsLimitedBestiary = true,
         Resilience = 45
     },
+    Studphin = {
+        SparkleColor = Color3.new(0.10980392247438, 0.79215687513351, 1),
+        Description = "A playful dolphin with sky-blue LEGO bricks, leaping through the waves.",
+        FavouriteBait = "Stud Bait",
+        Chance = 10,
+        Weather = {
+            "None"
+        },
+        XP = 300,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            25,
+            90
+        },
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
+        Quips = {
+            "A Studphin!",
+            "Leaping!",
+            "Studded!"
+        },
+        Price = 700,
+        Resilience = 30
+    },
     ["Typhoon Tuna"] = {
         FavouriteTime = "None",
         Seasons = {
@@ -1453,6 +1484,7 @@ return {
         SparkleColor = Color3.new(0, 0.54509806632996, 0.54509806632996),
         Description = "A dark cyan fish with bright light blue accents, a mirage in the lagoon\xE2\x80\x99s heart.",
         FavouriteBait = "Luminous Larva",
+        BlockPassiveCapture = true,
         Chance = 1,
         Weather = {
             "Foggy"
@@ -1775,7 +1807,9 @@ return {
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
         SparkleColor = Color3.new(0.63137257099152, 1, 0.96862745285034),
-        Quips = {},
+        Quips = {
+            "Small but dangerous.."
+        },
         Hint = "Found swimming among shallow coral reefs.",
         Description = "A quick, small reef fish that swims in tight groups near coral formations. They use their silvery scales and small size to hide from predators, darting between coral branches when threatened.",
         Price = 85,
@@ -1822,6 +1856,7 @@ return {
         SparkleColor = Color3.new(0.81176471710205, 0, 0),
         Description = "A near-black fish with bright red accents, its menacing form a relic of a primal age.",
         FavouriteBait = "Luminous Larva",
+        BlockPassiveCapture = true,
         Chance = 1,
         Weather = {
             "Windy"
@@ -2112,7 +2147,7 @@ return {
         Seasons = {
             "Winter"
         },
-        Rarity = "Secret",
+        Rarity = "Limited",
         WeightPool = {
             35000,
             70000
@@ -2338,7 +2373,9 @@ return {
             4
         },
         From = "Roslit",
-        Quips = {},
+        Quips = {
+            "Surely there's some lore behind this.."
+        },
         IsPearl = true,
         Price = 880,
         Resilience = 100
@@ -2403,6 +2440,40 @@ return {
         },
         XP = 300,
         Resilience = 35
+    },
+    Studolodon = {
+        SparkleColor = Color3.new(0.15294118225574, 0.13725490868092, 0.55294120311737),
+        Description = "A prehistoric beast with massive LEGO brick plates, a plastic legend.",
+        FavouriteBait = "Stud Bait",
+        Chance = 1,
+        Weather = {
+            "None"
+        },
+        ProgressEfficiency = 0.15,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            350,
+            1500
+        },
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
+        Quips = {
+            "A STUDOLODON!!!",
+            "PLASTIC MEGALODON!?!",
+            "BRICKED FURY!",
+            "LEGOLODON?",
+            "ACRYLONITRILE BUTADIENE STYRENE!"
+        },
+        XP = 700,
+        Price = 1500,
+        Resilience = 10
     },
     Mustard = {
         SparkleColor = Color3.new(0.9450980424881, 0.678431391716, 0),
@@ -2819,6 +2890,37 @@ return {
         Price = 5000,
         Resilience = 10
     },
+    ["Clown Brickfish"] = {
+        SparkleColor = Color3.new(1, 0.58431375026703, 0),
+        Description = "A playful orange fish, with bright black & white blocky patterns.",
+        FavouriteBait = "Stud Bait",
+        Chance = 125,
+        Weather = {
+            "None"
+        },
+        XP = 30,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            3,
+            8
+        },
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
+        Quips = {
+            "A Clown Brickfish!",
+            "Colorful!",
+            "Nemo?"
+        },
+        Price = 80,
+        Resilience = 95
+    },
     ["Redwood Duskray"] = {
         FavouriteTime = "Night",
         SparkleColor = Color3.new(0.54509806632996, 0, 0),
@@ -3228,14 +3330,16 @@ return {
         Resilience = 12
     },
     ["Moon Idol Sea 2"] = {
+        FavouriteTime = "None",
         SparkleColor = Color3.new(1, 0.95686274766922, 0.69019609689713),
         Description = "A moon shaped stone with an unmatched spirit...",
+        FavouriteBait = "None",
         BlockPassiveCapture = true,
         Chance = 1,
         Weather = {
             "None"
         },
-        Icon = "rbxassetid://74189195141290",
+        Icon = "rbxassetid://140635213153226",
         Hint = "???",
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         Seasons = {
@@ -3324,6 +3428,38 @@ return {
         ProgressEfficiency = 0.3,
         Resilience = 20
     },
+    Tentabrick = {
+        SparkleColor = Color3.new(0.035294119268656, 0.678431391716, 0),
+        Description = "A cute octopus with green LEGO brick tentacles, a creature of the deep.",
+        FavouriteBait = "Stud Bait",
+        Chance = 5,
+        Weather = {
+            "None"
+        },
+        ProgressEfficiency = 0.35,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            300,
+            1000
+        },
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
+        Quips = {
+            "A Tentabrick!",
+            "Mighty!",
+            "Blocky!"
+        },
+        XP = 500,
+        Price = 900,
+        Resilience = 15
+    },
     ["Yellowfin Tuna"] = {
         Seasons = {
             "Summer"
@@ -3374,7 +3510,9 @@ return {
             4
         },
         From = "Roslit",
-        Quips = {},
+        Quips = {
+            "Whoah! Pretty"
+        },
         IsPearl = true,
         Price = 200,
         Resilience = 100
@@ -4581,7 +4719,7 @@ return {
             "DREAMS OF DREAD!"
         },
         Price = 8500,
-        ProgressEfficiency = 0.05,
+        ProgressEfficiency = 0.15,
         Resilience = 3
     },
     ["Deeplight Footballfish"] = {
@@ -4625,7 +4763,9 @@ return {
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavybasic,
         SparkleColor = Color3.new(0.63137257099152, 1, 0.96862745285034),
-        Quips = {},
+        Quips = {
+            "At least this one doesn't yap like a parrot.."
+        },
         Hint = "???",
         Description = "A large reef fish with a beak-like mouth used to scrape algae from coral. Their powerful jaws can grind coral into fine sand, helping create the beaches around reef areas.",
         Price = 900,
@@ -6060,7 +6200,7 @@ return {
         Weather = {
             "Clear"
         },
-        Icon = "rbxassetid://79304773291970",
+        Icon = "rbxassetid://118920669604134",
         Hint = "It bounces where the spring blooms touch the water.",
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
         Seasons = {
@@ -6099,7 +6239,7 @@ return {
         Seasons = {
             "Winter"
         },
-        Rarity = "Secret",
+        Rarity = "Limited",
         WeightPool = {
             60000,
             105000
@@ -6301,7 +6441,7 @@ return {
             "Growth of doom!"
         },
         Price = 420,
-        ProgressEfficiency = 0.3,
+        ProgressEfficiency = 0.5,
         Resilience = 11
     },
     ["Red Snapper"] = {
@@ -6680,7 +6820,7 @@ return {
         Weather = {
             "Foggy"
         },
-        Icon = "rbxassetid://86622122052662",
+        Icon = "rbxassetid://110031930947706",
         Hint = "It lumbers where the fog cloaks the horizon.",
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
         Seasons = {
@@ -6886,6 +7026,37 @@ return {
         IsLimitedBestiary = true,
         Resilience = 25
     },
+    Jellystud = {
+        SparkleColor = Color3.new(0.10980392247438, 0.5686274766922, 1),
+        Description = "A translucent jellyfish with glowing LEGO studs, floating like a soft brick cloud.",
+        FavouriteBait = "Stud Bait",
+        Chance = 45,
+        Weather = {
+            "None"
+        },
+        XP = 200,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            15,
+            40
+        },
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
+        Quips = {
+            "A Jellystud!",
+            "Ouch!",
+            "Studded!"
+        },
+        Price = 400,
+        Resilience = 50
+    },
     ["Northstar Serpent"] = {
         FavouriteTime = "None",
         SparkleColor = Color3.new(1, 0.92941176891327, 0.53725492954254),
@@ -7011,7 +7182,7 @@ return {
             "Unyielding catch!"
         },
         Price = 100,
-        ProgressEfficiency = 0.36,
+        ProgressEfficiency = 0.75,
         Resilience = 15
     },
     ["Colossal Squid"] = {
@@ -7559,7 +7730,7 @@ return {
             "Hollow terror!"
         },
         Price = 700,
-        ProgressEfficiency = 0.33,
+        ProgressEfficiency = 0.45,
         Resilience = 10
     },
     ["Helios Ray"] = {
@@ -9084,6 +9255,36 @@ return {
         ProgressEfficiency = 0.05,
         Resilience = 3
     },
+    ToInteger = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
+    ["Static Ray"] = {
+        Seasons = {
+            "None"
+        },
+        Rarity = "Uncommon",
+        FavouriteBait = "Shrimp",
+        WeightPool = {
+            150,
+            300
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        SparkleColor = Color3.new(0.74117648601532, 0.69803923368454, 1),
+        Quips = {
+            "A Static Ray!",
+            "Watch the charge!",
+            "Stunning catch!",
+            "Kwijts Electric Guitar!"
+        },
+        Hint = "Glides along the bottom of Zeus Pool during storms.",
+        Description = "This unique ray channels Zeus' power through its flat body, creating electromagnetic fields that stun smaller fish.",
+        Price = 280,
+        From = "Atlantis",
+        Chance = 55,
+        Weather = {
+            "Rain"
+        },
+        XP = 150,
+        Resilience = 60
+    },
     ["Ember Catfish"] = {
         SparkleColor = Color3.new(0.60392159223557, 0.85490196943283, 0.56078433990479),
         Description = "A faintly glowing body with whiskers that spark indefinitely, the Ember Catfish is a peculiar fish.",
@@ -9115,6 +9316,99 @@ return {
         Price = 275,
         IsLimitedBestiary = true,
         Resilience = 85
+    },
+    ["Studling Crab"] = {
+        SparkleColor = Color3.new(1, 0.46666666865349, 0),
+        Description = "A tiny crab with vibrant orange LEGO studs, scurrying along the ocean floor.",
+        FavouriteBait = "Stud Bait",
+        Chance = 15,
+        Weather = {
+            "None"
+        },
+        XP = 280,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            15,
+            50
+        },
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
+        Quips = {
+            "A Studling Crab!",
+            "Scuttling!",
+            "Blocky!"
+        },
+        Price = 600,
+        Resilience = 40
+    },
+    ["Stud Shark"] = {
+        SparkleColor = Color3.new(0.38823530077934, 0.36862745881081, 0.36862745881081),
+        Description = "A fierce shark with sleek gray LEGO bricks, striking fear within the seas.",
+        FavouriteBait = "Stud Bait",
+        Chance = 25,
+        Weather = {
+            "None"
+        },
+        XP = 300,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            40,
+            140
+        },
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
+        Quips = {
+            "A Stud Shark!",
+            "Sharp!",
+            "Studded!"
+        },
+        Price = 650,
+        Resilience = 35
+    },
+    ["Stud Koi"] = {
+        SparkleColor = Color3.new(1, 0.41568627953529, 0),
+        Description = "A graceful koi with shimmering orange LEGO studs, a masterpiece of the sea.",
+        FavouriteBait = "Stud Bait",
+        Chance = 35,
+        Weather = {
+            "None"
+        },
+        XP = 280,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            550,
+            1900
+        },
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
+        Quips = {
+            "A Stud Koi!",
+            "Elegant!",
+            "Blocky!"
+        },
+        Price = 550,
+        Resilience = 40
     },
     Salmoose = {
         SparkleColor = Color3.new(1, 0.92941176891327, 0.77647060155869),
@@ -9151,6 +9445,7 @@ return {
         SparkleColor = Color3.new(0.50980395078659, 0.98431372642517, 1),
         Description = "A dark blue fish crackling with light blue electric arcs, adorned with light blue spots and fins, skipping through tempests.",
         FavouriteBait = "Golden Worm",
+        BlockPassiveCapture = true,
         Chance = 1,
         Weather = {
             "Windy"
@@ -9179,6 +9474,64 @@ return {
         Price = 10000,
         ProgressEfficiency = 0.25,
         Resilience = 5
+    },
+    Gazerfish = {
+        FavouriteTime = "Day",
+        Seasons = {
+            "Autumn",
+            "Winter"
+        },
+        Rarity = "Common",
+        FavouriteBait = "Worm",
+        WeightPool = {
+            80,
+            140
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.underweight,
+        SparkleColor = Color3.new(1, 0.61960786581039, 0.28627452254295),
+        Quips = {
+            "Ouu a Gazerfish!",
+            "Woah, a Gazerfish!",
+            "A Gazerfish!",
+            "I caught a Gazerfish!"
+        },
+        Hint = "Found in the Brine Pool during the day.",
+        Description = "The Gazerfish is a fast-moving prey fish within the Brine Pool of the Desolate Deep. They have a singular large eyeball on the front of their bodies, which they can close to disguise themselves from possible predators during the night. When they are most active during the day, they swim near the surface looking for smaller creatures to feed on.",
+        Price = 190,
+        From = "Brine Pool",
+        Chance = 2900,
+        Weather = {
+            "None"
+        },
+        XP = 100,
+        Resilience = 85
+    },
+    ["Ancient Fragment"] = {
+        FavouriteTime = "None",
+        Seasons = {
+            "None"
+        },
+        Rarity = "Fragment",
+        FavouriteBait = "None",
+        WeightPool = {
+            1,
+            1
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832),
+        Quips = {
+            "Woah a bone!"
+        },
+        Hint = "Found in the oceans of Ancient Isles...",
+        Description = "A magical stone with an etching representing a mystical sea creature lost in time.",
+        Price = 500,
+        From = "Ancient Isle",
+        Chance = 0.01,
+        Weather = {
+            "None"
+        },
+        XP = 80,
+        Resilience = 100
     },
     Alligator = {
         FavouriteTime = "Night",
@@ -9211,6 +9564,68 @@ return {
         Price = 700,
         Resilience = 15
     },
+    ["Cardinal Studfish"] = {
+        SparkleColor = Color3.new(1, 1, 1),
+        Description = "A striking black & white fish with LEGO studs, resembling a cardinal's vibrant crest.",
+        FavouriteBait = "Stud Bait",
+        Chance = 75,
+        Weather = {
+            "None"
+        },
+        XP = 180,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            19,
+            54
+        },
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
+        Quips = {
+            "A Cardinal Studfish!",
+            "Striped!",
+            "Blocky!"
+        },
+        Price = 400,
+        Resilience = 70
+    },
+    Brickhorse = {
+        SparkleColor = Color3.new(0.258823543787, 0, 0.70196080207825),
+        Description = "A majestic seahorse crafted from purple LEGO bricks, elegant and cute.",
+        FavouriteBait = "Stud Bait",
+        Chance = 85,
+        Weather = {
+            "None"
+        },
+        XP = 150,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            20,
+            55
+        },
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
+        Quips = {
+            "A Brickhorse!",
+            "Regal!",
+            "Studded!"
+        },
+        Price = 350,
+        Resilience = 75
+    },
     Gudgeon = {
         FavouriteTime = "Day",
         Seasons = {
@@ -9239,6 +9654,68 @@ return {
         },
         XP = 10,
         Resilience = 100
+    },
+    ["Stud Turtle"] = {
+        SparkleColor = Color3.new(0.11372549086809, 0.85098040103912, 0),
+        Description = "A sturdy turtle with a shell made of interlocking LEGO bricks, slow but strong.",
+        FavouriteBait = "Stud Bait",
+        Chance = 95,
+        Weather = {
+            "None"
+        },
+        XP = 220,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            30,
+            100
+        },
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
+        Quips = {
+            "A Stud Turtle!",
+            "Armored!",
+            "Blocky!"
+        },
+        Price = 400,
+        Resilience = 80
+    },
+    ["Yellow Studfish"] = {
+        SparkleColor = Color3.new(1, 0.93333333730698, 0),
+        Description = "A sunny yellow fish dotted with LEGO studs, brightening the ocean depths.",
+        FavouriteBait = "Stud Bait",
+        Chance = 105,
+        Weather = {
+            "None"
+        },
+        XP = 70,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            13,
+            39
+        },
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
+        Quips = {
+            "A Yellow Studfish!",
+            "Sunny!",
+            "Studded!"
+        },
+        Price = 150,
+        Resilience = 85
     },
     ["Goblin Shark"] = {
         FavouriteTime = "Night",
@@ -9281,7 +9758,9 @@ return {
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         SparkleColor = Color3.new(0.63137257099152, 1, 0.96862745285034),
-        Quips = {},
+        Quips = {
+            "Ya think he's strong?"
+        },
         Hint = "Found guarding specific coral territories.",
         Description = "A territorial reef fish with sharp spines along its body. Named for their protective behavior, they chase away anything that threatens their chosen coral home.",
         Price = 250,
@@ -9326,35 +9805,64 @@ return {
         ProgressEfficiency = 0.1,
         Resilience = 5
     },
-    ToInteger = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
-    ["Static Ray"] = {
+    Goldbrick = {
+        SparkleColor = Color3.new(1, 0.91764706373215, 0),
+        Description = "A hefty fish made of gleaming LEGO bricks, shining like a golden treasure.",
+        FavouriteBait = "Stud Bait",
+        Chance = 115,
+        Weather = {
+            "None"
+        },
+        XP = 50,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         Seasons = {
             "None"
         },
-        Rarity = "Uncommon",
-        FavouriteBait = "Shrimp",
+        Rarity = "Limited",
         WeightPool = {
-            150,
-            300
+            15,
+            40
         },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
-        SparkleColor = Color3.new(0.74117648601532, 0.69803923368454, 1),
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
         Quips = {
-            "A Static Ray!",
-            "Watch the charge!",
-            "Stunning catch!",
-            "Kwijts Electric Guitar!"
+            "A Goldbrick!",
+            "Gleaming!",
+            "Gold?"
         },
-        Hint = "Glides along the bottom of Zeus Pool during storms.",
-        Description = "This unique ray channels Zeus' power through its flat body, creating electromagnetic fields that stun smaller fish.",
-        Price = 280,
-        From = "Atlantis",
-        Chance = 55,
+        Price = 100,
+        Resilience = 90
+    },
+    ["Subzero Stargazer"] = {
+        FavouriteTime = "Day",
+        Seasons = {
+            "Winter"
+        },
+        Rarity = "Uncommon",
+        FavouriteBait = "Flakes",
+        WeightPool = {
+            20,
+            45
+        },
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
+        SparkleColor = Color3.new(0.40000000596046, 0.69803923368454, 1),
+        Quips = {
+            "A Subzero Stargazer!",
+            "Rollin', Rollin', Rollin'..."
+        },
+        Hint = "Lurks near the surface of freezing waters, seeking light.",
+        Description = "A unique fish with glowing eyes that stare into the abyss. Its body is covered in frost.",
+        Price = 100,
+        From = "Challenger's Deep",
+        Chance = 50,
         Weather = {
-            "Rain"
+            "None"
         },
-        XP = 150,
-        Resilience = 60
+        XP = 110,
+        Resilience = 80
     },
     Pupfish = {
         FavouriteTime = "Day",
@@ -9491,6 +9999,7 @@ return {
         SparkleColor = Color3.new(1, 1, 1),
         Description = "i need to take a dump",
         FavouriteBait = "Mist Worms",
+        BlockPassiveCapture = true,
         Chance = 0.5,
         Weather = {
             "Clear"
@@ -10011,7 +10520,7 @@ return {
             "Angler\xE2\x80\x99s wrath!"
         },
         Price = 950,
-        ProgressEfficiency = 0.31,
+        ProgressEfficiency = 0.4,
         Resilience = 9
     },
     ["Molten Banshee"] = {
@@ -10799,7 +11308,7 @@ return {
         Weather = {
             "None"
         },
-        Icon = "rbxassetid://87668309860817",
+        Icon = "rbxassetid://107608220521320",
         Hint = "Washed up from a tropical fishing expedition.",
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.crate,
         Seasons = {
@@ -10849,7 +11358,7 @@ return {
         },
         IsCrate = true,
         XP = 50,
-        From = "None",
+        From = "Open Ocean",
         Quips = {
             "A Tropic Bait Crate!",
             "Treasure from the tropics!",
@@ -10943,8 +11452,8 @@ return {
         },
         Rarity = "Mythical",
         WeightPool = {
-            40,
-            100
+            105,
+            105
         },
         Worlds = {
             "Sea 2"
@@ -10994,6 +11503,7 @@ return {
         SparkleColor = Color3.new(0, 0, 0),
         Description = "A colossal terror birthed from the abyss\xE2\x80\x99s cruel heart.",
         FavouriteBait = "Luminous Larva",
+        BlockPassiveCapture = true,
         Chance = 1,
         Weather = {
             "Rain"
@@ -11020,7 +11530,7 @@ return {
             "MONSTER OF ETERNITY!"
         },
         Price = 25000,
-        ProgressEfficiency = 0.03,
+        ProgressEfficiency = 0.1,
         Resilience = 1
     },
     ["Chasm Leech"] = {
@@ -11053,7 +11563,7 @@ return {
             "LEECH OF LEGEND!"
         },
         Price = 3000,
-        ProgressEfficiency = 0.08,
+        ProgressEfficiency = 0.2,
         Resilience = 6
     },
     ["Confetti Shark"] = {
@@ -11131,7 +11641,9 @@ return {
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         SparkleColor = Color3.new(0.63137257099152, 1, 0.96862745285034),
-        Quips = {},
+        Quips = {
+            "I love crystals.."
+        },
         Hint = "???",
         Description = "A unique reef predator with transparent fins and a needle-like snout. They hunt by picking off small prey trapped in coral branches, using their pointed mouth to reach deep into crevices.",
         Price = 450,
@@ -11300,7 +11812,7 @@ return {
             "FLUKE OF FEAR!"
         },
         Price = 2000,
-        ProgressEfficiency = 0.18,
+        ProgressEfficiency = 0.25,
         Resilience = 7
     },
     ["Hellmaw Eel"] = {
@@ -11427,6 +11939,7 @@ return {
         SparkleColor = Color3.new(1, 0, 0),
         Description = "A red fish with cyan accents, gold-cyan fins, hopping around like a disco disaster.",
         FavouriteBait = "Luminous Larva",
+        BlockPassiveCapture = true,
         Chance = 1,
         Weather = {
             "Foggy"
@@ -11487,7 +12000,7 @@ return {
             "Eyes of fury!"
         },
         Price = 380,
-        ProgressEfficiency = 0.32,
+        ProgressEfficiency = 0.55,
         Resilience = 12
     },
     ["Hollow Flake Catfish"] = {
@@ -11579,7 +12092,7 @@ return {
             "Murk\xE2\x80\x99s champion!"
         },
         Price = 240,
-        ProgressEfficiency = 0.37,
+        ProgressEfficiency = 0.6,
         Resilience = 13
     },
     Rotjaw = {
@@ -11613,7 +12126,7 @@ return {
             "Ugly but fierce!"
         },
         Price = 220,
-        ProgressEfficiency = 0.38,
+        ProgressEfficiency = 0.65,
         Resilience = 14
     },
     Gloombiter = {
@@ -11647,7 +12160,7 @@ return {
             "Bite of gloom!"
         },
         Price = 110,
-        ProgressEfficiency = 0.34,
+        ProgressEfficiency = 0.7,
         Resilience = 15
     },
     ["Phantom Koi"] = {
@@ -11655,6 +12168,7 @@ return {
         SparkleColor = Color3.new(1, 1, 1),
         Description = "A white koi with grey accents and ornate fins, a spectral beauty of the depths.",
         FavouriteBait = "Luminous Larva",
+        BlockPassiveCapture = true,
         Chance = 1,
         Weather = {
             "Foggy"
@@ -12349,6 +12863,7 @@ return {
         SparkleColor = Color3.new(1, 0.81568628549576, 0.68235296010971),
         Description = "hapapa.. hapa patata",
         FavouriteBait = "Mist Worms",
+        BlockPassiveCapture = true,
         Chance = 0.5,
         Weather = {
             "Clear"
@@ -12549,7 +13064,7 @@ return {
             "SPAWN OF NIGHTMARES!"
         },
         Price = 1700,
-        ProgressEfficiency = 0.2,
+        ProgressEfficiency = 0.35,
         Resilience = 8
     },
     ["Drifting Gildfin"] = {
@@ -14565,6 +15080,7 @@ return {
         SparkleColor = Color3.new(1, 0.54901963472366, 0),
         Description = "A round, cheerful fish, its surface rippling with molten charm.",
         FavouriteBait = "Luminous Larva",
+        BlockPassiveCapture = true,
         Chance = 1,
         Weather = {
             "Windy"
@@ -14750,6 +15266,7 @@ return {
         SparkleColor = Color3.new(0.1843137294054, 0.3098039329052, 0.1843137294054),
         Description = "A prickly terror that thorns through the deep.",
         FavouriteBait = "Luminous Larva",
+        BlockPassiveCapture = true,
         Chance = 1,
         Weather = {
             "Foggy"
@@ -16273,7 +16790,9 @@ return {
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
         SparkleColor = Color3.new(0.63137257099152, 1, 0.96862745285034),
-        Quips = {},
+        Quips = {
+            "So colorful!"
+        },
         Hint = "Look for them in coral crevices.",
         Description = "A bottom-dwelling fish that makes its home in abandoned coral holes. They form partnerships with larger reef fish, cleaning parasites off their scales in exchange for protection.",
         Price = 200,
@@ -16347,33 +16866,36 @@ return {
         ProgressEfficiency = 0.47,
         Resilience = 32
     },
-    ["Subzero Stargazer"] = {
-        FavouriteTime = "Day",
-        Seasons = {
-            "Winter"
-        },
-        Rarity = "Uncommon",
-        FavouriteBait = "Flakes",
-        WeightPool = {
-            20,
-            45
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.40000000596046, 0.69803923368454, 1),
-        Quips = {
-            "A Subzero Stargazer!",
-            "Rollin', Rollin', Rollin'..."
-        },
-        Hint = "Lurks near the surface of freezing waters, seeking light.",
-        Description = "A unique fish with glowing eyes that stare into the abyss. Its body is covered in frost.",
-        Price = 100,
-        From = "Challenger's Deep",
-        Chance = 50,
+    ["Azure Studfish"] = {
+        SparkleColor = Color3.new(1, 1, 0),
+        Description = "A vibrant blue fish adorned with LEGO studs, shimmering like a sapphire in the sea.",
+        FavouriteBait = "Stud Bait",
+        Chance = 130,
         Weather = {
             "None"
         },
-        XP = 110,
-        Resilience = 80
+        XP = 20,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            9,
+            25
+        },
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
+        Quips = {
+            "An Azure Studfish!",
+            "Plastic!",
+            "Studded!"
+        },
+        Price = 60,
+        Resilience = 100
     },
     Eel = {
         FavouriteTime = "Night",
@@ -16664,7 +17186,9 @@ return {
         },
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.tiny,
         SparkleColor = Color3.new(0.63137257099152, 1, 0.96862745285034),
-        Quips = {},
+        Quips = {
+            "Could've been on Roslit.. but hey!"
+        },
         Hint = "Found in schools near healthy coral formations.",
         Description = "A small reef fish with distinctive bright scales. Coral Chromis clean and protect their home corals from parasites, making them vital to reef health.",
         Price = 120,
@@ -17096,36 +17620,36 @@ return {
         Price = 20,
         Resilience = 100
     },
-    Gazerfish = {
-        FavouriteTime = "Day",
-        Seasons = {
-            "Autumn",
-            "Winter"
-        },
-        Rarity = "Common",
-        FavouriteBait = "Worm",
-        WeightPool = {
-            80,
-            140
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.underweight,
-        SparkleColor = Color3.new(1, 0.61960786581039, 0.28627452254295),
-        Quips = {
-            "Ouu a Gazerfish!",
-            "Woah, a Gazerfish!",
-            "A Gazerfish!",
-            "I caught a Gazerfish!"
-        },
-        Hint = "Found in the Brine Pool during the day.",
-        Description = "The Gazerfish is a fast-moving prey fish within the Brine Pool of the Desolate Deep. They have a singular large eyeball on the front of their bodies, which they can close to disguise themselves from possible predators during the night. When they are most active during the day, they swim near the surface looking for smaller creatures to feed on.",
-        Price = 190,
-        From = "Brine Pool",
-        Chance = 2900,
+    ["Glow Brick"] = {
+        SparkleColor = Color3.new(0.027450980618596, 0.12549020349979, 0.33725491166115),
+        Description = "A massive fish that glows with dark LEGO bricks, illuminating the deep sea.",
+        FavouriteBait = "Stud Bait",
+        Chance = 55,
         Weather = {
             "None"
         },
-        XP = 100,
-        Resilience = 85
+        XP = 500,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            90,
+            300
+        },
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
+        Quips = {
+            "A Glow Brick!",
+            "Glowing!",
+            "Blocky!"
+        },
+        Price = 800,
+        Resilience = 20
     },
     ["Basic Present"] = {
         SparkleColor = Color3.new(1, 1, 1),
@@ -17988,7 +18512,7 @@ return {
         Weather = {
             "Windy"
         },
-        Icon = "rbxassetid://93172648914203",
+        Icon = "rbxassetid://90218266378032",
         Hint = "It baas where the wind howls over the waves.",
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
         Seasons = {
@@ -18325,14 +18849,16 @@ return {
         Resilience = 55
     },
     ["Moon Idol Sea 1"] = {
+        FavouriteTime = "None",
         SparkleColor = Color3.new(1, 0.95686274766922, 0.69019609689713),
         Description = "A moon shaped stone with an unmatched spirit...",
+        FavouriteBait = "None",
         BlockPassiveCapture = true,
         Chance = 1,
         Weather = {
             "None"
         },
-        Icon = "rbxassetid://74189195141290",
+        Icon = "rbxassetid://140635213153226",
         Hint = "???",
         HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.basic,
         Seasons = {
@@ -18471,32 +18997,36 @@ return {
         Price = 340,
         Resilience = 25
     },
-    ["Ancient Fragment"] = {
-        FavouriteTime = "None",
-        Seasons = {
-            "None"
-        },
-        Rarity = "Fragment",
-        FavouriteBait = "None",
-        WeightPool = {
-            1,
-            1
-        },
-        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.small,
-        SparkleColor = Color3.new(0.49411764740944, 0.48627451062202, 0.48235294222832),
-        Quips = {
-            "Woah a bone!"
-        },
-        Hint = "Found in the oceans of Ancient Isles...",
-        Description = "A magical stone with an etching representing a mystical sea creature lost in time.",
-        Price = 500,
-        From = "Ancient Isle",
-        Chance = 0.01,
+    ["Crab Stud"] = {
+        SparkleColor = Color3.new(1, 0, 0),
+        Description = "A feisty red crab with LEGO brick claws, ready to snap at anything.",
+        FavouriteBait = "Stud Bait",
+        Chance = 65,
         Weather = {
             "None"
         },
-        XP = 80,
-        Resilience = 100
+        XP = 200,
+        Hint = "Catchable during LEGO event.",
+        HoldAnimation = game:GetService("ReplicatedStorage").resources.animations.fish.heavy,
+        Seasons = {
+            "None"
+        },
+        Rarity = "Limited",
+        WeightPool = {
+            23,
+            80
+        },
+        Worlds = {
+            "Sea 1"
+        },
+        From = "LEGO",
+        Quips = {
+            "A Crab Stud!",
+            "Snappy!",
+            "Studded!"
+        },
+        Price = 450,
+        Resilience = 60
     },
     ["Whale Shark"] = {
         FavouriteTime = "Day",
@@ -18633,7 +19163,9 @@ return {
             4
         },
         From = "Roslit",
-        Quips = {},
+        Quips = {
+            "Golden... So.. SHINY"
+        },
         IsPearl = true,
         Price = 3500,
         Resilience = 100
@@ -18658,7 +19190,9 @@ return {
             4
         },
         From = "Roslit",
-        Quips = {},
+        Quips = {
+            "Aurora!?! Like borealis?"
+        },
         IsPearl = true,
         Price = 2250,
         Resilience = 100
@@ -18869,7 +19403,9 @@ return {
             4
         },
         From = "Roslit",
-        Quips = {},
+        Quips = {
+            "Pink! My favorite :')"
+        },
         IsPearl = true,
         Price = 145,
         Resilience = 100
@@ -18951,7 +19487,9 @@ return {
             4
         },
         From = "Roslit",
-        Quips = {},
+        Quips = {
+            "Must be expensive.."
+        },
         IsPearl = true,
         Price = 120,
         Resilience = 100
@@ -19281,7 +19819,9 @@ return {
             4
         },
         From = "Roslit",
-        Quips = {},
+        Quips = {
+            "Ooo, Shiny!!!"
+        },
         IsPearl = true,
         Price = 60,
         Resilience = 100
