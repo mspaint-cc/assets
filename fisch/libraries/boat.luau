@@ -436,6 +436,21 @@ return {
             Icon = "rbxassetid://140475994837078",
             Accel = 0.2
         },
+        ["Arctic Explorer"] = {
+            StopEfficiency = 2.2,
+            Description = "LEGO Arctic Explorer Ship",
+            Price = -1,
+            Bobbing = 1.5,
+            AlternateSpawn = 30,
+            BobbingSpeed = 1.5,
+            Unpurchasable = true,
+            MaxSpeed = 100,
+            BackwardsEfficiency = 1.1,
+            TurningSpeed = 0.33,
+            Level = 1,
+            Icon = "rbxassetid://106886543519092",
+            Accel = 0.25
+        },
         ["Holiday Steampunk Ship"] = {
             StopEfficiency = 2.2,
             Description = "Holiday Steampunk Ship",
@@ -486,6 +501,7 @@ return {
             Price = -1,
             Bobbing = 2.85,
             BobbingSpeed = 2,
+            Unpurchasable = true,
             MaxSpeed = 190,
             BackwardsEfficiency = 1.1,
             TurningSpeed = 0.8,
@@ -722,6 +738,37 @@ return {
             Icon = "rbxassetid://139332412278271",
             Accel = 0.25
         },
+        Dumbo = {
+            FakePrice = 4999,
+            Description = "The most fearsome vessel with the face of a cuddle... Don\xE2\x80\x99t let the eyes fool you, this ship bites back.",
+            Unpurchasable = true,
+            Price = -1,
+            Bobbing = 2,
+            BackwardsEfficiency = 1.1,
+            StopEfficiency = 1.5,
+            BobbingSpeed = 1,
+            TurningSpeed = 0.8,
+            MaxSpeed = 245,
+            ProductId = 3273792404,
+            LimitedAmount = 25000,
+            Level = 1,
+            Icon = "rbxassetid://138237415970735",
+            Accel = 0.9
+        },
+        ["Nessie Nomad"] = {
+            StopEfficiency = 3,
+            Description = "Ride this legendary beast wherever the currents calls!",
+            Price = -1,
+            Bobbing = 2,
+            BobbingSpeed = 0.4,
+            Unpurchasable = true,
+            MaxSpeed = 220,
+            BackwardsEfficiency = 1.5,
+            TurningSpeed = 0.8,
+            Level = 1,
+            Icon = "rbxassetid://79582771766209",
+            Accel = 0.6
+        },
         Submarine = {
             StopEfficiency = 3.5,
             Description = "A Submarine!",
@@ -756,7 +803,7 @@ return {
         },
         ["King\xE2\x80\x99s Throne"] = {
             StopEfficiency = 1.5,
-            Description = "Placeholder.",
+            Description = "A royal vessel, fit for a King!",
             Price = -1,
             Bobbing = 2,
             BobbingSpeed = 1,
@@ -844,9 +891,10 @@ return {
         ["Lucky Pot"] = {
             StopEfficiency = 1.5,
             Description = "Huh? I'm a lucky guy",
-            Price = 5000,
+            Price = -1,
             Bobbing = 3,
             BobbingSpeed = 1,
+            Unpurchasable = true,
             MaxSpeed = 100,
             BackwardsEfficiency = 1,
             TurningSpeed = 0.6,
