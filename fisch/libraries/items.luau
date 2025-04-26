@@ -191,6 +191,10 @@ return {
             Rarity = "Exotic",
             Price = math.huge
         },
+        ["Sporey's Soup"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
         ["Glimmerfin Suit Lvl 2"] = {
             Price = 7500,
             OnlyBuyOne = true,
@@ -211,7 +215,7 @@ return {
             Rarity = "Mythical",
             Price = 500000
         },
-        ["Sporey's Soup"] = {
+        ["Mermaid\xE2\x80\x99s Favor"] = {
             Rarity = "Exotic",
             Price = math.huge
         },
@@ -225,9 +229,10 @@ return {
             Unpurchasable = true,
             Rarity = "Exotic"
         },
-        ["Mermaid\xE2\x80\x99s Favor"] = {
-            Rarity = "Exotic",
-            Price = math.huge
+        ["Bunker Key"] = {
+            Price = math.huge,
+            Icon = "rbxassetid://102236530041956",
+            Rarity = "Exotic"
         },
         ["Magnifying Glass"] = {
             Price = math.huge,
