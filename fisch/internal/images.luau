@@ -15,6 +15,7 @@ local ratelimited = false
 
 ------------------------------
 local function GetImageURL(name)
+	repeat task.wait() until ratelimited == false
 	local encodedName = HttpService:UrlEncode(name:gsub(" ", "_"))
 	local url = string.format(
 		"https://fischipedia.org/w/api.php?aiprefix=%s.png&action=query&list=allimages&format=json",
@@ -74,12 +75,16 @@ local function ProcessQueue()
 					task.wait(RETRY_DELAY)
 					ratelimited = false
 					retries += 1
+
+					warn("[RATELIMITED] Retrying ID:", taskData.identifier, "Attempt:", retries)
 				elseif result == "error" then
-					warn("[REQUEST ERROR] ID:", taskData.identifier, "Attempt:", retries)
+					--warn("[REQUEST ERROR] ID:", taskData.identifier, "Attempt:", retries)
 					task.wait(1)
 					retries += 1
+
+					warn("[RATELIMITED] Retrying ID:", taskData.identifier, "Attempt:", retries)
 				end
-			until result ~= "ratelimited" and result ~= "error" or retries >= MAX_RETRIES
+			until (result ~= "ratelimited" and result ~= "error") or retries >= MAX_RETRIES
 
 			if result ~= "not found" and result ~= "error" then
 				ImageData[taskData.category][taskData.identifier] = result
@@ -87,8 +92,6 @@ local function ProcessQueue()
 
 			finishedCount += 1
 			activeRequests -= 1
-
-			-- Schedule next task
 			ProcessQueue()
 		end)
 	end
