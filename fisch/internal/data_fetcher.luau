@@ -7,9 +7,8 @@ local data = {
     
             "Whales Pool",
             "Forsaken Veil - Scylla",
-
+            
             "Lovestorm Eel",
-            "Lovestorm Eel Supercharged",
             
             "Orcas Pool",
             "Ancient Orcas Pool",
@@ -30,7 +29,8 @@ local data = {
 
         SpecialEventsAliases = {
             ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" },
-            ["Blue Moon Pool"] = { "Blue Moon Pool", "Blue Moon - First Sea" }
+            ["Blue Moon Pool"] = { "Blue Moon Pool", "Blue Moon - First Sea" },
+            ["Lovestorm Eel"] = { "Love" }
         },
         ZonesAliases = {
             ["Veil of the Forsaken"] = "Forsaken Veil",
