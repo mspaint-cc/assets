@@ -570,7 +570,6 @@ return {
         "Whales Pool",
         "Forsaken Veil - Scylla",
         "Lovestorm Eel",
-        "Lovestorm Eel Supercharged",
         "Orcas Pool",
         "Ancient Orcas Pool",
         "Megalodon Default",
@@ -595,6 +594,7 @@ return {
         ["Blue Moon Pool"] = {
             "Blue Moon Pool",
             "Blue Moon - First Sea"
-        }
+        },
+        ["Lovestorm Eel"] = { "Love" }
     }
 }
