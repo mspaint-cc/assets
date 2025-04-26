@@ -72,6 +72,7 @@ local function ProcessQueue()
 					ratelimited = true
 					warn("[RATELIMITED] Retrying after", RETRY_DELAY, "seconds")
 					task.wait(RETRY_DELAY)
+					ratelimited = false
 					retries += 1
 				elseif result == "error" then
 					warn("[REQUEST ERROR] ID:", taskData.identifier, "Attempt:", retries)
