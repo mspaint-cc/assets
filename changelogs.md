@@ -1,15 +1,12 @@
 ```diff
-[Universal]
-+ Silent Aim
-+ Changed Sticky Target Color -> Current Target Color 
-+ Fixed Noclip
-
-[MM2]
-+ Dynamic Spawn Finder (Teleporting should work even when MM2 updates)
-
 [Dead Rails]
-+ Fixed Entity ESP
-+ Auto Collect Eggs
-+ Auto Use Bandage
-+ Field Of View
++ Fixed Item ESP Fuel percentage
++ Hopefully fixed Shovel Aura not working for some people
++ Fixed Crank Availble Timer
+- Auto Collect Eggs
+
+[Shrimp Game]
++ Marble Throwing Helper
+- Tool Cooldown
+- Tool Damage
 ```
