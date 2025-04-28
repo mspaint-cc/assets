@@ -1,12 +1,9 @@
 ```diff
-[Dead Rails]
-+ Fixed Item ESP Fuel percentage
-+ Hopefully fixed Shovel Aura not working for some people
-+ Fixed Crank Availble Timer
-- Auto Collect Eggs
++ Improved first person menu dragging for every game
 
-[Shrimp Game]
-+ Marble Throwing Helper
-- Tool Cooldown
-- Tool Damage
+[BGSI - Bubble Gum Simulator Infinity]
++ Released!
+
+[DOORS]
++ Seek Helper (The Hotel)
 ```
