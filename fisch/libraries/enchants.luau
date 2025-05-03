@@ -181,7 +181,7 @@ return {
                 "Sea 2"
             },
             Color = Color3.new(0.29019609093666, 0.031372550874949, 0.031372550874949),
-            HealthCost = 20,
+            HealthCost = 30,
             Display = "Blood Reckoning",
             StrokeColor = Color3.new(0.63921570777893, 0.066666670143604, 0.066666670143604)
         },
