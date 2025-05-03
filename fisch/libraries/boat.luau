@@ -367,6 +367,36 @@ return {
             Icon = "rbxassetid://86464358166303",
             Accel = 0.4
         },
+        Theo = {
+            StopEfficiency = 2,
+            Description = "plutoly forced me to do this - kiwi",
+            Price = -1,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            Unpurchasable = true,
+            MaxSpeed = 250,
+            BackwardsEfficiency = 1,
+            TurningSpeed = 2,
+            Level = 1,
+            Icon = "rbxassetid://73843249851684",
+            Accel = 0.65
+        },
+        ["Small Utility Boat"] = {
+            StopEfficiency = 2,
+            Description = "Utility",
+            Price = 50000,
+            Bobbing = 2.85,
+            Unpurchasable = false,
+            UtilityTier = 1,
+            BobbingSpeed = 2,
+            BackwardsEfficiency = 1.1,
+            MaxSpeed = 80,
+            IsUtility = true,
+            TurningSpeed = 0.8,
+            Level = 1,
+            Icon = "rbxassetid://108811112310028",
+            Accel = 0.15
+        },
         ["Pride of Fisch"] = {
             StopEfficiency = 2,
             Description = "A majestic mega-yacht designed for true captains.",
@@ -395,6 +425,22 @@ return {
             Icon = "rbxassetid://113467920745327",
             Accel = 0.4
         },
+        ["Medium Utility Boat"] = {
+            StopEfficiency = 2,
+            Description = "Utility",
+            Price = 250000,
+            Bobbing = 2.85,
+            Unpurchasable = false,
+            UtilityTier = 2,
+            BobbingSpeed = 2,
+            BackwardsEfficiency = 1.1,
+            MaxSpeed = 110,
+            IsUtility = true,
+            TurningSpeed = 0.8,
+            Level = 1,
+            Icon = "rbxassetid://101438175950563",
+            Accel = 0.25
+        },
         Speedboat = {
             StopEfficiency = 1.3,
             Description = "Sail around at remarkable speeds!",
@@ -407,6 +453,25 @@ return {
             Level = 20,
             Icon = "rbxassetid://130743409246855",
             Accel = 0.25
+        },
+        Puffernaut = {
+            SubmarineTier = "Deep",
+            Description = "Stuffed like a fishball and brave like a bean, this bloated beauty puffs its way where no bubble should go.",
+            Price = -1,
+            Bobbing = 2,
+            ProductId = 3278181273,
+            LimitedAmount = 20000,
+            Level = 1,
+            Icon = "rbxassetid://139108850838086",
+            Accel = 0.3,
+            FakePrice = 4999,
+            BackwardsEfficiency = 1,
+            BobbingSpeed = 0.4,
+            MaxSpeed = 200,
+            Unpurchasable = true,
+            IsSubmarine = true,
+            StopEfficiency = 3.5,
+            TurningSpeed = 0.7
         },
         ["Flipper Express"] = {
             StopEfficiency = 2,
@@ -435,6 +500,26 @@ return {
             Level = 7,
             Icon = "rbxassetid://140475994837078",
             Accel = 0.2
+        },
+        ["Large Utility Boat"] = {
+            StopEfficiency = 2,
+            Description = "Utility",
+            Unpurchasable = false,
+            Price = 500000,
+            Bobbing = 2.85,
+            UtilityTier = 3,
+            BackwardsEfficiency = 1.1,
+            Worlds = {
+                "Sea 1",
+                "Sea 2"
+            },
+            BobbingSpeed = 2,
+            MaxSpeed = 150,
+            IsUtility = true,
+            TurningSpeed = 0.8,
+            Level = 1,
+            Icon = "rbxassetid://83785780610841",
+            Accel = 0.3
         },
         ["Arctic Explorer"] = {
             StopEfficiency = 2.2,
@@ -725,18 +810,19 @@ return {
             Icon = "rbxassetid://118034141225193",
             Accel = 0.75
         },
-        ["Dr. Glimmerfin's Boat"] = {
-            StopEfficiency = 2.2,
-            Description = "Dr. Glimmerfin's Boat Quest Boat",
+        Clawberus = {
+            StopEfficiency = 1.8,
+            Description = "A monstrous triple clawed lobster vessel forged from myth and salt, built to drag legends to the surface.",
             Price = -1,
-            Bobbing = 2.5,
-            BobbingSpeed = 3,
-            MaxSpeed = 100,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            Unpurchasable = true,
+            MaxSpeed = 180,
             BackwardsEfficiency = 1.1,
-            TurningSpeed = 0.33,
-            Level = 75,
-            Icon = "rbxassetid://139332412278271",
-            Accel = 0.25
+            TurningSpeed = 0.6,
+            Level = 1,
+            Icon = "rbxassetid://87636758084219",
+            Accel = 0.35
         },
         Dumbo = {
             FakePrice = 4999,
@@ -755,6 +841,20 @@ return {
             Icon = "rbxassetid://138237415970735",
             Accel = 0.9
         },
+        ["Dr. Glimmerfin's Boat"] = {
+            StopEfficiency = 2.2,
+            Description = "Dr. Glimmerfin's Boat Quest Boat",
+            Price = -1,
+            Bobbing = 2.5,
+            BobbingSpeed = 3,
+            Unpurchasable = true,
+            MaxSpeed = 100,
+            BackwardsEfficiency = 1.1,
+            TurningSpeed = 0.33,
+            Level = 75,
+            Icon = "rbxassetid://139332412278271",
+            Accel = 0.25
+        },
         ["Nessie Nomad"] = {
             StopEfficiency = 3,
             Description = "Ride this legendary beast wherever the currents calls!",
@@ -768,21 +868,6 @@ return {
             Level = 1,
             Icon = "rbxassetid://79582771766209",
             Accel = 0.6
-        },
-        Submarine = {
-            StopEfficiency = 3.5,
-            Description = "A Submarine!",
-            Price = -1,
-            Bobbing = 2,
-            IsSubmarine = true,
-            BobbingSpeed = 0.4,
-            Unpurchasable = true,
-            MaxSpeed = 180,
-            BackwardsEfficiency = 1,
-            TurningSpeed = 0.7,
-            Level = 70,
-            Icon = "rbxassetid://94549000992556",
-            Accel = 0.3
         },
         ["Desolate Dragon"] = {
             FakePrice = 4999,
@@ -800,6 +885,42 @@ return {
             Level = 1,
             Icon = "rbxassetid://117449588157233",
             Accel = 0.2
+        },
+        Submarine = {
+            StopEfficiency = 3.5,
+            Description = "A Submarine!",
+            Price = -1,
+            Bobbing = 2,
+            IsSubmarine = true,
+            BobbingSpeed = 0.4,
+            Unpurchasable = true,
+            MaxSpeed = 180,
+            BackwardsEfficiency = 1,
+            TurningSpeed = 0.7,
+            Level = 70,
+            Icon = "rbxassetid://94549000992556",
+            Accel = 0.3
+        },
+        ["Huge Utility Boat"] = {
+            UtilityTier = 4,
+            StopEfficiency = 2,
+            Description = "Utility",
+            Unpurchasable = false,
+            Price = 1500000,
+            Bobbing = 2.85,
+            AlternateSpawn = 30,
+            BackwardsEfficiency = 1.1,
+            Worlds = {
+                "Sea 1",
+                "Sea 2"
+            },
+            BobbingSpeed = 2,
+            MaxSpeed = 190,
+            IsUtility = true,
+            TurningSpeed = 0.8,
+            Level = 1,
+            Icon = "rbxassetid://99089060153627",
+            Accel = 0.35
         },
         ["King\xE2\x80\x99s Throne"] = {
             StopEfficiency = 1.5,
