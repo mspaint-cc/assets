@@ -182,16 +182,28 @@ return {
             Rarity = "Exotic",
             SellValue = 700
         },
-        ["Heart Of Zeus"] = {
-            Price = math.huge,
-            purchasable = false,
-            Rarity = "Mythical"
+        ["Back Fins"] = {
+            Rarity = "Exotic",
+            Price = math.huge
         },
         ["Consumable XP"] = {
             Rarity = "Exotic",
             Price = math.huge
         },
+        ["Heart Of Zeus"] = {
+            Price = math.huge,
+            purchasable = false,
+            Rarity = "Mythical"
+        },
         ["Sporey's Soup"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        Amulet = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Mermaid\xE2\x80\x99s Favor"] = {
             Rarity = "Exotic",
             Price = math.huge
         },
@@ -211,13 +223,14 @@ return {
             Rarity = "Exotic",
             SellValue = 1250
         },
-        ["Aurora Totem"] = {
-            Rarity = "Mythical",
-            Price = 500000
-        },
-        ["Mermaid\xE2\x80\x99s Favor"] = {
-            Rarity = "Exotic",
+        Radio = {
+            Rarity = "Legendary",
             Price = math.huge
+        },
+        ["Bunker Key"] = {
+            Price = math.huge,
+            Icon = "rbxassetid://102236530041956",
+            Rarity = "Exotic"
         },
         ["Beginner Oxygen Tank"] = {
             Price = 3500,
@@ -227,11 +240,6 @@ return {
         ["Kraken Egg Premium"] = {
             Price = math.huge,
             Unpurchasable = true,
-            Rarity = "Exotic"
-        },
-        ["Bunker Key"] = {
-            Price = math.huge,
-            Icon = "rbxassetid://102236530041956",
             Rarity = "Exotic"
         },
         ["Magnifying Glass"] = {
@@ -249,24 +257,28 @@ return {
             Icon = "rbxassetid://87113404726717",
             Rarity = "Exotic"
         },
+        ["Aurora Totem"] = {
+            Rarity = "Mythical",
+            Price = 500000
+        },
         ["Orca Egg Premium"] = {
             Price = math.huge,
             Unpurchasable = true,
             Rarity = "Exotic"
         },
-        ["Eclipse Totem"] = {
-            Rarity = "Mythical",
-            Price = 250000
+        ["Lobster Roll"] = {
+            Rarity = "Exotic",
+            Price = math.huge
         },
         Firework = {
             Rarity = "Limited",
             Price = 130
         },
-        ["Back Fins"] = {
+        ["Metal Panels"] = {
             Rarity = "Exotic",
             Price = math.huge
         },
-        ["Metal Panels"] = {
+        ["Side Fins"] = {
             Rarity = "Exotic",
             Price = math.huge
         },
@@ -274,7 +286,7 @@ return {
             Rarity = "Exotic",
             Price = math.huge
         },
-        ["Side Fins"] = {
+        ["Skin Crate"] = {
             Rarity = "Exotic",
             Price = math.huge
         },
@@ -291,7 +303,7 @@ return {
             OnlyBuyOne = true,
             Rarity = "Rare"
         },
-        ["Skin Crate"] = {
+        ["Bag of Presents"] = {
             Rarity = "Exotic",
             Price = math.huge
         },
@@ -303,10 +315,6 @@ return {
         ["Blue Moon Totem"] = {
             Rarity = "Rare",
             Price = 500000
-        },
-        ["Bag of Presents"] = {
-            Rarity = "Exotic",
-            Price = math.huge
         },
         ["Elite Token"] = {
             Rarity = "Exotic",
@@ -321,13 +329,13 @@ return {
             Rarity = "Exotic",
             NonPersistent = true
         },
-        ["Crab Cage"] = {
-            Rarity = "Unusual",
-            Price = 45
-        },
         ["Handwritten Note"] = {
             Rarity = "Exotic",
             Price = math.huge
+        },
+        ["Crab Cage"] = {
+            Rarity = "Unusual",
+            Price = 45
         },
         Fillionaire = {
             Rarity = "Exotic",
@@ -337,21 +345,15 @@ return {
             Rarity = "Exotic",
             Price = math.huge
         },
-        ["Intermediate Oxygen Tank"] = {
-            Price = 10000,
+        ["Basic Oxygen Tank"] = {
+            Price = 1000,
             OnlyBuyOne = true,
-            Rarity = "Rare"
+            Rarity = "Uncommon"
         },
         Flippers = {
             Price = 9000,
             OnlyBuyOne = true,
             Rarity = "Unusual"
-        },
-        ["Glimmerfin Suit Lvl 1"] = {
-            Price = 7500,
-            OnlyBuyOne = true,
-            Icon = "rbxassetid://107405457740294",
-            Rarity = "Exotic"
         },
         ["Glimmerfin Suit Lvl 3"] = {
             Price = 7500,
@@ -359,19 +361,30 @@ return {
             Icon = "rbxassetid://137334347694202",
             Rarity = "Exotic"
         },
+        ["Glimmerfin Suit Lvl 1"] = {
+            Price = 7500,
+            OnlyBuyOne = true,
+            Icon = "rbxassetid://107405457740294",
+            Rarity = "Exotic"
+        },
         ["Winter Cloak"] = {
             Price = 7500,
             OnlyBuyOne = true,
             Rarity = "Unusual"
         },
-        ["Silver Egg Trophy Bobber"] = {
-            Rarity = "Exotic",
-            Price = math.huge
-        },
         ["Advanced Oxygen Tank"] = {
             Price = 25000,
             OnlyBuyOne = true,
             Rarity = "Legendary"
+        },
+        ["Silver Egg Trophy Bobber"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
+        ["Intermediate Oxygen Tank"] = {
+            Price = 10000,
+            OnlyBuyOne = true,
+            Rarity = "Rare"
         },
         Pickaxe = {
             Price = 5000,
@@ -382,19 +395,18 @@ return {
             Rarity = "Legendary",
             Price = 75000
         },
-        ["Basic Oxygen Tank"] = {
-            Price = 1000,
-            OnlyBuyOne = true,
-            Rarity = "Uncommon"
+        ["Blizzard Totem"] = {
+            Rarity = "Mythical",
+            Price = 275000
         },
         ["Orca Egg"] = {
             Price = math.huge,
             Unpurchasable = true,
             Rarity = "Exotic"
         },
-        ["Blizzard Totem"] = {
+        ["Eclipse Totem"] = {
             Rarity = "Mythical",
-            Price = 275000
+            Price = 250000
         },
         ["Advanced Glider"] = {
             Price = 2500,
