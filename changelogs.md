@@ -1,19 +1,12 @@
 ```diff
-[DOORS]
-- Auto Play Minecart (needs re-write)
-* Seek Helper BETA clarification, risky to use.
-
-[Fisch]
+[BGSI]
++ Improved Auto Purchase and Auto Equip - GUM, FLAVOR (it only opens the GUI when you can buy/equip something better now)
++ Auto Claim Playtime and Index now uses in-game values to be dynamic and not spam remotes
 + Fixed Loading
-+ Fixed Merlin purchases
-+ Updated datatables
-
-[Dead Rails]
-+ Fixed Loading
-+ Auto Use Snake Oil
-+ Auto Pickup Items
-+ Teleport to Fort Constitution
-+ Teleport to Vampire Castle
-+ Teleport to Tesla Lab
-+ Auto Block Sunlight (for vampires)
++ Fixed Auto Claim Chest claiming chests that you cannot claim
++ Fixed and improved Auto Claim Rift Chests
++ Fixed Auto Shiny Pets
++ Fixed Claim all codes
++ Fixed an issue with teleport (no longer jumps after successfull teleportation)
++ Fixed broken remotes issue
 ```
