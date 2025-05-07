@@ -1,12 +1,15 @@
 ```diff
+[DOORS]
++ Fixed Auto Interact in mines (ty blz for breaking 🙏)
+
+[Fisch]
++ Improved Auto Sell
+
 [BGSI]
-+ Improved Auto Purchase and Auto Equip - GUM, FLAVOR (it only opens the GUI when you can buy/equip something better now)
-+ Auto Claim Playtime and Index now uses in-game values to be dynamic and not spam remotes
-+ Fixed Loading
-+ Fixed Auto Claim Chest claiming chests that you cannot claim
-+ Fixed and improved Auto Claim Rift Chests
-+ Fixed Auto Shiny Pets
-+ Fixed Claim all codes
-+ Fixed an issue with teleport (no longer jumps after successfull teleportation)
-+ Fixed broken remotes issue
++ Added Auto Farm Currency (collects all drops on islands and clouds)
++ Added a queue system for features so they don't overlap
++ Teleporting stops instantly if you unload
++ Fixed fake Auto Claim Chest notifications
++ Fixed portals being active during teleportation
++ A lot of other bug fixed that I found during testing
 ```
