@@ -6,11 +6,12 @@ local MAX_CONCURRENT_REQUESTS = 50
 local RETRY_DELAY = 30
 local MAX_RETRIES = 2
 ------------------------------
-local ImageData = {}
+local ImageData = loadstring(game:HttpGet("https://github.com/mspaint-cc/assets/blob/main/fisch/libraries/images.luau?raw=true&a=" .. tostring(tick())))()
 local taskQueue = {}
 local activeRequests = 0
 local finishedCount = 0
 local totalTasks = 0
+local skippedCount = 0
 local ratelimited = false
 
 ------------------------------
@@ -41,54 +42,58 @@ end
 local function ProcessQueue()
 	while #taskQueue > 0 and activeRequests < MAX_CONCURRENT_REQUESTS do
 		local taskData = table.remove(taskQueue, 1)
-		activeRequests += 1
+        activeRequests += 1
 
 		task.spawn(function()
 			local retries = 0
 			local result = nil
 
-			repeat
-				local success, res = pcall(function()
-					if taskData.category == "Baits" then
-						local attempt1 = GetImageURL(taskData.identifier)
+            if typeof(ImageData[taskData.category][taskData.identifier]) ~= "string" then
+                repeat
+                    local success, res = pcall(function()
+                        if taskData.category == "Baits" then
+                            local attempt1 = GetImageURL(taskData.identifier)
 
-						if attempt1 == "not found" then
-                            task.wait()
-							return GetImageURL("Bait " .. taskData.identifier)
-						end
+                            if attempt1 == "not found" then
+                                task.wait()
+                                return GetImageURL("Bait " .. taskData.identifier)
+                            end
 
-						return attempt1
-					else
-						return GetImageURL(taskData.identifier)
-					end
-				end)
+                            return attempt1
+                        else
+                            return GetImageURL(taskData.identifier)
+                        end
+                    end)
 
-				if success then
-					result = res
-				else
-					result = "error"
-				end
+                    if success then
+                        result = res
+                    else
+                        result = "error"
+                    end
 
-				if result == "ratelimited" then
-					ratelimited = true
-					warn("[RATELIMITED] Retrying after", RETRY_DELAY, "seconds")
-					task.wait(RETRY_DELAY)
-					ratelimited = false
-					retries += 1
+                    if result == "ratelimited" then
+                        ratelimited = true
+                        warn("[RATELIMITED] Retrying after", RETRY_DELAY, "seconds")
+                        task.wait(RETRY_DELAY)
+                        ratelimited = false
+                        retries += 1
 
-					warn("[RATELIMITED] Retrying ID:", taskData.identifier, "Attempt:", retries)
-				elseif result == "error" then
-					--warn("[REQUEST ERROR] ID:", taskData.identifier, "Attempt:", retries)
-					task.wait(1)
-					retries += 1
+                        warn("[RATELIMITED] Retrying ID:", taskData.identifier, "Attempt:", retries)
+                    elseif result == "error" then
+                        --warn("[REQUEST ERROR] ID:", taskData.identifier, "Attempt:", retries)
+                        task.wait(1)
+                        retries += 1
 
-					warn("[RATELIMITED] Retrying ID:", taskData.identifier, "Attempt:", retries)
-				end
-			until (result ~= "ratelimited" and result ~= "error") or retries >= MAX_RETRIES
+                        warn("[RATELIMITED] Retrying ID:", taskData.identifier, "Attempt:", retries)
+                    end
+                until (result ~= "ratelimited" and result ~= "error") or retries >= MAX_RETRIES
 
-			if result ~= "not found" and result ~= "error" then
-				ImageData[taskData.category][taskData.identifier] = result
-			end
+                if result ~= "not found" and result ~= "error" then
+                    ImageData[taskData.category][taskData.identifier] = result
+                end
+            else
+                skippedCount += 1
+            end
 
 			finishedCount += 1
 			activeRequests -= 1
@@ -101,9 +106,11 @@ end
 for world, Datatable in datatables do
 	for category, items in pairs(Datatable) do
 		if typeof(items) ~= "table" then continue end
-
 		warn("Loading", category, "in", world)
-		ImageData[category] = {}
+
+        if typeof(ImageData[category]) ~= "table" then
+		    ImageData[category] = {}
+        end
 
 		for key, value in pairs(items) do
 			totalTasks += 1
@@ -131,7 +138,7 @@ end
 -- wait for completion -- 
 while finishedCount < totalTasks do
 	task.wait(1)
-	print(string.format("Progress: %d / %d (Ratelimited: %s)", finishedCount, totalTasks, tostring(ratelimited)))
+	print(string.format("Progress: %d / %d - Skipped: %d (Ratelimited: %s)", finishedCount, totalTasks, skippedCount, tostring(ratelimited)))
 end
 
 warn("Done!", os.time())
