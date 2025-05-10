@@ -2,7 +2,6 @@ return {
     Locations = {
         ["The Depths"] = "https://static.wikitide.net/fischwiki/a/ae/The_Depths.png",
         ["Netter's Haven"] = "https://static.wikitide.net/fischwiki/9/93/Netter%27s_Haven.png",
-        Ocean = "https://static.wikitide.net/fischwiki/8/89/Ocean.png",
         Waveborne = "https://static.wikitide.net/fischwiki/7/74/Waveborne.png",
         Lushgrove = "https://static.wikitide.net/fischwiki/c/c4/Lushgrove.png",
         Emberreach = "https://static.wikitide.net/fischwiki/f/ff/Emberreach.png",
