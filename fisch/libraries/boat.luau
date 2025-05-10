@@ -93,7 +93,7 @@ return {
             Price = 2000000,
             Bobbing = 2.85,
             Worlds = {
-                "SecondSea"
+                "Sea 2"
             },
             BobbingSpeed = 2,
             MaxSpeed = 200,
@@ -197,7 +197,7 @@ return {
             Price = 1000000,
             Bobbing = 2.85,
             Worlds = {
-                "SecondSea"
+                "Sea 2"
             },
             BobbingSpeed = 2,
             MaxSpeed = 190,
@@ -262,7 +262,7 @@ return {
         },
         ["Cthulhu Boat"] = {
             StopEfficiency = 1.75,
-            Description = "Fast and Cursed",
+            Description = "Extremely fast, and equally cursed...",
             Price = -1,
             Bobbing = 2.85,
             BobbingSpeed = 2,
@@ -383,7 +383,7 @@ return {
         },
         ["Small Utility Boat"] = {
             StopEfficiency = 2,
-            Description = "Utility",
+            Description = "A lightweight utility boat, made for short trips and simple work.",
             Price = 50000,
             Bobbing = 2.85,
             Unpurchasable = false,
@@ -427,7 +427,7 @@ return {
         },
         ["Medium Utility Boat"] = {
             StopEfficiency = 2,
-            Description = "Utility",
+            Description = "A balanced and reliable vessel, designed for strenuous tasks and moderate work.",
             Price = 250000,
             Bobbing = 2.85,
             Unpurchasable = false,
@@ -503,14 +503,13 @@ return {
         },
         ["Large Utility Boat"] = {
             StopEfficiency = 2,
-            Description = "Utility",
+            Description = "Highly strong and capable, built for heavy-duty tasks.",
             Unpurchasable = false,
             Price = 500000,
             Bobbing = 2.85,
             UtilityTier = 3,
             BackwardsEfficiency = 1.1,
             Worlds = {
-                "Sea 1",
                 "Sea 2"
             },
             BobbingSpeed = 2,
@@ -638,7 +637,7 @@ return {
         },
         ["Head Of Cthulu"] = {
             StopEfficiency = 1.75,
-            Description = "Dr. Finneus's Volcanic Research Quest Boat!",
+            Description = "A seaborne vessel shaped like Cthulhu's head.",
             Price = -1,
             Bobbing = 2.85,
             BobbingSpeed = 2,
@@ -725,6 +724,20 @@ return {
             Icon = "rbxassetid://73233180943848",
             Accel = 0.7
         },
+        Whaleski = {
+            StopEfficiency = 1.5,
+            Description = "What\xE2\x80\x99s faster than a whale in the ocean? Ride your Whaleski and fly right past your friends!",
+            Price = -1,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            Unpurchasable = true,
+            MaxSpeed = 245,
+            BackwardsEfficiency = 1.1,
+            TurningSpeed = 0.8,
+            Level = 1,
+            Icon = "rbxassetid://97509675338919",
+            Accel = 0.9
+        },
         ["Camera Boat"] = {
             StopEfficiency = 4,
             Description = "Lights, camera, action!",
@@ -800,7 +813,7 @@ return {
             Price = 5000000,
             Bobbing = 2.85,
             Worlds = {
-                "SecondSea"
+                "Sea 2"
             },
             BobbingSpeed = 2,
             MaxSpeed = 210,
@@ -904,14 +917,13 @@ return {
         ["Huge Utility Boat"] = {
             UtilityTier = 4,
             StopEfficiency = 2,
-            Description = "Utility",
+            Description = "A massive vessel built for pure strength, it handles major hauling tasks.",
             Unpurchasable = false,
             Price = 1500000,
             Bobbing = 2.85,
             AlternateSpawn = 30,
             BackwardsEfficiency = 1.1,
             Worlds = {
-                "Sea 1",
                 "Sea 2"
             },
             BobbingSpeed = 2,
