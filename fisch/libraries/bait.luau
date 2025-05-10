@@ -18,12 +18,14 @@ return {
     ["Golden Tentacle"] = {
         LureSpeed = 50,
         Luck = 150,
+        Limited = true,
         Rarity = "Legendary",
         GenerelLuck = 40,
         Icon = "rbxassetid://83405723534819",
         Resilience = 20
     },
     ["Peppermint Worm"] = {
+        Limited = true,
         LureSpeed = -5,
         Luck = 50,
         Rarity = "Unusual",
@@ -140,6 +142,7 @@ return {
     ["Aurora Bait"] = {
         LureSpeed = -5,
         Luck = 100,
+        Limited = true,
         Rarity = "Mythical",
         GenerelLuck = 30,
         Icon = "rbxassetid://85141818620239",
@@ -162,6 +165,24 @@ return {
         Icon = "rbxassetid://127635918006645",
         Resilience = 0
     },
+    ["Whale Bait"] = {
+        LureSpeed = -5,
+        Luck = 180,
+        Rarity = "Legendary",
+        Price = 800,
+        GenerelLuck = 20,
+        Icon = "rbxassetid://76695597473114",
+        Resilience = 30
+    },
+    ["Golden Shrimp Bait"] = {
+        LureSpeed = 15,
+        Luck = 120,
+        Rarity = "Mythical",
+        Price = 1500,
+        GenerelLuck = 90,
+        Icon = "rbxassetid://101398702799761",
+        Resilience = 10
+    },
     ["Neuro Slug"] = {
         LureSpeed = -20,
         Luck = 90,
@@ -179,6 +200,7 @@ return {
         Resilience = -10
     },
     ["Hourglass Bait"] = {
+        Limited = true,
         LureSpeed = 5,
         Luck = 150,
         Rarity = "Mythical",
@@ -198,6 +220,7 @@ return {
     ["Colossal Ink Bait"] = {
         LureSpeed = 5,
         Luck = 150,
+        Limited = true,
         Rarity = "Mythical",
         GenerelLuck = 150,
         Icon = "rbxassetid://78817927104320",
@@ -206,6 +229,7 @@ return {
     ["Stud Bait"] = {
         LureSpeed = 50,
         Luck = 150,
+        Limited = true,
         Rarity = "Legendary",
         GenerelLuck = 40,
         Icon = "rbxassetid://92827044886722",
@@ -244,6 +268,7 @@ return {
         Resilience = 40
     },
     ["Chocolate Fish"] = {
+        Limited = true,
         LureSpeed = 20,
         Luck = 200,
         Rarity = "Mythical",
@@ -309,6 +334,7 @@ return {
         Resilience = 50
     },
     ["Holly Berry"] = {
+        Limited = true,
         LureSpeed = -5,
         Luck = 80,
         Rarity = "Legendary",
@@ -350,6 +376,8 @@ return {
         Resilience = -10
     },
     Lucky = {
+        Rarity = "Mythical",
+        Limited = true,
         MutationChance = {
             1,
             100,
@@ -357,7 +385,6 @@ return {
         },
         LureSpeed = 20,
         Luck = 200,
-        Rarity = "Mythical",
         GenerelLuck = 150,
         Mutation = "Blarney",
         Icon = "rbxassetid://83124206397968",
