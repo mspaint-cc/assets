@@ -1,7 +1,11 @@
 ```diff
-[Dead Rails]
-+ Fixed Player ESP
-+ Added "Bolt Action Rifle" and "Mauser" to Auto Pickup Gun
-+ Fixed Teleport to End
-+ Fixed Auto Pickup Ammo
++ Fixed AntiAFK and attempt to index nil with "DisconnectSignal" errors
+
+[BGSI]
++ Refactored the codebase and layout
++ Improved teleport system (a bit faster)
++ Fixed loading
+
+[Fisch]
++ Updated data
 ```
