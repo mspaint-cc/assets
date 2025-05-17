@@ -200,11 +200,12 @@ return {
         Resilience = -10
     },
     ["Hourglass Bait"] = {
+        Rarity = "Mythical",
         Limited = true,
+        XpBoost = 1,
         LureSpeed = 5,
         Luck = 150,
-        Rarity = "Mythical",
-        XpBoost = 1,
+        Mutation = "Neon",
         GenerelLuck = 150,
         Icon = "rbxassetid://136590369641722",
         Resilience = 40
@@ -218,6 +219,7 @@ return {
         Resilience = -5
     },
     ["Colossal Ink Bait"] = {
+        Mutation = "Colossal Ink",
         LureSpeed = 5,
         Luck = 150,
         Limited = true,
