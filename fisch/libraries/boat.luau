@@ -473,6 +473,19 @@ return {
             StopEfficiency = 3.5,
             TurningSpeed = 0.7
         },
+        ["Explorer Diving Boat"] = {
+            StopEfficiency = 3,
+            Description = "LEGO Explorer Diving Boat",
+            Price = 20000,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            MaxSpeed = 150,
+            BackwardsEfficiency = 1.1,
+            TurningSpeed = 0.5,
+            Level = 32,
+            Icon = "rbxassetid://104314152947635",
+            Accel = 0.65
+        },
         ["Flipper Express"] = {
             StopEfficiency = 2,
             Description = "The ultimate whale-inspired luxury yacht! With a sleek, fin-like design and a powerful tail-shaped stern, it glides through the waves with effortless grace.",
@@ -679,6 +692,20 @@ return {
             Icon = "rbxassetid://124154643224531",
             Accel = 0.2
         },
+        ["Irish Jig"] = {
+            StopEfficiency = 1.4,
+            Description = "A lively vessel that dances upon the waves like a true Celtic tune! The Irish Jig is a vibrant and sturdy boat, built for both adventure and celebration.",
+            Price = -1,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            Unpurchasable = true,
+            MaxSpeed = 228,
+            BackwardsEfficiency = 1.5,
+            TurningSpeed = 0.7,
+            Level = 1,
+            Icon = "rbxassetid://93666916290774",
+            Accel = 0.6
+        },
         ["Volcanic Research Boat"] = {
             StopEfficiency = 1.75,
             Description = "Dr. Finneus's Volcanic Research Quest Boat!",
@@ -692,6 +719,23 @@ return {
             Level = 1,
             Icon = "rbxassetid://116581949935250",
             Accel = 0.3
+        },
+        ["Silent Speeder"] = {
+            FakePrice = 1499,
+            Description = "Cut through the waves with the Silent Speeder, a stealthy high-speed boat built for sleek escapes and smooth cruising.",
+            Unpurchasable = true,
+            Price = -1,
+            Bobbing = 2.85,
+            BackwardsEfficiency = 1.5,
+            StopEfficiency = 2,
+            BobbingSpeed = 2,
+            TurningSpeed = 0.9,
+            MaxSpeed = 240,
+            ProductId = 3287040610,
+            LimitedAmount = 20000,
+            Level = 1,
+            Icon = "rbxassetid://119932849004727",
+            Accel = 0.9
         },
         ["Guardian of Atlantis"] = {
             StopEfficiency = 3.7,
@@ -1007,19 +1051,19 @@ return {
             Icon = "rbxassetid://70671327958329",
             Accel = 0.3
         },
-        ["Irish Jig"] = {
-            StopEfficiency = 1.4,
-            Description = "A lively vessel that dances upon the waves like a true Celtic tune! The Irish Jig is a vibrant and sturdy boat, built for both adventure and celebration.",
+        ["Blue Cat"] = {
+            StopEfficiency = 1.5,
+            Description = "Experience smooth sailing in style with the Blue Cat, a medium sized luxury boat purring with elegance.",
             Price = -1,
             Bobbing = 2,
             BobbingSpeed = 1,
             Unpurchasable = true,
-            MaxSpeed = 228,
-            BackwardsEfficiency = 1.5,
+            MaxSpeed = 235,
+            BackwardsEfficiency = 1.1,
             TurningSpeed = 0.7,
             Level = 1,
-            Icon = "rbxassetid://93666916290774",
-            Accel = 0.6
+            Icon = "rbxassetid://76479620423317",
+            Accel = 0.8
         },
         ["Lucky Pot"] = {
             StopEfficiency = 1.5,
