@@ -98,9 +98,9 @@ return {
             Chance = 0
         },
         ["Colossal Ink"] = {
-            Tradable = false,
-            PriceMultiply = 5,
             Color = Color3.new(0.86666667461395, 0.9450980424881, 1),
+            PriceMultiply = 5,
+            CommerceMutation = true,
             Display = "Colossal Ink",
             Chance = 0
         },
@@ -390,9 +390,9 @@ return {
             Chance = 0
         },
         Neon = {
-            Tradable = false,
-            PriceMultiply = 1,
             Color = Color3.new(1, 0.89803922176361, 0.49411764740944),
+            PriceMultiply = 1,
+            CommerceMutation = true,
             Display = "Neon",
             Chance = 0
         },
