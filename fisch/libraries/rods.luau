@@ -301,23 +301,24 @@ return {
     },
     ["???"] = {
         LineDistance = 125,
-        Unpurchasable = true,
         Description = "a hot, presumably super-sharp blade of energy [Admin Rod, for @yvlyf]",
-        DEV = true,
         Price = math.huge,
-        Unregistered = true,
+        Passive = "???",
+        Luck = 150,
+        Icon = "rbxassetid://81245991967347",
+        Unpurchasable = true,
         Strength = math.huge,
-        BobberBottom = Color3.new(0.24313725531101, 0.054901961237192, 0.054901961237192),
+        DEV = true,
         Worlds = {
             "Sea 1",
             "Sea 2"
         },
-        LureSpeed = 20,
-        Luck = 150,
+        Unregistered = true,
+        BobberBottom = Color3.new(0.24313725531101, 0.054901961237192, 0.054901961237192),
         Control = 0.35,
         BobberTop = Color3.new(0.48627451062202, 0.45882353186607, 0.44705882668495),
         Color = Color3.new(0.41568627953529, 0.10588235408068, 0.10588235408068),
-        Icon = "rbxassetid://81245991967347",
+        LureSpeed = 20,
         Resilience = 40
     },
     ["Lobster Rod"] = {
@@ -1199,7 +1200,7 @@ return {
         Description = "Its delicate form belies a sharp, cutting force with an almost eerie precision. Has a chance to slash fish.",
         Price = 100000,
         BobberBottom = Color3.new(1, 1, 1),
-        Strength = 100000,
+        Strength = 300000,
         From = "Azure Lagoon",
         Worlds = {
             "Sea 1",
@@ -1286,6 +1287,29 @@ return {
         Passive = "Krampus",
         Resilience = 8
     },
+    Paintbrush = {
+        LineDistance = 150,
+        Description = "Awarded to only the best artists of Fisch! This rod shows that you have excelled and rose above everyone else.",
+        Price = math.huge,
+        Passive = "Paintbrush",
+        Luck = 333,
+        Icon = "rbxassetid://112791122218457",
+        Unpurchasable = true,
+        DEV = true,
+        Strength = 123456789,
+        Unregistered = true,
+        Worlds = {
+            "Sea 1",
+            "Sea 2"
+        },
+        BobberBottom = Color3.new(0.28235295414925, 0, 1),
+        BobberTop = Color3.new(0.80000001192093, 0, 0),
+        Control = 0.123,
+        Color = Color3.new(0.80000001192093, 0, 0),
+        ProgressEfficiency = 3.14,
+        LureSpeed = -1518,
+        Resilience = 45
+    },
     ["Fortune Rod"] = {
         LineDistance = 20,
         Description = "Extremely lucky rod with an odd tendency to attract significantly rarer fish than usual.",
@@ -1311,7 +1335,7 @@ return {
     },
     ["Rod Of The Zenith"] = {
         LineDistance = 70,
-        Description = "A legendary rod that defies limits, allowing a challenge for those seeking the ultimate reward. Has a 65% chance to apply the Wrath mutation to fish.",
+        Description = "A legendary rod that defies limits, allowing a challenge for those seeking the ultimate reward. Has a 70% chance to apply the Wrath mutation to fish.",
         MinDistanceToPurchase = 30,
         BobberTop = Color3.new(0.39607843756676, 0.58039218187332, 0.678431391716),
         LureSpeed = 20,
@@ -1320,7 +1344,7 @@ return {
         DebuffedLureSpeed = 99,
         DebuffedControl = -0.05,
         Passive = "RodOfTheZenith",
-        DebuffedResilience = 3,
+        DebuffedResilience = 6,
         Strength = math.huge,
         DebuffedLuck = 73,
         Worlds = {
@@ -1332,7 +1356,7 @@ return {
         BobberBottom = Color3.new(0.20784313976765, 0.35686275362968, 0.49803921580315),
         DebuffedStrength = math.huge,
         RequireWorkspaceAttributeToBeTrue = "MarianasVeilActive",
-        Resilience = 5
+        Resilience = 12
     },
     ["Great Rod of Oscar"] = {
         LineDistance = 150,
@@ -1433,6 +1457,29 @@ return {
         },
         Resilience = 20
     },
+    ["Starline Caster"] = {
+        LineDistance = 69,
+        Description = "\xE2\x98\x86 this guy called rick is a nerd and made the stats some stupid cipher [For @s1mplyrick]",
+        Price = math.huge,
+        Passive = "StarlineCaster",
+        Luck = 333,
+        Icon = "rbxassetid://72531079519984",
+        Unpurchasable = true,
+        DEV = true,
+        Strength = 407,
+        Unregistered = true,
+        Worlds = {
+            "Sea 1",
+            "Sea 2"
+        },
+        BobberBottom = Color3.new(0, 0, 0),
+        BobberTop = Color3.new(1, 1, 1),
+        Control = 0.7,
+        Color = Color3.new(0.77254903316498, 0.8941176533699, 1),
+        ProgressEfficiency = 7.77,
+        LureSpeed = -566,
+        Resilience = 111
+    },
     ["Great Dreamer Rod"] = {
         LineDistance = 60,
         Unpurchasable = true,
@@ -1532,7 +1579,7 @@ return {
         Luck = 65,
         Icon = "rbxassetid://76014690432382",
         DebuffedLureSpeed = 99,
-        DebuffedResilience = 15,
+        DebuffedResilience = 10,
         Strength = 200000,
         DebuffedControl = 0.125,
         Worlds = {
@@ -1541,10 +1588,10 @@ return {
         DebuffedLuck = 33,
         Color = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
         Control = 0.25,
-        Price = 80000,
+        Price = 90000,
         DebuffedStrength = 100000,
         BobberBottom = Color3.new(1, 0.66666668653488, 0),
-        Resilience = 30
+        Resilience = 20
     },
     ["Carrot Rod"] = {
         LineDistance = 35,
@@ -1945,7 +1992,7 @@ return {
     ["Treasure Rod"] = {
         LineDistance = 20,
         Color = Color3.new(0, 0.61960786581039, 0.88235294818878),
-        Description = "A radiant rod with shimmmering gems, has an 8% chance for Coinfall.",
+        Description = "A radiant rod with shimmmering gems, has a 10% chance for Coinfall.",
         From = "Treasure Island",
         Price = 30000,
         BobberBottom = Color3.new(0.90196079015732, 0.76862746477127, 0.019607843831182),
@@ -2463,7 +2510,7 @@ return {
         LineDistance = 20,
         Description = "\t\t\tEnhanced by the Aurora Borealis' energy. All fish have a 15% chance to have the Aurora mutation.\n\t\t\tChances increase to 30% during the Aurora Borealis.\n\t\t",
         BobberTop = Color3.new(0.19215686619282, 1, 0.70196080207825),
-        LureSpeed = 90,
+        LureSpeed = 55,
         Luck = 60,
         Icon = "rbxassetid://97638124485999",
         DebuffedLureSpeed = 99,
@@ -2486,8 +2533,8 @@ return {
         LineDistance = 20,
         Description = "Blessed with the power of The Keepers. All fish have a 30% chance to be rainbow.",
         BobberTop = Color3.new(1, 0.40392157435417, 0.61176472902298),
-        LureSpeed = 100,
-        Luck = 45,
+        LureSpeed = 60,
+        Luck = 50,
         Icon = "rbxassetid://133181079876292",
         DebuffedLureSpeed = 99,
         DebuffedControl = 0.025,
@@ -2497,13 +2544,13 @@ return {
         Worlds = {
             "Sea 1"
         },
-        DebuffedLuck = 23,
+        DebuffedLuck = 25,
         Price = 90000,
         Control = 0.05,
         From = "The Travelling Merchant",
         DebuffedStrength = 1000,
         BobberBottom = Color3.new(1, 1, 1),
-        Resilience = 0
+        Resilience = 0.05
     },
     ["Fungal Rod"] = {
         LineDistance = 15,
