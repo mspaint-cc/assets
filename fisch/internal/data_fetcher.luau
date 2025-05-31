@@ -1,7 +1,6 @@
 local data = {
     [16732694052] = {
         SpecialEvents = { -- needs to be manually updated
-            "LEGO",
             "Blue Moon Pool",
             "Octophant Pool",
     
@@ -71,7 +70,6 @@ local data = {
 
     [72907489978215] = {
         SpecialEvents = { -- needs to be manually updated
-            "LEGO",
             "Blue Moon Pool",
             "Octophant Pool",
             "Animal Pool"
