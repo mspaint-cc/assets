@@ -1,4 +1,5 @@
 return {
+    Spawn = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     library = {
         ["Red Racer"] = {
             StopEfficiency = 1.5,
@@ -72,6 +73,20 @@ return {
             Level = 1,
             Icon = "rbxassetid://72935532824780",
             Accel = 0.35
+        },
+        ["Vintage Hatchboat"] = {
+            StopEfficiency = 3.5,
+            Description = "A classic sea cruiser with classy charm and retro flair, built for big ballers and big hauls.",
+            Price = -1,
+            Bobbing = 3,
+            BobbingSpeed = 0.3,
+            Unpurchasable = true,
+            MaxSpeed = 200,
+            BackwardsEfficiency = 1.3,
+            TurningSpeed = 0.3,
+            Level = 1,
+            Icon = "rbxassetid://92775381082833",
+            Accel = 0.6
         },
         ["Archaeological Boat"] = {
             StopEfficiency = 2,
@@ -236,7 +251,7 @@ return {
         },
         ["Luxury Speedboat"] = {
             StopEfficiency = 1.5,
-            Description = "Sail around at unpresedented speeds!",
+            Description = "Sail around at unprecedented speeds!",
             Price = 20000,
             Bobbing = 2,
             BobbingSpeed = 1,
@@ -378,7 +393,7 @@ return {
             BackwardsEfficiency = 1,
             TurningSpeed = 2,
             Level = 1,
-            Icon = "rbxassetid://73843249851684",
+            Icon = "rbxassetid://114616291594414",
             Accel = 0.65
         },
         ["Small Utility Boat"] = {
@@ -476,7 +491,7 @@ return {
         ["Explorer Diving Boat"] = {
             StopEfficiency = 3,
             Description = "LEGO Explorer Diving Boat",
-            Price = 20000,
+            Price = 0,
             Bobbing = 2,
             BobbingSpeed = 1,
             MaxSpeed = 150,
@@ -606,6 +621,36 @@ return {
             Icon = "rbxassetid://125990379782355",
             Accel = 0.35
         },
+        ["Red Marlins Ship"] = {
+            StopEfficiency = 2,
+            Description = "Red sails, no survivors. Red Marlins faction max rank vessel",
+            Price = -1,
+            Bobbing = 6,
+            Unpurchasable = true,
+            BobbingSpeed = 3,
+            HideInShop = true,
+            MaxSpeed = 80,
+            BackwardsEfficiency = 1,
+            TurningSpeed = 0.3,
+            Level = 1,
+            Icon = "rbxassetid://91179825470447",
+            Accel = 0.2
+        },
+        ["Marauder Ship"] = {
+            StopEfficiency = 2,
+            Description = "Fast, fierce, unstoppable. Midas' Mates faction max rank vessel",
+            Price = -1,
+            Bobbing = 6,
+            Unpurchasable = true,
+            BobbingSpeed = 3,
+            HideInShop = true,
+            MaxSpeed = 80,
+            BackwardsEfficiency = 1,
+            TurningSpeed = 0.3,
+            Level = 1,
+            Icon = "rbxassetid://85241378337056",
+            Accel = 0.2
+        },
         Jetski = {
             StopEfficiency = 3.5,
             Description = "Ski around with a friend at insane speeds!",
@@ -618,6 +663,21 @@ return {
             Level = 60,
             Icon = "rbxassetid://129451187335290",
             Accel = 0.3
+        },
+        ["Ghosts Pirate Ship"] = {
+            StopEfficiency = 2,
+            Description = "Silent, deadly, cursed forever. Ghosts faction max rank vessel",
+            Price = -1,
+            Bobbing = 6,
+            Unpurchasable = true,
+            BobbingSpeed = 3,
+            HideInShop = true,
+            MaxSpeed = 80,
+            BackwardsEfficiency = 1,
+            TurningSpeed = 0.3,
+            Level = 1,
+            Icon = "rbxassetid://84575570131047",
+            Accel = 0.2
         },
         Cthulunaut = {
             SubmarineTier = "Deep",
@@ -648,6 +708,20 @@ return {
             Icon = "rbxassetid://134432015160761",
             Accel = 0.15
         },
+        ["Fish Bowl"] = {
+            StopEfficiency = 3.7,
+            Description = "A glass domed speed bowl that lets you ride the waves like you're in your own aquatic exhibit.",
+            Price = -1,
+            Bobbing = 2,
+            BobbingSpeed = 0.1,
+            Unpurchasable = true,
+            MaxSpeed = 240,
+            BackwardsEfficiency = 1.1,
+            TurningSpeed = 0.8,
+            Level = 1,
+            Icon = "rbxassetid://120431486261915",
+            Accel = 0.6
+        },
         ["Head Of Cthulu"] = {
             StopEfficiency = 1.75,
             Description = "A seaborne vessel shaped like Cthulhu's head.",
@@ -661,6 +735,20 @@ return {
             Level = 1,
             Icon = "rbxassetid://90849707354349",
             Accel = 0.3
+        },
+        ["Bloop Boat"] = {
+            StopEfficiency = 1.5,
+            Description = "Todo",
+            Price = -1,
+            Bobbing = 2,
+            BobbingSpeed = 1,
+            Unpurchasable = true,
+            MaxSpeed = 225,
+            BackwardsEfficiency = 1.1,
+            TurningSpeed = 0.6,
+            Level = 1,
+            Icon = "rbxassetid://95325449128822",
+            Accel = 0.25
         },
         ["Celestial Cruiser"] = {
             ExpirationDate = DateTime.fromUnixTimestamp(1737212400),
@@ -691,6 +779,23 @@ return {
             Level = 40,
             Icon = "rbxassetid://124154643224531",
             Accel = 0.2
+        },
+        ["Tri-Brick Rider"] = {
+            FakePrice = 1499,
+            Description = "A sleek, triple thrust vessel built for rapid waveskimming, perfect for chasing the next big catch.",
+            Unpurchasable = true,
+            Price = -1,
+            Bobbing = 1.5,
+            BackwardsEfficiency = 1.1,
+            StopEfficiency = 1.5,
+            BobbingSpeed = 1,
+            TurningSpeed = 1,
+            MaxSpeed = 230,
+            ProductId = 3291165284,
+            LimitedAmount = 40000,
+            Level = 1,
+            Icon = "rbxassetid://111237769377148",
+            Accel = 1
         },
         ["Irish Jig"] = {
             StopEfficiency = 1.4,
@@ -900,7 +1005,7 @@ return {
         },
         ["Dr. Glimmerfin's Boat"] = {
             StopEfficiency = 2.2,
-            Description = "Dr. Glimmerfin's Boat Quest Boat",
+            Description = "A research vessel typically piloted by a Dr. Glimmerfin, chasing secrets across the waves.",
             Price = -1,
             Bobbing = 2.5,
             BobbingSpeed = 3,
@@ -1314,9 +1419,9 @@ return {
             Accel = 0.3
         }
     },
-    Spawn = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
+    Has = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     OnBoatProductPurchase = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     HasSubmarine = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
-    Has = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
+    Ungive = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end,
     Give = function() --[[LuaEncode: `options.FunctionsReturnRaw` false; can't serialize functions]] return end
 }
