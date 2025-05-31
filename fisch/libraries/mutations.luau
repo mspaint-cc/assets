@@ -210,7 +210,7 @@ return {
             PriceMultiply = 3,
             Color = Color3.new(1, 0, 0),
             Display = "Awesome",
-            Chance = 1
+            Chance = 0
         },
         Mosaic = {
             PriceMultiply = 1.5,
@@ -492,7 +492,7 @@ return {
         Aureolin = {
             PriceMultiply = 4,
             Color = Color3.new(0.86274510622025, 0.60392159223557, 0.0039215688593686),
-            Display = "Aurulent",
+            Display = "Aureolin",
             Chance = 0
         },
         Festive = {
