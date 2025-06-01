@@ -34,7 +34,7 @@ local MAX_CONCURRENT_REQUESTS = 50
 local RETRY_DELAY = 30
 local MAX_RETRIES = 2
 ------------------------------
-local ImageData = loadstring(game:HttpGet("https://github.com/mspaint-cc/assets/blob/main/gag/libraries/images.luau?raw=true&a=" .. tostring(tick())))()
+local ImageData = loadstring(game:HttpGet("https://github.com/mspaint-cc/assets/blob/main/gag/libraries/images.luau?raw=true&a=" .. tostring(tick())))() or {}
 local taskQueue = {}
 local activeRequests = 0
 local finishedCount = 0
