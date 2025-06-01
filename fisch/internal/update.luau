@@ -1,3 +1,5 @@
+github_token = ""
+
 local ConsoleUtils = loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/utils/console/main.lua"))()
 local LuaTableSerializer = loadstring(game:HttpGet("https://raw.githubusercontent.com/regginator/LuaEncode/refs/heads/master/src/LuaEncode.lua"))()
 local SerializerOptions = {
