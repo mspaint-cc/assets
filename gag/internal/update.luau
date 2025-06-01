@@ -82,7 +82,7 @@ local function UpdateModule(module, data)
             Email = "75510171+notpoiu@users.noreply.github.com"
         },
 
-        Path = "fisch/libraries/" .. module .. ".luau",
+        Path = "gag/libraries/" .. module .. ".luau",
         Content = "return " .. data
     })
 
