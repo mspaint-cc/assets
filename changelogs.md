@@ -6,3 +6,4 @@
 [Word Bomb]
 + Added "Input Manager" method (typing is visible to everyone with this option)
 ```
+
