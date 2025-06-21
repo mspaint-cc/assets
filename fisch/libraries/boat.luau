@@ -107,6 +107,7 @@ return {
             Description = "",
             Price = 2000000,
             Bobbing = 2.85,
+            Untradeable = true,
             Worlds = {
                 "Sea 2"
             },
@@ -150,6 +151,7 @@ return {
             Description = "A compact, heavy-duty whale themed submarine with a reinforced shell and powerful thrusters, built for deep-sea dominance.",
             Price = -1,
             Bobbing = 2,
+            Untradeable = true,
             IsSubmarine = true,
             BobbingSpeed = 0.4,
             Unpurchasable = true,
@@ -211,6 +213,7 @@ return {
             Description = "",
             Price = 1000000,
             Bobbing = 2.85,
+            Untradeable = true,
             Worlds = {
                 "Sea 2"
             },
@@ -387,6 +390,7 @@ return {
             Description = "plutoly forced me to do this - kiwi",
             Price = -1,
             Bobbing = 2,
+            Untradeable = true,
             BobbingSpeed = 1,
             Unpurchasable = true,
             MaxSpeed = 250,
@@ -399,9 +403,10 @@ return {
         ["Small Utility Boat"] = {
             StopEfficiency = 2,
             Description = "A lightweight utility boat, made for short trips and simple work.",
+            Unpurchasable = false,
             Price = 50000,
             Bobbing = 2.85,
-            Unpurchasable = false,
+            Untradeable = true,
             UtilityTier = 1,
             BobbingSpeed = 2,
             BackwardsEfficiency = 1.1,
@@ -443,9 +448,10 @@ return {
         ["Medium Utility Boat"] = {
             StopEfficiency = 2,
             Description = "A balanced and reliable vessel, designed for strenuous tasks and moderate work.",
+            Unpurchasable = false,
             Price = 250000,
             Bobbing = 2.85,
-            Unpurchasable = false,
+            Untradeable = true,
             UtilityTier = 2,
             BobbingSpeed = 2,
             BackwardsEfficiency = 1.1,
@@ -481,6 +487,7 @@ return {
             Accel = 0.3,
             FakePrice = 4999,
             BackwardsEfficiency = 1,
+            Untradeable = true,
             BobbingSpeed = 0.4,
             MaxSpeed = 200,
             Unpurchasable = true,
@@ -530,12 +537,13 @@ return {
             Accel = 0.2
         },
         ["Large Utility Boat"] = {
+            UtilityTier = 3,
             StopEfficiency = 2,
             Description = "Highly strong and capable, built for heavy-duty tasks.",
             Unpurchasable = false,
             Price = 500000,
             Bobbing = 2.85,
-            UtilityTier = 3,
+            Untradeable = true,
             BackwardsEfficiency = 1.1,
             Worlds = {
                 "Sea 2"
@@ -578,6 +586,38 @@ return {
             Icon = "rbxassetid://90047369440873",
             Accel = 0.25
         },
+        ["Orange Unicycle"] = {
+            FakePrice = 1499,
+            Description = "One wheeled orange beauty built for balance and undeniable style.",
+            Unpurchasable = true,
+            Price = -1,
+            Bobbing = 2,
+            BackwardsEfficiency = 1,
+            StopEfficiency = 3.5,
+            BobbingSpeed = 0.4,
+            TurningSpeed = 0.7,
+            MaxSpeed = 180,
+            ProductId = 3301481855,
+            LimitedAmount = 20000,
+            Level = 1,
+            Icon = "rbxassetid://119550165521495",
+            Accel = 0.3
+        },
+        ["The Essex Boat"] = {
+            StopEfficiency = 2,
+            Description = "Crafted for thrilling adventures, this Jurassic World-themed boat is built for exploring untamed waters with a prehistoric edge.",
+            Price = -1,
+            Bobbing = 3,
+            Unpurchasable = true,
+            BobbingSpeed = 1,
+            HideInShop = true,
+            MaxSpeed = 250,
+            BackwardsEfficiency = 1,
+            TurningSpeed = 0.54,
+            Level = 1,
+            Icon = "rbxassetid://98242807552885",
+            Accel = 0.6
+        },
         ["Loot Rider"] = {
             StopEfficiency = 1.8,
             Description = "The Loot Rider!",
@@ -607,6 +647,20 @@ return {
             Icon = "rbxassetid://132722267987667",
             ObtainText = "Obtain on Christmas Bundle"
         },
+        ["Nessie Nomad"] = {
+            StopEfficiency = 3,
+            Description = "Ride this legendary beast wherever the currents calls!",
+            Price = -1,
+            Bobbing = 2,
+            BobbingSpeed = 0.4,
+            Unpurchasable = true,
+            MaxSpeed = 220,
+            BackwardsEfficiency = 1.5,
+            TurningSpeed = 0.8,
+            Level = 1,
+            Icon = "rbxassetid://79582771766209",
+            Accel = 0.6
+        },
         ["Easter Basket"] = {
             StopEfficiency = 2,
             Description = "Ride through Easter in style!",
@@ -623,30 +677,30 @@ return {
         },
         ["Red Marlins Ship"] = {
             StopEfficiency = 2,
-            Description = "Red sails, no survivors. Red Marlins faction max rank vessel",
+            Description = "Red sails, no survivors. [Red Marlins faction max rank vessel]",
             Price = -1,
             Bobbing = 6,
             Unpurchasable = true,
             BobbingSpeed = 3,
             HideInShop = true,
-            MaxSpeed = 80,
+            MaxSpeed = 210,
             BackwardsEfficiency = 1,
-            TurningSpeed = 0.3,
+            TurningSpeed = 0.2,
             Level = 1,
             Icon = "rbxassetid://91179825470447",
-            Accel = 0.2
+            Accel = 0.15
         },
         ["Marauder Ship"] = {
             StopEfficiency = 2,
-            Description = "Fast, fierce, unstoppable. Midas' Mates faction max rank vessel",
+            Description = "Fast, fierce, unstoppable. [Midas' Mates faction max rank vessel]",
             Price = -1,
             Bobbing = 6,
             Unpurchasable = true,
             BobbingSpeed = 3,
             HideInShop = true,
-            MaxSpeed = 80,
+            MaxSpeed = 250,
             BackwardsEfficiency = 1,
-            TurningSpeed = 0.3,
+            TurningSpeed = 0.25,
             Level = 1,
             Icon = "rbxassetid://85241378337056",
             Accel = 0.2
@@ -666,18 +720,18 @@ return {
         },
         ["Ghosts Pirate Ship"] = {
             StopEfficiency = 2,
-            Description = "Silent, deadly, cursed forever. Ghosts faction max rank vessel",
+            Description = "Silent, deadly, cursed forever. [Ghosts faction max rank vessel]",
             Price = -1,
             Bobbing = 6,
             Unpurchasable = true,
             BobbingSpeed = 3,
             HideInShop = true,
-            MaxSpeed = 80,
+            MaxSpeed = 320,
             BackwardsEfficiency = 1,
             TurningSpeed = 0.3,
             Level = 1,
             Icon = "rbxassetid://84575570131047",
-            Accel = 0.2
+            Accel = 0.25
         },
         Cthulunaut = {
             SubmarineTier = "Deep",
@@ -685,6 +739,7 @@ return {
             Description = "The Cthulunaut is a deep-sea submarine, glowing eerie green, its hull carved with eldritch patterns, gliding through the abyss like a cosmic nightmare..",
             Price = -1,
             Bobbing = 2,
+            Untradeable = true,
             IsSubmarine = true,
             BobbingSpeed = 0.4,
             Unpurchasable = true,
@@ -738,7 +793,7 @@ return {
         },
         ["Bloop Boat"] = {
             StopEfficiency = 1.5,
-            Description = "Todo",
+            Description = "???",
             Price = -1,
             Bobbing = 2,
             BobbingSpeed = 1,
@@ -747,7 +802,7 @@ return {
             BackwardsEfficiency = 1.1,
             TurningSpeed = 0.6,
             Level = 1,
-            Icon = "rbxassetid://95325449128822",
+            Icon = "rbxassetid://111447839171751",
             Accel = 0.25
         },
         ["Celestial Cruiser"] = {
@@ -892,6 +947,7 @@ return {
             Description = "Lights, camera, action!",
             Price = -1,
             Bobbing = 2,
+            Untradeable = true,
             BobbingSpeed = 0.4,
             Unpurchasable = true,
             MaxSpeed = 200,
@@ -906,6 +962,7 @@ return {
             Description = "\xF0\x9F\xA5\x9D",
             Price = -1,
             Bobbing = 2,
+            Untradeable = true,
             BobbingSpeed = 1,
             Unpurchasable = true,
             MaxSpeed = 250,
@@ -947,6 +1004,7 @@ return {
             Description = "\xF0\x9F\xAA\x91 - only for da cool people.",
             Price = -1,
             Bobbing = 2,
+            Untradeable = true,
             BobbingSpeed = 1,
             Unpurchasable = true,
             MaxSpeed = 199,
@@ -961,6 +1019,7 @@ return {
             Description = "",
             Price = 5000000,
             Bobbing = 2.85,
+            Untradeable = true,
             Worlds = {
                 "Sea 2"
             },
@@ -1017,19 +1076,21 @@ return {
             Icon = "rbxassetid://139332412278271",
             Accel = 0.25
         },
-        ["Nessie Nomad"] = {
-            StopEfficiency = 3,
-            Description = "Ride this legendary beast wherever the currents calls!",
-            Price = -1,
+        ["Aquarium Boat"] = {
+            StopEfficiency = 1.5,
+            Description = "I have an aquarium!",
+            Price = 20000,
             Bobbing = 2,
-            BobbingSpeed = 0.4,
+            Untradeable = true,
             Unpurchasable = true,
-            MaxSpeed = 220,
-            BackwardsEfficiency = 1.5,
-            TurningSpeed = 0.8,
+            BobbingSpeed = 1,
+            HideInShop = true,
+            MaxSpeed = 150,
+            BackwardsEfficiency = 1,
+            TurningSpeed = 0.54,
             Level = 1,
-            Icon = "rbxassetid://79582771766209",
-            Accel = 0.6
+            Icon = "rbxassetid://93687303900702",
+            Accel = 0.3
         },
         ["Desolate Dragon"] = {
             FakePrice = 4999,
@@ -1053,6 +1114,7 @@ return {
             Description = "A Submarine!",
             Price = -1,
             Bobbing = 2,
+            Untradeable = true,
             IsSubmarine = true,
             BobbingSpeed = 0.4,
             Unpurchasable = true,
@@ -1064,24 +1126,25 @@ return {
             Accel = 0.3
         },
         ["Huge Utility Boat"] = {
-            UtilityTier = 4,
-            StopEfficiency = 2,
             Description = "A massive vessel built for pure strength, it handles major hauling tasks.",
-            Unpurchasable = false,
             Price = 1500000,
             Bobbing = 2.85,
-            AlternateSpawn = 30,
+            IsUtility = true,
+            Level = 1,
+            Icon = "rbxassetid://99089060153627",
+            Accel = 0.35,
+            StopEfficiency = 2,
             BackwardsEfficiency = 1.1,
+            AlternateSpawn = 30,
             Worlds = {
                 "Sea 2"
             },
-            BobbingSpeed = 2,
             MaxSpeed = 190,
-            IsUtility = true,
+            Untradeable = true,
+            Unpurchasable = false,
             TurningSpeed = 0.8,
-            Level = 1,
-            Icon = "rbxassetid://99089060153627",
-            Accel = 0.35
+            BobbingSpeed = 2,
+            UtilityTier = 4
         },
         ["King\xE2\x80\x99s Throne"] = {
             StopEfficiency = 1.5,
@@ -1206,6 +1269,7 @@ return {
             Description = "\xF0\x9F\x94\xB4",
             Price = -1,
             Bobbing = 2,
+            Untradeable = true,
             BobbingSpeed = 1,
             Unpurchasable = true,
             MaxSpeed = 500,
