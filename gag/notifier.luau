@@ -1,8 +1,34 @@
 --[[
 
-                                                    GAG Notifier by mspaint
-                this code was not meant to be released for public, its open source bcs we wanted it as a loadstring 🤯
+	Grow a garden stock notifier made by the mspaint team
 
+	MIT License & Non-Commercial Clause
+	
+	Copyright (c) 2025 the mspaint team (upio, mstudio & blz)
+	
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+	
+	The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.
+	
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.
+
+	ADDITIONAL TERMS: This software may not be used, in whole or in part, for any commercial purpose without explicit permission from the author.
+
+	Usage:
+
+	```lua
     getgenv().WEBHOOK_URL = "https://discord.com/api/webhooks/...."
     getgenv().EDIT_MESSAGES = true [ set this to false if your executor doesn't support PATCH requests ]
     getgenv().WATERMARK = "mspaint" [ embed title watermark ]
@@ -11,6 +37,8 @@
     getgenv().SPECIAL_PING_ROLES = { ["<@&ROLE_ID>"] = { "seed/fruit/gear/weather/event", ... } }
 
     getgenv().EMOJIS = { ["seed/fruit/gear/weather/event"] = "emoji" }
+	loadstring(...)()
+	```
 --]]
 
 -- Verify Game ID and settings --
