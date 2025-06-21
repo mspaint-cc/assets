@@ -28,7 +28,7 @@
 
 	Usage:
 
-	```lua
+	
     getgenv().WEBHOOK_URL = "https://discord.com/api/webhooks/...."
     getgenv().EDIT_MESSAGES = true [ set this to false if your executor doesn't support PATCH requests ]
     getgenv().WATERMARK = "mspaint" [ embed title watermark ]
@@ -38,7 +38,7 @@
 
     getgenv().EMOJIS = { ["seed/fruit/gear/weather/event"] = "emoji" }
 	loadstring(...)()
-	```
+	
 --]]
 
 -- Verify Game ID and settings --
