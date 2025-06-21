@@ -2,6 +2,8 @@
 
 	Grow a garden stock notifier made by the mspaint team
 
+	------------------------------------------------------------------------------------------------------------
+
 	MIT License & Non-Commercial Clause
 	
 	Copyright (c) 2025 the mspaint team (upio, mstudio & blz)
@@ -25,6 +27,8 @@
 	SOFTWARE.
 
 	ADDITIONAL TERMS: This software may not be used, in whole or in part, for any commercial purpose without explicit permission from the author.
+
+	------------------------------------------------------------------------------------------------------------
 
 	Usage:
 
