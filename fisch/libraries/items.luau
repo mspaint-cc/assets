@@ -173,12 +173,16 @@ return {
             Rarity = "Exotic",
             Price = math.huge
         },
+        ["All Season Potion"] = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
         ["Hourglass Lantern"] = {
             Price = math.huge,
             Unpurchasable = true,
             Rarity = "Exotic"
         },
-        ["All Season Potion"] = {
+        ["Luck Potion"] = {
             Rarity = "Exotic",
             Price = math.huge
         },
@@ -187,7 +191,7 @@ return {
             Rarity = "Exotic",
             NonPersistent = true
         },
-        ["Luck Potion"] = {
+        ["Metal Panels"] = {
             Rarity = "Exotic",
             Price = math.huge
         },
@@ -200,10 +204,6 @@ return {
             Rarity = "Exotic",
             SellValue = 700
         },
-        ["Metal Panels"] = {
-            Rarity = "Exotic",
-            Price = math.huge
-        },
         ["Consumable XP"] = {
             Rarity = "Exotic",
             Price = math.huge
@@ -212,18 +212,22 @@ return {
             Rarity = "Exotic",
             Price = math.huge
         },
+        Amulet = {
+            Rarity = "Exotic",
+            Price = math.huge
+        },
         ["Heart Of Zeus"] = {
             Price = math.huge,
             purchasable = false,
             Rarity = "Mythical"
         },
-        Amulet = {
-            Rarity = "Exotic",
-            Price = math.huge
-        },
         ["Mermaid\xE2\x80\x99s Favor"] = {
             Rarity = "Exotic",
             Price = math.huge
+        },
+        ["Sea 1 Conch"] = {
+            Rarity = "Exotic",
+            Price = 200000
         },
         ["Bunker Key"] = {
             Price = math.huge,
