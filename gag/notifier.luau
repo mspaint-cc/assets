@@ -203,6 +203,13 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 -- local LuaEncode = loadstring(game:HttpGet("https://raw.githubusercontent.com/regginator/LuaEncode/refs/heads/master/src/LuaEncode.lua"))()
 
+-- Anti AFK
+local VirtualUser = game:GetService("VirtualUser")
+Players.LocalPlayer.Idled:Connect(function()
+    VirtualUser:CaptureController()
+    VirtualUser:ClickButton2(Vector2.new())
+end)
+
 -- Modules
 local EventShopData = require(ReplicatedStorage:WaitForChild("Data", math.huge):WaitForChild("HoneyEventShopData", math.huge))
 local WeatherEventData; do
