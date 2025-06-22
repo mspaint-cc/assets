@@ -479,7 +479,7 @@ local function GenerateBody(bodyType, ...)
         embed = {
             ["title"] = string.format("New Stock Notifier | %s", WATERMARK),
             ["description"] = string.format(
-                "**%s%s** restock has been detected in the **%s%s Shop**. Here is the latest stock:", 
+                "**%s%s** restock has been detected in the **%s%s Shop**.",
                 GetEmoji(itemName, true), itemName,
                 GetEmoji(shopName, true), shopName
             ),
