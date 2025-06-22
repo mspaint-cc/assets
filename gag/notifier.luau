@@ -76,6 +76,9 @@ local PING_ROLES            = if typeof(getgenv().PING_ROLES) == "table" then ge
     ["Legendary Egg"] = "<@&1384305483049078954>",
     ["Mythical Egg"] = "<@&1384306004602126459>",
     ["Bug Egg"] = "<@&1384305438883057684>",
+    ["Common Summer Egg"] = "<@&1386194385376641064>",
+    ["Rare Summer Egg"] = "<@&1386194582303412254>",
+    ["Paradise Egg"] = "<@&1386026034205425808>",
 
     -- Gears
     ["Watering Can"] = "<@&1384293547817172992>",
@@ -151,6 +154,9 @@ local EMOJIS                = if typeof(getgenv().EMOJIS) == "table" then getgen
     ["Legendary Egg"] = "<:LegendaryEgg:1385988952372023367>",
     ["Mythical Egg"] = "<:MythicalEgg:1385989837211045948>",
     ["Bug Egg"] = "<:BugEgg:1385988929265598564>",
+    ["Common Summer Egg"] = "<:commonsummeregg:1386195583894818967>",
+    ["Rare Summer Egg"] = "<:raresummeregg:1386193370648678441>",
+    ["Paradise Egg"] = "<:paradiseegg:1386193408867172443>",
 
     -- Gears
     ["Watering Can"] = "<:WateringCan:1385988977441636573>",
