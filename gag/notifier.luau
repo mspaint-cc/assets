@@ -182,6 +182,7 @@ local EMOJIS                = if typeof(getgenv().EMOJIS) == "table" then getgen
     ["Tomato"] = "<:Tomato:1385989850410258483>",
     ["Cauliflower"] = "<:Cauliflower:1385988932100948138>",
     ["Watermelon"] = "<:Watermelon:1385988981027635381>",
+    ["Rafflesia"] = "<:Rafflesia:1388522577193861190>",
     ["Green Apple"] = "<:GreenApple:1385989832513421373>",
     ["Avocado"] = "<:Avocado:1385988919878746143>",
     ["Banana"] = "<:Banana:1385988921586094081>",
@@ -191,6 +192,7 @@ local EMOJIS                = if typeof(getgenv().EMOJIS) == "table" then getgen
     ["Prickly Pear"] = "<:PricklyPear:1385989845566095360>",
     ["Loquat"] = "<:Loquat:1385994012611055728>",
     ["Feijoa"] = "<:Feijoa:1385988938497527848>",
+    ["Pitcher Plant"] = "<:Pitcher:1388523333141926079>",
     ["Sugar Apple"] = "<:SugarApple:1385989848774475877>",
 
     -- Weather 
