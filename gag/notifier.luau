@@ -101,6 +101,10 @@ local PING_ROLES            = if typeof(getgenv().PING_ROLES) == "table" then ge
     ["Friendship Pot"] = "<@&1383726063007436850>",
 
     -- Seeds
+    ["Carrot"] = "<@&1385999010904539186>",
+    ["Strawberry"] = "<@&1385999064440635433>",
+    ["Blueberry"] = "<@&1385999121340563476>",
+    ["Tomato"] = "<@&1385999181801328750>",
     ["Cauliflower"] = "<@&1385996531337007216>",
     ["Watermelon"] = "<@&1383722539670569060>",
     ["Green Apple"] = "<@&1385996715693178900>",
@@ -199,8 +203,20 @@ local EMOJIS                = if typeof(getgenv().EMOJIS) == "table" then getgen
     ["ChocolateRain"] = ":chocolate_bar:",
     ["Blackhole"] = ":black_circle:",
     ["Volcano"] = ":volcano:",
-    ["Night"] = ":night_with_stars:"
+    ["Night"] = ":night_with_stars:",
+    ["BloodMoonEvent"] = ":drop_of_blood:",
+    ["MeteorShower"] = "<@&1384304097561153549>",
+    ["MeteorStrike"] = "<@&1386015586965782639>",
+    ["JandelStorm"] = "<@&1384304262518935672>",
+    ["SheckleRain"] = "<@&1384304332857409566>",
+    ["Tornado"] = "<@&1386587805882253422>",
+    ["Heatwave"] = "<@&1386587930579173436>",
+    ["Windy"] = "<@&1386588116764065875>",
 };
+
+-- If hide pings is enabled, it uses the discord message glitch to hide the pings.
+local HIDE_PINGS            = if typeof(getgenv().HIDE_PINGS) == "boolean" then getgenv().HIDE_PINGS else true;
+local PING_PREFIX           = if HIDE_PINGS == true then `{string.rep(`||{string.char(226, 128, 139)}||`, 197)}{string.rep(" _", 6)} ` else "-# "
 
 -- Services
 local HttpService = game:GetService("HttpService")
@@ -290,7 +306,7 @@ local function GetPingRoles(items, ignoreSpecialRoles)
         pingRoles = PING_ROLES[itemName] .. " " .. pingRoles
     end
 
-    return (if ignoreSpecialRoles == true then "" else (GetSpecialPingRole(items) .. " ")) .. pingRoles
+    return PING_PREFIX .. (if ignoreSpecialRoles == true then "" else (GetSpecialPingRole(items) .. " ")) .. pingRoles
 end
 
 -- Formats
