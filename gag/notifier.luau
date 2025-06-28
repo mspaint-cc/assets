@@ -136,23 +136,13 @@ local PING_ROLES            = if typeof(getgenv().PING_ROLES) == "table" then ge
 };
 local SPECIAL_PING_ROLES    = if typeof(getgenv().SPECIAL_PING_ROLES) == "table" then getgenv().SPECIAL_PING_ROLES else {
     ["<@&1386009108943077540>"] = { -- Summer Harvest Fruit role
-        "Avocado",
-        "Feijoa",
-        "Cauliflower",
-        "Loquat",
-        "Green Apple",
-        "Moon Melon",
-        "Bell Pepper",
-        "Kiwi",
-        "Parasol Flower",
-        "Elephant Ears",
-        "Prickly Pear",
-
-        -- Seed Packs
-        "Wild Carrot",
-        "Pear",
-        "Cantaloupe",
-        "Rosy Delight",
+        "Carrot", "Strawberry",
+        "Blueberry", "Wild Carrot",
+        "Pear", "Tomato", "Cauliflower",
+        "Cantaloupe", "Watermelon", "Green Apple", "Avocado", "Banana",
+        "Pineapple", "Kiwi", "Bell Pepper", "Prickly Pear", "Parasol Flower",
+        "Rosy Delight", "Loquat", "Feijoa",
+        "Sugar Apple", "Elephant Ears"
     }
 };
 local EMOJIS                = if typeof(getgenv().EMOJIS) == "table" then getgenv().EMOJIS else {
@@ -230,7 +220,7 @@ local EventHasShop = false
 local EventShopData = {}
 
 local WeatherEventData; do
-    for _, conn in getconnections(game.ReplicatedStorage.GameEvents.SpecialEventStarted.OnClientEvent) do
+    for _, conn in getconnections(ReplicatedStorage.GameEvents.SpecialEventStarted.OnClientEvent) do
         if not conn.Function or getfenv(conn.Function)["script"].Name ~= "Framework" then continue end
 
         -- top ten lines of code
