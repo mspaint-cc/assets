@@ -204,14 +204,7 @@ local EMOJIS                = if typeof(getgenv().EMOJIS) == "table" then getgen
     ["Blackhole"] = ":black_circle:",
     ["Volcano"] = ":volcano:",
     ["Night"] = ":night_with_stars:",
-    ["BloodMoonEvent"] = ":drop_of_blood:",
-    ["MeteorShower"] = "<@&1384304097561153549>",
-    ["MeteorStrike"] = "<@&1386015586965782639>",
-    ["JandelStorm"] = "<@&1384304262518935672>",
-    ["SheckleRain"] = "<@&1384304332857409566>",
-    ["Tornado"] = "<@&1386587805882253422>",
-    ["Heatwave"] = "<@&1386587930579173436>",
-    ["Windy"] = "<@&1386588116764065875>",
+    ["BloodMoonEvent"] = ":drop_of_blood:"
 };
 
 -- If hide pings is enabled, it uses the discord message glitch to hide the pings.
