@@ -54,6 +54,10 @@ StarterGui:SetCore("SendNotification", {
     Duration = 5
 })
 
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
+
 if game.GameId ~= 7436755782 then 
     return StarterGui:SetCore("SendNotification", {
         Title = "mspaint",
@@ -228,10 +232,10 @@ end)
 
 -- Modules
 local EventHasShop = true
-local EventShopData = require(ReplicatedStorage.Data:WaitForChild("EventShopData", math.huge));
+local EventShopData = require(ReplicatedStorage:WaitForChild("Data"):WaitForChild("EventShopData", math.huge));
 
 local WeatherEventData; do
-    for _, conn in getconnections(ReplicatedStorage.GameEvents.SpecialEventStarted.OnClientEvent) do
+    for _, conn in getconnections(ReplicatedStorage:WaitForChild("GameEvents"):WaitForChild("SpecialEventStarted").OnClientEvent) do
         if not conn.Function or getfenv(conn.Function)["script"].Name ~= "Framework" then continue end
 
         -- top ten lines of code
