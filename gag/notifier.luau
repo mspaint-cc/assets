@@ -48,6 +48,12 @@
 -- Verify Game ID and settings --
 local StarterGui = game:GetService("StarterGui")
 
+StarterGui:SetCore("SendNotification", {
+    Title = "mspaint",
+    Text = "Loading...",
+    Duration = 5
+})
+
 if game.GameId ~= 7436755782 then 
     return StarterGui:SetCore("SendNotification", {
         Title = "mspaint",
