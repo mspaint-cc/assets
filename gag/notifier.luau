@@ -226,7 +226,9 @@ Players.LocalPlayer.Idled:Connect(function()
 end)
 
 -- Modules
-local EventShopData = require(ReplicatedStorage:WaitForChild("Data", math.huge):WaitForChild("HoneyEventShopData", math.huge))
+local EventHasShop = false
+local EventShopData = {}
+
 local WeatherEventData; do
     for _, conn in getconnections(game.ReplicatedStorage.GameEvents.SpecialEventStarted.OnClientEvent) do
         if not conn.Function or getfenv(conn.Function)["script"].Name ~= "Framework" then continue end
@@ -541,7 +543,7 @@ ReplicatedStorage.GameEvents.DataStream.OnClientEvent:Connect(function(type, id,
         if Path:sub(-7) ~= "/Stocks" then continue end
 
         -- Event Stock
-        if Path == "ROOT/EventShopStock/Stocks" then
+        if EventHasShop == true and Path == "ROOT/EventShopStock/Stocks" then
             for Name, ItemData in pairs(RawStockData) do
                 local ItemInfo = EventShopData[Name]
                 if not ItemInfo then continue end
@@ -602,7 +604,7 @@ ReplicatedStorage.GameEvents.DataStream.OnClientEvent:Connect(function(type, id,
         SendWebhook(GenerateBody("Restock", Stock.Normal, "Normal"))
     end
 
-    if HasEventStock == true then
+    if EventHasShop == true and HasEventStock == true then
         SendWebhook(GenerateBody("Restock", Stock.Event, "Event"))
     end
 end)
