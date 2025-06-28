@@ -264,10 +264,14 @@ local function GetSpecialPingRole(items)
     if typeof(items) ~= "table" then return {} end
 
     local specialRoles = ""
+    local roleAdded = {}
+
     for _, itemName in pairs(items) do
         for role, requiredItems in pairs(SPECIAL_PING_ROLES) do
+            if table.find(roleAdded, role) then break end
             if not table.find(requiredItems, itemName) then continue end
 
+            table.insert(roleAdded, role)
             specialRoles = role .. " " .. specialRoles
             break
         end
