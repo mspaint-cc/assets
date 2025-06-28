@@ -178,6 +178,17 @@ local EMOJIS                = if typeof(getgenv().EMOJIS) == "table" then getgen
     ["Favorite Tool"] = "<:FavoriteTool:1385989831288557620>",
     ["Harvest Tool"] = "<:HarvestTool:1385988948840546425>",
     ["Friendship Pot"] = "<:FriendshipPot:1385988943148875923>",
+    ["Magnifying Glass"] = "<:MagnifyingGlass:1388571975214960681>",
+
+    -- Event
+    ["Summer Seed Pack"] = "<:SummerSeedPack:1388572601202245683>",
+    ["Delphinium"] = "<:Delphinium:1388573123862859776>",
+    ["Lily of the Valley"] = "<:LilyOfTheValley:1388573443250716722>",
+    ["Traveler\'s Fruit"] = "<:TravelersFruit:1388574799768588500>",
+    ["Mutation Spray Burnt"] = "<:MutationSprayBurnt:1388575018132312204>",
+    ["Oasis Crate"] = "<:SummerCrate2:1388575019809902733>",
+    ["Oasis Egg"] = "<:OasisEgg:1388575013484888174>",
+    ["Hamster"] = "<:Hamster:1388575016618299462>",
 
     -- Seeds
     ["Carrot"] = "<:Carrot:1385988930880540763>",
