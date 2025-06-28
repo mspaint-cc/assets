@@ -232,8 +232,8 @@ Players.LocalPlayer.Idled:Connect(function()
 end)
 
 -- Modules
-local EventHasShop = false
-local EventShopData = {}
+local EventHasShop = true
+local EventShopData = require(ReplicatedStorage.Data:WaitForChild("EventShopData", math.huge));
 
 local WeatherEventData; do
     for _, conn in getconnections(ReplicatedStorage.GameEvents.SpecialEventStarted.OnClientEvent) do
