@@ -316,7 +316,8 @@ local function GetPingRoles(items, ignoreSpecialRoles)
         pingRoles = PING_ROLES[itemName] .. " " .. pingRoles
     end
 
-    return PING_PREFIX .. (if ignoreSpecialRoles == true then "" else (GetSpecialPingRole(items) .. " ")) .. pingRoles
+    local FinalMessage = (if ignoreSpecialRoles == true then "" else (GetSpecialPingRole(items) .. " ")) .. pingRoles
+    return (FinalMessage ~= "" and PING_PREFIX .. FinalMessage or "")
 end
 
 -- Formats
