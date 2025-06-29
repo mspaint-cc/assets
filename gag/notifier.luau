@@ -225,7 +225,7 @@ local EMOJIS                = if typeof(getgenv().EMOJIS) == "table" then getgen
 };
 
 -- If hide pings is enabled, it uses the discord message glitch to hide the pings.
-local HIDE_PINGS            = if typeof(getgenv().HIDE_PINGS) == "boolean" then getgenv().HIDE_PINGS else true;
+local HIDE_PINGS            = if typeof(getgenv().HIDE_PINGS) == "boolean" then getgenv().HIDE_PINGS else false;
 local PING_PREFIX           = if HIDE_PINGS == true then `{string.rep(`||{string.char(226, 128, 139)}||`, 197)}{string.rep(" _", 6)} ` else "-# "
 
 -- Services
