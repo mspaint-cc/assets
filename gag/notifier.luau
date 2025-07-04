@@ -306,6 +306,10 @@ local function GetSpecialPingRole(items)
     return specialRoles
 end
 
+local function Strip(str)
+    return str:match("^%s*(.-)%s*$")
+end
+
 local function GetPingRoles(items, ignoreSpecialRoles)
     if typeof(items) ~= "table" then return {} end
 
@@ -317,7 +321,7 @@ local function GetPingRoles(items, ignoreSpecialRoles)
     end
 
     local FinalMessage = (if ignoreSpecialRoles == true then "" else (GetSpecialPingRole(items) .. " ")) .. pingRoles
-    return (FinalMessage ~= "" and PING_PREFIX .. FinalMessage or "")
+    return (Strip(FinalMessage) ~= "" and PING_PREFIX .. FinalMessage or "")
 end
 
 -- Formats
