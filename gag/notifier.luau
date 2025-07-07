@@ -385,6 +385,13 @@ end
 local function SendWebhook(body)
     if body == "Invalid BodyType" then return end
 
+    print("Sending webhook...")
+    StarterGui:SetCore("SendNotification", {
+        Title = "mspaint",
+        Text = "Sending webhook...",
+        Duration = 5
+    })
+
     -- Send Embed
     local Response = SendWebhookReq(body)
     local MessageID = HttpService:JSONDecode(Response.Body)["id"]
