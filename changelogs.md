@@ -1,6 +1,6 @@
 ```diff
-[Grow A Garden]
-+ Added "Maximum Fruit to Submit" to Auto Summer Harvest
-+ Added Event Shop data
-+ Changed the minimum value for "Minimum items" in Auto Sell
+[Pressure]
++ Fixed Door ESP showing when door esp not toggled
++ Fixed Document ESP showing when not toggled and showing on currency
++ Removed Door Reach due to it being detcted
 ```
