@@ -156,6 +156,7 @@ local PING_ROLES            = if typeof(getgenv().PING_ROLES) == "table" then ge
     ["Tornado"] = "<@&1386587805882253422>",
     ["Heatwave"] = "<@&1386587930579173436>",
     ["Windy"] = "<@&1386588116764065875>",
+    ["AuroraBorealis"] = "<@&1393275403027611738>"
 };
 local SPECIAL_PING_ROLES    = if typeof(getgenv().SPECIAL_PING_ROLES) == "table" then getgenv().SPECIAL_PING_ROLES else {
     ["<@&1386009108943077540>"] = { -- Summer Harvest Fruit role
