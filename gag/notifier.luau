@@ -1,38 +1,38 @@
 --[[
 
-	Grow a garden stock notifier made by the mspaint team
+    Grow a garden stock notifier made by the mspaint team
 
-	------------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------------
 
-	MIT License & Non-Commercial Clause
-	
-	Copyright (c) 2025 the mspaint team (upio, mstudio & blz)
-	
-	Permission is hereby granted, free of charge, to any person obtaining a copy
-	of this software and associated documentation files (the "Software"), to deal
-	in the Software without restriction, including without limitation the rights
-	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-	copies of the Software, and to permit persons to whom the Software is
-	furnished to do so, subject to the following conditions:
-	
-	The above copyright notice and this permission notice shall be included in all
-	copies or substantial portions of the Software.
-	
-	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-	SOFTWARE.
+    MIT License & Non-Commercial Clause
+    
+    Copyright (c) 2025 the mspaint team (upio, mstudio & blz)
+    
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+    
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
 
-	ADDITIONAL TERMS: This software may not be used, in whole or in part, for any commercial purpose without explicit permission from the author.
+    ADDITIONAL TERMS: This software may not be used, in whole or in part, for any commercial purpose without explicit permission from the author.
 
-	------------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------------
 
-	Usage:
+    Usage:
 
-	
+    
     getgenv().WEBHOOK_URL = "https://discord.com/api/webhooks/...."
     getgenv().EDIT_MESSAGES = true [ set this to false if your executor doesn't support PATCH requests ]
     getgenv().WATERMARK = "mspaint" [ embed title watermark ]
@@ -41,8 +41,8 @@
     getgenv().SPECIAL_PING_ROLES = { ["<@&ROLE_ID>"] = { "seed/fruit/gear/weather/event", ... } }
 
     getgenv().EMOJIS = { ["seed/fruit/gear/weather/event"] = "emoji" }
-	loadstring(...)()
-	
+    loadstring(...)()
+    
 --]]
 
 -- Verify Game ID and settings --
@@ -123,19 +123,19 @@ local PING_ROLES            = if typeof(getgenv().PING_ROLES) == "table" then ge
     ["Sugar Apple"] = "<@&1384145477586522235>",
     ["Beanstalk"] = "<@&1383722058902409237>",
     ["Ember Lily"] = "<@&1383722753873412159>",
-	["Burning Bud"] = "<@&1393269298109349929>",
-	["Pepper"] = "<@&1383720620545671230>",
-	["Mushroom"] = "<@&1383722680011853854>",
-	["Dragon Fruit"] = "<@&1383720823344594964>",
-	["Mango"] = "<@&1383720430342246511>",
-	["Grape"] = "<@&1383720173130747945>",
-	["Pumpkin"] = "<@&1383722467704701008>",
-	["Apple"] = "<@&1384292912761929789>",
-	["Bamboo"] = "<@&1383722125726060564>",
-	["Coconut"] = "<@&1383722349819334747>",
-	["Cacao"] = "<@&1383722809162731600>",
-	["Cactus"] = "<@&1383722282379120640>",
-	["Daffodil"] = "<@&1384292591167868979>",
+    ["Burning Bud"] = "<@&1393269298109349929>",
+    ["Pepper"] = "<@&1383720620545671230>",
+    ["Mushroom"] = "<@&1383722680011853854>",
+    ["Dragon Fruit"] = "<@&1383720823344594964>",
+    ["Mango"] = "<@&1383720430342246511>",
+    ["Grape"] = "<@&1383720173130747945>",
+    ["Pumpkin"] = "<@&1383722467704701008>",
+    ["Apple"] = "<@&1384292912761929789>",
+    ["Bamboo"] = "<@&1383722125726060564>",
+    ["Coconut"] = "<@&1383722349819334747>",
+    ["Cacao"] = "<@&1383722809162731600>",
+    ["Cactus"] = "<@&1383722282379120640>",
+    ["Daffodil"] = "<@&1384292591167868979>",
 
     -- Weather
     ["Rain"] = "<@&1384303772695662652>",
@@ -226,19 +226,19 @@ local EMOJIS                = if typeof(getgenv().EMOJIS) == "table" then getgen
     ["Sugar Apple"] = "<:SugarApple:1385989848774475877>",
     ["Beanstalk"] = "<:Beanstalk:1393269383790596218>",
     ["Ember Lily"] = "<:EmberLily:1393269393911189515>",
-	["Burning Bud"] = "<:BurningBud:1393269386894114816>",
-	["Pepper"] = "<:Pepper:1393269405537927208>",
-	["Mushroom"] = "<:Mushroom:1393269400768872488>",
-	["Dragon Fruit"] = "<:Dragonfruit:1393269392661287103>",
-	["Mango"] = "<:Mango:1393269397954760704>",
-	["Grape"] = "<:Grape:1393269395400298526>",
-	["Pumpkin"] = "<:Pumpkin:1393269407089819778>",
-	["Apple"] = "<:Apple:1393269374844010506>",
-	["Bamboo"] = "<:Bamboo:1393269381386997901>",
-	["Coconut"] = "<:Coconut:1393269389964607609>",
-	["Cacao"] = "<:Cacao:1393270649019043881>",
-	["Cactus"] = "<:Cactus:1393269388483760189>",
-	["Daffodil"] = "<:Daffodil:1393269391109656707>",
+    ["Burning Bud"] = "<:BurningBud:1393269386894114816>",
+    ["Pepper"] = "<:Pepper:1393269405537927208>",
+    ["Mushroom"] = "<:Mushroom:1393269400768872488>",
+    ["Dragon Fruit"] = "<:Dragonfruit:1393269392661287103>",
+    ["Mango"] = "<:Mango:1393269397954760704>",
+    ["Grape"] = "<:Grape:1393269395400298526>",
+    ["Pumpkin"] = "<:Pumpkin:1393269407089819778>",
+    ["Apple"] = "<:Apple:1393269374844010506>",
+    ["Bamboo"] = "<:Bamboo:1393269381386997901>",
+    ["Coconut"] = "<:Coconut:1393269389964607609>",
+    ["Cacao"] = "<:Cacao:1393270649019043881>",
+    ["Cactus"] = "<:Cactus:1393269388483760189>",
+    ["Daffodil"] = "<:Daffodil:1393269391109656707>",
 
     -- Weather 
     ["Rain"] = ":cloud_rain:",
@@ -358,11 +358,11 @@ end
 local function FormatStockList(stock)
     if typeof(stock) ~= "table" then warn("Invalid stock provided", stock); return "<:reply:1335730071889117255> Invalid data provided, can't provide info..." end
 
-	local result = {}
+    local result = {}
     local totalItems = GetTableSize(stock)
     local currentIdx = 1;
 
-	for i, item in pairs(stock) do
+    for i, item in pairs(stock) do
         local connectEmoji = if currentIdx == totalItems then "<:reply:1335730071889117255>" else "<:connect:1335730096694362163>"
         table.insert(
             result, 
@@ -373,9 +373,9 @@ local function FormatStockList(stock)
         )
         
         currentIdx = currentIdx + 1
-	end
+    end
 
-	if #result == 0 then return "<:reply:1335730071889117255> There was no stock change detected." end
+    if #result == 0 then return "<:reply:1335730071889117255> There was no stock change detected." end
     return table.concat(result, "\n")
 end
 
@@ -391,8 +391,8 @@ local function FormatTimeRemaining(timeRemaining)
 end
 
 local function RemoveRichText(str)
-	str = str:gsub("<br%s*/>", "\n")
-	return str:gsub("<[^<>]->", "")
+    str = str:gsub("<br%s*/>", "\n")
+    return str:gsub("<[^<>]->", "")
 end
 
 local function ExtractItemAndShop(message) -- [ItemName] was restocked in the [ShopName] shop!
