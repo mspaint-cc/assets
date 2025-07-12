@@ -136,6 +136,7 @@ local PING_ROLES            = if typeof(getgenv().PING_ROLES) == "table" then ge
     ["Cacao"] = "<@&1383722809162731600>",
     ["Cactus"] = "<@&1383722282379120640>",
     ["Daffodil"] = "<@&1384292591167868979>",
+    ["Giant Pinecone"] = "<@&1393737936981196800>",
 
     -- Weather
     ["Rain"] = "<@&1384303772695662652>",
@@ -240,6 +241,7 @@ local EMOJIS                = if typeof(getgenv().EMOJIS) == "table" then getgen
     ["Cacao"] = "<:Cacao:1393270649019043881>",
     ["Cactus"] = "<:Cactus:1393269388483760189>",
     ["Daffodil"] = "<:Daffodil:1393269391109656707>",
+    ["Giant Pinecone"] = "<:GiantPinecone:1393737669212770344>",
 
     -- Weather 
     ["Rain"] = ":cloud_rain:",
