@@ -157,18 +157,10 @@ local PING_ROLES            = if typeof(getgenv().PING_ROLES) == "table" then ge
     ["Tornado"] = "<@&1386587805882253422>",
     ["Heatwave"] = "<@&1386587930579173436>",
     ["Windy"] = "<@&1386588116764065875>",
-    ["AuroraBorealis"] = "<@&1393275403027611738>"
+    ["AuroraBorealis"] = "<@&1393275403027611738>",
+    ["ZenAura"] = "<@1396133016887365743>"
 };
 local SPECIAL_PING_ROLES    = if typeof(getgenv().SPECIAL_PING_ROLES) == "table" then getgenv().SPECIAL_PING_ROLES else {
-    ["<@&1386009108943077540>"] = { -- Summer Harvest Fruit role
-        "Carrot", "Strawberry",
-        "Blueberry", "Wild Carrot",
-        "Pear", "Tomato", "Cauliflower",
-        "Cantaloupe", "Watermelon", "Green Apple", "Avocado", "Banana",
-        "Pineapple", "Kiwi", "Bell Pepper", "Prickly Pear", "Parasol Flower",
-        "Rosy Delight", "Loquat", "Feijoa",
-        "Sugar Apple", "Elephant Ears"
-    }
 };
 local EMOJIS                = if typeof(getgenv().EMOJIS) == "table" then getgenv().EMOJIS else {
     -- Eggs
@@ -254,7 +246,8 @@ local EMOJIS                = if typeof(getgenv().EMOJIS) == "table" then getgen
     ["Blackhole"] = ":black_circle:",
     ["Volcano"] = ":volcano:",
     ["Night"] = ":night_with_stars:",
-    ["BloodMoonEvent"] = ":drop_of_blood:"
+    ["BloodMoonEvent"] = ":drop_of_blood:",
+    ["ZenAura"] = ":yin_yang:"
 };
 
 -- If hide pings is enabled, it uses the discord message glitch to hide the pings.
@@ -276,7 +269,7 @@ end)
 
 -- Modules
 local EventHasShop = true
-local EventShopData = require(ReplicatedStorage:WaitForChild("Data"):WaitForChild("EventShopData", math.huge));
+local EventShopData = ReplicatedStorage.Data:WaitForChild("EventShopData", math.huge); EventShopData = require(EventShopData)
 
 local WeatherEventData; do
     for _, conn in getconnections(ReplicatedStorage:WaitForChild("GameEvents"):WaitForChild("SpecialEventStarted").OnClientEvent) do
@@ -445,14 +438,20 @@ local function SendWebhook(body)
         if newBody == "Invalid BodyType" then return end
 
         if EDIT_MESSAGES == true then
-            request({
-                Url = `{WEBHOOK_URL}/messages/{MessageID}?wait=true&with_components=true`,
-                Method = "PATCH",
-                Headers = {
-                    ["Content-Type"] = "application/json"
-                },
-                Body = newBody
-            })
+            local _success, err = pcall(function()
+                request({
+                    Url = `{WEBHOOK_URL}/messages/{MessageID}?wait=true&with_components=true`,
+                    Method = "PATCH",
+                    Headers = {
+                        ["Content-Type"] = "application/json"
+                    },
+                    Body = newBody
+                })
+            end)
+
+            if tostring(err):match("patch is not supported") then
+                pcall(SendWebhookReq, body)
+            end
         else
             SendWebhookReq(body)
         end
