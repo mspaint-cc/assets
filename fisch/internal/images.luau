@@ -141,7 +141,7 @@ local yea = 0
 while finishedCount < totalTasks do
 	task.wait(1)
     print(string.format("Progress: %d (%d) / %d - Skipped: %d (Ratelimited: %s)", finishedCount, #activeRequests, totalTasks, skippedCount, tostring(ratelimited)))
-    if #taskQueue > 0 then
+    if #taskQueue > 0 and finishedCount > totalTasks - 10 then
         yea = yea + 1
     end
     if yea >= 10 then break end
