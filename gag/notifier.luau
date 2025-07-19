@@ -452,7 +452,7 @@ local function SendWebhook(body)
             end)
 
             if tostring(err):match("patch is not supported") then
-                pcall(SendWebhookReq, body)
+                SendWebhookReq(body)
             end
         else
             SendWebhookReq(body)
