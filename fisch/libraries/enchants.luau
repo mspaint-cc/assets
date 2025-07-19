@@ -108,9 +108,6 @@ return {
             StatIncrease = 0,
             Description = "Occasionally freeze fish in place",
             Color = Color3.new(0.11372549086809, 0.32941177487373, 0.82745099067688),
-            Worlds = {
-                "Sea 2"
-            },
             Display = "Chronos",
             StrokeColor = Color3.new(0.04313725605607, 0.050980392843485, 0.13725490868092)
         },
@@ -177,9 +174,6 @@ return {
         ["Blood Reckoning"] = {
             StatIncrease = 0,
             Description = "Sacrifice health for a health-dependent chance to apply the Sanguine mutation",
-            Worlds = {
-                "Sea 2"
-            },
             Color = Color3.new(0.29019609093666, 0.031372550874949, 0.031372550874949),
             HealthCost = 30,
             Display = "Blood Reckoning",
@@ -196,9 +190,6 @@ return {
         Momentum = {
             StatIncrease = 0,
             Description = "Perfect Catches increase Lure, Resilience & Progress Speed incrementally",
-            Worlds = {
-                "Sea 2"
-            },
             Color = Color3.new(0.82745099067688, 0.70196080207825, 0.50196081399918),
             Display = "Momentum",
             ProgressSpeedBoost = 0,
@@ -208,9 +199,6 @@ return {
             StatIncrease = 8,
             Description = "Unleash pure chaos with every cast. Slashes fish with an 8% chance to awaken the Chaotic mutation",
             Color = Color3.new(0.078431375324726, 0.074509806931019, 0.086274512112141),
-            Worlds = {
-                "Sea 2"
-            },
             Display = "Chaotic",
             StrokeColor = Color3.new(1, 1, 1)
         },
@@ -218,9 +206,6 @@ return {
             StatIncrease = 0,
             Description = "Raised chances for utility catches",
             Color = Color3.new(1, 0.74901962280273, 0.40000000596046),
-            Worlds = {
-                "Sea 2"
-            },
             Display = "Scavenger",
             StrokeColor = Color3.new(0.21960784494877, 0.15294118225574, 0.050980392843485)
         },
@@ -235,9 +220,6 @@ return {
         },
         Flashline = {
             StatIncrease = 0,
-            Worlds = {
-                "Sea 2"
-            },
             Description = "A small chance of majorly boosted Progress Speed",
             AltProgressSpeedBoost = 10,
             Color = Color3.new(1, 1, 1),
