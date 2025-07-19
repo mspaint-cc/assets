@@ -268,8 +268,10 @@ Players.LocalPlayer.Idled:Connect(function()
 end)
 
 -- Modules
+print("waiting for shop data man")
+
 local EventHasShop = true
-local EventShopData = ReplicatedStorage.Data:WaitForChild("EventShopData", math.huge); EventShopData = require(EventShopData)
+local EventShopData = ReplicatedStorage:WaitForChild("Data", math.huge):WaitForChild("EventShopData", math.huge); EventShopData = require(EventShopData)
 
 local WeatherEventData; do
     for _, conn in getconnections(ReplicatedStorage:WaitForChild("GameEvents"):WaitForChild("SpecialEventStarted").OnClientEvent) do
