@@ -158,7 +158,7 @@ local PING_ROLES            = if typeof(getgenv().PING_ROLES) == "table" then ge
     ["Heatwave"] = "<@&1386587930579173436>",
     ["Windy"] = "<@&1386588116764065875>",
     ["AuroraBorealis"] = "<@&1393275403027611738>",
-    ["ZenAura"] = "<@1396133016887365743>"
+    ["ZenAura"] = "<@&1396133016887365743>"
 };
 local SPECIAL_PING_ROLES    = if typeof(getgenv().SPECIAL_PING_ROLES) == "table" then getgenv().SPECIAL_PING_ROLES else {
 };
