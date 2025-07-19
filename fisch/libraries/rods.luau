@@ -165,7 +165,7 @@ return {
         DEV = true,
         Price = math.huge,
         Unregistered = true,
-        Strength = 1e+16,
+        Strength = 1e+15,
         BobberBottom = Color3.new(0.15294118225574, 0.15294118225574, 0.15294118225574),
         Worlds = {
             "Sea 1",
@@ -178,6 +178,28 @@ return {
         Color = Color3.new(0.93333333730698, 0, 0.015686275437474),
         Icon = "rbxassetid://88485869703847",
         Resilience = -500
+    },
+    Cinderstring = {
+        LineDistance = 200,
+        Description = "We feel the pain of a lifetime lost in a thousand days...",
+        Price = math.huge,
+        Passive = "Cinderstring",
+        Luck = 175,
+        Icon = "rbxassetid://79281785079831",
+        Unpurchasable = true,
+        Strength = math.huge,
+        Unregistered = true,
+        Worlds = {
+            "Sea 1",
+            "Sea 2"
+        },
+        BobberBottom = Color3.new(1, 0.61568629741669, 0),
+        BobberTop = Color3.new(0, 0, 0),
+        Control = 0,
+        Color = Color3.new(1, 0.66666668653488, 0),
+        ProgressEfficiency = 0.1,
+        LureSpeed = 5,
+        Resilience = 70
     },
     ["Adventurer's Rod"] = {
         LineDistance = 19,
@@ -201,25 +223,19 @@ return {
     },
     ["Rod Of The Depths"] = {
         LineDistance = 100,
-        From = "The Depths",
         Description = "\t\t\tThis Rod was crafted by the Legendary King of The Depths...\n\t\t\tLegends say, every once in a while the Spirit of the King visits you to hand you a gift from the deep waters!\n\t\t",
-        Color = Color3.new(1, 0.258823543787, 0.20392157137394),
+        From = "The Depths",
         Price = 750000,
-        BobberBottom = Color3.new(0.41568627953529, 0.10196078568697, 0.078431375324726),
-        Strength = 30000,
         BobberTop = Color3.new(1, 0.3098039329052, 0.258823543787),
+        Strength = 30000,
+        BobberBottom = Color3.new(0.41568627953529, 0.10196078568697, 0.078431375324726),
         Worlds = {
             "Sea 1"
         },
         Passive = "ShadowEntity",
         Luck = 130,
-        Requiriments = {
-            GatesOpened = {
-                "TheDepthsGate",
-                "TheDepthsMazeGate"
-            }
-        },
         Control = 0.15,
+        Color = Color3.new(1, 0.258823543787, 0.20392157137394),
         LureSpeed = 35,
         Icon = "rbxassetid://132064424778469",
         Resilience = 10
@@ -340,6 +356,26 @@ return {
         Icon = "rbxassetid://93425956419131",
         Resilience = 20
     },
+    ["Smurf Rod"] = {
+        LineDistance = 15,
+        Unpurchasable = true,
+        Description = "Smurf-themed rod with a smiling head and mushroom details. Cute and magical!",
+        Price = math.huge,
+        BobberTop = Color3.new(0, 0.65098041296005, 1),
+        Strength = 200,
+        BobberBottom = Color3.new(1, 1, 1),
+        Worlds = {
+            "Sea 1",
+            "Sea 2"
+        },
+        Passive = "Smurf",
+        Luck = 80,
+        Control = 0.1,
+        Color = Color3.new(1, 0, 0),
+        LureSpeed = 85,
+        Icon = "rbxassetid://120394362094604",
+        Resilience = 10
+    },
     ["Fabulous Rod"] = {
         LineDistance = 100,
         Unpurchasable = true,
@@ -420,24 +456,25 @@ return {
         Resilience = 5
     },
     ["Test Rod"] = {
-        LineDistance = 15,
-        Unpurchasable = true,
+        LineDistance = 150,
         Description = "Test Rod Description",
-        DEV = true,
         Price = math.huge,
-        Unregistered = true,
-        Strength = 100,
-        BobberBottom = Color3.new(1, 0.94901961088181, 0.3647058904171),
+        Passive = "TestRod",
+        Luck = 150,
+        Icon = "rbxassetid://134962566944370",
+        Unpurchasable = true,
+        Strength = 150000,
+        DEV = true,
         Worlds = {
             "Sea 1"
         },
-        LureSpeed = 90,
-        Luck = 15,
-        Control = 0,
+        Unregistered = true,
+        BobberBottom = Color3.new(1, 0.94901961088181, 0.3647058904171),
+        Control = 0.15,
         BobberTop = Color3.new(0.63921570777893, 0.2352941185236, 0.2352941185236),
         Color = Color3.new(0.28627452254295, 0.94117647409439, 1),
-        Icon = "rbxassetid://134962566944370",
-        Resilience = 10
+        LureSpeed = -50,
+        Resilience = 15
     },
     ["Plastic Rod"] = {
         LineDistance = 15,
@@ -734,22 +771,22 @@ return {
         Description = "\xF0\x9F\x92\xAB",
         Price = math.huge,
         Passive = "ButterflyEntity",
-        Luck = 1000,
+        Luck = 300,
         Icon = "rbxassetid://120495151762572",
         Unpurchasable = true,
         Strength = math.huge,
-        DEV = true,
+        Unregistered = true,
         Worlds = {
             "Sea 1",
             "Sea 2"
         },
-        Unregistered = true,
         BobberBottom = Color3.new(0.56078433990479, 0.62745100259781, 1),
-        Control = 0.55,
         BobberTop = Color3.new(0, 0, 0),
+        Control = 0.4,
         Color = Color3.new(0.45098039507866, 0.45098039507866, 1),
+        ProgressEfficiency = 0.5,
         LureSpeed = 0,
-        Resilience = 100
+        Resilience = 50
     },
     ["Fischer's Rod"] = {
         LineDistance = 20,
@@ -791,21 +828,22 @@ return {
         ["North-Star Rod"] = "North-Star Rod",
         ["Antler Rod"] = "Antler Rod",
         Onirifalx = "Onirifalx",
-        ["Prismatic Rod"] = "Prismatic Rod",
         ["Test Rod"] = "Test Rod",
-        ["Brick Rod"] = "Brick Rod",
+        ["Prismatic Rod"] = "Prismatic Rod",
         ReRod = "ReRod",
-        ["View Smasher"] = "View Smasher",
+        ["Brick Rod"] = "Brick Rod",
         ["Fischmas Rod"] = "Fischmas Rod",
+        ["View Smasher"] = "View Smasher",
         ["Fischer's Rod"] = "Fischer's Rod",
+        ["Frostbane Rod"] = "Frostbane Rod",
         ["???"] = "???",
         ["Electric Guitar"] = "Electric Guitar",
         ["Relic Rod"] = "Relic Rod",
         ["Executive Rod"] = "Executive Rod",
         ["Rex Umbrarum"] = "Rex Umbrarum",
-        ["Frostbane Rod"] = "Frostbane Rod",
-        ["Yin Yang Rod"] = "Yin Yang Rod",
         ["Buddy Bond Rod"] = "Buddy Bond Rod",
+        ["Yin Yang Rod"] = "Yin Yang Rod",
+        ["777"] = "777",
         ["Fallen Snowblade"] = "Fallen Snowblade",
         ["Tetra Rod"] = "Tetra Rod",
         ["ROBLOX Properties"] = "ROBLOX Properties",
@@ -900,6 +938,50 @@ return {
         Icon = "rbxassetid://127905466781258",
         Resilience = 15
     },
+    ["Demon-Slayer"] = {
+        LineDistance = 100,
+        Description = "Designed for cutting magic with its precise edges, although ineffective as a typical sword...",
+        Price = math.huge,
+        Passive = "DemonSlayer",
+        Luck = -50,
+        Icon = "rbxassetid://137922590697896",
+        Unpurchasable = true,
+        Strength = math.huge,
+        DEV = true,
+        Worlds = {
+            "Sea 1",
+            "Sea 2"
+        },
+        Unregistered = true,
+        BobberBottom = Color3.new(0.062745101749897, 0.058823529630899, 0.050980392843485),
+        Control = 0,
+        BobberTop = Color3.new(0, 0, 0),
+        Color = Color3.new(0, 0, 0),
+        LureSpeed = 0,
+        Resilience = 70
+    },
+    ["Nico's Yarncaster"] = {
+        LineDistance = 100,
+        Description = "meow",
+        Price = math.huge,
+        Passive = "Nico's Yarncaster",
+        Luck = 75,
+        Icon = "rbxassetid://111213855674680",
+        Unpurchasable = true,
+        Strength = math.huge,
+        Unregistered = true,
+        Worlds = {
+            "Sea 1",
+            "Sea 2"
+        },
+        DEV = true,
+        BobberBottom = Color3.new(0.73333334922791, 1, 0.5137255191803),
+        Control = 0.1,
+        BobberTop = Color3.new(0.8901960849762, 0.61176472902298, 1),
+        Color = Color3.new(0.54509806632996, 1, 0.52156865596771),
+        LureSpeed = 35,
+        Resilience = 25
+    },
     ["Ethereal Prism Rod"] = {
         LineDistance = 70,
         BestiaryRequirement = {
@@ -938,7 +1020,7 @@ return {
         Control = 0.2,
         Color = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
         LureSpeed = 50,
-        Icon = "rbxassetid://111416269231874",
+        Icon = "rbxassetid://136614385578483",
         Resilience = 40
     },
     ["Friendly Rod"] = {
@@ -1099,6 +1181,28 @@ return {
         Icon = "rbxassetid://116188852014501",
         Resilience = 10
     },
+    Eardrum = {
+        LineDistance = 100,
+        Description = "Is there no standard anymore?",
+        Price = math.huge,
+        Passive = "Eardrum",
+        Luck = 125,
+        Icon = "rbxassetid://132473338191220",
+        Unpurchasable = true,
+        Strength = math.huge,
+        DEV = true,
+        Worlds = {
+            "Sea 1",
+            "Sea 2"
+        },
+        Unregistered = true,
+        BobberBottom = Color3.new(0, 0, 0),
+        Control = 0.3,
+        BobberTop = Color3.new(0.29019609093666, 0.20392157137394, 0.14901961386204),
+        Color = Color3.new(0.29019609093666, 0.20392157137394, 0.14901961386204),
+        LureSpeed = 10,
+        Resilience = 15
+    },
     ["Krampus's Rod"] = {
         LineDistance = 40,
         Unpurchasable = true,
@@ -1177,7 +1281,7 @@ return {
         Control = -0.1,
         RequireWorkspaceAttributeToBeTrue = "MarianasVeilActive",
         LureSpeed = 20,
-        Icon = "rbxassetid://118789622782713",
+        Icon = "rbxassetid://98068621248855",
         Resilience = 12
     },
     ["Great Rod of Oscar"] = {
@@ -1505,6 +1609,27 @@ return {
         Icon = "rbxassetid://84054593741673",
         Resilience = 5
     },
+    ["Axe of Rhoads"] = {
+        LineDistance = 100,
+        Unpurchasable = true,
+        Description = "Over and under, in between the ups and downs...",
+        Unregistered = true,
+        Price = math.huge,
+        BobberTop = Color3.new(1, 1, 1),
+        Strength = math.huge,
+        BobberBottom = Color3.new(0, 0, 0),
+        Worlds = {
+            "Sea 1",
+            "Sea 2"
+        },
+        Passive = "AxeOfRhoads",
+        Luck = 145,
+        Control = 0.25,
+        Color = Color3.new(1, 1, 1),
+        LureSpeed = 30,
+        Icon = "rbxassetid://106422237265736",
+        Resilience = 65
+    },
     ["Free Spirit Rod"] = {
         LineDistance = 60,
         Description = "A rod infused with untamed blooming spirits. Occasional slashes, & all caught fish have a 30% chance to be mutated with Bloom.",
@@ -1568,6 +1693,7 @@ return {
         Icon = "rbxassetid://114306834665619",
         Resilience = 15
     },
+    RegisteredNumberOfRods = 82,
     ["Haunted Rod"] = {
         LineDistance = 30,
         Unpurchasable = true,
@@ -1585,6 +1711,44 @@ return {
         Color = Color3.new(0.36862745881081, 1, 0.41176471114159),
         Icon = "rbxassetid://118260792571872",
         Resilience = 0
+    },
+    ["Paleontologist's Rod"] = {
+        LineDistance = 30,
+        Unpurchasable = true,
+        Description = "You chose Paleontologist's Rod in your Jurassic missions!",
+        Price = math.huge,
+        BobberTop = Color3.new(1, 1, 1),
+        Strength = 5000,
+        BobberBottom = Color3.new(0.66666668653488, 0, 0),
+        Worlds = {
+            "Sea 1"
+        },
+        Passive = "Jurassic",
+        Luck = 150,
+        Control = 0.1,
+        Color = Color3.new(0.66666668653488, 0, 0),
+        LureSpeed = 40,
+        Icon = "rbxassetid://119000727501125",
+        Resilience = 10
+    },
+    ["Fixer's Rod"] = {
+        LineDistance = 30,
+        Unpurchasable = true,
+        Description = "You chose Fixer's Rod in your Jurassic missions!",
+        Price = math.huge,
+        BobberTop = Color3.new(1, 1, 1),
+        Strength = 5000,
+        BobberBottom = Color3.new(0, 0.66666668653488, 1),
+        Worlds = {
+            "Sea 1"
+        },
+        Passive = "Jurassic",
+        Luck = 60,
+        Control = 0.3,
+        Color = Color3.new(0, 0.66666668653488, 1),
+        LureSpeed = 40,
+        Icon = "rbxassetid://116178853489466",
+        Resilience = 10
     },
     ["Verdant Shear Rod"] = {
         LineDistance = 15,
@@ -1624,44 +1788,74 @@ return {
         Icon = "rbxassetid://97511542447827",
         Resilience = 40
     },
-    RegisteredNumberOfRods = 80,
-    ["Paleontologist's Rod"] = {
-        LineDistance = 30,
-        Unpurchasable = true,
-        Description = "You chose Paleontologist's Rod in your Jurassic missions!",
+    ["Fallen Snowblade"] = {
+        LineDistance = 50,
+        Description = "Wielded by a lost soul, this divine blade now conjures snow and silence\xE2\x80\x94a cursed echo of his eternal search for home. It's true strength may vary relative to the current Season... [For @rDevSno]",
         Price = math.huge,
-        BobberTop = Color3.new(1, 1, 1),
-        Strength = 5000,
-        BobberBottom = Color3.new(0.66666668653488, 0, 0),
+        Passive = "FallenSnowblade",
+        Luck = 319,
+        Icon = "rbxassetid://116839759525452",
+        Unpurchasable = true,
+        DEV = true,
+        Strength = 21512406,
+        Unregistered = true,
         Worlds = {
-            "Sea 1"
+            "Sea 1",
+            "Sea 2"
         },
-        Passive = "Jurassic",
-        Luck = 150,
-        Control = 0.1,
-        Color = Color3.new(0.66666668653488, 0, 0),
-        LureSpeed = 40,
-        Icon = "rbxassetid://119000727501125",
-        Resilience = 10
+        BobberBottom = Color3.new(1, 1, 1),
+        BobberTop = Color3.new(0, 0, 0),
+        Control = 0.39,
+        Color = Color3.new(1, 1, 1),
+        ProgressEfficiency = 0.5,
+        LureSpeed = 25,
+        Resilience = 15
     },
-    ["Fixer's Rod"] = {
-        LineDistance = 30,
-        Unpurchasable = true,
-        Description = "You chose Fixer's Rod in your Jurassic missions!",
+    Chrysalis = {
+        LineDistance = 100,
+        Description = "\xF0\x9F\x8D\xA1",
         Price = math.huge,
-        BobberTop = Color3.new(1, 1, 1),
-        Strength = 5000,
-        BobberBottom = Color3.new(0, 0.66666668653488, 1),
+        Passive = "Chrysalis",
+        Luck = 150,
+        Icon = "rbxassetid://84173544425344",
+        Unpurchasable = true,
+        DEV = true,
+        Strength = math.huge,
+        Unregistered = true,
         Worlds = {
-            "Sea 1"
+            "Sea 1",
+            "Sea 2"
         },
-        Passive = "Jurassic",
-        Luck = 60,
-        Control = 0.3,
-        Color = Color3.new(0, 0.66666668653488, 1),
-        LureSpeed = 40,
-        Icon = "rbxassetid://116178853489466",
-        Resilience = 10
+        BobberBottom = Color3.new(0.97254902124405, 0.87058824300766, 1),
+        BobberTop = Color3.new(0.98039215803146, 0.49019607901573, 0.91372549533844),
+        Control = 0,
+        Color = Color3.new(1, 0.55686277151108, 0.97647058963776),
+        ProgressEfficiency = 0.1,
+        LureSpeed = 0,
+        Resilience = 100
+    },
+    Wingripper = {
+        LineDistance = 222,
+        Description = "name a few dimensions we can flow between with no obstructions, another timeline.",
+        Price = math.huge,
+        Passive = "Wingripper",
+        Luck = 222,
+        Icon = "rbxassetid://73660191822388",
+        Unpurchasable = true,
+        DEV = true,
+        Strength = math.huge,
+        Unregistered = true,
+        Worlds = {
+            "Sea 1",
+            "Sea 2"
+        },
+        BobberBottom = Color3.new(0, 0, 0),
+        BobberTop = Color3.new(0, 0, 0),
+        Control = 0.22,
+        Color = Color3.new(0, 0, 0),
+        ProgressEfficiency = 0.22,
+        LureSpeed = -122,
+        Resilience = 22
     },
     ["Challenger's Rod"] = {
         LineDistance = 70,
@@ -1700,57 +1894,11 @@ return {
         },
         BobberBottom = Color3.new(1, 1, 1),
         BobberTop = Color3.new(0, 0, 0),
-        Control = -0.25,
+        Control = -0.2,
         Color = Color3.new(0, 0, 0),
         ProgressEfficiency = 0.25,
         LureSpeed = 0,
         Resilience = 175
-    },
-    ["Fallen Snowblade"] = {
-        LineDistance = 50,
-        Description = "Wielded by a lost soul, this divine blade now conjures snow and silence\xE2\x80\x94a cursed echo of his eternal search for home. [For @rDevSno]",
-        Price = math.huge,
-        Passive = "FallenSnowblade",
-        Luck = 319,
-        Icon = "rbxassetid://116839759525452",
-        Unpurchasable = true,
-        DEV = true,
-        Strength = 21512406,
-        Unregistered = true,
-        Worlds = {
-            "Sea 1",
-            "Sea 2"
-        },
-        BobberBottom = Color3.new(1, 1, 1),
-        BobberTop = Color3.new(0, 0, 0),
-        Control = 0.39,
-        Color = Color3.new(1, 1, 1),
-        ProgressEfficiency = 0.5,
-        LureSpeed = 25,
-        Resilience = 15
-    },
-    ["ROBLOX Properties"] = {
-        LineDistance = 200,
-        Description = "We feel the pain of a lifetime lost in a thousand days...",
-        Price = math.huge,
-        Passive = "RobloxProperties",
-        Luck = 175,
-        Icon = "rbxassetid://79281785079831",
-        Unpurchasable = true,
-        DEV = true,
-        Strength = math.huge,
-        Unregistered = true,
-        Worlds = {
-            "Sea 1",
-            "Sea 2"
-        },
-        BobberBottom = Color3.new(1, 0.61568629741669, 0),
-        BobberTop = Color3.new(0, 0, 0),
-        Control = 0,
-        Color = Color3.new(1, 0.66666668653488, 0),
-        ProgressEfficiency = 0.1,
-        LureSpeed = 5,
-        Resilience = 70
     },
     ["Astralhook Rod"] = {
         LineDistance = 150,
@@ -1774,6 +1922,49 @@ return {
         ProgressEfficiency = 0.15,
         LureSpeed = 0,
         Resilience = 20
+    },
+    nilCaster = {
+        LineDistance = math.huge,
+        Description = "oops my data corrupt",
+        Price = math.huge,
+        Passive = "nilCaster",
+        Luck = 101,
+        Icon = "rbxassetid://103409083726676",
+        Unpurchasable = true,
+        DEV = true,
+        Strength = 1010101,
+        Unregistered = true,
+        Worlds = {
+            "Sea 1",
+            "Sea 2"
+        },
+        BobberBottom = Color3.new(1, 0, 0),
+        BobberTop = Color3.new(0.10196078568697, 1, 0),
+        Control = 0.101,
+        Color = Color3.new(0.21568627655506, 1, 0),
+        ProgressEfficiency = 1.01010101,
+        LureSpeed = -1,
+        Resilience = 10.1
+    },
+    ["Patriot Rod"] = {
+        LineDistance = 74,
+        Unpurchasable = true,
+        Description = "Happy 4th of July!",
+        Price = math.huge,
+        BobberTop = Color3.new(0, 0, 1),
+        Strength = 742025,
+        BobberBottom = Color3.new(1, 1, 1),
+        Worlds = {
+            "Sea 1",
+            "Sea 2"
+        },
+        Passive = "PatriotRod",
+        Luck = 100,
+        Control = 0.04,
+        Color = Color3.new(1, 0, 0),
+        LureSpeed = 30,
+        Icon = "rbxassetid://117935665119184",
+        Resilience = 7
     },
     ["Pen Rod"] = {
         LineDistance = 100,
@@ -1817,28 +2008,25 @@ return {
         LureSpeed = 20,
         Resilience = 20
     },
-    nilCaster = {
-        LineDistance = math.huge,
-        Description = "oops my data corrupt",
-        Price = math.huge,
-        Passive = "nilCaster",
-        Luck = 101,
-        Icon = "rbxassetid://103409083726676",
-        Unpurchasable = true,
-        DEV = true,
-        Strength = 1010101,
-        Unregistered = true,
+    ["Merchant Rod"] = {
+        LineDistance = 25,
+        Description = "A rod designed for Merchants! Has a 50% chance to create a whirlpool, allowing for random bait to be caught.",
+        BobberTop = Color3.new(0.2549019753933, 0.2549019753933, 0.2549019753933),
+        Price = 20000,
+        From = "Treasure Island",
+        Strength = math.huge,
+        BobberBottom = Color3.new(0.7294117808342, 0.72549021244049, 0.65098041296005),
         Worlds = {
             "Sea 1",
             "Sea 2"
         },
-        BobberBottom = Color3.new(1, 0, 0),
-        BobberTop = Color3.new(0.10196078568697, 1, 0),
-        Control = 0.101,
-        Color = Color3.new(0.21568627655506, 1, 0),
-        ProgressEfficiency = 1.01010101,
-        LureSpeed = -1,
-        Resilience = 10.1
+        Passive = "WhirlpoolBait",
+        Luck = 60,
+        Control = 0.05,
+        Color = Color3.new(0.60392159223557, 0, 0),
+        LureSpeed = 25,
+        Icon = "rbxassetid://89923482154665",
+        Resilience = 18
     },
     ["Miku's Melody"] = {
         LineDistance = 3939,
@@ -1879,26 +2067,6 @@ return {
         LureSpeed = 75,
         Icon = "rbxassetid://104363028437535",
         Resilience = 10
-    },
-    ["Merchant Rod"] = {
-        LineDistance = 25,
-        Description = "A rod designed for Merchants! Has a 50% chance to create a whirlpool, allowing for random bait to be caught.",
-        BobberTop = Color3.new(0.2549019753933, 0.2549019753933, 0.2549019753933),
-        Price = 20000,
-        From = "Treasure Island",
-        Strength = math.huge,
-        BobberBottom = Color3.new(0.7294117808342, 0.72549021244049, 0.65098041296005),
-        Worlds = {
-            "Sea 1",
-            "Sea 2"
-        },
-        Passive = "WhirlpoolBait",
-        Luck = 60,
-        Control = 0.05,
-        Color = Color3.new(0.60392159223557, 0, 0),
-        LureSpeed = 25,
-        Icon = "rbxassetid://89923482154665",
-        Resilience = 18
     },
     ["Treasure Rod"] = {
         LineDistance = 20,
@@ -2078,22 +2246,23 @@ return {
         Icon = "rbxassetid://95649280913469",
         Resilience = 12
     },
-    ["Brick Rod"] = {
-        LineDistance = 200,
-        Description = "Wait.. it's real?",
-        Price = 13337,
-        Strength = math.huge,
-        BobberBottom = Color3.new(0.2392156869173, 0.13725490868092, 0.13725490868092),
+    ["Mythical Rod"] = {
+        LineDistance = 20,
+        Description = "Blessed with the power of The Keepers. All fish have a 30% chance to be rainbow.",
+        Price = 90000,
+        From = "The Travelling Merchant",
+        Strength = 2000,
+        BobberBottom = Color3.new(1, 1, 1),
         Worlds = {
             "Sea 1"
         },
-        LureSpeed = 100,
-        Luck = 75,
-        Control = 0.35,
-        BobberTop = Color3.new(0.96078431606293, 0.40392157435417, 0.40392157435417),
-        Color = Color3.new(0.96078431606293, 0.35294118523598, 0.35294118523598),
-        Icon = "rbxassetid://91667481081888",
-        Resilience = 35
+        LureSpeed = 60,
+        Luck = 50,
+        Control = 0.05,
+        BobberTop = Color3.new(1, 0.40392157435417, 0.61176472902298),
+        Color = Color3.new(1, 0.19215686619282, 0.6235294342041),
+        Icon = "rbxassetid://133181079876292",
+        Resilience = 0.05
     },
     ["The Lost Rod"] = {
         LineDistance = 70,
@@ -2168,7 +2337,7 @@ return {
         Control = 0.22,
         Color = Color3.new(0.19215686619282, 0.60784316062927, 1),
         LureSpeed = 20,
-        Icon = "rbxassetid://102646448334907",
+        Icon = "rbxassetid://84655930411987",
         Resilience = 25
     },
     ["Mystic Staff"] = {
@@ -2191,6 +2360,26 @@ return {
         Icon = "rbxassetid://112625731551225",
         Resilience = 30
     },
+    ["Developers Rod"] = {
+        LineDistance = 150,
+        Unpurchasable = true,
+        Description = "A rod made for developers not to have to suffer in fishing.",
+        Price = math.huge,
+        Unregistered = true,
+        Strength = math.huge,
+        BobberBottom = Color3.new(1, 0, 0),
+        Worlds = {
+            "Sea 1",
+            "Sea 2"
+        },
+        LureSpeed = 99,
+        Luck = 150,
+        Control = 1,
+        BobberTop = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
+        Color = Color3.new(1, 0, 0),
+        Icon = "rbxassetid://134187943476425",
+        Resilience = 99
+    },
     ["Wildflower Rod"] = {
         LineDistance = 15,
         Description = "Entwined with blooming vines and the essence of the wild. Fish have a 30% chance to be drawn to nature.",
@@ -2211,25 +2400,24 @@ return {
         Icon = "rbxassetid://116994808867429",
         Resilience = 17
     },
-    ["Developers Rod"] = {
-        LineDistance = 150,
+    ["Rod Of Time"] = {
+        LineDistance = 20,
         Unpurchasable = true,
-        Description = "A rod made for developers not to have to suffer in fishing.",
+        Description = "A time rod!",
         Price = math.huge,
         Unregistered = true,
-        Strength = math.huge,
-        BobberBottom = Color3.new(1, 0, 0),
+        Strength = 2500,
+        BobberBottom = Color3.new(0.31764706969261, 0.090196080505848, 0.050980392843485),
         Worlds = {
-            "Sea 1",
-            "Sea 2"
+            "Sea 1"
         },
-        LureSpeed = 99,
-        Luck = 150,
-        Control = 1,
-        BobberTop = Color3.new(0.96078431606293, 0.80392158031464, 0.18823529779911),
-        Color = Color3.new(1, 0, 0),
-        Icon = "rbxassetid://134187943476425",
-        Resilience = 99
+        LureSpeed = 80,
+        Luck = 25,
+        Control = 0.05,
+        BobberTop = Color3.new(0.80000001192093, 0.20392157137394, 0.054901961237192),
+        Color = Color3.new(0.58039218187332, 0.074509806931019, 0.16862745583057),
+        Icon = "rbxassetid://85589076153434",
+        Resilience = 20
     },
     ["Prismatic Rod"] = {
         LineDistance = 100,
@@ -2251,44 +2439,28 @@ return {
         Icon = "rbxassetid://90241796021568",
         Resilience = 10
     },
-    ["Rod Of Time"] = {
-        LineDistance = 20,
+    ["777"] = {
+        LineDistance = 777,
+        Description = "\xF0\x9F\x83\x8F \n[Developer Rod, for @newandreformedlyth]",
+        Price = math.huge,
+        Passive = "777",
+        Luck = 777,
+        Icon = "rbxassetid://119808666651396",
         Unpurchasable = true,
-        Description = "A time rod!",
-        Price = math.huge,
+        DEV = true,
+        Strength = math.huge,
         Unregistered = true,
-        Strength = 2500,
-        BobberBottom = Color3.new(0.31764706969261, 0.090196080505848, 0.050980392843485),
-        Worlds = {
-            "Sea 1"
-        },
-        LureSpeed = 80,
-        Luck = 25,
-        Control = 0.05,
-        BobberTop = Color3.new(0.80000001192093, 0.20392157137394, 0.054901961237192),
-        Color = Color3.new(0.58039218187332, 0.074509806931019, 0.16862745583057),
-        Icon = "rbxassetid://85589076153434",
-        Resilience = 20
-    },
-    ["Egg Rod"] = {
-        LineDistance = 25,
-        Description = "Cast your bobber for a bite sweeter than chocolate!",
-        BobberTop = Color3.new(0.4705882370472, 1, 0.5137255191803),
-        Price = math.huge,
-        From = "Isle of New Beginnings",
-        Strength = 20000,
-        BobberBottom = Color3.new(0.71764707565308, 0.97647058963776, 1),
         Worlds = {
             "Sea 1",
             "Sea 2"
         },
-        Passive = "EggRod",
-        Luck = 75,
-        Control = 0.15,
-        Color = Color3.new(0.93725490570068, 0.68627452850342, 1),
-        LureSpeed = 25,
-        Icon = "rbxassetid://92985122953593",
-        Resilience = 15
+        BobberBottom = Color3.new(0, 0, 0),
+        BobberTop = Color3.new(0.50196081399918, 0, 0),
+        Control = 0.7,
+        Color = Color3.new(0.50196081399918, 0, 0),
+        ProgressEfficiency = 7.77,
+        LureSpeed = -677,
+        Resilience = 777
     },
     ["Buddy Bond Rod"] = {
         LineDistance = 20,
@@ -2327,23 +2499,23 @@ return {
         Icon = "rbxassetid://97638124485999",
         Resilience = 6
     },
-    ["Mythical Rod"] = {
+    ["Lucky Rod"] = {
         LineDistance = 20,
-        Description = "Blessed with the power of The Keepers. All fish have a 30% chance to be rainbow.",
-        Price = 90000,
-        From = "The Travelling Merchant",
-        Strength = 2000,
+        Description = "Seems to attract a handful of rare fish. Not sure why?.. Maybe I should buy a lottery ticket?",
+        Price = 5250,
+        From = "Moosewood",
+        Strength = 175,
         BobberBottom = Color3.new(1, 1, 1),
         Worlds = {
             "Sea 1"
         },
-        LureSpeed = 60,
-        Luck = 50,
-        Control = 0.05,
-        BobberTop = Color3.new(1, 0.40392157435417, 0.61176472902298),
-        Color = Color3.new(1, 0.19215686619282, 0.6235294342041),
-        Icon = "rbxassetid://133181079876292",
-        Resilience = 0.05
+        LureSpeed = 100,
+        Luck = 177,
+        Control = 0.07,
+        BobberTop = Color3.new(0.3137255012989, 0.52549022436142, 0.3137255012989),
+        Color = Color3.new(0.73725491762161, 1, 0.74509805440903),
+        Icon = "rbxassetid://84169278146923",
+        Resilience = 7
     },
     ["Fungal Rod"] = {
         LineDistance = 15,
@@ -2363,25 +2535,43 @@ return {
         Icon = "rbxassetid://105992913914425",
         Resilience = 20
     },
-    ["Katana Rod"] = {
-        LineDistance = 100,
-        Unpurchasable = true,
-        Description = "Good at cutting fruit. [Developer-Exclusive]",
-        DEV = true,
+    ["Seraphic Rod"] = {
+        LineDistance = 130,
+        Description = "TOUCH SOME GRASS BUDDY",
         Price = math.huge,
-        Unregistered = true,
+        Passive = "SeraphicRod",
+        Luck = 150,
+        Icon = "rbxassetid://99896956393962",
+        Unpurchasable = true,
         Strength = math.huge,
-        BobberBottom = Color3.new(0.18823529779911, 0.18823529779911, 0.18823529779911),
+        DEV = true,
         Worlds = {
             "Sea 1"
         },
-        LureSpeed = 35,
-        Luck = 150,
-        Control = 0.15,
-        BobberTop = Color3.new(0.77254903316498, 0.77254903316498, 0.77254903316498),
-        Color = Color3.new(0.69411766529083, 0.69411766529083, 0.69411766529083),
-        Icon = "rbxassetid://87339121358683",
-        Resilience = 10
+        Unregistered = true,
+        BobberBottom = Color3.new(1, 1, 1),
+        Control = 0.25,
+        BobberTop = Color3.new(1, 0.80000001192093, 0),
+        Color = Color3.new(1, 0.66666668653488, 0),
+        LureSpeed = 5,
+        Resilience = 20
+    },
+    ["Brick Rod"] = {
+        LineDistance = 200,
+        Description = "Wait.. it's real?",
+        Price = 13337,
+        Strength = math.huge,
+        BobberBottom = Color3.new(0.2392156869173, 0.13725490868092, 0.13725490868092),
+        Worlds = {
+            "Sea 1"
+        },
+        LureSpeed = 100,
+        Luck = 75,
+        Control = 0.35,
+        BobberTop = Color3.new(0.96078431606293, 0.40392157435417, 0.40392157435417),
+        Color = Color3.new(0.96078431606293, 0.35294118523598, 0.35294118523598),
+        Icon = "rbxassetid://91667481081888",
+        Resilience = 35
     },
     ["Superstar Rod"] = {
         LineDistance = 200,
@@ -2492,7 +2682,7 @@ return {
         Control = 0.05,
         BobberTop = Color3.new(1, 0.69803923368454, 0.20784313976765),
         Color = Color3.new(1, 0.74901962280273, 0.3137255012989),
-        Icon = "rbxassetid://132591962625637",
+        Icon = "rbxassetid://73297042214602",
         Resilience = 0
     },
     ["Zeus Rod"] = {
@@ -2512,44 +2702,6 @@ return {
         LureSpeed = 30,
         Icon = "rbxassetid://121779994640063",
         Resilience = 20
-    },
-    ["Lucky Rod"] = {
-        LineDistance = 20,
-        Description = "Seems to attract a handful of rare fish. Not sure why?.. Maybe I should buy a lottery ticket?",
-        Price = 5250,
-        From = "Moosewood",
-        Strength = 175,
-        BobberBottom = Color3.new(1, 1, 1),
-        Worlds = {
-            "Sea 1"
-        },
-        LureSpeed = 100,
-        Luck = 177,
-        Control = 0.07,
-        BobberTop = Color3.new(0.3137255012989, 0.52549022436142, 0.3137255012989),
-        Color = Color3.new(0.73725491762161, 1, 0.74509805440903),
-        Icon = "rbxassetid://84169278146923",
-        Resilience = 7
-    },
-    ["Tetra Rod"] = {
-        LineDistance = 100,
-        Unpurchasable = true,
-        Description = "A rod that belongs to the hands of the Tetrapede. [For @voaj77]",
-        DEV = true,
-        Price = math.huge,
-        Unregistered = true,
-        Strength = math.huge,
-        BobberBottom = Color3.new(0.33725491166115, 0, 0),
-        Worlds = {
-            "Sea 1"
-        },
-        LureSpeed = 35,
-        Luck = 150,
-        Control = 0.15,
-        BobberTop = Color3.new(1, 0.80392158031464, 0.10196078568697),
-        Color = Color3.new(0.66666668653488, 0.12156862765551, 0.10196078568697),
-        Icon = "rbxassetid://128489853268536",
-        Resilience = 10
     },
     Onirifalx = {
         LineDistance = 777,
@@ -2573,6 +2725,46 @@ return {
         ProgressEfficiency = 0.7,
         LureSpeed = -677,
         Resilience = -math.huge
+    },
+    ["Tetra Rod"] = {
+        LineDistance = 100,
+        Unpurchasable = true,
+        Description = "A rod that belongs to the hands of the Tetrapede. [For @voaj77]",
+        DEV = true,
+        Price = math.huge,
+        Unregistered = true,
+        Strength = math.huge,
+        BobberBottom = Color3.new(0.33725491166115, 0, 0),
+        Worlds = {
+            "Sea 1"
+        },
+        LureSpeed = 35,
+        Luck = 150,
+        Control = 0.15,
+        BobberTop = Color3.new(1, 0.80392158031464, 0.10196078568697),
+        Color = Color3.new(0.66666668653488, 0.12156862765551, 0.10196078568697),
+        Icon = "rbxassetid://128489853268536",
+        Resilience = 10
+    },
+    ["Katana Rod"] = {
+        LineDistance = 100,
+        Unpurchasable = true,
+        Description = "Good at cutting fruit. [Developer-Exclusive]",
+        DEV = true,
+        Price = math.huge,
+        Unregistered = true,
+        Strength = math.huge,
+        BobberBottom = Color3.new(0.18823529779911, 0.18823529779911, 0.18823529779911),
+        Worlds = {
+            "Sea 1"
+        },
+        LureSpeed = 35,
+        Luck = 150,
+        Control = 0.15,
+        BobberTop = Color3.new(0.77254903316498, 0.77254903316498, 0.77254903316498),
+        Color = Color3.new(0.69411766529083, 0.69411766529083, 0.69411766529083),
+        Icon = "rbxassetid://87339121358683",
+        Resilience = 10
     },
     ["Frog Rod"] = {
         LineDistance = 15,
@@ -2611,26 +2803,25 @@ return {
         Icon = "rbxassetid://104585919603489",
         Resilience = 15
     },
-    ["Seraphic Rod"] = {
-        LineDistance = 130,
-        Description = "TOUCH SOME GRASS BUDDY",
+    ["Egg Rod"] = {
+        LineDistance = 25,
+        Description = "Cast your bobber for a bite sweeter than chocolate!",
+        BobberTop = Color3.new(0.4705882370472, 1, 0.5137255191803),
         Price = math.huge,
-        Passive = "SeraphicRod",
-        Luck = 150,
-        Icon = "rbxassetid://116163229957995",
-        Unpurchasable = true,
-        Strength = math.huge,
-        DEV = true,
+        From = "Isle of New Beginnings",
+        Strength = 20000,
+        BobberBottom = Color3.new(0.71764707565308, 0.97647058963776, 1),
         Worlds = {
-            "Sea 1"
+            "Sea 1",
+            "Sea 2"
         },
-        Unregistered = true,
-        BobberBottom = Color3.new(1, 1, 1),
-        Control = 0.25,
-        BobberTop = Color3.new(1, 0.80000001192093, 0),
-        Color = Color3.new(1, 0.66666668653488, 0),
-        LureSpeed = 5,
-        Resilience = 20
+        Passive = "EggRod",
+        Luck = 75,
+        Control = 0.15,
+        Color = Color3.new(0.93725490570068, 0.68627452850342, 1),
+        LureSpeed = 25,
+        Icon = "rbxassetid://92985122953593",
+        Resilience = 15
     },
     ["Ultratech Rod"] = {
         LineDistance = 100,
@@ -2674,23 +2865,24 @@ return {
     },
     ["Evil Pitchfork of Doom Rod"] = {
         LineDistance = 100,
-        Unpurchasable = true,
-        Description = "I'm a witch and I'm evil",
-        DEV = true,
+        Description = "Cursed by the Deep Below, this twisted trident tempts fate with unnatural fortune. 20% chance to gain double your fish's value. 10% chance to summon Poseidon's shade, inflicting the Siren's Spite mutation to greatly increase weight.",
         Price = math.huge,
-        Unregistered = true,
+        Passive = "EvilPitchforkOfDoomRod",
+        Luck = 120,
+        Icon = "rbxassetid://103690823637430",
+        Unpurchasable = true,
         Strength = math.huge,
-        BobberBottom = Color3.new(0.1843137294054, 0, 0),
+        DEV = true,
         Worlds = {
             "Sea 1"
         },
-        LureSpeed = 1,
-        Luck = 0,
-        Control = 0.4,
+        Unregistered = true,
+        BobberBottom = Color3.new(0.1843137294054, 0, 0),
+        Control = 0.1,
         BobberTop = Color3.new(0.65490198135376, 0, 0),
         Color = Color3.new(0.74117648601532, 0, 0),
-        Icon = "rbxassetid://134459504964188",
-        Resilience = 30
+        LureSpeed = 50,
+        Resilience = -10
     },
     ["The Brick Rod"] = {
         LineDistance = 100,
@@ -2744,7 +2936,7 @@ return {
         Worlds = {
             "Sea 1"
         },
-        LureSpeed = 110,
+        LureSpeed = 95,
         Luck = 25,
         Control = 0.05,
         BobberTop = Color3.new(0.27058824896812, 0.42745098471642, 0.45882353186607),
