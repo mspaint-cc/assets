@@ -103,6 +103,9 @@ local PING_ROLES            = if typeof(getgenv().PING_ROLES) == "table" then ge
     ["Favorite Tool"] = "<@&1384293674321449030>",
     ["Harvest Tool"] = "<@&1384293640968605817>",
     ["Friendship Pot"] = "<@&1383726063007436850>",
+    ["Medium Toy"] = "<@&1396136366500221009>",
+    ["Medium Treat"] = "<@&1396136417473859694>",
+    ["Levelup Lollipop"] = "<@&1396136481780797590>",
 
     -- Seeds
     ["Carrot"] = "<@&1385999010904539186>",
@@ -188,6 +191,9 @@ local EMOJIS                = if typeof(getgenv().EMOJIS) == "table" then getgen
     ["Harvest Tool"] = "<:HarvestTool:1385988948840546425>",
     ["Friendship Pot"] = "<:FriendshipPot:1385988943148875923>",
     ["Magnifying Glass"] = "<:MagnifyingGlass:1388571975214960681>",
+    ["Medium Toy"] = "<:BluePetToy:1396281403129336002>",
+    ["Medium Treat"] = "<:MediumTreat:1396135752907362464>",
+    ["Levelup Lollipop"] = " <:Lolipop:1396135732401410140>",
 
     -- Event
     ["Summer Seed Pack"] = "<:SummerSeedPack:1388572601202245683>",
@@ -198,6 +204,7 @@ local EMOJIS                = if typeof(getgenv().EMOJIS) == "table" then getgen
     ["Oasis Crate"] = "<:SummerCrate2:1388575019809902733>",
     ["Oasis Egg"] = "<:OasisEgg:1388575013484888174>",
     ["Hamster"] = "<:Hamster:1388575016618299462>",
+    ["Zen Seed Pack"] = "<:ZenSeedPack:1396283419830390784>",
 
     -- Seeds
     ["Carrot"] = "<:Carrot:1385988930880540763>",
@@ -234,6 +241,8 @@ local EMOJIS                = if typeof(getgenv().EMOJIS) == "table" then getgen
     ["Cactus"] = "<:Cactus:1393269388483760189>",
     ["Daffodil"] = "<:Daffodil:1393269391109656707>",
     ["Giant Pinecone"] = "<:GiantPinecone:1393737669212770344>",
+    ["Corn"] = "<:Corn:1396283887302479965>",
+    ["Orange Tulip"] = "<:OrangeTulip:1396284113970790562>",
 
     -- Weather 
     ["Rain"] = ":cloud_rain:",
