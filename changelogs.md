@@ -1,27 +1,12 @@
 ```diff
+[Doors]
++ Optimized Child Check handler (loading new rooms, cutscenes, etc.)
+
 [Pressure]
-+ Get Any Document Exploit (including admin only ones like kibo
-+ Disable Local Damage
-+ Show Entity Path (for lockerless)
-+ Added dedicated notification for Harbinger
++ Optimized Child Check handler
++ Fixed Void ESP not showing up without Anti Void
 
-+ Fixed The Hunted vault subplace support
-+ Improved Performance of mspaint pressure
-
-[Grace]
-+ Hopefully fixed get all badges
-
-[Grow a garden]
-+ Added Auto Zen Event Submit (Aura, Quest)
-+ Auto Remove Plants
-+ Valuable Plant ESP
-+ Player ESP
-+ Crops to water in Auto Water
-+ Auto Favorite Crops (garden)
-+ Auto Favorite Tool (inventory)
-+ Magnifying Glass Helper
-- Removed outdated features
-
-[Fisch]
-+ Updated datatables
+[Grow A Garden]
++ Fixed Auto Water breaking the script when no plants are planted
+- Removed Zen Aura Event
 ```
