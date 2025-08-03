@@ -1,12 +1,8 @@
 ```diff
-[Doors]
-+ Optimized Child Check handler (loading new rooms, cutscenes, etc.)
-
-[Pressure]
-+ Optimized Child Check handler
-+ Fixed Void ESP not showing up without Anti Void
-
-[Grow A Garden]
-+ Fixed Auto Water breaking the script when no plants are planted
-- Removed Zen Aura Event
+[Grace]
++ Added Anti Shame (Reprieve)
++ Added Auto Farm (works for Grace, Zen, Reprieve)
++ Added Get All Documents (credits: indexell_, only visible inside the Lobby)
++ Fixed Get All Badges (certain badges can be given only by the server)
++ Fixed issues in Reprieve
 ```
