@@ -1,8 +1,22 @@
 ```diff
+[mspaint]
++ Added Adonis and Arsenal Anticheat Bypasser
++ Added Home Tab (and refactored UI Settings and Info Tab)
++ Added file cache (if you get rate limited and you have the file cached, mspaint will still load)
++ Refactored Anti Lag
++ Improved Fly on Mobile
+
 [Grace]
-+ Added Anti Shame (Reprieve)
-+ Added Auto Farm (works for Grace, Zen, Reprieve)
-+ Added Get All Documents (credits: indexell_, only visible inside the Lobby)
-+ Fixed Get All Badges (certain badges can be given only by the server)
-+ Fixed issues in Reprieve
++ Added Anti AFK
+
+[Grow A Garden]
++ Fixed loading issues
++ Fixed Mutation Whitelist checks
+
+[Fisch]
+- Fisch now requires proper require support
++ Improved loading time
++ Refactored the data system
++ Data Tables are now dynamic and include up-to-date information (exepect teleport spots, locations and NPCs positions)
++ Fixed Protect Identity breaking with auto-load configs
 ```
