@@ -1,22 +1,16 @@
 ```diff
-[mspaint]
-+ Added Adonis and Arsenal Anticheat Bypasser
-+ Added Home Tab (and refactored UI Settings and Info Tab)
-+ Added file cache (if you get rate limited and you have the file cached, mspaint will still load)
-+ Refactored Anti Lag
-+ Improved Fly on Mobile
-
-[Grace]
-+ Added Anti AFK
-
-[Grow A Garden]
+[DOORS]
++ Added indicator for Speed Bypass (Active, Idle, Disabled)
++ Added indicator for disabled Snares (Entity ESP + Anti Snare)
 + Fixed loading issues
-+ Fixed Mutation Whitelist checks
++ Fixed Speed Bypass
++ Fixed movement blocked when unloaded
++ Item ESP will clear itself after picking the item up
+- Knob Farm and Godmode is patched
+- Using "Revive" button multiple times in a run is patched
+- Upside Down and Seek Helper is temporarily disabled 
 
-[Fisch]
-- Fisch now requires proper require support
-+ Improved loading time
-+ Refactored the data system
-+ Data Tables are now dynamic and include up-to-date information (exepect teleport spots, locations and NPCs positions)
-+ Fixed Protect Identity breaking with auto-load configs
+[DOORS - The Outdoors]
++ Added proper support for this floor
++ Added Anti Surge, Look At Monument, Auto Mandrake
 ```
