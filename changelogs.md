@@ -1,16 +1,32 @@
 ```diff
-[DOORS]
-+ Added indicator for Speed Bypass (Active, Idle, Disabled)
-+ Added indicator for disabled Snares (Entity ESP + Anti Snare)
-+ Fixed loading issues
-+ Fixed Speed Bypass
-+ Fixed movement blocked when unloaded
-+ Item ESP will clear itself after picking the item up
-- Knob Farm and Godmode is patched
-- Using "Revive" button multiple times in a run is patched
-- Upside Down and Seek Helper is temporarily disabled 
+[mspaint]
++ Improved the Home Page
++ Fixed Obsidian notifications ignoring the Reason option
++ Fixed Execute On Teleport
 
-[DOORS - The Outdoors]
-+ Added proper support for this floor
-+ Added Anti Surge, Look At Monument, Auto Mandrake
+[DOORS]
++ Improved instance checks inside Objective ESP
++ Fixed Gold and Stardust ESP not applying correctly during current room changes
++ Fixed some issues with certain features not showing up
++ Fixed Notify Entities dropdown
+
+[DOORS - Outdoors]
++ Added Gate and Gate Button to Objective ESP
++ Fixed issues with Look at Monument
+
+[DOORS - Lobby]
++ Added Claim All Codes
++ Fixed loading issues with achievements
+
+[DOORS - Hotel-, Super Hard Mode]
++ Fixed loading issues
+
+[Grow A Garden]
++ Fixed Auto Feed Pet
++ Fixed other features not working
+
+[Pressure]
++ Added Disable Damage Side Effects (like the knockback from the floor in the firewall grand encounter)
++ Added Avoid Entities & Show Entity POV while avoiding
++ Fixed Abomination Grand Encounter not forcing you out of the swimming state (requires firesignal)
 ```
