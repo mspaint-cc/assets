@@ -1,19 +1,17 @@
 ```diff
 [Universal]
-+ Improved the way Aimbot Settings were checked
-+ Aimbot will not move your mouse/camera when the UI is opened
-+ Added Health Dynamic Target Parts
-+ Sticky Aimbot resets the player now when you reset your character
++ Fixed issue with fly showing error "parent property locked"
 
-[Forsaken]
-+ Reach Added
-+ Added Player To Target in Pathfinding
+[GAG]
++ Fixed Stuff Related with Calculate Value
++ Added Auto Submit Beanstalk Plants
 
-[MM2]
-+ Added handler that detects Heros
-+ Added Fling Sheriff and Fling Hero to Innocent Tab
-+ Added Prediction to Silent Aim
-+ Fixed Lag
-+ Fling Murderer will now work even when you are dead
-+ Silent Aim should be more reliable now
+[DOORS]
+- Removed Fake Death because patched
+
+[Word Bomb]
++ Fixed Mobile Support (sorry this took this long 😭)
++ Auto Suggest Next Word
++ Added Humanize Typing Options
++ Changed structure of UI
 ```
