@@ -1,20 +1,19 @@
 ```diff
-[DOORS]
-+ Improved performance a bit when enabling/disabling ESP
-+ Fixed Fly always moving forwards/backwards
-~ Added Delete Figure (FE) back for Room 100. You can delete Figure only in that room.
+[Universal]
++ Improved the way Aimbot Settings were checked
++ Aimbot will not move your mouse/camera when the UI is opened
++ Added Health Dynamic Target Parts
++ Sticky Aimbot resets the player now when you reset your character
 
-[DOORS - Rooms]
-+ Added "Collect Loot" to Auto Rooms
-+ Found a proper fix for Auto Rooms movement handler
-+ Fixed Auto Rooms being jittery
-+ Fixed Auto Rooms "stuttering" when an entity spawns (its now the same speed as moving to a door)
-- Smooth Look has been disabled until a proper fix is found
+[Forsaken]
++ Reach Added
++ Added Player To Target in Pathfinding
 
-[DOORS - The Mines]
-+ Fixed Auto Minecart
-+ Fixed and reimplemented Minecraft Teleport
-
-[Pressure]
-+ Fixed Fly always moving forwards/backwards
+[MM2]
++ Added handler that detects Heros
++ Added Fling Sheriff and Fling Hero to Innocent Tab
++ Added Prediction to Silent Aim
++ Fixed Lag
++ Fling Murderer will now work even when you are dead
++ Silent Aim should be more reliable now
 ```
