@@ -1,17 +1,8 @@
 ```diff
-[Universal]
-+ Fixed issue with fly showing error "parent property locked"
-
-[GAG]
-+ Fixed Stuff Related with Calculate Value
-+ Added Auto Submit Beanstalk Plants
+[mspaint]
++ Captions now has distinct styles that follows to the UI library selected
 
 [DOORS]
-- Removed Fake Death because patched
-
-[Word Bomb]
-+ Fixed Mobile Support (sorry this took this long 😭)
-+ Auto Suggest Next Word
-+ Added Humanize Typing Options
-+ Changed structure of UI
++ Added Other Speed Bypass Modes (Default, Fixed, Ping Compensation, Ping & Speed Compensation)
++ Added Vine Guillotine to Objective ESP
 ```
