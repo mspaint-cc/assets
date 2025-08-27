@@ -1,5 +1,7 @@
 ```diff
-[DOORS]
-+ Fixed auto rooms noclip 🤔
-godmode coming back gng just wait 🙏
+[DOORS - Hotel Minus]
++ Fixed loading issues
+
+[Fisch]
++ Fixed loading issues
 ```
