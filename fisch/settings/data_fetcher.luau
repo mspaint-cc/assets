@@ -70,8 +70,7 @@ return {
                 ["Moosewood Shipwright"] = -1,
                 ["Jack Marrow"] = -1,
                 ["Merlin"] = -1,
-                ["Moosewood Angler"] = -1,
-                ["Sea Traveler"] = -1
+                ["Moosewood Angler"] = -1
             },
 
             Names = {},
