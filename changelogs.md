@@ -1,5 +1,5 @@
 ```diff
-[Universal]
+[mspaint]
 + Fixed issue with custom control module
 + Improved Noclip stability (instantly turns on and off now)
 
