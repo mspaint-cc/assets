@@ -7,12 +7,9 @@ return {
         "Bloop Fish",
 
         "Blue Moon Pool",
-        "Octophant Pool",
 
         "Whales Pool",
         "Forsaken Veil - Scylla",
-        
-        "Lovestorm Eel",
         
         "Orcas Pool",
         "Ancient Orcas Pool",
@@ -27,15 +24,12 @@ return {
         "The Kraken Pool",
         "Ancient Kraken Pool",
 
-        "Isonade",
-        "Golden Tide"
+        "Isonade"
     },
     SpecialEventsAliases = {
         ["Narwhal"] = { "Narwhal - Sea 1", "Narwhal - Sea 2" },
         ["Magician Narwhal"] = { "Magician Narwhal - Sea 1", "Magician Narwhal - Sea 2" },
-        ["Octophant Pool"] = { "Octophant Pool Without Elephant", "Octophant Pool With Elephant" },
-        ["Blue Moon Pool"] = { "Blue Moon Pool", "Blue Moon - First Sea" },
-        ["Lovestorm Eel"] = { "Love" }
+        ["Blue Moon Pool"] = { "Blue Moon Pool", "Blue Moon - First Sea" }
     },
 
     --// Locations \\--
