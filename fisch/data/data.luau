@@ -1358,10 +1358,8 @@ return {
         "Magician Narwhal",
         "Bloop Fish",
         "Blue Moon Pool",
-        "Octophant Pool",
         "Whales Pool",
         "Forsaken Veil - Scylla",
-        "Lovestorm Eel",
         "Orcas Pool",
         "Ancient Orcas Pool",
         "Megalodon Default",
@@ -1371,8 +1369,7 @@ return {
         "Great White Shark",
         "The Kraken Pool",
         "Ancient Kraken Pool",
-        "Isonade",
-        "Golden Tide"
+        "Isonade"
     },
     ZonesAliases = {
         ["Challenger's Deep"] = "Challengers Deep",
@@ -1390,13 +1387,6 @@ return {
         ["Blue Moon Pool"] = {
             "Blue Moon Pool",
             "Blue Moon - First Sea"
-        },
-        ["Octophant Pool"] = {
-            "Octophant Pool Without Elephant",
-            "Octophant Pool With Elephant"
-        },
-        ["Lovestorm Eel"] = {
-            "Love"
         }
     }
 }
