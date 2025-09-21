@@ -1353,6 +1353,10 @@ return {
         }
     },
     SpecialEvents = {
+        "Mosslurker",
+        "Narwhal",
+        "Magician Narwhal",
+        "Bloop Fish",
         "Blue Moon Pool",
         "Octophant Pool",
         "Whales Pool",
@@ -1375,6 +1379,14 @@ return {
         ["Veil of the Forsaken"] = "Forsaken Veil"
     },
     SpecialEventsAliases = {
+        ["Narwhal"] = {
+            "Narwhal - Sea 1", 
+            "Narwhal - Sea 2" 
+        },
+        ["Magician Narwhal"] = {
+            "Magician Narwhal - Sea 1", 
+            "Magician Narwhal - Sea 2" 
+        },
         ["Blue Moon Pool"] = {
             "Blue Moon Pool",
             "Blue Moon - First Sea"
