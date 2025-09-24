@@ -1,17 +1,18 @@
 ```diff
-[DOORS]
-+ Anti-Firedamp Toggle
-
-[Pressure]
-+ Fixed Operation Heartburn Loading
-+ Added some revenants in Operation Heartburn to support to Disable Local Damage
+[mspaint]
++ Fixed the loadstring error in LanguageHelper that could sometimes cause mspaint to stop loading
 
 [Fisch]
-+ "Fixed" anticheat bypass
-+ Added Custom Coordinates for Custom Locations
-+ Fixed Auto Complete Showing (9/9) as progress when it should be (0/9) for vertigo bestiary auto completion
++ Added Auto Use Totem on Event
++ Added Loading Notification
++ Reorganized certain Tabs
++ Made every Special Event dropdown searchable
++ Fixed Mutations List
++ Fixed Auto Appraise and Appraise Function
 
-[Forsaken]
-+ Show Chat History Toggle
-+ Rewrote stuff and now more stuff is availble
+[DOORS]
++ You can now fit through crawlspaces after disabling Noclip
+
+[Pressure]
++ You can now fit through crawlspaces after disabling Noclip
 ```
