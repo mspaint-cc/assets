@@ -1,6 +1,10 @@
 return {
     --// Event Zones \\--
     SpecialEvents = { -- needs to be manually updated
+        "Colossal Blue Dragon",
+        "Colossal Ancient Dragon",
+        "Colossal Ethereal Dragon",
+
         "Mosslurker",
         "Narwhal",
         "Magician Narwhal",
