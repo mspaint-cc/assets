@@ -1377,6 +1377,9 @@ return {
         }
     },
     SpecialEvents = {
+        "Colossal Blue Dragon",
+        "Colossal Ancient Dragon",
+        "Colossal Ethereal Dragon",
         "Mosslurker",
         "Narwhal",
         "Magician Narwhal",
