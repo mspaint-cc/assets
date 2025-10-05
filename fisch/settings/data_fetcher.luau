@@ -20,6 +20,7 @@ return {
 
         "Megalodon Default",
         "Megalodon Ancient",
+        "Birthday Megalodon",
 
         "Whale Shark",
         "Great Hammerhead Shark",
