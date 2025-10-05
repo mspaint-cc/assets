@@ -1391,6 +1391,7 @@ return {
         "Ancient Orcas Pool",
         "Megalodon Default",
         "Megalodon Ancient",
+        "Birthday Megalodon",
         "Whale Shark",
         "Great Hammerhead Shark",
         "Great White Shark",
