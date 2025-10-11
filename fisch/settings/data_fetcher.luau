@@ -2,6 +2,11 @@ return {
     --// Event Zones \\--
     SpecialEvents = { -- needs to be manually updated
         "Beluga",
+        "Apex Leviathan",
+        "Bloop Fish",
+        "Cosmic Relic",
+        "Earthquake",
+        "Emoji Fishes",
 
         "Colossal Blue Dragon",
         "Colossal Ancient Dragon",
@@ -34,6 +39,8 @@ return {
         "Isonade"
     },
     SpecialEventsAliases = {
+        ["Emoji Fishes"] = { "EmojiFish" },
+        ["Cosmic Relic"] = { "CosmicRelic" },
         ["Beluga"] = { "Beluga - Sea 1", "Beluga - Sea 2" },
         ["Narwhal"] = { "Narwhal - Sea 1", "Narwhal - Sea 2" },
         ["Magician Narwhal"] = { "Magician Narwhal - Sea 1", "Magician Narwhal - Sea 2" },
