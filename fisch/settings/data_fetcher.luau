@@ -46,6 +46,7 @@ return {
     Locations = {
         --// Fishing Locations \\--
         HasAbundance = {},
+        _FailedToFetch = {},
 
         Safe = {
             Names = {},
