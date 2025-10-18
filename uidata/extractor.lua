@@ -231,6 +231,7 @@ end
 --// Groupbox \\--
 function UIExtractor:extractGroupboxOrder(groupbox, groupboxName, isDependBox)
     if isDependBox == true then return nil end -- dependency boxes are inside groupboxes so, ignore
+    if groupbox.Visible == false or groupbox.BoxHolder == nil then return nil end
 
     local order = 0
     local found = false
