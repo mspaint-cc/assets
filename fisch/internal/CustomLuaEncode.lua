@@ -4,7 +4,7 @@
 
 -- LuaEncode version from Sep 19, 2025
 -- Modified by mstudio45
---  Added: SortAlphabetically, ForceBracketIndexes, IgnoreVisitedTables
+--  Added: ForceBracketIndexes, IgnoreVisitedTables
 
 --!optimize 2
 --!native
@@ -222,7 +222,6 @@ local function LuaEncode(inputTable, options)
     CheckType(options.UseInstancePaths, "options.UseInstancePaths", "boolean", "nil")
     CheckType(options.UseFindFirstChild, "options.UseFindFirstChild", "boolean", "nil")
     CheckType(options.SerializeMathHuge, "options.SerializeMathHuge", "boolean", "nil")
-    CheckType(options.SortAlphabetically, "options.SortAlphabetically", "boolean", "nil")
     CheckType(options.ForceBracketIndexes, "options.ForceBracketIndexes", "boolean", "nil")
     CheckType(options.IgnoreVisitedTables, "options.IgnoreVisitedTables", "boolean", "nil")
 
@@ -239,7 +238,6 @@ local function LuaEncode(inputTable, options)
     local UseInstancePaths = (options.UseInstancePaths == nil and true) or options.UseInstancePaths
     local UseFindFirstChild = (options.UseFindFirstChild == nil and true) or options.UseFindFirstChild
     local SerializeMathHuge = (options.SerializeMathHuge == nil and true) or options.SerializeMathHuge
-    local SortAlphabetically = (options.SortAlphabetically == nil and false) or options.SortAlphabetically
     local ForceBracketIndexes = (options.ForceBracketIndexes == nil and false) or options.ForceBracketIndexes
     local IgnoreVisitedTables = (options.IgnoreVisitedTables == nil and false) or options.IgnoreVisitedTables
 
@@ -684,7 +682,10 @@ local function LuaEncode(inputTable, options)
     -- Setup for final output, which will be concat together
     local Output = {}
 
+    
+
     local TablePointer = inputTable
+    local KeyList = {}
     local NextKey = nil     -- Used with TableStack so the TablePointer loop knows where to continue from upon stack pop
     local IsNewTable = true -- Used with table stack push/pop to identify when an opening curly brace should be added
 
@@ -694,6 +695,9 @@ local function LuaEncode(inputTable, options)
     local CycleMaps = {}                    -- ['.example["ref path"]'] = '.another["ref path"]'
 
     while TablePointer do
+        -- Just because of control flow restrictions with Lua compatibility
+        local SkipStackPop = false
+
         -- Update StackLevel for formatting
         StackLevel = StackLevelOpt + #TableStack
         IndentString = (Prettify and string_rep(IndentStringBase, StackLevel)) or IndentStringBase
@@ -710,39 +714,7 @@ local function LuaEncode(inputTable, options)
 
         VisitedTables[TablePointer] = true
 
-        -- Just because of control flow restrictions with Lua compatibility
-        local SkipStackPop = false
-
-        local KeyList = {}
-        for Key in next, TablePointer, NextKey do
-            KeyList[#KeyList + 1] = Key
-        end
-
-        if SortAlphabetically then
-            table.sort(KeyList, function(a, b)
-                local ta, tb = Type(a), Type(b)
-
-                -- If both numbers, sort numerically
-                if ta == "number" and tb == "number" then
-                    return a < b
-                end
-
-                -- If same type, sort alphabetical
-                if ta == tb then
-                    return tostring(a) < tostring(b)
-                end
-
-                -- Otherwise, sort by type name, then tostring
-                if ta ~= tb then
-                    return ta < tb
-                end
-
-                return tostring(a) < tostring(b)
-            end)
-        end
-
-        for i, Key in ipairs(KeyList) do
-            local Value = TablePointer[Key]
+        for Key, Value in next, TablePointer, NextKey do
             local KeyType, ValueType = Type(Key), Type(Value)
             local ValueIsTable = ValueType == "table"
             local KeyTypeCase, ValueTypeCase = TypeCases[KeyType], TypeCases[ValueType]
@@ -753,8 +725,8 @@ local function LuaEncode(inputTable, options)
                 local ValueWasEncoded = false -- Keeping track of this for adding a "," to the output if needed
 
                 -- Evaluate output for key
-                local KeyEncodedSuccess, EncodedKeyOrError, DontEncloseKeyInBrackets = pcall(KeyTypeCase, Key,
-                    true) -- The `true` represents if it's a key or not, here it is
+                local KeyEncodedSuccess, EncodedKeyOrError, DontEncloseKeyInBrackets = pcall(KeyTypeCase, Key, true) 
+                    -- The `true` represents if it's a key or not, here it is
 
                 -- Evaluate output for value, ignoring 2nd arg (`DontEncloseInBrackets`) because this isn't the key
                 local ValueEncodedSuccess, EncodedValueOrError
@@ -833,7 +805,8 @@ local function LuaEncode(inputTable, options)
                     Output[#Output + 1] = CommentBlock(ErrorMessage)
                 end
 
-                if i == #KeyList then
+                -- Check if this is the last key by trying to get the next key
+                if not next(TablePointer, Key) then
                     -- If there isn't another value after the current index, add ending formatting
                     Output[#Output + 1] = NewEntryString .. EndingIndentString
                 elseif ValueWasEncoded then
