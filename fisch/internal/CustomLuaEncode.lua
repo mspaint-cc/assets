@@ -682,10 +682,7 @@ local function LuaEncode(inputTable, options)
     -- Setup for final output, which will be concat together
     local Output = {}
 
-    
-
     local TablePointer = inputTable
-    local KeyList = {}
     local NextKey = nil     -- Used with TableStack so the TablePointer loop knows where to continue from upon stack pop
     local IsNewTable = true -- Used with table stack push/pop to identify when an opening curly brace should be added
 
