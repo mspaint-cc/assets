@@ -1,6 +1,8 @@
 return {
     --// Event Zones \\--
     SpecialEvents = { -- needs to be manually updated
+        "FischFright",
+        
         "Beluga",
         "Apex Leviathan",
         "Bloop Fish",
