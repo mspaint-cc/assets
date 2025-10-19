@@ -720,6 +720,23 @@ local function LuaEncode(inputTable, options)
 
         if SortAlphabetically then
             table.sort(KeyList, function(a, b)
+                local ta, tb = Type(a), Type(b)
+
+                -- If both numbers, sort numerically
+                if ta == "number" and tb == "number" then
+                    return a < b
+                end
+
+                -- If same type, sort alphabetical
+                if ta == tb then
+                    return tostring(a) < tostring(b)
+                end
+
+                -- Otherwise, sort by type name, then tostring
+                if ta ~= tb then
+                    return ta < tb
+                end
+
                 return tostring(a) < tostring(b)
             end)
         end
