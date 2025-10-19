@@ -41,6 +41,7 @@ return {
         "Isonade"
     },
     SpecialEventsAliases = {
+        ["FischFright"] = { "FischFright", "FischFright25" },
         ["Emoji Fishes"] = { "EmojiFish" },
         ["Cosmic Relic"] = { "CosmicRelic" },
         ["Beluga"] = { "Beluga - Sea 1", "Beluga - Sea 2" },
