@@ -61,10 +61,24 @@ return {
     Zones = {
         _FailedToFetch = {},
 
-        Names = {},
-        CFrames = {},
-        TopCFrames = {},
-        LowCFrames = {},
+        Main = {
+            Names = {},
+            CFrames = {}, -- Default CFrames
+            TopCFrames = {}, -- Top
+            BottomCFrames = {}, -- Bottom/Low
+        },
+
+        Abundance = {
+            --[[
+                ["Zone"] = {
+                    ["Abundance"] = {
+                        CFrame = ..., -- Default CFrames
+                        TopCFrame = ..., -- Top
+                        BottomCFrame = ..., -- Bottom/Low
+                    }
+                }
+            --]]
+        },
 
         Aliases = {
             ["Veil of the Forsaken"] = "Forsaken Veil",
@@ -72,19 +86,13 @@ return {
         },
     },
 
-    --// Locations \\--
-    Locations = {
+    --// Locations (Areas) \\--
+    Areas = {
         HasAbundance = {},
         _FailedToFetch = {},
 
-        Safe = {
-            Names = {},
-            CFrames = {}
-        },
-        Unsafe = {
-            Names = {},
-            CFrames = {}
-        },
+        Names = {},
+        CFrames = {}
     },
 
     --// Teleport Spots \\--
