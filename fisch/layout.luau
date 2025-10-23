@@ -86,7 +86,6 @@ return {
 
     --// Locations (Areas) \\--
     Areas = {
-        HasAbundance = {},
         _FailedToFetch = {},
 
         Names = {},
