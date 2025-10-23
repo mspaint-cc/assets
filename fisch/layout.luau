@@ -61,12 +61,10 @@ return {
     Zones = {
         _FailedToFetch = {},
 
-        Main = {
-            Names = {},
-            CFrames = {}, -- Default CFrames
-            TopCFrames = {}, -- Top
-            BottomCFrames = {}, -- Bottom/Low
-        },
+        Names = {},
+        CFrames = {}, -- Default CFrames
+        TopCFrames = {}, -- Top
+        BottomCFrames = {}, -- Bottom/Low
 
         Abundance = {
             --[[
