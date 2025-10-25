@@ -65,6 +65,7 @@ return {
         CFrames = {}, -- Default CFrames
         TopCFrames = {}, -- Top
         BottomCFrames = {}, -- Bottom/Low
+        LegitCFrames = {}, -- Legit Spots
 
         Abundance = {
             --[[
@@ -73,6 +74,7 @@ return {
                         CFrame = ..., -- Default CFrames
                         TopCFrame = ..., -- Top
                         BottomCFrame = ..., -- Bottom/Low
+                        LegitCFrames = ..., -- Legit Spots
                     }
                 }
             --]]
