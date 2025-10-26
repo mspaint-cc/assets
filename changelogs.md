@@ -1,20 +1,14 @@
 ```diff
 [mspaint]
-+ Updated Anti AFK method
++ Fixed two tabs being opened at the same time
 
 [Fisch]
-* Still undetected and fully bypassing after server migration from the client side anticheat
++ Fixed Blatant Auto Reel
++ Teleportation now works every time
++ Restructured Auto Fish position picker
++ Improved Teleportation dropdowns 
++ Updated and created datatables which allow you to fish in legit spots & abundance support and much more
 
-+ Skip Loading Screen
-+ Place best fish for Aquarium
-+ Auto Claim Aquarium Reward
-
-+ Mod Detector now gives you a reason for a serverhop start via discord webhooks
-+ Fixed Auto Fish flinging you while not having Anchor Player enabled
-+ Fixed Auto Fish not properly stopping
-+ Fixed Semi-Legit Auto Reel
-+ Fixed animations not properly stopping
-
-- Increased Blatant Auto Reel delay due to server side reel timing checks
-- Removed Fast Reel (unstable & patched)
+~ Temporarly disabled Event Override - we need to figure out how to fisch in zones with no ground
+~ Please give us feedback about the new data (legit spots etc.), thanks
 ```
