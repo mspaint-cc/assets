@@ -2,6 +2,7 @@
 return {
     Names = {
         "FischFright",
+        "Mossjaw Hunt",
         
         "Beluga",
         "Apex Leviathan",
@@ -43,6 +44,10 @@ return {
 
     IsAbundance = {
 
+    },
+
+    SpecialChecks = {
+        ["Mossjaw Hunt"] = 1,
     },
 
     Aliases = {
