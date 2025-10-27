@@ -47,7 +47,7 @@ return {
     },
 
     SpecialChecks = {
-        ["Mossjaw Hunt"] = 1,
+
     },
 
     Aliases = {
