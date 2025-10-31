@@ -1,9 +1,9 @@
 ```diff
-[Fisch]
-+ Fixed No Catch Action
-+ Fixed Event Override
-+ Fixed Send money via trade
-+ Improved player anchoring with set Auto Fish Position
+[mspaint]
++ Improved unloading
++ Recoded Fullbright and No Fog (please report if its broken in any of the games)
++ Fixed Anti AFK
 
-~ Please give us feedback about the new data (legit spots etc.), thanks
+[DOORS]
+- Removed Knob Farm
 ```
