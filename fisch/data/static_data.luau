@@ -1,7 +1,7 @@
 return {
     --// NPCs \\--
-    ["NPCs"] = {
-        ["Anglers"] = {
+    NPCs = {
+        Anglers = {
             "LostJungleAngler",
             "The Depths Angler",
             "Ancient Isle Angler",
@@ -10,11 +10,27 @@ return {
             "Terrapin Angler",
             "Sunstone Angler",
             "Moosewood Angler",
+        },
+
+        Shipwrights = {
+            "Forsaken Shipwright",
+            "Statue Shipwright",
+            "Moosewood Shipwright",
+            "Sunstone Shipwright",
+            "Snowcap Shipwright",
+            "Terrapin Shipwright",
+            "Roslit Shipwright",
+            "Castaway Cliffs Shipwright",
+            "Ancient Shipwright",
+            "Laboratory Shipwright",
+            "Summit Shipwright",
+            "Gramd Reef Shipwright",
+            "Mushgrove Shipwright",
         }
     },
 
     --// Special Events \\--
-    ["SpecialEvents"] = {
+    SpecialEvents = {
         Names = {
             "FischFright",
             "Mossjaw Hunt",
