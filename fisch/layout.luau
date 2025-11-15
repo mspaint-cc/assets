@@ -48,10 +48,8 @@ return {
     NPCs = {
         _ToFetch = {
             ["Appraiser"]               = -1,
-            ["Moosewood Shipwright"]    = -1,
             ["Jack Marrow"]             = -1,
             ["Merlin"]                  = -1,
-            ["Moosewood Angler"]        = -1
         },
 
         Names = {},
