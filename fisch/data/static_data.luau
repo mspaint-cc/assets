@@ -90,5 +90,13 @@ return {
             ["Magician Narwhal"]    = { "Magician Narwhal - Sea 1", "Magician Narwhal - Sea 2" },
             ["Blue Moon Pool"]      = { "Blue Moon Pool", "Blue Moon - First Sea" }
         }
+    },
+
+    --// Zones \\--
+    Zones = {
+        Aliases = {
+            ["Veil of the Forsaken"]    = "Forsaken Veil",
+            ["Challenger's Deep"]       = "Challengers Deep"
+        }
     }
 }
