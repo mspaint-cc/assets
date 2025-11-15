@@ -21,11 +21,6 @@ return {
                 }
             --]]
         },
-
-        Aliases = {
-            ["Veil of the Forsaken"] = "Forsaken Veil",
-            ["Challenger's Deep"] = "Challengers Deep"
-        },
     },
 
     --// Locations (Areas) \\--
