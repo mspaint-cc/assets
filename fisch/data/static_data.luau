@@ -9,7 +9,7 @@ return {
             "Roslit Angler",
             "Terrapin Angler",
             "Sunstone Angler",
-            "Moosewood Angler",
+            "Moosewood Angler"
         },
 
         Shipwrights = {
@@ -24,8 +24,7 @@ return {
             "Ancient Shipwright",
             "Laboratory Shipwright",
             "Summit Shipwright",
-            "Gramd Reef Shipwright",
-            "Mushgrove Shipwright",
+            "Mushgrove Shipwright"
         }
     },
 
