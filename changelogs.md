@@ -1,10 +1,16 @@
 ```diff
 [mspaint]
-+ The Key System has returned for a tryout period. 
-   * You can still buy keys that will skip the key systems at: https://shop.mspaint.cc
-   * You can get your free key at: https://www.mspaint.cc/key
-   * ⚠ Some features will get restricted later on for free users ⚠
++ Fixed double unloading with Linoria UI
++ Fixed errors during unloading with Linoria UI
 
 [The Forge]
-+ Released!
++ Changed "Equip Items" in Auto Swing to "Auto Equip/Unequip"
++ Fixed "Failed to find ..." notifications
++ Fixed underground teleports in the first island
++ Fixed Auto Mine with smaller rocks
++ Fixed some smaller issues
+
+[Rooms & Doors]
++ Fixed loading issues
++ Fixed Speed Boost
 ```
