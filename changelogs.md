@@ -1,16 +1,5 @@
 ```diff
-[mspaint]
-+ Fixed double unloading with Linoria UI
-+ Fixed errors during unloading with Linoria UI
-
-[The Forge]
-+ Changed "Equip Items" in Auto Swing to "Auto Equip/Unequip"
-+ Fixed "Failed to find ..." notifications
-+ Fixed underground teleports in the first island
-+ Fixed Auto Mine with smaller rocks
-+ Fixed some smaller issues
-
-[Rooms & Doors]
-+ Fixed loading issues
-+ Fixed Speed Boost
+[MM2]
++ Fixed all of the issues that I could find (Second Life, Murder GroupBox, Sheriff GroupBox etc.)
++ Improved murderer and sheriff features
 ```
