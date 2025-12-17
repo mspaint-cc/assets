@@ -1,5 +1,6 @@
 ```diff
-[MM2]
-+ Fixed all of the issues that I could find (Second Life, Murder GroupBox, Sheriff GroupBox etc.)
-+ Improved murderer and sheriff features
+[Fisch]
++ Possibly improved Auto Fishing (rod and location now run in each different threads)
+  * Please give feedback if you had issues with Auto Fish, thanks!
++ Fixed boat spawning (does no longer prompt Spawn Anywhere gamepass)
 ```
