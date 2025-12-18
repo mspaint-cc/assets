@@ -1,6 +1,4 @@
 ```diff
-[Fisch]
-+ Possibly improved Auto Fishing (rod and location now run in each different threads)
-  * Please give feedback if you had issues with Auto Fish, thanks!
-+ Fixed boat spawning (does no longer prompt Spawn Anywhere gamepass)
+[Doors]
++ Improved performance of dynamic ESP (going in and out of a room)
 ```
