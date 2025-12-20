@@ -1,11 +1,6 @@
 ```diff
-[mspaint]
-+ Fixed random error during Unload
-
 [Doors]
-+ Fixed Hide Monster ESP issues (Tracer, on load)
-+ Reorganized Player GroupBox
-+ Optimized the Assets/Instance handler and connections
-+ Removed unused code or copy-pasted code to lower the script size
++ Added Complete Floor to Cringle's Workshop
++ Room Handler and Auto Interact optimizations
   * If there are any features that suddently stopped working, please make an bug report.
 ```
