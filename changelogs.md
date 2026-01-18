@@ -4,13 +4,14 @@
 
 [Fisch]
 + Added Instant Reel
++ Added Sparkling, Shiny, Big, Giant to the filters for Ignore Fish
++ Fixed Auto Fish not working without a selected location
 + Refactored Auto Fish
     * Fixed broken rod checks
     * Fixed getting randomly stuck
     * Fixed boat spawning and despawning
 + Fixed Auto Reel
 + Fixed unloading
-- Removed "Ignore Fish" (snap without losing streak is patched)
 
 [Doors]
 + Fixed Position Offset not working with auto-load config
