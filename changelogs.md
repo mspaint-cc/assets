@@ -1,16 +1,11 @@
 ```diff
 [mspaint]
-+ Added Unloading modal and Error modals
-+ Updated home page
-+ Fixed HTML Parser for "Claim Codes"
-+ Refactored "Anti AFK"
++ Fixed two dialogs when error happens
++ Fixed infinite unloading on an language error
++ Made some changes on how dynamic values are placed into translations
+  ~ Our translators can now properly re-order dynamic values
+  ~ If there are some issues with the translation, you can report it in language-feedback
 
-[Fisch]
-+ Added "Force Full Bar" (enable this if default Auto Reel does not work)
-+ Fixed "Fly" and "Protect Identity" not working properly
-+ Boats that were not spawned by "Auto Fish" should no longer despawn
-- Removed "Disable Oxygen, Temperature" - patched (it is server-sided now)
-
-[Forsaken]
-+ Fixed "Auto Sprint"
+[Doors]
++ Fixed "Infinite items" making infinite items useless (not interactable)
 ```
