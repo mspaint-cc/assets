@@ -1,11 +1,9 @@
 ```diff
-[mspaint]
-+ Fixed two dialogs when error happens
-+ Fixed infinite unloading on an language error
-+ Made some changes on how dynamic values are placed into translations
-  ~ Our translators can now properly re-order dynamic values
-  ~ If there are some issues with the translation, you can report it in language-feedback
+[Website (Dashboard)]
++ Updated executor list
 
-[Doors]
-+ Fixed "Infinite items" making infinite items useless (not interactable)
+[mspaint]
++ Added "Skeleton" and "Box (2D, 3D)" ESP
++ Refactored "ESP Settings" tabbox
++ Fixed loading issues on Velocity
 ```
