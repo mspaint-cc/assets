@@ -5665,6 +5665,7 @@ return {
         },
         ["_ToFetch"] = {},
         ["Names"] = {
+            "Ancient Isle Angler",
             "Sunstone Shipwright",
             "Summit Shipwright",
             "Sunstone Angler",
