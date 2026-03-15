@@ -1,16 +1,15 @@
 ```diff
 [mspaint]
-+ Files from Github will now be fetched through (HK)ghProxy for Chinese users
-+ Fixed Custom Locations
++ Quartz fetching should be much more stable now
++ More optimizations and performance improvements
 
-[Fisch]
-~ Updated Legit Positions, Locations and Special Event data
-+ Added Crab Cage ESP
-+ Improved Place Crab Cages and Auto Pickup Crab Cages (old position no longer gets overwritten if multiple active at the same time)
-+ Fixed Player ESP showing incorrect username/display text
-+ Fixed Auto Use and Auto Buy Fish Food for Aquarium having no proper checks (no longer spams notification if inventory is full)
-+ Fixed Auto Favorite Items
-+ Fixed Auto Pickup Crab Cage ignoring the toggle and an edge-case with it
-+ Fixed Open All Crates being too fast
-+ Fixed Auto Equip Best Bait
+[DOORS - Lobby]
++ Fixed loading presets
+- Removed "Join DOORS before Hotel+ lobby" (the lobby does not work anymore)
+- Removed "Claim All Codes" (Fandom uses Cloudflare so the script can't fetch the HTML code)
+
+[DOORS]
++ Fixed Lockpick interaction with doors (Auto Interact and Inf Items)
++ Fixed Lock detection for the Rooms Entrace door
++ Fixed Auto Interact on doors inside Backdoors floor
 ```
