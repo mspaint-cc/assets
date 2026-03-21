@@ -1,15 +1,12 @@
 ```diff
 [mspaint]
-+ Quartz fetching should be much more stable now
-+ More optimizations and performance improvements
++ Reworked the internal loading of mspaint (should improve load times and general stability)
 
-[DOORS - Lobby]
-+ Fixed loading presets
-- Removed "Join DOORS before Hotel+ lobby" (the lobby does not work anymore)
-- Removed "Claim All Codes" (Fandom uses Cloudflare so the script can't fetch the HTML code)
+[Doors]
++ Fixed loading issues in Rooms
 
-[DOORS]
-+ Fixed Lockpick interaction with doors (Auto Interact and Inf Items)
-+ Fixed Lock detection for the Rooms Entrace door
-+ Fixed Auto Interact on doors inside Backdoors floor
+[Fisch]
++ "Place Crab Cages" no longer rotates your character
++ Added an custom handler that fixes placing crab cages manually (activating the tool)
+- Removed Ignore Fish from Auto Fish
 ```
