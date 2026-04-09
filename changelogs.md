@@ -10,5 +10,10 @@
 + Fixed missing features in Rush Mode
 
 [Pressure]
-+ Opened for private beta testing, update is coming out soon
++ Rewrote Pressure Internally
++ Made huge performance improvements
++ Made tiny QOL improvements
++ Show Pipe Puzzle Solution & Solve Pipe Puzzle
++ Modifier Support!
++ Added Proper support for Operation Heartburn
 ```
