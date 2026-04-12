@@ -1,11 +1,17 @@
 ```diff
 [mspaint]
-+ Added loading interface with error handling
-
-[BGSI, Grow A Garden]
-- Discontinued and removed from mspaint
++ Fixed No Fog not re-applying correctly on lighting changes
 
 [DOORS]
-+ The notification will say "Do not look at it." for Eyes and Lookman
-+ Fixed missing features in Rush Mode
++ Fixed Auto Interact not working with autoload config
++ Proximity Prompt that blocks cursor should no longer show when you execute mspaint before the game loads
+
+[DOORS - The Mines]
++ Minecart Teleport should now start faster
++ Auto Minecart will now lean and duck earlier
+
+[Grace]
++ Fixed Auto Farm
++ Added QOL buttons
++ Added Innego, Sundial, Stem, Seesay, Covet, Duk, Zomber and Sin Disablers
 ```
