@@ -54,12 +54,21 @@ return {
     --// Interactables \\--
     Interactables = {
         _ToFetch = {
-            ["Enchant Altar"]           = -1,
             ["Challenger's Rod"]        = CFrame.new(738, -3355, -1529),
             ["Ethereal Prism Rod"]      = -1,
             ["Leviathan's Fang Rod"]    = -1,
             ["Rod Of The Zenith"]       = -1,
             ["Volcanic Rod"]            = -1
+        },
+
+        Names = {},
+        CFrames = {}
+    },
+
+    --// Special Models \\--
+    SpecialModels = {
+        _ToFetch = {
+            ["Enchant Altar"]           = { Path = 'workspace.world.map["Enchant Room"].EnchantAltar', CFrame = -1 }
         },
 
         Names = {},
