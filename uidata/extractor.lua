@@ -25,10 +25,6 @@ function ToReactIconName(iconName)
 end
 
 function GetIconName(imageLabel)
-    if not imageLabel then 
-        return ""
-    end
-
     for _, icon_name in ipairs(Lucide.Icons) do
         local icon = IconCache[icon_name] or Lucide.GetAsset(icon_name)
         if IconCache[icon_name] == nil then
@@ -50,7 +46,7 @@ for idx, el in ObsidianUI.Main.ScrollingFrame:GetChildren() do
     if el.ClassName ~= "TextButton" then continue end
     TotalTabs = TotalTabs + 1
 
-    TabsIcons[el.TextLabel.Text] = GetIconName(el:FindFirstChild("ImageLabel"))
+    TabsIcons[el.TextLabel.Text] = GetIconName(el.ImageLabel)
     TabsOrder[el.TextLabel.Text] = TotalTabs
 end
 
@@ -93,8 +89,6 @@ function UIExtractor:Serialize(obj)
         return { X = { Scale = obj.X.Scale, Offset = obj.X.Offset }, Y = { Scale = obj.Y.Scale, Offset = obj.Y.Offset } }
     elseif typeof(obj) == "Rect" then
         return { Min = { X = obj.Min.X, Y = obj.Min.Y }, Max = { X = obj.Max.X, Y = obj.Max.Y } }
-    elseif typeof(obj) == "EnumItem" then
-        return obj.Name
     else
         return obj
     end
@@ -108,8 +102,6 @@ function UIExtractor:extractElementInfo(element)
         disabled = element.Disabled,
         text = element.Text,
         value = element.Value,
-        tooltip = element.Tooltip,
-        disabledTooltip = element.DisabledTooltip,
         properties = {
             addons = nil
         }
@@ -118,7 +110,6 @@ function UIExtractor:extractElementInfo(element)
     if element.Type == "Toggle" then
         info.properties = {
             risky = element.Risky,
-            variant = element.Variant or "Switch",
             callback = element.Callback ~= nil,
             changed = element.Changed ~= nil
         }
@@ -148,7 +139,6 @@ function UIExtractor:extractElementInfo(element)
             max = element.Max,
             rounding = element.Rounding,
             compact = element.Compact,
-            hideMax = element.HideMax,
             prefix = element.Prefix,
             suffix = element.Suffix
         }
@@ -158,7 +148,6 @@ function UIExtractor:extractElementInfo(element)
             values = element.Values,
             disabledValues = element.DisabledValues,
             multi = element.Multi,
-            searchable = element.Searchable,
             maxVisibleDropdownItems = element.MaxVisibleDropdownItems
         }
         
@@ -183,7 +172,6 @@ function UIExtractor:extractElementInfo(element)
             sat = element.Sat,
             vib = element.Vib
         }
-
     elseif element.Type == "Image" then
         info.properties = {
             image = element.Image,
@@ -191,37 +179,8 @@ function UIExtractor:extractElementInfo(element)
             rectOffset = UIExtractor:Serialize(element.RectOffset),
             rectSize = UIExtractor:Serialize(element.RectSize),
             height = UIExtractor:Serialize(element.Height),
-            scaleType = element.ScaleType and UIExtractor:Serialize(element.ScaleType) or "Fit",
-            transparency = element.Transparency,
-            backgroundTransparency = element.BackgroundTransparency
-        }
-
-    elseif element.Type == "Video" then
-        info.properties = {
-            video = element.Video,
-            looped = element.Looped,
-            playing = element.Playing,
-            volume = element.Volume,
-            height = element.Height
-        }
-
-    elseif element.Type == "Viewport" then
-        info.properties = {
-            height = element.Height,
-            interactive = element.Interactive,
-            autoFocus = element.AutoFocus
-        }
-
-    elseif element.Type == "UIPassthrough" then
-        info.properties = {
-            height = element.Height
-        }
-
-    elseif element.Type == "Divider" then
-        info.properties = {
-            text = element.Text,
-            marginTop = element.MarginTop,
-            marginBottom = element.MarginBottom
+            scaleType = element.ScaleType.Name,
+            transparency = element.Transparency
         }
     end
 
@@ -386,7 +345,6 @@ function UIExtractor:extractTab(tab, tabName)
         type = "MainTab",
         icon = TabsIcons[tabName] or "Ellipsis",
         order = TabsOrder[tabName] or 999,
-        description = tab.Description,
         visible = tab.Visible,
         isKeyTab = tab.IsKeyTab,
         groupboxes = {
@@ -475,6 +433,13 @@ function UIExtractor:extractAll()
         end
     end
     
+    -- self.extractedData.elements = {
+    --     labels  = Library.Labels  and self:deepCopy(Library.Labels) or {},
+    --     buttons = Library.Buttons and self:deepCopy(Library.Buttons) or {},
+    --     toggles = Library.Toggles and self:deepCopy(Library.Toggles) or {},
+    --     options = Library.Options and self:deepCopy(Library.Options) or {}
+    -- }
+    
     -- Create structure summary
     self.extractedData.structure = {
         tabStructure = {}
@@ -551,51 +516,46 @@ function UIExtractor:printStructure()
     if not data then
         return
     end
-
-    local ElementIcons = {
-        Toggle = "🔘", Button = "🔲", Input = "📝",
-        Slider = "🎚️", Dropdown = "📋", Label = "🏷️",
-        Image = "🖼️", Video = "🎬", Viewport = "🎥",
-        UIPassthrough = "📦", Divider = "➖",
-    }
-    local function GetElementIcon(elementType)
-        return ElementIcons[elementType] or "❓"
-    end
-
-    print("=== OBSIDIAN UI LIBRARY STRUCTURE (v1.0.1) ===")
-    print(string.format("Library Status: %s", data.metadata.toggled and "Toggled" or "Hidden"))
-    print(string.format("Active Tab: %s", data.metadata.activeTab or "None"))
+    
+    print("=== OBSIDIAN UI LIBRARY STRUCTURE ===")
+    print("Library Status: " .. (data.metadata.toggled and "Toggled" or "Hidden"))
+    print("Active Tab: " .. (data.metadata.activeTab or "None"))
     print()
 
     for tabName, tab in data.tabs do
-        print(string.format("📁 TAB: [%s] %s (%s)", tab.icon, tabName, tab.isKeyTab and "Key Tab" or "Regular Tab"))
-        print(string.format("  📝 Description: %s", tostring(tab.description)))
-
+        print("📁 TAB: [" .. tab.icon .. "] " .. tabName .. " (" .. (tab.isKeyTab and "Key Tab" or "Regular Tab") .. ")")
+        
         --// WARNINGBOX \\--
         print("  ⚠ WARNINGBOX: ")
         for key, value in tab.warningBox do
-            print(string.format("    └─ %s: %s", tostring(key), tostring(value)))
+            print("    └─ " .. tostring(key) .. ": " .. tostring(value))
         end
 
         print()
 
         --// Groupboxes \\--
         for groupboxSide, groupboxes in tab.groupboxes do
-            print(string.format("  🔛 %s SIDE:", groupboxSide))
+            print("  🔛 " .. groupboxSide .. " SIDE:")
 
             for groupboxName, groupbox in groupboxes do
-                print(string.format("      📦 GROUPBOX: %s (Order: %s)", groupboxName, tostring(groupbox.order)))
+                print("      📦 GROUPBOX: " .. groupboxName .. " (Order: " .. tostring(groupbox.order) .. ")")
                 for _, element in groupbox.elements do
-                    print(string.format("        %s %s: %s", GetElementIcon(element.type), element.type, element.text or "No Text"))
+                    local icon = element.type == "Toggle" and "🔘" or 
+                               element.type == "Button" and "🔲" or
+                               element.type == "Input" and "📝" or
+                               element.type == "Slider" and "🎚️" or
+                               element.type == "Dropdown" and "📋" or
+                               element.type == "Label" and "🏷️" or "❓"
+                    print("        " .. icon .. " " .. element.type .. ": " .. (element.text or "No Text"))
                     
                     if element.subButton then
-                        print(string.format("          └─ 🔲 SubButton: %s", element.subButton.text or "No Text"))
+                        print("          └─ 🔲 SubButton: " .. (element.subButton.text or "No Text"))
                     end
                     
                     if element.properties and element.properties.addons then
                         for _, addon in element.properties.addons do
                             local addonIcon = addon.type == "KeyPicker" and "🗝️" or addon.type == "ColorPicker" and "🎨" or "🔧"
-                            print(string.format("          └─ %s %s: %s", addonIcon, addon.type, addon.text or "No Text"))
+                            print("          └─ " .. addonIcon .. " " .. addon.type .. ": " .. (addon.text or "No Text"))
                         end
                     end
                 end
@@ -606,15 +566,21 @@ function UIExtractor:printStructure()
 
         --// Tabboxes \\--
         for tabboxSide, tabboxes in tab.tabboxes do
-            print(string.format("  🔛 %s SIDE:", tabboxSide))
+            print("  🔛 " .. tabboxSide .. " SIDE:")
 
             for tabboxName, tabbox in tabboxes do
-                print(string.format("    📂 TABBOX: %s (Active: %s)", tabboxName, tabbox.activeTab or "None"))
+                print("    📂 TABBOX: " .. tabboxName .. " (Active: " .. (tabbox.activeTab or "None") .. ")")
 
                 for subTabName, subTab in tabbox.tabs do
-                    print(string.format("      📄 SUBTAB: %s (Order: %s)", subTabName, tostring(subTab.order)))
+                    print("      📄 SUBTAB: " .. subTabName .. " (Order: " .. tostring(subTab.order) .. ")")
                     for _, element in subTab.elements do
-                        print(string.format("        %s %s: %s", GetElementIcon(element.type), element.type, element.text or "No Text"))
+                        local icon = element.type == "Toggle" and "🔘" or 
+                                element.type == "Button" and "🔲" or
+                                element.type == "Input" and "📝" or
+                                element.type == "Slider" and "🎚️" or
+                                element.type == "Dropdown" and "📋" or
+                                element.type == "Label" and "🏷️" or "❓"
+                        print("        " .. icon .. " " .. element.type .. ": " .. (element.text or "No Text"))
                     end
                 end
             end
