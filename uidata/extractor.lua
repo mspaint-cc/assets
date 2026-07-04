@@ -8,7 +8,7 @@ local Library = getgenv().Library
 local ObsidianUI = Library.ScreenGui 
 
 --// Icons Extractor \\--
-local Lucide = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/lucide-roblox-direct/refs/heads/main/source.lua"))()
+local LucideIcons = loadstring(game:HttpGet("https://raw.githubusercontent.com/deividcomsono/lucide-roblox-direct/refs/heads/main/source.lua"))()
 local IconCache = {}
 
 local TotalTabs = 0
@@ -29,29 +29,55 @@ function GetIconName(imageLabel)
         return ""
     end
 
-    for _, icon_name in ipairs(Lucide.Icons) do
-        local icon = IconCache[icon_name] or Lucide.GetAsset(icon_name)
+    local imageIcon = imageLabel.Image
+    local imageOffset = imageLabel.ImageRectOffset
+    local imageSize = imageLabel.ImageRectSize
+
+    for _, icon_name in ipairs(LucideIcons.Icons) do
+        local icon = IconCache[icon_name] or Library:GetIcon(icon_name) --// get same Url
+        if not icon then continue end
+
         if IconCache[icon_name] == nil then
             icon.Url = icon.Url:gsub("\\", "/")
             IconCache[icon_name] = icon 
         else
             icon.Url = icon.Url:gsub("\\", "/")
         end
-        
-        if imageLabel.Image == icon.Url and imageLabel.ImageRectOffset == icon.ImageRectOffset and imageLabel.ImageRectSize == icon.ImageRectSize then
-            return ToReactIconName(icon.IconName)
+
+        if icon.Url ~= imageIcon then 
+            continue 
         end
+
+        local offsetMatch = (imageOffset.X == icon.ImageRectOffset.X and imageOffset.Y == icon.ImageRectOffset.Y)
+        if not offsetMatch then
+            continue
+        end
+
+        local sizeMatch = (imageSize.X == icon.ImageRectSize.X and imageSize.Y == icon.ImageRectSize.Y)
+        if not sizeMatch then
+            continue
+        end
+
+        return ToReactIconName(icon.IconName)
     end
 
-    return "Ellipsis"
+    return "CircleQuestionMarkIcon"
 end
 
 for idx, el in ObsidianUI.Main.ScrollingFrame:GetChildren() do 
     if el.ClassName ~= "TextButton" then continue end
     TotalTabs = TotalTabs + 1
 
-    TabsIcons[el.TextLabel.Text] = GetIconName(el:FindFirstChild("ImageLabel"))
-    TabsOrder[el.TextLabel.Text] = TotalTabs
+    local labelText = "Tab"
+    local textLabel = el:FindFirstChildOfClass("TextLabel")
+    local imageLabel = el:FindFirstChildOfClass("ImageLabel")
+
+    if textLabel then
+        labelText = textLabel.Text
+    end
+
+    TabsIcons[labelText] = GetIconName(imageLabel)
+    TabsOrder[labelText] = TotalTabs
 end
 
 --// Extractor Setup \\--
@@ -88,7 +114,7 @@ function UIExtractor:Serialize(obj)
     if typeof(obj) == "Vector2" then
         return { x = obj.X, y = obj.Y }
     elseif typeof(obj) == "Color3" then
-        return { r = obj.R, g = obj.G, b = obj.B }
+        return obj:ToHex()
     elseif typeof(obj) == "UDim2" then
         return { X = { Scale = obj.X.Scale, Offset = obj.X.Offset }, Y = { Scale = obj.Y.Scale, Offset = obj.Y.Offset } }
     elseif typeof(obj) == "Rect" then
@@ -115,19 +141,16 @@ function UIExtractor:extractElementInfo(element)
         }
     }
     
-    if element.Type == "Toggle" then
+    if element.Type == "Toggle" or element.Type == "Checkbox" then
         info.properties = {
             risky = element.Risky,
-            variant = element.Variant or "Switch",
-            callback = element.Callback ~= nil,
-            changed = element.Changed ~= nil
+            variant = element.Variant or (element.Type == "Checkbox" and "Checkbox" or "Switch")
         }
         
     elseif element.Type == "Button" or element.Type == "SubButton" then
         info.properties = {
             risky = element.Risky,
             doubleClick = element.DoubleClick,
-            func = element.Func ~= nil,
             tooltip = element.Tooltip,
             disabledTooltip = element.DisabledTooltip
         }
@@ -137,6 +160,7 @@ function UIExtractor:extractElementInfo(element)
             finished = element.Finished,
             numeric = element.Numeric,
             clearTextOnFocus = element.ClearTextOnFocus,
+            clearTextOnBlur = element.ClearTextOnBlur,
             placeholder = element.Placeholder,
             allowEmpty = element.AllowEmpty,
             emptyReset = element.EmptyReset
@@ -150,15 +174,18 @@ function UIExtractor:extractElementInfo(element)
             compact = element.Compact,
             hideMax = element.HideMax,
             prefix = element.Prefix,
-            suffix = element.Suffix
+            suffix = element.Suffix,
+            allowRightClickInput = element.AllowRightClickInput
         }
         
     elseif element.Type == "Dropdown" then
         info.properties = {
             values = element.Values,
             disabledValues = element.DisabledValues,
+            valueImages = element.ValueImages,
             multi = element.Multi,
             searchable = element.Searchable,
+            allowNull = element.AllowNull,
             maxVisibleDropdownItems = element.MaxVisibleDropdownItems
         }
         
@@ -173,15 +200,24 @@ function UIExtractor:extractElementInfo(element)
             mode = element.Mode,
             modes = element.Modes,
             syncToggleState = element.SyncToggleState,
-            toggled = element.Toggled
+            toggled = element.Toggled,
+            modifiers = element.Modifiers,
+            defaultModifiers = element.DefaultModifiers,
+            blacklisted = element.Blacklisted,
+            blacklistedModifiers = element.BlacklistedModifiers,
+            whitelisted = element.Whitelisted,
+            whitelistedModifiers = element.WhitelistedModifiers,
+            noUI = element.NoUI
         }
         
     elseif element.Type == "ColorPicker" then
+        info.value = UIExtractor:Serialize(element.Value)
         info.properties = {
             transparency = element.Transparency,
             hue = element.Hue,
             sat = element.Sat,
-            vib = element.Vib
+            vib = element.Vib,
+            title = element.Title
         }
 
     elseif element.Type == "Image" then
@@ -209,12 +245,15 @@ function UIExtractor:extractElementInfo(element)
         info.properties = {
             height = element.Height,
             interactive = element.Interactive,
-            autoFocus = element.AutoFocus
+            autoFocus = element.AutoFocus,
+            clone = element.Clone
         }
 
     elseif element.Type == "UIPassthrough" then
         info.properties = {
-            height = element.Height
+            height = element.Height,
+            instanceClass = element.Instance and element.Instance.ClassName or nil,
+            instanceName = element.Instance and element.Instance.Name or nil
         }
 
     elseif element.Type == "Divider" then
@@ -238,15 +277,19 @@ function UIExtractor:extractElementInfo(element)
                 if typeof(color3) ~= "Color3" then color3 = Color3.new(1, 1, 1); end
 
                 addonInfo.title = addon.Title
-                addonInfo.value = { 
-                    r = color3.R * 255,
-                    g = color3.G * 255,
-                    b = color3.B * 255
-                }
+                addonInfo.value = UIExtractor:Serialize(color3)
+                addonInfo.transparency = addon.Transparency
+                addonInfo.hue = addon.Hue
+                addonInfo.sat = addon.Sat
+                addonInfo.vib = addon.Vib
             elseif addon.Type == "KeyPicker" then
                 addonInfo.text = addon.Text
                 addonInfo.mode = addon.Mode
                 addonInfo.value = addon.Value
+                addonInfo.modifiers = addon.Modifiers
+                addonInfo.defaultModifiers = addon.DefaultModifiers
+                addonInfo.syncToggleState = addon.SyncToggleState
+                addonInfo.noUI = addon.NoUI
             end
 
             table.insert(info.properties.addons, addonInfo)
@@ -296,6 +339,7 @@ function UIExtractor:extractGroupbox(groupbox, groupboxName, isDependBox)
         type = "Groupbox",
         order = UIExtractor:extractGroupboxOrder(groupbox, groupboxName, isDependBox),
         visible = groupbox.Visible,
+        collapsed = groupbox.Collapsed,
         elements = {},
         dependencyBoxes = {}
     }
@@ -341,6 +385,7 @@ function UIExtractor:extractTabbox(tabbox, tabboxName)
     local tabboxInfo = {
         name = tabboxName,
         type = "Tabbox",
+        order = UIExtractor:extractGroupboxOrder(tabbox, tabboxName),
         visible = tabbox.Visible,
         activeTab = tabbox.ActiveTab and tabbox.ActiveTab.Name or nil,
         tabs = {}
@@ -441,6 +486,9 @@ function UIExtractor:extractLibraryMetadata()
         notifySide = Library.NotifySide,
         showCustomCursor = Library.ShowCustomCursor,
         forceCheckbox = Library.ForceCheckbox,
+        showToggleFrameInKeybinds = Library.ShowToggleFrameInKeybinds,
+        notifyOnError = Library.NotifyOnError,
+        cantDragForced = Library.CantDragForced,
         minSize = {
             x = Library.MinSize.X,
             y = Library.MinSize.Y
@@ -450,12 +498,17 @@ function UIExtractor:extractLibraryMetadata()
         isLightTheme = Library.IsLightTheme,
         isMobile = Library.IsMobile,
         scheme = Library.Scheme and {
-            backgroundColor = tostring(Library.Scheme.BackgroundColor),
-            mainColor = tostring(Library.Scheme.MainColor),
-            accentColor = tostring(Library.Scheme.AccentColor),
-            outlineColor = tostring(Library.Scheme.OutlineColor),
-            fontColor = tostring(Library.Scheme.FontColor),
-            font = tostring(Library.Scheme.Font)
+            backgroundColor = UIExtractor:Serialize(Library.Scheme.BackgroundColor),
+            mainColor = UIExtractor:Serialize(Library.Scheme.MainColor),
+            accentColor = UIExtractor:Serialize(Library.Scheme.AccentColor),
+            outlineColor = UIExtractor:Serialize(Library.Scheme.OutlineColor),
+            fontColor = UIExtractor:Serialize(Library.Scheme.FontColor),
+            font = tostring(Library.Scheme.Font),
+            redColor = UIExtractor:Serialize(Library.Scheme.RedColor),
+            destructiveColor = UIExtractor:Serialize(Library.Scheme.DestructiveColor),
+            darkColor = UIExtractor:Serialize(Library.Scheme.DarkColor),
+            whiteColor = UIExtractor:Serialize(Library.Scheme.WhiteColor),
+            backgroundImage = tostring(Library.Scheme.BackgroundImage)
         } or {}
     }
 end
@@ -562,7 +615,7 @@ function UIExtractor:printStructure()
         return ElementIcons[elementType] or "❓"
     end
 
-    print("=== OBSIDIAN UI LIBRARY STRUCTURE (v1.0.1) ===")
+    print("=== OBSIDIAN UI LIBRARY STRUCTURE (v1.0.2) ===")
     print(string.format("Library Status: %s", data.metadata.toggled and "Toggled" or "Hidden"))
     print(string.format("Active Tab: %s", data.metadata.activeTab or "None"))
     print()
@@ -635,4 +688,4 @@ writefile(
     encodedData:gsub(Players.LocalPlayer.Name, "Roblox"):gsub(Players.LocalPlayer.DisplayName, "Roblox")
 )
 
-print("✔ Done.", tick())
+print("Done.", tick())
