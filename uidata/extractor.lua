@@ -80,6 +80,34 @@ for idx, el in ObsidianUI.Main.ScrollingFrame:GetChildren() do
     TabsOrder[labelText] = TotalTabs
 end
 
+local GetOptionIndex; GetOptionIndex = function(element)
+    if typeof(element) ~= "table" then return nil end
+
+    local Options = Library.Options
+    local Toggles = Library.Toggles
+
+    for Key, Option in Options do
+        if Option ~= element then continue end
+        return Key
+    end
+
+    for Key, Toggle in Toggles do
+        if Toggle ~= element then continue end
+        return Key
+    end
+
+    if typeof(element.Addons) == "table" then 
+        for _, Addon in element.Addons do
+            local AddonKey = GetOptionIndex(Addon)
+            if not AddonKey then continue end
+
+            return AddonKey
+        end
+    end
+
+    return nil
+end
+
 --// Extractor Setup \\--
 local UIExtractor = {}
 function UIExtractor:new()
@@ -334,19 +362,34 @@ function UIExtractor:extractGroupboxOrder(groupbox, groupboxName, isDependBox)
 end
 
 function UIExtractor:extractGroupbox(groupbox, groupboxName, isDependBox)
+    local iconName = nil
+    local disableCollapsing = false
+
+    if groupbox.Holder then
+        local imageLabel = groupbox.Holder:FindFirstChildOfClass("ImageLabel")
+        if imageLabel then
+            iconName = GetIconName(imageLabel)
+        end
+
+        local hasCollapseArrow = groupbox.Holder:FindFirstChildOfClass("ImageButton") ~= nil
+        disableCollapsing = not hasCollapseArrow
+    end
+
     local groupboxInfo = {
         name = groupboxName,
         type = "Groupbox",
         order = UIExtractor:extractGroupboxOrder(groupbox, groupboxName, isDependBox),
         visible = groupbox.Visible,
         collapsed = groupbox.Collapsed,
+        disableCollapsing = disableCollapsing,
+        icon = iconName,
         elements = {},
         dependencyBoxes = {}
     }
     
     for i, element in groupbox.Elements do
         local elementInfo = self:extractElementInfo(element)
-        elementInfo.index = i
+        elementInfo.index = GetOptionIndex(element) or i
         
         if element.SubButton then
             elementInfo.subButton = self:extractElementInfo(element.SubButton)
@@ -403,7 +446,7 @@ function UIExtractor:extractTabbox(tabbox, tabboxName)
 
         for i, element in tab.Elements do
             local elementInfo = self:extractElementInfo(element)
-            elementInfo.index = i
+            elementInfo.index = GetOptionIndex(element) or i
             
             if element.SubButton then
                 elementInfo.subButton = self:extractElementInfo(element.SubButton)
@@ -615,7 +658,7 @@ function UIExtractor:printStructure()
         return ElementIcons[elementType] or "❓"
     end
 
-    print("=== OBSIDIAN UI LIBRARY STRUCTURE (v1.0.2) ===")
+    print("=== OBSIDIAN UI LIBRARY STRUCTURE (v1.0.3) ===")
     print(string.format("Library Status: %s", data.metadata.toggled and "Toggled" or "Hidden"))
     print(string.format("Active Tab: %s", data.metadata.activeTab or "None"))
     print()
