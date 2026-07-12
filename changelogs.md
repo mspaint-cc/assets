@@ -1,5 +1,8 @@
 ```diff
 [mspaint]
-+ Improved loading of autoload configs
-+ Unloading is slightly faster
++ Added Executor Support results to the Home Tab
+
+[Universal]
++ Fixed some detections - undetected in more games now
++ Added Triggerbot
 ```
