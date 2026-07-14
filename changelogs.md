@@ -1,8 +1,6 @@
 ```diff
-[mspaint]
-+ Added Executor Support results to the Home Tab
-
 [Universal]
-+ Fixed some detections - undetected in more games now
-+ Added Triggerbot
++ Added NPC/Bot detection for Aimbot, Triggerbot and ESP (may not work in every game)
++ Alive check is now enabled the whole time
++ Fixed some issues with Silent Aim
 ```
