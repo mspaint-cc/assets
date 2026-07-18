@@ -73,5 +73,27 @@ return {
 
         Names = {},
         CFrames = {}
+    },
+
+    --// Special Events \\--
+    SpecialEvents = {
+        Names = {},
+        IsAbundance = {},
+        SpecialChecks = {},
+        Aliases = {
+            ["FischFright"]         = { "FischFright", "FischFright24", "FischFright25" },
+            ["Emoji Fishes"]        = { "EmojiFish" },
+            ["Cosmic Relic"]        = { "CosmicRelic" },
+            ["Beluga"]              = { "Beluga - Sea 1", "Beluga - Sea 2" },
+            ["Narwhal"]             = { "Narwhal - Sea 1", "Narwhal - Sea 2" },
+            ["Magician Narwhal"]    = { "Magician Narwhal - Sea 1", "Magician Narwhal - Sea 2" },
+            ["Blue Moon Pool"]      = { "Blue Moon Pool", "Blue Moon - First Sea" }
+        }
+    },
+
+    --// NPC Categories \\--
+    NPCCategories = {
+        Anglers = {},
+        Shipwrights = {}
     }
 }
