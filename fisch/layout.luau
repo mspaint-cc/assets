@@ -79,7 +79,6 @@ return {
     SpecialEvents = {
         Names = {},
         IsAbundance = {},
-        SpecialChecks = {},
         Aliases = {
             ["FischFright"]         = { "FischFright", "FischFright24", "FischFright25" },
             ["Emoji Fishes"]        = { "EmojiFish" },
