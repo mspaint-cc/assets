@@ -84,6 +84,7 @@ return {
     --// NPC Categories \\--
     NPCCategories = {
         Anglers = {},
-        Shipwrights = {}
+        Shipwrights = {},
+        Appraisers = {}
     }
 }
