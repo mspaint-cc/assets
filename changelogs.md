@@ -1,7 +1,6 @@
 ```diff
 [Fisch]
-+ Added Dynamic Reel Chances and Reel Snap Chance (Dynamic Chance is recommended to be left enabled to make your stats look legit as possible)
-+ Instant Reel renamed to Instant Minigame
-+ Fixed support for Spear minigame (now seperated from reeling minigame)
-+ Fixed Anchor Player
++ Fixed Open All Crates
++ Fixed Auto Fish not working after claiming a crab cage
++ Fixed Auto Fish not being paused by Auto Collect features
 ```
