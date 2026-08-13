@@ -29,8 +29,13 @@
 + Fixed Auto Interact not working with some prompts
 
 [Fisch]
++ Added Roaming Fish ESP
++ Added Active Events label to Areas tabbox
 + Added more webhooks (Hourly Stats and more)
++ Improved detections of Special Events Zone
 + Fixed and refactored webhooks
++ Fixed Event ESP not working properly when the zone was unloaded
++ Fixed Auto Fish not pausing position lock during pause
 
 [Pressure]
 + Added Slider to customize Auto Firewall delay
