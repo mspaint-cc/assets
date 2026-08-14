@@ -27,6 +27,10 @@
 + Made Lever ESP remove itself after lever gets flicked
 + Fixed Rooms Entrance not working with Infinite Items
 + Fixed Auto Interact not working with some prompts
++ Fixed Infinite Items not working with Auto Interact
++ Fixed Auto Interact with some stuff
++ Fixed Entity ESP & Notify on Hotel- Again because it wasnt working apparently
++ Fixed Eyes ESP
 
 [Fisch]
 + Added Roaming Fish ESP
@@ -49,6 +53,8 @@
 + Added Anti-Redeemer (untested)
 + Fixed Auto Interact Spam with keycards
 + Properly fixed Anti-Wall Dweller & Fixed "I always come back" modifier wall dweller not working in ESP nor with Anti-Wall Dweller
++ Updated Show Entity Path to show Abomination Path
++ Updated Show Entity Path to show all possible Paths instead of just one branch
 
 [Universal]
 + Fixed input method being set to keyboard on touch devices
