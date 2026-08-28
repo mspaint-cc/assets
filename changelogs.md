@@ -7,7 +7,7 @@
 
 [DOORS]
 + Eyes ESP should no longer be that small
-+ Anti Figure Hearing should disable itself properly now.
++ Anti Figure Hearing should disable itself properly now
 
 [DOORS - The Mines]
 + Improved Show Seek Path
