@@ -20,3 +20,4 @@
 + Fixed mspaint taking a while to load after giving Teller the ticket
 + Fixed Fire Exit being included in Auto Interact
 ```
+ 
