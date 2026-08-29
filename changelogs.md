@@ -1,11 +1,21 @@
 ```diff
+[mspaint]
++ Added Pop out Boxes (default on)
++ Fixed loading issues on Potassium if Github failed to load
+
+[Fisch]
++ Fixed loading
+
+[DOORS]
++ Features not supported in the current floor will not be visible instead of being disabled
+
 [DOORS - The Archives]
-+ Fixed Loading
-+ Added Anti Drones
-+ Added Stall Drone Stampede
-+ Added Auto Clear Closet
-+ Added Vine Door ESP (Forget Me Not)
-+ Fixed Hiding Spot ESP
-+ Added Scribbles, Bash, Drones, Stampede of Drones, Teller into Notify Entities & ESP
-+ Added Electric Puddles to Entity ESP
++ Added "Paper Planes" to Ignore List for Auto Interact
++ Added Forget Me Not Changes ESP
++ Added Anti Scribbles
++ Fixed Void Notification threshold
++ Fixed Vine Door ESP
++ Fixed some entity notifications appearing late
++ Fixed mspaint taking a while to load after giving Teller the ticket
++ Fixed Fire Exit being included in Auto Interact
 ```
