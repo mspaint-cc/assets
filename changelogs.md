@@ -1,14 +1,11 @@
 ```diff
-[Universal]
-+ Refactored Silent Aim to have less detection vectors (still requires Synapse Z or Volt - other executors might have detected hookmetamethod)
-+ Camera Aimbot is now not detected by certain ACs detection vector
-+ Improved Silent Aim and Aimbot Wall checks
-^^ Thank you FireBacon for the help ^^
-
-[DOORS]
-+ Eyes ESP should no longer be that small
-+ Anti Figure Hearing should disable itself properly now
-
-[DOORS - The Mines]
-+ Improved Show Seek Path
+[DOORS - The Archives]
++ Fixed Loading
++ Added Anti Drones
++ Added Stall Drone Stampede
++ Added Auto Clear Closet
++ Added Vine Door ESP (Forget Me Not)
++ Fixed Hiding Spot ESP
++ Added Scribbles, Bash, Drones, Stampede of Drones, Teller into Notify Entities & ESP
++ Added Electric Puddles to Entity ESP
 ```
