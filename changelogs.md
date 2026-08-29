@@ -13,6 +13,7 @@
 + Added "Paper Planes" to Ignore List for Auto Interact
 + Added Forget Me Not Changes ESP
 + Added Anti Scribbles
++ Added Anti Alma
 + Fixed Void Notification threshold
 + Fixed Vine Door ESP
 + Fixed some entity notifications appearing late
