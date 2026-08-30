@@ -27,6 +27,7 @@
 + Added Honcho to Entity ESP
 + Added No Damage from Puddles
 + Added Fih Flakes and Pizza to Auto Interact Ignore List
++ Added Auto Look At Flowers (to start the Forget Me Not gamemode quicker)
 + Renamed "Anti Scribbles" to "No Damage from Scribbles"
 + Actually fixed Forget Me Not minigame handler for mspaint (mb)
 ```
