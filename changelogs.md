@@ -22,6 +22,9 @@
 + Added Anticheat Bypass (ty @tplay)
 + Added Kill Player [FE] (Premium Only)
 + Added Anti Ransom
++ Added Honcho Package ESP
++ Fixed Auto Interact to work with Honcho package stuff
++ Added Honcho to Entity ESP
 + Added No Damage from Puddles
 + Added Fih Flakes and Pizza to Auto Interact Ignore List
 + Renamed "Anti Scribbles" to "No Damage from Scribbles"
