@@ -1,23 +1,30 @@
 ```diff
 [mspaint]
-+ Added Pop out Boxes (default on)
-+ Fixed loading issues on Potassium if Github failed to load
-
-[Fisch]
-+ Fixed loading
++ Improved loading times for users who have Github blocked in their country
 
 [DOORS]
-+ Features not supported in the current floor will not be visible instead of being disabled
++ Added No Damage from Entity (not for every entity, only for some)
++ Added Anti Glitch Screech
++ Fixed Unknown Entities, Glitch Rush and Ambush not being in the notification list for each floor
++ Fixed Infinite Items & Auto Interact not registering for new Archive entrance door from the Hotel.
+
+[Fisch]
++ Fixed Loading (I think)
+
+[DOORS - The Stairwells]
++ Added Proper Support
++ Added ESP for TV Stand, Noise, Creak
++ Added Auto Throw Stems
++ Added Auto Dispose Noise TV
++ Added Auto Depot Box (experimental)
 
 [DOORS - The Archives]
-+ Added "Paper Planes" to Ignore List for Auto Interact
-+ Added Forget Me Not Changes ESP
-+ Added Anti Scribbles
-+ Added Anti Alma
-+ Fixed Void Notification threshold
-+ Fixed Vine Door ESP
-+ Fixed some entity notifications appearing late
-+ Fixed mspaint taking a while to load after giving Teller the ticket
-+ Fixed Fire Exit being included in Auto Interact
++ Added Anticheat Bypass (ty @tplay)
++ Added Kill Player [FE] (Premium Only)
++ Added Anti Ransom
++ Added No Damage from Puddles
++ Added Fih Flakes and Pizza to Auto Interact Ignore List
++ Renamed "Anti Scribbles" to "No Damage from Scribbles"
++ Actually fixed Forget Me Not minigame handler for mspaint (mb)
 ```
  
