@@ -801,15 +801,48 @@ function UIExtractor:printStructure()
 end
 
 --// RUN THE EXTRACTOR \\--
-local Extractor = UIExtractor:new()
-local UiData = Extractor:extractAll()
-local EncodedData = HttpService:JSONEncode(UiData)
+local EnsureFolders = function(path)
+    local Parts = string.split(path, "/")
+    if #Parts <= 1 then return end
 
-Extractor:printStructure()
-writefile(
-    "ObsidianExtracted.json",
-    EncodedData:gsub(Players.LocalPlayer.Name, "Roblox"):gsub(Players.LocalPlayer.DisplayName, "Roblox")
-)
+    local Current = Parts[1]
+    for Index = 2, #Parts - 1 do
+        Current ..= "/" .. Parts[Index]
+        if isfolder and not isfolder(Current) and makefolder then
+            makefolder(Current)
+        elseif makefolder then
+            pcall(makefolder, Current)
+        end
+    end
+end
 
-print("Done.", tick())
-return "done"
+local ExtractToFile = function(path)
+    local OutPath = path or "ObsidianExtracted.json"
+    local Extractor = UIExtractor:new()
+    local UiData = Extractor:extractAll()
+    if not UiData then
+        return false, "Library not found"
+    end
+
+    Extractor:printStructure()
+
+    local EncodedData = HttpService:JSONEncode(UiData)
+    local LocalPlayer = Players.LocalPlayer
+    if LocalPlayer then
+        EncodedData = EncodedData:gsub(LocalPlayer.Name, "Roblox"):gsub(LocalPlayer.DisplayName, "Roblox"):gsub(tostring(LocalPlayer.UserId), "1")
+    end
+
+    EnsureFolders(OutPath)
+    writefile(OutPath, EncodedData)
+
+    print("Done.", OutPath, tick())
+    return true, OutPath
+end
+
+if not getgenv()._extract_ui_quietly then
+    ExtractToFile("ObsidianExtracted.json")
+end
+
+return {
+    ExtractToFile = ExtractToFile
+}
