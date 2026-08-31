@@ -1,5 +1,4 @@
 ```diff
-[Word Bomb]
-+ Fixed issues with the script
-+ Improved performance
+[DOORS - The Outdoors]
++ Added Delete Bramble [FE]
 ```
