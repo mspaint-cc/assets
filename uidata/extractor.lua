@@ -11,7 +11,6 @@ local ObsidianUI = Library.ScreenGui
 local LucideIcons = loadstring(game:HttpGet("https://raw.githubusercontent.com/mstudio45/lucide-roblox-direct/refs/heads/main/source.lua"))()
 local IconCache = {}
 
-local TotalTabs = 0
 local TabsIcons = {}
 local TabsOrder = {}
 
@@ -49,13 +48,12 @@ end
 
 for _, El in ObsidianUI.Main.ScrollingFrame:GetChildren() do
     if El.ClassName ~= "TextButton" then continue end
-    TotalTabs += 1
 
-    local TextLabel = El:FindFirstChildOfClass("TextLabel")
+    local TextLabel = El:FindFirstChildWhichIsA("TextLabel", true)
     local LabelText = if TextLabel then TextLabel.Text else "Tab"
 
-    TabsIcons[LabelText] = GetIconName(El:FindFirstChildOfClass("ImageLabel"))
-    TabsOrder[LabelText] = TotalTabs
+    TabsIcons[LabelText] = GetIconName(El:FindFirstChildWhichIsA("ImageLabel", true))
+    TabsOrder[LabelText] = El.LayoutOrder
 end
 
 local GetOptionIndex; GetOptionIndex = function(element)
