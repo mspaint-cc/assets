@@ -1,0 +1,12 @@
+[
+  {
+    "id": "test-dialog",
+    "title": "Test Dialog",
+    "description": "Hello, this is a test dialog.",
+    "style": "dialog",
+    "once": true,
+    "games": [
+      "all"
+    ]
+  }
+]
