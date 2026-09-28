@@ -1,20 +1,12 @@
 ```diff
-[mspaint]
-+ Fixed No Acceleration not applying properly
-
-[DOORS]
-+ Added "Unlock w/ Shears" to Auto Interact Ignore
-+ Improved Auto Interact performance
-+ Fixed Auto Interact not working on locked chestboxes
-+ Fixed Speed Bypass being stuck at "Disabled" state sometimes
-
-[DOORS - Hotel-, Super Hard Mode]
-+ Fixed Speed Bypass methods
-+ Fixed Anti Seek Obstruction
-
-[DOORS - Super Hard Mode]
-- Removed Godmode
-
-[DOORS - The Stairwell]
-+ Added Orbit Dropped Items (for storage wars)
+[Fisch]
++ Added Fishing Tool to Auto Fish (Fishing Rod, Spear, Harpoon Gun)
++ Added Fishing Tool options (force rod, tool switching)
++ Added Mutation to Bobber ESP
++ Added Color Mutation and Rarity for Bobber ESP
++ Fixed Auto Fish not reverting to the previously equipped tools
++ Fixed Auto Collect Meteor sometimes teleporting too fast
++ Fixed console errors
++ Improved loading and unloading performance
++ Reogranized Auto Fish options to use nested tabboxes
 ```
