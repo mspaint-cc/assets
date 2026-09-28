@@ -11,6 +11,7 @@ local ObsidianUI = Library.ScreenGui
 local LucideIcons = loadstring(game:HttpGet("https://raw.githubusercontent.com/mstudio45/lucide-roblox-direct/refs/heads/main/source.lua"))()
 local IconCache = {}
 
+local TotalTabs = 0
 local TabsIcons = {}
 local TabsOrder = {}
 
@@ -46,14 +47,47 @@ local GetIconName = function(imageLabel)
     return "CircleQuestionMarkIcon"
 end
 
+local ResolveIcon = function(imageLabel, rawIcon)
+    if imageLabel and imageLabel.Visible ~= false then
+        local Name = GetIconName(imageLabel)
+        if Name ~= "" and Name ~= "CircleQuestionMarkIcon" then
+            return Name
+        end
+
+        if typeof(imageLabel.Image) == "string" and imageLabel.Image ~= "" then
+            return imageLabel.Image
+        end
+    end
+
+    if rawIcon == nil or rawIcon == "" then
+        return nil
+    end
+
+    if typeof(rawIcon) == "number" or tonumber(rawIcon) then
+        return string.format("rbxassetid://%s", tostring(rawIcon))
+    end
+
+    if typeof(rawIcon) == "string" then
+        local Lucide = Library:GetIcon(rawIcon)
+        if Lucide then
+            return ToReactIconName(Lucide.IconName or rawIcon)
+        end
+
+        return rawIcon
+    end
+
+    return nil
+end
+
 for _, El in ObsidianUI.Main.ScrollingFrame:GetChildren() do
     if El.ClassName ~= "TextButton" then continue end
+    TotalTabs += 1
 
-    local TextLabel = El:FindFirstChildWhichIsA("TextLabel", true)
+    local TextLabel = El:FindFirstChildOfClass("TextLabel")
     local LabelText = if TextLabel then TextLabel.Text else "Tab"
 
-    TabsIcons[LabelText] = GetIconName(El:FindFirstChildWhichIsA("ImageLabel", true))
-    TabsOrder[LabelText] = El.LayoutOrder
+    TabsIcons[LabelText] = GetIconName(El:FindFirstChildOfClass("ImageLabel"))
+    TabsOrder[LabelText] = TotalTabs
 end
 
 local GetOptionIndex; GetOptionIndex = function(element)
@@ -223,11 +257,13 @@ function UIExtractor:extractElementInfo(element)
             variant = element.Variant or (if Type == "Checkbox" then "Checkbox" else "Switch")
         }
     elseif Type == "Button" or Type == "SubButton" then
+        Info.icon = ResolveIcon(element.IconImage, element.Icon)
         Info.properties = {
             risky = element.Risky,
             doubleClick = element.DoubleClick,
             tooltip = element.Tooltip,
-            disabledTooltip = element.DisabledTooltip
+            disabledTooltip = element.DisabledTooltip,
+            icon = Info.icon
         }
     elseif Type == "Input" then
         Info.properties = {
@@ -391,7 +427,13 @@ function UIExtractor:determineBoxSide(groupbox, tab)
     if not groupbox.BoxHolder or not tab.Sides then return "Unknown" end
 
     local Parent = groupbox.BoxHolder.Parent
-    return if Parent == tab.Sides[1] then "Left" elseif Parent == tab.Sides[2] then "Right" else "Unknown"
+    if Parent == tab.Sides[1] then
+        return "Left"
+    elseif Parent == tab.Sides[2] then
+        return "Right"
+    end
+
+    return "Unknown"
 end
 
 --// Groupbox \\--
@@ -452,7 +494,9 @@ function UIExtractor:extractGroupbox(groupbox, groupboxName, isDependBox)
         description = Description,
         icon = IconName,
         elements = self:extractElementsList(groupbox),
+        tabboxes = self:extractNestedTabboxes(groupbox),
         dependencyBoxes = {},
+        dependencyGroupboxes = if isDependBox then nil else self:extractAttachedDependencyGroupboxes(groupbox),
         dependencies = self:extractDependencies(groupbox)
     }
 
@@ -465,6 +509,24 @@ function UIExtractor:extractGroupbox(groupbox, groupboxName, isDependBox)
     end
 
     return GroupboxInfo
+end
+
+function UIExtractor:extractAttachedDependencyGroupboxes(groupbox)
+    local DepGroupboxes = {}
+    if not groupbox.BoxHolder then return DepGroupboxes end
+
+    for DepName, DepGroupbox in self.CurrentTab.DependencyGroupboxes or {} do
+        if DepGroupbox.BoxHolder ~= groupbox.BoxHolder then continue end
+
+        local DepInfo = self:extractGroupbox(DepGroupbox, tostring(DepName), true)
+        DepInfo.type = "DependencyGroupbox"
+        DepInfo.layoutOrder = GetChildLayoutOrder(groupbox.BoxHolder, DepGroupbox.Holder)
+
+        self.AttachedDependencyGroupboxes[DepGroupbox] = true
+        table.insert(DepGroupboxes, DepInfo)
+    end
+
+    return DepGroupboxes
 end
 
 --// Tabbox \\--
@@ -509,6 +571,7 @@ function UIExtractor:extractTabbox(tabbox, tabboxName)
             visible = Tab.Visible,
             icon = GetIconName(ImageLabel),
             elements = self:extractElementsList(Tab),
+            tabboxes = self:extractNestedTabboxes(Tab),
             dependencyBoxes = {}
         }
 
@@ -526,8 +589,25 @@ function UIExtractor:extractTabbox(tabbox, tabboxName)
     return TabboxInfo
 end
 
+function UIExtractor:extractNestedTabboxes(parent)
+    local Tabboxes = {}
+
+    for TabboxName, Tabbox in self.CurrentTab.Tabboxes or {} do
+        if Tabbox.ParentBox ~= parent then continue end
+
+        local TabboxInfo = self:extractTabbox(Tabbox, tostring(TabboxName))
+        TabboxInfo.layoutOrder = GetChildLayoutOrder(parent.Container, Tabbox.BoxHolder)
+        table.insert(Tabboxes, TabboxInfo)
+    end
+
+    return Tabboxes
+end
+
 --// Tab \\--
 function UIExtractor:extractTab(tab, tabName)
+    self.CurrentTab = tab
+    self.AttachedDependencyGroupboxes = {}
+
     local TabInfo = {
         name = tabName,
         type = "MainTab",
@@ -558,12 +638,16 @@ function UIExtractor:extractTab(tab, tabName)
     end
 
     for TabboxName, Tabbox in tab.Tabboxes or {} do
+        if Tabbox.ParentBox then continue end
+
         local TabboxInfo = self:extractTabbox(Tabbox, TabboxName)
         TabboxInfo.side = self:determineBoxSide(Tabbox, tab)
         TabInfo.tabboxes[TabboxInfo.side][TabboxName] = TabboxInfo
     end
 
     for DepName, DepGroupbox in tab.DependencyGroupboxes or {} do
+        if self.AttachedDependencyGroupboxes[DepGroupbox] then continue end
+
         local DepInfo = self:extractGroupbox(DepGroupbox, DepName, true)
         DepInfo.type = "DependencyGroupbox"
         TabInfo.dependencyGroupboxes[DepName] = DepInfo
@@ -759,10 +843,10 @@ function UIExtractor:printStructure()
                 print(string.format("      📦 GROUPBOX: %s (Order: %s, Desc: %s)", GroupboxName, tostring(Groupbox.order), tostring(Groupbox.description)))
 
                 for _, Element in Groupbox.elements do
-                    print(string.format("        %s %s: %s", ElementIcons[Element.type] or "❓", Element.type, Element.text or "No Text"))
+                    print(string.format("        %s %s: %s%s", ElementIcons[Element.type] or "❓", Element.type, Element.text or "No Text", if Element.icon then (" [" .. tostring(Element.icon) .. "]") else ""))
 
                     if Element.subButton then
-                        print(string.format("          └─ 🔲 SubButton: %s", Element.subButton.text or "No Text"))
+                        print(string.format("          └─ 🔲 SubButton: %s%s", Element.subButton.text or "No Text", if Element.subButton.icon then (" [" .. tostring(Element.subButton.icon) .. "]") else ""))
                     end
 
                     for _, Addon in (Element.properties and Element.properties.addons) or {} do
