@@ -34,7 +34,7 @@
 
 [Fisch]
 + Added Instant Minigame back (still not recomended)
-+ Improved performance while mspaint is loaded
++ Improved performance while mspaint is loading
 + Fixed animations for Harpoon Gun and Spears
 + Fixed Equipped tool mode for Auto Fish
 + Fixed perfect and snap always applying even with Auto Minigame not enabled
