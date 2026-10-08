@@ -33,6 +33,7 @@
 + Changed Ladder ESP (Mines) and Office Chair ESP (Archives) to a softer blue
 
 [Fisch]
++ Added Instant Minigame back (still not recomended)
 + Improved performance while mspaint is loaded
 + Fixed animations for Harpoon Gun and Spears
 + Fixed Equipped tool mode for Auto Fish
