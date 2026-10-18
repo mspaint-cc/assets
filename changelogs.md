@@ -9,7 +9,7 @@
 + Added "Unlock w/ Skeleton Key" to Auto Interact Ignore List
 + Added Gloombat Swarm to Entity ESP
 + Fixed Sally Toy Showing in ESP when Objective ESP was off
-+ Improved Godmode mostly making movement sometimes weird.
++ Mostly improved Godmode making movement sometimes weird.
 - Removed Spam Other's Tools (Patched)
 
 [DOORS - The Hotel]
