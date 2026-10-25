@@ -8,7 +8,9 @@ local Library = getgenv().Library
 local ObsidianUI = Library.ScreenGui
 
 --// Icons Extractor \\--
-local LucideIcons = loadstring(game:HttpGet("https://raw.githubusercontent.com/mstudio45/lucide-roblox-direct/refs/heads/main/source.lua"))()
+local Icons = loadstring(game:HttpGet("https://molto.pages.dev/source.lua"))()
+Icons.SetProvider("lucide")
+
 local IconCache = {}
 
 local TotalTabs = 0
@@ -26,11 +28,17 @@ end
 local GetIconName = function(imageLabel)
     if not imageLabel then return "" end
 
+    local FontLabel = imageLabel:FindFirstChild("__IconFont")
+    if FontLabel and FontLabel.Visible and FontLabel.Text ~= "" then
+        local Ligature = FontLabel.Text
+        return ToReactIconName(if Ligature:match("^x%-%d") then Ligature:sub(3) else Ligature)
+    end
+
     local ImageIcon = imageLabel.Image
     local ImageOffset = imageLabel.ImageRectOffset
     local ImageSize = imageLabel.ImageRectSize
 
-    for _, IconName in ipairs(LucideIcons.Icons) do
+    for _, IconName in ipairs(Icons.GetIcons()) do
         local Icon = IconCache[IconName] or Library:GetIcon(IconName)
         if not Icon then continue end
 
@@ -44,6 +52,10 @@ local GetIconName = function(imageLabel)
         return ToReactIconName(Icon.IconName)
     end
 
+    if ImageIcon ~= "" and ImageSize == Vector2.zero then
+        return ImageIcon
+    end
+
     return "CircleQuestionMarkIcon"
 end
 
@@ -52,10 +64,6 @@ local ResolveIcon = function(imageLabel, rawIcon)
         local Name = GetIconName(imageLabel)
         if Name ~= "" and Name ~= "CircleQuestionMarkIcon" then
             return Name
-        end
-
-        if typeof(imageLabel.Image) == "string" and imageLabel.Image ~= "" then
-            return imageLabel.Image
         end
     end
 
@@ -68,9 +76,9 @@ local ResolveIcon = function(imageLabel, rawIcon)
     end
 
     if typeof(rawIcon) == "string" then
-        local Lucide = Library:GetIcon(rawIcon)
-        if Lucide then
-            return ToReactIconName(Lucide.IconName or rawIcon)
+        local Icon = Library:GetIcon(rawIcon)
+        if Icon then
+            return ToReactIconName(Icon.IconName or rawIcon)
         end
 
         return rawIcon
@@ -83,10 +91,10 @@ for _, El in ObsidianUI.Main.ScrollingFrame:GetChildren() do
     if El.ClassName ~= "TextButton" then continue end
     TotalTabs += 1
 
-    local TextLabel = El:FindFirstChildOfClass("TextLabel")
+    local TextLabel = El:FindFirstChildWhichIsA("TextLabel", true)
     local LabelText = if TextLabel then TextLabel.Text else "Tab"
 
-    TabsIcons[LabelText] = GetIconName(El:FindFirstChildOfClass("ImageLabel"))
+    TabsIcons[LabelText] = GetIconName(El:FindFirstChildWhichIsA("ImageLabel", true))
     TabsOrder[LabelText] = TotalTabs
 end
 
