@@ -1,7 +1,19 @@
 ```diff
 [mspaint]
-+ Added Country Lock feature into the dashboard
-+ Fixed Animations dropdown
-+ Fixed loading issue with autoexec or Execute on Teleport
-+ Fixed loading issues for users who have Github or Cloudflare restricted/blocked in their country or by their ISP
++ Fixed Dynamic Island not updating the font properly
++ Added performance telemtry to help us debug the performance issues
++ Somewhat improved ESP performance
+
+[DOORS - Lobby]
++ Added Claim All Codes back
+
+[DOORS - Archives]
++ Fixed Honcho Box ESP not showing
+
+[Notoriety]
++ Fixed some ESPs showing when it shoudnt be
+
+[Universal]
++ Fixed some issues with FOV
++ Fixed issues with Wall Check
 ```
