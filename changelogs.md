@@ -1,19 +1,9 @@
 ```diff
 [mspaint]
-+ Fixed Dynamic Island not updating the font properly
-+ Added performance telemtry to help us debug the performance issues
-+ Somewhat improved ESP performance
-
-[DOORS - Lobby]
-+ Added Claim All Codes back
-
-[DOORS - Archives]
-+ Fixed Honcho Box ESP not showing
-
-[Notoriety]
-+ Fixed some ESPs showing when it shoudnt be
-
-[Universal]
-+ Fixed some issues with FOV
-+ Fixed issues with Wall Check
++ Addons can now have their own subtab with multiple groupboxes
++ Reorganized the Settings and Interface
++ Added Anchor Position and X Offset settings to Dynamic Island
++ Added Window Snapping, Compact Sidebar and Corner Radius settings
++ Notifications can now be placed in any corner of the screen
++ Dynamic Island now follows DPI Scale option
 ```
