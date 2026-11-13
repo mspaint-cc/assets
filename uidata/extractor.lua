@@ -25,8 +25,34 @@ local ToReactIconName = function(iconName)
     return Result .. "Icon"
 end
 
+local IsFontIcon = function(instance)
+    return instance:IsA("TextLabel") and instance:FindFirstChild("IconPadding") ~= nil
+end
+
+local FindIcon = function(parent, recursive)
+    if not parent then return nil end
+
+    for _, Child in (if recursive then parent:GetDescendants() else parent:GetChildren()) do
+        if Child:IsA("ImageLabel") or IsFontIcon(Child) then return Child end
+    end
+
+    return nil
+end
+
+local FindLabel = function(parent)
+    for _, Child in parent:GetDescendants() do
+        if Child:IsA("TextLabel") and not IsFontIcon(Child) then return Child end
+    end
+
+    return nil
+end
+
 local GetIconName = function(imageLabel)
     if not imageLabel then return "" end
+
+    if IsFontIcon(imageLabel) then
+        return if imageLabel.Text ~= "" then ToReactIconName(imageLabel.Text) else ""
+    end
 
     local FontLabel = imageLabel:FindFirstChild("__IconFont")
     if FontLabel and FontLabel.Visible and FontLabel.Text ~= "" then
@@ -91,10 +117,10 @@ for _, El in ObsidianUI.Main.ScrollingFrame:GetChildren() do
     if El.ClassName ~= "TextButton" then continue end
     TotalTabs += 1
 
-    local TextLabel = El:FindFirstChildWhichIsA("TextLabel", true)
+    local TextLabel = FindLabel(El)
     local LabelText = if TextLabel then TextLabel.Text else "Tab"
 
-    TabsIcons[LabelText] = GetIconName(El:FindFirstChildWhichIsA("ImageLabel", true))
+    TabsIcons[LabelText] = GetIconName(FindIcon(El, true))
     TabsOrder[LabelText] = TotalTabs
 end
 
@@ -296,7 +322,10 @@ function UIExtractor:extractElementInfo(element)
             allowRightClickInput = element.AllowRightClickInput
         }
     elseif Type == "Dropdown" then
+        local DisplayButton = if element.Container then element.Container:FindFirstChildOfClass("TextButton") else nil
+
         Info.properties = {
+            displayText = if DisplayButton then DisplayButton.Text else nil,
             values = self:Serialize(element.Values),
             disabledValues = self:Serialize(element.DisabledValues),
             valueImages = self:Serialize(element.ValueImages),
@@ -304,6 +333,8 @@ function UIExtractor:extractElementInfo(element)
             searchable = element.Searchable,
             allowNull = element.AllowNull,
             maxVisibleDropdownItems = element.MaxVisibleDropdownItems,
+            keepDisabledValuePosition = element.KeepDisabledValuePosition,
+            autoWidth = element.AutoWidth,
             dragSelect = element.DragSelect,
             specialType = element.SpecialType,
             excludeLocalPlayer = element.ExcludeLocalPlayer,
@@ -462,7 +493,7 @@ end
 function UIExtractor:extractGroupbox(groupbox, groupboxName, isDependBox)
     local IconName = nil
     local DisableCollapsing = false
-    local Description = if groupbox.Description ~= "" then groupbox.Description else nil
+    local Description = if typeof(groupbox.Description) == "string" then groupbox.Description else nil
 
     local Top = nil
     if groupbox.Holder then
@@ -475,9 +506,10 @@ function UIExtractor:extractGroupbox(groupbox, groupboxName, isDependBox)
     end
 
     if Top then
-        local ImageLabel = Top:FindFirstChildOfClass("ImageLabel")
+        local ImageLabel = FindIcon(Top)
+        local CollapseButton = Top:FindFirstChildOfClass("ImageButton") or Top:FindFirstChildOfClass("TextButton")
         IconName = if ImageLabel then GetIconName(ImageLabel) else nil
-        DisableCollapsing = Top:FindFirstChildOfClass("ImageButton") == nil
+        DisableCollapsing = CollapseButton == nil or not CollapseButton.Visible
 
         if not Description then
             for _, Label in Top:GetDescendants() do
@@ -571,7 +603,7 @@ function UIExtractor:extractTabbox(tabbox, tabboxName)
     }
 
     for TabName, Tab in tabbox.Tabs or {} do
-        local ImageLabel = if Tab.ButtonHolder then Tab.ButtonHolder:FindFirstChildWhichIsA("ImageLabel", true) else nil
+        local ImageLabel = FindIcon(Tab.ButtonHolder, true)
         local TabInfo = {
             name = TabName,
             type = "Tab",
@@ -661,6 +693,20 @@ function UIExtractor:extractTab(tab, tabName)
         TabInfo.dependencyGroupboxes[DepName] = DepInfo
     end
 
+    if not tab.HasSubTabs then return TabInfo end
+
+    TabInfo.hasSubTabs = true
+    TabInfo.activeSubTab = if tab.ActiveSubTab then tab.ActiveSubTab.Name else nil
+    TabInfo.subTabs = {}
+
+    for _, SubTab in tab.SubTabs or {} do
+        local SubTabInfo = self:extractTab(SubTab, SubTab.Name)
+        SubTabInfo.type = "SubTab"
+        SubTabInfo.icon = ResolveIcon(FindIcon(SubTab.Button, true))
+        SubTabInfo.order = if SubTab.Button then SubTab.Button.LayoutOrder else 999
+        TabInfo.subTabs[SubTab.Name] = SubTabInfo
+    end
+
     return TabInfo
 end
 
@@ -695,6 +741,7 @@ function UIExtractor:extractLibraryMetadata()
             title = Window.Title,
             footer = Window.Footer,
             alwaysOnTop = Window.AlwaysOnTop,
+            sidebarCompacted = if Window.IsSidebarCompacted then Window:IsSidebarCompacted() else nil,
             snapping = Window.Snapping,
             snapDistance = Window.SnapDistance,
             snapMargin = Window.SnapMargin,
@@ -743,6 +790,8 @@ function UIExtractor:extractAll()
     self.extractedData.elements = self:extractFlatElements()
 
     for TabName, Tab in Library.Tabs or {} do
+        if Tab.IsSubTab then continue end
+
         self.extractedData.tabs[TabName] = self:extractTab(Tab, TabName)
     end
 
@@ -753,8 +802,13 @@ function UIExtractor:extractAll()
             groupboxes = { Left = {}, Right = {}, Unknown = {} },
             tabboxes = { Left = {}, Right = {}, Unknown = {} },
             isKeyTab = Tab.isKeyTab == true,
-            elementCount = if Tab.elements then #Tab.elements else 0
+            elementCount = if Tab.elements then #Tab.elements else 0,
+            subTabs = {}
         }
+
+        for SubTabName in Tab.subTabs or {} do
+            table.insert(TabStructure.subTabs, SubTabName)
+        end
 
         for Side, Groupboxes in Tab.groupboxes do
             for GroupboxName in Groupboxes do
@@ -882,6 +936,16 @@ function UIExtractor:printStructure()
                     for _, Element in SubTab.elements do
                         print(string.format("        %s %s: %s", ElementIcons[Element.type] or "❓", Element.type, Element.text or "No Text"))
                     end
+                end
+            end
+        end
+
+        for SubTabName, SubTab in Tab.subTabs or {} do
+            print(string.format("  SUBTAB: [%s] %s (Order: %s)", tostring(SubTab.icon), SubTabName, tostring(SubTab.order)))
+
+            for Side, Groupboxes in SubTab.groupboxes do
+                for GroupboxName, Groupbox in Groupboxes do
+                    print(string.format("    GROUPBOX (%s): %s (Elements: %d)", Side, GroupboxName, #Groupbox.elements))
                 end
             end
         end
