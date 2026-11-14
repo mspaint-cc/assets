@@ -124,6 +124,22 @@ for _, El in ObsidianUI.Main.ScrollingFrame:GetChildren() do
     TabsOrder[LabelText] = TotalTabs
 end
 
+local GetFormattedLabels = function(dropdown, formatter)
+    if typeof(formatter) ~= "function" then return nil end
+
+    local IsDictionary = #dropdown.Values == 0 and next(dropdown.Values) ~= nil
+    local Labels = {}
+
+    for Key, RawValue in dropdown.Values do
+        if typeof(RawValue) == "table" then continue end
+
+        local Success, Formatted = pcall(formatter, RawValue)
+        if Success and Formatted ~= nil then Labels[tostring(if IsDictionary then Key else RawValue)] = tostring(Formatted) end
+    end
+
+    return Labels
+end
+
 local GetOptionIndex; GetOptionIndex = function(element)
     if typeof(element) ~= "table" then return nil end
 
@@ -323,12 +339,19 @@ function UIExtractor:extractElementInfo(element)
         }
     elseif Type == "Dropdown" then
         local DisplayButton = if element.Container then element.Container:FindFirstChildOfClass("TextButton") else nil
+        local ValueIcons = {}
+
+        for Value, IconRef in element.ValueImages or {} do
+            ValueIcons[self:Serialize(Value)] = ResolveIcon(nil, IconRef)
+        end
 
         Info.properties = {
             displayText = if DisplayButton then DisplayButton.Text else nil,
             values = self:Serialize(element.Values),
             disabledValues = self:Serialize(element.DisabledValues),
-            valueImages = self:Serialize(element.ValueImages),
+            valueImages = ValueIcons,
+            listLabels = GetFormattedLabels(element, element.FormatListValue or element.FormatValue),
+            displayLabels = GetFormattedLabels(element, element.FormatDisplayValue or element.FormatValue),
             multi = element.Multi,
             searchable = element.Searchable,
             allowNull = element.AllowNull,
