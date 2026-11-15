@@ -1,26 +1,24 @@
 ```diff
-[mspaint]
-+ Addons can now have their own subtab with multiple groupboxes
-+ Reorganized the Settings and Interface
-+ Added Anchor Position and X Offset settings to Dynamic Island
-+ Added Window Snapping, Compact Sidebar and Corner Radius settings
-+ Notifications can now be placed in any corner of the screen
-+ Dynamic Island now follows DPI Scale option
-
 [Fisch]
-+ Fixed performance issues
++ Added Auto Reqiuem Rod Passive
++ Added Auto Migu Rod Passive
++ Added Auto Record Breaker Rod Passive
++ Added Auto Oppressor Rod Passive
++ Added Auto Black Fairy Rod Passive
++ Added Auto Pinion's Aria Rod Passive
++ Fixed Perfect Reel Chance sometimes not applying properly
++ Updated datatables
+
+[The Forge]
++ Fixed loading issues
 
 [DOORS]
-+ Added back Anticheat Manipulation in Advanced Mode only
-+ Fixed DOORS notify style breaking after death and revive
++ Added Custom FOV toggle
++ Fixed Doors notification style after reviving yourself 
 
-[DOORS - Super Hard Mode]
-+ Fixed Fly
-
-[DOORS - Hotel-]
-+ Fixed Fly
-+ Fixed Eyes ESP
-
-[DOORS - The Mines]
-+ Added Seek Minecart Anticheat Bypass Mode
+[DOORS - The Archives]
++ Fixed Anti Ransom and Anti Alma breaking after reviving yourself
++ Fixed Anticheat bypass not working at all after reviving yourself
++ Fixed Anti Chair Impact after reviving yourself
++ Fixed issues after reviving
 ```
